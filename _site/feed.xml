@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-30T12:40:23-05:00</updated><id>/feed.xml</id><title type="html">Rupesh Tiwari</title><subtitle>Sr. Software Architect, Profession Trainer &amp; Pluralsight Author. I help students and professionals to become Full Stack Software Developer in just 3 months!</subtitle><entry><title type="html">How to Blog using GitHub and Jekyll</title><link href="/blogs/2021/01/30/how-to-blog-using-github-and-jekyll/" rel="alternate" type="text/html" title="How to Blog using GitHub and Jekyll" /><published>2021-01-30T12:22:00-05:00</published><updated>2021-01-30T12:22:00-05:00</updated><id>/blogs/2021/01/30/how-to-blog-using-github-and-jekyll</id><content type="html" xml:base="/blogs/2021/01/30/how-to-blog-using-github-and-jekyll/">&lt;h1 id=&quot;how-to-blog-using-github-and-jekyll&quot;&gt;How to Blog using GitHub and Jekyll&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-30T13:13:46-05:00</updated><id>/feed.xml</id><title type="html">Rupesh Tiwari</title><subtitle>Sr. Software Architect, Profession Trainer &amp; Pluralsight Author. I help students and professionals to become Full Stack Software Developer in just 3 months!</subtitle><entry><title type="html">How to Blog using GitHub and Jekyll</title><link href="/jekyll%20update/2021/01/30/how-to-blog-using-github-and-jekyll/" rel="alternate" type="text/html" title="How to Blog using GitHub and Jekyll" /><published>2021-01-30T12:22:00-05:00</published><updated>2021-01-30T12:22:00-05:00</updated><id>/jekyll%20update/2021/01/30/how-to-blog-using-github-and-jekyll</id><content type="html" xml:base="/jekyll%20update/2021/01/30/how-to-blog-using-github-and-jekyll/">&lt;p&gt;&lt;img src=&quot;/assets/images/image-default.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Learn how can you write &amp;amp; host your own blog FREE. With high performance and SEO enabled using &lt;strong&gt;Jekyll&lt;/strong&gt;. I will use windows machine to demonstrate you please read this article till end.&lt;/p&gt;
 
 &lt;h2 id=&quot;install-ruby-with-devkit&quot;&gt;Install Ruby with Devkit&lt;/h2&gt;
@@ -50,6 +51,7 @@
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/usS9Z85.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Push the code to this repo:&lt;/p&gt;
+
 &lt;pre&gt;&lt;code class=&quot;language-shell=&quot;&gt;git remote add origin https://github.com/rupeshtiwari/rupeshtiwari.github.io.git
 git branch -M main
 git push -u origin main
@@ -71,8 +73,10 @@ git push -u origin main
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;do-you-want-to-become-full-stack-developer-computer&quot;&gt;Do You Want to become full stack developer? :computer:&lt;/h2&gt;
+&lt;h2 id=&quot;do-you-want-to-become-full-stack-developer-&quot;&gt;Do You Want to become full stack developer? 💻&lt;/h2&gt;
+
 &lt;p&gt;If you want to become full stack developer and grow your carrier as Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have monthly membership plans and you will get unlimited access to all of our video courses, slides, source code &amp;amp; Monthly video calls.&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Please visit www.fullstackmaster.net/pro to subscribe to All Access PRO membership.&lt;/li&gt;
   &lt;li&gt;Please visit www.fullstackmaster.net/elite to subscribe to All Access ELITE membership. You will get everything from PRO plan. Additionally you will get access to monthly live Q&amp;amp;A video call with Rupesh and ask doubts and get more tips and tricks.&lt;/li&gt;
@@ -92,7 +96,7 @@ git push -u origin main
   &lt;li&gt;✉️ &lt;a href=&quot;mailto:fullstackmaster1@gmail.com&quot;&gt;fullstackmaster1@gmail.com&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Founder of www.fullstackmaster.net 🎓&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;&lt;img src=&quot;https://i.imgur.com/9OCLciM.png&quot; width=&quot;295&quot; height=&quot;65&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Rupesh Tiwari</name></author><category term="blogs" /><category term="blogs" /><category term="jekyll" /><category term="github" /><summary type="html">How to Blog using GitHub and Jekyll Learn how can you write &amp;amp; host your own blog FREE. With high performance and SEO enabled using Jekyll. I will use windows machine to demonstrate you please read this article till end.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2021/01/30/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-01-30T11:15:15-05:00</published><updated>2021-01-30T11:15:15-05:00</updated><id>/jekyll/update/2021/01/30/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2021/01/30/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Rupesh Tiwari</name></author><category term="jekyll update" /><category term="blogs" /><category term="jekyll" /><category term="github" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/image-default.jpg" /><media:content medium="image" url="/assets/images/image-default.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2021/01/30/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-01-30T11:15:15-05:00</published><updated>2021-01-30T11:15:15-05:00</updated><id>/jekyll/update/2021/01/30/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2021/01/30/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
