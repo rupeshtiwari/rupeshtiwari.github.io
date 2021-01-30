@@ -2,9 +2,9 @@
 layout: post
 title: How to Blog using GitHub and Jekyll
 date: 2021-01-30 12:22
-category: blogs
 author: Rupesh Tiwari
 tags: [blogs, jekyll, github]
+description: How to Blog using GitHub and Jekyll
 summary: How to Blog using GitHub and Jekyll
 image: /assets/images/image-default.jpg
 signature: /assets/images/fullstackmaster.png
@@ -104,3 +104,4 @@ www.rupeshtiwari.com \
 ✉️ <fullstackmaster1@gmail.com> \
 Founder of [www.fullstackmaster.net](https://www.fullstackmaster.net) 🎓 \
 <img src="{{page.signature}}" width="276">
+
