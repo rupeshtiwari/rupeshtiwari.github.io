@@ -32,6 +32,7 @@ github_username:  rupeshtiwari
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 permalink: /:categories/:year/:month/:day/:title/
 

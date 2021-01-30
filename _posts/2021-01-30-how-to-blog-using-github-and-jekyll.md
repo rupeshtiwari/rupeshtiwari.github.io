@@ -7,6 +7,7 @@ author: Rupesh Tiwari
 tags: [blogs, jekyll, github]
 summary: How to Blog using GitHub and Jekyll
 image: /assets/images/image-default.jpg
+signature: /assets/images/fullstackmaster.png
 ---
 
 ![]({{ page.image | relative_url }})
@@ -96,10 +97,10 @@ If you want to become full stack developer and grow your carrier as Lead Develop
 
 ---
 
-### :sparkling_heart: Contact Details: Say :wave: to me!
 
-- Rupesh Tiwari
-- www.rupeshtiwari.com
-- ✉️ <fullstackmaster1@gmail.com>
-- Founder of www.fullstackmaster.net 🎓
-- [<img src="https://i.imgur.com/9OCLciM.png" width="295" height="65">](https://www.fullstackmaster.net)
+
+Rupesh Tiwari\
+www.rupeshtiwari.com \
+✉️ <fullstackmaster1@gmail.com> \
+Founder of www.fullstackmaster.net 🎓 \
+<img src="{{page.signature}}" width="276">
