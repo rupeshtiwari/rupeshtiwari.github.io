@@ -32,4 +32,6 @@ Serve in prod mode: `JEKYLL_ENV=production jekyll serve`
 ## References
 
 1. https://jsinibardy.com/optimize-seo-jekyll 
-2. https://blog.webjeda.com/optimize-jekyll-seo/
+2. https://blog.mastykarz.nl/improve-jekyll-seo/
+3. https://blog.webjeda.com/optimize-jekyll-seo/
+4. https://blog.webjeda.com/share-buttons-jekyll/

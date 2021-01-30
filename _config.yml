@@ -41,6 +41,7 @@ permalink: /:slug/
 
 timezone: America/New_York
 
+# Composing Blog
 jekyll_compose:
   default_front_matter:
     drafts:
@@ -64,3 +65,24 @@ jekyll_analytics:
   GoogleAnalytics: # Add, if you want to track with Google Analytics
     id: UA-128916623-7 # Required - replace with your tracking id
     anonymizeIp: false # Optional - Default: false - set to true for anonymized tracking
+
+# Author
+author:
+  name: Rupesh Tiwari
+  twitter: rupeshtiwari_co
+  image: /assets/images/rupesh-tiwari.png
+twitter:
+  username: rupeshtiwari_co
+  card: summary_large_image
+facebook:
+  app_id: 987654321
+  publisher: 987654321   
+  admins: 987654321
+social:
+  name: Rupesh Tiwari
+  links:
+    - http://twitter.com/rupeshtiwari_co
+    - https://www.facebook.com/fullstackmaster1
+    - https://linkedin.com/in/rupesh-tiwari/
+    - http://github.com/rupeshtiwari
+
