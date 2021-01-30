@@ -2,6 +2,7 @@
 layout: post
 title: How to Blog using GitHub and Jekyll
 date: 2021-01-30 12:22
+last_modified_at: 2021-01-30 12:22
 author: Rupesh Tiwari
 tags: [blogs, jekyll, github]
 description: How to Blog using GitHub and Jekyll
