@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Change Jekyll Blog Theme
+published: false
+cover_image:
+canonical_url:
 date: 2021-01-30 13:55
 author: Rupesh Tiwari
 tags: [blogs, jekyll]
