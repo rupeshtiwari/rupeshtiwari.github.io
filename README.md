@@ -9,19 +9,22 @@ Welcome to my blogs! You will learn what I learn!
 
 ## Writing blog
 
-Add draft blog
+Adding draft blog
 
 `jekyll "My new draft" --collection "draft"`
 
 
-Add a specific collection blog
+Adding a specific collection blog
 
 `jekyll "My new draft" --collection "angular"`
 
-Publish draft blog
+Publishing draft blog
 
 `jekyll publish _drafts/my-new-draft.md`
 
+Creating Published Post Directly
+
+`jekyll compose "My Testing Post"`
 
 ## Developer
 
