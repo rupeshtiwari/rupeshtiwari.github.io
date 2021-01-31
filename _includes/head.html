@@ -3,24 +3,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   {% capture title %}
-    {%- if page.share-title -%}
-      {{ page.share-title | strip_html | xml_escape }}
-    {%- elsif page.title -%}
-      {{ page.title | strip_html | xml_escape  }}
-    {%- else -%}
-      {{ site.title | strip_html | xml_escape }}
-    {%- endif -%}
+  {%- if page.share-title -%}
+  {{ page.share-title | strip_html | xml_escape }}
+  {%- elsif page.title -%}
+  {{ page.title | strip_html | xml_escape }}
+  {%- else -%}
+  {{ site.title | strip_html | xml_escape }}
+  {%- endif -%}
   {% endcapture %}
 
   {% capture description %}
-    {%- if page.share-description -%}
-      {{ page.share-description | strip_html | xml_escape }}
-    {%- elsif page.subtitle -%}
-      {{ page.subtitle | strip_html | xml_escape }}
-    {%- else -%}
-      {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
-      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
-    {%- endif -%}
+  {%- if page.share-description -%}
+  {{ page.share-description | strip_html | xml_escape }}
+  {%- elsif page.subtitle -%}
+  {{ page.subtitle | strip_html | xml_escape }}
+  {%- else -%}
+  {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
+  {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
+  {%- endif -%}
   {% endcapture %}
 
   <title>{{ title }}</title>
@@ -46,33 +46,33 @@
   {% include google_analytics.html %}
 
   {% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
+  {% for css in layout.common-ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
   {% endif %}
 
   {% if layout.common-css %}
-    {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
+  {% for css in layout.common-css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
   {% endif %}
 
   {% if site.site-css %}
-    {% for css in site.site-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
+  {% for css in site.site-css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
   {% endif %}
 
   {% if page.ext-css %}
-    {% for css in page.ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
+  {% for css in page.ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
   {% endif %}
-  
+
   {% if page.css %}
-    {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
+  {% for css in page.css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
   {% endif %}
 
   {% if site.fb_app_id %}
@@ -84,19 +84,19 @@
   {% endif %}
 
   {%- capture img -%}
-    {%- if page.share-img -%}
-      {{ page.share-img }}
-    {%- elsif page.cover-img -%}
-      {%- if page.cover-img.first -%}
-        {{ page.cover-img[0].first.first }}
-      {%- else -%}
-        {{ page.cover-img }}
-      {%- endif -%}
-    {%- elsif page.thumbnail-img -%}
-      {{ page.thumbnail-img }}
-    {%- elsif site.avatar -%}
-      {{ site.avatar }}
-    {% endif %}
+  {%- if page.share-img -%}
+  {{ page.share-img }}
+  {%- elsif page.cover-img -%}
+  {%- if page.cover-img.first -%}
+  {{ page.cover-img[0].first.first }}
+  {%- else -%}
+  {{ page.cover-img }}
+  {%- endif -%}
+  {%- elsif page.thumbnail-img -%}
+  {{ page.thumbnail-img }}
+  {%- elsif site.avatar -%}
+  {{ site.avatar }}
+  {% endif %}
   {%- endcapture -%}
   {%- assign img=img | strip -%}
 
@@ -137,13 +137,13 @@
   {% include matomo.html %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ " /assets/css/staticman.css" | relative_url }}">
   {% endif %}
 
   {% if page.head-extra %}
-    {% for file in page.head-extra %}
-      {% include {{ file }} %}
-    {% endfor %}
+  {% for file in page.head-extra %}
+  {% include {{ file }} %}
+  {% endfor %}
   {% endif %}
-
+  <meta name="google-site-verification" content="74djioDH5QW3bOpovK6wR2iapQExCS8P1mHaUnb9Du4" />
 </head>
