@@ -14,8 +14,10 @@ excerpt_separator: '<!--more-->'
 tags: [nx, nrwl, monorepo]
 ---
 
-In [Nx Monorepo workspace](https://nx.dev/) we can have applications (apps) and libraries (libs).
-Apps will have projects that are hosted on the server. Libs should have the projects which are supporting Apps. Inside the Libs folder you can have your service projects. Within the Libs we end up creating lots of projects and it is very confusing when every project can depend on every other project.
+In [Nx Monorepo workspace](https://nx.dev/) you can have applications(apps) and libraries(libs).
+Apps mostly have projects that are front-end applications hosted on the server. 
+
+However, Libs should have the projects which should supporting your applications.Inside the Libs folder you can have your service projects. Within the Libs folder you can end up creating lots of projects and it is very confusing when every project can depend on every other project.
 
 However, If you want to partition service code into well-defined cohesive blocks. Especially if you are following Service Oriented Architecture [Advanced Distributed Systems Design by Udi Dahan](https://particular.net/adsd). Then you might be aware that one service code should not depend on another service code. Therefore, you want to impose constraints on how projects can depend on each other in JavaScript Projects. Then it is very difficult if you dont use any framework. I would highly recommend using [Nx Monorepo](https://nx.dev/) `tag` and `scope`.
 
