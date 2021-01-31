@@ -4,7 +4,7 @@ title: About me
 subtitle: Why you'd want to learn with me
 ---
 
-My name is Rupesh Tiwari. I am Sr. Software/Solution Architect, Profession Trainer & Pluralsight Author. I help students and professionals to become Full Stack Software Developer in just 3 months!
+My name is Rupesh Tiwari. I am Sr. Software/Solution Architect, Professional Trainer & Pluralsight Author. I help students and professionals to become Full Stack Software Developer in just 3 months!
 
 ### Fullstack Software Development Training
 
