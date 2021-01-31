@@ -15,9 +15,9 @@ author: Rupesh Tiwari
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  Software Training:
+    - All-Access Pro plan: "https://www.fullstackmaster.net/pro"
+    - All-Access ELite Plan: "https://www.fullstackmaster.net/elite"
   Author's home: "https://www.rupeshtiwari.com"
 
 # --- Logo --- #
@@ -31,7 +31,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: /assets/img/fsm.png
 
 
 # --- Footer social media links --- #
@@ -231,6 +231,7 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-analytics
   - jekyll-remote-theme
+  - jekyll-paginate
 
 # Composing Blog
 jekyll_compose:

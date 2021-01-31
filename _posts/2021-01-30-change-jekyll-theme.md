@@ -2,7 +2,7 @@
 layout: post
 title: Change Jekyll Blog Theme
 cover_image: /assets/img/image-default.jpg
-last_modified_at: 2021-01-30 13:55 
+last_modified_at: 2021-01-30 13:55
 date: 2021-01-30 13:55
 author: Rupesh Tiwari
 tags: [blogs, jekyll]
@@ -63,8 +63,6 @@ Run
 
 ![](https://i.imgur.com/gATaE3X.jpg)
 
----
-
 ## Do You Want to become full stack developer? 💻
 
 If you want to become full stack developer and grow your carrier as Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
@@ -74,7 +72,7 @@ If you want to become full stack developer and grow your carrier as Lead Develop
 
 > You bright future is waiting for you so visit today www.fullstackmaster.net and allow me to help you to board on your dream software architect/lead role.
 
----
+
 
 Rupesh Tiwari\
 www.rupeshtiwari.com \

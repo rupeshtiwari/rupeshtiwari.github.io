@@ -25,6 +25,8 @@ Publish draft blog
 
 ## Developer
 
+to install deps Run `bundle install`
+
 1. `bundle exec jekyll serve`
 2. Serve in dev: `jekyll serve --watch`
 3. Serve in prod mode: `JEKYLL_ENV=production jekyll serve`

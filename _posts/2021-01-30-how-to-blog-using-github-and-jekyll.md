@@ -85,8 +85,6 @@ Now visit https://rupeshtiwari.github.io/ you can see my site is up and running.
 
 https://www.kiltandcode.com/2020/04/30/how-to-create-a-blog-using-jekyll-and-github-pages-on-windows/
 
----
-
 ## Do You Want to become full stack developer? 💻
 
 If you want to become full stack developer and grow your carrier as Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
@@ -98,12 +96,8 @@ If you want to become full stack developer and grow your carrier as Lead Develop
 
 ---
 
-
-
 Rupesh Tiwari\
 www.rupeshtiwari.com \
 ✉️ <fullstackmaster1@gmail.com> \
 Founder of [www.fullstackmaster.net](https://www.fullstackmaster.net) 🎓 \
 <img src="{{page.signature}}" width="276">
-
- 
