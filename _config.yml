@@ -33,7 +33,6 @@ round-avatar: true
 # then specify the following parameter
 title-img: /assets/img/fsm.png
 
-
 # --- Footer social media links --- #
 
 # Select the social network links that you want to show in the footer.
@@ -45,13 +44,13 @@ social-network-links:
   twitter: rupeshtiwari_co
   patreon: fullstackmaster
   youtube: c/fullstackmaster
-#  reddit: yourname
+  #  reddit: yourname
   linkedin: rupesh-tiwari
-#  xing: yourname
+  #  xing: yourname
   stackoverflow: "1949796/rupesh-kumar-tiwari"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
+  #  snapchat: deanat78
+  #  instagram: deanat78
+  #  spotify: yourname
   telephone: +16083362070
 #  steam: deanat78
 #  twitch: yourname
@@ -168,8 +167,8 @@ fb_comment_id: "421181512329379"
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
 # See more details at https://staticman.net/
 #staticman:
-repository : "rupeshtiwari/rupeshtiwari.github.io"
-branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+repository: "rupeshtiwari/rupeshtiwari.github.io"
+branch: master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 #  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
 #  reCaptcha:
 #    siteKey  : # Use your own site key, you need to apply for one on Google
@@ -197,16 +196,14 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: true # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
+  - scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
@@ -237,9 +234,10 @@ plugins:
 jekyll_compose:
   default_front_matter:
     drafts:
-      layout: 
+      layout:
       title:
       subtitle:
+      description:
       cover-img:
       thumbnail-img:
       share-img:
@@ -248,14 +246,13 @@ jekyll_compose:
       layout: post
       title:
       subtitle:
+      description:
       cover-img:
       thumbnail-img:
       share-img:
+      tags:
       last_modified_at:
-      permalink:
-      description:
       published: true
       sitemap: true
       excerpt_separator: <!--more-->
       categories:
-      tags:

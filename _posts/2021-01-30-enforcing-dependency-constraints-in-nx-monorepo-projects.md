@@ -3,6 +3,7 @@ layout: post
 title: Enforcing Dependency Constraints in Nx Monorepo Projects
 date: 2021-01-30 19:32 -0500
 subtitle: Learn nx monorepo dependency constraints with angular projects
+description: Learn nx monorepo dependency constraints with angular projects
 cover-img: https://i.imgur.com/NLPsgZR.jpg
 thumbnail-img: https://i.imgur.com/NLPsgZR.jpg
 share-img: https://i.imgur.com/NLPsgZR.jpg
