@@ -213,17 +213,9 @@ So I loved the way Nx Monorepo framework gives the boundary constraints out of t
 
 ## Become full stack developer 💻
 
-If you want to become full stack developer and grow your carrier as Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
+If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have All-Access Monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
 
-- Please visit www.fullstackmaster.net/pro to subscribe to All Access PRO membership.
-- Please visit www.fullstackmaster.net/elite to subscribe to All Access ELITE membership. You will get everything from PRO plan. Additionally you will get access to monthly live Q&A video call with Rupesh and ask doubts and get more tips and tricks.
+- Please subscribe to [All-Access Membership Pro plan](www.fullstackmaster.net/pro) to access current and future angular, node.js and related courses.
+- Please subscribe to [All-Access Membership ELITE plan](www.fullstackmaster.net/elite) to get everything from PRO plan. Additionally, you will get access to monthly live Q&A video call with Rupesh and you can ask doubts/questions and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today www.fullstackmaster.net and allow me to help you to board on your dream software company as a developer/architect/lead engineer role.
-
-### Contact Rupesh Tiwari
-
-Rupesh Tiwari<br />
-www.rupeshtiwari.com<br />
-✉️ <fullstackmaster1@gmail.com><br />
-Founder of [www.fullstackmaster.net](https://www.fullstackmaster.net) 🎓<br />
-<img src="https://i.imgur.com/9OCLciM.png" width="276">
+> You bright future is waiting for you so visit today [Fullstackmaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.
