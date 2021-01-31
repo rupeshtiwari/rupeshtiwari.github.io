@@ -5,7 +5,7 @@ date: '2021-01-30 19:32 -0500'
 subtitle: Learn how to enforce dependency constraints in your monorepo
 description: Learn how to enforce dependency constraints in your monorepo
 cover-img: 'https://imgur.com/ok60gO7.jpg'
-cover_img: 'https://imgur.com/ok60gO7.jpg'
+cover_image: 'https://imgur.com/ok60gO7.jpg'
 thumbnail-img: 'https://i.imgur.com/NLPsgZR.jpg'
 share-img: 'https://imgur.com/ok60gO7.jpg'
 last_modified_at: '2021-01-30 19:32 -0500'

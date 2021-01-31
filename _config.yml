@@ -248,7 +248,7 @@ jekyll_compose:
       subtitle:
       description:
       cover-img:
-      cover_img:
+      cover_image:
       thumbnail-img:
       share-img:
       tags:
