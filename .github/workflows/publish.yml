@@ -16,9 +16,9 @@ jobs:
         node-version: 12
 
     - name: Publish articles on dev.to
-    - uses: rupeshtiwari/rupeshtiwari.github.io@master
+      uses: "rupeshtiwari/rupeshtiwari.github.io@master"
       with:
-        files_glob: '_posts/**/*.md'
+        files_glob: 'posts/**/*.md'
         devto_key: ${{ secrets.DEVTO_TOKEN }}
         github_token: ${{ secrets.GH_TOKEN }}
         conventional_commits: true
