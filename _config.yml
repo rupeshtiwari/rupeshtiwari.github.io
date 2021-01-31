@@ -14,7 +14,7 @@ author: Rupesh Tiwari
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "aboutme/"
   Software Training:
     - All-Access Pro plan: "https://www.fullstackmaster.net/pro"
     - All-Access ELite Plan: "https://www.fullstackmaster.net/elite"
