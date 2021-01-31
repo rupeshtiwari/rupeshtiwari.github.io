@@ -10,7 +10,6 @@ jobs:
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
 
     steps:
-    - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
         node-version: 12
