@@ -19,7 +19,7 @@ tags:
 id: 587932
 ---
 
-In [Nx Monorepo workspace](https://nx.dev/) you can have applications(apps) and libraries(libs).
+In [Nx monorepo (mono repository) workspace](https://nx.dev/) you can have applications(apps) and libraries(libs).
 Apps mostly have projects that are front-end applications hosted on the server.
 
 However, Libs should have the projects which should supporting your applications.Inside the Libs folder you can have your service projects. Within the Libs folder you can end up creating lots of projects and it is very confusing when every project can depend on every other project.
