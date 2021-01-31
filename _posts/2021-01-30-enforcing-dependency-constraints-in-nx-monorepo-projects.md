@@ -1,17 +1,21 @@
 ---
 layout: post
 title: Enforcing Dependency Constraints in Nx Monorepo Projects
-date: 2021-01-30 19:32 -0500
+date: '2021-01-30 19:32 -0500'
 subtitle: Learn nx monorepo dependency constraints with angular projects
 description: Learn nx monorepo dependency constraints with angular projects
-cover-img: https://imgur.com/ok60gO7.jpg
-thumbnail-img: https://i.imgur.com/NLPsgZR.jpg
-share-img: https://imgur.com/ok60gO7.jpg
-last_modified_at: 2021-01-30 19:32 -0500
+cover-img: 'https://imgur.com/ok60gO7.jpg'
+thumbnail-img: 'https://i.imgur.com/NLPsgZR.jpg'
+share-img: 'https://imgur.com/ok60gO7.jpg'
+last_modified_at: '2021-01-30 19:32 -0500'
 published: true
 sitemap: true
-excerpt_separator: '<!--more-->'
-tags: [nx, nrwl, monorepo]
+excerpt_separator: <!--more-->
+tags:
+  - nx
+  - nrwl
+  - monorepo
+id: 587932
 ---
 
 In [Nx Monorepo workspace](https://nx.dev/) you can have applications(apps) and libraries(libs).
