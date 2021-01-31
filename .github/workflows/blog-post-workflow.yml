@@ -14,7 +14,8 @@ jobs:
         - uses: gautamkrishnar/blog-post-workflow@master
           with:
             committer_username: rupeshtiwari
-            readme_path: "https://github.com/rupeshtiwari/rupeshtiwari/blob/master/README.md"
+            readme_path: ./README.md
             committer_email: fullstackmaster1@gmail.com
             # Replace this URL with your rss feed URL/s
             feed_list: "https://rupeshtiwari.github.io/feed.xml"
+            github_token: ${{ secrets.GH_TOKEN }}
