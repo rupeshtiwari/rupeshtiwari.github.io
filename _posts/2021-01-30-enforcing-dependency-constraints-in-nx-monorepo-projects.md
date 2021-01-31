@@ -11,7 +11,7 @@ last_modified_at: 2021-01-30 19:32 -0500
 published: true
 sitemap: true
 excerpt_separator: '<!--more-->'
-tags: [nx, nrwl, monorepo, dependency constraints]
+tags: [nx, nrwl, monorepo]
 ---
 
 In [Nx Monorepo workspace](https://nx.dev/) we can have applications (apps) and libraries (libs).
