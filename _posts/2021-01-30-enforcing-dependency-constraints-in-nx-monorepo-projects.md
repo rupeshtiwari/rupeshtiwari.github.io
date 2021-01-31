@@ -50,7 +50,7 @@ Read this article till the end to learn more!
 
 Go to `nx.json` and add projects tags.
 
-```json=
+```json
 "projects": {
     "sales-product-editor": {
       "tags": [
@@ -128,9 +128,9 @@ Go to `nx.json` and add projects tags.
 
 ## Step2: Add Enforcements in tslint.json file
 
-Add below nx-enforce-module-boundaries array in `tslint.json` file.
+Add below `nx-enforce-module-boundaries` array in `tslint.json` file.
 
-```
+```json
  "nx-enforce-module-boundaries": [
       true,
       {
