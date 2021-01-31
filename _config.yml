@@ -237,15 +237,23 @@ plugins:
 jekyll_compose:
   default_front_matter:
     drafts:
-      description:
-      image:
-      categories:
+      layout: 
+      title:
+      subtitle:
+      cover-img:
+      thumbnail-img:
+      share-img:
       tags:
     posts:
+      layout: post
+      title:
+      subtitle:
+      cover-img:
+      thumbnail-img:
+      share-img:
       last_modified_at:
       permalink:
       description:
-      image:
       published: true
       sitemap: true
       excerpt_separator: <!--more-->
