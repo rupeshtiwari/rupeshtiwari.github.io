@@ -25,11 +25,12 @@ Publish draft blog
 
 ## Developer
 
-Serve in dev: `jekyll serve --watch`
-
-Serve in prod mode: `JEKYLL_ENV=production jekyll serve`
+1. `bundle exec jekyll serve`
+2. Serve in dev: `jekyll serve --watch`
+3. Serve in prod mode: `JEKYLL_ENV=production jekyll serve`
 
 ## References
+Theme: https://beautifuljekyll.com/getstarted/#install-steps-hard
 
 1. https://www.readmodwrite.com/2019-01-18-jekyll-seo-tags/
 2. https://jsinibardy.com/optimize-seo-jekyll 

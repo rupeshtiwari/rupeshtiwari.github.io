@@ -6,7 +6,7 @@ layout: page
 ---
  
 
-<img src="/assets/images/rupesh-tiwari.png" alt="Rupesh Tiwari" style="height: 300px; width:300px;border-radius:50%"/>
+<img src="/assets/img/rupesh-tiwari.png" alt="Rupesh Tiwari" style="height: 300px; width:300px;border-radius:50%"/>
 
 > Hi, My Name is [Rupesh Tiwari](https://www.rupeshtiwari.com). I am Sr. Software Architect, Profession Trainer & Pluralsight Author. I help students and professionals to become Full Stack Software Developer in just 3 months!
 
@@ -15,5 +15,5 @@ layout: page
 I train online for full stack development feel free to visit [www.fullstackmaster.net](https://www.fullstackmaster.net)
 
 <a href="https://www.fullstackmaster.net"> 
-<img src="/assets/images/fullstackmaster.png" alt="Fullstack Master" />
+<img src="/assets/img/fullstackmaster.png" alt="Fullstack Master" />
 </a>

@@ -3,4 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Rupesh Tiwari's Blogs
+subtitle: This is where I will teach you software development in writings!
 ---

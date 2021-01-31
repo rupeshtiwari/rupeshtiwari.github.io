@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Change Jekyll Blog Theme
-cover_image: /assets/images/image-default.jpg
+cover_image: /assets/img/image-default.jpg
 last_modified_at: 2021-01-30 13:55 
 date: 2021-01-30 13:55
 author: Rupesh Tiwari
 tags: [blogs, jekyll]
 description: Learn how to change the jekyll blog theme
 summary: Learn how to change the jekyll blog theme
-image: /assets/images/image-default.jpg
-signature: /assets/images/fullstackmaster.png
+image: /assets/img/blog-default.jpg
+signature: /assets/img/fsm.png
 ---
 
 ![]({{ page.image | relative_url }})

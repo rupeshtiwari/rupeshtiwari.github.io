@@ -7,8 +7,8 @@ author: Rupesh Tiwari
 tags: [blogs, jekyll, github]
 description: How to Blog using GitHub and Jekyll
 summary: How to Blog using GitHub and Jekyll
-image: /assets/images/image-default.jpg
-signature: /assets/images/fullstackmaster.png
+image: /assets/img/image-default.jpg
+signature: /assets/img/fullstackmaster.png
 ---
 
 ![]({{ page.image | relative_url }})
