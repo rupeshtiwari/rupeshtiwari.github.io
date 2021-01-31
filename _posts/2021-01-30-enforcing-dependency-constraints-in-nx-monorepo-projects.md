@@ -24,15 +24,15 @@ Apps mostly have projects that are front-end applications hosted on the server.
 
 However, Libs should have the projects which should supporting your applications.Inside the Libs folder you can have your service projects. Within the Libs folder you can end up creating lots of projects and it is very confusing when every project can depend on every other project.
 
-However, If you want to partition service code into well-defined cohesive blocks. Especially if you are following Service Oriented Architecture [Advanced Distributed Systems Design by Udi Dahan](https://particular.net/adsd). Then you might be aware that one service code should not depend on another service code. Therefore, you want to impose constraints on how projects can depend on each other in JavaScript Projects. Then it is very difficult if you dont use any framework. I would highly recommend using [Nx Monorepo](https://nx.dev/) `tag` and `scope`.
+However, If you want to partition service code into well-defined cohesive blocks. Especially if you are following Service Oriented Architecture [Advanced Distributed Systems Design by Udi Dahan](https://particular.net/adsd). Then you might be aware that one service code should not depend on another service code. Therefore, you want to impose constraints on how projects can depend on each other in JavaScript Projects. Then it is very difficult if you don't use any framework. I would highly recommend using [Nx Monorepo](https://nx.dev/) `tag` and `scope`.
 
 Read this article till the end to learn more!
 
 ## I have a project where I have Libraries
 
-`Branding` folder that has couple of projets like `logger`, `layout`, `angular material`
-`Sales` folder that has couple of projets `product-editor` and `products`
-`Customers` folder that has couple of projets `user-editor` and `users`
+`Branding` folder that has couple of projects like `logger`, `layout`, `angular material`
+`Sales` folder that has couple of projects `product-editor` and `products`
+`Customers` folder that has couple of projects `user-editor` and `users`
 ![](https://i.imgur.com/i1YhcvR.png)
 
 ## I want to enforce below rules by Nx Monorepo Framework
@@ -40,7 +40,7 @@ Read this article till the end to learn more!
 - Sales projects can depend on Branding projects
 - Sales projects should not depend on Customers projects
 - Customers projects can depend on Branding projects
-- Customers projects should not depned on Sales projects
+- Customers projects should not depend on Sales projects
 - Branding projects can not depend on Sales projects
 - Branding projects can not depend on Customers projects
 
