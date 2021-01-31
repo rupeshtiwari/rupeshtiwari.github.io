@@ -18,4 +18,4 @@ jobs:
             committer_email: fullstackmaster1@gmail.com
             # Replace this URL with your rss feed URL/s
             feed_list: "https://rupeshtiwari.github.io/feed.xml"
-            github_token: ${{ secrets.GH_TOKEN }}
+            gh_token: ${{ secrets.GH_TOKEN }}
