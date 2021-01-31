@@ -17,7 +17,6 @@ tags:
   - nrwl
   - monorepo
 id: 587932
-signature: 'https://i.imgur.com/9OCLciM.png'
 ---
 
 In [Nx Monorepo workspace](https://nx.dev/) you can have applications(apps) and libraries(libs).
@@ -227,4 +226,4 @@ Rupesh Tiwari\
 www.rupeshtiwari.com \
 ✉️ <fullstackmaster1@gmail.com> \
 Founder of [www.fullstackmaster.net](https://www.fullstackmaster.net) 🎓 \
-<img src="{{page.signature}}" width="276">
+<img src="https://i.imgur.com/9OCLciM.png" width="276">

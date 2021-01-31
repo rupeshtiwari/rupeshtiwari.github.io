@@ -256,7 +256,4 @@ jekyll_compose:
       published: true
       sitemap: true
       excerpt_separator: <!--more-->
-      signature:
-
-
 # Dev.To Publish
