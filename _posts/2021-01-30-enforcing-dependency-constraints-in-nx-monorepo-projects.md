@@ -5,6 +5,7 @@ date: '2021-01-30 19:32 -0500'
 subtitle: Learn nx monorepo dependency constraints with angular projects
 description: Learn nx monorepo dependency constraints with angular projects
 cover-img: 'https://imgur.com/ok60gO7.jpg'
+cover_img: 'https://imgur.com/ok60gO7.jpg'
 thumbnail-img: 'https://i.imgur.com/NLPsgZR.jpg'
 share-img: 'https://imgur.com/ok60gO7.jpg'
 last_modified_at: '2021-01-30 19:32 -0500'
@@ -16,6 +17,7 @@ tags:
   - nrwl
   - monorepo
 id: 587932
+signature: 'https://i.imgur.com/9OCLciM.png'
 ---
 
 In [Nx Monorepo workspace](https://nx.dev/) you can have applications(apps) and libraries(libs).

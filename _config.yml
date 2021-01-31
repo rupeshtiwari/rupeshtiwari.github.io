@@ -248,6 +248,7 @@ jekyll_compose:
       subtitle:
       description:
       cover-img:
+      cover_img:
       thumbnail-img:
       share-img:
       tags:
@@ -255,7 +256,7 @@ jekyll_compose:
       published: true
       sitemap: true
       excerpt_separator: <!--more-->
-      categories:
+      signature:
 
 
 # Dev.To Publish
