@@ -19,9 +19,6 @@ id: 589332
 
 
 
-
-  
-
 `Yaml` files are used in Azure Pipelines for build and release definition. Yaml files are also used in GitHub build and release. 
 Yaml is designed to be clean and easy to read.  
 
@@ -96,6 +93,7 @@ person:
 
 ```
 
+---
 
 ## Become full stack developer 💻
 
