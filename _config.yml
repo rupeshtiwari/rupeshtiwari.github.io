@@ -243,19 +243,15 @@ jekyll_compose:
       share-img:
       tags:
     posts:
-      layout: post
-      title:
-      subtitle:
       description:
-      # For Github Pages only Image Required
-      cover-img: "https://i.imgur.com/hiQZ0BG.png"
-      # For Dev.To Image with Title Required
-      cover_image: "1000 x 420 resolution"
-      thumbnail-img:
-      share-img:
       tags:
-      last_modified_at:
       published: true
       sitemap: true
+      subtitle: 
+      cover-img:
+      cover_image:
+      thumbnail-img:
+      share-img:
+      last_modified_at:
       excerpt_separator: <!--more-->
-# Dev.To Publish
+
