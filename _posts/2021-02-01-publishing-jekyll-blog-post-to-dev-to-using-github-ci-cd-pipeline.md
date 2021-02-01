@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "test"
+title: "Publishing Jekyll Blog Post to DevTo using GitHub CI\/CD Pipeline"
 date: "2021-02-01 15:03 -0500"
 subtitle: "test"
 description: "test"
