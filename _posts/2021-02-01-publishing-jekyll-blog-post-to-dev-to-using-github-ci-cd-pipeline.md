@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Publishing Jekyll Blog Post to DevTo using GitHub CI/CD Pipeline'
+title: "Publishing Jekyll Blog Post to DevTo using GitHub CI/CD Pipeline"
 date: '2021-02-01 15:03 -0500'
-description: 'Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow'
+description: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow"
 tags:
   - blogs
   - jekyll
@@ -10,7 +10,7 @@ tags:
   - devto
 published: true
 sitemap: true
-subtitle: 'Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow'
+subtitle: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow"
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://i.imgur.com/EjB8KyG.png'
 thumbnail-img: 'https://i.imgur.com/oKh8TiX.png'
