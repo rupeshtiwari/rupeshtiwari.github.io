@@ -8,7 +8,7 @@ cover-img: https://i.imgur.com/hiQZ0BG.png
 cover_image: https://i.imgur.com/EeYRFDf.jpg
 thumbnail-img: https://i.imgur.com/EeYRFDf.jpg
 share-img: https://i.imgur.com/EeYRFDf.jpg
-tags: [azure,devops,tutorial,beginners]
+tags: [devops,azure,tutorial,beginners]
 last_modified_at:
 published: true
 sitemap: true
