@@ -11,13 +11,6 @@ tags:
   - JavaScript
   - Object-Oriented
   - prototypal inheritance
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: '/javascript-prototype-inheritance/'
 description: 'In this Article I will explain what prototype is and how protoBy
   using Prototypal inheritance technique, we can create the instance of an object.'
 ---
