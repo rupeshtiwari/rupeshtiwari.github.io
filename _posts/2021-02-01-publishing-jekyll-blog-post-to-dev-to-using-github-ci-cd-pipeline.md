@@ -132,5 +132,4 @@ If you want to become full stack developer and grow your carrier as new software
 <a href="https://www.fullstackmaster.net">
     <img height="65" src="https://i.imgur.com/9OCLciM.png" width="270">
 </a>
-
----
+ 
