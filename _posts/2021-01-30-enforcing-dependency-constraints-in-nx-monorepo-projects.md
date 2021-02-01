@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 categories: 
   - Personal
   - Technology
-seriers:
+series:
   - Personal
 tags:
   - nx
