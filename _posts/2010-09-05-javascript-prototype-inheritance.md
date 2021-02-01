@@ -2,15 +2,16 @@
 layout: post
 title: Prototypal Inheritance in JavaScript
 date: 2010-09-05 08:07:01.000000000 -04:00
-published: true
-categories:
-  - JavaScript
-tags:
-  - JavaScript
-  - Object-Oriented
-  - prototypal inheritance
-description: In this Article I will explain what prototype is and how protoBy using Prototypal inheritance technique, we can create the instance of an object.
 subtitle: In this Article I will explain what prototype is and how protoBy using Prototypal inheritance technique, we can create the instance of an object.
+description: In this Article I will explain what prototype is and how protoBy using Prototypal inheritance technique, we can create the instance of an object.
+cover-img: https://i.imgur.com/hiQZ0BG.png
+cover_image: 1000 x 420 resolution
+thumbnail-img: https://i.imgur.com/hiQZ0BG.png
+share-img: https://i.imgur.com/hiQZ0BG.png
+tags: [JavaScript, ObjectOriented, prototypalInheritance]
+published: true
+sitemap: true
+excerpt_separator: '<!--more-->'
 ---
 
 <p>There is a great article written by <a href="http://javascript.crockford.com/prototypal.html" target="_blank" rel="noopener noreferrer">Douglas Crockford</a>. I recommend everybody to read this article. By using Prototypal inheritance technique, we can create the instance of an object. Suppose, we have one object User, we want to create the instance of the user object and use it in different-2 places. In order to create the instance of an object, we can set the prototype property of an Constructor Function equal to the object and then we can instantiate that constructor function to create the instance of that object. Below is the create method that will help us to do so. This method is taken from Doug's article.</p>
