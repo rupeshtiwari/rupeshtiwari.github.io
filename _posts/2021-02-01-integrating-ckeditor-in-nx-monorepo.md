@@ -1,18 +1,23 @@
 ---
 layout: post
 title: Integrating CkEditor In Nx Monorepo
-date: 2021-02-01 10:22 -0500
+date: '2021-02-01 10:22 -0500'
 subtitle: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
 description: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://imgur.com/H43sJjo.png'
 thumbnail-img: 'https://imgur.com/6ySnUBQ.png'
 share-img: 'https://imgur.com/6ySnUBQ.png'
-tags: [nx, nrwl, angular, ckeditor]
-last_modified_at: 2021-02-01 10:22 -0500
+tags:
+  - nx
+  - nrwl
+  - angular
+  - ckeditor
+last_modified_at: '2021-02-01 10:22 -0500'
 published: true
 sitemap: true
-excerpt_separator: '<!--more-->'
+excerpt_separator: <!--more-->
+id: 588929
 ---
 
 So you want to learn how you will integrate CkEditor v5 in [Nx Monorepo](https://nx.dev).
