@@ -12,6 +12,9 @@ last_modified_at: '2021-01-30 19:32 -0500'
 published: true
 sitemap: true
 excerpt_separator: <!--more-->
+categories: 
+  - Personal
+  - Technology
 tags:
   - nx
   - nrwl
