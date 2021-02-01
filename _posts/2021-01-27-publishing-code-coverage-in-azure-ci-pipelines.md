@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Publishing Code Coverage in Azure CI Pipelines
-date: 2021-01-27 00:00 +0000
+date: '2021-01-27 00:00 +0000'
 subtitle: Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
 description: Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/YJnJNSe.jpg
-thumbnail-img: https://i.imgur.com/YJnJNSe.jpg
-share-img: https://i.imgur.com/YJnJNSe.jpg
-tags: devops,angular,beginners,tutorial
-last_modified_at:
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/YJnJNSe.jpg'
+thumbnail-img: 'https://i.imgur.com/YJnJNSe.jpg'
+share-img: 'https://i.imgur.com/YJnJNSe.jpg'
+tags: 'devops,angular,beginners,tutorial'
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589369
 ---
 
 >`Publish Code Coverage task` Publishes `Cobertura` or `JaCoCo` code coverage results from your build in azure CI Pipeline. 
