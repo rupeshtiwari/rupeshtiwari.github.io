@@ -12,7 +12,7 @@ published: true
 sitemap: true
 subtitle: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
-cover_image:'https://i.imgur.com/EjB8KyG.png' 
+cover_image: 'https://i.imgur.com/EjB8KyG.png' 
 thumbnail-img: 'https://i.imgur.com/oKh8TiX.png'
 share-img: 'https://i.imgur.com/oKh8TiX.png'
 last_modified_at:
