@@ -15,7 +15,7 @@ cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://i.imgur.com/EjB8KyG.png' 
 thumbnail-img: 'https://i.imgur.com/oKh8TiX.png'
 share-img: 'https://i.imgur.com/oKh8TiX.png'
-last_modified_at:
+last_modified_at: '2021-02-01 15:03 -0500'
 excerpt_separator: '<!--more-->'
 ---
 
