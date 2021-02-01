@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Publishing Jekyll Blog Post to DevTo using GitHub CI\/CD Pipeline"
+title: "Publishing Jekyll Blog Post to DevTo using GitHub CI and CD Pipeline"
 date: "2021-02-01 15:03 -0500"
 subtitle: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions and workflow"
 description: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions and workflow"
@@ -13,7 +13,7 @@ tags:
   - jekyll
   - github
   - devto
-last_modified_at: '2021-02-01 15:03 -0500'
+last_modified_at: "2021-02-01 15:03 -0500"
 published: true
 sitemap: true
 excerpt_separator: <!--more-->
