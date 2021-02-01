@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Publishing Jekyll Blog Post to DevTo using GitHub CI/CD Pipeline"
+title: "test"
 date: "2021-02-01 15:03 -0500"
-description: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow"
+description: "test"
 tags:
   - blogs
   - jekyll
@@ -10,7 +10,7 @@ tags:
   - devto
 published: true
 sitemap: true
-subtitle: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow"
+subtitle: "test"
 cover-img: "https://i.imgur.com/hiQZ0BG.png"
 cover_image: "https://i.imgur.com/EjB8KyG.png"
 thumbnail-img: "https://i.imgur.com/oKh8TiX.png"
@@ -91,8 +91,8 @@ jobs:
       with:
         files: '_posts/**/*.md'
         devto_key: ${{ secrets.DEVTO_TOKEN }}
-        github_token: ${{ secrets.GH_TOKEN }}
-        conventional_commits: true
+github_token: ${{ secrets.GH_TOKEN }}
+conventional_commits: true
 ```
 
 ## Run GitHub CI/CD
@@ -128,6 +128,9 @@ If you want to become full stack developer and grow your carrier as new software
 - Please subscribe to [All-Access Membership PRO plan](https://www.fullstackmaster.net/pro) to access current and future angular, node.js and related courses.
 - Please subscribe to [All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite) to get everything from PRO plan. Additionally, you will get access to monthly live Q&A video call with Rupesh and you can ask doubts/questions and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role. <a href="https://www.fullstackmaster.net"> <img src="https://i.imgur.com/9OCLciM.png" width="270" height="65"> </a>
+> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.
+<a href="https://www.fullstackmaster.net">
+    <img height="65" src="https://i.imgur.com/9OCLciM.png" width="270">
+</a>
 
 ---
