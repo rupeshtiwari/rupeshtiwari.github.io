@@ -48,7 +48,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/form-validation-using-rxjs/"
-excerpt: "\n\t\tDid you know you can use RxJS simple operators and do html form validation
+description: "\n\t\tDid you know you can use RxJS simple operators and do html form validation
   re-actively? Well I learn RxJS operators by implementing them in real world project.
   In this post I will explain combineLatest operator and its use in real problem solving.
   \t\t\t\t"

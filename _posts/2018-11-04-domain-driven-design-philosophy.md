@@ -27,7 +27,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/domain-driven-design-philosophy/"
-excerpt: "\n\t\t\t\tEric Even wrote Domain Driven Design (DDD) book. Eric says DDD
+description: "\n\t\t\t\tEric Even wrote Domain Driven Design (DDD) book. Eric says DDD
   is the Philosophy of software design that helps projects dealing with complex problem.
   I have been practicing DDD from last 5 years and here I will try to explain the
   philosophy of DDD here in this article.  Let's begin...\t\t"

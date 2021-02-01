@@ -38,7 +38,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/unittesting-rxjs-marble-diagrams-problem-solver/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p>This blog post supports the sample code for the “Unit Testing RxJS with Marble Diagrams” course on Pluralsight, identifying common issues along with their solutions.</p>
 <p>I will be adding all of the problems experienced by us and their potential solutions here so that it will help us.</p>

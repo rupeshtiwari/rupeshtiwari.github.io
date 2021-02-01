@@ -35,7 +35,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/sending-xml-data-from-one-page-to-other-page-without-using-session-state/"
-excerpt: "\n\t\t\t\t\t\t"
+description: "Sending xml data from one page to other page without using session state"
 ---
 <p>
 				<font size="3"><br />

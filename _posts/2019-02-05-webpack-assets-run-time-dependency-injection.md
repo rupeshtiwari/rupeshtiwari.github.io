@@ -37,7 +37,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/webpack-assets-run-time-dependency-injection/"
-excerpt: "\n\t\t\t\tHow to pass public path to webpack assets bundle. \t\t"
+description: "\n\t\t\t\tHow to pass public path to webpack assets bundle. \t\t"
 ---
 <h2>How to Inject Base Assets path URL dependency to webpack CSS bundle?</h2>
 <p>In your JavaScript project build by webpack, if you have requirement where at the build time you do not know the URL for the assets. And you want to put the assets base url at run time. For that webpack has global variable that can be set at run-time. Then below is the example for achieving that in webpack..</p>

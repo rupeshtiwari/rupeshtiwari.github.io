@@ -35,7 +35,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/local-alias-pattern/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p>
 				In any jQuery Plugin there JavaScript local alias pattern is being used as a best practice. They have localized the global jQuery object as an alias $. It is a handy and popular pattern for JavaScript developer however, that is not very well know from C# developers or fledging JavaScript people.<br />

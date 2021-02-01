@@ -59,7 +59,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/understanding-javascript-scope/"
-excerpt: "\n\t\t\t\tJavaScript has 4 types of scopes. Global scope, Local scope, Closure
+description: "\n\t\t\t\tJavaScript has 4 types of scopes. Global scope, Local scope, Closure
   scope, Lexical scope.  Imagine Scope as a boundary within that things can be isolated.
   Like in your colony there are certain areas which has stuffs that are accessible
   to everyone in your colony.\t\t"

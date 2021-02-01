@@ -68,7 +68,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/create-barrel/"
-excerpt: "\n\t\t\t\tWhat is a Barrel, Why Should I use Barrel, How to Create a Barrel,
+description: "\n\t\t\t\tWhat is a Barrel, Why Should I use Barrel, How to Create a Barrel,
   What Problem Barrel is solving ? I have a big typescript project that I bundle via
   webpack exposing  public module. I will show you how I did this.  \t\t"
 ---

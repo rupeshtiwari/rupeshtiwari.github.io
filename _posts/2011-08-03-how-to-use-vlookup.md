@@ -27,7 +27,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/how-to-use-vlookup/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p>
 				Today, I learned about one Excel Sheet Formula <strong>"VLOOKUP"</strong>. It is very useful formula that gives us the power to search a value in a particular column.  </p>

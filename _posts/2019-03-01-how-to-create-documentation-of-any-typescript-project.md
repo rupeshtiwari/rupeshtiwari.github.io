@@ -38,7 +38,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/how-to-create-documentation-of-any-typescript-project/"
-excerpt: "\n\t\t\t\tI love to create automatic API Documentation of my project. Regardless
+description: "\n\t\t\t\tI love to create automatic API Documentation of my project. Regardless
   I work on Angular, React or VueJS as far as it uses Typescript. Did you know you
   could generate your project API Wikipedia kind of documentation within blink of
   eyes if you are using Typescript? Please read this blog to find out how easy it

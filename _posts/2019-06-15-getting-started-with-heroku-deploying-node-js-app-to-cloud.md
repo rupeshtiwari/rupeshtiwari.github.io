@@ -28,7 +28,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/getting-started-with-heroku-deploying-node-js-app-to-cloud/"
-excerpt: Heroku is a cloud platform that lets you to build, deliver, monitor and scal
+description: Heroku is a cloud platform that lets you to build, deliver, monitor and scal
   application. Heroku is Platform as Service (PaaS) artitecture. In this article you
   will learn how to create, build, deploy and scale node.js application into heroku
   cloud within couple of minutes.

@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/pre-sell-reactive-angular-app-with-redux-design-pattern-mean-stack-e-commerce-app/"
-excerpt: "Reactive Angular App with Redux Design Pattern MEAN stack e-Commerce App.
+description: "Reactive Angular App with Redux Design Pattern MEAN stack e-Commerce App.
   \n\nCreate highly scalable e-commerce web app using MEAN stack. Build user login
   & authentication. Gateway to paypal for credit card payment process. \nComplete
   Course available at: https://gumroad.com/l/rqJfg\nCloud deployment of your complete

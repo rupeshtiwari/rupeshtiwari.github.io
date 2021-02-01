@@ -39,7 +39,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/model-in-domain-driven-design/"
-excerpt: "\n\t\t\t\tModel in Domain Driven Design is a system of abstraction that
+description: "\n\t\t\t\tModel in Domain Driven Design is a system of abstraction that
   eliminates things which are not required. Domain Model allows us to think about
   a particular domain in a particular way. \t\t"
 ---

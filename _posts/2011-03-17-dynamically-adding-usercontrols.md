@@ -43,7 +43,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/dynamically-adding-usercontrols/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p><span style="font-family: calibri; font-size: 1.2em;"><br />
 From last 4 days, I have been struggling on how I should load the UserControl dynamically in my default page. I know in today’s world where .Net 4.0 came up, MVCis there and in future C# 5.0 is also coming and I am talking of same old UserControls that we used to talk in .Net 1.1 -2.0 era. Well I can’t do anything because in my project we have a lots of UserControls and they are not migrating the application from old legacy style to what we have dynamic rendering html using jQuery Ajax and other stuffs. </span></p>

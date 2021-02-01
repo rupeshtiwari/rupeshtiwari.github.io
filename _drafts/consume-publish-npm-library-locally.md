@@ -24,7 +24,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/"
-excerpt: "\n\t\t\t\t\t\t"
+excerpt: "Consume/Publish npm Library Locally"
 ---
 <p>
 				How to use npm link and consume local library</p>

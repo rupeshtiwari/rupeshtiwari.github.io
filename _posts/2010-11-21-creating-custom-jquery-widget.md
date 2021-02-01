@@ -25,7 +25,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/creating-custom-jquery-widget/"
-excerpt: "\n\t\t\t\t\t\t"
+description: "Creating Custom jQuery Widget"
 ---
 
 <p>Hi I just came across a greate website <a href="http://bililite.com/blog/understanding-jquery-ui-widgets-a-tutorial/">http://bililite.com/blog/understanding-jquery-ui-widgets-a-tutorial/</a></p>

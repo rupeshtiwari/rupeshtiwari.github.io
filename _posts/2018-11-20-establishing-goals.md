@@ -40,7 +40,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/establishing-goals/"
-excerpt: "\n\t\t\t\tSort out your life goals. Write them up in a paper using pen.
+description: "\n\t\t\t\tSort out your life goals. Write them up in a paper using pen.
   When you write goal on paper it becomes more concrete. You do not need to worry
   how those goals will happen. Believe it whatever you will write will happen ! While
   writing don't think will this goal happen or not. How this magic happens ? Your

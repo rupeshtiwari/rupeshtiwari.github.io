@@ -67,7 +67,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/creating-typescript-library-using-webpack/"
-excerpt: "\n\t\t\t\tIn this article we will see how can you create your own typescript
+description: "\n\t\t\t\tIn this article we will see how can you create your own typescript
   library that you can easily consume in your another `typescript` project. Also we
   will see how we can create typedefinition bundle file for our own library. Finally
   we will see which folder is required to publish to npm portal to have our own little

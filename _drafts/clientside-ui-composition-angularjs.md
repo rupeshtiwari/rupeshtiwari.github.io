@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Client Side UI Composition with Angular & NgRX
+title: ClientSide UI Composition AngularJS
 date:
 type: post
 
@@ -8,13 +8,11 @@ published: false
 password: ''
 status: draft
 categories:
-- Angular
+- AngularJS
 - JavaScript
-- NgRX
 - Service Oriented Architecture
 tags:
-- Angular
-- NgRX
+- AngularJS
 - Service Oriented Architecture (SOA)
 - UIComposition
 meta:
@@ -26,6 +24,6 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/"
-excerpt: "\n\t\t\t\t\t\t"
+excerpt: "ClientSide UI Composition AngularJS"
 ---
 

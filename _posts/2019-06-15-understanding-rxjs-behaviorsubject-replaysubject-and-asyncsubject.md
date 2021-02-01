@@ -70,7 +70,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/understanding-rxjs-behaviorsubject-replaysubject-and-asyncsubject/"
-excerpt: What are RxJS subjects and the benefits of using them. How to understand
+description: What are RxJS subjects and the benefits of using them. How to understand
   RxJS subjects such that you can apply it in your day to day coding at your own project.
   Well lets get started.
 ---

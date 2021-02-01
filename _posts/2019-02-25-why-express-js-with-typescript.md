@@ -66,7 +66,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/why-express-js-with-typescript/"
-excerpt: "\n\t\t\t\tI love Typescript the way it helps development speed and accuracy.
+description: "\n\t\t\t\tI love Typescript the way it helps development speed and accuracy.
   I wanted to work with Typescript, Webpack and Express.JS finally came up with a
   project where we can use webpack, typescript, karma, jasmien and express.js. All
   together and do nice development. Please read this article to get more details.\t\t"

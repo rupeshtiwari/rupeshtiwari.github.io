@@ -59,7 +59,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/pre-sell-ngrx-getting-started/"
-excerpt: "By  Full Stack Master School\nThis is the course under production. Please
+description: "By  Full Stack Master School\nThis is the course under production. Please
   buy this course. You will be charged only when this project will be finished. This
   course will have NgRX theory, interview questions and finally we will build an angular
   app from scratch using NgRX only. You will own the complete videos & you will receive

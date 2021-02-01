@@ -35,7 +35,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/assembly-binding-log-viewer/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p>
 				My Friend was looking for one error that he was continuously getting when he was trying to setup my old version 1.0 .net code. The error message was:<br />

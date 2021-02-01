@@ -33,7 +33,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/menu-widget/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p>
 				I was trying to make my own menu widget using jQuery and  I came with this below Widget.</p>

@@ -36,7 +36,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/how-to-kill-all-node-process-in-your-angular-node-js-app/"
-excerpt: "\n\t\t\t\tYou might be aware of EADDRINUSE  node error in node.js application.
+description: "\n\t\t\t\tYou might be aware of EADDRINUSE  node error in node.js application.
   Where it says address is in use. This is very annoying. It happenes if some of the
   ports are still being in used even though you think they are not. What I do is I
   create a stop script in my node application and I call stop to stop all of the existing

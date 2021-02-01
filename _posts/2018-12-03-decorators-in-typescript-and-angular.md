@@ -56,7 +56,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/decorators-in-typescript-and-angular/"
-excerpt: "\n\t\t\t\tDecorators in Typescript and Angular. Decorator is a concept in
+description: "\n\t\t\t\tDecorators in Typescript and Angular. Decorator is a concept in
   Typescript that can be used to annotate a class or it's members. Decorator also
   enables meta programming where one can collect as many meta data as required during
   run time.\t\t"

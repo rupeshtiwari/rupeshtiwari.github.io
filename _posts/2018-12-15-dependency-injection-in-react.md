@@ -52,7 +52,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/dependency-injection-in-react/"
-excerpt: "In Software Engineering Dependency Injection is a technique where one object
+description: "In Software Engineering Dependency Injection is a technique where one object
   injects or passes the dependency object to other object at run time.According to
   Robert Martin Inversion of Control can be achieved by doing Dependency Injection.
   Where Compile or Build time dependencies are inverted and they are supplied at run

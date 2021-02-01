@@ -44,7 +44,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/my-youtube-channel/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p>Hi everyone,</p>
 <p>I started my <a href="https://www.youtube.com/channel/UCfjBZHutgAYon-T8sqt1rwg">youtube channel</a> where I want to put some technical learning stuffs. I started putting RxJS videos over there. I hope it will be helpful please leave your comments and suggestions.&nbsp;https://www.youtube.com/channel/UCfjBZHutgAYon-T8sqt1rwg</p>

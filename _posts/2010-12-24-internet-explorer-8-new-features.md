@@ -33,7 +33,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/internet-explorer-8-new-features/"
-excerpt: "\n\t\t\t\t\t\t"
+description: "Internet Explorer 8 - new features"
 ---
 <p>
 				<font size="3"><br />

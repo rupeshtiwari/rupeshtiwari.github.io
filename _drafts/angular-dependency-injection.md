@@ -21,7 +21,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/"
-excerpt: "\n\t\t\t\t\t\t"
+excerpt: "Angular Dependency Injection"
 ---
 <p>
 				explain the dependency providers</p>

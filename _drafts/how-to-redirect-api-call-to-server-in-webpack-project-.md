@@ -20,7 +20,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/"
-excerpt: "\n\t\t\t\t\t\t"
+excerpt: "How to redirect api call to server in Webpack project?"
 ---
 <p>
 				Have you ever thought can I create my angular app and run it in dev mode, however make web API call to some existing server via angular app? Yes that is the problem we talking in this article.</p>

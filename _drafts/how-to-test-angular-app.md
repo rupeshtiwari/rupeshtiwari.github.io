@@ -21,7 +21,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/"
-excerpt: "\n\t\t\t\t\t\t"
+excerpt: "How to Test Angular App"
 ---
 <br />
 <h1>Testing Services</h1>

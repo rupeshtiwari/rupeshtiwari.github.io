@@ -64,7 +64,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/build-javascript-web-application-from-scratch/"
-excerpt: Build your own JavaScript Event Based Web application from scratch and deploy
+description: Build your own JavaScript Event Based Web application from scratch and deploy
   it to the cloud  using Heroku. I will use express to build server. It will have
   Node.js installation demo. ES6 features while coding and we will compile our code
   to ES5 using Webpack. We will do event base programming using jQuery pub-sub. We

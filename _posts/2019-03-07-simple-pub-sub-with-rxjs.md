@@ -52,7 +52,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/simple-pub-sub-with-rxjs/"
-excerpt: "\n\t\t\t\tDid you know you can create your own publish-subscribe library
+description: "\n\t\t\t\tDid you know you can create your own publish-subscribe library
   for your RxJS project? By using BehaviorSubject and filter operator it is possible
   to create your first pub sub library. Publish and Subscribe framework is very helpful
   to create isolated modules. Therefore, I will explain and demonstrate you how can

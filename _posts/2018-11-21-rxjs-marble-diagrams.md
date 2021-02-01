@@ -40,7 +40,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/rxjs-marble-diagrams/"
-excerpt: "RxJS Marble Diagrams are made to visualize the values emitted from the RxJS
+description: "RxJS Marble Diagrams are made to visualize the values emitted from the RxJS
   Observable over timeline.Hi in this article I will explain why we need marble diagrams
   and what are the benefits of Marble Diagrams.\t\t\t\t"
 ---

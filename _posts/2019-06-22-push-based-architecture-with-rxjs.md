@@ -54,7 +54,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/push-based-architecture-with-rxjs/"
-excerpt: There are 2 types of architectures one is Pull Based the second one is Push
+description: There are 2 types of architectures one is Pull Based the second one is Push
   Based. I will explain you how can we leverage RxJS BehaviorSubject to establish
   Push Based Architecture. In Design Patterns book we have Observer Design Pattern
   that is exactly what I mean by Push Based Architecture.

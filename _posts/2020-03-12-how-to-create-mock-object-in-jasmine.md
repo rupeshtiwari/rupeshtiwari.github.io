@@ -48,7 +48,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/how-to-create-mock-object-in-jasmine/"
-excerpt: 'Jasmine createSpyObj allows you to create an object only with methods. However
+description: 'Jasmine createSpyObj allows you to create an object only with methods. However
   suppose you object has some properties as well. Then how will you create a complete
   mocked object in jasmine such that both of it''s properties and methods are spied
   ? '

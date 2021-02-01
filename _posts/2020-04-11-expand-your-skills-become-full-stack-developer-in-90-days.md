@@ -46,7 +46,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/expand-your-skills-become-full-stack-developer-in-90-days/"
-excerpt: 'Enroll now as Full Stack Master is giving a special discounted price monthly
+description: 'Enroll now as Full Stack Master is giving a special discounted price monthly
   $10 only to access all premium javascript courses and future upcoming courses on
   JavaScript foundation, ngRX and much more. '
 ---

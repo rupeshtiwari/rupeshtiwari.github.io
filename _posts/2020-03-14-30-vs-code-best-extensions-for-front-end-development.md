@@ -48,7 +48,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/30-vs-code-best-extensions-for-front-end-development/"
-excerpt: One of the most impressive parts of Visual Studio Code is customizability,
+description: One of the most impressive parts of Visual Studio Code is customizability,
   especially via extensions. If you're a web developer, you won't be able to live
   without installing these extensions!
 ---

@@ -9,7 +9,7 @@ password: ''
 status: publish
 categories:
 - JavaScript
-tags: []
+tags: [JavaScript, node.js]
 meta:
   _publicize_twitter_user: "@roopkt"
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611578741;s:7:"payload";a:0:{}}}
@@ -30,8 +30,8 @@ meta:
   wpmm_postgrid_views: '637'
   _oembed_e27710d47028b0a9cd91968d7459b92f: "{{unknown}}"
   _b2s_post_meta: "a:6:{s:8:\"og_title\";s:62:\"How to Show Logo in ReadMe.Md file
-    or in npm Package Home Page\";s:7:\"og_desc\";s:7:\"\n\t\t\t\t\t\t\";s:8:\"og_image\";s:72:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/logo-readme.png\";s:10:\"card_title\";s:62:\"How
-    to Show Logo in ReadMe.Md file or in npm Package Home Page\";s:9:\"card_desc\";s:7:\"\n\t\t\t\t\t\t\";s:10:\"card_image\";s:72:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/logo-readme.png\";}"
+    or in npm Package Home Page\";s:7:\"og_desc\";s:7:\"\";s:8:\"og_image\";s:72:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/logo-readme.png\";s:10:\"card_title\";s:62:\"How
+    to Show Logo in ReadMe.Md file or in npm Package Home Page\";s:9:\"card_desc\";s:7:\"\";s:10:\"card_image\";s:72:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/logo-readme.png\";}"
   _yoast_wpseo_primary_category: ''
   _wpb_vc_js_status: 'false'
   _yoast_wpseo_content_score: '90'
@@ -42,8 +42,9 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/how-to-show-logo-in-readme-md-file-or-in-npm-package-home-page/"
-excerpt: "\n\t\t\t\t\t\t"
+description: "How to Show Logo in ReadMe.Md file or in npm Package Home Page"
 ---
+
 <h1>How to add your own logo on README.md file</h1>
 <p>Here is a simple way to create your own logo for your npm package. I hope you will enjoy this.</p>
 <h2><a id="user-content-where-to-go-and-get-logo" class="anchor" href="https://gist.github.com/rupeshtiwari/8558ca0d8ec1c15619e4492dcd6aa81a#where-to-go-and-get-logo" aria-hidden="true"></a>Where to go and get logo</h2>

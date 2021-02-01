@@ -55,7 +55,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/9-basic-javascript-concepts-you-should-know/"
-excerpt: "\n\t\t\t\tAlthough learning JavaScript deeply is highly appreciated. However,
+description: "\n\t\t\t\tAlthough learning JavaScript deeply is highly appreciated. However,
   I believe there are below concepts that one good JavaScript developer must have.
   bind, Scope, this, undefined vs null, closure, Hoisting, module pattern, prototype
   pattern, prototype inheritance\t\t"

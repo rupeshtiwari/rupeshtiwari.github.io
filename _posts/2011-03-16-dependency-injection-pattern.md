@@ -36,7 +36,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/dependency-injection-pattern/"
-excerpt: "\n\t\t\t\t\t\t"
+description: ""
 ---
 <p>
 				<span style="font-size:1.2em;font-family:calibri;"><br />

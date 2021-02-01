@@ -27,9 +27,9 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/"
-excerpt: "\n\t\t\t\tIf you want to achieve more and have better life then reduce the
+excerpt: "If you want to achieve more and have better life then reduce the
   wasted time.\nIf you want to have more fun then reduce doing the things that you
-  don't enjoy.\n\n\t\t"
+  don't enjoy."
 ---
 <br />
 <blockquote><p>If you want to achieve more and have better life then reduce the wasted time.</p>

@@ -34,7 +34,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/openclosed-principle-is-never-100-closed/"
-excerpt: "\n\t\t\t\t\t\t"
+description: "Open/Closed principle is never 100% closed"
 ---
 <p>
 				<font size="3">At the outset, I used to write programs that just work because, I had to complete and deliver the project on time.</p>

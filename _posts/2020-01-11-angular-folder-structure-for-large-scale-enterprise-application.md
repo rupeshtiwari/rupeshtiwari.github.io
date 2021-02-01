@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/angular-folder-structure-for-large-scale-enterprise-application/"
-excerpt: How to define a highly scalable folder structure for your Angular project.
+description: How to define a highly scalable folder structure for your Angular project.
   Finding a suitable folder structure for my Angular applications is something. Especially
   when the application grew in size. Rupesh will explain the structure as per angular
   guide style in this article.

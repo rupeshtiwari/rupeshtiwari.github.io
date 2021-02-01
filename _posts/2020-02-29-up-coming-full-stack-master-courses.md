@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/up-coming-full-stack-master-courses/"
-excerpt: "JavaScript future courses on full stack master school: \nJavaScript Getting
+description: "JavaScript future courses on full stack master school: \nJavaScript Getting
   Started\nAdvance JavaScript\nAsync JavaScript\nES 6 Features in JavaScript\nObject
   Oriented JavaScript\nFunctional Programming in JavaScript"
 ---
