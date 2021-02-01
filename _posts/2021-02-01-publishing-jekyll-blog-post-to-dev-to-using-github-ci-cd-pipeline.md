@@ -13,8 +13,8 @@ sitemap: true
 subtitle: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: https://i.imgur.com/EjB8KyG.png
-thumbnail-img: 'https://i.imgur.com/p7xnrt3.png'
-share-img: 'https://i.imgur.com/p7xnrt3.png'
+thumbnail-img: 'https://i.imgur.com/oKh8TiX.png'
+share-img: 'https://i.imgur.com/oKh8TiX.png'
 last_modified_at:
 excerpt_separator: '<!--more-->'
 ---
@@ -23,7 +23,7 @@ If you have a blogging site using **Jekyll** and you want to publish your blogs 
 
 ## Jekyll Project
 
-I have my Jekyll project and I do have 1 post.
+I have my Jekyll project and I do have 1 post and I want this post to be automatically published to my **[Dev.To](https://dev.to)** account when I push this post to GitHub. Really excited about that so lets begin.
 
 ![](https://i.imgur.com/IpE6Lxb.png)
 
