@@ -1,5 +1,5 @@
 name: publish
-on:   
+on:
   push:
     branches:
       - master
@@ -10,15 +10,15 @@ jobs:
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-      with:
-        node-version: 12
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12
 
-    - name: Publish articles on dev.to
-      uses: "sinedied/publish-devto@30728bf"
-      with:
-        files: '_posts/2021-01-28-introduction-to-yaml.md'
-        devto_key: ${{ secrets.DEVTO_TOKEN }}
-        github_token: ${{ secrets.GH_TOKEN }}
-        conventional_commits: true
+      - name: Publish articles on dev.to
+        uses: "sinedied/publish-devto@30728bf"
+        with:
+          files: "_posts/2021-01-09-creating-angular-build-definition-in-azure-ci-pipeline.md"
+          devto_key: ${{ secrets.DEVTO_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
+          conventional_commits: true

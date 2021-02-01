@@ -250,8 +250,8 @@ jekyll_compose:
     posts:
       subtitle:
       description:
-      cover-img:
-      cover_image: "https://i.imgur.com/hiQZ0BG.png"
+      cover-img: "https://i.imgur.com/hiQZ0BG.png"
+      cover_image: 
       thumbnail-img:
       share-img:
       tags:
