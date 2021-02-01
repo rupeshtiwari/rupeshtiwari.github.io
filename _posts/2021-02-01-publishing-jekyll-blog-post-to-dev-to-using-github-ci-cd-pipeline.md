@@ -2,8 +2,8 @@
 layout: post
 title: "Publishing Jekyll Blog Post to DevTo using GitHub CI\/CD Pipeline"
 date: "2021-02-01 15:03 -0500"
-subtitle: "test"
-description: "test"
+subtitle: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions and workflow"
+description: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions and workflow"
 cover-img: "https://i.imgur.com/hiQZ0BG.png"
 cover_image: "https://i.imgur.com/EjB8KyG.png"
 thumbnail-img: "https://i.imgur.com/oKh8TiX.png"
