@@ -1,20 +1,25 @@
 ---
 layout: post
 title: Caching Azure CI Pipeline Artifacts
-date: 2021-01-15 00:00 +0000
+date: '2021-01-15 00:00 +0000'
 subtitle: Learn how Caching improves speed of your Angular Build in Azure CI build
 description: Learn how Caching improves speed of your Angular Build in Azure CI build
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/EeYRFDf.jpg
-thumbnail-img: https://i.imgur.com/EeYRFDf.jpg
-share-img: https://i.imgur.com/EeYRFDf.jpg
-tags: [azure,devops,tutorial,beginners]
-last_modified_at:
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/EeYRFDf.jpg'
+thumbnail-img: 'https://i.imgur.com/EeYRFDf.jpg'
+share-img: 'https://i.imgur.com/EeYRFDf.jpg'
+tags:
+  - azure
+  - devops
+  - tutorial
+  - beginners
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589364
 ---
 
 If you are following agile then continuous integration is must. I have setup CI/CD in Azure DevOps and I personally found my **Angular** build is taking lot of time. The npm install step itself takes like around 3 minutes or so to download all **node_modules** files. If you are using [nrwl.Nx monorepo](https://nx.dev/) then you will notice your `npm install` or `npm ci` step will take around 8 to 10 minutes. Every-time you push the build it will download all of the node packages from npm.org and will spend same amount of time even-though you have not changed their versions. That is waste of time and resources. 
