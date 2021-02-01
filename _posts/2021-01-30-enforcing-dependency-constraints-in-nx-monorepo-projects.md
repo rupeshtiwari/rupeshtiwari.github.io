@@ -15,9 +15,12 @@ excerpt_separator: <!--more-->
 categories: 
   - Personal
   - Technology
+seriers:
+  - Personal
 tags:
   - nx
   - nrwl
+  - angular
   - monorepo
 id: 587932
 ---
