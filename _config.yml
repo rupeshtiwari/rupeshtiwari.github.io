@@ -234,24 +234,26 @@ plugins:
 jekyll_compose:
   default_front_matter:
     drafts:
-      layout:
-      title:
       subtitle:
       description:
       cover-img:
+      cover_image: "https://i.imgur.com/hiQZ0BG.png"
       thumbnail-img:
       share-img:
       tags:
-    posts:
-      description:
-      tags:
+      last_modified_at:
       published: true
       sitemap: true
-      subtitle: 
+      excerpt_separator: <!--more-->
+    posts:
+      subtitle:
+      description:
       cover-img:
-      cover_image:
+      cover_image: "https://i.imgur.com/hiQZ0BG.png"
       thumbnail-img:
       share-img:
+      tags:
       last_modified_at:
+      published: true
+      sitemap: true
       excerpt_separator: <!--more-->
-
