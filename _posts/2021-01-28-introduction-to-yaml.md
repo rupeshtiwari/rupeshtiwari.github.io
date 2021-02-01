@@ -30,7 +30,7 @@ Yaml is designed to be clean and easy to read.
 
 ## Define info about person
 
-```yaml=\
+```yaml 
 # Create a person object with properties.
 person: 
     name: "mike"
@@ -92,27 +92,11 @@ person:
 ```
 
 
+## Become full stack developer 💻
 
+If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have All-Access Monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
 
----
+- Please subscribe to [All-Access Membership PRO plan](https://www.fullstackmaster.net/pro) to access current and future angular, node.js and related courses.
+- Please subscribe to [All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite) to get everything from PRO plan. Additionally, you will get access to monthly live Q&A video call with Rupesh and you can ask doubts/questions and get more help, tips and tricks.
 
-
-##  Do You Want to become full stack developer? :computer: 
-If you want to become full stack developer and grow your carrier as Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls. 
-- Please visit www.fullstackmaster.net/pro to subscribe to All Access PRO membership. 
-- Please visit www.fullstackmaster.net/elite to subscribe to All Access ELITE membership. You will get everything from PRO plan. Additionally you will get access to monthly live Q&A video call with Rupesh and ask doubts and get more tips and tricks.  
-
->You bright future is waiting for you so visit today www.fullstackmaster.net and allow me to help you to board on your dream software architect/lead role. 
-
-
-
----
-
-### :sparkling_heart: Contact Details: Say :wave: to me! 
-
-* Rupesh Tiwari
-* www.rupeshtiwari.com 
-* :email: <fullstackmaster1@gmail.com>
-* Founder of www.fullstackmaster.net :mortar_board:
-* [<img src="https://i.imgur.com/9OCLciM.png" width="295" height="65">](http://www.fullstackmaster.net)
-
+> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.
