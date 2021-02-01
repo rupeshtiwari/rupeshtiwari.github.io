@@ -40,7 +40,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/my-pluralsight-course/"
-description: ""
+description: "My First Pluralsight Course"
 ---
 <p>Hi everyone,</p>
 <p>I am very excited to announce that I became an author in <a href="http://pluralsight.com">Pluralsight.com</a> and my first course on Unit Testing with RxJS Marble Diagram is going to be published soon on 2019.</p>

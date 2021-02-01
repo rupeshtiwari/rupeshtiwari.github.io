@@ -86,7 +86,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/integrate-github-pages-in-angular-6-app/"
-description: ""
+description: "Integrate GitHub-Pages in Angular 6 App"
 ---
 <h2>What is GhPages</h2>
 <p>Do you want to save time to create post or article while writing software code ? Or do you want to see your angular app live running in the internet without deploying it separably on azure or AWS ? Then <a href="https://www.npmjs.com/package/ghpages" target="_blank" rel="noopener noreferrer">GhPages</a>&nbsp;or Github Pages is the answer to that.</p>

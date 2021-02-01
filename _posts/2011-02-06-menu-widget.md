@@ -33,7 +33,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/menu-widget/"
-description: ""
+description: "Menu Widget in jQuery"
 ---
 <p>
 				I was trying to make my own menu widget using jQuery and  I came with this below Widget.</p>

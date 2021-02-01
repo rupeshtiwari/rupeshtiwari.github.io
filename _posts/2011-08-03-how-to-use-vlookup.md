@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to use VLOOKUP
+title: How to use VLOOKUP in Microsoft Excel
 date: 2011-08-03 13:58:41.000000000 -04:00
 type: post
 
@@ -27,7 +27,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/how-to-use-vlookup/"
-description: ""
+description: "How to use VLOOKUP in Microsoft Excel"
 ---
 <p>
 				Today, I learned about one Excel Sheet Formula <strong>"VLOOKUP"</strong>. It is very useful formula that gives us the power to search a value in a particular column.  </p>

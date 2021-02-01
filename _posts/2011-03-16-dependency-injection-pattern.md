@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependency Injection Pattern
+title: Dependency Injection Patterns
 date: 2011-03-16 23:17:26.000000000 -04:00
 type: post
 
@@ -36,7 +36,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/dependency-injection-pattern/"
-description: ""
+description: "Dependency Injection Patterns"
 ---
 <p>
 				<span style="font-size:1.2em;font-family:calibri;"><br />

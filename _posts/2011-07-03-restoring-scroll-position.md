@@ -45,7 +45,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/restoring-scroll-position/"
-description: ""
+description: "Restoring Scroll Position in Html page"
 ---
 <p><span style="font-size: medium;">Suppose you are searching for a product in a shopping website and you got a big set of results. It normally comes in a grid view with a long scroll bar. Sometimes you scrolled to some end and selected a particular product and suppose because of some reason or you clicked some button and page got posted back. Normally now a days because of Ajax nobody does page post back. However, suppose it happened and now page again rendered. Now user has to again scroll the page to find out his/her product. From User Experience point of view it is not good and it is really annoying to scroll to multiple times when your page got posted.</span></p>
 <p>Therefore, we should keep the record of last scrolled position before rendering the grid view. We can do this by using one hidden field to store the last scrolled positions and we have to update the hidden field whenever user will scroll the page. While rendering the page we have to read the scroll position from the hidden field and set it to the page. This way we can solve our problem. I know there are multiple ways to do it.</p>

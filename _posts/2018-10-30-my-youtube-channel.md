@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Youtube Channel
+title: My YouTube Channel
 date: 2018-10-30 14:53:05.000000000 -04:00
 type: post
 
@@ -44,10 +44,10 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/my-youtube-channel/"
-description: ""
+description: "My YouTube Channel Fullstackmaster"
 ---
 <p>Hi everyone,</p>
-<p>I started my <a href="https://www.youtube.com/channel/UCfjBZHutgAYon-T8sqt1rwg">youtube channel</a> where I want to put some technical learning stuffs. I started putting RxJS videos over there. I hope it will be helpful please leave your comments and suggestions.&nbsp;https://www.youtube.com/channel/UCfjBZHutgAYon-T8sqt1rwg</p>
+<p>I started my <a href="https://www.youtube.com/fullstackmaster">FullstackMaster YouTube channel</a> where I want to put some technical learning stuffs. I started putting RxJS videos over there. I hope it will be helpful please leave your comments and suggestions.&nbsp;https://www.youtube.com/channel/UCfjBZHutgAYon-T8sqt1rwg</p>
 <p>&nbsp;</p>
 <p>[embed]https://www.youtube.com/watch?v=OQx9z1viWyc&amp;list=PLZed_adPqIJowj154vojDaR9zmtSh3m5z[/embed]</p>
 <p>&nbsp;</p>
