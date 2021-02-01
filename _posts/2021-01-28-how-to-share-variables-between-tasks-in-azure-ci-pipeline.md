@@ -1,20 +1,21 @@
 ---
 layout: post
 title: How to Share Variables Between Tasks in Azure CI Pipeline
-date: 2021-01-28 00:00 +0000
+date: '2021-01-28 00:00 +0000'
 subtitle: Learn sharing variable among azure ci tasks
 description: Learn sharing variable among azure ci tasks
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image:
-thumbnail-img:
-share-img:
-tags: devops,azure,tutorial,beginners
-last_modified_at:
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: null
+thumbnail-img: null
+share-img: null
+tags: 'devops,azure,tutorial,beginners'
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589366
 ---
 
 ## Passing variables between tasks in the same job
