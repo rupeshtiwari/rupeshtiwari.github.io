@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Publishing Jekyll Blog Post to Dev.to using GitHub CI/CD Pipeline
+title: 'Publishing Jekyll Blog Post to Dev.to using GitHub CI/CD Pipeline'
 date: 2021-02-01 15:03 -0500
-description: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
+description: 'Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post'
 tags:
   - blogs
   - jekyll
@@ -10,7 +10,7 @@ tags:
   - devto
 published: true
 sitemap: true
-subtitle: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
+subtitle: 'Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post'
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://i.imgur.com/EjB8KyG.png' 
 thumbnail-img: 'https://i.imgur.com/oKh8TiX.png'
