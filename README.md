@@ -8,6 +8,9 @@ Welcome to my blogs! You will learn what I learn!
 [jekyll-compose](https://github.com/jekyll/jekyll-compose)
 
 ## Writing blog
+Creating Published Post Directly
+
+`jekyll compose "My Testing Post"**`
 
 Adding draft blog
 
@@ -22,9 +25,7 @@ Publishing draft blog
 
 `jekyll publish _drafts/my-new-draft.md`
 
-Creating Published Post Directly
 
-`jekyll compose "My Testing Post"`
 
 ## Developer
 

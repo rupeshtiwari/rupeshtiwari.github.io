@@ -248,9 +248,9 @@ jekyll_compose:
       subtitle:
       description:
       # For Github Pages only Image Required
-      cover-img: "https://i.imgur.com/qUkAeSg.png"
+      cover-img: "https://i.imgur.com/hiQZ0BG.png"
       # For Dev.To Image with Title Required
-      cover_image: ""
+      cover_image: "1000 x 420 resolution"
       thumbnail-img:
       share-img:
       tags:
