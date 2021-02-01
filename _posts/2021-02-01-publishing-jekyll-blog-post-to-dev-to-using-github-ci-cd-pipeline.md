@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Publishing Jekyll Blog Post to DevTo using GitHub CI/CD Pipeline"
-date: '2021-02-01 15:03 -0500'
+date: "2021-02-01 15:03 -0500"
 description: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow"
 tags:
   - blogs
@@ -11,12 +11,12 @@ tags:
 published: true
 sitemap: true
 subtitle: "Learn how to publish your Jekyll Blog Post to DevTo using GitHub actions & workflow"
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
-cover_image: 'https://i.imgur.com/EjB8KyG.png'
-thumbnail-img: 'https://i.imgur.com/oKh8TiX.png'
-share-img: 'https://i.imgur.com/oKh8TiX.png'
-last_modified_at: '2021-02-01 15:03 -0500'
-excerpt_separator: '<!--more-->'
+cover-img: "https://i.imgur.com/hiQZ0BG.png"
+cover_image: "https://i.imgur.com/EjB8KyG.png"
+thumbnail-img: "https://i.imgur.com/oKh8TiX.png"
+share-img: "https://i.imgur.com/oKh8TiX.png"
+last_modified_at: "2021-02-01 15:03 -0500"
+excerpt_separator: "<!--more-->"
 ---
 
 If you have a blogging site using **Jekyll** and you want to publish your blogs to your **[Dev.To](https://dev.to)** account? Then read this article.
