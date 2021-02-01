@@ -9,7 +9,7 @@ cover_image: 'https://imgur.com/H43sJjo.png'
 thumbnail-img: 'https://imgur.com/6ySnUBQ.png'
 share-img: 'https://imgur.com/6ySnUBQ.png'
 tags: [nx, nrwl, angular, ckeditor]
-last_modified_at:
+last_modified_at: 2021-02-01 10:22 -0500
 published: true
 sitemap: true
 excerpt_separator: '<!--more-->'
