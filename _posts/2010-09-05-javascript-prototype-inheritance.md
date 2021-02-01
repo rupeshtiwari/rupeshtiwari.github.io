@@ -4,10 +4,6 @@ title: Prototypal Inheritance in JavaScript
 date: 2010-09-05 08:07:01.000000000 -04:00
 subtitle: In this Article I will explain what prototype is and how protoBy using Prototypal inheritance technique, we can create the instance of an object.
 description: In this Article I will explain what prototype is and how protoBy using Prototypal inheritance technique, we can create the instance of an object.
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: 1000 x 420 resolution
-thumbnail-img: https://i.imgur.com/hiQZ0BG.png
-share-img: https://i.imgur.com/hiQZ0BG.png
 tags: [JavaScript, ObjectOriented, prototypalInheritance]
 published: true
 sitemap: true

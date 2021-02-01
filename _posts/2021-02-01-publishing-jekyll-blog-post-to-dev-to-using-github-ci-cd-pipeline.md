@@ -4,32 +4,30 @@ title: Publishing Jekyll Blog Post to Dev.to using GitHub CI/CD Pipeline
 date: 2021-02-01 13:32 -0500
 subtitle: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
 description: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: 1000 x 420 resolution
-thumbnail-img: https://i.imgur.com/hiQZ0BG.png
-share-img: https://i.imgur.com/hiQZ0BG.png
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: https://i.imgur.com/hiQZ0BG.png
+thumbnail-img: 'https://i.imgur.com/hiQZ0BG.png'
+share-img: 'https://i.imgur.com/hiQZ0BG.png'
 tags: [blogs, jekyll, github, devto]
 last_modified_at: 2021-02-01 13:32 -0500
 published: true
 sitemap: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: '<!--more-->'
 ---
 
+If you have a blogging site using **Jekyll** and you want to publish your blogs to your **[Dev.To](https://dev.to)** account? Then read this article.
 
-If you have a blogging site using **Jekyll** and you want to publish your blogs to your **[Dev.To](https://dev.to)** account? Then read this article. 
-
-## Jekyll Project 
+## Jekyll Project
 
 I have my Jekyll project and I do have 1 post.
 
 ![](https://i.imgur.com/IpE6Lxb.png)
 
-
 ## Publish to dev.to Action
 
-I will use pre-built action by [sinedied/publish-devto](https://github.com/sinedied/publish-devto) to publish my post to dev.to. 
+I will use pre-built action by [sinedied/publish-devto](https://github.com/sinedied/publish-devto) to publish my post to dev.to.
 
-[Market Place  Publish to dev.to Action](https://github.com/marketplace/actions/publish-to-dev-to)
+[Market Place Publish to dev.to Action](https://github.com/marketplace/actions/publish-to-dev-to)
 
 ![](https://i.imgur.com/lJzRaRi.png)
 
@@ -49,15 +47,14 @@ The best size is 1000 x 420.
 **series**: post series name.
 
 ### ✍ Markdown Basics
+
 Below are some examples of commonly used markdown syntax. If you want to dive deeper, check out [this cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet).
 
-
-## Creating API Keys in Dev.To 
+## Creating API Keys in Dev.To
 
 Login to dev.to and then go to accounts and create new api key.
 
 ![](https://i.imgur.com/7ePWc0H.png)
-
 
 ## Creating Github Workflow
 
@@ -65,12 +62,11 @@ Lets create ".github/workflows/publish.yml" file.
 
 ![](https://i.imgur.com/UOlHCHi.png)
 
-
 It will publish post to dev.to/roopkt whenever merge or push happens to master branch.
 
 ```yaml=
 name: publish
-on:   
+on:
   push:
     branches:
       - master
@@ -95,10 +91,9 @@ jobs:
         conventional_commits: true
 ```
 
-
 ## Run GitHub CI/CD
 
-Lets update post and push the code to master branch. 
+Lets update post and push the code to master branch.
 
 ![](https://i.imgur.com/YXoXUh9.png)
 
@@ -118,12 +113,9 @@ Sometime you are not updating your blog rather fixing your site or updating abou
 
 ![](https://i.imgur.com/Mj2nC8m.png)
 
-
 Notice we have check in our Job to not run if message has '[skip ci]'
 
 ![](https://i.imgur.com/UNbCUX9.png)
-
-
 
 ## Become full stack developer 💻
 
