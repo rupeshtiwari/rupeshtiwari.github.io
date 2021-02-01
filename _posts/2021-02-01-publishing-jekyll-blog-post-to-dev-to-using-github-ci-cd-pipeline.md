@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Publishing Jekyll Blog Post to DevTo using GitHub CI and CD Pipeline
-subtitle: Learn how to post automatically to DevTo dashboard using GitHub CI and CD Pipeline from jekyll project
-description: Learn how to post automatically to DevTo dashboard using GitHub CI and CD Pipeline from jekyll project
 date: "2021-02-01 15:03 -0500"
 cover-img: "https://i.imgur.com/hiQZ0BG.png"
 cover_image: "https://i.imgur.com/TBAF05L.png"
