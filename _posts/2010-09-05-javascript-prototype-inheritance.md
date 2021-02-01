@@ -3,42 +3,25 @@ layout: post
 title: Prototypal Inheritance in JavaScript
 date: 2010-09-05 08:07:01.000000000 -04:00
 type: post
-
 published: true
-password: ''
 status: publish
 categories:
-- JavaScript
+  - JavaScript
 tags:
-- JavaScript
-- Object-Oriented
-- prototypal inheritance
-meta:
-  _edit_last: '1'
-  
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611082658;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:118;}i:1;a:1:{s:2:"id";i:2604;}i:2;a:1:{s:2:"id";i:295;}}}}
-  _publicize_twitter_user: "@roopkt"
-  _thumbnail_id: '1491'
-  _qode-like: '0'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: '424'
+  - JavaScript
+  - Object-Oriented
+  - prototypal inheritance
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/javascript-prototype-inheritance/"
-description: "In this Article I will explain what prototype is and how protoBy
-  using Prototypal inheritance technique, we can create the instance of an object."
+permalink: '/javascript-prototype-inheritance/'
+description: 'In this Article I will explain what prototype is and how protoBy
+  using Prototypal inheritance technique, we can create the instance of an object.'
 ---
+
 <p>There is a great article written by <a href="http://javascript.crockford.com/prototypal.html" target="_blank" rel="noopener noreferrer">Douglas Crockford</a>. I recommend everybody to read this article. By using Prototypal inheritance technique, we can create the instance of an object. Suppose, we have one object User, we want to create the instance of the user object and use it in different-2 places. In order to create the instance of an object, we can set the prototype property of an Constructor Function equal to the object and then we can instantiate that constructor function to create the instance of that object. Below is the create method that will help us to do so. This method is taken from Doug's article.</p>
 <pre class="EnlighterJSRAW" data-enlighter-language="null">/*
 creating a method that will pops up
@@ -105,14 +88,14 @@ user2.getName( );
 };</pre>
 <p>Now if we write below code to set and get the name property then each instance will have different or their own values.</p>
 <pre class="EnlighterJSRAW" data-enlighter-language="null">// creating one instance of User
-var user1 = Object.create(User); 
+var user1 = Object.create(User);
 
 //calling its init method
 user1.init( );
 
-/*
+/_
 Here we are adding to the same name property of the new instance of the User object.
-*/
+_/
 user1.addName("Rupesh");
 user1.getName( );
 // Result = Rupesh
@@ -123,6 +106,7 @@ user2.init( );
 user2.addName("Ritesh");
 user2.getName( );
 // Result = Ritesh</pre>
+
 <p>Now the `user1.getName()` will return Rupesh and `user2.getName()` will return Ritesh. Because, now obj1 and obj2 will have common shared methods but they will have their own distinct <strong>name </strong>properties.</p>
 <h2>Conclusion</h2>
 <p>I think, I was able to explain the prototypal inheritance clearly. If you have any suggestions then plz put your comments, I want to learn more from you.</p>
