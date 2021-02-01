@@ -3,7 +3,7 @@ layout: post
 title: Add Item To Cart Use case – RxJS
 date: 2020-06-08 06:00:14.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

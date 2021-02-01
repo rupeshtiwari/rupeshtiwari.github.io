@@ -3,7 +3,7 @@ layout: post
 title: Mini-Logger – Angular Dependency Injection Project coding
 date: 2019-08-12 06:00:28.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

@@ -3,7 +3,7 @@ layout: post
 title: Adding Login component in our angular app - Demo
 date: 2020-01-20 06:00:05.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

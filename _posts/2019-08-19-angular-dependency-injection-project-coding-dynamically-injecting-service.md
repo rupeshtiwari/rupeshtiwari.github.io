@@ -3,7 +3,7 @@ layout: post
 title: Dynamically Injecting Service - Angular Dependency Injection Project coding
 date: 2019-08-19 06:00:59.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

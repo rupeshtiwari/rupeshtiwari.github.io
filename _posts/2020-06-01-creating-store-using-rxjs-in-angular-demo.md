@@ -3,7 +3,7 @@ layout: post
 title: Creating Store Using RxJS in Angular - Demo
 date: 2020-06-01 06:00:37.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

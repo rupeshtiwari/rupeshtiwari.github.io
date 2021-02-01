@@ -3,7 +3,7 @@ layout: post
 title: Integrating Card Component from Angular CLI - Demo
 date: 2019-12-30 06:00:36.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

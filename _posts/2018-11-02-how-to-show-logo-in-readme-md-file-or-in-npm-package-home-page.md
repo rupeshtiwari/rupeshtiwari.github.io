@@ -3,7 +3,7 @@ layout: post
 title: How to Show Logo in ReadMe.Md file or in npm Package Home Page
 date: 2018-11-02 12:06:26.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

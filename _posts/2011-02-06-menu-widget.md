@@ -3,7 +3,7 @@ layout: post
 title: Menu Widget
 date: 2011-02-06 17:42:47.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

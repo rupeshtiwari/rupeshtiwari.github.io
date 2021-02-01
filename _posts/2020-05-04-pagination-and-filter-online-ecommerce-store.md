@@ -3,7 +3,7 @@ layout: post
 title: Pagination and Filter – online ecommerce store
 date: 2020-05-04 06:00:23.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

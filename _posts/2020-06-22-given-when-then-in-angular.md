@@ -3,7 +3,7 @@ layout: post
 title: Given When Then in Angular
 date: 2020-06-22 06:00:37.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

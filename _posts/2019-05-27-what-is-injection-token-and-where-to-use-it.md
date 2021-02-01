@@ -3,7 +3,7 @@ layout: post
 title: What is Injection Token and Where to use it?
 date: 2019-05-27 05:12:00.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

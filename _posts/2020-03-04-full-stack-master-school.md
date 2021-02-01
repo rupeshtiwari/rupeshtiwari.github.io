@@ -3,7 +3,7 @@ layout: post
 title: full stack master school
 date: 2020-03-04 23:15:00.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

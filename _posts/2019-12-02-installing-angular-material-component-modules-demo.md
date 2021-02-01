@@ -3,7 +3,7 @@ layout: post
 title: Installing Angular Material component modules - Demo
 date: 2019-12-02 06:00:05.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

@@ -3,7 +3,7 @@ layout: post
 title: Creating Registration Component in angular app - Demo
 date: 2020-01-27 06:00:35.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

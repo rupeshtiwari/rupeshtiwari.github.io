@@ -3,7 +3,7 @@ layout: post
 title: Difference between Server-side and Client-side Code
 date: 2020-06-29 06:00:50.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

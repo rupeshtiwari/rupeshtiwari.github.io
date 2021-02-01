@@ -3,7 +3,7 @@ layout: post
 title: Closure With Example - Essential JavaScript Concepts
 date: 2019-08-29 06:00:48.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

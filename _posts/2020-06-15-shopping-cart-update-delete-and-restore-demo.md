@@ -3,7 +3,7 @@ layout: post
 title: Shopping Cart- Update Delete And Restore – Demo
 date: 2020-06-15 06:00:47.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

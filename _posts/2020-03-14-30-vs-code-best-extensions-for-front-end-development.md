@@ -3,7 +3,7 @@ layout: post
 title: 30 vs code BEST EXTENSIONS for front end development
 date: 2020-03-14 09:00:00.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

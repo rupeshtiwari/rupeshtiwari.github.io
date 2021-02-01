@@ -3,7 +3,7 @@ layout: post
 title: What is the Scope of Dependency in Angular?
 date: 2019-05-27 05:38:46.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

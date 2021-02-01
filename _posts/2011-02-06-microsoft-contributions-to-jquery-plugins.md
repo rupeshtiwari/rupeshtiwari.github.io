@@ -3,7 +3,7 @@ layout: post
 title: Microsoft contributions to jQuery Plugins
 date: 2011-02-06 22:21:12.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

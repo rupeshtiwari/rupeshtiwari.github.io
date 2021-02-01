@@ -3,7 +3,7 @@ layout: post
 title: Integrating Restful API in Angular App - Demo
 date: 2020-02-17 06:00:16.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

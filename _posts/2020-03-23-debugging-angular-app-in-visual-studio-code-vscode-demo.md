@@ -3,7 +3,7 @@ layout: post
 title: Debugging Angular App in Visual Studio Code (VSCode) - Demo
 date: 2020-03-23 06:00:48.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

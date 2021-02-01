@@ -3,7 +3,7 @@ layout: post
 title: Get started with Angular
 date: 2019-04-22 04:37:11.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

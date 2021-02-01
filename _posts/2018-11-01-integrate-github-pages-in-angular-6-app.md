@@ -3,7 +3,7 @@ layout: post
 title: Integrate GitHub-Pages in Angular 6 App
 date: 2018-11-01 23:31:50.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

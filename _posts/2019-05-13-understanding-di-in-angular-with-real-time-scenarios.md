@@ -3,7 +3,7 @@ layout: post
 title: Understanding DI in Angular with real time scenarios
 date: 2019-05-13 06:00:10.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

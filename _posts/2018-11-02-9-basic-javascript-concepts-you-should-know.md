@@ -3,7 +3,7 @@ layout: post
 title: 9 Basic JavaScript Concepts You should know
 date: 2018-11-02 18:14:41.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

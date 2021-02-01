@@ -3,7 +3,7 @@ layout: post
 title: Benefits of Components based application
 date: 2019-05-23 07:22:24.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

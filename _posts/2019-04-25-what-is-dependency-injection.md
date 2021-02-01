@@ -3,7 +3,7 @@ layout: post
 title: What is Dependency Injection?
 date: 2019-04-25 07:30:23.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

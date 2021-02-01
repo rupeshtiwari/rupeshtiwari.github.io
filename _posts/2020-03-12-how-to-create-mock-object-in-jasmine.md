@@ -3,7 +3,7 @@ layout: post
 title: how to create mock object in jasmine
 date: 2020-03-12 11:03:00.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

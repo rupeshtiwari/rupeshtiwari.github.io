@@ -3,7 +3,7 @@ layout: post
 title: JavaScript Module Pattern
 date: 2011-09-09 10:00:34.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

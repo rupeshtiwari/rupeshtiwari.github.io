@@ -3,7 +3,7 @@ layout: post
 title: 'Prototype Pattern: Essential JavaScript Concepts'
 date: 2019-09-30 06:00:15.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

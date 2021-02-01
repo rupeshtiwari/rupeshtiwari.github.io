@@ -3,7 +3,7 @@ layout: post
 title: What are providers & its various types in Angular?
 date: 2019-06-27 02:29:54.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

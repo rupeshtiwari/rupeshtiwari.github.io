@@ -3,7 +3,7 @@ layout: post
 title: 'Methods to change Context – CALL and APPLY: Essential JavaScript Concepts'
 date: 2019-09-09 06:00:10.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

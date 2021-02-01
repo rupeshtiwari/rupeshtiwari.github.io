@@ -3,7 +3,7 @@ layout: post
 title: Understanding RxJS BehaviorSubject, ReplaySubject and AsyncSubject
 date: 2019-06-15 10:50:04.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

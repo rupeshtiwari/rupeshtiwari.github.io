@@ -3,7 +3,7 @@ layout: post
 title: Sending xml data from one page to other page without using session state.
 date: 2010-12-27 15:10:22.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

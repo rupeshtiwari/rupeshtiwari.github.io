@@ -3,7 +3,7 @@ layout: post
 title: Angular Dependency Injection Project coding – Inject Base URL
 date: 2019-08-08 06:00:32.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

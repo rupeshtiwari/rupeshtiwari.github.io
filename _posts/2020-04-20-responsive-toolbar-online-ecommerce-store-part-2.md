@@ -3,7 +3,7 @@ layout: post
 title: Responsive Toolbar - Online ecommerce Store Part 2
 date: 2020-04-20 06:00:04.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

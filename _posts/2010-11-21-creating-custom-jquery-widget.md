@@ -3,7 +3,7 @@ layout: post
 title: Creating Custom jQuery Widget
 date: 2010-11-21 18:46:48.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish
@@ -13,7 +13,7 @@ tags:
 - JQuery
 meta:
   _edit_last: '1'
-  _wp_old_slug: ''
+  
   _publicize_twitter_user: "@roopkt"
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609226441;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:278;}i:1;a:1:{s:2:"id";i:361;}i:2;a:1:{s:2:"id";i:275;}}}}
   _qode-like: '0'

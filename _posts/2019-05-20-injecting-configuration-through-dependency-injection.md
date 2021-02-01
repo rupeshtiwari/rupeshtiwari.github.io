@@ -3,7 +3,7 @@ layout: post
 title: Injecting Configuration through Dependency Injection
 date: 2019-05-20 05:23:52.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

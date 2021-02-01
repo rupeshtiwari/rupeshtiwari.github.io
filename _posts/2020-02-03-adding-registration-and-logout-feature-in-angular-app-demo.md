@@ -3,7 +3,7 @@ layout: post
 title: Adding Registration and Logout feature in angular app - Demo
 date: 2020-02-03 06:00:12.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

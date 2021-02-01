@@ -3,7 +3,7 @@ layout: post
 title: Open/Closed principle is never 100% closed
 date: 2011-01-01 19:25:38.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

@@ -3,7 +3,7 @@ layout: post
 title: Use case vs user story
 date: 2020-06-27 20:12:00.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

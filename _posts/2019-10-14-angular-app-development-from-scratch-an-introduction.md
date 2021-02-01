@@ -3,7 +3,7 @@ layout: post
 title: 'Angular app development from scratch: an Introduction'
 date: 2019-10-14 06:00:24.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

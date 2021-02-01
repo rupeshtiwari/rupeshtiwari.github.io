@@ -4,7 +4,7 @@ title: Integrating angular material, products listing and local server deploymen
   - Angular app development
 date: 2019-11-11 06:00:44.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

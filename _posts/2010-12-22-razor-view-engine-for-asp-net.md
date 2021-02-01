@@ -3,7 +3,7 @@ layout: post
 title: ASP.Net MVC 3 introduces Razor a new view engine
 date: 2010-12-22 23:08:54.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

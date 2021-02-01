@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Heroku Deploying Node.js App to Cloud
 date: 2019-06-15 09:30:00.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

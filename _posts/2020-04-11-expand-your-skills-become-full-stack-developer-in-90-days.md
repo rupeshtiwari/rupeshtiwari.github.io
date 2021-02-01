@@ -3,7 +3,7 @@ layout: post
 title: Expand your skills & become full stack developer in 90 days
 date: 2020-04-11 14:24:46.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

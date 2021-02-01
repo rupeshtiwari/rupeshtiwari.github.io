@@ -3,7 +3,7 @@ layout: post
 title: Installing & Configuring Mongo DB in our angular app - Demo
 date: 2020-02-24 06:00:47.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

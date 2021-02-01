@@ -3,7 +3,7 @@ layout: post
 title: Dependency Injection Pattern
 date: 2011-03-16 23:17:26.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

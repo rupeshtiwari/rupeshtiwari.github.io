@@ -3,7 +3,7 @@ layout: post
 title: Establishing Goals
 date: 2018-11-20 20:52:32.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

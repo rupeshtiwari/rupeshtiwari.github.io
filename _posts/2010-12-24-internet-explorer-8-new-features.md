@@ -3,7 +3,7 @@ layout: post
 title: Internet Explorer 8 - new features
 date: 2010-12-24 19:58:06.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

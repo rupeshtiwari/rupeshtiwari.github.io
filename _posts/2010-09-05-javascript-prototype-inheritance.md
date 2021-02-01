@@ -3,7 +3,7 @@ layout: post
 title: Prototypal Inheritance in JavaScript
 date: 2010-09-05 08:07:01.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish
@@ -15,7 +15,7 @@ tags:
 - prototypal inheritance
 meta:
   _edit_last: '1'
-  _wp_old_slug: ''
+  
   _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611082658;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:118;}i:1;a:1:{s:2:"id";i:2604;}i:2;a:1:{s:2:"id";i:295;}}}}
   _publicize_twitter_user: "@roopkt"
   _thumbnail_id: '1491'

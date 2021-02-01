@@ -3,7 +3,7 @@ layout: post
 title: Creating Typescript Library using Webpack
 date: 2018-11-23 05:43:35.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

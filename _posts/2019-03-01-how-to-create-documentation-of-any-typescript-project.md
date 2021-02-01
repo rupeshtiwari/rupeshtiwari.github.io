@@ -3,7 +3,7 @@ layout: post
 title: How to create API Documentation of any Typescript Project?
 date: 2019-03-01 19:28:50.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

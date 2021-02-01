@@ -3,7 +3,7 @@ layout: post
 title: My Pluralsight Course
 date: 2018-10-30 15:04:15.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

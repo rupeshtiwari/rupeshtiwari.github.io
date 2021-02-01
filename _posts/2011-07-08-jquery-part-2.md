@@ -3,7 +3,7 @@ layout: post
 title: Basics of jQuery
 date: 2011-07-08 15:46:16.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

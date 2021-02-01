@@ -3,7 +3,7 @@ layout: post
 title: 'jTip: jQuery Custom Tool Tip'
 date: 2010-12-19 07:24:04.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

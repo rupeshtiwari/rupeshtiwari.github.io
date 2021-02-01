@@ -3,7 +3,7 @@ layout: post
 title: How JWT Authentication overcomes shortcomings of other authentication types
 date: 2020-07-27 06:00:51.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

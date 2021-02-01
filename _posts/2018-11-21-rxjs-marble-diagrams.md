@@ -3,7 +3,7 @@ layout: post
 title: RxJS Marble Diagrams
 date: 2018-11-21 21:29:53.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

@@ -3,7 +3,7 @@ layout: post
 title: Environment setup & Installation- Angular app development
 date: 2019-10-28 06:00:55.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

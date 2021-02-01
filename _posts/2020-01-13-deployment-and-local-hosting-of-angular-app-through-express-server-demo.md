@@ -3,7 +3,7 @@ layout: post
 title: Deployment and local hosting of angular app through Express server - Demo
 date: 2020-01-13 06:00:43.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

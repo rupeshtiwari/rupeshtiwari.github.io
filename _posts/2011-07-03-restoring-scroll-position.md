@@ -3,7 +3,7 @@ layout: post
 title: Restoring Scroll Position
 date: 2011-07-03 20:00:07.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

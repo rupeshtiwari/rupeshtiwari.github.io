@@ -3,7 +3,7 @@ layout: post
 title: Comparison between React, Angular and Vue.Js
 date: 2019-05-23 07:36:33.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

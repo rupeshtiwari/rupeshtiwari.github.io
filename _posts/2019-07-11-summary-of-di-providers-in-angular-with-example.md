@@ -3,7 +3,7 @@ layout: post
 title: Summary of DI providers in angular with example
 date: 2019-07-11 10:53:23.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

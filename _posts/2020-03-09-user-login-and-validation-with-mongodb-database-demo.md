@@ -3,7 +3,7 @@ layout: post
 title: User Login and validation with MongoDB database - Demo
 date: 2020-03-09 06:00:44.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

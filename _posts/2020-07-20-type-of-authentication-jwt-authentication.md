@@ -3,7 +3,7 @@ layout: post
 title: Type of Authentication - JWT Authentication
 date: 2020-07-20 06:00:40.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

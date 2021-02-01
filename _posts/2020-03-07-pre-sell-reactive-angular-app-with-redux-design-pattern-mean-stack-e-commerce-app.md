@@ -4,7 +4,7 @@ title: Pre sell Reactive Angular App with Redux Design Pattern MEAN stack e-Comm
   App
 date: 2020-03-07 09:00:00.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

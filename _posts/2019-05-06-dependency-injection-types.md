@@ -3,7 +3,7 @@ layout: post
 title: Dependency Injection Types
 date: 2019-05-06 05:51:40.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

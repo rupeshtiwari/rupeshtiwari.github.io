@@ -3,7 +3,7 @@ layout: post
 title: Debugging Server Side Code on Visual Studio Code - Demo
 date: 2020-03-16 06:00:03.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

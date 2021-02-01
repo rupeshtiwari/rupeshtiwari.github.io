@@ -3,7 +3,7 @@ layout: post
 title: How to kill all node process in your Angular/Node.JS App?
 date: 2019-02-26 20:02:04.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

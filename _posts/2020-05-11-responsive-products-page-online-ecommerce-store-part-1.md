@@ -3,7 +3,7 @@ layout: post
 title: Responsive Products Page – online ecommerce store part 1
 date: 2020-05-11 06:00:48.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

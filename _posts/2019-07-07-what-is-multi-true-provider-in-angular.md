@@ -3,7 +3,7 @@ layout: post
 title: What is multi True provider in angular?
 date: 2019-07-07 10:12:00.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

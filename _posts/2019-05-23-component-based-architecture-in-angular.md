@@ -3,7 +3,7 @@ layout: post
 title: Component based Architecture in Angular
 date: 2019-05-23 07:12:57.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

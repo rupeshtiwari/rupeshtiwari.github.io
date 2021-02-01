@@ -3,7 +3,7 @@ layout: post
 title: Angular onPush Change Detection Strategy User Login Page - Demo
 date: 2020-05-25 06:00:12.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

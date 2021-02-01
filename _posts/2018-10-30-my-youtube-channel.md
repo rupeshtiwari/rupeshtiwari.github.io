@@ -3,7 +3,7 @@ layout: post
 title: My Youtube Channel
 date: 2018-10-30 14:53:05.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

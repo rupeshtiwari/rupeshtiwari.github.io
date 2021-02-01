@@ -3,7 +3,7 @@ layout: post
 title: SETTING UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM SCRATCH
 date: 2019-06-01 10:02:20.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

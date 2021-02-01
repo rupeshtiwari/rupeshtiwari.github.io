@@ -3,7 +3,7 @@ layout: post
 title: Creating Angular Component & Lazy Loaded Module - Demo
 date: 2019-12-09 06:00:48.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

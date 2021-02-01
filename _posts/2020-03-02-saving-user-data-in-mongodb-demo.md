@@ -3,7 +3,7 @@ layout: post
 title: Saving User data in MongoDB - Demo
 date: 2020-03-02 06:00:22.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

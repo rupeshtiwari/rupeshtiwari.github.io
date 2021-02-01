@@ -3,7 +3,7 @@ layout: post
 title: Integrating Toolbar Component from Angular CLI - Demo
 date: 2020-01-06 06:00:12.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

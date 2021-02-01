@@ -3,7 +3,7 @@ layout: post
 title: How to use VLOOKUP
 date: 2011-08-03 13:58:41.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

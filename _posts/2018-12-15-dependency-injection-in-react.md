@@ -3,7 +3,7 @@ layout: post
 title: Dependency Injection in React Core
 date: 2018-12-15 23:30:16.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

@@ -3,7 +3,7 @@ layout: post
 title: Use Existing provider practical example
 date: 2019-07-08 10:26:39.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

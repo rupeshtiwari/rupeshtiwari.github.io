@@ -3,7 +3,7 @@ layout: post
 title: Products page & Lazy Loaded Module - Demo
 date: 2019-12-16 06:00:14.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

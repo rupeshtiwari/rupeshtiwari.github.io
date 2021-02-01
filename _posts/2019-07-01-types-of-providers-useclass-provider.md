@@ -3,7 +3,7 @@ layout: post
 title: Types of Providers -UseClass Provider
 date: 2019-07-01 02:56:48.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

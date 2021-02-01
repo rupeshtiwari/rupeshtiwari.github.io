@@ -4,7 +4,7 @@ title: Creating Mobile compatible Responsive Login and Register Page - Online ec
   Store
 date: 2020-04-27 06:00:18.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

@@ -3,7 +3,7 @@ layout: post
 title: Why Express.JS with Typescript
 date: 2019-02-25 20:23:52.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

@@ -3,7 +3,7 @@ layout: post
 title: Angular Dependency Injection Project coding – http Logger
 date: 2019-08-05 06:00:03.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

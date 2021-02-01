@@ -3,7 +3,7 @@ layout: post
 title: Domain Driven Design Philosophy
 date: 2018-11-04 21:06:14.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

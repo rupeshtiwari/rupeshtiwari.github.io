@@ -3,7 +3,7 @@ layout: post
 title: Creating Angular Service & Showing Products from JSON file - Demo
 date: 2019-12-23 06:00:44.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

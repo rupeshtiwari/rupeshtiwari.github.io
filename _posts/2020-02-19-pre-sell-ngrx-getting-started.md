@@ -3,7 +3,7 @@ layout: post
 title: 'Pre sell NgRX: Getting Started'
 date: 2020-02-19 23:10:00.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

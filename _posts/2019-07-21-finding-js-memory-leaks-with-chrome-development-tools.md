@@ -3,7 +3,7 @@ layout: post
 title: Finding JS Memory leaks with chrome development tools
 date: 2019-07-21 12:23:39.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

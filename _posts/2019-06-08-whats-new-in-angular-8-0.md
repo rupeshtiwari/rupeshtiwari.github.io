@@ -3,7 +3,7 @@ layout: post
 title: What's new in Angular 8.0?
 date: 2019-06-08 09:45:23.000000000 -04:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

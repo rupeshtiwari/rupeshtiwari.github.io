@@ -3,7 +3,7 @@ layout: post
 title: How to do Html Form Validation using RxJS
 date: 2019-03-04 19:09:44.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish

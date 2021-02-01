@@ -3,7 +3,7 @@ layout: post
 title: Decorators in Typescript and Angular
 date: 2018-12-03 13:57:46.000000000 -05:00
 type: post
-parent_id: '0'
+
 published: true
 password: ''
 status: publish
