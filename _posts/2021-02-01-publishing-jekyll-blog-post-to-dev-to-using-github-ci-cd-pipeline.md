@@ -13,10 +13,11 @@ tags:
   - jekyll
   - github
   - devto
-last_modified_at: "2021-02-01 15:03 -0500"
+last_modified_at: '2021-02-01 15:03 -0500'
 published: true
 sitemap: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589272
 ---
 
 If you have a blogging site using **Jekyll** and you want to publish your blogs to your **[Dev.To](https://dev.to)** account? Then read this article.
