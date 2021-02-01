@@ -1,6 +1,8 @@
 ---
 layout: post
-tags: [devops, yml]
+tags:
+  - devops
+  - yml
 date: '2021-01-28 19:32 -0500'
 title: Introduction to YAML
 description: Introduction to YAML
@@ -11,6 +13,7 @@ share-img: 'https://i.imgur.com/jZQbmj4.jpg'
 published: true
 sitemap: true
 excerpt_separator: <!--more-->
+id: 589332
 ---
 
 <a href="/azure">
