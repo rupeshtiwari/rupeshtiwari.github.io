@@ -5,9 +5,9 @@ date: 2021-02-01 13:32 -0500
 subtitle: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
 description: Learn how to use publish dev.to GitHub action to create new workflow to publish your Jekyll Blog Post to Dev.to post
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
-cover_image: https://i.imgur.com/hiQZ0BG.png
-thumbnail-img: 'https://i.imgur.com/hiQZ0BG.png'
-share-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: https://i.imgur.com/EjB8KyG.png
+thumbnail-img: 'https://i.imgur.com/p7xnrt3.png'
+share-img: 'https://i.imgur.com/p7xnrt3.png'
 tags: [blogs, jekyll, github, devto]
 last_modified_at: 2021-02-01 13:32 -0500
 published: true
