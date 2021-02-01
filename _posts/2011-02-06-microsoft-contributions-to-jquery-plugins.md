@@ -34,7 +34,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: "/microsoft-contributions-to-jquery-plugins/"
-description: ""
+description: "Microsoft contributions to jQuery Plugins"
 ---
 <p>
 				<span style="font-family:Calibri;font-size:large;">Almost 3 years ago Scottgu </span><a href="http://weblogs.asp.net/scottgu/archive/2008/09/28/jquery-and-microsoft.aspx" target="_blank" rel="noopener noreferrer">announced</a><span style="font-family:Calibri;font-size:large;"> that Microsoft would begin offering product support for jQuery. Now </span><span style="font-size:large;"><span style="font-family:Calibri;">﻿﻿﻿Microsoft is pla﻿ying a great role on contributing to jQuery plugin.&nbsp;From&nbsp;past 8 to 9 months they were striving on 3 major jQuery plugins.</span></span></p>
