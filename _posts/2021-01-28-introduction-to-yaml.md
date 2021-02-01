@@ -2,7 +2,8 @@
 layout: post
 tags:
   - devops
-  - yml
+  - yaml
+  - tutorial
 date: '2021-01-28 19:32 -0500'
 title: Introduction to YAML
 description: Introduction to YAML
@@ -16,9 +17,10 @@ excerpt_separator: <!--more-->
 id: 589332
 ---
 
-<a href="/azure">
-  <span class="crayons-avatar"><img src="https://i.imgur.com/Eqpy465.png" class="crayons-avatar__image" alt="Microsoft Azure profile imag" /></span> Microsoft Azure
-  </a>
+
+
+
+  
 
 `Yaml` files are used in Azure Pipelines for build and release definition. Yaml files are also used in GitHub build and release. 
 Yaml is designed to be clean and easy to read.  
