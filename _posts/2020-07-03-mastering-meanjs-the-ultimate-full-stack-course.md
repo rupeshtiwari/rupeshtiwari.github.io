@@ -5,8 +5,8 @@ date: 2020-07-03 02:26:05.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories: []
 tags: []
 meta:

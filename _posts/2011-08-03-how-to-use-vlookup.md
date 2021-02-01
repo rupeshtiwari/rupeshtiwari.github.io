@@ -5,8 +5,8 @@ date: 2011-08-03 13:58:41.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Excel
 tags:

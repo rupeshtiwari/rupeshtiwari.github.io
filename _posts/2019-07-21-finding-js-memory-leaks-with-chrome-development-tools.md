@@ -5,8 +5,8 @@ date: 2019-07-21 12:23:39.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - JavaScript
 tags:

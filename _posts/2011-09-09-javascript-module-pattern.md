@@ -5,8 +5,8 @@ date: 2011-09-09 10:00:34.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Design Patterns
 - JavaScriipt

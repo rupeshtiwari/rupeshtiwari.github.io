@@ -5,8 +5,8 @@ date: 2011-07-08 15:46:16.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - jQuery
 tags: []

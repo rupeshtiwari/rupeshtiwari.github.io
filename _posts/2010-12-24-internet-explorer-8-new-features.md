@@ -5,8 +5,8 @@ date: 2010-12-24 19:58:06.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Internet Explorer 8
 tags:

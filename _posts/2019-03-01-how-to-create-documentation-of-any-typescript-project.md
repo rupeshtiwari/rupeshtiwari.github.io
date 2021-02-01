@@ -5,8 +5,8 @@ date: 2019-03-01 19:28:50.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - JavaScript
 - NodeJS

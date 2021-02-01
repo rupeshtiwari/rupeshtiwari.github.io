@@ -5,8 +5,8 @@ date: 2019-06-01 10:00:12.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - RxJS
 tags:

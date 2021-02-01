@@ -5,8 +5,8 @@ date: 2019-04-18 05:51:05.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Interview
 tags: []

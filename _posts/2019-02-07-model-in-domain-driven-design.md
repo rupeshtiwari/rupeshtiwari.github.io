@@ -5,8 +5,8 @@ date: 2019-02-07 07:00:12.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - DDD
 - Domain Driven Design ( DDD )

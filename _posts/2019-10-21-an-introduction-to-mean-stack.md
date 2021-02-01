@@ -5,8 +5,8 @@ date: 2019-10-21 06:00:46.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - AngularJS
 - Express.JS

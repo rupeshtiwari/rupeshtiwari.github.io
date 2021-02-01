@@ -5,8 +5,8 @@ date: 2019-08-01 06:00:41.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Angular
 - Dependency Injection

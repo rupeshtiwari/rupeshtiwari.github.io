@@ -5,8 +5,8 @@ date: 2011-06-27 10:25:54.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - ASP.Net
 tags:

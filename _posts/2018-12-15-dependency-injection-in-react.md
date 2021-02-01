@@ -5,8 +5,8 @@ date: 2018-12-15 23:30:16.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Dependency Injection
 - Design Patterns

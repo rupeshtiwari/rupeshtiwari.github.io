@@ -5,8 +5,8 @@ date: 2018-10-30 15:04:15.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Authoring
 - Pluralsight

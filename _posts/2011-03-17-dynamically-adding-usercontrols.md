@@ -5,8 +5,8 @@ date: 2011-03-17 20:20:51.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - ASP.Net
 - C#

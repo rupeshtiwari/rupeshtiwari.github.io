@@ -244,6 +244,8 @@ jekyll_compose:
       last_modified_at:
       published: true
       sitemap: true
+      comments: true
+      social-share: true
       excerpt_separator: <!--more-->
     posts:
       subtitle:
@@ -256,4 +258,6 @@ jekyll_compose:
       last_modified_at:
       published: true
       sitemap: true
+      comments: true
+      social-share: true
       excerpt_separator: <!--more-->

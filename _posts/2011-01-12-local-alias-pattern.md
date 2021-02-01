@@ -5,8 +5,8 @@ date: 2011-01-12 00:00:06.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Design Patterns
 - JavaScript

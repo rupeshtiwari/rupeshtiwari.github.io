@@ -5,8 +5,8 @@ date: 2011-03-16 23:17:26.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Design Patterns
 tags:

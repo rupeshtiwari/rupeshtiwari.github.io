@@ -5,8 +5,8 @@ date: 2010-12-27 15:10:22.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - ASP.Net
 - jQuery

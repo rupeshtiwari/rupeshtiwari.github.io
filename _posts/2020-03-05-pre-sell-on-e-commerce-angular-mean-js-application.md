@@ -5,8 +5,8 @@ date: 2020-03-05 22:48:00.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories: []
 tags:
 - Angular

@@ -5,8 +5,8 @@ date: 2011-02-06 22:21:12.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - ASP.Net
 - jQuery
@@ -62,7 +62,7 @@ description: ""
 &lt;h3&gt;${name} = $(formatCurrency(price)})&lt;/h3&gt;<br />
 &lt;img&amp;nbsp;src =&quot;Products/${picture}&quot;/&gt;<br />
 &lt;p&gt;<br />
-{{html description}}<br />
+html description<br />
 &lt;/p&gt;<br />
 &lt;/div&gt;<br />
 &lt;/script&gt;<br />

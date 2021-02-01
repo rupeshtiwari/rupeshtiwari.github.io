@@ -5,8 +5,8 @@ date: 2010-12-22 23:08:54.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - ASP.Net
 - Asp.Net MVC

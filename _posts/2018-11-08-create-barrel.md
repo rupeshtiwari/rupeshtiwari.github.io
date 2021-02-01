@@ -5,8 +5,8 @@ date: 2018-11-08 17:34:49.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - JavaScript
 tags:

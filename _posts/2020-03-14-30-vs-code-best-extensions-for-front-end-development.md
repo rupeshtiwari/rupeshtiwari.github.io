@@ -5,8 +5,8 @@ date: 2020-03-14 09:00:00.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - VSCode
 tags:

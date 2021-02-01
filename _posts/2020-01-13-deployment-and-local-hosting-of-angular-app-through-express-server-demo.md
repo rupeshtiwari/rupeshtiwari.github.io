@@ -5,8 +5,8 @@ date: 2020-01-13 06:00:43.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Angular
 - JavaScript

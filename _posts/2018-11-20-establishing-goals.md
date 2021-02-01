@@ -5,8 +5,8 @@ date: 2018-11-20 20:52:32.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Communication
 - Personal Development

@@ -5,8 +5,8 @@ date: 2018-11-01 23:31:50.000000000 -04:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Angular
 - JavaScript

@@ -5,8 +5,8 @@ date: 2020-02-22 23:05:27.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - CSS
 - Express.JS

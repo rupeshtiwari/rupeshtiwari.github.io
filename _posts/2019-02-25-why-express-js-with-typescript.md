@@ -5,8 +5,8 @@ date: 2019-02-25 20:23:52.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - Express.JS
 - JavaScript

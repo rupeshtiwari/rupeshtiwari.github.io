@@ -5,8 +5,8 @@ date: 2019-02-26 20:02:04.000000000 -05:00
 type: post
 
 published: true
-password: ''
-status: publish
+comments: true
+social-share: true
 categories:
 - JavaScript
 - NodeJS
