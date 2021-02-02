@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Enforcing Dependency Constraints in Nx Monorepo Projects
-date: 2021-01-25 00:00 +0000
-subtitle:
-description:
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/hiQZ0BG.png
-thumbnail-img: https://i.imgur.com/hiQZ0BG.png
-share-img: https://i.imgur.com/hiQZ0BG.png
+date: '2021-01-25 00:00 +0000'
+subtitle: null
+description: null
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/hiQZ0BG.png'
+thumbnail-img: 'https://i.imgur.com/hiQZ0BG.png'
+share-img: 'https://i.imgur.com/hiQZ0BG.png'
 tags: 'nx,monorepo,tooling,angular'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590311
 ---
 
 > Are you using [NRWL/NX monorepo](https://nx.dev/) in your company? and you are worried how to configure dependencies so that you can better control your projects? I use `nx dependency constraints` to restrict which project can depend on whom just like you do in `.net` or `java` or any typed language. Read this article to understand how you can configure dependency constraint and visualize your monorepo workspace dependency graph.
