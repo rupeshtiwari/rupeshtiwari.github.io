@@ -115,8 +115,8 @@ Updating build number
 Displaying new build number
 ![](https://i.imgur.com/e1k5FWV.png)
 
-
 --- 
+
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have All-Access Monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
@@ -126,10 +126,9 @@ If you want to become full stack developer and grow your carrier as new software
 
 > You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.
 
-
 --- 
 ### 💖 Say 👋 to me! 
- 
+
 Rupesh Tiwari <br/>
 [www.rupeshtiwari.com](https://www.rupeshtiwari.com)<br/>
 ✉️ <a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a> <br/>
