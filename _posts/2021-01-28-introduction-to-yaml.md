@@ -3,8 +3,9 @@ layout: post
 tags:
   - devops
   - yaml
+  - yml
   - tutorial
-date: '2021-01-28 19:32 -0500'
+date: '2021-01-02 19:32 -0500'
 title: Introduction to YAML
 description: Introduction to YAML
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
