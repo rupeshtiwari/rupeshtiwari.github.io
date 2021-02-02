@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Updating Azure CI Pipeline Build Number
-date: 2021-01-28 00:00 +0000
+date: '2021-01-28 00:00 +0000'
 subtitle: Learn how to update build number in azure ci pipeline
 description: Learn how to update build number in azure ci pipeline
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/AK8S4CY.png
-thumbnail-img: https://i.imgur.com/AK8S4CY.png
-share-img: https://i.imgur.com/AK8S4CY.png
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/AK8S4CY.png'
+thumbnail-img: 'https://i.imgur.com/AK8S4CY.png'
+share-img: 'https://i.imgur.com/AK8S4CY.png'
 tags: 'devops,node,beginners,angular'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590106
 ---
 
 > Did you have requirement to update your **Angular** CI build number as your new Package.json version number and Branch name? Well this is a good practice to do in your **Azure Build CI pipeline** for JavaScript Front-end Project builds. Learn how to create and update Azure CI build Number in pattern like **buildId-master** or **1234-master** or if it is feature branch then it becomes **1234-feature1**. 
