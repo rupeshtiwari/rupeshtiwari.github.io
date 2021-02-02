@@ -6,8 +6,8 @@ subtitle: Learn writing Azure CI pipeline to show Nx Monorepo combined Test Resu
 description: Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://i.imgur.com/WQ5z6KK.png'
-thumbnail-img: 'https://i.imgur.com/WQ5z6KK.png'
-share-img: 'https://i.imgur.com/WQ5z6KK.png'
+thumbnail-img: 'https://i.imgur.com/3ysBPoZ.png'
+share-img: 'https://i.imgur.com/3ysBPoZ.png'
 tags: 'devops,nx,angular,beginners'
 last_modified_at: null
 published: true

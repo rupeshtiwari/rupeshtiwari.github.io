@@ -129,9 +129,9 @@ If you want to become full stack developer and grow your carrier as new software
 --- 
 ### 💖 Say 👋 to me! 
 
-Rupesh Tiwari <br/>
-[www.rupeshtiwari.com](https://www.rupeshtiwari.com)<br/>
-✉️ <a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a> <br/>
-Founder of [Fullstack Master](www.fullstackmaster.net) 🎓<br/>
-<a href="http://www.fullstackmaster.net"><img src="https://i.imgur.com/9OCLciM.png" width="280" height="65"><a>
- 
+<div> 
+Rupesh Tiwari </div><div>
+<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div><div>
+✉️ <a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a> </div><div>
+Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div><div>
+</div>

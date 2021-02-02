@@ -707,3 +707,13 @@ If you want to become full stack developer and grow your carrier as new software
 - Please subscribe to [All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite) to get everything from PRO plan. Additionally, you will get access to monthly live Q&A video call with Rupesh and you can ask doubts/questions and get more help, tips and tricks.
 
 > You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role. <a href="https://www.fullstackmaster.net"> <img src="https://i.imgur.com/9OCLciM.png" width="270" height="65"> </a>
+
+--- 
+### 💖 Say 👋 to me! 
+
+<div> 
+Rupesh Tiwari </div><div>
+<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div><div>
+✉️ <a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a> </div><div>
+Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div><div>
+</div>
