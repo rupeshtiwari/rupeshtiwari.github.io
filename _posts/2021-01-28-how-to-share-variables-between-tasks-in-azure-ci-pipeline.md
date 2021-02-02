@@ -5,11 +5,11 @@ date: '2021-01-28 00:00 +0000'
 subtitle: Learn sharing variable among azure ci tasks
 description: Learn sharing variable among azure ci tasks
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
-cover_image: null
-thumbnail-img: null
-share-img: null
+cover_image: https://i.imgur.com/Eqpy465.png
+thumbnail-img:  https://i.imgur.com/Eqpy465.png
+share-img: https://i.imgur.com/Eqpy465.png
 tags: 'devops,azure,tutorial,beginners'
-last_modified_at: null
+last_modified_at: ''
 published: true
 sitemap: true
 comments: true
