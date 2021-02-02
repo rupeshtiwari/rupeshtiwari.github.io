@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Creating New App with Nx Console
-date: 2021-01-24 00:00 +0000
+date: '2021-01-24 00:00 +0000'
 subtitle: learn creating new application using nx console in monorepo
 description: learn creating new application using nx console in monorepo
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/UJNuoEj.jpg
-thumbnail-img: https://i.imgur.com/KVtdDlT.png
-share-img: https://i.imgur.com/KVtdDlT.png
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/UJNuoEj.jpg'
+thumbnail-img: 'https://i.imgur.com/KVtdDlT.png'
+share-img: 'https://i.imgur.com/KVtdDlT.png'
 tags: 'nx,angular,beginners,monorepo'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590337
 ---
 
 > Do you want to create a new application on my [nx monorepo](https://nx.dev/) work-space? Also do want to make sure that you should be able to **build** and **test** your application using **nx command line scripts**? Then this article is for you In this article, I will walk you through the steps please follow along with me. 
