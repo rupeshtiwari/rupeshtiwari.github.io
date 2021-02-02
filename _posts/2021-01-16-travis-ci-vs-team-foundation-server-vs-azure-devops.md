@@ -20,20 +20,23 @@ excerpt_separator: "<!--more-->"
 
 > All are hosted CI/CD server supporting the build running in the build machines and deployment to target machines.
 
+<br/>
 
-
-![](https://i.imgur.com/JzckJNx.png)
-
+<img height="auto" src="https://i.imgur.com/6jql0uD.png" width="300">
+ 
 ## Travis CI
 
 A hosted continuous integration service for the open source community.
 www.travis-ci.org 
+
 - It is very simple to configure a range of environment versions and settings in a simple YAML file.
-- It integrates very well with Github, Bitbucket, or a private Git repo.
+- It integrates very well with GitHub, Bitbucket, or a private Git repo.
 - The Travis CI portal beautifully shows you your history and console logs. Everything is presented in a very clear and intuitive interface.
 - Travis CI can be used for free if the source code is public. 
 - Travis CI has built-in plugins for popular cloud providers such as AWS, Azure, Google Cloud, etc.
----
+  
+
+<br/>
 
 ![](https://i.imgur.com/aDJhrS4.png)
 
@@ -44,20 +47,20 @@ Visual Studio Team Foundation Server (TFS) is the collaboration platform at the 
 visualstudio.com
 
 
----
+<br/>
 
 ![](https://i.imgur.com/gOLI7fN.png)
+
 ## Azure Dev Ops
 
 Initially it was called as TFS now it is rebranded to Azure Dev Ops.
 - Help us to add Feature, PBI, Tasks , bugs and lot more
-- Manage time, budget, velociy 
+- Manage time, budget, velocity 
 - Helps to create Build Definitions and Release definitions to deploy code to target machines. 
 - Connects with Git repository and has npm repository in built
 - Azure CI/CD pipelines can be used for Free if you have public GitHub repositories.
 
----
-
+<br/>
 
  
 ## Become full stack developer 💻
@@ -73,7 +76,9 @@ If you want to become full stack developer and grow your carrier as new software
 </a>
  
 
---- 
+
+<br/>
+
 ### 💖 Say 👋 to me! 
 
 <div> 
