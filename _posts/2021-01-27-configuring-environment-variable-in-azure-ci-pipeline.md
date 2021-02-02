@@ -65,7 +65,8 @@ While running new pipeline from azure portal. You can always select your variabl
 ![](https://i.imgur.com/2Me50b0.png)
 
 
- <br/>
+<br/>
+
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have All-Access Monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
