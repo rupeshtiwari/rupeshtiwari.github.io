@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Configuring Environment Variable in Azure CI Pipeline
-date: 2021-01-27 00:00 +0000
+date: '2021-01-27 00:00 +0000'
 subtitle: Learn how to define and use environment variable in azure ci pipeline
 description: Learn how to define and use environment variable in azure ci pipeline
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/OISr8kK.png
-thumbnail-img: https://i.imgur.com/JiL3zVz.png
-share-img: https://i.imgur.com/JiL3zVz.png
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/OISr8kK.png'
+thumbnail-img: 'https://i.imgur.com/JiL3zVz.png'
+share-img: 'https://i.imgur.com/JiL3zVz.png'
 tags: 'devops,beginners,tutorial,azure'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590145
 ---
 
 > Do you want to create environment level variable for your Azure Build CI Pipeline and access them in your azure pipeline task? Example: If you are using [nx monorepo](https://nx.dev/) and you want to skip the Nx Caching while building your project in Azure pipeline or your build machine then read this article to understand it.
