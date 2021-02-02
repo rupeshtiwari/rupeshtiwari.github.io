@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Publishing Nx Monorepo Test Results in Azure CI Pipeline
-date: 2021-01-30 00:00 +0000
-subtitle: Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results 
+date: '2021-01-30 00:00 +0000'
+subtitle: Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
 description: Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/WQ5z6KK.png
-thumbnail-img: https://i.imgur.com/WQ5z6KK.png
-share-img: https://i.imgur.com/WQ5z6KK.png
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/WQ5z6KK.png'
+thumbnail-img: 'https://i.imgur.com/WQ5z6KK.png'
+share-img: 'https://i.imgur.com/WQ5z6KK.png'
 tags: 'devops,nx,angular,beginners'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589923
 ---
 
 `Publish Test Results task` publishes test results to Azure CI Pipelines.
