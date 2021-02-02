@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Setting Notification in Azure Devops
-date: 2021-01-17 00:00 +0000
+date: '2021-01-17 00:00 +0000'
 subtitle: Learn how to subscribe to your azure ci pipeline notification
 description: Learn how to subscribe to your azure ci pipeline notification
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/CbQcFLl.png
-thumbnail-img: https://i.imgur.com/CbQcFLl.png
-share-img: https://i.imgur.com/CbQcFLl.png
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/CbQcFLl.png'
+thumbnail-img: 'https://i.imgur.com/CbQcFLl.png'
+share-img: 'https://i.imgur.com/CbQcFLl.png'
 tags: 'devops,azure,beginners,tutorial'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590185
 ---
 <br/>
 
