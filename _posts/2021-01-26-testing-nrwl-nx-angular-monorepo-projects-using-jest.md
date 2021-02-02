@@ -18,7 +18,7 @@ excerpt_separator: "<!--more-->"
 ---
 
 
-> I am going to use `JEST` test runner since it is more faster than `Karma` also Jest gives snapshot testing features. `JEST` is also the default testing framework when you create NRWL/NX monorepo. However, you can alwasy create lib and applications using 
+> Do you want to debug your  [NRWL/NX monorepo](https://nx.dev/) specs in visual studio code or right in chrome? Then this article is for you. I am going to use `JEST` test runner since it is more faster than `Karma` also Jest gives snapshot testing features. `JEST` is also the default testing framework when you create [NRWL/NX monorepo](https://nx.dev/). However, you can always create lib and applications using `karma` test runner in your nx monorepo. 
 
 ## Nrwl.Nx Angular Monorepo Project
 I have created a monorepo work-space and I have one library called as `customers/users` and I want to do unit testing.
@@ -58,7 +58,7 @@ Please go ahead and fix the test.
 Create launch.json file inside `.vscode` folder and put below code.
 Make sure you change the library name as per your project.
 
-```json=
+```json
 {
   "version": "0.2.0",
   "configurations": [
@@ -85,7 +85,7 @@ Next click on debug button on vscode.
 ![](https://i.imgur.com/1ynnvVj.png)
 
 See this panel where you can continue, step out/in, pause, stop test.
-You can also see the closure variables etc right in vscode. 
+You can also see the closure variables etc. right in vscode. 
 
 ![](https://i.imgur.com/JuO7vhw.png)
 
@@ -110,14 +110,14 @@ You should see the below message if debugger is running successful & listening t
 
 ![](https://i.imgur.com/EQUF4jf.png)
 
-Now open chrome and visit to the url `chrome://inspect/#devices`
+Now open chrome and visit to the URL `chrome://inspect/#devices`
 
 Then wait and notice in Chrome you should notice this message `./node_modules/nx/bin/nx file:///inspect`
 
 Click on inspect link 
 ![](https://i.imgur.com/ahaKWeQ.png)
 
-No if you open in chrome and search the userlist component and put the debugger then you will see the debugger is showing in chrome as well. 
+No if you open in chrome and search the user list component and put the debugger then you will see the debugger is showing in chrome as well. 
 ![](https://i.imgur.com/Tbx52XW.png)
 
 Next change the test code 
