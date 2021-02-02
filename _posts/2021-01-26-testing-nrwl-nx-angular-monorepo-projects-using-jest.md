@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Testing Nrwl Nx Angular Monorepo Projects using JEST
-date: 2021-01-26 00:00 +0000
-subtitle:
-description:
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/P9U4q6m.png
-thumbnail-img: https://i.imgur.com/AfCDCO2.png
-share-img: https://i.imgur.com/AfCDCO2.png
+date: '2021-01-26 00:00 +0000'
+subtitle: null
+description: null
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/P9U4q6m.png'
+thumbnail-img: 'https://i.imgur.com/AfCDCO2.png'
+share-img: 'https://i.imgur.com/AfCDCO2.png'
 tags: 'nrwl,nx,monorepo,jest'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590198
 ---
 
 
