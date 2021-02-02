@@ -6,8 +6,8 @@ subtitle: Learn how to create custom variable and share among Azure CI Pipeline 
 description: Learn how to create custom variable and share among Azure CI Pipeline tasks
 cover-img: https://i.imgur.com/hiQZ0BG.png
 cover_image: https://i.imgur.com/3vFNOtc.png
-thumbnail-img: https://i.imgur.com/3vFNOtc.png
-share-img: https://i.imgur.com/3vFNOtc.png
+thumbnail-img: https://i.imgur.com/MxavTGI.png
+share-img: https://i.imgur.com/MxavTGI.png
 tags: 'devops,ci,tutorial,beginners'
 last_modified_at: null
 published: true
