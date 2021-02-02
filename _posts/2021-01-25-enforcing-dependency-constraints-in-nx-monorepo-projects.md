@@ -5,7 +5,7 @@ date: 2021-01-25 00:00 +0000
 subtitle:
 description:
 cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/hiQZ0BG.png
+cover_image: https://i.imgur.com/NLPsgZR.png
 thumbnail-img: https://i.imgur.com/hiQZ0BG.png
 share-img: https://i.imgur.com/hiQZ0BG.png
 tags: 'nx,monorepo,tooling,angular'
