@@ -6,8 +6,8 @@ subtitle: null
 description: null
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://i.imgur.com/NLPsgZR.png'
-thumbnail-img: 'https://i.imgur.com/hiQZ0BG.png'
-share-img: 'https://i.imgur.com/hiQZ0BG.png'
+thumbnail-img: 'https://i.imgur.com/nx2bZiB.png'
+share-img: 'https://i.imgur.com/nx2bZiB.png'
 tags: 'nx,monorepo,tooling,angular'
 last_modified_at: null
 published: true
