@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Travis CI vs Team Foundation Server vs Azure DevOps
-date: 2021-01-16 00:00 +0000
+date: '2021-01-16 00:00 +0000'
 subtitle: Learn and decide which cloud based ci cd service you like
 description: Learn and decide which cloud based ci cd service you like
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/73heuwv.png
-thumbnail-img: https://i.imgur.com/7dBEoja.png
-share-img: https://i.imgur.com/7dBEoja.png
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/73heuwv.png'
+thumbnail-img: 'https://i.imgur.com/7dBEoja.png'
+share-img: 'https://i.imgur.com/7dBEoja.png'
 tags: 'devops,travis,tfs,beginners'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590166
 ---
 
 
