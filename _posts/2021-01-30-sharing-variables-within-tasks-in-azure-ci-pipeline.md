@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing Variables within Tasks in Azure CI Pipeline
-date: 2021-01-30 00:00 +0000
+date: '2021-01-30 00:00 +0000'
 subtitle: Learn how to create custom variable and share among Azure CI Pipeline tasks
 description: Learn how to create custom variable and share among Azure CI Pipeline tasks
 cover-img: https://i.imgur.com/hiQZ0BG.png
@@ -9,12 +9,13 @@ cover_image: https://i.imgur.com/3vFNOtc.png
 thumbnail-img: https://i.imgur.com/3vFNOtc.png
 share-img: https://i.imgur.com/3vFNOtc.png
 tags: 'devops,ci,tutorial,beginners'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589372
 ---
 
 Do you want to create one variable in task-1 and read the value of that variable in task-2 in your azure ci pipeline? If your answer is yes then read this article. 
