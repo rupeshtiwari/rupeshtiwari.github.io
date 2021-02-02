@@ -708,7 +708,8 @@ If you want to become full stack developer and grow your carrier as new software
 
 > You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role. <a href="https://www.fullstackmaster.net"> <img src="https://i.imgur.com/9OCLciM.png" width="270" height="65"> </a>
 
---- 
+<br/>
+
 ### 💖 Say 👋 to me! 
 
 <div> 

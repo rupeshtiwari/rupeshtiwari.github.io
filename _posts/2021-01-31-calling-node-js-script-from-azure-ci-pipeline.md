@@ -115,7 +115,7 @@ Updating build number
 Displaying new build number
 ![](https://i.imgur.com/e1k5FWV.png)
 
---- 
+<br/> 
 
 ## Become full stack developer 💻
 
@@ -126,7 +126,7 @@ If you want to become full stack developer and grow your carrier as new software
 
 > You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.
 
---- 
+<br/>
 ### 💖 Say 👋 to me! 
 
 <div> 

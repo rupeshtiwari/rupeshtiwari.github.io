@@ -217,6 +217,8 @@ import { SalesProductEditorModule } from '@myorg/sales-product-editor';
 
 So I loved the way [Nx Monorepo](https://nx.dev) framework gives the boundary constraints out of the box.
 
+<br/>
+
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have All-Access Monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
@@ -226,7 +228,8 @@ If you want to become full stack developer and grow your carrier as new software
 
 > You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.
 
---- 
+<br/>
+
 ### 💖 Say 👋 to me! 
 
 <div> 
