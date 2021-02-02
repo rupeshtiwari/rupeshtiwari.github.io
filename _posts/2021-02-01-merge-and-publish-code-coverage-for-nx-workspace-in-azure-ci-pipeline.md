@@ -2,8 +2,6 @@
 layout: post
 title: Merge and Publish Code Coverage for Nx Workspace in Azure CI Pipeline
 date: 2021-02-01 18:55 -0500
-subtitle: Learn how to publish Nx Monorepo multiple angular projects code coverage as single report in Azure CI Pipeline
-description: Learn how to publish Nx Monorepo multiple angular projects code coverage as single report in Azure CI Pipeline
 cover-img: https://i.imgur.com/hiQZ0BG.png
 cover_image: https://i.imgur.com/6gxkEV3.jpg
 thumbnail-img: https://i.imgur.com/6gxkEV3.jpg
