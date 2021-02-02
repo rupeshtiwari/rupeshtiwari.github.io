@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Enforcing Dependency Constraints Within Service in Nx Monorepo workspace
-date: 2021-01-26 00:00 +0000
+date: '2021-01-26 00:00 +0000'
 subtitle: learn how to enforce dependency constraints on individual projects
 description: learn how to enforce dependency constraints on individual projects
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/H6AlL2d.png
-thumbnail-img: https://i.imgur.com/GGaoewS.png
-share-img: https://i.imgur.com/GGaoewS.png
-tags:
-last_modified_at:
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/H6AlL2d.png'
+thumbnail-img: 'https://i.imgur.com/GGaoewS.png'
+share-img: 'https://i.imgur.com/GGaoewS.png'
+tags: null
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 590426
 ---
 
 > In my previous article [“Imposing Constraints on Dependency Graph”](https://dev.to/rupeshtiwari/creating-new-app-with-nx-console-5blh) you did learn how to isolate all projects of a folder (service A) from all of the projects of another folder (service B). That is something called as 1-dimensional dependency graph. Now In this blog, I will teach you how to enforce dependency rules among the projects within the same folder (service A or B). This is called 2 dimensional dependency graph.
