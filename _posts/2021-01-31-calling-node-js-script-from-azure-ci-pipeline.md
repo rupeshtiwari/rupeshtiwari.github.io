@@ -1,20 +1,21 @@
 ---
 layout: post
 title: Calling Node.js Script from Azure CI Pipeline
-date: 2021-01-31 00:00 +0000
+date: '2021-01-31 00:00 +0000'
 subtitle: Learn how to execute custom node.js script from azure ci pipeline
 description: Learn how to execute custom node.js script from azure ci pipeline
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/mGXdBOh.png
-thumbnail-img: https://i.imgur.com/mGXdBOh.png
-share-img: https://i.imgur.com/mGXdBOh.png
-tags:
-last_modified_at:
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/mGXdBOh.png'
+thumbnail-img: 'https://i.imgur.com/mGXdBOh.png'
+share-img: 'https://i.imgur.com/mGXdBOh.png'
+tags: null
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589939
 ---
 
 > If you want to run **node.js script** from **azure-pipelines.yml** and get the value returned from node.js script and use it in your CI next task. Then read this article. Example: I wanted to get new build number as per my package.json next version by running node script and update my CI pipeline build number.
