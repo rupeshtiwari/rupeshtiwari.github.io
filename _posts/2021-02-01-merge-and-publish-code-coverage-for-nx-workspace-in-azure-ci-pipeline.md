@@ -1,18 +1,19 @@
 ---
 layout: post
 title: Merge and Publish Code Coverage for Nx Workspace in Azure CI Pipeline
-date: 2021-02-01 18:55 -0500
-cover-img: https://i.imgur.com/hiQZ0BG.png
-cover_image: https://i.imgur.com/6gxkEV3.jpg
-thumbnail-img: https://i.imgur.com/6gxkEV3.jpg
-share-img: https://i.imgur.com/6gxkEV3.jpg
+date: '2021-02-01 18:55 -0500'
+cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/6gxkEV3.jpg'
+thumbnail-img: 'https://i.imgur.com/6gxkEV3.jpg'
+share-img: 'https://i.imgur.com/6gxkEV3.jpg'
 tags: 'devops,nx,tutorial,beginners'
-last_modified_at:
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 589921
 ---
  
 If you are working on [Nx Monorepo](https://nx.dev/) workspace and have many angular projects. And if you are using Azure CI/CD Pipeline then you might aware that there is no inbuilt azure task which will combine all of your code coverage xml. Therefore, the only workaround is you must consolidated all code coverage reports in one and publish that merged one only. 
