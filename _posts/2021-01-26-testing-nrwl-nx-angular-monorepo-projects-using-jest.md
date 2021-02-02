@@ -19,7 +19,7 @@ id: 590198
 ---
 
 
-> Do you want to debug your  [NRWL/NX monorepo](https://nx.dev/) specs in visual studio code or right in chrome? Then this article is for you. I am going to use `JEST` test runner since it is more faster than `Karma` also Jest gives snapshot testing features. `JEST` is also the default testing framework when you create [NRWL/NX monorepo](https://nx.dev/). However, you can always create lib and applications using `karma` test runner in your nx monorepo. 
+> Do you want to debug your [NRWL/NX monorepo](https://nx.dev/) specs in visual studio code or right in chrome? Then this article is for you. I am going to use `JEST` test runner since it is more faster than `Karma` also Jest gives snapshot testing features. `JEST` is also the default testing framework when you create [NRWL/NX monorepo](https://nx.dev/). However, you can always create lib and applications using `karma` test runner in your nx monorepo. 
 
 ## Nrwl.Nx Angular Monorepo Project
 I have created a monorepo work-space and I have one library called as `customers/users` and I want to do unit testing.
