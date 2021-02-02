@@ -20,9 +20,8 @@ excerpt_separator: <!--more-->
 id: 588929
 ---
 
-So you want to learn how you will integrate CkEditor v5 in [Nx Monorepo](https://nx.dev).
+> So you want to learn how you will integrate CkEditor v5 in [Nx Monorepo](https://nx.dev).
 Do you also want to learn how to create custom plugin inside CkEditor v5? Then I will show you how I will consume **CkEditor v5** with custom plugin inside Angular project. I will use Nrwl/Nx Monorepo to demonstrate this.
-
 
 
 ## Introduction
