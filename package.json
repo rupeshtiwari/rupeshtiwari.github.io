@@ -1,19 +1,20 @@
-
 {
-    "name": "rupeshtiwari-blogs",
-    "version": "1.0.0",
-    "description": "Rupesh Tiwari Blogs",
-    "repository": "rupeshtiwari/rupeshtiwari.github.io",
-    "private": true,
-    "keywords": [
-      "dev.to",
-      "blog",
-      "articles"
-    ],
-    
-    "author": {
-      "name": "Rupesh Tiwari",
-      "url": "https://twitter.com/rupeshtiwari_co"
-    },
-    "license": "MIT"
+  "name": "rupeshtiwari-blogs",
+  "version": "1.0.0",
+  "description": "Rupesh Tiwari Blogs",
+  "repository": "rupeshtiwari/rupeshtiwari.github.io",
+  "private": true,
+  "keywords": [
+    "dev.to",
+    "blog",
+    "articles"
+  ],
+  "author": {
+    "name": "Rupesh Tiwari",
+    "url": "https://twitter.com/rupeshtiwari_co"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "simple-jekyll-search": "^1.9.1"
   }
+}

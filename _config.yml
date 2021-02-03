@@ -87,6 +87,9 @@ feed_show_excerpt: true
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
 
+# Enable a search bar on the home page to search blog posts
+post_search: true
+
 # The keywords to associate with your website, for SEO purposes
 keywords: "angular,javascript,node.js,webpack"
 
@@ -236,11 +239,11 @@ jekyll_compose:
     drafts:
       subtitle:
       description:
-      cover-img: 'https://i.imgur.com/NRaQUA5.png'
-      cover_image: 'https://i.imgur.com/'
-      thumbnail-img: 'https://i.imgur.com/'
-      share-img: 'https://i.imgur.com/'
-      canonical_url: 'https://rupeshtiwari.github.io/'
+      cover-img: "https://i.imgur.com/NRaQUA5.png"
+      cover_image: "https://i.imgur.com/"
+      thumbnail-img: "https://i.imgur.com/"
+      share-img: "https://i.imgur.com/"
+      canonical_url: "https://rupeshtiwari.github.io/"
       tags:
       last_modified_at:
       published: true
@@ -251,11 +254,11 @@ jekyll_compose:
     posts:
       subtitle:
       description:
-      cover-img: 'https://i.imgur.com/NRaQUA5.png'
-      cover_image: 'https://i.imgur.com/'
-      thumbnail-img: 'https://i.imgur.com/'
-      share-img: 'https://i.imgur.com/'
-      canonical_url: 'https://rupeshtiwari.github.io/'
+      cover-img: "https://i.imgur.com/NRaQUA5.png"
+      cover_image: "https://i.imgur.com/"
+      thumbnail-img: "https://i.imgur.com/"
+      share-img: "https://i.imgur.com/"
+      canonical_url: "https://rupeshtiwari.github.io/"
       tags:
       last_modified_at:
       published: true
