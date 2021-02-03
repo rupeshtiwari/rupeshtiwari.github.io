@@ -219,7 +219,8 @@ exclude:
   - screenshot.png
   - docs/
 
-remote_theme: daattali/beautiful-jekyll@5.0.0
+# remote_theme: daattali/beautiful-jekyll@5.0.0
+theme: minimal-mistakes-jekyll
 
 plugins:
   - jekyll-feed
@@ -263,3 +264,6 @@ jekyll_compose:
       comments: true
       social-share: true
       excerpt_separator: <!--more-->
+
+jekyll-crosspost_to_medium:
+  enabled: false

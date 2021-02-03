@@ -41,3 +41,4 @@ gem "webrick", "~> 1.7"
 
 # Add last modified date to post
 gem 'jekyll-compose', group: [:jekyll_plugins]
+gem "minimal-mistakes-jekyll"
