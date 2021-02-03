@@ -236,11 +236,11 @@ jekyll_compose:
     drafts:
       subtitle:
       description:
-      cover-img:
-      cover_image: "https://i.imgur.com/NRaQUA5.png"
-      thumbnail-img:
-      share-img:
-      canonical_url: "https://rupeshtiwari.github.io/"
+      cover-img: 'https://i.imgur.com/NRaQUA5.png'
+      cover_image: 'https://i.imgur.com/'
+      thumbnail-img: 'https://i.imgur.com/'
+      share-img: 'https://i.imgur.com/'
+      canonical_url: 'https://rupeshtiwari.github.io/'
       tags:
       last_modified_at:
       published: true
@@ -251,11 +251,11 @@ jekyll_compose:
     posts:
       subtitle:
       description:
-      cover-img: "https://i.imgur.com/NRaQUA5.png"
-      cover_image:
-      thumbnail-img:
-      share-img:
-      canonical_url: "https://rupeshtiwari.github.io/"
+      cover-img: 'https://i.imgur.com/NRaQUA5.png'
+      cover_image: 'https://i.imgur.com/'
+      thumbnail-img: 'https://i.imgur.com/'
+      share-img: 'https://i.imgur.com/'
+      canonical_url: 'https://rupeshtiwari.github.io/'
       tags:
       last_modified_at:
       published: true
