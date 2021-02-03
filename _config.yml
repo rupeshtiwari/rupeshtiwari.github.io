@@ -229,7 +229,6 @@ plugins:
   - jekyll-analytics
   - jekyll-remote-theme
   - jekyll-paginate
-  - jekyll-crosspost-to-medium
 
 # Composing Blog
 jekyll_compose:
