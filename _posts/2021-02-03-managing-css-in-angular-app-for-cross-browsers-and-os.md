@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Managing CSS in Angular App for Cross Browsers and OS Cross Browsers and OS Managing CSS in Angular App for Managing CSS in Angular App for Cross Browsers and OS Cross Browsers and OS Managing CSS in Angular App for      
+title: Managing CSS in Angular App for Cross Browsers and OS        
 date: 2021-02-03 13:50 -0500
 subtitle: Learn creating multiple css files for cross browsers and os in angular app  
 description: Learn creating multiple css files for cross browsers and os in angular app  
-cover-img: 'https://imgur.com/BYv1Xul.jpg' 
+cover-img: 'https://imgur.com/jUFpNzT.jpg' 
 cover_image: 'https://i.imgur.com/Eiyywcv.png'
 thumbnail-img: 'https://i.imgur.com/knMB5bS.png'
 share-img: 'https://i.imgur.com/knMB5bS.png'
