@@ -23,7 +23,7 @@ id: 589369
 Azure DevOps provides us with the ability to show an overview of the code coverage of our application's unit tests. To do so, just like publishing the test results in a specific format, we'll need to publish the code coverage results in a supported format. Currently, Azure DevOps supports both `Cobertura` and `JaCoCo`. 
 
 ## In Angular Generating Code Coverage using Cobertura
-In Angular out of the box you get `karma-coverage-istanbul-reporter`. The **Istanbul**, the code coverage tool used by the Angular CLI, has support for Cobertura built-in, so we don't need to add any dependency in order to use Cobertura.
+In Angular out of the box you get `karma-coverage-istanbul-reporter`. The **Istanbul**, the code coverage tool used by the Angular CLI, has support for **Cobertura** built-in, so we don't need to add any dependency in order to use Cobertura.
 
 ![](https://i.imgur.com/8DX15qu.png)
 
@@ -135,7 +135,9 @@ At present, the code coverage reporting functionality provided by this task is l
 
 I have many code coverage files since I have a MonoRepo. In order to combine all coverage files I may need some other blog for that so stay tuned.
 
---- 
+
+<br/>
+
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. We have All-Access Monthly membership plans and you will get unlimited access to all of our video courses, slides, source code & Monthly video calls.
@@ -149,7 +151,8 @@ If you want to become full stack developer and grow your carrier as new software
 </a>
  
 
---- 
+<br/>
+
 ### 💖 Say 👋 to me! 
 
 <div> 
