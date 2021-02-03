@@ -19,7 +19,7 @@ excerpt_separator: <!--more-->
 id: 591323
 ---
 
-> Do you want to organize your **css** files in your **angular** app? Do you want to find out the strategy to segregate the CSS based on cross browsers and operating systems? You CSS designer should not be worried how to manage these. As a developer you should setup your angular app such that it works out of the box.
+> Do you want to organize your **CSS** files in your **angular** app? Do you want to find out the strategy to segregate the CSS based on cross browsers and operating systems? You CSS designer should not be worried how to manage these. As a developer you should setup your angular app such that it works out of the box.
 
 ## Introduction 
 
