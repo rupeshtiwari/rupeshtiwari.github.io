@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Merge and Publish Code Coverage for Nx Workspace in Azure CI Pipeline
-description: Learn publishing nx monorepo multiple projects combined code coverage report to azure ci pipeline
-subtitle: Learn publishing nx monorepo multiple projects combined code coverage report to azure ci pipeline
+title: Publishing Merged Code Coverage Report of Nx Workspace in Azure CI Pipeline
 date: '2021-02-01 18:55 -0500'
+subtitle: Learn publishing nx monorepo multiple projects combined code coverage report to azure ci pipeline
+description: Learn publishing nx monorepo multiple projects combined code coverage report to azure ci pipeline
 cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://i.imgur.com/6gxkEV3.jpg'
 thumbnail-img: 'https://i.imgur.com/6gxkEV3.jpg'

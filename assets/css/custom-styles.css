@@ -1,0 +1,5 @@
+@media (min-width: 1025px) {
+    .big-img .intro-header {
+        background-image: url(/assets/img/feature-desktop.png) !important;
+    }
+}
