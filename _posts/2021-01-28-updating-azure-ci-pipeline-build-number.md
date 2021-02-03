@@ -4,7 +4,7 @@ title: Updating Azure CI Pipeline Build Number
 date: '2021-01-28 00:00 +0000'
 subtitle: Learn how to update build number in azure ci pipeline
 description: Learn how to update build number in azure ci pipeline
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/1Ncfprq.png'
 thumbnail-img: 'https://i.imgur.com/MxavTGI.png'
 share-img: 'https://i.imgur.com/MxavTGI.png'

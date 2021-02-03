@@ -4,7 +4,7 @@ title: Enforcing Dependency Constraints in Nx Monorepo Projects
 date: '2021-01-25 00:00 +0000'
 subtitle: learn configuration required to enforce dependency in your nx monorepo workspace
 description: learn configuration required to enforce dependency in your nx monorepo workspace
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/NLPsgZR.png'
 thumbnail-img: 'https://i.imgur.com/nx2bZiB.png'
 share-img: 'https://i.imgur.com/nx2bZiB.png'

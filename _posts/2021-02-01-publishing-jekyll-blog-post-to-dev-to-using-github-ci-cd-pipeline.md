@@ -4,7 +4,7 @@ title: Publishing Jekyll Blog Post to DevTo using GitHub CI and CD Pipeline
 description: Learn cross-posting to dev to from jekyll blog
 subtitle: Learn cross-posting to dev to from jekyll blog
 date: "2021-02-01 15:03 -0500"
-cover-img: "https://i.imgur.com/hiQZ0BG.png"
+cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/TBAF05L.png"
 thumbnail-img: "https://i.imgur.com/oKh8TiX.png"
 share-img: "https://i.imgur.com/oKh8TiX.png"

@@ -4,7 +4,7 @@ title: Caching Azure CI Pipeline Artifacts
 date: '2021-01-15 00:00 +0000'
 subtitle: Learn how Caching improves speed of your Angular Build in Azure CI build
 description: Learn how Caching improves speed of your Angular Build in Azure CI build
-cover-img: https://i.imgur.com/hiQZ0BG.png
+cover-img: https://i.imgur.com/NRaQUA5.png
 cover_image: https://i.imgur.com/EeYRFDf.jpg
 thumbnail-img: https://i.imgur.com/EeYRFDf.jpg
 share-img: https://i.imgur.com/EeYRFDf.jpg

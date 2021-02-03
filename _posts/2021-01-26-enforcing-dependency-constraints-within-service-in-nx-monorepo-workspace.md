@@ -4,7 +4,7 @@ title: Enforcing Dependency Constraints Within Service in Nx Monorepo workspace
 date: '2021-01-26 00:00 +0000'
 subtitle: learn how to enforce dependency constraints on individual projects
 description: learn how to enforce dependency constraints on individual projects
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/H6AlL2d.png'
 thumbnail-img: 'https://i.imgur.com/GGaoewS.png'
 share-img: 'https://i.imgur.com/GGaoewS.png'

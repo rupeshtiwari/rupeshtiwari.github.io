@@ -4,10 +4,10 @@ title: Publishing Merged Code Coverage Report of Nx Workspace in Azure CI Pipeli
 date: '2021-02-01 18:55 -0500'
 subtitle: Learn publishing nx monorepo multiple projects combined code coverage report to azure ci pipeline
 description: Learn publishing nx monorepo multiple projects combined code coverage report to azure ci pipeline
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/6gxkEV3.jpg'
-thumbnail-img: 'https://i.imgur.com/6gxkEV3.jpg'
-share-img: 'https://i.imgur.com/6gxkEV3.jpg'
+thumbnail-img: 'https://i.imgur.com/cqwnG3N.jpg'
+share-img: 'https://i.imgur.com/cqwnG3N.jpg'
 canonical_url: 'https://rupeshtiwari.github.io/2021-02-01-merge-and-publish-code-coverage-for-nx-workspace-in-azure-ci-pipeline/'
 tags: 'devops,nx,tutorial,beginners'
 last_modified_at: null

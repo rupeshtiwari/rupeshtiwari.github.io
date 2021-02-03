@@ -8,7 +8,7 @@ tags:
 date: '2021-01-02 19:32 -0500'
 title: Introduction to YAML
 description: Introduction to YAML
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/jZQbmj4.jpg'
 thumbnail-img: 'https://i.imgur.com/jZQbmj4.jpg'
 share-img: 'https://i.imgur.com/jZQbmj4.jpg'

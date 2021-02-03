@@ -4,7 +4,7 @@ title: Calling Node.js Script from Azure CI Pipeline
 date: '2021-01-31 00:00 +0000'
 subtitle: Learn how to execute custom node.js script from azure ci pipeline
 description: Learn how to execute custom node.js script from azure ci pipeline
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/mGXdBOh.png'
 thumbnail-img: 'https://i.imgur.com/mGXdBOh.png'
 share-img: 'https://i.imgur.com/mGXdBOh.png'

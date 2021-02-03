@@ -4,7 +4,7 @@ title: Sharing Variables within Tasks in Azure CI Pipeline
 date: '2021-01-22 00:00 +0000'
 subtitle: Learn how to create custom variable and share among Azure CI Pipeline tasks
 description: Learn how to create custom variable and share among Azure CI Pipeline tasks
-cover-img: https://i.imgur.com/hiQZ0BG.png
+cover-img: https://i.imgur.com/NRaQUA5.png
 cover_image: https://i.imgur.com/3vFNOtc.png
 thumbnail-img: https://i.imgur.com/MxavTGI.png
 share-img: https://i.imgur.com/MxavTGI.png

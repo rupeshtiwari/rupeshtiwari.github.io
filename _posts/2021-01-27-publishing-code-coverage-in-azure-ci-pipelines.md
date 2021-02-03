@@ -4,7 +4,7 @@ title: Publishing Code Coverage in Azure CI Pipelines
 date: '2021-01-27 00:00 +0000'
 subtitle: Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
 description: Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
-cover-img: 'https://i.imgur.com/hiQZ0BG.png'
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/YJnJNSe.jpg'
 thumbnail-img: 'https://i.imgur.com/YJnJNSe.jpg'
 share-img: 'https://i.imgur.com/YJnJNSe.jpg'
