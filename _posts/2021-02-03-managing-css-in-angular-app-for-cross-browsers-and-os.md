@@ -1,21 +1,23 @@
 ---
 layout: post
-title: Managing CSS in Angular App for Cross Browsers and OS        
-date: 2021-02-03 13:50 -0500
-subtitle: Learn creating multiple css files for cross browsers and os in angular app  
-description: Learn creating multiple css files for cross browsers and os in angular app  
-cover-img: 'https://imgur.com/NRaQUA5.jpg' 
+title: Managing CSS in Angular App for Cross Browsers and OS
+date: '2021-02-03 13:50 -0500'
+subtitle: Learn creating multiple css files for cross browsers and os in angular app
+description: Learn creating multiple css files for cross browsers and os in angular app
+cover-img: 'https://imgur.com/NRaQUA5.jpg'
 cover_image: 'https://i.imgur.com/Eiyywcv.png'
 thumbnail-img: 'https://i.imgur.com/knMB5bS.png'
 share-img: 'https://i.imgur.com/knMB5bS.png'
-canonical_url: 'https://rupeshtiwari.github.io/2021-02-03-managing-css-in-angular-app-for-cross-browsers-and-os/'
+canonical_url: >-
+  https://rupeshtiwari.github.io/2021-02-03-managing-css-in-angular-app-for-cross-browsers-and-os/
 tags: 'angular,css,productivity,webdev'
 last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
-excerpt_separator: <!--more--> 
+excerpt_separator: <!--more-->
+id: 591323
 ---
 
 > Do you want to organize your **css** files in your **angular** app? Do you want to find out the strategy to segregate the CSS based on cross browsers and operating systems? You CSS designer should not be worried how to manage these. As a developer you should setup your angular app such that it works out of the box.
