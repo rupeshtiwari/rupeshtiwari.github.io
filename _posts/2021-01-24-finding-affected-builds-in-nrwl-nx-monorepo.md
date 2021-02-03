@@ -7,7 +7,7 @@ cover-img: https://i.imgur.com/NRaQUA5.png
 cover_image: https://i.imgur.com/NRaQUA5.png
 thumbnail-img: https://i.imgur.com/NRaQUA5.png
 share-img: https://i.imgur.com/NRaQUA5.png
-canonical_url: 'https://rupeshtiwari.github.io/2021-01-23-finding-affected-builds-in-nrwl-nx-monorepo/'
+
 tags: 'nx,beginners,tutorial,angular'
 last_modified_at: null
 published: true
