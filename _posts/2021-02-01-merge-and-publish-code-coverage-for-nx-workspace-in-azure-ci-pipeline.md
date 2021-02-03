@@ -6,6 +6,7 @@ cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://i.imgur.com/6gxkEV3.jpg'
 thumbnail-img: 'https://i.imgur.com/6gxkEV3.jpg'
 share-img: 'https://i.imgur.com/6gxkEV3.jpg'
+canonical_url: 'https://rupeshtiwari.github.io/2021-02-01-merge-and-publish-code-coverage-for-nx-workspace-in-azure-ci-pipeline/'
 tags: 'devops,nx,tutorial,beginners'
 last_modified_at: null
 published: true
