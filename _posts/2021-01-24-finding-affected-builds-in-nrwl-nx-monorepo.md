@@ -2,8 +2,6 @@
 layout: post
 title: Finding Affected Builds in Nrwl Nx Monorepo
 date: '2021-01-24 00:00 +0000'
-subtitle: Affected builds and project names in nx monorepo speed up your development and ci cd process
-description: Affected builds and project names in nx monorepo speed up your development and ci cd process
 cover-img: https://i.imgur.com/NRaQUA5.png
 cover_image: https://i.imgur.com/NRaQUA5.png
 thumbnail-img: https://i.imgur.com/NRaQUA5.png
