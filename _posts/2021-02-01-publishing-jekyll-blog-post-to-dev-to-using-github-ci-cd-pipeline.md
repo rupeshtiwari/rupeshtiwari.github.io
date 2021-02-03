@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Publishing Jekyll Blog Post to DevTo using GitHub CI and CD Pipeline
+description: Learn cross-posting to dev to from jekyll blog
+subtitle: Learn cross-posting to dev to from jekyll blog
 date: "2021-02-01 15:03 -0500"
 cover-img: "https://i.imgur.com/hiQZ0BG.png"
 cover_image: "https://i.imgur.com/TBAF05L.png"
 thumbnail-img: "https://i.imgur.com/oKh8TiX.png"
 share-img: "https://i.imgur.com/oKh8TiX.png"
-tags: 
-  - blogs
-  - jekyll
-  - github
-  - devto
+canonical_url: 'https://rupeshtiwari.github.io/2021-02-01-publishing-jekyll-blog-post-to-dev-to-using-github-ci-cd-pipeline/'
+tags: 'jekyll,github,devops,webdev' 
 last_modified_at: '2021-02-01 15:03 -0500'
 published: true
 sitemap: true

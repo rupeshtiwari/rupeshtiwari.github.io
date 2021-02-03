@@ -8,11 +8,8 @@ cover-img: 'https://i.imgur.com/hiQZ0BG.png'
 cover_image: 'https://imgur.com/H43sJjo.png'
 thumbnail-img: 'https://imgur.com/6ySnUBQ.png'
 share-img: 'https://imgur.com/6ySnUBQ.png'
-tags:
-  - nx
-  - nrwl
-  - angular
-  - ckeditor
+tags: 'nx,angular,ckeditor,beginners'
+canonical_url: 'https://rupeshtiwari.github.io/2021-02-01-integrating-ckeditor-in-nx-monorepo/'
 last_modified_at: '2021-02-01 10:22 -0500'
 published: true
 sitemap: true

@@ -240,7 +240,7 @@ jekyll_compose:
       cover_image: "https://i.imgur.com/hiQZ0BG.png"
       thumbnail-img:
       share-img:
-      canonical_url:
+      canonical_url: "https://rupeshtiwari.github.io/"
       tags:
       last_modified_at:
       published: true
@@ -252,10 +252,10 @@ jekyll_compose:
       subtitle:
       description:
       cover-img: "https://i.imgur.com/hiQZ0BG.png"
-      cover_image: 
+      cover_image:
       thumbnail-img:
       share-img:
-      canonical_url:
+      canonical_url: "https://rupeshtiwari.github.io/"
       tags:
       last_modified_at:
       published: true
