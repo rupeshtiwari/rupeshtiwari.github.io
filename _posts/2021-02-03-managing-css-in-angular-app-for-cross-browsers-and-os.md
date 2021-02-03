@@ -15,6 +15,7 @@ published: true
 sitemap: true
 comments: true
 social-share: true
+crosspost_to_medium: true
 excerpt_separator: <!--more-->
 id: 591323
 ---
