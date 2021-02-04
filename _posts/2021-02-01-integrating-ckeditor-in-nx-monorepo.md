@@ -758,9 +758,7 @@ Monthly video calls.
 > <a href="https://www.fullstackmaster.net">
 > <img src="https://i.imgur.com/9OCLciM.png" width="270" height="65"> </a>
 
-<br/>
-
-### 💖 Say 👋 to me!
+**💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

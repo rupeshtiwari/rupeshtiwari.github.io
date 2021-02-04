@@ -174,12 +174,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-
-
-
-<br/>
-
-### 💖 Say 👋 to me!
+**💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

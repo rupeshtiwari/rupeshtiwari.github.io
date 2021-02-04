@@ -154,7 +154,7 @@ Monthly video calls.
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 
 <br/>
-### 💖 Say 👋 to me!
+**💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>
