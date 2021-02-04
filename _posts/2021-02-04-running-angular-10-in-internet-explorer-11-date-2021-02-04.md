@@ -10,7 +10,7 @@ thumbnail-img: "https://i.imgur.com/7pgedpv.png"
 share-img: "https://i.imgur.com/7pgedpv.png"
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-03-running-angular-10-in-internet-explorer-11-date-2021-02-04/
-tags: "angular,css,tutorial,beginners"
+tags: [angular,css,tutorial,beginners]
 last_modified_at: null
 published: true
 sitemap: true
