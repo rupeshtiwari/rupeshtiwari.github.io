@@ -355,8 +355,6 @@ A project tagged with "scope:sales" can only depend on libs tagged with
 I highly recommend to use nx monorepo and enforce constraints on dependency
 graph within your work-space.
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

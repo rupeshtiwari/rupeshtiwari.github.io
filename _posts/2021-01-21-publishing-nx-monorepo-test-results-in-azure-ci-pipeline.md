@@ -100,8 +100,6 @@ testresults/
 
 ![](https://i.imgur.com/Vo6XfZr.png)
 
----
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software
@@ -124,8 +122,6 @@ Monthly video calls.
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 
 
-
----
 
 **💖 Say 👋 to me!**
 

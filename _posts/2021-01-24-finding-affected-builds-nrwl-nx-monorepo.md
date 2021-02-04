@@ -71,8 +71,6 @@ Notice it is only building affected projects only.
 That give us performance while developing since we only build and test the
 projects that we change.
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

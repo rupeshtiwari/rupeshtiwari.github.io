@@ -103,8 +103,6 @@ Drop folder will have buildid.zip file inside that you will have both `apps` and
 Drop folder has both `apps` and `libs` folders.
 ![](https://i.imgur.com/OdEd027.png)
 
----
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software
@@ -126,8 +124,6 @@ Monthly video calls.
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 
-
----
 
 **💖 Say 👋 to me!**
 

@@ -66,8 +66,6 @@ Initially it was called as TFS now it is rebranded to Azure Dev Ops.
 - Azure CI/CD pipelines can be used for Free if you have public GitHub
   repositories.
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

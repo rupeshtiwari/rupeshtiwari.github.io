@@ -232,7 +232,6 @@ plugins:
   - jekyll-analytics
   - jekyll-remote-theme
   - jekyll-paginate
-  - jekyll-toc
 
 # Composing Blog
 jekyll_compose:
@@ -273,13 +272,4 @@ jekyll_compose:
 jekyll-crosspost_to_medium:
   enabled: false
 
-toc:
-  min_level: 1
-  max_level: 6
-  ordered_list: false
-  no_toc_section_class: no_toc_section
-  list_id: table-of-contents
-  list_class: my-list-class
-  sublist_class: my-sublist-class
-  item_class: toc-entry
-  item_prefix: toc-
+ 

@@ -112,8 +112,6 @@ next article I will explain you how to publish the application dist folder into
 npm package so that you can install it as node package in some other node.js
 project. Stay tuned. Jest :+1: +100 Karma :-1: -100
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

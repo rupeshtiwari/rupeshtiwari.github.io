@@ -180,8 +180,6 @@ application is changed then bump the version for that application only and
 publish the same app to npm registry. In my next article I will explain that in
 detail.
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

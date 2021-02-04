@@ -337,8 +337,6 @@ correct file names.
 
 ![](https://i.imgur.com/I2ldTr2.png)
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

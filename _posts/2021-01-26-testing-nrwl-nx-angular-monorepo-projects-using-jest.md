@@ -140,8 +140,6 @@ and notice your chrome debugger will refresh automatically.
 
 ![](https://i.imgur.com/rx7bxrY.png)
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

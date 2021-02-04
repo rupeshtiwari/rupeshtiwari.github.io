@@ -130,8 +130,6 @@ number.
 Updating build number ![](https://i.imgur.com/A2UbZDE.png) Displaying new build
 number ![](https://i.imgur.com/e1k5FWV.png)
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

@@ -130,8 +130,6 @@ Now in order to build project in IE compatible Prod Mode run
 
 [How to run Angular 10 in IE](https://stackoverflow.com/questions/56379067/how-do-i-support-internet-explorer-in-an-angular-8-application)
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software
@@ -154,7 +152,6 @@ Monthly video calls.
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 
 **💖 Say 👋 to me!**
-
 <div> 
 Rupesh Tiwari </div><div>
 <a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div><div>

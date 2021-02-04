@@ -152,8 +152,6 @@ the last task. Any previously uploaded data is ignored.
 I have many code coverage files since I have a MonoRepo. In order to combine all
 coverage files I may need some other blog for that so stay tuned.
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software

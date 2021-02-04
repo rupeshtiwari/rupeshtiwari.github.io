@@ -249,8 +249,6 @@ import { SalesProductEditorModule } from "@myorg/sales-product-editor";
 So I loved the way Nx Monorepo framework gives the boundary constraints out of
 the box.
 
-<br/>
-
 ## Become full stack developer 💻
 
 If you want to become full stack developer and grow your carrier as new software
