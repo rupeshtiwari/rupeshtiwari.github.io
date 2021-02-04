@@ -134,11 +134,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-> <a href="https://www.fullstackmaster.net">
 
-    <img height="65" src="https://i.imgur.com/9OCLciM.png" width="270">
-
-</a>
 
 
 <br/>
