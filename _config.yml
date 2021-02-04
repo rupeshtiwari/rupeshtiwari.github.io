@@ -148,7 +148,7 @@ google_analytics: "UA-128916623-7"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-disqus: "EjZZS8YWsT"
+disqus: "https-rupeshtiwari-github-io"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 # fb_comment_id: "421181512329379"
