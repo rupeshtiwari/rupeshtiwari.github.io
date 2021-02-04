@@ -1,42 +1,45 @@
 ---
 layout: post
 title: Assembly Binding Log Viewer
-date: 2011-06-27 10:25:54.000000000 -04:00
+date: 2011-06-27T14:25:54.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- ASP.Net
+  - ASP.Net
 tags:
-- ".NET assembly"
-- Asp.Net
+  - .NET assembly
+  - Asp.Net
 meta:
-  _edit_last: '1'
-  geo_latitude: '40.271005'
+  _edit_last: "1"
+  geo_latitude: "40.271005"
   geo_longitude: "-74.838503"
-  geo_accuracy: '0'
-  geo_address: 1214 Scenic Drive, NJ, 08628
-  geo_public: '0'
-  _wpas_done_twitter: '1'
-  _wpas_done_fb: '1'
-  tagazine-media: a:7:{s:7:"primary";s:55:"http://rupesht.files.wordpress.com/2011/06/fuslogvw.png";s:6:"images";a:1:{s:55:"http://rupesht.files.wordpress.com/2011/06/fuslogvw.png";a:6:{s:8:"file_url";s:55:"http://rupesht.files.wordpress.com/2011/06/fuslogvw.png";s:5:"width";s:3:"714";s:6:"height";s:3:"674";s:4:"type";s:5:"image";s:4:"area";s:6:"481236";s:9:"file_path";s:0:"";}}s:6:"videos";a:0:{}s:11:"image_count";s:1:"1";s:6:"author";s:6:"314015";s:7:"blog_id";s:6:"311011";s:9:"mod_stamp";s:19:"2011-06-30
+  geo_accuracy: "0"
+  geo_address: "1214 Scenic Drive, NJ, 08628"
+  geo_public: "0"
+  _wpas_done_twitter: "1"
+  _wpas_done_fb: "1"
+  tagazine-media: >-
+    a:7:{s:7:"primary";s:55:"http://rupesht.files.wordpress.com/2011/06/fuslogvw.png";s:6:"images";a:1:{s:55:"http://rupesht.files.wordpress.com/2011/06/fuslogvw.png";a:6:{s:8:"file_url";s:55:"http://rupesht.files.wordpress.com/2011/06/fuslogvw.png";s:5:"width";s:3:"714";s:6:"height";s:3:"674";s:4:"type";s:5:"image";s:4:"area";s:6:"481236";s:9:"file_path";s:0:"";}}s:6:"videos";a:0:{}s:11:"image_count";s:1:"1";s:6:"author";s:6:"314015";s:7:"blog_id";s:6:"311011";s:9:"mod_stamp";s:19:"2011-06-30
     16:44:20";}
-  _wpas_skip_yup: '1'
-  _wpas_skip_ms: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611927002;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:311;}i:1;a:1:{s:2:"id";i:850;}i:2;a:1:{s:2:"id";i:361;}}}}
-  _qode-like: '0'
-  wpmm_postgrid_views: '533'
+  _wpas_skip_yup: "1"
+  _wpas_skip_ms: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611927002;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:311;}i:1;a:1:{s:2:"id";i:850;}i:2;a:1:{s:2:"id";i:361;}}}}
+  _qode-like: "0"
+  wpmm_postgrid_views: "533"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/assembly-binding-log-viewer/"
-description: "Assembly Binding Log Viewer"
+permalink: /assembly-binding-log-viewer/
+description: Assembly Binding Log Viewer
+toc: true
 ---
+
 <p>
 				My Friend was looking for one error that he was continuously getting when he was trying to setup my old version 1.0 .net code. The error message was:<br />
 <span style="color:#ff0000;">The given assembly name or codebase, “Microsoft.practices.EnterpriseLibrary.Common” was invalid.</span></p>

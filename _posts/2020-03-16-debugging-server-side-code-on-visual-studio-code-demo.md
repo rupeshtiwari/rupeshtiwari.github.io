@@ -1,53 +1,59 @@
 ---
 layout: post
 title: Debugging Server Side Code on Visual Studio Code - Demo
-date: 2020-03-16 06:00:03.000000000 -04:00
+date: 2020-03-16T10:00:03.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
-- JavaScript
+  - Angular
+  - JavaScript
 tags:
-- Angular
-- fullstackmaster
-- JavaScript
+  - Angular
+  - fullstackmaster
+  - JavaScript
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610971938;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3033;}i:1;a:1:{s:2:"id";i:3011;}i:2;a:1:{s:2:"id";i:2643;}}}}
-  _edit_last: '1'
-  _thumbnail_id: '3031'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610971938;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3033;}i:1;a:1:{s:2:"id";i:3011;}i:2;a:1:{s:2:"id";i:2643;}}}}
+  _edit_last: "1"
+  _thumbnail_id: "3031"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '60'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "60"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  wpmm_postgrid_views: '204'
-  _qode-like: '0'
-  _b2s_post_meta: a:6:{s:8:"og_title";s:55:"Debugging Server Side Code on Visual Studio
-    Code - Demo";s:7:"og_desc";s:231:"Gradually, as our code base will grow it will
-    become complex and we will face difficulties in debugging our code. In this session
-    Debugging Server Side Code on Visual Studio Code | 0009-24 we will see How to
-    debug server side code.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/02/RUPESH-117.png";s:10:"card_title";s:55:"Debugging
-    Server Side Code on Visual Studio Code - Demo";s:9:"card_desc";s:160:"Gradually,
-    as our code base will grow it will become complex and we will face difficulties
-    in debugging our code. In this session Debugging Server Side Code on ";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/02/RUPESH-117.png";}
+  _yoast_wpseo_primary_category: "178"
+  wpmm_postgrid_views: "204"
+  _qode-like: "0"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:55:"Debugging Server Side Code on Visual Studio Code -
+    Demo";s:7:"og_desc";s:231:"Gradually, as our code base will grow it will
+    become complex and we will face difficulties in debugging our code. In this
+    session Debugging Server Side Code on Visual Studio Code | 0009-24 we will
+    see How to debug server side
+    code.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/02/RUPESH-117.png";s:10:"card_title";s:55:"Debugging
+    Server Side Code on Visual Studio Code -
+    Demo";s:9:"card_desc";s:160:"Gradually, as our code base will grow it will
+    become complex and we will face difficulties in debugging our code. In this
+    session Debugging Server Side Code on
+    ";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/02/RUPESH-117.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/debugging-server-side-code-on-visual-studio-code-demo/"
+permalink: /debugging-server-side-code-on-visual-studio-code-demo/
+toc: true
 ---
+
 <p>Gradually, as our code base will grow it will become complex and we will face difficulties in debugging our code. In this session <a href="https://www.youtube.com/watch?v=Mzm-ikcEMeE&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=25&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Debugging Server Side Code on Visual Studio Code | 0009-24 </strong></a>we will see How to debug server side code.</p>
 <p>First we will see how to enable our code base for server side debugging. For this in the VSCode, we have .vscode folder where we have <strong>task.json</strong> file which will define how task works. Similarly, we will create <strong>launch.json</strong> file for our debugging purpose. Here we will define all properties related to server which will help us in debugging. After adding all required properties, we can see our “Server Debug” configuration is added in Debugger tool on left top corner.</p>
 <p><img class="alignnone size-full wp-image-3030" src="{{ site.baseurl }}/assets/2020/03/24.1.png" alt="" width="703" height="404" /></p>

@@ -1,52 +1,58 @@
 ---
 layout: post
 title: Establishing Goals
-date: 2018-11-20 20:52:32.000000000 -05:00
+date: 2018-11-21T01:52:32.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Communication
-- Personal Development
+  - Communication
+  - Personal Development
 tags:
-- Communication
-- goals
-- Personal Developent
+  - Communication
+  - goals
+  - Personal Developent
 meta:
-  _thumbnail_id: '578'
+  _thumbnail_id: "578"
   _publicize_twitter_user: "@roopkt"
-  _wpas_mess: Sort out your life goals. Write them up in a paper using pen. When you
-    write goal on paper it becomes more concrete. You do not need to worry how those
-    goals will happen. Believe it whatever you will write will happen ! While writing
-    don't think will this goal happen or not. How this magic happens ? Your subconscious
-    mind will make it happen for you. For Subconscious mind there is nothing impossible.
-    There is no boundary for your subconscious mind it can go beyond anything.
-  advanced_seo_description: Sort out your life goals. Write them up in a paper using
-    pen. When you write goal on paper it becomes more concrete. You do not need to
-    worry how those goals will happen. Believe it whatever you will write will happen
-    ! While writing don't think will this goal happen or not. How this magic happens
-    ?
-  _wpas_done_all: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609848122;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3421;}i:1;a:1:{s:2:"id";i:311;}i:2;a:1:{s:2:"id";i:850;}}}}
-  _wp_old_date: '2018-11-15'
-  _qode-like: '0'
-  wpmm_postgrid_views: '490'
+  _wpas_mess: >-
+    Sort out your life goals. Write them up in a paper using pen. When you write
+    goal on paper it becomes more concrete. You do not need to worry how those
+    goals will happen. Believe it whatever you will write will happen ! While
+    writing don't think will this goal happen or not. How this magic happens ?
+    Your subconscious mind will make it happen for you. For Subconscious mind
+    there is nothing impossible. There is no boundary for your subconscious mind
+    it can go beyond anything.
+  advanced_seo_description: >-
+    Sort out your life goals. Write them up in a paper using pen. When you write
+    goal on paper it becomes more concrete. You do not need to worry how those
+    goals will happen. Believe it whatever you will write will happen ! While
+    writing don't think will this goal happen or not. How this magic happens ?
+  _wpas_done_all: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609848122;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3421;}i:1;a:1:{s:2:"id";i:311;}i:2;a:1:{s:2:"id";i:850;}}}}
+  _wp_old_date: "2018-11-15"
+  _qode-like: "0"
+  wpmm_postgrid_views: "490"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/establishing-goals/"
-description: "\n\t\t\t\tSort out your life goals. Write them up in a paper using pen.
-  When you write goal on paper it becomes more concrete. You do not need to worry
-  how those goals will happen. Believe it whatever you will write will happen ! While
-  writing don't think will this goal happen or not. How this magic happens ? Your
-  subconscious mind will make it happen for you. For Subconscious mind there is nothing
-  impossible. There is no boundary for your subconscious mind it can go beyond anything.\t\t"
+permalink: /establishing-goals/
+description:
+  "\n\t\t\t\tSort out your life goals. Write them up in a paper using pen. When
+  you write goal on paper it becomes more concrete. You do not need to worry how
+  those goals will happen. Believe it whatever you will write will happen !
+  While writing don't think will this goal happen or not. How this magic happens
+  ? Your subconscious mind will make it happen for you. For Subconscious mind
+  there is nothing impossible. There is no boundary for your subconscious mind
+  it can go beyond anything.\t\t"
+toc: true
 ---
+
 <p>
 				In this article we are going to talk about. What goals are ? How to set Goals ? What makes really good goal ?</p>
 <h2>Organize your life goal</h2>

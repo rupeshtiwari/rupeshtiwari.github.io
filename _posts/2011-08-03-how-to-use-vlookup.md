@@ -1,34 +1,36 @@
 ---
 layout: post
 title: How to use VLOOKUP in Microsoft Excel
-date: 2011-08-03 13:58:41.000000000 -04:00
+date: 2011-08-03T17:58:41.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Excel
+  - Excel
 tags:
-- Excel Sheet
-- VLOOKUP
+  - Excel Sheet
+  - VLOOKUP
 meta:
-  _edit_last: '1'
-  _wpas_done_twitter: '1'
-  _wpas_skip_yup: '1'
-  _wpas_skip_ms: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610275406;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:311;}i:1;a:1:{s:2:"id";i:361;}i:2;a:1:{s:2:"id";i:118;}}}}
-  _qode-like: '0'
-  wpmm_postgrid_views: '429'
+  _edit_last: "1"
+  _wpas_done_twitter: "1"
+  _wpas_skip_yup: "1"
+  _wpas_skip_ms: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610275406;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:311;}i:1;a:1:{s:2:"id";i:361;}i:2;a:1:{s:2:"id";i:118;}}}}
+  _qode-like: "0"
+  wpmm_postgrid_views: "429"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/how-to-use-vlookup/"
-description: "How to use VLOOKUP in Microsoft Excel"
+permalink: /how-to-use-vlookup/
+description: How to use VLOOKUP in Microsoft Excel
+toc: true
 ---
+
 <p>
 				Today, I learned about one Excel Sheet Formula <strong>"VLOOKUP"</strong>. It is very useful formula that gives us the power to search a value in a particular column.  </p>
 <p><strong>Problem that VLOOKUP can solve.</strong></p>

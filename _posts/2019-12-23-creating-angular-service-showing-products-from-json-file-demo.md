@@ -1,51 +1,58 @@
 ---
 layout: post
 title: Creating Angular Service & Showing Products from JSON file - Demo
-date: 2019-12-23 06:00:44.000000000 -05:00
+date: 2019-12-23T11:00:44.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
+  - Angular
 tags:
-- Angular
-- fullstackmaster
-- rupeshtiwari
+  - Angular
+  - fullstackmaster
+  - rupeshtiwari
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610692511;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2881;}i:1;a:1:{s:2:"id";i:2630;}i:2;a:1:{s:2:"id";i:2995;}}}}
-  _edit_last: '1'
-  _thumbnail_id: '2848'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610692511;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2881;}i:1;a:1:{s:2:"id";i:2630;}i:2;a:1:{s:2:"id";i:2995;}}}}
+  _edit_last: "1"
+  _thumbnail_id: "2848"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '30'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "30"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  wpmm_postgrid_views: '327'
-  _qode-like: '0'
-  _b2s_post_meta: a:6:{s:8:"og_title";s:123:"Creating Angular Service & Showing Products
-    - Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack Training";s:7:"og_desc";s:135:"In
-    this demo session Creating Product Service | Angular Service | Demo | 0009-11
-    we will see how to show products from JSON file in our";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-102.png";s:10:"card_title";s:65:"Creating
-    Angular Service & Showing Products from JSON file - Demo";s:9:"card_desc";s:160:"In
-    this demo session Creating Product Service | Angular Service | Demo | 0009-11
-    we will see how to show products from JSON file in our angular project. Each st";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-102.png";}
+  _yoast_wpseo_primary_category: "178"
+  wpmm_postgrid_views: "327"
+  _qode-like: "0"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:123:"Creating Angular Service & Showing Products -
+    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
+    Training";s:7:"og_desc";s:135:"In this demo session Creating Product Service
+    | Angular Service | Demo | 0009-11 we will see how to show products from
+    JSON file in
+    our";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-102.png";s:10:"card_title";s:65:"Creating
+    Angular Service & Showing Products from JSON file -
+    Demo";s:9:"card_desc";s:160:"In this demo session Creating Product Service |
+    Angular Service | Demo | 0009-11 we will see how to show products from JSON
+    file in our angular project. Each
+    st";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-102.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/creating-angular-service-showing-products-from-json-file-demo/"
+permalink: /creating-angular-service-showing-products-from-json-file-demo/
+toc: true
 ---
+
 <p>In this demo session <a href="https://www.youtube.com/watch?v=V4vydyrmQy8&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=12&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Creating Product Service | Angular Service | Demo | 0009-11 </strong></a>we will see how to show products from JSON file in our angular project. Each step is explained with corresponding snapshot from our video session to make it readable and understanding.</p>
 <p>In first step we will create <strong>products.json</strong> file and put some code there to list out products offering in our app.</p>
 <p><img class="alignnone size-full wp-image-2847" src="{{ site.baseurl }}/assets/2019/12/PS1.png" alt="" width="854" height="478" /></p>

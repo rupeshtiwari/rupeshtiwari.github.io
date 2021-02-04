@@ -1,43 +1,45 @@
 ---
 layout: post
 title: Dependency Injection Patterns
-date: 2011-03-16 23:17:26.000000000 -04:00
+date: 2011-03-17T03:17:26.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Design Patterns
+  - Design Patterns
 tags:
-- Abstract Factory Pattern
-- Inversion of Control
-- Loose coupling
-- Separation of concerns
-- Unit Testing
+  - Abstract Factory Pattern
+  - Inversion of Control
+  - Loose coupling
+  - Separation of concerns
+  - Unit Testing
 meta:
-  _edit_last: '1'
-  geo_latitude: '40.271005'
+  _edit_last: "1"
+  geo_latitude: "40.271005"
   geo_longitude: "-74.838503"
-  geo_accuracy: '0'
-  geo_address: 1214 Scenic Drive, NJ, 08628
-  geo_public: '1'
-  _wpas_done_twitter: '1'
-  _wpas_done_fb: '1'
-  _wpas_skip_yup: '1'
-  _wpas_skip_ms: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609259452;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2077;}i:1;a:1:{s:2:"id";i:2132;}i:2;a:1:{s:2:"id";i:2511;}}}}
-  _qode-like: '0'
-  wpmm_postgrid_views: '409'
+  geo_accuracy: "0"
+  geo_address: "1214 Scenic Drive, NJ, 08628"
+  geo_public: "1"
+  _wpas_done_twitter: "1"
+  _wpas_done_fb: "1"
+  _wpas_skip_yup: "1"
+  _wpas_skip_ms: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609259452;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2077;}i:1;a:1:{s:2:"id";i:2132;}i:2;a:1:{s:2:"id";i:2511;}}}}
+  _qode-like: "0"
+  wpmm_postgrid_views: "409"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/dependency-injection-pattern/"
-description: "Dependency Injection Patterns"
+permalink: /dependency-injection-pattern/
+description: Dependency Injection Patterns
+toc: true
 ---
+
 <p>
 				<span style="font-size:1.2em;font-family:calibri;"><br />
 In order to make&nbsp;the application more loosely coupled we should use interfaces. In Dependency injection pattern there exist a class called as assembler or container that takes care of instantiation of classes taking care of dependencies among the classes using interfaces, constructor arguments or any input property. Why would we need another assembler or container to instantiate the objects in our project? That we can do by our own self in our UI layer and work without failure …right!! Well this is good question and I would try to answer it as per my understanding.</p>

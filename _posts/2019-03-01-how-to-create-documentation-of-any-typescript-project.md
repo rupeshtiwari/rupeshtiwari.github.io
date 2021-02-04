@@ -1,30 +1,30 @@
 ---
 layout: post
 title: How to create API Documentation of any Typescript Project?
-date: 2019-03-01 19:28:50.000000000 -05:00
+date: 2019-03-02T00:28:50.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- JavaScript
-- NodeJS
-- Typescript
-- Webpack
+  - JavaScript
+  - NodeJS
+  - Typescript
+  - Webpack
 tags:
-- automation
-- documentation
+  - automation
+  - documentation
 meta:
-  _wpas_done_all: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611911602;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:1000;}i:2;a:1:{s:2:"id";i:668;}}}}
+  _wpas_done_all: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611911602;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:1000;}i:2;a:1:{s:2:"id";i:668;}}}}
   _publicize_twitter_user: "@roopkt"
-  _edit_last: '1'
-  _thumbnail_id: '1450'
-  _qode-like: '0'
-  wpmm_postgrid_views: '2351'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _edit_last: "1"
+  _thumbnail_id: "1450"
+  _qode-like: "0"
+  wpmm_postgrid_views: "2351"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
@@ -37,13 +37,16 @@ author:
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/how-to-create-documentation-of-any-typescript-project/"
-description: "\n\t\t\t\tI love to create automatic API Documentation of my project. Regardless
-  I work on Angular, React or VueJS as far as it uses Typescript. Did you know you
-  could generate your project API Wikipedia kind of documentation within blink of
-  eyes if you are using Typescript? Please read this blog to find out how easy it
-  is.\t\t"
+permalink: /how-to-create-documentation-of-any-typescript-project/
+description:
+  "\n\t\t\t\tI love to create automatic API Documentation of my project.
+  Regardless I work on Angular, React or VueJS as far as it uses Typescript. Did
+  you know you could generate your project API Wikipedia kind of documentation
+  within blink of eyes if you are using Typescript? Please read this blog to
+  find out how easy it is.\t\t"
+toc: true
 ---
+
 <p><!-- wp:paragraph --></p>
 <p>I love to create automatic API Documentation of my project. Regardless I work on Angular, React or VueJS as far as it uses Typescript. Did you know you could generate your project API Wikipedia kind of documentation within blink of eyes if you are using Typescript? Please read this blog to find out how easy it is.</p>
 <p><!-- /wp:paragraph --></p>
@@ -73,11 +76,8 @@ description: "\n\t\t\t\tI love to create automatic API Documentation of my proje
 
 ...
 
-plugins: [
-    new TypedocWebpackPlugin({
-     out : 'dist/docs/api'
-    })
-]</code></pre>
+plugins: [ new TypedocWebpackPlugin({ out : 'dist/docs/api' }) ]</code></pre>
+
 <p><!-- /wp:code --></p>
 <p><!-- wp:paragraph --></p>
 <p>

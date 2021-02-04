@@ -1,52 +1,57 @@
 ---
 layout: post
-title: 'Module Pattern: Essential JavaScript Concepts'
-date: 2019-09-16 06:00:12.000000000 -04:00
+title: "Module Pattern: Essential JavaScript Concepts"
+date: 2019-09-16T10:00:12.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- JavaScript
+  - JavaScript
 tags:
-- fullstackmaster
-- JavaScript
+  - fullstackmaster
+  - JavaScript
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1601828245;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2595;}i:1;a:1:{s:2:"id";i:2604;}i:2;a:1:{s:2:"id";i:361;}}}}
-  _edit_last: '1'
-  _thumbnail_id: '2588'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1601828245;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2595;}i:1;a:1:{s:2:"id";i:2604;}i:2;a:1:{s:2:"id";i:361;}}}}
+  _edit_last: "1"
+  _thumbnail_id: "2588"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '60'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "60"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '195'
-  wpmm_postgrid_views: '442'
-  _qode-like: '0'
-  _b2s_post_meta: 'a:6:{s:8:"og_title";s:125:"Module Pattern: Essential JavaScript
-    Concepts - Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
-    Training";s:7:"og_desc";s:137:"The Module Pattern is one of the most common design
-    patterns used in JavaScript. It is easy to use and creates encapsulation of our
+  _yoast_wpseo_primary_category: "195"
+  wpmm_postgrid_views: "442"
+  _qode-like: "0"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:125:"Module Pattern: Essential JavaScript Concepts -
+    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
+    Training";s:7:"og_desc";s:137:"The Module Pattern is one of the most common
+    design patterns used in JavaScript. It is easy to use and creates
+    encapsulation of our
     code.";s:8:"og_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-52-javascript.png";s:10:"card_title";s:125:"Module
-    Pattern: Essential JavaScript Concepts - Rupesh Tiwari - Author Developer & Trainer
-    | Professional Full Stack Training";s:9:"card_desc";s:137:"The Module Pattern
-    is one of the most common design patterns used in JavaScript. It is easy to use
-    and creates encapsulation of our code.";s:10:"card_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-52-javascript.png";}'
+    Pattern: Essential JavaScript Concepts - Rupesh Tiwari - Author Developer &
+    Trainer | Professional Full Stack Training";s:9:"card_desc";s:137:"The
+    Module Pattern is one of the most common design patterns used in JavaScript.
+    It is easy to use and creates encapsulation of our
+    code.";s:10:"card_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-52-javascript.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/module-pattern-essential-javascript-concepts/"
+permalink: /module-pattern-essential-javascript-concepts/
+toc: true
 ---
+
 <p>The Module Pattern is one of the most common design patterns used in JavaScript. It is easy to use and creates encapsulation of our code. Before we deep dive into this, first let’s see</p>
 <ul>
 <li>Where do we need this module pattern?</li>

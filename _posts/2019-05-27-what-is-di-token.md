@@ -1,48 +1,54 @@
 ---
 layout: post
 title: What is DI Token
-date: 2019-05-27 05:01:44.000000000 -04:00
+date: 2019-05-27T09:01:44.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
-- Dependency Injection
+  - Angular
+  - Dependency Injection
 tags:
-- Dependency Injection
+  - Dependency Injection
 meta:
-  _edit_last: '1'
-  _thumbnail_id: '2015'
-  wpmm_postgrid_views: '490'
-  _b2s_post_meta: "a:6:{s:8:\"og_title\";s:16:\"What is DI Token\";s:7:\"og_desc\";s:157:\"When
-    we think of learning Dependency Injection in Angular, couple of questions arises
-    like   \tHow this DI concept works in Angular?  \tWhat are all the import\";s:8:\"og_image\";s:69:\"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/AngularI.png\";s:10:\"card_title\";s:16:\"What
-    is DI Token\";s:9:\"card_desc\";s:157:\"When we think of learning Dependency Injection
-    in Angular, couple of questions arises like   \tHow this DI concept works in Angular?
-    \ \tWhat are all the import\";s:10:\"card_image\";s:69:\"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/AngularI.png\";}"
+  _edit_last: "1"
+  _thumbnail_id: "2015"
+  wpmm_postgrid_views: "490"
+  _b2s_post_meta:
+    "a:6:{s:8:\"og_title\";s:16:\"What is DI
+    Token\";s:7:\"og_desc\";s:157:\"When we think of learning Dependency
+    Injection in Angular, couple of questions arises like   \tHow this DI
+    concept works in Angular?  \tWhat are all the
+    import\";s:8:\"og_image\";s:69:\"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/AngularI.png\";s:10:\"card_title\";s:16:\"What
+    is DI Token\";s:9:\"card_desc\";s:157:\"When we think of learning Dependency
+    Injection in Angular, couple of questions arises like   \tHow this DI
+    concept works in Angular?  \tWhat are all the
+    import\";s:10:\"card_image\";s:69:\"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/AngularI.png\";}"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '90'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "90"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  _qode-like: '0'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1608319525;s:7:"payload";a:0:{}}}
+  _yoast_wpseo_primary_category: "178"
+  _qode-like: "0"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1608319525;s:7:"payload";a:0:{}}}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/what-is-di-token/"
+permalink: /what-is-di-token/
+toc: true
 ---
+
 <p>When we think of learning Dependency Injection in Angular, couple of questions arises like</p>
 <ul>
 <li>How this DI concept works in Angular?</li>

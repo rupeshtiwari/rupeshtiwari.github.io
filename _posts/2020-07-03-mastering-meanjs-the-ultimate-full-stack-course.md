@@ -1,48 +1,58 @@
 ---
 layout: post
 title: Mastering meanjs - the ultimate full stack course
-date: 2020-07-03 02:26:05.000000000 -04:00
+date: 2020-07-03T06:26:05.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories: []
 tags: []
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611738624;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3345;}i:1;a:1:{s:2:"id";i:3241;}i:2;a:1:{s:2:"id";i:3277;}}}}
-  _edit_last: '1'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611738624;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3345;}i:1;a:1:{s:2:"id";i:3241;}i:2;a:1:{s:2:"id";i:3277;}}}}
+  _edit_last: "1"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _b2s_post_meta: |-
-    a:6:{s:8:"og_title";s:49:"Mastering meanjs - the ultimate full stack course";s:7:"og_desc";s:160:"About the Class
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:49:"Mastering meanjs - the ultimate full stack
+    course";s:7:"og_desc";s:160:"About the Class
 
 
 
-    Learn how to build an e-commerce online shopping responsive web application from scratch using Angular 8+, express &amp; MongoDb complete MEA";s:8:"og_image";s:0:"";s:10:"card_title";s:49:"Mastering meanjs - the ultimate full stack course";s:9:"card_desc";s:160:"About the Class
+
+    Learn how to build an e-commerce online shopping responsive web application
+    from scratch using Angular 8+, express &amp; MongoDb complete
+    MEA";s:8:"og_image";s:0:"";s:10:"card_title";s:49:"Mastering meanjs - the
+    ultimate full stack course";s:9:"card_desc";s:160:"About the Class
 
 
 
-    Learn how to build an e-commerce online shopping responsive web application from scratch using Angular 8+, express &amp; MongoDb complete MEA";s:10:"card_image";s:0:"";}
+
+    Learn how to build an e-commerce online shopping responsive web application
+    from scratch using Angular 8+, express &amp; MongoDb complete
+    MEA";s:10:"card_image";s:0:"";}
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '30'
-  wpmm_postgrid_views: '80'
-  _qode-like: '0'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "30"
+  wpmm_postgrid_views: "80"
+  _qode-like: "0"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/mastering-meanjs-the-ultimate-full-stack-course/"
+permalink: /mastering-meanjs-the-ultimate-full-stack-course/
+toc: true
 ---
+
 <p><!-- wp:html --><br />
 <iframe src="https://www.tabletwise.com/class/6573795466805248/embed" title="Mastering MEAN.JS - The Ultimate Full Stack Course" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="tabletwise_embed" name="tabletwise_embed" allowfullscreen msallowfullscreen width="660" height="460"></iframe><br />
 <!-- /wp:html --></p>

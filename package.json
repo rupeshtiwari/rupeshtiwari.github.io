@@ -16,5 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "simple-jekyll-search": "^1.9.1"
+  },
+  "devDependencies": {
+    "frontformatter": "^1.1.0"
   }
 }

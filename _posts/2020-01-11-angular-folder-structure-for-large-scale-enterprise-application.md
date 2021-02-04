@@ -1,60 +1,68 @@
 ---
 layout: post
 title: Angular Folder Structure For Large Scale Enterprise Application
-date: 2020-01-11 13:27:47.000000000 -05:00
+date: 2020-01-11T18:27:47.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
-- AngularJS
-- MEAN
-- UI Decomposition
+  - Angular
+  - AngularJS
+  - MEAN
+  - UI Decomposition
 tags:
-- Angular
-- angular architecture
+  - Angular
+  - angular architecture
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612212846;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:493;}i:1;a:1:{s:2:"id";i:2643;}i:2;a:1:{s:2:"id";i:775;}}}}
-  _thumbnail_id: '2913'
-  _edit_last: '1'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612212846;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:493;}i:1;a:1:{s:2:"id";i:2643;}i:2;a:1:{s:2:"id";i:775;}}}}
+  _thumbnail_id: "2913"
+  _edit_last: "1"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _b2s_post_meta: a:6:{s:8:"og_title";s:63:"Angular Folder Structure For Large Scale
-    Enterprise Application";s:7:"og_desc";s:276:"How to define a highly scalable folder
-    structure for your Angular project. Finding a suitable folder structure for my
-    Angular applications is something. Especially when the application grew in size.
-    Rupesh will explain the structure as per angular guide style in this article.";s:8:"og_image";s:77:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/01/folder-structure.jpg";s:10:"card_title";s:63:"Angular
-    Folder Structure For Large Scale Enterprise Application";s:9:"card_desc";s:276:"How
-    to define a highly scalable folder structure for your Angular project. Finding
-    a suitable folder structure for my Angular applications is something. Especially
-    when the application grew in size. Rupesh will explain the structure as per angular
-    guide style in this article.";s:10:"card_image";s:77:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/01/folder-structure.jpg";}
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:63:"Angular Folder Structure For Large Scale
+    Enterprise Application";s:7:"og_desc";s:276:"How to define a highly scalable
+    folder structure for your Angular project. Finding a suitable folder
+    structure for my Angular applications is something. Especially when the
+    application grew in size. Rupesh will explain the structure as per angular
+    guide style in this
+    article.";s:8:"og_image";s:77:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/01/folder-structure.jpg";s:10:"card_title";s:63:"Angular
+    Folder Structure For Large Scale Enterprise
+    Application";s:9:"card_desc";s:276:"How to define a highly scalable folder
+    structure for your Angular project. Finding a suitable folder structure for
+    my Angular applications is something. Especially when the application grew
+    in size. Rupesh will explain the structure as per angular guide style in
+    this
+    article.";s:10:"card_image";s:77:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/01/folder-structure.jpg";}
   slide_template: default
-  _yoast_wpseo_primary_category: '178'
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '30'
-  wpmm_postgrid_views: '1641'
-  _qode-like: '0'
+  _yoast_wpseo_primary_category: "178"
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "30"
+  wpmm_postgrid_views: "1641"
+  _qode-like: "0"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/angular-folder-structure-for-large-scale-enterprise-application/"
-description: How to define a highly scalable folder structure for your Angular project.
-  Finding a suitable folder structure for my Angular applications is something. Especially
-  when the application grew in size. Rupesh will explain the structure as per angular
-  guide style in this article.
+permalink: /angular-folder-structure-for-large-scale-enterprise-application/
+description: >-
+  How to define a highly scalable folder structure for your Angular project.
+  Finding a suitable folder structure for my Angular applications is something.
+  Especially when the application grew in size. Rupesh will explain the
+  structure as per angular guide style in this article.
+toc: true
 ---
+
 <p><!-- wp:paragraph --></p>
 <p>Nowadays, we build large enterprise applications with Angular. But how to best structure such projects to ensure long-term maintainability and re-usability? <a href="https://www.youtube.com/watch?v=cCvLk_U4IQ0&amp;list=PLZed_adPqIJq4IDrDSguUotCAicVhPPMI">Angular Folder Structure For Large Scale Enterprise Application</a>  course by Rupesh Tiwari provides answers to this question. The audience explores how to split large projects into individually reusable npm packages and how to deploy them through an internal and public registry. How to define a highly scalable folder structure for your Angular project. Finding a suitable folder structure for my Angular applications is something always challenging especially when the application grew in size.  As an alternative, it discusses the Monorepo approach that is used successfully by big companies like Google and Facebook and which compensates for some of the disadvantages of npm packages in internal projects.  </p>
 <p><!-- /wp:paragraph --></p>

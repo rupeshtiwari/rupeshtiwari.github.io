@@ -39,8 +39,12 @@ layout: base
         </div>
       {% endif %}
 
+      <div id="toc_container">
+        <h3><p class="toc_title">Contents</p></h3>
+        {{ content | toc_only }}
+      </div>
       <article role="main" class="blog-post">
-        {{ content }}
+        {{ content | inject_anchors }}
       </article>
 
       {% if page.tags.size > 0 %}

@@ -1,63 +1,70 @@
 ---
 layout: post
 title: How to create RxJS Publish Subscribe Library?
-date: 2019-03-07 15:00:08.000000000 -05:00
+date: 2019-03-07T20:00:08.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- RxJS
-- Typescript
+  - RxJS
+  - Typescript
 tags:
-- BehaviorSubject
-- filter
-- publish
-- subscribe
+  - BehaviorSubject
+  - filter
+  - publish
+  - subscribe
 meta:
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612128943;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2275;}i:1;a:1:{s:2:"id";i:775;}i:2;a:1:{s:2:"id";i:2302;}}}}
-  _wpas_done_all: '1'
-  _thumbnail_id: '1448'
-  _edit_last: '1'
-  _qode-like: '0'
-  wpmm_postgrid_views: '975'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612128943;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2275;}i:1;a:1:{s:2:"id";i:775;}i:2;a:1:{s:2:"id";i:2302;}}}}
+  _wpas_done_all: "1"
+  _thumbnail_id: "1448"
+  _edit_last: "1"
+  _qode-like: "0"
+  wpmm_postgrid_views: "975"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
   slide_template: default
-  _b2s_post_meta: a:6:{s:8:"og_title";s:45:"How to create RxJS Publish Subscribe Library?";s:7:"og_desc";s:350:"Did
-    you know you can create your own publish-subscribe library for your RxJS project?
-    By using BehaviorSubject and filter operator it is possible to create your first
-    pub sub library. Publish and Subscribe framework is very helpful to create isolated
-    modules. Therefore, I will explain and demonstrate you how can you create your
-    own pub sub library.";s:8:"og_image";s:78:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/03/subscribe-library.jpg";s:10:"card_title";s:45:"How
-    to create RxJS Publish Subscribe Library?";s:9:"card_desc";s:350:"Did you know
-    you can create your own publish-subscribe library for your RxJS project? By using
-    BehaviorSubject and filter operator it is possible to create your first pub sub
-    library. Publish and Subscribe framework is very helpful to create isolated modules.
-    Therefore, I will explain and demonstrate you how can you create your own pub
-    sub library.";s:10:"card_image";s:78:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/03/subscribe-library.jpg";}
-  _wpcom_is_markdown: '1'
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '90'
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:45:"How to create RxJS Publish Subscribe
+    Library?";s:7:"og_desc";s:350:"Did you know you can create your own
+    publish-subscribe library for your RxJS project? By using BehaviorSubject
+    and filter operator it is possible to create your first pub sub library.
+    Publish and Subscribe framework is very helpful to create isolated modules.
+    Therefore, I will explain and demonstrate you how can you create your own
+    pub sub
+    library.";s:8:"og_image";s:78:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/03/subscribe-library.jpg";s:10:"card_title";s:45:"How
+    to create RxJS Publish Subscribe Library?";s:9:"card_desc";s:350:"Did you
+    know you can create your own publish-subscribe library for your RxJS
+    project? By using BehaviorSubject and filter operator it is possible to
+    create your first pub sub library. Publish and Subscribe framework is very
+    helpful to create isolated modules. Therefore, I will explain and
+    demonstrate you how can you create your own pub sub
+    library.";s:10:"card_image";s:78:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/03/subscribe-library.jpg";}
+  _wpcom_is_markdown: "1"
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "90"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/simple-pub-sub-with-rxjs/"
-description: "\n\t\t\t\tDid you know you can create your own publish-subscribe library
-  for your RxJS project? By using BehaviorSubject and filter operator it is possible
-  to create your first pub sub library. Publish and Subscribe framework is very helpful
-  to create isolated modules. Therefore, I will explain and demonstrate you how can
-  you create your own pub sub library.\t\t"
+permalink: /simple-pub-sub-with-rxjs/
+description:
+  "\n\t\t\t\tDid you know you can create your own publish-subscribe library for
+  your RxJS project? By using BehaviorSubject and filter operator it is possible
+  to create your first pub sub library. Publish and Subscribe framework is very
+  helpful to create isolated modules. Therefore, I will explain and demonstrate
+  you how can you create your own pub sub library.\t\t"
+toc: true
 ---
+
 <p><!-- wp:paragraph --></p>
 <p>Did you know you can create your own publish-subscribe library for your RxJS project? By using <code>BehaviorSubject</code> and <code>filter</code> operator it is possible to create your first pub sub library. Publish and Subscribe framework is very helpful to create isolated modules. Therefore, I will explain and demonstrate you how can you create your own pub sub library.  </p>
 <p><!-- /wp:paragraph --></p>
@@ -94,6 +101,7 @@ export const initAction = { type: INIT }</code></pre>
 import {initAction, Action} from './action';
 
 export const actions$ = new BehaviorSubject&lt;Action>(initAction);</code></pre>
+
 <p><!-- /wp:code --></p>
 <p><!-- wp:paragraph --></p>
 <p>Now we are ready to publish and filter desired action on our action stream. </p>
@@ -131,26 +139,23 @@ export const actions$ = new BehaviorSubject&lt;Action>(initAction);</code></pre>
 <p><!-- wp:code --></p>
 <pre class="wp-block-code"><code>// action.ts
 
-export  interface Action {
-  type: string;
-}
-export const INIT = 'myapp [init]';
+export interface Action { type: string; } export const INIT = 'myapp [init]';
 export const initAction = { type: INIT };
 
 // actions.ts
 
-import { BehaviorSubject } from 'rxjs';
-import {initAction, Action} from './action';
-import { filter } from 'rxjs/operators';
-
+import { BehaviorSubject } from 'rxjs'; import {initAction, Action} from
+'./action'; import { filter } from 'rxjs/operators';
 
 export const actions$ = new BehaviorSubject&lt;Action>(initAction);
 
 export const publish = (action) => actions$.next(action);
 
-export const ofType = (actionType) => actions$.pipe(filter(a => a.type === actionType));
+export const ofType = (actionType) => actions$.pipe(filter(a => a.type ===
+actionType));
 
 </code></pre>
+
 <p><!-- /wp:code --></p>
 <p><!-- wp:heading --></p>
 <h2>How to consume RxJS actions?</h2>
@@ -162,12 +167,10 @@ export const ofType = (actionType) => actions$.pipe(filter(a => a.type === actio
 <pre class="wp-block-code"><code>import * as actions from './actions';
 import { INIT } from './action';
 
-actions.ofType(INIT).subscribe((action)=>{
-  console.log('received message', action);
-  // You can do your project initial setup here
-  // like brining some data from server etc. 
-});
-</code></pre>
+actions.ofType(INIT).subscribe((action)=>{ console.log('received message',
+action); // You can do your project initial setup here // like brining some data
+from server etc. }); </code></pre>
+
 <p><!-- /wp:code --></p>
 <p><!-- wp:image {"id":1090,"width":458,"height":100} --></p>
 <figure class="wp-block-image is-resized"><img src="{{ site.baseurl }}/assets/2019/03/subscribing-init.png" alt="" class="wp-image-1090" width="458" height="100" /></figure>
@@ -182,13 +185,9 @@ actions.ofType(ADD_USER).subscribe((action) => {
   console.log('received message', action);
 });
 
-const addUserAction = {
-  type: ADD_USER, payload: {
-    id: 23, firstName: 'Rupesh'
-  }
-};
-actions.publish(addUserAction);
-</code></pre>
+const addUserAction = { type: ADD_USER, payload: { id: 23, firstName: 'Rupesh' }
+}; actions.publish(addUserAction); </code></pre>
+
 <p><!-- /wp:code --></p>
 <p><!-- wp:image {"id":1091} --></p>
 <figure class="wp-block-image"><img src="{{ site.baseurl }}/assets/2019/03/subscribing-add-user.png" alt="" class="wp-image-1091" /><br />

@@ -1,47 +1,51 @@
 ---
 layout: post
-title: Creating Mobile compatible Responsive Login and Register Page - Online ecommerce
-  Store
-date: 2020-04-27 06:00:18.000000000 -04:00
+title: >-
+  Creating Mobile compatible Responsive Login and Register Page - Online
+  ecommerce Store
+date: 2020-04-27T10:00:18.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
-- Express.JS
-- Full Stack Master
+  - Angular
+  - Express.JS
+  - Full Stack Master
 tags:
-- Angular
-- Express
-- fullstackmaster
-- JavaScript
+  - Angular
+  - Express
+  - fullstackmaster
+  - JavaScript
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1602058864;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3252;}i:1;a:1:{s:2:"id";i:3277;}i:2;a:1:{s:2:"id";i:3241;}}}}
-  _edit_last: '1'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1602058864;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3252;}i:1;a:1:{s:2:"id";i:3277;}i:2;a:1:{s:2:"id";i:3241;}}}}
+  _edit_last: "1"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '30'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "30"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  wpmm_postgrid_views: '102'
-  _qode-like: '0'
-  _thumbnail_id: '3272'
-  _b2s_post_meta: a:6:{s:8:"og_title";s:86:"Creating Mobile compatible Responsive
-    Login and Register Page - Online ecommerce Store";s:7:"og_desc";s:145:"In our
-    previous demo session Responsive Toolbar Online ecommerce Store Part 2 we have
-    learnt how to create responsive toolbar with proper design.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-121.png";s:10:"card_title";s:86:"Creating
-    Mobile compatible Responsive Login and Register Page - Online ecommerce Store";s:9:"card_desc";s:160:"In
-    our previous demo session Responsive Toolbar Online ecommerce Store Part 2 we
-    have learnt how to create responsive toolbar with proper design. Next in this
+  _yoast_wpseo_primary_category: "178"
+  wpmm_postgrid_views: "102"
+  _qode-like: "0"
+  _thumbnail_id: "3272"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:86:"Creating Mobile compatible Responsive Login and
+    Register Page - Online ecommerce Store";s:7:"og_desc";s:145:"In our previous
+    demo session Responsive Toolbar Online ecommerce Store Part 2 we have learnt
+    how to create responsive toolbar with proper
+    design.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-121.png";s:10:"card_title";s:86:"Creating
+    Mobile compatible Responsive Login and Register Page - Online ecommerce
+    Store";s:9:"card_desc";s:160:"In our previous demo session Responsive
+    Toolbar Online ecommerce Store Part 2 we have learnt how to create
+    responsive toolbar with proper design. Next in this
     v";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-121.png";}
 author:
   login: rupeshtiwari
@@ -49,8 +53,11 @@ author:
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/creating-mobile-compatible-responsive-login-and-register-page-online-ecommerce-store/"
+permalink: >-
+  /creating-mobile-compatible-responsive-login-and-register-page-online-ecommerce-store/
+toc: true
 ---
+
 <p>In our previous demo session <a href="https://www.youtube.com/watch?v=wsux8G3L-rQ&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=66&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Responsive Toolbar Online ecommerce Store Part 2</strong></a> we have learnt how to create responsive toolbar with proper design. Next in this video session we will focus on creating mobile compatible responsive login and register page in our ecommerce store web app.</p>
 <p>All this is explained in our demo session <a href="https://www.youtube.com/watch?v=-sZAlN5sSI0&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=67&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Creating Responsive Login And Register Page | Mobile Compatible</strong></a> in detail. Here we will go through each coding step one by one and briefly discuss with screenshots. Currently our ecommerce store looks like below in mobile:</p>
 <p>Register page:</p>

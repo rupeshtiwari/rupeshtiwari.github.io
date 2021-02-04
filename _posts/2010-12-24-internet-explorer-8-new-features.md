@@ -1,40 +1,42 @@
 ---
 layout: post
 title: Internet Explorer 8 - new features
-date: 2010-12-24 19:58:06.000000000 -05:00
+date: 2010-12-25T00:58:06.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Internet Explorer 8
+  - Internet Explorer 8
 tags:
-- Accelerators
-- Web Slice
+  - Accelerators
+  - Web Slice
 meta:
-  geo_latitude: '40.271005'
-  _edit_last: '1'
+  geo_latitude: "40.271005"
+  _edit_last: "1"
   geo_longitude: "-74.838503"
-  geo_accuracy: '0'
-  geo_address: 1214 Scenic Drive, NJ, 08628
-  geo_public: '1'
-  _wpas_skip_yup: '1'
-  _wpas_skip_twitter: '1'
-  _wpas_skip_fb: '1'
-  _wpas_skip_ms: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1604263226;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2248;}i:1;a:1:{s:2:"id";i:493;}i:2;a:1:{s:2:"id";i:295;}}}}
-  _qode-like: '0'
-  wpmm_postgrid_views: '362'
+  geo_accuracy: "0"
+  geo_address: "1214 Scenic Drive, NJ, 08628"
+  geo_public: "1"
+  _wpas_skip_yup: "1"
+  _wpas_skip_twitter: "1"
+  _wpas_skip_fb: "1"
+  _wpas_skip_ms: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1604263226;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2248;}i:1;a:1:{s:2:"id";i:493;}i:2;a:1:{s:2:"id";i:295;}}}}
+  _qode-like: "0"
+  wpmm_postgrid_views: "362"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/internet-explorer-8-new-features/"
-description: "Internet Explorer 8 - new features"
+permalink: /internet-explorer-8-new-features/
+description: Internet Explorer 8 - new features
+toc: true
 ---
+
 <p>
 				<font size="3"><br />
 Hi all,</p>

@@ -1,51 +1,57 @@
 ---
 layout: post
 title: Integrating Toolbar Component from Angular CLI - Demo
-date: 2020-01-06 06:00:12.000000000 -05:00
+date: 2020-01-06T11:00:12.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
+  - Angular
 tags:
-- Angular
-- fullstackmaster
-- rupeshtiwari
+  - Angular
+  - fullstackmaster
+  - rupeshtiwari
 meta:
-  _edit_last: '1'
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609380000;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2850;}i:1;a:1:{s:2:"id";i:2770;}i:2;a:1:{s:2:"id";i:3252;}}}}
-  _thumbnail_id: '2870'
+  _edit_last: "1"
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609380000;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2850;}i:1;a:1:{s:2:"id";i:2770;}i:2;a:1:{s:2:"id";i:3252;}}}}
+  _thumbnail_id: "2870"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '90'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "90"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  wpmm_postgrid_views: '260'
-  _qode-like: '0'
-  _b2s_post_meta: a:6:{s:8:"og_title";s:126:"Integrating Toolbar Component from Angular
-    CLI - Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack Training";s:7:"og_desc";s:128:"In
-    this demo session Integrating Toolbar | Angular CLI | Demo | 0009-13 we will see
-    how to integrate toolbar in our angular app.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/12/RUPESH-104.png";s:10:"card_title";s:53:"Integrating
-    Toolbar Component from Angular CLI - Demo";s:9:"card_desc";s:160:"In this demo
-    session Integrating Toolbar | Angular CLI | Demo | 0009-13 we will see how to
-    integrate toolbar in our angular app. In order to put toolbar in our ";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/12/RUPESH-104.png";}
+  _yoast_wpseo_primary_category: "178"
+  wpmm_postgrid_views: "260"
+  _qode-like: "0"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:126:"Integrating Toolbar Component from Angular CLI -
+    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
+    Training";s:7:"og_desc";s:128:"In this demo session Integrating Toolbar |
+    Angular CLI | Demo | 0009-13 we will see how to integrate toolbar in our
+    angular
+    app.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/12/RUPESH-104.png";s:10:"card_title";s:53:"Integrating
+    Toolbar Component from Angular CLI - Demo";s:9:"card_desc";s:160:"In this
+    demo session Integrating Toolbar | Angular CLI | Demo | 0009-13 we will see
+    how to integrate toolbar in our angular app. In order to put toolbar in our
+    ";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/12/RUPESH-104.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/integrating-toolbar-component-from-angular-cli-demo/"
+permalink: /integrating-toolbar-component-from-angular-cli-demo/
+toc: true
 ---
+
 <p>In this demo session <a href="https://www.youtube.com/watch?v=G-b1rJI9RWA&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=14&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Integrating Toolbar | Angular CLI | Demo | 0009-13 </strong></a>we will see how to integrate toolbar in our angular app. In order to put toolbar in our app component <strong>app.component.html</strong> we need angular material component. As we already imported material module earlier in our <strong>app.module.ts</strong>, now we can directly pull toolbar code from angular material site. We will go to toolbar under Navigation heading and take its basic source code.</p>
 <p><img class="alignnone size-full wp-image-2877" src="{{ site.baseurl }}/assets/2020/01/TC1.png" alt="" width="856" height="482" /></p>
 <p>This source code we will put in app component and rename it to Product Mart as our brand name.</p>

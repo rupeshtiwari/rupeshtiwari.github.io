@@ -1,76 +1,94 @@
 ---
 layout: post
 title: Why Express.JS with Typescript
-date: 2019-02-25 20:23:52.000000000 -05:00
+date: 2019-02-26T01:23:52.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Express.JS
-- JavaScript
-- MEAN
-- NodeJS
-- Typescript
-- Webpack
+  - Express.JS
+  - JavaScript
+  - MEAN
+  - NodeJS
+  - Typescript
+  - Webpack
 tags: []
 meta:
-  _wpas_mess: " I wanted to work with Typescript, Webpack and Express.JS finally came
-    up with a project where we can use webpack, typescript, karma, jasmien and express.js.
-    All together and do nice development. Please read this article to get more details."
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610906536;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:1021;}i:2;a:1:{s:2:"id";i:493;}}}}
-  _thumbnail_id: '1454'
-  _wpas_done_all: '1'
+  _wpas_mess:
+    " I wanted to work with Typescript, Webpack and Express.JS finally came up
+    with a project where we can use webpack, typescript, karma, jasmien and
+    express.js. All together and do nice development. Please read this article
+    to get more details."
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610906536;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:1021;}i:2;a:1:{s:2:"id";i:493;}}}}
+  _thumbnail_id: "1454"
+  _wpas_done_all: "1"
   _publicize_twitter_user: "@roopkt"
-  _edit_last: '1'
-  _oembed_time_723f42d92d4f5376fc777d3d40811183: '1553107413'
-  _oembed_723f42d92d4f5376fc777d3d40811183: <div class="github-embed github-embed-repository"><p><a
-    href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App" target="_blank"><strong>Sample
-    app with client and server folder demonstrating express js runing web api and
-    web api call using jquery ajax </strong></a><br/><a href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App"
+  _edit_last: "1"
+  _oembed_time_723f42d92d4f5376fc777d3d40811183: "1553107413"
+  _oembed_723f42d92d4f5376fc777d3d40811183: >-
+    <div class="github-embed github-embed-repository"><p><a
+    href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App"
+    target="_blank"><strong>Sample app with client and server folder
+    demonstrating express js runing web api and web api call using jquery ajax
+    </strong></a><br/><a
+    href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App"
     target="_blank">https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App</a><br/><a
     href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/network"
-    target="_blank">4</a> forks.<br/><a href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/stargazers"
-    target="_blank">0</a> stars.<br/><a href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/issues"
-    target="_blank">0</a> open issues.<br/>Recent commits:<ul class="github_commits"><li
-    class="github_commit"><a href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/commit/a821fb78835845aacfdd25e392428fbf8416b096"
-    target="_blank">did add user post</a>, roopkt@gmail.com</li><li class="github_commit"><a
+    target="_blank">4</a> forks.<br/><a
+    href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/stargazers"
+    target="_blank">0</a> stars.<br/><a
+    href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/issues"
+    target="_blank">0</a> open issues.<br/>Recent commits:<ul
+    class="github_commits"><li class="github_commit"><a
+    href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/commit/a821fb78835845aacfdd25e392428fbf8416b096"
+    target="_blank">did add user post</a>, roopkt@gmail.com</li><li
+    class="github_commit"><a
     href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/commit/fcfd60c0a45e1b8c099d53a00d310f28bb28ce51"
-    target="_blank">we added user in db</a>, roopkt@gmail.com</li><li class="github_commit"><a
+    target="_blank">we added user in db</a>, roopkt@gmail.com</li><li
+    class="github_commit"><a
     href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/commit/2a1be851d8fabc8165c53bd9fad90640f9a3ec00"
-    target="_blank">added controller</a>, roopkt@gmail.com</li><li class="github_commit"><a
+    target="_blank">added controller</a>, roopkt@gmail.com</li><li
+    class="github_commit"><a
     href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/commit/cd46b566a0d85a2f9c39d008467641258b9ff880"
-    target="_blank">added route</a>, roopkt@gmail.com</li><li class="github_commit"><a
+    target="_blank">added route</a>, roopkt@gmail.com</li><li
+    class="github_commit"><a
     href="https://github.com/roopkt/Training-Typescript-ExpressJS-Sample-App/commit/240b2f3417f86f2901e7fadf843f1c3feb068e34"
     target="_blank">adding project</a>, roopkt</li></ul></p></div>
-  _qode-like: '0'
-  _oembed_f22b88eb74f25592cda8f2c26d34474c: <iframe width="1060" height="596" src="https://www.youtube.com/embed/9a1KL9wrREg?start=2&feature=oembed"
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-  _oembed_time_f22b88eb74f25592cda8f2c26d34474c: '1554114329'
+  _qode-like: "0"
+  _oembed_f22b88eb74f25592cda8f2c26d34474c: >-
+    <iframe width="1060" height="596"
+    src="https://www.youtube.com/embed/9a1KL9wrREg?start=2&feature=oembed"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+    picture-in-picture" allowfullscreen></iframe>
+  _oembed_time_f22b88eb74f25592cda8f2c26d34474c: "1554114329"
   _oembed_a799e29df3523f1ac5232770e9714d4c: "{{unknown}}"
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
   slide_template: default
-  wpmm_postgrid_views: '724'
+  wpmm_postgrid_views: "724"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/why-express-js-with-typescript/"
-description: "\n\t\t\t\tI love Typescript the way it helps development speed and accuracy.
-  I wanted to work with Typescript, Webpack and Express.JS finally came up with a
-  project where we can use webpack, typescript, karma, jasmien and express.js. All
-  together and do nice development. Please read this article to get more details.\t\t"
+permalink: /why-express-js-with-typescript/
+description:
+  "\n\t\t\t\tI love Typescript the way it helps development speed and accuracy.
+  I wanted to work with Typescript, Webpack and Express.JS finally came up with
+  a project where we can use webpack, typescript, karma, jasmien and express.js.
+  All together and do nice development. Please read this article to get more
+  details.\t\t"
+toc: true
 ---
+
 <p><!-- wp:paragraph --></p>
 <p>I love Typescript the way it helps development speed and accuracy. I wanted to work with Typescript, Webpack and Express.JS finally came up with a project where we can use <code>webpack, typescript, karma, jasmien and express.js</code>. All together and do nice development. Please read this article to get more details.</p>
 <p><!-- /wp:paragraph --></p>
@@ -101,8 +119,8 @@ app
 .get('/', (req,res)=>res.send(`your server is running`))
 .listen(PORT, ()=> console.log(`your server is running at port ${PORT});
 
-// now you can navigate to http://localhost:3432/
-</code></pre>
+// now you can navigate to http://localhost:3432/ </code></pre>
+
 <p><!-- /wp:code --></p>
 <p><!-- wp:heading --></p>
 <h2><a href="https://gist.github.com/roopkt/337d5c701d9c86716057c3ff336e8fb3#example-of-expressjs-with-typescript"></a>Example of ExpressJS with Typescript</h2>

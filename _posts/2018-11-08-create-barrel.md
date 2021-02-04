@@ -1,29 +1,31 @@
 ---
 layout: post
 title: Create Barrel for Typescript Project
-date: 2018-11-08 17:34:49.000000000 -05:00
+date: 2018-11-08T22:34:49.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- JavaScript
+  - JavaScript
 tags:
-- JavaScript
-- npm
+  - JavaScript
+  - npm
 meta:
-  _wpas_mess: What is a Barrel, Why Should I use Barrel, How to Create a Barrel, What
-    Problem Barrel is solving ? I have a big typescript project that I bundle via
-    webpack exposing  public module. I will show you how I did this.  
-  _wpas_done_all: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611963353;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:2643;}i:2;a:1:{s:2:"id";i:493;}}}}
-  _thumbnail_id: '1468'
-  advanced_seo_description: 'What is a Barrel, Why Should I use Barrel, How to Create
-    a Barrel, What Problem Barrel is solving ? I have a big typescript project that
-    I bundle via webpack exposing  public module. I will show you how I did this. '
+  _wpas_mess:
+    "What is a Barrel, Why Should I use Barrel, How to Create a Barrel, What
+    Problem Barrel is solving ? I have a big typescript project that I bundle
+    via webpack exposing  public module. I will show you how I did this. \_"
+  _wpas_done_all: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611963353;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:2643;}i:2;a:1:{s:2:"id";i:493;}}}}
+  _thumbnail_id: "1468"
+  advanced_seo_description: >-
+    What is a Barrel, Why Should I use Barrel, How to Create a Barrel, What
+    Problem Barrel is solving ? I have a big typescript project that I bundle
+    via webpack exposing  public module. I will show you how I did this.
   _publicize_twitter_user: "@roopkt"
-  _qode-like: '0'
+  _qode-like: "0"
   _oembed_2370e197fe93839ba6cfff84407aa8b9: "{{unknown}}"
   _oembed_728ba10bb6a6762aaa9246e927dc979b: "{{unknown}}"
   _oembed_803ee764dfbc878fca7db4a3fd2d0a88: "{{unknown}}"
@@ -34,44 +36,51 @@ meta:
   _oembed_8e3e0a5889fac1aba4f72ecda30c0a0e: "{{unknown}}"
   _oembed_2c653dea928a11cc5228b059bc9e6608: "{{unknown}}"
   _oembed_31c9c9ec342b8d7a858db73886b81f3a: "{{unknown}}"
-  _edit_last: '1'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _edit_last: "1"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
   slide_template: default
-  wpmm_postgrid_views: '1267'
+  wpmm_postgrid_views: "1267"
   _oembed_18842c6b9cfb75b458affb7336c1eb75: "{{unknown}}"
-  _b2s_post_meta: a:6:{s:8:"og_title";s:36:"Create Barrel for Typescript Project";s:7:"og_desc";s:216:"What
-    is a Barrel, Why Should I use Barrel, How to Create a Barrel, What Problem Barrel
-    is solving ? I have a big typescript project that I bundle via webpack exposing
-    public module. I will show you how I did this.  ";s:8:"og_image";s:74:"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/create-barrel.jpg";s:10:"card_title";s:36:"Create
-    Barrel for Typescript Project";s:9:"card_desc";s:216:"What is a Barrel, Why Should
-    I use Barrel, How to Create a Barrel, What Problem Barrel is solving ? I have
-    a big typescript project that I bundle via webpack exposing public module. I will
-    show you how I did this.  ";s:10:"card_image";s:74:"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/create-barrel.jpg";}
-  _yoast_wpseo_primary_category: ''
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '60'
+  _b2s_post_meta:
+    "a:6:{s:8:\"og_title\";s:36:\"Create Barrel for Typescript
+    Project\";s:7:\"og_desc\";s:216:\"What is a Barrel, Why Should I use Barrel,
+    How to Create a Barrel, What Problem Barrel is solving ? I have a big
+    typescript project that I bundle via webpack exposing public module. I will
+    show you how I did this.
+    \_\";s:8:\"og_image\";s:74:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/create-barrel.jpg\";s:10:\"card_title\";s:36:\"Create
+    Barrel for Typescript Project\";s:9:\"card_desc\";s:216:\"What is a Barrel,
+    Why Should I use Barrel, How to Create a Barrel, What Problem Barrel is
+    solving ? I have a big typescript project that I bundle via webpack exposing
+    public module. I will show you how I did this.
+    \_\";s:10:\"card_image\";s:74:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/create-barrel.jpg\";}"
+  _yoast_wpseo_primary_category: ""
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "60"
   _oembed_6ec7e0038da3da49044965935508c32b: "{{unknown}}"
   _oembed_cd2b90ba2b43cd0b85c95d531f97a93f: "{{unknown}}"
   _oembed_b26cbbc5204763e7b3cf58d63fc44a47: "{{unknown}}"
   _oembed_3ac389c8771b60e52d7942516b9bebb8: "{{unknown}}"
-  _wpcom_is_markdown: '1'
+  _wpcom_is_markdown: "1"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/create-barrel/"
-description: "\n\t\t\t\tWhat is a Barrel, Why Should I use Barrel, How to Create a Barrel,
-  What Problem Barrel is solving ? I have a big typescript project that I bundle via
-  webpack exposing  public module. I will show you how I did this.  \t\t"
+permalink: /create-barrel/
+description:
+  "\n\t\t\t\tWhat is a Barrel, Why Should I use Barrel, How to Create a Barrel,
+  What Problem Barrel is solving ? I have a big typescript project that I bundle
+  via webpack exposing  public module. I will show you how I did this. \_\t\t"
+toc: true
 ---
+
 <blockquote>When you create your own Typescript  library then you need a barrel file where you put all of your files that you want to expose to the outside world kind of public API. Normally this is an <code>index.ts</code> file where you want to <code>export</code> all of your files which will become public API. The big question is how to automatically create this index file or barrel ? Especially if you are maintaining a huge project.</p></blockquote>
 <h2>What is Barrel</h2>
 <p>It is an index file where you export all of your files those you want to make them available publically.</p>

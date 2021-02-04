@@ -1,64 +1,71 @@
 ---
 layout: post
 title: Push Based Architecture With RxJS Behavior Subject
-date: 2019-06-22 11:56:45.000000000 -04:00
+date: 2019-06-22T15:56:45.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- RxJS
+  - RxJS
 tags:
-- A push-based architecture
-- Managing State Using RxJS Subjects
-- Pull vs. Push
-- push based architecture
-- push based architecture with rxjs
-- RxJS
-- 'RxJS: Managing Operator State'
-- state management in angular rxjs
-- state management rxjs
+  - A push-based architecture
+  - Managing State Using RxJS Subjects
+  - Pull vs. Push
+  - push based architecture
+  - push based architecture with rxjs
+  - RxJS
+  - "RxJS: Managing Operator State"
+  - state management in angular rxjs
+  - state management rxjs
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612171929;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2275;}i:1;a:1:{s:2:"id";i:779;}i:2;a:1:{s:2:"id";i:1084;}}}}
-  _edit_last: '1'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612171929;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2275;}i:1;a:1:{s:2:"id";i:779;}i:2;a:1:{s:2:"id";i:1084;}}}}
+  _edit_last: "1"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _b2s_post_meta: a:6:{s:8:"og_title";s:50:"Push Based Architecture With RxJS Behavior
-    Subject";s:7:"og_desc";s:292:"There are 2 types of architectures one is Pull Based
-    the second one is Push Based. I will explain you how can we leverage RxJS BehaviorSubject
-    to establish Push Based Architecture. In Design Patterns book we have Observer
-    Design Pattern that is exactly what I mean by Push Based Architecture.";s:8:"og_image";s:94:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/push-based-architecture-with-rxjs.png";s:10:"card_title";s:50:"Push
-    Based Architecture With RxJS Behavior Subject";s:9:"card_desc";s:292:"There are
-    2 types of architectures one is Pull Based the second one is Push Based. I will
-    explain you how can we leverage RxJS BehaviorSubject to establish Push Based Architecture.
-    In Design Patterns book we have Observer Design Pattern that is exactly what I
-    mean by Push Based Architecture.";s:10:"card_image";s:94:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/push-based-architecture-with-rxjs.png";}
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:50:"Push Based Architecture With RxJS Behavior
+    Subject";s:7:"og_desc";s:292:"There are 2 types of architectures one is Pull
+    Based the second one is Push Based. I will explain you how can we leverage
+    RxJS BehaviorSubject to establish Push Based Architecture. In Design
+    Patterns book we have Observer Design Pattern that is exactly what I mean by
+    Push Based
+    Architecture.";s:8:"og_image";s:94:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/push-based-architecture-with-rxjs.png";s:10:"card_title";s:50:"Push
+    Based Architecture With RxJS Behavior Subject";s:9:"card_desc";s:292:"There
+    are 2 types of architectures one is Pull Based the second one is Push Based.
+    I will explain you how can we leverage RxJS BehaviorSubject to establish
+    Push Based Architecture. In Design Patterns book we have Observer Design
+    Pattern that is exactly what I mean by Push Based
+    Architecture.";s:10:"card_image";s:94:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/push-based-architecture-with-rxjs.png";}
   slide_template: default
-  _yoast_wpseo_primary_category: '206'
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '90'
-  _thumbnail_id: '2304'
-  wpmm_postgrid_views: '744'
-  _qode-like: '0'
+  _yoast_wpseo_primary_category: "206"
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "90"
+  _thumbnail_id: "2304"
+  wpmm_postgrid_views: "744"
+  _qode-like: "0"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/push-based-architecture-with-rxjs/"
-description: There are 2 types of architectures one is Pull Based the second one is Push
-  Based. I will explain you how can we leverage RxJS BehaviorSubject to establish
-  Push Based Architecture. In Design Patterns book we have Observer Design Pattern
-  that is exactly what I mean by Push Based Architecture.
+permalink: /push-based-architecture-with-rxjs/
+description: >-
+  There are 2 types of architectures one is Pull Based the second one is Push
+  Based. I will explain you how can we leverage RxJS BehaviorSubject to
+  establish Push Based Architecture. In Design Patterns book we have Observer
+  Design Pattern that is exactly what I mean by Push Based Architecture.
+toc: true
 ---
+
 <p><!-- wp:quote --></p>
 <blockquote class="wp-block-quote"><p>There are 2 types of architectures one is&nbsp;<code>Pull Based</code>&nbsp;the second one is&nbsp;<code>Push Based</code>. I will explain you how can we leverage&nbsp;<code>RxJS BehaviorSubject</code>&nbsp;to establish&nbsp;<code>Push Based Architecture</code>. In Design Patterns book we have&nbsp;<code>Observer Design Pattern</code>&nbsp;that is exactly what I mean by&nbsp;<code>Push Based Architecture</code>.</p>
 </blockquote>
@@ -235,18 +242,12 @@ description: There are 2 types of architectures one is Pull Based the second one
 <pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">export class CartStore {
   _cartState = new BehaviorSubject&lt;CartState>(initialState);
 
-  get state() {
-    return this._cartState.getValue();
-  }
+get state() { return this.\_cartState.getValue(); }
 
-  setState(newCartState: CartState) {
-    this._cartState.next(newCartState);
-  }
+setState(newCartState: CartState) { this.\_cartState.next(newCartState); }
 
-  get state$() {
-    return this._cartState.asObservable();
-  }
-}
+get state$() { return this.\_cartState.asObservable(); } }
+
 </pre>
 <p><!-- /wp:enlighter/codeblock --></p>
 <p><!-- wp:separator --></p>
@@ -273,16 +274,13 @@ description: There are 2 types of architectures one is Pull Based the second one
     this.setState(newState);
     logState("Current", this.state);
     logLine();
-  }
 
-
-  function logLine() {
-  console.log(`----------------------------------------`);
 }
 
-function logState(which, state) {
-  console.log(`${which} State`, state);
-}
+function logLine() { console.log(`----------------------------------------`); }
+
+function logState(which, state) { console.log(`${which} State`, state); }
+
 </pre>
 <p><!-- /wp:enlighter/codeblock --></p>
 <p><!-- wp:image --></p>

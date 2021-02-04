@@ -1,51 +1,57 @@
 ---
 layout: post
 title: Installing Angular Material using Angular CLI- Demo
-date: 2019-11-25 06:00:51.000000000 -05:00
+date: 2019-11-25T11:00:51.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
+  - Angular
 tags:
-- Angular
-- fullstackmaster
-- rupeshtiwari
+  - Angular
+  - fullstackmaster
+  - rupeshtiwari
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611292536;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2630;}i:1;a:1:{s:2:"id";i:2788;}i:2;a:1:{s:2:"id";i:2770;}}}}
-  _edit_last: '1'
-  _thumbnail_id: '2786'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611292536;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2630;}i:1;a:1:{s:2:"id";i:2788;}i:2;a:1:{s:2:"id";i:2770;}}}}
+  _edit_last: "1"
+  _thumbnail_id: "2786"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '30'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "30"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  wpmm_postgrid_views: '285'
-  _qode-like: '0'
-  _b2s_post_meta: a:6:{s:8:"og_title";s:121:"Installing Angular Material using Angular
-    - Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack Training";s:7:"og_desc";s:123:"In
-    order to install required angular material, angular team has provided six steps
-    to follow in angular material home page.";s:8:"og_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-97.png";s:10:"card_title";s:51:"Installing
-    Angular Material using Angular CLI- Demo";s:9:"card_desc";s:160:"In order to install
-    required angular material, angular team has provided six steps to follow in angular
-    material home page. All of them are listed when we click";s:10:"card_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-97.png";}
+  _yoast_wpseo_primary_category: "178"
+  wpmm_postgrid_views: "285"
+  _qode-like: "0"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:121:"Installing Angular Material using Angular -
+    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
+    Training";s:7:"og_desc";s:123:"In order to install required angular
+    material, angular team has provided six steps to follow in angular material
+    home
+    page.";s:8:"og_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-97.png";s:10:"card_title";s:51:"Installing
+    Angular Material using Angular CLI- Demo";s:9:"card_desc";s:160:"In order to
+    install required angular material, angular team has provided six steps to
+    follow in angular material home page. All of them are listed when we
+    click";s:10:"card_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-97.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/installing-angular-material-using-angular-cli-demo/"
+permalink: /installing-angular-material-using-angular-cli-demo/
+toc: true
 ---
+
 <p>In order to install required angular material, angular team has provided six steps to follow in angular material home page. All of them are listed when we click on “Get Started” on home page.</p>
 <p><img class="alignnone size-full wp-image-2785" src="{{ site.baseurl }}/assets/2019/11/AMC1.png" alt="" width="698" height="389" /></p>
 <p>However performing all these six steps manually is prone to errors, so angular team has provided single line command to do all the six steps in one go. It will change all required files in our project accordingly and make our life easier.</p>

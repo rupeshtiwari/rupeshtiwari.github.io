@@ -1,55 +1,62 @@
 ---
 layout: post
 title: SETTING UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM SCRATCH
-date: 2019-06-01 10:02:20.000000000 -04:00
+date: 2019-06-01T14:02:20.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Webpack
+  - Webpack
 tags:
-- Node.js
-- Typescript
-- webpack
+  - Node.js
+  - Typescript
+  - webpack
 meta:
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611612411;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:1021;}i:2;a:1:{s:2:"id";i:493;}}}}
-  _edit_last: '1'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611612411;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:1021;}i:2;a:1:{s:2:"id";i:493;}}}}
+  _edit_last: "1"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _b2s_post_meta: a:6:{s:8:"og_title";s:58:"SETTING UP WEBPACK FOR ANY TYPESCRIPT
-    PROJECT FROM SCRATCH";s:7:"og_desc";s:220:"Welcome to step by step hands-on guide
-    to setup webpack in your upcoming typescript project. Please follow the steps
-    and you should be able to create your own webpack project. Please download the
-    source code from github.";s:8:"og_image";s:84:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/feature-createwebpack-1.jpg";s:10:"card_title";s:58:"SETTING
-    UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM SCRATCH";s:9:"card_desc";s:220:"Welcome
-    to step by step hands-on guide to setup webpack in your upcoming typescript project.
-    Please follow the steps and you should be able to create your own webpack project.
-    Please download the source code from github.";s:10:"card_image";s:84:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/feature-createwebpack-1.jpg";}
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:58:"SETTING UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM
+    SCRATCH";s:7:"og_desc";s:220:"Welcome to step by step hands-on guide to
+    setup webpack in your upcoming typescript project. Please follow the steps
+    and you should be able to create your own webpack project. Please download
+    the source code from
+    github.";s:8:"og_image";s:84:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/feature-createwebpack-1.jpg";s:10:"card_title";s:58:"SETTING
+    UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM
+    SCRATCH";s:9:"card_desc";s:220:"Welcome to step by step hands-on guide to
+    setup webpack in your upcoming typescript project. Please follow the steps
+    and you should be able to create your own webpack project. Please download
+    the source code from
+    github.";s:10:"card_image";s:84:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/feature-createwebpack-1.jpg";}
   slide_template: default
-  _yoast_wpseo_primary_category: '214'
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '60'
-  wpmm_postgrid_views: '639'
-  _qode-like: '0'
-  _thumbnail_id: '2176'
+  _yoast_wpseo_primary_category: "214"
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "60"
+  wpmm_postgrid_views: "639"
+  _qode-like: "0"
+  _thumbnail_id: "2176"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/setting-up-webpack-for-any-typescript-project-from-scratch/"
-description: Welcome to step by step hands-on guide to setup webpack in your upcoming
-  typescript project. Please follow the steps and you should be able to create your
-  own webpack project. Please download the source code from github.
+permalink: /setting-up-webpack-for-any-typescript-project-from-scratch/
+description: >-
+  Welcome to step by step hands-on guide to setup webpack in your upcoming
+  typescript project. Please follow the steps and you should be able to create
+  your own webpack project. Please download the source code from github.
+toc: true
 ---
+
 <p><!-- wp:heading {"level":1} --></p>
 <h1>Introduction</h1>
 <p><!-- /wp:heading --></p>
@@ -302,17 +309,13 @@ description: Welcome to step by step hands-on guide to setup webpack in your upc
 
 let buggyFunc = DeclarationBundlerPlugin.prototype.generateCombinedDeclaration
 DeclarationBundlerPlugin.prototype.generateCombinedDeclaration = function(
-    declarationFiles
-) {
-    for (var fileName in declarationFiles) {
-        let declarationFile = declarationFiles[fileName]
-        declarationFile._value =
-            declarationFile._value || declarationFile.source()
-    }
-    return buggyFunc.call(this, declarationFiles)
-}
+declarationFiles ) { for (var fileName in declarationFiles) { let
+declarationFile = declarationFiles[fileName] declarationFile.\_value =
+declarationFile.\_value || declarationFile.source() } return
+buggyFunc.call(this, declarationFiles) }
 
 module.exports = DeclarationBundlerPlugin</pre>
+
 <p><!-- /wp:preformatted --></p>
 <p><!-- wp:heading {"level":3} --></p>
 <h3><a href="https://gist.github.com/rupeshtiwari/e7235addd5f52dc3e449672c4d8b88d5#step-2--add-declarationbundlerplugin-to-webpackconfigjs"></a>Step 2- add DeclarationBundlerPlugin to webpack.config.js</h3>
@@ -320,15 +323,9 @@ module.exports = DeclarationBundlerPlugin</pre>
 <p><!-- wp:preformatted {"className":"EnlighterJSRAW"} --></p>
 <pre class="EnlighterJSRAW" data-enlighter-language="js">const DeclarationBundlerPlugin = require('./declaration-bundler-webpack-plugin.fix')
 
-...
- plugins: [
-        new UglifyJSPlugin(),
-        new DeclarationBundlerPlugin({
-            moduleName: '"mylib"',
-            out: '@types/index.d.ts'
-        })
-    ],
-...</pre>
+... plugins: [ new UglifyJSPlugin(), new DeclarationBundlerPlugin({ moduleName:
+'"mylib"', out: '@types/index.d.ts' }) ], ...</pre>
+
 <p><!-- /wp:preformatted --></p>
 <p><!-- wp:paragraph --></p>
 <p>Complete webpack.config.js file looks like below:</p>
@@ -339,24 +336,10 @@ const path = require('path')
 const DeclarationBundlerPlugin = require('./declaration-bundler-webpack-plugin.fix')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
-module.exports = {
-    entry: {
-        mylib: path.resolve(__dirname, 'src/index.ts')
-    },
-    module: {
-        rules: [
-            {
-                test: /<strong>\.</strong>ts$/,
-                exclude: [/node_modules/],
-                loader: 'ts-loader'
-            }
-        ]
-    },
-    resolve: { extensions: ['.ts'] },
-    output: {
-        chunkFilename: '[name].js',
-        filename: '[name].js'
-    },
+module.exports = { entry: { mylib: path.resolve(\_\_dirname, 'src/index.ts') },
+module: { rules: [ { test: /<strong>\.</strong>ts$/, exclude: [/node_modules/],
+loader: 'ts-loader' } ] }, resolve: { extensions: ['.ts'] }, output: {
+chunkFilename: '[name].js', filename: '[name].js' },
 
     mode: 'development',
     plugins: [
@@ -382,7 +365,9 @@ module.exports = {
             name: true
         }
     }
+
 }</pre>
+
 <p><!-- /wp:preformatted --></p>
 <p><!-- wp:heading {"level":3} --></p>
 <h3><a href="https://gist.github.com/rupeshtiwari/e7235addd5f52dc3e449672c4d8b88d5#step-3--create-build"></a>Step 3- Create Build</h3>
@@ -415,6 +400,7 @@ module.exports = {
       new CleanWebpackPlugin(),
       ...
     ],
+
 </pre>
 <p><!-- /wp:preformatted --></p>
 <p><!-- wp:paragraph --></p>
@@ -454,16 +440,9 @@ module.exports = {
 <p><!-- wp:preformatted {"className":"EnlighterJSRAW"} --></p>
 <pre class="EnlighterJSRAW" data-enlighter-language="js">const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+plugins: [ ... new CopyWebpackPlugin([ { from: './src/package.json', to:
+'../dist/package.json' } ]) ],
 
-plugins: [
-...
-        new CopyWebpackPlugin([
-            {
-                from: './src/package.json',
-                to: '../dist/package.json'
-            }
-        ])
-    ],
 </pre>
 <p><!-- /wp:preformatted --></p>
 <p><!-- wp:paragraph --></p>
@@ -503,12 +482,8 @@ plugins: [
 <p><!-- wp:preformatted {"className":"EnlighterJSRAW"} --></p>
 <pre class="EnlighterJSRAW" data-enlighter-language="js">const TypedocWebpackPlugin = require('typedoc-webpack-plugin')
 
-   plugins: [
-       ...
-        new TypedocWebpackPlugin({
-            out: 'docs'
-        })
-    ],</pre>
+plugins: [ ... new TypedocWebpackPlugin({ out: 'docs' }) ],</pre>
+
 <p><!-- /wp:preformatted --></p>
 <p><!-- wp:paragraph --></p>
 <p>Now if you run the&nbsp;<code>npm run build</code>&nbsp;you should see docs folder created you can browse via any browser and see them.&nbsp;👌</p>
@@ -534,28 +509,14 @@ const path = require('path')
 const DeclarationBundlerPlugin = require('./declaration-bundler-webpack-plugin.fix')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const TypedocWebpackPlugin = require('typedoc-webpack-plugin') 
+const TypedocWebpackPlugin = require('typedoc-webpack-plugin')
 
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
-module.exports = {
-    entry: {
-        mylib: path.resolve(__dirname, 'src/index.ts')
-    },
-    module: {
-        rules: [
-            {
-                test: /\.ts$/,
-                exclude: [/node_modules/],
-                loader: 'ts-loader'
-            }
-        ]
-    },
-    resolve: { extensions: ['.ts'] },
-    output: {
-        chunkFilename: '[name].js',
-        filename: '[name].js'
-    },
+module.exports = { entry: { mylib: path.resolve(\_\_dirname, 'src/index.ts') },
+module: { rules: [ { test: /\.ts$/, exclude: [/node_modules/], loader:
+'ts-loader' } ] }, resolve: { extensions: ['.ts'] }, output: { chunkFilename:
+'[name].js', filename: '[name].js' },
 
     mode: 'development',
     plugins: [
@@ -591,6 +552,7 @@ module.exports = {
             name: true
         }
     }
-}
-</code></pre>
+
+} </code></pre>
+
 <p><!-- /wp:code --></p>

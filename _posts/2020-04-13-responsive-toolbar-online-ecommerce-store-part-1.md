@@ -1,55 +1,61 @@
 ---
 layout: post
 title: Responsive Toolbar - Online ecommerce Store Part 1
-date: 2020-04-13 06:00:31.000000000 -04:00
+date: 2020-04-13T10:00:31.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
-- Express.JS
-- Full Stack Master
-- JavaScript
+  - Angular
+  - Express.JS
+  - Full Stack Master
+  - JavaScript
 tags:
-- Angular
-- Express
-- fullstackmaster
-- JavaScript
+  - Angular
+  - Express
+  - fullstackmaster
+  - JavaScript
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611328238;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3252;}i:1;a:1:{s:2:"id";i:3262;}i:2;a:1:{s:2:"id";i:3232;}}}}
-  _edit_last: '1'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611328238;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3252;}i:1;a:1:{s:2:"id";i:3262;}i:2;a:1:{s:2:"id";i:3232;}}}}
+  _edit_last: "1"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '30'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "30"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  wpmm_postgrid_views: '190'
-  _qode-like: '0'
-  _thumbnail_id: '3250'
-  _b2s_post_meta: a:6:{s:8:"og_title";s:50:"Responsive Toolbar - Online ecommerce
-    Store Part 1";s:7:"og_desc";s:175:"After learning error handling in our previous
-    demo session Handling Server Side HTTP Error | 0009-27, next we will focus on
-    creating responsive toolbar in our ecommerce store.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-119.png";s:10:"card_title";s:50:"Responsive
-    Toolbar - Online ecommerce Store Part 1";s:9:"card_desc";s:160:"After learning
-    error handling in our previous demo session Handling Server Side HTTP Error |
-    0009-27, next we will focus on creating responsive toolbar in our e";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-119.png";}
+  _yoast_wpseo_primary_category: "178"
+  wpmm_postgrid_views: "190"
+  _qode-like: "0"
+  _thumbnail_id: "3250"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:50:"Responsive Toolbar - Online ecommerce Store Part
+    1";s:7:"og_desc";s:175:"After learning error handling in our previous demo
+    session Handling Server Side HTTP Error | 0009-27, next we will focus on
+    creating responsive toolbar in our ecommerce
+    store.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-119.png";s:10:"card_title";s:50:"Responsive
+    Toolbar - Online ecommerce Store Part 1";s:9:"card_desc";s:160:"After
+    learning error handling in our previous demo session Handling Server Side
+    HTTP Error | 0009-27, next we will focus on creating responsive toolbar in
+    our
+    e";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-119.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/responsive-toolbar-online-ecommerce-store-part-1/"
+permalink: /responsive-toolbar-online-ecommerce-store-part-1/
+toc: true
 ---
+
 <p>After learning error handling in our previous demo session <a href="https://www.youtube.com/watch?v=Zq_MT6Hc--U&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=59&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Handling Server Side HTTP Error | 0009-27</strong></a>, next we will focus on creating responsive toolbar in our ecommerce store. In today’s world most of the shopping sites are being used on mobile phones, ipads etc., so it’s a must requirement to have a responsive web app which can work properly in mobile devices.</p>
 <p>In this video session <a href="https://www.youtube.com/watch?v=1gEjZavI6Rc&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=65&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Responsive Toolbar Online eCommerce Store Part 1 </strong></a>we will learn how to make our website responsive, first will start with toolbar. Currently our web app looks like below:</p>
 <p><img class="alignnone size-full wp-image-3248" src="{{ site.baseurl }}/assets/2020/04/28.1.png" alt="" width="853" height="477" /></p>

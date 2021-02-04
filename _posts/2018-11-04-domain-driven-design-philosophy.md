@@ -1,37 +1,40 @@
 ---
 layout: post
 title: Domain Driven Design Philosophy
-date: 2018-11-04 21:06:14.000000000 -05:00
+date: 2018-11-05T02:06:14.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- DDD
-- system design
+  - DDD
+  - system design
 tags:
-- Domain Driven Design ( DDD )
-- System Design
+  - Domain Driven Design ( DDD )
+  - System Design
 meta:
-  _thumbnail_id: '557'
+  _thumbnail_id: "557"
   _publicize_twitter_user: "@roopkt"
-  _wpas_done_all: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609395108;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:716;}i:1;a:1:{s:2:"id";i:3421;}i:2;a:1:{s:2:"id";i:2302;}}}}
-  _qode-like: '0'
-  wpmm_postgrid_views: '550'
+  _wpas_done_all: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609395108;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:716;}i:1;a:1:{s:2:"id";i:3421;}i:2;a:1:{s:2:"id";i:2302;}}}}
+  _qode-like: "0"
+  wpmm_postgrid_views: "550"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/domain-driven-design-philosophy/"
-description: "\n\t\t\t\tEric Even wrote Domain Driven Design (DDD) book. Eric says DDD
-  is the Philosophy of software design that helps projects dealing with complex problem.
-  I have been practicing DDD from last 5 years and here I will try to explain the
-  philosophy of DDD here in this article.  Let's begin...\t\t"
+permalink: /domain-driven-design-philosophy/
+description:
+  "\n\t\t\t\tEric Even wrote Domain Driven Design (DDD) book. Eric says DDD is
+  the Philosophy of software design that helps projects dealing with complex
+  problem. I have been practicing DDD from last 5 years and here I will try to
+  explain the philosophy of DDD here in this article.\_ Let's begin...\t\t"
+toc: true
 ---
+
 <p>
 				Eric Even wrote Domain Driven Design (DDD) book. Eric says DDD is the Philosophy of software design that helps projects dealing with complex problem. I have been practicing DDD from last 5 years and here I will try to explain the philosophy of DDD here in this article. Let's begin...</p>
 <h2>What DDD ( Domain Drive Design ) is For</h2>

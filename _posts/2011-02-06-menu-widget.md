@@ -1,40 +1,42 @@
 ---
 layout: post
 title: Menu Widget
-date: 2011-02-06 17:42:47.000000000 -05:00
+date: 2011-02-06T22:42:47.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- jQuery
+  - jQuery
 tags:
-- JQuery
-- jquery plugin
+  - JQuery
+  - jquery plugin
 meta:
-  _edit_last: '1'
-  _wpas_done_fb: '1'
-  geo_latitude: '40.271005'
+  _edit_last: "1"
+  _wpas_done_fb: "1"
+  geo_latitude: "40.271005"
   geo_longitude: "-74.838503"
-  geo_accuracy: '0'
-  geo_address: 1214 Scenic Drive, NJ, 08628
-  geo_public: '1'
-  _wpas_done_twitter: '1'
-  _wpas_skip_yup: '1'
-  _wpas_skip_ms: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610988569;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:124;}i:1;a:1:{s:2:"id";i:361;}i:2;a:1:{s:2:"id";i:278;}}}}
-  _qode-like: '0'
-  wpmm_postgrid_views: '375'
+  geo_accuracy: "0"
+  geo_address: "1214 Scenic Drive, NJ, 08628"
+  geo_public: "1"
+  _wpas_done_twitter: "1"
+  _wpas_skip_yup: "1"
+  _wpas_skip_ms: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610988569;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:124;}i:1;a:1:{s:2:"id";i:361;}i:2;a:1:{s:2:"id";i:278;}}}}
+  _qode-like: "0"
+  wpmm_postgrid_views: "375"
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/menu-widget/"
-description: "Menu Widget in jQuery"
+permalink: /menu-widget/
+description: Menu Widget in jQuery
+toc: true
 ---
+
 <p>
 				I was trying to make my own menu widget using jQuery and  I came with this below Widget.</p>
 <p>[sourcecode language="javascript"]</p>

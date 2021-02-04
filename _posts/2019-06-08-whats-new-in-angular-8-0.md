@@ -1,35 +1,39 @@
 ---
 layout: post
 title: What's new in Angular 8.0?
-date: 2019-06-08 09:45:23.000000000 -04:00
+date: 2019-06-08T13:45:23.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
+  - Angular
 tags:
-- angular 8
+  - angular 8
 meta:
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609207467;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2643;}i:1;a:1:{s:2:"id";i:2778;}i:2;a:1:{s:2:"id";i:3465;}}}}
-  _qode-like: '0'
-  wpmm_postgrid_views: '602'
-  _wpcom_is_markdown: '1'
-  _wpas_done_all: '1'
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609207467;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2643;}i:1;a:1:{s:2:"id";i:2778;}i:2;a:1:{s:2:"id";i:3465;}}}}
+  _qode-like: "0"
+  wpmm_postgrid_views: "602"
+  _wpcom_is_markdown: "1"
+  _wpas_done_all: "1"
   _publicize_twitter_user: "@rupeshtiwari_co"
-  _thumbnail_id: '2194'
-  _wpas_mess: |-
+  _thumbnail_id: "2194"
+  _wpas_mess: >-
     What's new in Angular 8.0?
-    Now when you will build your Angular app using angular CLI then it will produce two builds for your application one is for es5 and for es2015.
+
+    Now when you will build your Angular app using angular CLI then it will
+    produce two builds for your application one is for es5 and for es2015.
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/whats-new-in-angular-8-0/"
+permalink: /whats-new-in-angular-8-0/
+toc: true
 ---
+
 <pre><span style="font-weight: 400;">Angular 8.0.0 is here!</span></pre>
 <h2><span style="font-weight: 400;">Is there any breaking changes in Angular 8?</span></h2>
 <p><b>No</b><span style="font-weight: 400;">, Angular 8 is released now! As Angular team had promised they have not introduced breaking changes. </span></p>

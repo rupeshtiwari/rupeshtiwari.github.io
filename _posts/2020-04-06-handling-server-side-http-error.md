@@ -1,54 +1,60 @@
 ---
 layout: post
 title: Handling Server Side HTTP Error
-date: 2020-04-06 06:00:15.000000000 -04:00
+date: 2020-04-06T10:00:15.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- Angular
-- Express.JS
-- JavaScript
+  - Angular
+  - Express.JS
+  - JavaScript
 tags:
-- Angular
-- Express
-- fullstackmaster
-- JavaScript
+  - Angular
+  - Express
+  - fullstackmaster
+  - JavaScript
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609847816;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3241;}i:1;a:1:{s:2:"id";i:3011;}i:2;a:1:{s:2:"id";i:2965;}}}}
-  _edit_last: '1'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609847816;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3241;}i:1;a:1:{s:2:"id";i:3011;}i:2;a:1:{s:2:"id";i:2965;}}}}
+  _edit_last: "1"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '60'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "60"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '178'
-  wpmm_postgrid_views: '165'
-  _qode-like: '0'
-  _thumbnail_id: '3238'
-  _b2s_post_meta: a:6:{s:8:"og_title";s:31:"Handling Server Side HTTP Error";s:7:"og_desc";s:213:"As
-    we discussed in our previous video session Designing Shopping Page Using Angular
-    Material Grid And Card | 0009-26, our web app is now growing as we are adding
-    more features into it and making its design better.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-115.png";s:10:"card_title";s:31:"Handling
-    Server Side HTTP Error";s:9:"card_desc";s:160:"As we discussed in our previous
-    video session Designing Shopping Page Using Angular Material Grid And Card | 0009-26,
-    our web app is now growing as we are addin";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-115.png";}
+  _yoast_wpseo_primary_category: "178"
+  wpmm_postgrid_views: "165"
+  _qode-like: "0"
+  _thumbnail_id: "3238"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:31:"Handling Server Side HTTP
+    Error";s:7:"og_desc";s:213:"As we discussed in our previous video session
+    Designing Shopping Page Using Angular Material Grid And Card | 0009-26, our
+    web app is now growing as we are adding more features into it and making its
+    design
+    better.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-115.png";s:10:"card_title";s:31:"Handling
+    Server Side HTTP Error";s:9:"card_desc";s:160:"As we discussed in our
+    previous video session Designing Shopping Page Using Angular Material Grid
+    And Card | 0009-26, our web app is now growing as we are
+    addin";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/03/RUPESH-115.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/handling-server-side-http-error/"
+permalink: /handling-server-side-http-error/
+toc: true
 ---
+
 <p>As we discussed in our previous video session <a href="https://www.youtube.com/watch?v=hrYlnQCBLrE&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=29&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Designing Shopping Page Using Angular Material Grid And Card | 0009-26</strong></a>, our web app is now growing as we are adding more features into it and making its design better. Since our application is growing, now the most important challenge is to handle the server side errors properly and sending adequate information to client side. We will see in this demo session <strong><a href="https://www.youtube.com/watch?v=Zq_MT6Hc--U&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=59&amp;t=0s" target="_blank" rel="noopener noreferrer">Handling Server Side HTTP Error | 0009-27</a> </strong>what are all the problems we have in our code and how to rectify them through proper error handling.</p>
 <p>Let’s consider a scenario where we have entered wrong email id while log in. Now on pressing F12 we can see the error message; however this message is html which is not something that we should show to client. Our goal is to return the error object from the server with informative message inside it. In order to do that we need to handle all API related errors properly in express.js file inside server folder.</p>
 <p>For this first we need to install http-errors package, it will give us a call back where we can intercept all kind of errors and return proper message to client.</p>

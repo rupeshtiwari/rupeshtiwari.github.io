@@ -1,51 +1,57 @@
 ---
 layout: post
-title: 'Module Pattern with example: Essential JavaScript Concepts'
-date: 2019-09-23 06:00:12.000000000 -04:00
+title: "Module Pattern with example: Essential JavaScript Concepts"
+date: 2019-09-23T10:00:12.000Z
 type: post
-
 published: true
 comments: true
 social-share: true
 categories:
-- JavaScript
+  - JavaScript
 tags:
-- fullstackmaster
-- JavaScript
-- rupeshtiwari
+  - fullstackmaster
+  - JavaScript
+  - rupeshtiwari
 meta:
-  _wpcom_is_markdown: '1'
-  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609848009;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2586;}i:1;a:1:{s:2:"id";i:2604;}i:2;a:1:{s:2:"id";i:2555;}}}}
-  _edit_last: '1'
-  _thumbnail_id: '2597'
+  _wpcom_is_markdown: "1"
+  _jetpack_related_posts_cache: >-
+    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609848009;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2586;}i:1;a:1:{s:2:"id";i:2604;}i:2;a:1:{s:2:"id";i:2555;}}}}
+  _edit_last: "1"
+  _thumbnail_id: "2597"
   slide_template: default
-  _wpb_vc_js_status: 'false'
-  _yoast_wpseo_content_score: '30'
-  qode_page_background_image_fixed: 'yes'
-  qode_hide-featured-image: 'no'
+  _wpb_vc_js_status: "false"
+  _yoast_wpseo_content_score: "30"
+  qode_page_background_image_fixed: "yes"
+  qode_hide-featured-image: "no"
   qode_post_style_masonry_date_image: full
   qode_post_style_masonry_gallery: default
   qode_show-sidebar: default
   gallery_type: slider
   video_format_choose: youtube
-  _yoast_wpseo_primary_category: '195'
-  wpmm_postgrid_views: '361'
-  _qode-like: '0'
-  _b2s_post_meta: 'a:6:{s:8:"og_title";s:58:"Module Pattern with example: Essential
-    JavaScript Concepts";s:7:"og_desc";s:160:"In our previous video session JavaScript
-    Concepts- Module Pattern | 0004-11 we have learnt about basics of Module Pattern.
-    Here in this video tutorial JavaScrip";s:8:"og_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-53-javascript.png";s:10:"card_title";s:58:"Module
-    Pattern with example: Essential JavaScript Concepts";s:9:"card_desc";s:160:"In
-    our previous video session JavaScript Concepts- Module Pattern | 0004-11 we have
-    learnt about basics of Module Pattern. Here in this video tutorial JavaScrip";s:10:"card_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-53-javascript.png";}'
+  _yoast_wpseo_primary_category: "195"
+  wpmm_postgrid_views: "361"
+  _qode-like: "0"
+  _b2s_post_meta: >-
+    a:6:{s:8:"og_title";s:58:"Module Pattern with example: Essential JavaScript
+    Concepts";s:7:"og_desc";s:160:"In our previous video session JavaScript
+    Concepts- Module Pattern | 0004-11 we have learnt about basics of Module
+    Pattern. Here in this video tutorial
+    JavaScrip";s:8:"og_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-53-javascript.png";s:10:"card_title";s:58:"Module
+    Pattern with example: Essential JavaScript
+    Concepts";s:9:"card_desc";s:160:"In our previous video session JavaScript
+    Concepts- Module Pattern | 0004-11 we have learnt about basics of Module
+    Pattern. Here in this video tutorial
+    JavaScrip";s:10:"card_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-53-javascript.png";}
 author:
   login: rupeshtiwari
   email: roopkt@gmail.com
   display_name: Rupesh Tiwari
   first_name: Rupesh
   last_name: Tiwari
-permalink: "/module-pattern-with-example-essential-javascript-concepts/"
+permalink: /module-pattern-with-example-essential-javascript-concepts/
+toc: true
 ---
+
 <p>In our previous video session <a href="https://www.youtube.com/watch?v=JBqr_jnwnrA" target="_blank" rel="noopener noreferrer"><strong>JavaScript Concepts- Module Pattern | 0004-11 </strong></a>we have learnt about basics of Module Pattern. Here in this video tutorial <a href="https://www.youtube.com/watch?v=ojdg4hGVF0k" target="_blank" rel="noopener noreferrer"><strong>JavaScript Concepts- Module Pattern example with Logger Object | 0004-12</strong></a> we will understand working of module pattern with help of practical examples. Basically there are three ways to create a class:</p>
 <ul>
 <li>Prototype pattern</li>
