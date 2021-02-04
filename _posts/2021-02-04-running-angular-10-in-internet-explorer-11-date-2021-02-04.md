@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Running Angular 10 in Internet Explorer 11 
+title: Running Angular 10 in Internet Explorer 11
 date: '2021-02-04 00:00 +0000'
-subtitle: Learn supporting Internet Explorer in Angular  
-description: Learn supporting Internet Explorer in Angular   
+subtitle: Learn supporting Internet Explorer in Angular
+description: Learn supporting Internet Explorer in Angular
 cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/FtOy5i6.png'
 thumbnail-img: 'https://i.imgur.com/7pgedpv.png'
 share-img: 'https://i.imgur.com/7pgedpv.png'
-canonical_url: 'https://rupeshtiwari.github.io/2021-02-03-running-angular-10-in-internet-explorer-11-date-2021-02-04/'
+canonical_url: >-
+  https://rupeshtiwari.github.io/2021-02-03-running-angular-10-in-internet-explorer-11-date-2021-02-04/
 tags: 'angular,css,tutorial,beginners'
 last_modified_at: null
 published: true
@@ -16,6 +17,7 @@ sitemap: true
 comments: true
 social-share: true
 excerpt_separator: <!--more-->
+id: 592350
 ---
 > Are you worried that new angular 10 project is not running in "**IE11**" even though you enable the given **polyfills** by angular team? Then please read this article. 
 
