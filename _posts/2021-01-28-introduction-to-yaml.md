@@ -1,10 +1,6 @@
 ---
 layout: post
-tags: [
-  , devops
-  , yaml
-  , yml
-  ,tutorial]
+tags: [devops,yaml,yml,tutorial]
 date: "2021-01-02 19:32 -0500"
 title: Introduction to YAML
 description: Introduction to YAML
@@ -14,6 +10,7 @@ thumbnail-img: "https://i.imgur.com/jZQbmj4.jpg"
 share-img: "https://i.imgur.com/jZQbmj4.jpg"
 published: true
 sitemap: true
+comments: true
 excerpt_separator: <!--more-->
 id: 589332
 toc: true
