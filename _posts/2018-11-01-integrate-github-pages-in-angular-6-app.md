@@ -105,7 +105,7 @@ author:
   last_name: Tiwari
 permalink: /integrate-github-pages-in-angular-6-app/
 description: Integrate GitHub-Pages in Angular 6 App
-toc: true
+
 ---
 
 <h2>What is GhPages</h2>

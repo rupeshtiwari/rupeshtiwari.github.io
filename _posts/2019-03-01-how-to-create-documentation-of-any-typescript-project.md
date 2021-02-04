@@ -44,7 +44,7 @@ description:
   you know you could generate your project API Wikipedia kind of documentation
   within blink of eyes if you are using Typescript? Please read this blog to
   find out how easy it is.\t\t"
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

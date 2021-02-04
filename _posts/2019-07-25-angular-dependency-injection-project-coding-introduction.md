@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-dependency-injection-project-coding-introduction/
-toc: true
+
 ---
 
 <p>As we know about Dependency Injection in detail like what is DI, where to use it and what is its significance? So in order to understand Dependency Injection with real world project, let’s start coding from scratch to create a mini website. This mini website is nothing but a retail website which is selling various items. In this we have one Orders page where we have couple of line items and in each line item we have to change price &amp; quantity and ultimately it will reflect in total price automatically.</p>

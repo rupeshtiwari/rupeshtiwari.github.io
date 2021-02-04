@@ -47,7 +47,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /types-of-providers-useexisting-provider/
-toc: true
+
 ---
 
 <p>UseExisting provider configures the Injector to return a value of another UseExisting token. Through this provider, we can use already existing instance or object.</p>

@@ -46,7 +46,7 @@ description:
   "RxJS Marble Diagrams are made to visualize the values emitted from the RxJS
   Observable over timeline.Hi in this article I will explain why we need marble
   diagrams and what are the benefits of Marble Diagrams.\t\t\t\t"
-toc: true
+
 ---
 
 <blockquote>RxJS Marble Diagrams are made to visualize the values emitted from the <code>RxJS Observable</code> over timeline.</p></blockquote>

@@ -44,7 +44,7 @@ description:
   "\n\t\t\t\tModel in Domain Driven Design is a system of abstraction that
   eliminates things which are not required. Domain Model allows us to think
   about a particular domain in a particular way.\_\t\t"
-toc: true
+
 ---
 
 <p>Model in Domain Driven Design is a system of abstraction that eliminates things which are not required. Domain Model allows us to think about a particular domain in a particular way.</p>

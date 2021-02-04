@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /user-login-and-validation-with-mongodb-database-demo/
-toc: true
+
 ---
 
 <p>In this video session <a href="https://www.youtube.com/watch?v=n0Pim_tHB9s&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=24&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>User Login In Angular With MongoDB | Demo | 0009-23 </strong></a>we will login into our product Mart app through MongoDB database and we will see how to validate the logging in user. Also we will learn how to show proper messages on successful and unsuccessful validation of user credentials. All this is explained with proper snapshots in below steps and code snippets are also available in our GitHub repository. Please visit <a href="https://github.com/rupeshtiwari/product-mart/tree/workshop-session-4-30" target="_blank" rel="noopener noreferrer">https://github.com/rupeshtiwari/product-mart/tree/workshop-session-4-30</a> to check our code base.</p>

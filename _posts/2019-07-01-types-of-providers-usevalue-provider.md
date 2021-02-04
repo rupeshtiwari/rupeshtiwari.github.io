@@ -46,7 +46,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /types-of-providers-usevalue-provider/
-toc: true
+
 ---
 
 <p>UseValue provider configures the Injector to return a value for a token. It comes in that category of providers where we do not have unique thing to identify them at run time.</p>

@@ -57,7 +57,7 @@ description: >-
   One of the most impressive parts of Visual Studio Code is customizability,
   especially via extensions. If you're a web developer, you won't be able to
   live without installing these extensions!
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

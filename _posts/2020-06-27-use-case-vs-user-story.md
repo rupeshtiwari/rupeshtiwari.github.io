@@ -55,7 +55,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /use-case-vs-user-story/
-toc: true
+
 ---
 
 <p><!-- wp:heading {"level":3} --></p>

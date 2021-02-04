@@ -34,7 +34,7 @@ author:
   last_name: Tiwari
 permalink: /menu-widget/
 description: Menu Widget in jQuery
-toc: true
+
 ---
 
 <p>

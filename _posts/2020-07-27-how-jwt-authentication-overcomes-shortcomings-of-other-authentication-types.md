@@ -41,7 +41,7 @@ meta:
     video";s:8:"og_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/06/RUPESH-21.png";s:10:"card_title";s:75:"How
     JWT Authentication overcomes shortcomings of other authentication
     types";s:9:"card_desc";s:160:"In this video tutorial 0010-4 JWT
-    authentication for distrubuted system we will learn what makes JWT
+    authentication for distributed system we will learn what makes JWT
     authentication world’s most popular authentication type.
     ";s:10:"card_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/06/RUPESH-21.png";}
 author:
@@ -51,7 +51,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /how-jwt-authentication-overcomes-shortcomings-of-other-authentication-types/
-toc: true
+
 ---
 
 <p>In this video tutorial <a href="https://www.youtube.com/watch?v=2VDclXVUeZo&amp;list=PLZed_adPqIJp9M8sXttDmlCzWzat44GRi&amp;index=6&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>0010-4 JWT authentication for distrubuted system</strong></a> we will learn what makes JWT authentication world’s most popular authentication type. We will see how it overcomes shortcomings of other authentication types. Our main focus will be on understanding its process which makes it unique from others.</p>

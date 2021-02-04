@@ -44,7 +44,7 @@ author:
   last_name: Tiwari
 permalink: /dynamically-adding-usercontrols/
 description: Dynamically Adding UserControls in Asp Net
-toc: true
+
 ---
 
 <p><span style="font-family: calibri; font-size: 1.2em;"><br />

@@ -51,7 +51,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /debugging-server-side-code-on-visual-studio-code-demo/
-toc: true
+
 ---
 
 <p>Gradually, as our code base will grow it will become complex and we will face difficulties in debugging our code. In this session <a href="https://www.youtube.com/watch?v=Mzm-ikcEMeE&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=25&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Debugging Server Side Code on Visual Studio Code | 0009-24 </strong></a>we will see How to debug server side code.</p>

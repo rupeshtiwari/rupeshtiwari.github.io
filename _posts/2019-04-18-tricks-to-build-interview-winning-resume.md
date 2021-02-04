@@ -45,7 +45,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /tricks-to-build-interview-winning-resume/
-toc: true
+
 ---
 
 <p><ins datetime="2019-04-19T06:22:50+00:00"></ins>Along with choosing right template, best resume format, putting educational qualifications etc, the most important component required in an interview-winning experienced person’s resume is, your work history. It is very important how you put your past job accomplishments relevant to your skill set with examples. Interviewers will be keen to know what you worked there, what challenges you faced, how you resolved them and what responsibilities you held in each role you had. They will be looking to see how your experience, knowledge lines up with their job profile. By putting your knowledge, skills and abilities briefly with proper examples, aligned to your current project scenarios, you can engage interviewer to specific skill set where you are confident about. You can turn the interview to topics, skills which you want to discuss.</p>

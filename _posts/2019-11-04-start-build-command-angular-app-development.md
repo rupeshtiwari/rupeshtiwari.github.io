@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /start-build-command-angular-app-development/
-toc: true
+
 ---
 
 <p>We saw in our previous session <a href="https://www.youtube.com/watch?v=t_cLb4OyAsA&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=4&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Creating Angular App using Angular CLI | 0009-03 </strong></a>how to do environmental set up and installation for our first angular project. In this video session <a href="https://www.youtube.com/watch?v=KN7Svhp9-IE&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=5&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Explaining angular project with start and build command | 0009-04</strong></a> we will see</p>

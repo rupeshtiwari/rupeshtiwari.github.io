@@ -37,7 +37,7 @@ author:
   last_name: Tiwari
 permalink: /assembly-binding-log-viewer/
 description: Assembly Binding Log Viewer
-toc: true
+
 ---
 
 <p>

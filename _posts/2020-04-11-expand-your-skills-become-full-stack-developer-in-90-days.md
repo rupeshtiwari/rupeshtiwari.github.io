@@ -52,7 +52,7 @@ description: >-
   Enroll now as Full Stack Master is giving a special discounted price monthly
   $10 only to access all premium javascript courses and future upcoming courses
   on JavaScript foundation, ngRX and much more.
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

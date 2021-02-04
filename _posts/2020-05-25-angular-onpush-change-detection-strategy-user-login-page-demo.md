@@ -54,7 +54,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-onpush-change-detection-strategy-user-login-page-demo/
-toc: true
+
 ---
 
 <p>Till now in previous demo session <a href="https://www.youtube.com/watch?v=tijsesStWGI&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=72&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Responsive Products Page | e-Commerce | Angular Material | 2</strong> </a>we have done loading of products with spinner, applied sorting to products name, image and price. Next in this video session <a href="https://www.youtube.com/watch?v=JtSEM8TQOH4&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=73&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Angular onPush Change Detection | Demo | User Login Page</strong></a> we will learn change detection strategy in angular.</p>

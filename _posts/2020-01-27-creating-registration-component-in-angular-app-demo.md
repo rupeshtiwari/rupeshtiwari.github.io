@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /creating-registration-component-in-angular-app-demo/
-toc: true
+
 ---
 
 <p>In this demo session <strong><a href="https://www.youtube.com/watch?v=LsZeU7uBSkY&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=18&amp;t=0s" target="_blank" rel="noopener noreferrer">Creating Registration Component | Angular | Demo | 0009-17</a> </strong>we will first create registration component which will allow us to save user information in database. This will also begin our journey towards mongo DB. In our video session we will see how to make all required coding changes step by step in detail. To make this article more understanding we have placed snapshots to check output side by side for each step.</p>

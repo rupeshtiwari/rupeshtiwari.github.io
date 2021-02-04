@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /debugging-angular-app-in-visual-studio-code-vscode-demo/
-toc: true
+
 ---
 
 <p>As we already discussed in our previous demo session like with growing maturity our code becomes complex and difficult to debug. Then we come up with this debugger concept for both server and client side coding. In this video session <a href="https://www.youtube.com/watch?v=8AUSRUYQxik&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=26&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>0009-25- Debugging Angular App in Visual Studio Code (VSCode) </strong></a>we will focus on angular app debugging.</p>

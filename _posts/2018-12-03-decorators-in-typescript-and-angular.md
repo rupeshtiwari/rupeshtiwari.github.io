@@ -64,7 +64,7 @@ description:
   Typescript that can be used to annotate a class or it's members. Decorator
   also enables meta programming where one can collect as many meta data as
   required during run time.\t\t"
-toc: true
+
 ---
 
 <h2><img class="alignnone size-full wp-image-921" src="{{ site.baseurl }}/assets/2018/12/decorator-in-typescript-and-Angular.jpg" alt="Decorator in Typescript and Angular" width="750" height="501" /></h2>

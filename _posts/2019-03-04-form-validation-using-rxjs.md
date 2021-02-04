@@ -58,7 +58,7 @@ description:
   validation re-actively? Well I learn RxJS operators by implementing them in
   real world project. In this post I will explain combineLatest operator and its
   use in real problem solving. \t\t\t\t"
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

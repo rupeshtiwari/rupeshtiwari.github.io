@@ -47,7 +47,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /scope-introduction-essential-javascript-concepts/
-toc: true
+
 ---
 
 <p>If you are planning to accelerate your career as JavaScript Professional, you must know some basic JavaScript concepts. Here in our video tutorials we have explained relevant and important JS concepts which are picked based on popularity among the JavaScript communities. Each and every concept is covered in depth and with clarity. They are described with help of real world scenarios so that you can learn these core JavaScript concepts in just few minutes.</p>

@@ -36,7 +36,7 @@ author:
   last_name: Tiwari
 permalink: /razor-view-engine-for-asp-net/
 description: ASP.Net MVC 3 introduces Razor a new view engine
-toc: true
+
 ---
 
 <div><span style="font-size:small;">I just read the great article <a href="http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx" target="_blank" rel="noopener noreferrer">Introducing "Razor" – a new view engine for ASP.NET</a> by <a href="http://weblogs.asp.net/scottgu" target="_blank" rel="noopener noreferrer">Scottgu</a>. I found Razor more comfortable than the other view engines.<br />

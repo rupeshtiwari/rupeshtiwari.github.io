@@ -48,7 +48,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-app-development-and-deployment-environments/
-toc: true
+
 ---
 
 <p>When we talk about angular app development, most of the people get confused about its build &amp; deployment activities. Our video tutorial <a href="https://www.youtube.com/watch?v=4b9xjzjY38c&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=2&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Angular app Development and Deployment Environment | 0009-01 </strong></a>explains the basic difference between them and also discuss about end to end angular app development activities. Mainly there are two different environments involved; one is for its build/development and other one for its deployment/run. Build environment consist of four components:</p>

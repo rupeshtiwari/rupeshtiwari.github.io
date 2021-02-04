@@ -60,7 +60,7 @@ description: >-
   Finding a suitable folder structure for my Angular applications is something.
   Especially when the application grew in size. Rupesh will explain the
   structure as per angular guide style in this article.
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

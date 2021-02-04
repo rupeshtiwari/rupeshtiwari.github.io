@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /use-existing-provider-practical-example/
-toc: true
+
 ---
 
 <p>As we know UseExisting provider configures the Injector to return a value of another UseExisting token. Through this provider, we can use already existing instance or object. Let’s discuss one practical example of UseExisting provider which is present in angular itself.</p>

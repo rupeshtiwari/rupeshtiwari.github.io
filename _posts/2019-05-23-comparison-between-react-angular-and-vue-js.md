@@ -46,7 +46,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /comparison-between-react-angular-and-vue-js/
-toc: true
+
 ---
 
 <p><strong>React:</strong></p>

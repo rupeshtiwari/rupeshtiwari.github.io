@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /type-of-authentication-session-based-authentication/
-toc: true
+
 ---
 
 <p>Authentication is vital to most of the applications and the way it is achieved has evolved substantially in recent years. Basically there are three types of authentication:</p>

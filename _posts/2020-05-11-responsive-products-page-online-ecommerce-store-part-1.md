@@ -52,7 +52,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /responsive-products-page-online-ecommerce-store-part-1/
-toc: true
+
 ---
 
 <p>In our previous demo session <a href="https://www.youtube.com/watch?v=HIF-qFKQsOk&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=69&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Pagination And Filter e-Commerce Angular App | mat-table</strong></a> we have covered filtering and pagination functionality in our ecommerce online store. Now we will focus on adding functionality of AddCart where we can add/delete items or change its quantity in our Products page.</p>

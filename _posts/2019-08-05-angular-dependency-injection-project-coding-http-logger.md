@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-dependency-injection-project-coding-http-logger/
-toc: true
+
 ---
 
 <p>In our third angular coding session <a href="https://www.youtube.com/watch?v=QzgnkJmIhyU&amp;list=PLZed_adPqIJrQ5uFoaQg8P_fDNGjpeSRH&amp;index=30" target="_blank" rel="noopener noreferrer"><strong>Angular Coding Session Learn Dependency Injection | Practical | 3/8 </strong></a>we will see how to use http logger as a service in our project. Here we will learn very interesting principle of Object Oriented Programming.</p>

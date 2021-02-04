@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /methods-to-change-context-call-and-apply-essential-javascript-concepts/
-toc: true
+
 ---
 
 <p>In our previous article <a href="https://www.youtube.com/watch?v=3JFm7DS6SG8" target="_blank" rel="noopener noreferrer"><strong>JavaScript Concepts: What Is this Keyword | 0004-08</strong></a> We read about ‘This’ concept of JavaScript which refers to calling context of the function. Now we will see, what are the available possible ways to call the context we have.</p>

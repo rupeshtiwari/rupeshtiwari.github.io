@@ -53,7 +53,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /what-is-multi-true-provider-in-angular/
-toc: true
+
 ---
 
 <p>Multi: true means that one provider token provides an array of elements. Using multi: true we tell Angular that the provider is a multi provider. This is used mostly in those scenarios where we use primitives or chunk of values.</p>

@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-dependency-injection-project-coding-inject-base-url/
-toc: true
+
 ---
 
 <p>In our fourth angular coding session <strong><a href="https://www.youtube.com/watch?v=Ww5gngAHdpU&amp;list=PLZed_adPqIJrQ5uFoaQg8P_fDNGjpeSRH&amp;index=31" target="_blank" rel="noopener noreferrer">Angular Coding Session Learn Dependency Injection | Practical | 4/8</a><em>, </em></strong>we will see how to Inject Base URL from module in our project. Its requirement says that we need to change base URL based on the environment i.e. for dev environment it should be different, for QA it should be different.</p>

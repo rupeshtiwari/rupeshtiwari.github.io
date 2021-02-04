@@ -41,7 +41,7 @@ author:
   last_name: Tiwari
 permalink: /my-pluralsight-course/
 description: My First Pluralsight Course
-toc: true
+
 ---
 
 <p>Hi everyone,</p>

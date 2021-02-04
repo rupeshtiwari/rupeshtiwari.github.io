@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /what-is-injection-token-and-where-to-use-it/
-toc: true
+
 ---
 
 <p>We cannot simply ignore the shortcomings like Interface, Array (bunch of objects) cannot be used as DI Token in angular. There can be possibility where we need to inject something which is not available at runtime in angular like Interface, callable type or Array.</p>

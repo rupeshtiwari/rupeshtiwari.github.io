@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-dependency-injection-project-coding-mini-logger/
-toc: true
+
 ---
 
 <p>In our fifth angular coding session <a href="https://www.youtube.com/watch?v=SIAuVR3u3m8&amp;list=PLZed_adPqIJrQ5uFoaQg8P_fDNGjpeSRH&amp;index=32" target="_blank" rel="noopener noreferrer"><strong>Angular Coding Session Learn Dependency Injection | Practical | 5/8 </strong></a>we will see how to create mini-logger by using existing logger in our project. It means let’s say our app is using http logger then mini-logger should use same http logger. It should not create new instance of logger. In case if our app is using socket logger then mini-logger should not create new socket connection, it should use the existing one.</p>

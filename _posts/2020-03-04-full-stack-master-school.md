@@ -47,7 +47,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /full-stack-master-school/
-toc: true
+
 ---
 
 <p><!-- wp:shortcode --><br />

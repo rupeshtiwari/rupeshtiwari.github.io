@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /module-pattern-essential-javascript-concepts/
-toc: true
+
 ---
 
 <p>The Module Pattern is one of the most common design patterns used in JavaScript. It is easy to use and creates encapsulation of our code. Before we deep dive into this, first let’s see</p>

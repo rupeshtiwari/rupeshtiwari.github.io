@@ -51,7 +51,7 @@ description: >-
   Marble diagrams enables you to understand the behavior of RxJS observables and
   operators visually. It also helps to write unit test for asynchronous code in
   synchronous manner want to learn more please watch my course till the end.
-toc: true
+
 ---
 
 <p><!-- wp:heading {"level":1} --></p>

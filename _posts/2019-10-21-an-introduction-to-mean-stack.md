@@ -55,7 +55,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /an-introduction-to-mean-stack/
-toc: true
+
 ---
 
 <p>MEAN is an acronym for <strong>MongoDB, ExpressJS, AngularJS and Node.js.</strong> From client to server to database, MEAN is full stack JavaScript framework, ideal for building dynamic websites and applications. It is a free and open-source stack designed to supply developers with a quick and organized method for creating MEAN-based web applications. One of the main benefits of the MEAN stack is that a single primitive language - JavaScript, runs on every level of the application, making it an efficient, advanced and modern approach to web development.  The term MEAN stack refers to a collection of <strong>JavaScript based technologies</strong> used to develop web applications. Technologies covered are:</p>

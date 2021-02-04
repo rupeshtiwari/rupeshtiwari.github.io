@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-dependency-injection-project-coding-console-logger/
-toc: true
+
 ---
 
 <p>In our second angular coding session <strong><a href="https://www.youtube.com/watch?v=AIFbohEG1xs&amp;list=PLZed_adPqIJrQ5uFoaQg8P_fDNGjpeSRH&amp;index=29" target="_blank" rel="noopener noreferrer">Angular Coding Session Learn Dependency Injection | Practical | 2/8</a><em>, </em></strong>we will see how to use console logger as a service in our project. We will see how to differentiate between various types of modules:</p>

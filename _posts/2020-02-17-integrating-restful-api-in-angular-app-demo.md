@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /integrating-restful-api-in-angular-app-demo/
-toc: true
+
 ---
 
 <p>In our previous demos session we have created our server and restful API and tested API with postman also. Next we will try to integrate this Restful API in our angular app so that when we try to register from our angular project, it should send the data to the server via http. In this demo session <a href="https://www.youtube.com/watch?v=2v2lMmcapmQ&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=21&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Integrating Restful API In Angular App | Practical Demo | 0009-20</strong></a> we will see in detail</p>

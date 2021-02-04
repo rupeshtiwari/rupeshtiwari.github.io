@@ -47,7 +47,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /types-of-providers-usefactory-provider/
-toc: true
+
 ---
 
 <p>UseFactory provider configures the Injector to return a value by invoking a UseFactory function. It is basically a function which follows factory design pattern, and factory design is nothing but a pattern that just encapsulates the creation part of particular project. It follows polymorphism concept with same base class or same family. In this we owns the responsibility to create required class where we need all of the dependencies to pass. That’s why we should avoid using this factory provider everywhere and use it at minimum places.</p>

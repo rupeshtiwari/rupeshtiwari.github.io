@@ -86,7 +86,7 @@ description:
   a project where we can use webpack, typescript, karma, jasmien and express.js.
   All together and do nice development. Please read this article to get more
   details.\t\t"
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

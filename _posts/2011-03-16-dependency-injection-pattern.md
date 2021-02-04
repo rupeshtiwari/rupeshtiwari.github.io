@@ -37,7 +37,7 @@ author:
   last_name: Tiwari
 permalink: /dependency-injection-pattern/
 description: Dependency Injection Patterns
-toc: true
+
 ---
 
 <p>

@@ -51,7 +51,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /adding-registration-and-logout-feature-in-angular-app-demo/
-toc: true
+
 ---
 
 <p>Let’s begin this demo session <a href="https://www.youtube.com/watch?v=NKgXcBPFRxY&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=18" target="_blank" rel="noopener noreferrer"><strong>0009-18- Demo: Adding Registration and Logout feature </strong></a>with change in some look and feel of our user registration page, by importing existing angular material themes. Also will create separate <strong>User.ts</strong> file and add new features to it like repeat password, logout feature etc, to make it more realistic.</p>

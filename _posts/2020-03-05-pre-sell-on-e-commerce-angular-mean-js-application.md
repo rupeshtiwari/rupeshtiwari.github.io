@@ -44,7 +44,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /pre-sell-on-e-commerce-angular-mean-js-application/
-toc: true
+
 ---
 
 <p><!-- wp:shortcode --><br />

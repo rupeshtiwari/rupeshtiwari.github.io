@@ -28,7 +28,7 @@ author:
   last_name: Tiwari
 permalink: /how-to-use-vlookup/
 description: How to use VLOOKUP in Microsoft Excel
-toc: true
+
 ---
 
 <p>

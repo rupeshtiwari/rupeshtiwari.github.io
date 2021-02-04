@@ -78,7 +78,7 @@ description:
   "\n\t\t\t\tWhat is a Barrel, Why Should I use Barrel, How to Create a Barrel,
   What Problem Barrel is solving ? I have a big typescript project that I bundle
   via webpack exposing  public module. I will show you how I did this. \_\t\t"
-toc: true
+
 ---
 
 <blockquote>When you create your own Typescript  library then you need a barrel file where you put all of your files that you want to expose to the outside world kind of public API. Normally this is an <code>index.ts</code> file where you want to <code>export</code> all of your files which will become public API. The big question is how to automatically create this index file or barrel ? Especially if you are maintaining a huge project.</p></blockquote>

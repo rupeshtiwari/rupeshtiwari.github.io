@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /type-of-authentication-cookie-based-authentication/
-toc: true
+
 ---
 
 <p>In this video tutorial <a href="https://www.youtube.com/watch?v=ZpF8CSR4rhE&amp;list=PLZed_adPqIJp9M8sXttDmlCzWzat44GRi&amp;index=4&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Cookie Based Authentication Advantage And Disadvantage | 0010-02 </strong></a>we will discuss about cookie based authentication. In this type of authentication, whenever client sends authentication details to server, server creates unique id for that client and put that in the cookie object of the response. Cookie is nothing but an object which stores data that goes to client. So next time when client try to authenticate itself, it will send the same cookie in header message to server. As far as that cookie is not expired, user will be authenticated.</p>

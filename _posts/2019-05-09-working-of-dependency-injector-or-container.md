@@ -55,7 +55,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /working-of-dependency-injector-or-container/
-toc: true
+
 ---
 
 <p>Dependency Injection Container or Injector is basically a static or global thing which is being used throughout the app to inject dependencies or objects. It knows how to incorporate and configure dependencies. To do this, it needs information about the constructor arguments and the relationships between the objects. In simple words, A Dependency Injection Container manages objects right from their instantiation to their configuration. Its main responsibilities are classified as:</p>

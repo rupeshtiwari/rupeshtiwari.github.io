@@ -25,7 +25,7 @@ author:
   last_name: Tiwari
 permalink: /creating-custom-jquery-widget/
 description: Creating Custom jQuery Widget
-toc: true
+
 ---
 
 <p>Hi I just came across a greate website <a href="http://bililite.com/blog/understanding-jquery-ui-widgets-a-tutorial/">http://bililite.com/blog/understanding-jquery-ui-widgets-a-tutorial/</a></p>

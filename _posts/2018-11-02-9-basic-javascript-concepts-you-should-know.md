@@ -71,7 +71,7 @@ description:
   I believe there are below concepts that one good JavaScript developer must
   have. bind, Scope, this, undefined vs null, closure, Hoisting, module pattern,
   prototype pattern, prototype inheritance\t\t"
-toc: true
+
 ---
 
 <br />

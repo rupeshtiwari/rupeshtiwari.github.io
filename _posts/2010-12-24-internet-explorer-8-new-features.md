@@ -34,7 +34,7 @@ author:
   last_name: Tiwari
 permalink: /internet-explorer-8-new-features/
 description: Internet Explorer 8 - new features
-toc: true
+
 ---
 
 <p>

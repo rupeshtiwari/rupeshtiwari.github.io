@@ -47,7 +47,7 @@ author:
   last_name: Tiwari
 permalink: /restoring-scroll-position/
 description: Restoring Scroll Position in Html page
-toc: true
+
 ---
 
 <p><span style="font-size: medium;">Suppose you are searching for a product in a shopping website and you got a big set of results. It normally comes in a grid view with a long scroll bar. Sometimes you scrolled to some end and selected a particular product and suppose because of some reason or you clicked some button and page got posted back. Normally now a days because of Ajax nobody does page post back. However, suppose it happened and now page again rendered. Now user has to again scroll the page to find out his/her product. From User Experience point of view it is not good and it is really annoying to scroll to multiple times when your page got posted.</span></p>

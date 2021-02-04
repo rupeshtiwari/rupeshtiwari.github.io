@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /integrating-toolbar-component-from-angular-cli-demo/
-toc: true
+
 ---
 
 <p>In this demo session <a href="https://www.youtube.com/watch?v=G-b1rJI9RWA&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=14&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Integrating Toolbar | Angular CLI | Demo | 0009-13 </strong></a>we will see how to integrate toolbar in our angular app. In order to put toolbar in our app component <strong>app.component.html</strong> we need angular material component. As we already imported material module earlier in our <strong>app.module.ts</strong>, now we can directly pull toolbar code from angular material site. We will go to toolbar under Navigation heading and take its basic source code.</p>

@@ -47,7 +47,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /component-based-architecture-in-angular/
-toc: true
+
 ---
 
 <p>One of the main architectural principles in Angular is that an application should be composed of well encapsulated, loosely coupled components. In this session <a href="https://www.youtube.com/watch?v=6mogp9nxLvs" target="_blank" rel="noopener noreferrer"><strong>0008-8- angular: What is Component Based Application?</strong></a> we are going to discuss about components (in the context of Angular) and how they differ from directives.<br />

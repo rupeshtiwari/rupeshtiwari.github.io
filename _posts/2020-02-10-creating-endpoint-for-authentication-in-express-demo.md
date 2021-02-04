@@ -51,7 +51,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /creating-endpoint-for-authentication-in-express-demo/
-toc: true
+
 ---
 
 <p>In this demo session <a href="https://www.youtube.com/watch?v=VCE3KIsv26o&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=20&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Creating Endpoint For Authentication | Express | Demo | 0009-19 </strong></a>we will create a restful API and will host it in Node.js using express. Also we will make a post to register a user so that it can create a post call where we will send user data and will see whether server is receiving or not.</p>

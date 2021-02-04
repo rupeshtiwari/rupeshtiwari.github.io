@@ -48,7 +48,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /what-are-providers-its-various-types-in-angular/
-toc: true
+
 ---
 
 <p>A provider is an instruction to the DI system on how to obtain a value for a dependency. Most of the time, these dependencies are services that you create and provide.<br />

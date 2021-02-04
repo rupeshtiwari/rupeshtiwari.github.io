@@ -76,7 +76,7 @@ description: >
 
   Cloud deployment of your complete app.
   (https://online-shop-ecommerce.herokuapp.com/products)
-toc: true
+
 ---
 
 <p><!-- wp:shortcode --><br />

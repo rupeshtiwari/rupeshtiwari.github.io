@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /can-we-inject-an-object-or-dependency-through-an-interface-in-angular/
-toc: true
+
 ---
 
 <p>No, we cannot do dependency injection through Interface in Typescript Angular; it can be done in C# or Java. This is very important concept need to know for a single full stack developer as they are doing server side coding &amp; JavaScript coding both. That is the reason interface use is generally avoided in front end or typescript framework, use classes instead for making it DI (Dependency Injection) capable.</p>

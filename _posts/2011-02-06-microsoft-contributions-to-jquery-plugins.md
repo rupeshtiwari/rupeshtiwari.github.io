@@ -35,7 +35,7 @@ author:
   last_name: Tiwari
 permalink: /microsoft-contributions-to-jquery-plugins/
 description: Microsoft contributions to jQuery Plugins
-toc: true
+
 ---
 
 <p>

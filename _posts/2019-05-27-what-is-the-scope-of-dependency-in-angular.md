@@ -47,7 +47,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /what-is-the-scope-of-dependency-in-angular/
-toc: true
+
 ---
 
 <p>Scope of Dependency in Angular is very important concept to understand for a full stack developer. This is primarily asked question by interviewer in many different forms.</p>

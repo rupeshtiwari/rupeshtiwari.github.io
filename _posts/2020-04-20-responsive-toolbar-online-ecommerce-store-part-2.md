@@ -53,7 +53,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /responsive-toolbar-online-ecommerce-store-part-2/
-toc: true
+
 ---
 
 <p>In continuity to our previous demo session <strong><a href="https://www.youtube.com/watch?v=1gEjZavI6Rc&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=65&amp;t=0s" target="_blank" rel="noopener noreferrer">Responsive Toolbar Online eCommerce Store Part 1</a> </strong>where we made required changes to our ecommerce store to make its toolbar responsive, in this demo session <a href="https://www.youtube.com/watch?v=wsux8G3L-rQ&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=66&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Responsive Toolbar Online eCommerce Store Part 2 </strong></a>we will take care of UI changes to make our web app toolbar look better as well as responsive.</p>

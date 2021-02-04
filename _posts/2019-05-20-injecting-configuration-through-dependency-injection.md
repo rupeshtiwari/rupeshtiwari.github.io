@@ -47,7 +47,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /injecting-configuration-through-dependency-injection/
-toc: true
+
 ---
 
 <p>Most of the applications connect to multiple environments during their lifecycle. Environment which your application needs to connect can differ depending on the current phase of the project. For example, you may be using a dev environment during development, a test environment during testing, Staging environment during UAT and a production environment for the final deployment of your App. Switching between these environments can be cumbersome and prone to errors. You can’t simply hardcode these environment specific values in your project and make your life difficult. Dependency Injection framework in angular, provide us a way to inject configuration as service to configure the environment and choose a configuration or environment based on the variable. To inject Configuration details in our app we can define Config files with values like Env, API, Mode, DB in a defined schema and these values differ from one environment to other.</p>

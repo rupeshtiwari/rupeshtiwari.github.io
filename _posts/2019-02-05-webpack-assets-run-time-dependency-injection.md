@@ -38,7 +38,7 @@ author:
   last_name: Tiwari
 permalink: /webpack-assets-run-time-dependency-injection/
 description: "\n\t\t\t\tHow to pass public path to webpack assets bundle. \t\t"
-toc: true
+
 ---
 
 <h2>How to Inject Base Assets path URL dependency to webpack CSS bundle?</h2>

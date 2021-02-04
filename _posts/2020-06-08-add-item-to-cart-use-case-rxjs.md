@@ -52,7 +52,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /add-item-to-cart-use-case-rxjs/
-toc: true
+
 ---
 
 <p>In our previous demo session<a href="https://www.youtube.com/watch?v=mzBa4zJIzRc&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=74&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong> Creating Store Using RxJS | Angular | Demo</strong></a> we have written base code for our Cart Store. Now we will add methods to it, based on Use cases. Here in this video session <a href="https://www.youtube.com/watch?v=wYwY3yxsWuM&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=74" target="_blank" rel="noopener noreferrer"><strong>Add Item To Cart | Test Driven | RxJS | Demo </strong></a>we will discuss how to put ‘Add Items to cart’ use case through test driven development in RxJS angular project.</p>

@@ -68,7 +68,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /finding-js-memory-leaks-with-chrome-development-tools/
-toc: true
+
 ---
 
 <p><!-- wp:heading --></p>

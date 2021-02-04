@@ -36,7 +36,7 @@ author:
   last_name: Tiwari
 permalink: /local-alias-pattern/
 description: Local Alias pattern
-toc: true
+
 ---
 
 <p>

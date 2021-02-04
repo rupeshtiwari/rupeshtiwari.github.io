@@ -81,7 +81,7 @@ description: |-
   ES 6 Features in JavaScript
   Object Oriented JavaScript
   Functional Programming in JavaScript
-toc: true
+
 ---
 
 <p><!-- wp:html --><br />

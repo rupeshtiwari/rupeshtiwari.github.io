@@ -84,7 +84,7 @@ description: >-
   and finish this course for you! High quality and industry standard course is
   guarantee. First 10 students who will buy this course will get special $10
   discount.
-toc: true
+
 ---
 
 <p><!-- wp:shortcode --><br />

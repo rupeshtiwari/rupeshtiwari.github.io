@@ -48,7 +48,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /difference-between-server-side-and-client-side-code/
-toc: true
+
 ---
 
 <p>Whenever somebody asks developer about difference between server side &amp; client side coding, generally answer comes as “Anything angular or HTML code or anything JavaScript is nothing but client”. Which is not true, we do write angular code that runs on server machine. Let's understand first, what is basic difference between server &amp; Client side coding.</p>

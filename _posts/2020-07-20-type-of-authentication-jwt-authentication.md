@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /type-of-authentication-jwt-authentication/
-toc: true
+
 ---
 
 <p>As we already discussed rest of the authentication types in our previous video tutorials, JWT based authentication is best among all. It is world famous and used in almost all modern web/distributed applications. In this video tutorial <a href="https://www.youtube.com/watch?v=mzU8vWsRkvE&amp;list=PLZed_adPqIJp9M8sXttDmlCzWzat44GRi&amp;index=5&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>0010-3 What is JWT Based Authentication </strong></a>we will discuss about JWT authentication in detail.</p>

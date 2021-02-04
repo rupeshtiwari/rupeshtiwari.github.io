@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /mastering-meanjs-the-ultimate-full-stack-course/
-toc: true
+
 ---
 
 <p><!-- wp:html --><br />

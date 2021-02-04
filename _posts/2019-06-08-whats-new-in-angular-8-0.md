@@ -31,7 +31,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /whats-new-in-angular-8-0/
-toc: true
+
 ---
 
 <pre><span style="font-weight: 400;">Angular 8.0.0 is here!</span></pre>

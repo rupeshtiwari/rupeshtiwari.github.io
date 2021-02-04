@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /introduction-to-angular-material-demo/
-toc: true
+
 ---
 
 <p>As you begin learning of coding basics, one important thing which makes your learning process easier and practical is availability of code. Most of the online sessions lacks in providing code which is being used while giving demo. To overcome this we have checked in all our code into GitHub repository. One can visit our GitHub code base <strong><a href="https://github.com/rupeshtiwari/product-mart">https://github.com/rupeshtiwari/product-mart</a> </strong> to get the code snippet for this project. Complete code for our project PRODUCT MART – an angular app on MEAN stack is checked into GitHub. You can fork it &amp; follow it from there.</p>

@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /angular-app-development-from-scratch-an-introduction/
-toc: true
+
 ---
 
 <p>There are certain steps that we need to understand thoroughly to begin any angular project from scratch. In our previous <a href="https://www.youtube.com/watch?v=4b9xjzjY38c&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=2&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>video</strong></a> tutorial we already explained in detail about different environmental set ups required in angular app development. Below is the list of tasks/steps which we should understand and perform while working on angular project.</p>

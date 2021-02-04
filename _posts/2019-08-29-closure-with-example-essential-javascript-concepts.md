@@ -48,7 +48,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /closure-with-example-essential-javascript-concepts/
-toc: true
+
 ---
 
 <p>Closure is another JavaScript concept which comes in line with Scope concept. It basically comes into picture when we have nested functions. Whenever we have nested functions and the inner functions has access to outer functions data like variables and arguments then this is known as Closure scope.</p>

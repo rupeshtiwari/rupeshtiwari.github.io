@@ -48,7 +48,7 @@ author:
   last_name: Tiwari
 permalink: /how-to-show-logo-in-readme-md-file-or-in-npm-package-home-page/
 description: How to Show Logo in ReadMe.Md file or in npm Package Home Page
-toc: true
+
 ---
 
 <h1>How to add your own logo on README.md file</h1>

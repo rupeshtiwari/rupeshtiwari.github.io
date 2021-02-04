@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /summary-of-di-providers-in-angular-with-example/
-toc: true
+
 ---
 
 <p>A provider is an instruction to the DI system on how to obtain a value for a dependency. It is the provider that determines which instance or value should be injected at the runtime in components, pipes, or directives. Various types of provider are involved in angular DI, so to understand the purpose of provider types please visit our video tutorial <a href="https://www.youtube.com/watch?v=J1PrGf1ADrE" target="_blank" rel="noopener noreferrer"><strong>All Providers Summary With Example | Angular | Tutorial</strong></a></p>

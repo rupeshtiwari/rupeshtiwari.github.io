@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /hoisting-with-example-essential-javascript-concepts/
-toc: true
+
 ---
 
 <p>Hoisting is another important JavaScript concept. It defines that in JS every variable gets declared at the beginning of the function. It literally means as its name, which says raising something to top like hoisting a flag. It is JavaScript's default behavior of moving declarations to the top.</p>

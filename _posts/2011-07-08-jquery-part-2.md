@@ -36,7 +36,7 @@ author:
   last_name: Tiwari
 permalink: /jquery-part-2/
 description: Basics of jQuery Part 2
-toc: true
+
 ---
 
 <p><span style="font-size: small;">I took session on jQuery. It was nice experience to talk in front of my colleagues. </span>First time I took session where some of my colleagues joined on phone also with live meeting request. Overall the session was good and learning. If you get chance to check out these videos:</p>

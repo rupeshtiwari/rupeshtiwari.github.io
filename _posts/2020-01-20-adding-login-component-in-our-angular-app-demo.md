@@ -51,7 +51,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /adding-login-component-in-our-angular-app-demo/
-toc: true
+
 ---
 
 <p>In this demo session<a href="https://www.youtube.com/watch?v=CQ1d9v_AOBM&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=17&amp;t=0s" target="_blank" rel="noopener noreferrer"> <strong>Adding Log In Component | Angular | Demo| 0009-16 </strong></a>we will learn to implement Login functionality in our app. With this functionality, user will be able to log-in, log-out and register them if they are first time users. In our subsequent demo sessions we will also see how to host our API in in-memory &amp; in server as a RESTFUL API.</p>

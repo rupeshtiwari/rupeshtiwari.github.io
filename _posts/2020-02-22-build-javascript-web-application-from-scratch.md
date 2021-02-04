@@ -74,7 +74,7 @@ description: >-
   have Node.js installation demo. ES6 features while coding and we will compile
   our code to ES5 using Webpack. We will do event base programming using jQuery
   pub-sub. We will also use bootstrap CSS for styling on our Html.
-toc: true
+
 ---
 
 <p><!-- wp:heading --></p>

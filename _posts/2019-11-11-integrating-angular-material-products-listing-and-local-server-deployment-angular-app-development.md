@@ -52,7 +52,7 @@ author:
   last_name: Tiwari
 permalink: >-
   /integrating-angular-material-products-listing-and-local-server-deployment-angular-app-development/
-toc: true
+
 ---
 
 <p>So far in our angular project development from scratch we have covered two things:</p>

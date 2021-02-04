@@ -59,7 +59,7 @@ description: >-
   suppose you object has some properties as well. Then how will you create a
   complete mocked object in jasmine such that both of it's properties and
   methods are spied ?
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

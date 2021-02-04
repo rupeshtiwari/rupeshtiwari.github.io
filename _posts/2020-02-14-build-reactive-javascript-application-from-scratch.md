@@ -54,7 +54,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /build-reactive-javascript-application-from-scratch/
-toc: true
+
 ---
 
 <p><!-- wp:shortcode --><br />

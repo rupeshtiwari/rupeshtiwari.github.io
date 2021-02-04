@@ -49,7 +49,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /installing-angular-material-using-angular-cli-demo/
-toc: true
+
 ---
 
 <p>In order to install required angular material, angular team has provided six steps to follow in angular material home page. All of them are listed when we click on “Get Started” on home page.</p>

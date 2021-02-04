@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /relationship-between-injector-provider-in-angular/
-toc: true
+
 ---
 
 <p>A Dependency Provider configures an Injector with a DI Token, which that injector uses to provide the concrete, runtime version of a dependency value. The injector relies on the provider configuration to create instances of the dependencies that it injects into components, directives, pipes, and other services.</p>

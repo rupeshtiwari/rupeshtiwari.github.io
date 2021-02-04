@@ -35,7 +35,7 @@ author:
   last_name: Tiwari
 permalink: /openclosed-principle-is-never-100-closed/
 description: Open/Closed principle is never 100% closed
-toc: true
+
 ---
 
 <p>

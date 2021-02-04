@@ -34,7 +34,7 @@ author:
   last_name: Tiwari
 permalink: /jtip-jquery-custom-tool-tip/
 description: jQuery Custom Tool Tip
-toc: true
+
 ---
 
 <div><span style="font-size:small;">Plethora of times it is required to show complex tool tip. Complex, I mean the tool tip that can contain images, links , text decoration etc...To show the custom tool tip is really impossible by using existing Java or .Net visual studio Editor.  There are many ways to implement it.</span><span style="font-size:small;"> </span></div>

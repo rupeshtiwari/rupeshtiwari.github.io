@@ -37,7 +37,7 @@ author:
 permalink: /sending-xml-data-from-one-page-to-other-page-without-using-session-state/
 description:
   Sending xml data from one page to other page without using session state
-toc: true
+
 ---
 
 <p>

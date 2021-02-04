@@ -33,7 +33,7 @@ description:
   application. Heroku is Platform as Service (PaaS) artitecture. In this article
   you will learn how to create, build, deploy and scale node.js\_application
   into heroku cloud within couple of minutes."
-toc: true
+
 ---
 
 <h1>Heroku PaaS best Cloud Platform</h1>

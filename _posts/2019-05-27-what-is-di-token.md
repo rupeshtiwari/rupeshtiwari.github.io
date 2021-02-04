@@ -46,7 +46,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /what-is-di-token/
-toc: true
+
 ---
 
 <p>When we think of learning Dependency Injection in Angular, couple of questions arises like</p>

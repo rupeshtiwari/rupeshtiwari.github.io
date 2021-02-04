@@ -63,7 +63,7 @@ description: >-
   Based. I will explain you how can we leverage RxJS BehaviorSubject to
   establish Push Based Architecture. In Design Patterns book we have Observer
   Design Pattern that is exactly what I mean by Push Based Architecture.
-toc: true
+
 ---
 
 <p><!-- wp:quote --></p>

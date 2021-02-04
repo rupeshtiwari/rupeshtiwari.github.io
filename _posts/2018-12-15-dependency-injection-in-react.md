@@ -61,7 +61,7 @@ description:
   to Robert Martin Inversion of Control can be achieved by doing Dependency
   Injection. Where Compile or Build time dependencies are inverted and they are
   supplied at run time via Dependency Injection.\t\t"
-toc: true
+
 ---
 
 <h2>Dependency Injection</h2>

@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /creating-angular-service-showing-products-from-json-file-demo/
-toc: true
+
 ---
 
 <p>In this demo session <a href="https://www.youtube.com/watch?v=V4vydyrmQy8&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=12&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Creating Product Service | Angular Service | Demo | 0009-11 </strong></a>we will see how to show products from JSON file in our angular project. Each step is explained with corresponding snapshot from our video session to make it readable and understanding.</p>

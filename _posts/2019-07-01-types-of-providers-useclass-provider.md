@@ -46,7 +46,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /types-of-providers-useclass-provider/
-toc: true
+
 ---
 
 <p>Class Provider configures the Injector to return an instance of useClass for a token. It is similar to type provider but it has different way of providing corresponding dependency.</p>

@@ -50,7 +50,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /environment-setup-installation-angular-app-development/
-toc: true
+
 ---
 
 <p>Let’s begin our Angular app development project from scratch. This article explains each step very minutely, so that you do not feel lost anywhere. It also showcases screenshots from our classroom video tutorial to make it more practical. You can visit our video session <a href="https://www.youtube.com/watch?v=t_cLb4OyAsA&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=4&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Creating Angular App using Angular CLI | 0009-03 </strong></a>anytime to get an insight into it.</p>

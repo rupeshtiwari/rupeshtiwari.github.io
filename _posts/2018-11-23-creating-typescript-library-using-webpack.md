@@ -85,7 +85,7 @@ description:
   library. Finally we will see which folder is required to publish to
   npm\_portal to have our own little library published and available for our
   friends.\t\t"
-toc: true
+
 ---
 
 <p><!-- wp:html --></p>

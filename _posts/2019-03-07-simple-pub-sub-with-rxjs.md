@@ -62,7 +62,7 @@ description:
   to create your first pub sub library. Publish and Subscribe framework is very
   helpful to create isolated modules. Therefore, I will explain and demonstrate
   you how can you create your own pub sub library.\t\t"
-toc: true
+
 ---
 
 <p><!-- wp:paragraph --></p>

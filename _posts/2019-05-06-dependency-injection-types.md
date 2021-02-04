@@ -55,7 +55,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /dependency-injection-types/
-toc: true
+
 ---
 
 <p><span style="font-weight: 400;">Basically there are three types of dependency injection, Depending on the context we can choose any type which is being supported by that framework. Three types are:</span></p>

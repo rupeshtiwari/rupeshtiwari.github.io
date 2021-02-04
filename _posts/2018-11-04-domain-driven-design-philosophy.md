@@ -32,7 +32,7 @@ description:
   the Philosophy of software design that helps projects dealing with complex
   problem. I have been practicing DDD from last 5 years and here I will try to
   explain the philosophy of DDD here in this article.\_ Let's begin...\t\t"
-toc: true
+
 ---
 
 <p>

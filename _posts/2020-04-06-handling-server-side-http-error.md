@@ -52,7 +52,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /handling-server-side-http-error/
-toc: true
+
 ---
 
 <p>As we discussed in our previous video session <a href="https://www.youtube.com/watch?v=hrYlnQCBLrE&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=29&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Designing Shopping Page Using Angular Material Grid And Card | 0009-26</strong></a>, our web app is now growing as we are adding more features into it and making its design better. Since our application is growing, now the most important challenge is to handle the server side errors properly and sending adequate information to client side. We will see in this demo session <strong><a href="https://www.youtube.com/watch?v=Zq_MT6Hc--U&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=59&amp;t=0s" target="_blank" rel="noopener noreferrer">Handling Server Side HTTP Error | 0009-27</a> </strong>what are all the problems we have in our code and how to rectify them through proper error handling.</p>

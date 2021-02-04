@@ -52,7 +52,7 @@ author:
   first_name: Rupesh
   last_name: Tiwari
 permalink: /shopping-cart-update-delete-and-restore-demo/
-toc: true
+
 ---
 
 <p>In our previous video session <a href="https://www.youtube.com/watch?v=wYwY3yxsWuM&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=74" target="_blank" rel="noopener noreferrer"><strong>Add Item To Cart | Test Driven | RxJS | Demo</strong></a> we have already discussed Add item use case in our shopping cart project. Next in this video session <a href="https://www.youtube.com/watch?v=yoIoBLZ8gpU&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=75" target="_blank" rel="noopener noreferrer"><strong>Shopping Cart- Update Delete And Restore | Demo | Practical</strong> </a>we will discuss rest of the test cases with Update, Delete &amp; Restore Cart use cases.</p>

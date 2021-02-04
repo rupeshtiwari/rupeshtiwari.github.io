@@ -54,7 +54,7 @@ description: >-
   Welcome to step by step hands-on guide to setup webpack in your upcoming
   typescript project. Please follow the steps and you should be able to create
   your own webpack project. Please download the source code from github.
-toc: true
+
 ---
 
 <p><!-- wp:heading {"level":1} --></p>
