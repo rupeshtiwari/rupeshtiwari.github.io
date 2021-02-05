@@ -19,14 +19,26 @@
 #toc_container ol li {
     list-style: outside none none !important;
 }
+
 #toc_container ul li {
     list-style: outside none none !important;
 }
 
-.my-list-class {
-    list-style-type: upper-alpha;
+
+.rect {
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    padding-top: 15px;
+    margin: 0 auto;
 }
 
-.my-sublist-class {
-    list-style-type: lower-alpha;
+.rel {
+    width: 200px;
+    display: inline-block;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.rel hover {
+    opacity: 1;
 }
