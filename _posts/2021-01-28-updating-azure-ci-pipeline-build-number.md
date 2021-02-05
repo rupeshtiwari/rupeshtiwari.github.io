@@ -8,7 +8,7 @@ cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/1Ncfprq.png"
 thumbnail-img: "https://i.imgur.com/MxavTGI.png"
 share-img: "https://i.imgur.com/MxavTGI.png"
-tags: "devops,node,beginners,angular"
+tags: devops,node,beginners,angular
 last_modified_at: null
 published: true
 sitemap: true

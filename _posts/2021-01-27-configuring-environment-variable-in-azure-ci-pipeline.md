@@ -9,7 +9,7 @@ cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/OISr8kK.png"
 thumbnail-img: "https://i.imgur.com/JiL3zVz.png"
 share-img: "https://i.imgur.com/JiL3zVz.png"
-tags: "devops,beginners,tutorial,azure"
+tags: devops,beginners,tutorial,azure
 last_modified_at: null
 published: true
 sitemap: true

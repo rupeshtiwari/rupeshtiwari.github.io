@@ -10,8 +10,8 @@ categories:
   - Agile
   - Agile Methodologies
 tags:
-  - "#agile"
-  - "#rupeshtiwari"
+  - "agile"
+  - "rupeshtiwari"
 meta:
   wpmm_postgrid_views: "61"
   _jetpack_related_posts_cache: >-

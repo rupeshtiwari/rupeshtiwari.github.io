@@ -10,7 +10,7 @@ thumbnail-img: "https://i.imgur.com/oKh8TiX.png"
 share-img: "https://i.imgur.com/oKh8TiX.png"
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-01-publishing-jekyll-blog-post-to-dev-to-using-github-ci-cd-pipeline/
-tags: "jekyll,github,devops,webdev"
+tags: jekyll,github,devops,webdev
 last_modified_at: "2021-02-01 15:03 -0500"
 published: true
 sitemap: true
