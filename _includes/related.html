@@ -1,11 +1,9 @@
-
-
 <div class="posts-list">
 
-    <h2>Read next</h2> 
+    <h2>Read next</h2>
 
-    {% assign maxRelated = 4 %}
-    {% assign minCommonTags = 1 %}
+    {% assign maxRelated = site.related-posts.max-related %}
+    {% assign minCommonTags = site.related-posts.min-common-tags %}
     {% assign maxRelatedCounter = 0 %}
 
 
@@ -111,5 +109,3 @@
     {% endif %}
     {% endfor %}
 </div>
-
- 

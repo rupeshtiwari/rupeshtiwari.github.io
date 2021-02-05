@@ -8,7 +8,7 @@ My name is Rupesh Tiwari. I am Sr. Software/Solution Architect, Professional Tra
 
 ### My Learning Updates 
 
-- Currently exploring `Jekyll` 
+- Currently exploring `Jekyll`. I have created this blog site using [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) theme. I 💖 this them! 
 - Recently Explored: 
   -  [Nrwl Nx Monorepo](https://nx.dev), Check out my [Nx blogs](https://rupeshtiwari.github.io/tags/#nx)
   -  Azure DevOps, Check out my [DevOps blogs](https://rupeshtiwari.github.io/tags/#devops)

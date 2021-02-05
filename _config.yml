@@ -90,8 +90,12 @@ feed_show_tags: true
 # Enable a search bar on the home page to search blog posts
 post_search: true
 
-# Enable related post on each blog post
-related-posts: true
+# Related Posts on each blog post
+related-posts:
+  enabled: true
+  max-related: 4
+  min-common-tags: 1
+  
 
 # The keywords to associate with your website, for SEO purposes
 keywords: "angular,javascript,node.js,webpack"
