@@ -43,6 +43,14 @@ layout: base
       </div>
       {% endif %}
 
+
+      {% if site.applause.enabled %}
+      <span style="display:inline-block">
+        {% include applause.html url=page.url %}
+      </span>
+      {% endif %}
+
+
       <div id="toc_container">
 
         <p class="toc_title">Contents</p>

@@ -93,6 +93,13 @@ post_search: true
 # Enable anchors on site
 anchors: true
 
+# Enable below section to enable applause on blog post
+applause:
+  enabled: true
+  multiclap: true
+  initial-clap-count: 50
+  color: "#ea2c6d"
+
 # Related Posts on each blog post
 related-posts:
   enabled: true
