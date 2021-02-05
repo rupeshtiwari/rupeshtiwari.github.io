@@ -90,6 +90,9 @@ feed_show_tags: true
 # Enable a search bar on the home page to search blog posts
 post_search: true
 
+# Enable related post on each blog post
+related_posts: true
+
 # The keywords to associate with your website, for SEO purposes
 keywords: "angular,javascript,node.js,webpack"
 
@@ -105,7 +108,7 @@ text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#fe9000"
-footer-text-col: "#777777"
+footer-text-col: "white"
 footer-link-col: "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
@@ -148,10 +151,10 @@ google_analytics: "UA-128916623-7"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-disqus: "https-rupeshtiwari-github-io"
+disqus: "https-rupeshtiwari-github-io-1"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-fb_comment_id: "421181512329379"
+# fb_comment_id: "421181512329379"
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,

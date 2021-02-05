@@ -7,7 +7,7 @@ description:
   Learn how to protect Master branch of git repository in azure devops
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/S8uujlY.jpg"
-thumbnail-img: "https://i.imgur.com/S8uujlY.jpg"
+thumbnail-img: "https://i.imgur.com/fN6F867.jpg"
 share-img: "https://i.imgur.com/S8uujlY.jpg"
 tags:
   - azure

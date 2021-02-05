@@ -1,6 +1,8 @@
-<h4>You May Also Enjoy</h4>
+{% if site.related_posts != false %}
 
-<div class="rect">
+<div class="posts-list">
+
+    <h2>Read next</h2> 
 
     {% assign maxRelated = 4 %}
     {% assign minCommonTags = 1 %}
@@ -25,12 +27,82 @@
 
     {% if sameTagCount >= minCommonTags %}
 
-    <a href="{{ site.baseurl }}{{ post.url }}">
-        <div class="rel">
-            <img width="100%" height="auto" src="{{post.thumbnail-img}}">
-            <h5>{{ post.title }}</h5>
+    <article class="post-preview">
+        {%- capture thumbnail -%}
+        {% if post.thumbnail-img %}
+        {{ post.thumbnail-img }}
+        {% elsif post.cover-img %}
+        {% if post.cover-img.first %}
+        {{ post.cover-img[0].first.first }}
+        {% else %}
+        {{ post.cover-img }}
+        {% endif %}
+        {% else %}
+        {% endif %}
+        {% endcapture %}
+        {% assign thumbnail=thumbnail | strip %}
+
+        {% if site.feed_show_excerpt == false %}
+        {% if thumbnail != "" %}
+        <div class="post-image post-image-normal">
+            <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+            </a>
         </div>
-    </a>
+        {% endif %}
+        {% endif %}
+
+        <a href="{{ post.url | absolute_url }}">
+            <h3 class="post-title">{{ post.title }}</h3>
+
+            {% if post.subtitle %}
+            <h4 class="post-subtitle">
+                {{ post.subtitle }}
+            </h4>
+            {% endif %}
+        </a>
+
+        <p class="post-meta">
+            {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+            Posted on {{ post.date | date: date_format }}
+        </p>
+
+        {% if thumbnail != "" %}
+        <div class="post-image post-image-small">
+            <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+            </a>
+        </div>
+        {% endif %}
+
+        {% unless site.feed_show_excerpt == false %}
+        {% if thumbnail != "" %}
+        <div class="post-image post-image-short">
+            <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+            </a>
+        </div>
+        {% endif %}
+
+        <div class="post-entry">
+            {% assign excerpt_length = site.excerpt_length | default: 50 %}
+            {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
+            {% assign excerpt_word_count = post.excerpt | number_of_words %}
+            {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
+            <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+            {% endif %}
+        </div>
+        {% endunless %}
+
+        {% if site.feed_show_tags != false and post.tags.size > 0 %}
+        <div class="blog-tags">
+            <span>Tags:</span>
+            {% for tag in post.tags %}
+            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </article>
 
     {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
     {% if maxRelatedCounter >= maxRelated %}
@@ -39,3 +111,5 @@
     {% endif %}
     {% endfor %}
 </div>
+
+{% endif %}

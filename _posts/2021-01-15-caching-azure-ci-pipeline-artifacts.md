@@ -8,7 +8,7 @@ description:
   Learn how Caching improves speed of your Angular Build in Azure CI build
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/EeYRFDf.jpg"
-thumbnail-img: "https://i.imgur.com/EeYRFDf.jpg"
+thumbnail-img: "https://i.imgur.com/h5qlMda.jpg"
 share-img: "https://i.imgur.com/EeYRFDf.jpg"
 tags:
   - devops

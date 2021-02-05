@@ -6,7 +6,7 @@ description: Learn creating Angular Build Azure CI Pipeline
 subtitle: Learn creating Angular Build Azure CI Pipeline
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/OCEHPk5.jpg"
-thumbnail-img: "https://i.imgur.com/OCEHPk5.jpg"
+thumbnail-img: "https://i.imgur.com/vkmKw3A.jpg"
 share-img: "https://i.imgur.com/OCEHPk5.jpg"
 tags:
   - devops
