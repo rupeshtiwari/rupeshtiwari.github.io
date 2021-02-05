@@ -90,6 +90,9 @@ feed_show_tags: true
 # Enable a search bar on the home page to search blog posts
 post_search: true
 
+# Enable anchors on site
+anchors: true
+
 # Related Posts on each blog post
 related-posts:
   enabled: true

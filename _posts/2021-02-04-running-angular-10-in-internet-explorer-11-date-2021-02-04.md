@@ -17,6 +17,8 @@ sitemap: true
 comments: true
 social-share: true
 toc: true
+gh-badge: star
+gh-repo: rupeshtiwari/rupeshtiwari.github.io
 excerpt_separator: <!--more-->
 id: 592350
 ---

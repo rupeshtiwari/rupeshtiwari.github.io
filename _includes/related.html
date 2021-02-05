@@ -1,6 +1,6 @@
 <div class="posts-list">
 
-    <h2>Read next</h2>
+    <h2>{{% site.related-posts.title | default:'Read next' %}}</h2>
 
     {% assign maxRelated = site.related-posts.max-related | default:4 %}
     {% assign minCommonTags = site.related-posts.min-common-tags | default: 1 %}
