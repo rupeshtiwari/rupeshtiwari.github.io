@@ -8,7 +8,7 @@ cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/P9U4q6m.png"
 thumbnail-img: "https://i.imgur.com/AfCDCO2.png"
 share-img: "https://i.imgur.com/AfCDCO2.png"
-tags: nx,angular,monorepo,jest
+tags: [nx,angular,monorepo,jest]
 last_modified_at: null
 published: true
 sitemap: true

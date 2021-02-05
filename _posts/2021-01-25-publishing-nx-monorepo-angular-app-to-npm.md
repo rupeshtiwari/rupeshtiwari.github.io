@@ -10,7 +10,7 @@ thumbnail-img: "https://i.imgur.com/bgL1DCX.png"
 share-img: "https://i.imgur.com/bgL1DCX.png"
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-01-24-publishing-nx-monorepo-angular-app-to-npm/
-tags: nx,angular,npm,beginners
+tags: [nx,angular,npm,beginners]
 last_modified_at: null
 published: true
 sitemap: true

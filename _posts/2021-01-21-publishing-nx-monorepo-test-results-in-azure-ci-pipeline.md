@@ -10,7 +10,7 @@ cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/WQ5z6KK.png"
 thumbnail-img: "https://i.imgur.com/3ysBPoZ.png"
 share-img: "https://i.imgur.com/3ysBPoZ.png"
-tags: devops,nx,angular,beginners
+tags: [devops,nx,angular,beginners]
 last_modified_at: null
 published: true
 sitemap: true

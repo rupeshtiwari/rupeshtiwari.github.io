@@ -8,7 +8,7 @@ cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/UJNuoEj.jpg"
 thumbnail-img: "https://i.imgur.com/KVtdDlT.png"
 share-img: "https://i.imgur.com/KVtdDlT.png"
-tags: nx,angular,beginners,monorepo
+tags: [nx,angular,beginners,monorepo]
 last_modified_at: null
 published: true
 sitemap: true

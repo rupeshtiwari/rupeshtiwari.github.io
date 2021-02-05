@@ -13,7 +13,7 @@ categories:
   - NodeJS
   - Typescript
   - Webpack
-tags: []
+tags: [express,beginner,typescript,tutorial]
 meta:
   _wpas_mess:
     " I wanted to work with Typescript, Webpack and Express.JS finally came up

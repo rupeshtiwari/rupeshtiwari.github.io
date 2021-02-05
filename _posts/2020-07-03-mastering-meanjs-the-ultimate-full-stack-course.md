@@ -7,7 +7,7 @@ published: true
 comments: true
 social-share: true
 categories: []
-tags: []
+tags: [angular,beginner,node,tutorial]
 meta:
   _wpcom_is_markdown: "1"
   _jetpack_related_posts_cache: >-

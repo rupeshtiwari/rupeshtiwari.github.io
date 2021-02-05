@@ -91,7 +91,7 @@ feed_show_tags: true
 post_search: true
 
 # Enable related post on each blog post
-related_posts: true
+related-posts: true
 
 # The keywords to associate with your website, for SEO purposes
 keywords: "angular,javascript,node.js,webpack"

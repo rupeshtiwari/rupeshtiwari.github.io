@@ -8,7 +8,7 @@ comments: true
 social-share: true
 categories:
   - Interview
-tags: []
+tags: [angular,beginner,node,tutorial]
 meta:
   _edit_last: "1"
   _thumbnail_id: "1893"

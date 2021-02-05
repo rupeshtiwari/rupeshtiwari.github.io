@@ -8,7 +8,7 @@ comments: true
 social-share: true
 categories:
   - jQuery
-tags: []
+tags: [jquery,beginners,tutorial,javascript]
 meta:
   _edit_last: "1"
   _wpas_done_twitter: "1"

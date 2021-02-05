@@ -10,7 +10,7 @@ cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/YJnJNSe.jpg"
 thumbnail-img: "https://i.imgur.com/YJnJNSe.jpg"
 share-img: "https://i.imgur.com/YJnJNSe.jpg"
-tags: devops,angular,beginners,tutorial
+tags: [devops,angular,beginners,tutorial]
 last_modified_at: null
 published: true
 sitemap: true

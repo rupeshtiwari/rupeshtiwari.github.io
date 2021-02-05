@@ -12,7 +12,7 @@ thumbnail-img: "https://i.imgur.com/knMB5bS.png"
 share-img: "https://i.imgur.com/knMB5bS.png"
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-03-managing-css-in-angular-app-for-cross-browsers-and-os/
-tags: angular,css,productivity,webdev
+tags: [angular,css,productivity,webdev]
 last_modified_at: null
 published: false
 sitemap: true
