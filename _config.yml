@@ -286,7 +286,3 @@ jekyll_compose:
 jekyll-crosspost_to_medium:
   enabled: false
 
-ext-css: ["assets/css/style.css"]
-css: []
-js: []
-ext-js: []
