@@ -18,7 +18,7 @@ navbar-links:
   Software Training:
     - All-Access Pro plan: "https://www.fullstackmaster.net/pro"
     - All-Access ELite Plan: "https://www.fullstackmaster.net/elite"
-  Author's home: "https://www.rupeshtiwari.com"
+  Author's home: "rupesh/"
 
 # --- Logo --- #
 
@@ -285,3 +285,8 @@ jekyll_compose:
 
 jekyll-crosspost_to_medium:
   enabled: false
+
+ext-css: ["assets/css/style.css"]
+css: []
+js: []
+ext-js: []
