@@ -15,10 +15,10 @@ author: Rupesh Tiwari
 
 navbar-links:
   About Me: "aboutme/"
-  Software Training:
+  Full Stack Training:
     - All-Access Pro plan: "https://www.fullstackmaster.net/pro"
     - All-Access ELite Plan: "https://www.fullstackmaster.net/elite"
-  Author's home: "rupesh/"
+  Home: "rupesh/"
 
 # --- Logo --- #
 
