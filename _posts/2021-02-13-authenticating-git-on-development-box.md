@@ -8,7 +8,7 @@ cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/HyaOzzF.png'
 thumbnail-img: 'https://i.imgur.com/IspOKgj.png'
 share-img: 'https://i.imgur.com/IspOKgj.png'
-canonical_url: 'https://rupeshtiwari.github.io/'
+canonical_url: 'https://rupeshtiwari.github.io/2021-02-12-authenticating-git-on-development-box/'
 tags: [git,github,beginners,devops]
 last_modified_at:
 published: true
