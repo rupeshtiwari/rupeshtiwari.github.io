@@ -286,3 +286,4 @@ jekyll_compose:
 jekyll-crosspost_to_medium:
   enabled: false
 
+future: false
