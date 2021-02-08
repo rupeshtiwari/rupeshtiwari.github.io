@@ -14,7 +14,7 @@ canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-03-managing-css-in-angular-app-for-cross-browsers-and-os/
 tags: [angular,css,productivity,webdev]
 last_modified_at: null
-published: false
+published: true
 sitemap: true
 comments: true
 social-share: true
