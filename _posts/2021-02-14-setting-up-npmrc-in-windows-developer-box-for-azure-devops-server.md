@@ -8,7 +8,7 @@ cover-img: https://i.imgur.com/NRaQUA5.png
 cover_image: 'https://i.imgur.com/q8sk7gJ.png'
 thumbnail-img: 'https://i.imgur.com/sgvjHr1.png'
 share-img: 'https://i.imgur.com/sgvjHr1.png'
-canonical_url: https://rupeshtiwari.github.io/2021-02-13-setting-up-npmrc-in-windows-developer-box-for-azure-devops-server.md
+canonical_url: https://rupeshtiwari.github.io/2021-02-13-setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/
 tags: [devops,npm,node,beginners]
 last_modified_at:
 published: true
