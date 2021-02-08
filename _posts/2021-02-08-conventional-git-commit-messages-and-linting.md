@@ -1,22 +1,28 @@
 ---
 layout: post
 title: Conventional Git Commit Messages and Linting
-date: 2021-02-08 08:53 -0500
+date: '2021-02-08 08:53 -0500'
 subtitle: Vscode linting to enforce conventional commit message
 description: Vscode linting to enforce conventional commit message
-cover-img: https://i.imgur.com/NRaQUA5.png
-cover_image: https://i.imgur.com/60xKLYV.jpg
-thumbnail-img: https://i.imgur.com/INHV6Ax.png
-share-img: https://i.imgur.com/INHV6Ax.phg
-canonical_url: https://rupeshtiwari.github.io/2021-02-08-conventional-git-commit-messages-and-linting/
-tags: [javascript, linting, webdev, vscode]
-last_modified_at:
+cover-img: 'https://i.imgur.com/NRaQUA5.png'
+cover_image: 'https://i.imgur.com/60xKLYV.jpg'
+thumbnail-img: 'https://i.imgur.com/INHV6Ax.png'
+share-img: 'https://i.imgur.com/INHV6Ax.phg'
+canonical_url: >-
+  https://rupeshtiwari.github.io/2021-02-08-conventional-git-commit-messages-and-linting/
+tags:
+  - javascript
+  - linting
+  - webdev
+  - vscode
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
 toc: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
+id: 595653
 ---
 
 > Do you want to follow Conventional Commits and want to enforce a rule such that your team also follows it? In this article, You will learn how to enforce [Conventional Commenting](https://www.conventionalcommits.org/en/v1.0.0/#summary) rule prior to commit your **Angular** or **Nrwl.Nx Monorepo** code in GitHub. Now a days all of open source library like [ngrx platform](https://github.com/ngrx/platform/blob/master/CONTRIBUTING.md) they started following precise rules over how git commit messages must be formatted. This leads to **more readable messages** that are easy to follow when looking through the project history.
