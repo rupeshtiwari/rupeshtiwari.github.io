@@ -8,7 +8,7 @@ cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/MR0eU4y.png'
 thumbnail-img: 'https://i.imgur.com/d12se9m.png'
 share-img: 'https://i.imgur.com/d12se9m.png'
-canonical_url: 'https://rupeshtiwari.github.io/2021-02-26-restoring-and-publishing-npm-from-azure-ci-pipeline'
+canonical_url: 'https://rupeshtiwari.github.io/2021-02-26-restoring-and-publishing-npm-from-azure-ci-pipeline/'
 tags: [devops,azure,angular,webdev]
 last_modified_at: null
 published: true

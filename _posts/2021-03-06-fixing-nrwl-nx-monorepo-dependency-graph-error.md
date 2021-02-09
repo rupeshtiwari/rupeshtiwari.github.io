@@ -5,9 +5,9 @@ date: 2021-03-06 00:00 +0000
 subtitle: nx monorepo workspace tslint dependency error fix
 description: nx monorepo workspace tslint dependency error fix
 cover-img: https://i.imgur.com/NRaQUA5.png
-cover_image: https://i.imgur.com/qYG3MwA.png
-thumbnail-img: https://i.imgur.com/FL0LRdT.png
-share-img: https://i.imgur.com/FL0LRdT.png
+cover_image: https://i.imgur.com/BOUqmSS.png
+thumbnail-img: https://i.imgur.com/ymSlvgi.png
+share-img: https://i.imgur.com/ymSlvgi.png
 canonical_url: https://rupeshtiwari.github.io/2021-03-05-fixing-nrwl-nx-monorepo-dependency-graph-error/
 tags: [nx,monorepo,webdev,beginners]
 last_modified_at:

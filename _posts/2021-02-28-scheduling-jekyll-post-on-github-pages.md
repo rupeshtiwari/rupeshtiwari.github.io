@@ -8,7 +8,7 @@ cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/5nUUsN1.png'
 thumbnail-img: 'https://i.imgur.com/RrLzSEP.png'
 share-img: 'https://i.imgur.com/RrLzSEP.png'
-canonical_url: 'https://rupeshtiwari.github.io/'
+canonical_url: 'https://rupeshtiwari.github.io/2021-02-27-scheduling-jekyll-post-on-github-pages/'
 tags: [jekyll,github,devops,webdev]
 last_modified_at:
 published: true
