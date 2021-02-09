@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restoring and Publishing NPM from Azure CI Pipeline  
+title: Restoring and Publishing NPM Packages from Azure CI Pipeline  
 date: '2021-02-27 00:00 +0000'
 subtitle: restoring and publishing scoped npm packages from azure pipeline to azure artifacts
 description: restoring and publishing scoped npm packages from azure pipeline to azure artifacts 
