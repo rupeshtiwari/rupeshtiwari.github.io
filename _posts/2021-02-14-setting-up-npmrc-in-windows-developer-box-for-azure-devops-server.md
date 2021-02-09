@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up NPMRC in Windows Developer Box for Azure DevOps Server
+title: Creating NPMRC in Windows Developer Box for Azure DevOps Server
 date: 2021-02-14 00:00 +0000
 subtitle: setting npm authentication for dev box for restoring npm packages 
 description: setting npm authentication for dev box for restoring npm packages 
@@ -19,8 +19,7 @@ toc: true
 excerpt_separator: "<!--more-->"
 ---
 
-> Are you wondering how to create an `.npmrc` file and put an `authentication token` for your team member's development boxes? Do you have multiple scoped private registries in your on-premise azure devOps artifacts feeds? Read this article to get your answers. Updating Personal Authentication Token of `.npmrc` file
-
+> Are you wondering how to create an `.npmrc` file and put an `authentication token` from azure devOps for your team member's development boxes? Do you have multiple scoped private `npm` registries in your on-premise azure devOps artifacts feeds? This is a required tooling you must do when you are working on on-premise Azure DevOps server. Read this article to get your answers.  
 
 ## Introduction
 
