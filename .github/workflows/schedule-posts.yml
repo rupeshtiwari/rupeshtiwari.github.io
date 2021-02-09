@@ -13,7 +13,7 @@ jobs:
     - name: Send email
       uses: dawidd6/action-send-mail@v2.4.0
       with:
-        server_address: smtp.gmail.com
+        server_address: smtp.googlemail.com
         server_port: 465
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
