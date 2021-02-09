@@ -66,7 +66,7 @@ jobs:
 
 ## Sending e-mail on successful blog publish
 
-I will use gmail user id and password to send automatic email once blog publish is done. 
+I will use Gmail user id and password to send automatic email once blog publish is done. 
 
 1. Create `MAIL_USERNAME` and `MAIL_PASSWORD` GitHub secretes
 ![](https://i.imgur.com/R6opFJb.png)
