@@ -254,10 +254,10 @@ jekyll_compose:
       subtitle:
       description:
       cover-img: "https://i.imgur.com/NRaQUA5.png"
-      cover_image: "https://i.imgur.com/"
-      thumbnail-img: "https://i.imgur.com/"
-      share-img: "https://i.imgur.com/"
-      canonical_url: "https://rupeshtiwari.github.io/"
+      cover_image: "https://i.imgur.com/XXX.png"
+      thumbnail-img: "https://i.imgur.com/XXX.png"
+      share-img: "https://i.imgur.com/XXX.png"
+      canonical_url: "https://rupeshtiwari.github.io/SOMEARTICLE"
       tags:
       last_modified_at:
       published: true
@@ -270,10 +270,10 @@ jekyll_compose:
       subtitle:
       description:
       cover-img: "https://i.imgur.com/NRaQUA5.png"
-      cover_image: "https://i.imgur.com/"
-      thumbnail-img: "https://i.imgur.com/"
-      share-img: "https://i.imgur.com/"
-      canonical_url: "https://rupeshtiwari.github.io/"
+      cover_image: "https://i.imgur.com/XXX.png"
+      thumbnail-img: "https://i.imgur.com/XXX.png"
+      share-img: "https://i.imgur.com/XXX.png"
+      canonical_url: "https://rupeshtiwari.github.io/SOMEARTICLE"
       tags:
       last_modified_at:
       published: true
