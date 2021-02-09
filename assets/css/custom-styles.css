@@ -17,10 +17,9 @@
 #toc_container ul,
 #toc_container ol,
 #toc_container ol li {
-    list-style: outside none none !important;
+    list-style-type: decimal-leading-zero !important;
 }
 
 #toc_container ul li {
-    list-style: outside none none !important;
+    list-style-type: decimal-leading-zero !important;
 }
-
