@@ -56,7 +56,7 @@ We will create new Azure CI/CD environment variable and use this `base64` encode
 
 ## Creating NPM_TOKEN secret on the Azure CI/CD server
 
-Create a secret `NPM_TOKEN`, in your CI/CD server. Set your `Base64` encoded `auth token` as it's value. 
+Edit your Azure pipeline and in variables create a new secret `NPM_TOKEN`, in your CI/CD server. Set your `Base64` encoded `auth token` as it's value. 
 
 ![](https://i.imgur.com/OlYwgfW.png)
 
