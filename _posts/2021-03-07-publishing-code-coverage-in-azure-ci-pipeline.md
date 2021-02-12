@@ -9,7 +9,7 @@ cover_image: 'https://i.imgur.com/oaeFs3U.png'
 thumbnail-img: 'https://i.imgur.com/lF87q1A.png'
 share-img: 'https://i.imgur.com/lF87q1A.png'
 canonical_url: 'https://rupeshtiwari.github.io/2021-03-06-publishing-code-coverage-in-azure-ci-pipeline/'
-tags: devops,angular,azure,beginners
+tags: [devops,angular,azure,beginners]
 last_modified_at: null
 published: true
 sitemap: true
