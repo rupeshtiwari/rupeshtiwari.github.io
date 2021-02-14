@@ -93,6 +93,9 @@ post_search: true
 # Enable anchors on site
 anchors: true
 
+# Enable mermaid
+mermaid: true
+
 # Enable below section to enable applause on blog post
 applause:
   enabled: false
