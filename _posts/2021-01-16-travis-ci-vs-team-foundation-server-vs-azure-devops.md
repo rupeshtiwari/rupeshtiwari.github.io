@@ -4,6 +4,7 @@ title: Travis CI vs Team Foundation Server vs Azure DevOps
 date: "2021-01-16 00:00 +0000"
 subtitle: Learn and decide which cloud based ci cd service you like
 description: Learn and decide which cloud based ci cd service you like
+image: "https://i.imgur.com/73heuwv.png"
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/73heuwv.png"
 thumbnail-img: "https://i.imgur.com/7dBEoja.png"

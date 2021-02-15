@@ -4,6 +4,7 @@ title: Restoring and Publishing NPM Packages from Azure CI Pipeline
 date: '2021-02-27 00:00 +0000'
 subtitle: restoring and publishing scoped npm packages from azure pipeline to azure artifacts
 description: restoring and publishing scoped npm packages from azure pipeline to azure artifacts 
+image: 'https://i.imgur.com/MR0eU4y.png'
 cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/MR0eU4y.png'
 thumbnail-img: 'https://i.imgur.com/d12se9m.png'

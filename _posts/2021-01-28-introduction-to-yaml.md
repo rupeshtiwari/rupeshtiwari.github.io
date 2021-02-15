@@ -4,6 +4,7 @@ tags: [devops,yaml,yml,tutorial]
 date: "2021-01-02 19:32 -0500"
 title: Introduction to YAML
 description: Introduction to YAML
+image: "https://i.imgur.com/jZQbmj4.jpg"
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/jZQbmj4.jpg"
 thumbnail-img: "https://i.imgur.com/jZQbmj4.jpg"

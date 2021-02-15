@@ -4,6 +4,7 @@ title: Creating New App with Nx Console
 date: "2021-01-24 00:00 +0000"
 subtitle: learn creating new application using nx console in monorepo
 description: learn creating new application using nx console in monorepo
+image: "https://i.imgur.com/UJNuoEj.jpg"
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/UJNuoEj.jpg"
 thumbnail-img: "https://i.imgur.com/KVtdDlT.png"

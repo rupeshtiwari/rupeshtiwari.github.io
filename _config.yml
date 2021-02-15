@@ -256,6 +256,7 @@ jekyll_compose:
     drafts:
       subtitle:
       description:
+      image: 'https://i.imgur.com/XXX.png'
       cover-img: "https://i.imgur.com/NRaQUA5.png"
       cover_image: "https://i.imgur.com/XXX.png"
       thumbnail-img: "https://i.imgur.com/XXX.png"
@@ -272,6 +273,7 @@ jekyll_compose:
     posts:
       subtitle:
       description:
+      image: 'https://i.imgur.com/XXX.png'
       cover-img: "https://i.imgur.com/NRaQUA5.png"
       cover_image: "https://i.imgur.com/XXX.png"
       thumbnail-img: "https://i.imgur.com/XXX.png"

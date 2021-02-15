@@ -4,6 +4,7 @@ title: Creating NPMRC in Windows Developer Box for Azure DevOps Server
 date: 2021-02-14 00:00 +0000
 subtitle: setting npm authentication for dev box for restoring npm packages 
 description: setting npm authentication for dev box for restoring npm packages 
+image: 'https://i.imgur.com/q8sk7gJ.png'
 cover-img: https://i.imgur.com/NRaQUA5.png
 cover_image: 'https://i.imgur.com/q8sk7gJ.png'
 thumbnail-img: 'https://i.imgur.com/sgvjHr1.png'

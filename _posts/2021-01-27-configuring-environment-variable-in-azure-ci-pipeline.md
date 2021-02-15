@@ -5,6 +5,7 @@ date: "2021-01-27 00:00 +0000"
 subtitle: Learn how to define and use environment variable in azure ci pipeline
 description:
   Learn how to define and use environment variable in azure ci pipeline
+image: "https://i.imgur.com/OISr8kK.png"
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/OISr8kK.png"
 thumbnail-img: "https://i.imgur.com/JiL3zVz.png"

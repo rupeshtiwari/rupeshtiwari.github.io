@@ -4,6 +4,7 @@ title: Integrating CkEditor In Nx Monorepo
 date: "2021-02-01 10:22 -0500"
 subtitle: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
 description: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
+image: "https://imgur.com/H43sJjo.png"
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://imgur.com/H43sJjo.png"
 thumbnail-img: "https://imgur.com/6ySnUBQ.png"

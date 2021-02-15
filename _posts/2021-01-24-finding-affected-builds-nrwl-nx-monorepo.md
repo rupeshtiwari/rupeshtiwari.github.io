@@ -8,6 +8,7 @@ subtitle: >-
 description: >-
   Affected builds and project names in nx monorepo speed up your development and
   ci cd process
+image: "https://i.imgur.com/JAdLwFG.png"
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/JAdLwFG.png"
 thumbnail-img: "https://i.imgur.com/r6BwCaN.png"

@@ -4,6 +4,7 @@ title: Adding Tag to GIT Branch in Azure CI Pipelines
 date: '2021-02-21 00:00 +0000'
 subtitle: Learn applying git tag after azure ci build  
 description: Learn applying git tag after azure ci build
+image: 'https://i.imgur.com/FPNZHjY.png'
 cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/FPNZHjY.png'
 thumbnail-img: 'https://i.imgur.com/ulkZsbK.png'

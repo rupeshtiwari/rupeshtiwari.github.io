@@ -4,6 +4,7 @@ title: Publishing Nx Monorepo Angular App to NPM
 date: "2021-01-25 00:00 +0000"
 subtitle: learn how to publish angular app to npm from nx monorepo apps
 description: learn how to publish angular app to npm from nx monorepo apps
+image: "https://i.imgur.com/QETXvJI.png"
 cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/QETXvJI.png"
 thumbnail-img: "https://i.imgur.com/bgL1DCX.png"

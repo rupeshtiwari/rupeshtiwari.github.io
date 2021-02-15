@@ -4,6 +4,7 @@ title: Conventional Git Commit Messages and Linting
 date: '2021-02-08 08:53 -0500'
 subtitle: Vscode linting to enforce conventional commit message
 description: Vscode linting to enforce conventional commit message
+image: 'https://i.imgur.com/60xKLYV.png'
 cover-img: 'https://i.imgur.com/NRaQUA5.png'
 cover_image: 'https://i.imgur.com/60xKLYV.jpg'
 thumbnail-img: 'https://i.imgur.com/INHV6Ax.png'
