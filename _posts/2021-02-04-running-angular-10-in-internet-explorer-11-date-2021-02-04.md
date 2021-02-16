@@ -5,7 +5,7 @@ date: "2021-02-04 00:00 +0000"
 subtitle: Learn supporting Internet Explorer in Angular
 description: Learn supporting Internet Explorer in Angular
 image: 'https://i.imgur.com/FtOy5i6.png'
-cover-img: "https://i.imgur.com/NRaQUA5.png"
+#cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/FtOy5i6.png"
 thumbnail-img: "https://i.imgur.com/7pgedpv.png"
 share-img: "https://i.imgur.com/7pgedpv.png"
