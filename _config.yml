@@ -18,6 +18,7 @@ navbar-links:
   Full Stack Training:
     - All-Access Pro plan: "https://www.fullstackmaster.net/pro"
     - All-Access ELite Plan: "https://www.fullstackmaster.net/elite"
+    - Angular Training: "https://www.fullstackmaster.net/"
   Home: "rupesh/"
 
 # --- Logo --- #
@@ -256,7 +257,7 @@ jekyll_compose:
     drafts:
       subtitle:
       description:
-      image: 'https://i.imgur.com/XXX.png'
+      image: "https://i.imgur.com/XXX.png"
       cover-img: "https://i.imgur.com/NRaQUA5.png"
       cover_image: "https://i.imgur.com/XXX.png"
       thumbnail-img: "https://i.imgur.com/XXX.png"
@@ -273,7 +274,7 @@ jekyll_compose:
     posts:
       subtitle:
       description:
-      image: 'https://i.imgur.com/XXX.png'
+      image: "https://i.imgur.com/XXX.png"
       cover-img: "https://i.imgur.com/NRaQUA5.png"
       cover_image: "https://i.imgur.com/XXX.png"
       thumbnail-img: "https://i.imgur.com/XXX.png"
