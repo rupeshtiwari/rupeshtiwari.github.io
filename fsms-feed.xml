@@ -39,7 +39,7 @@ layout: null
           {% endif %}
         </author>
 
-        {% assign post_image = post.image.path | default: post.image %}
+        {% assign post_image = post.image.path | default: post.thumbnail-img %}
         {% if post_image %}
           {% unless post_image contains "://" %}
             {% assign post_image = post_image | absolute_url %}
