@@ -3,25 +3,51 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>{{ site.title | xml_escape }}</title>
-        <description>{{ site.description | xml_escape }}</description>
-        <link>{{ site.url }}{{ site.baseurl }}/</link>
-        <atom:link href="{{ "/fsms-blogs-feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for post in site.posts %}
-            <item>
-                <title>{{ post.title | xml_escape }}</title>
-                <author>your_blog_email@host.com (Your Name)</author>
-                <subtitle>{{ post.description | xml_escape }}</subtitle>
-                <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
-                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-                <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-                <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-            
-            </item>
-        {% endfor %}
-    </channel>
+  <channel>
+    {% if site.title %}
+    <title>{{ site.title | xml_escape }}</title>
+    {% endif %}
+    {% if site.rss-description %}
+    <description>{{ site.rss-description | xml_escape }}</description>
+    {% endif %}
+    <link>{{ '' | absolute_url }}</link>
+    <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    {% assign excerpt_length = site.excerpt_length | default: 50 %}
+    {% for post in site.posts limit:20 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>
+          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
+          {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
+        </description>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        {% assign post_author = post.author | default: post.authors[0] | default: site.author %}
+        {% assign post_author = site.data.authors[post_author] | default: post_author %}
+        {% assign post_author_email = post_author.email | default: nil %}
+        {% assign post_author_uri = post_author.uri | default: nil %}
+        {% assign post_author_name = post_author.name | default: post_author %}
+  
+        <author>
+            <name>{{ post_author_name | default: "" | xml_escape }}</name>
+          {% if post_author_email %}
+            <email>{{ post_author_email | xml_escape }}</email>
+          {% endif %}
+          {% if post_author_uri %}
+            <uri>{{ post_author_uri | xml_escape }}</uri>
+          {% endif %}
+        </author>
+
+        {% assign post_image = post.image.path | default: post.image %}
+        {% if post_image %}
+          {% unless post_image contains "://" %}
+            {% assign post_image = post_image | absolute_url %}
+          {% endunless %}
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post_image | xml_escape }}" />
+          <media:content medium="image" url="{{ post_image | xml_escape }}" xmlns:media="http://search.yahoo.com/mrss/" />
+        {% endif %}
+      </item>
+    {% endfor %}
+  </channel>
 </rss>
