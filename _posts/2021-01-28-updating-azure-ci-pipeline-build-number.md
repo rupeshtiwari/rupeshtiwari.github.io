@@ -5,11 +5,14 @@ date: "2021-01-28 00:00 +0000"
 subtitle: Learn how to update build number in azure ci pipeline
 description: Learn how to update build number in azure ci pipeline
 image: "https://i.imgur.com/1Ncfprq.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/1Ncfprq.png"
 thumbnail-img: "https://i.imgur.com/MxavTGI.png"
 share-img: "https://i.imgur.com/MxavTGI.png"
-tags: [devops,node,beginners,angular]
+tags:
+  - devops
+  - node
+  - beginners
+  - angular
 last_modified_at: null
 published: true
 sitemap: true
@@ -125,7 +128,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

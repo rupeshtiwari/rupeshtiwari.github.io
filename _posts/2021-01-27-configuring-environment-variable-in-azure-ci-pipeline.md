@@ -6,11 +6,14 @@ subtitle: Learn how to define and use environment variable in azure ci pipeline
 description:
   Learn how to define and use environment variable in azure ci pipeline
 image: "https://i.imgur.com/OISr8kK.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/OISr8kK.png"
 thumbnail-img: "https://i.imgur.com/JiL3zVz.png"
 share-img: "https://i.imgur.com/JiL3zVz.png"
-tags: [devops,beginners,tutorial,azure]
+tags:
+  - devops
+  - beginners
+  - tutorial
+  - azure
 last_modified_at: null
 published: true
 sitemap: true
@@ -98,7 +101,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

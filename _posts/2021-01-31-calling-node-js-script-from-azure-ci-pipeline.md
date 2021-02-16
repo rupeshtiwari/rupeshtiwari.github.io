@@ -5,11 +5,14 @@ date: "2021-01-31 00:00 +0000"
 subtitle: Learn how to execute custom node.js script from azure ci pipeline
 description: Learn how to execute custom node.js script from azure ci pipeline
 img: "https://i.imgur.com/hiQZ0BG.png"
-cover-img: "https://i.imgur.com/hiQZ0BG.png"
 cover_image: "https://i.imgur.com/mGXdBOh.png"
 thumbnail-img: "https://i.imgur.com/uXPOglx.png"
 share-img: "https://i.imgur.com/uXPOglx.png"
-tags: [devops,node,azure,beginners]
+tags:
+  - devops
+  - node
+  - azure
+  - beginners
 last_modified_at: null
 published: true
 sitemap: true

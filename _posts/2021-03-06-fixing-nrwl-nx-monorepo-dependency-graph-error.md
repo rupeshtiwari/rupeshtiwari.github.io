@@ -1,48 +1,55 @@
 ---
 layout: post
 title: Fixing Nrwl Nx Monorepo Workspace Dependency Graph Error
-date: 2021-03-06 00:00 +0000
+date: "2021-03-06 00:00 +0000"
 subtitle: nx monorepo workspace tslint dependency error fix
 description: nx monorepo workspace tslint dependency error fix
-image: https://i.imgur.com/BOUqmSS.png
-cover-img: https://i.imgur.com/NRaQUA5.png
-cover_image: https://i.imgur.com/BOUqmSS.png
-thumbnail-img: https://i.imgur.com/ymSlvgi.png
-share-img: https://i.imgur.com/ymSlvgi.png
-canonical_url: https://rupeshtiwari.github.io/2021-03-05-fixing-nrwl-nx-monorepo-dependency-graph-error/
-tags: [nx,monorepo,webdev,beginners]
-last_modified_at:
+image: "https://i.imgur.com/BOUqmSS.png"
+cover_image: "https://i.imgur.com/BOUqmSS.png"
+thumbnail-img: "https://i.imgur.com/ymSlvgi.png"
+share-img: "https://i.imgur.com/ymSlvgi.png"
+canonical_url: >-
+  https://rupeshtiwari.github.io/2021-03-05-fixing-nrwl-nx-monorepo-dependency-graph-error/
+tags:
+  - nx
+  - monorepo
+  - webdev
+  - beginners
+last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
 toc: true
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
 ---
 
-> If you are working on `nx monorepo workspace` and if you have notice below error and want to fix it then read this article.
-> <span style="color:red;">_"Error: A project without tags cannot depend on any libraries (nx-enforce-module-boundaries)"_</span>
-
+> If you are working on `nx monorepo workspace` and if you have notice below
+> error and want to fix it then read this article.
+> <span style="color:red;">_"Error: A project without tags cannot depend on any
+> libraries (nx-enforce-module-boundaries)"_</span>
 
 ![](https://i.imgur.com/beHSv09.png)
 
-
-
 ## How dependency graph works in Nx Monorepo Workspace?
 
-- Nx will create an inventory of project tags. 
-- Next Nx will compare all of the enforcement rules defined inside the tslint.json file. 
-- If Nx could not find any rule against a project tag inside the tslint.json file then it will throw error "A project without tags cannot depend on any libraries (nx-enforce-module-boundaries)"
+- Nx will create an inventory of project tags.
+- Next Nx will compare all of the enforcement rules defined inside the
+  tslint.json file.
+- If Nx could not find any rule against a project tag inside the tslint.json
+  file then it will throw error "A project without tags cannot depend on any
+  libraries (nx-enforce-module-boundaries)"
 
-Therefore, Projects without any tags cannot depend on any other projects. 
+Therefore, Projects without any tags cannot depend on any other projects.
 
 ## Project Tag for Apps are defined in Nx.json
 
-In our nx.json file we do have the project tags for my application `onlinestore-admin`, `onlinestore-client`,`onlinestore-dashboard`
- 
+In our nx.json file we do have the project tags for my application
+`onlinestore-admin`, `onlinestore-client`,`onlinestore-dashboard`
+
 ![](https://i.imgur.com/EaXyAVW.png)
 
-``` json
+```json
     "onlinestore-client": {
       "tags": ["scope:itops", "type:onlinestore-client"]
     },
@@ -54,12 +61,10 @@ In our nx.json file we do have the project tags for my application `onlinestore-
     },
 ```
 
-
-
 ## However, Dependency Constraints for App is Missing in Tslint.json
 
-Inside the `tslint.json` file you can notice we do not have dependency constraints for our applications. 
-![](https://i.imgur.com/6gveNgH.png)
+Inside the `tslint.json` file you can notice we do not have dependency
+constraints for our applications. ![](https://i.imgur.com/6gveNgH.png)
 
 ```json
   "nx-enforce-module-boundaries": [
@@ -121,14 +126,16 @@ Inside the `tslint.json` file you can notice we do not have dependency constrain
     ],
 ```
 
-So notice since nx is not able to find out any dependency constraints for the projects therefore, it is throwing error. 
+So notice since nx is not able to find out any dependency constraints for the
+projects therefore, it is throwing error.
 
 ## Solution to Nx Dependency Graph Error
 
-There are 2 options. 
+There are 2 options.
 
 1. Either you can allow everyone to access every other projects by using `[*]`
-If you add the following, projects without any tags will be able to depend on any other project.
+   If you add the following, projects without any tags will be able to depend on
+   any other project.
 
 ```json
 {
@@ -139,7 +146,8 @@ If you add the following, projects without any tags will be able to depend on an
 
 However, I would never recommend allowing all project to access other projects.
 
-2. Recommended option is to add the dependency constraints for the application as well. We will explicitly define `onlinestore-client` and its dependencies. 
+2. Recommended option is to add the dependency constraints for the application
+   as well. We will explicitly define `onlinestore-client` and its dependencies.
 
 ![](https://i.imgur.com/Asl9W4z.png)
 
@@ -167,25 +175,42 @@ However, I would never recommend allowing all project to access other projects.
 
 ```
 
-I did option 2 and notice my errors went away. 
+I did option 2 and notice my errors went away.
 ![](https://i.imgur.com/OaPHQyy.png)
 
+## Conclusion
 
-## Conclusion 
-
-Now you learned how to get rid of error "A project without tags cannot depend on any libraries (`nx-enforce-module-boundaries`)". If you want to setup dependency boundary within your nx monorepo workspace then consider reading this article: [NX Monorepo: Imposing Constraints on Dependency Graph](https://fullstackmaster.net/detail/blog/9 ) . Sometime you also want to restrict dependencies within your boundary or service. Read this article to learn how can you achieve [Enforcing Dependency Constraints Within a Service using Nx Monorepo](https://fullstackmaster.net/detail/blog/10)
+Now you learned how to get rid of error "A project without tags cannot depend on
+any libraries (`nx-enforce-module-boundaries`)". If you want to setup dependency
+boundary within your nx monorepo workspace then consider reading this article:
+[NX Monorepo: Imposing Constraints on Dependency Graph](https://fullstackmaster.net/detail/blog/9)
+. Sometime you also want to restrict dependencies within your boundary or
+service. Read this article to learn how can you achieve
+[Enforcing Dependency Constraints Within a Service using Nx Monorepo](https://fullstackmaster.net/detail/blog/10)
 
 ## Become full stack developer 💻
 
-I teach at [Fullstack Master](https://www.fullstackmaster.net).  If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. You can enroll to All-Access Monthly membership plans to get unlimited access to all of our video courses, slides, source code & monthly video calls.
+I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to
+become full stack developer and grow your carrier as new software developer or
+Lead Developer/Architect. Consider subscribing to our full stack development
+training programs. You can enroll to All-Access Monthly membership plans to get
+unlimited access to all of our video courses, slides, source code & monthly
+video calls.
 
-- Please subscribe to [All-Access Membership PRO plan](https://www.fullstackmaster.net/pro) to access current and future angular, node.js and related courses.
-- Please subscribe to [All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite) to get everything from PRO plan. Additionally, you will get access to monthly live Q&A video call with Rupesh and you can ask doubts/questions and get more help, tips and tricks.
+- Please subscribe to
+  [All-Access Membership PRO plan](https://www.fullstackmaster.net/pro) to
+  access current and future angular, node.js and related courses.
+- Please subscribe to
+  [All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite) to
+  get everything from PRO plan. Additionally, you will get access to monthly
+  live Q&A video call with Rupesh and you can ask doubts/questions and get more
+  help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.
+> You bright future is waiting for you so visit today
+> [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
+> on your dream software company as a Developer,Architect or Lead Engineer role.
 
-**💖 Say 👋 to me!**
-Rupesh Tiwari
-<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> 
-✉️ <a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a>
-Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a>
+**💖 Say 👋 to me!** Rupesh Tiwari <a href="https://www.rupeshtiwari.com">
+www.rupeshtiwari.com</a> ✉️
+<a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a> Founder
+of <a href="https://www.fullstackmaster.net"> Fullstack Master</a>

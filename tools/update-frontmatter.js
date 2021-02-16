@@ -1,7 +1,24 @@
-const frontformatter = require('frontformatter')
+const frontformatter = require('frontformatter');
+
+const addProperties = {};
+
+frontformatter('src', addProperties, ['cover-img'], []);
+
+
+/**
+ * 
+ * const frontformatter = require('./frontformatter')
 
 const addProperties = {
-  toc: true
+  add: 'this'
+}
+const removeProperties = ['remove']
+
+const markdownOptions = {
+  resultVersion: 3,
+  'first-line-heading': 2,
+  'no-empty-links': true
 }
 
-frontformatter('src', addProperties,[],[])
+frontformatter('src', addProperties, removeProperties, markdownOptions)
+ */

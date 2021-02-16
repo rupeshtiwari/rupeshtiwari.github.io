@@ -6,11 +6,14 @@ subtitle: Showing Nx Monorepo code coverage report in azure ci pipeline
 description: Showing Nx Monorepo code coverage report in azure ci pipeline
 date: "2021-02-01 18:55 -0500"
 image: "https://i.imgur.com/6gxkEV3.jpg"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/6gxkEV3.jpg"
 thumbnail-img: "https://i.imgur.com/cqwnG3N.jpg"
 share-img: "https://i.imgur.com/cqwnG3N.jpg"
-tags: [devops,nx,tutorial,beginners]
+tags:
+  - devops
+  - nx
+  - tutorial
+  - beginners
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-01-merge-and-publish-code-coverage-for-nx-workspace-in-azure-ci-pipeline/
 last_modified_at: "2021-02-01 18:55 -0500"
@@ -360,7 +363,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

@@ -5,11 +5,14 @@ date: "2021-02-01 10:22 -0500"
 subtitle: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
 description: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
 image: "https://imgur.com/H43sJjo.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://imgur.com/H43sJjo.png"
 thumbnail-img: "https://imgur.com/6ySnUBQ.png"
 share-img: "https://imgur.com/6ySnUBQ.png"
-tags: [nx,angular,ckeditor,beginners]
+tags:
+  - nx
+  - angular
+  - ckeditor
+  - beginners
 canonical_url: "https://rupeshtiwari.github.io/2021-02-01-integrating-ckeditor-in-nx-monorepo/"
 last_modified_at: "2021-02-01 10:22 -0500"
 published: true
@@ -756,7 +759,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-> <a href="https://www.fullstackmaster.net">
+> <a href="https://www.fullstackmaster.net"> >
 > <img src="https://i.imgur.com/9OCLciM.png" width="270" height="65"> </a>
 
 **💖 Say 👋 to me!**

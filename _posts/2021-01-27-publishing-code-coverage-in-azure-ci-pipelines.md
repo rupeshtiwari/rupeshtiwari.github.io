@@ -7,11 +7,14 @@ subtitle:
 description:
   Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
 image: "https://i.imgur.com/YJnJNSe.jpg"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/YJnJNSe.jpg"
 thumbnail-img: "https://i.imgur.com/YJnJNSe.jpg"
 share-img: "https://i.imgur.com/YJnJNSe.jpg"
-tags: [devops,angular,beginners,tutorial]
+tags:
+  - devops
+  - angular
+  - beginners
+  - tutorial
 last_modified_at: null
 published: true
 sitemap: true
@@ -173,7 +176,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

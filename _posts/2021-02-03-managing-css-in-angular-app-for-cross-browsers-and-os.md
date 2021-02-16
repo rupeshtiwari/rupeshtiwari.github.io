@@ -7,13 +7,16 @@ subtitle:
 description:
   Learn creating multiple css files for cross browsers and os in angular app
 image: "https://i.imgur.com/Eiyywcv.png"
-cover-img: "https://imgur.com/NRaQUA5.jpg"
 cover_image: "https://i.imgur.com/Eiyywcv.png"
 thumbnail-img: "https://i.imgur.com/knMB5bS.png"
 share-img: "https://i.imgur.com/knMB5bS.png"
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-03-managing-css-in-angular-app-for-cross-browsers-and-os/
-tags: [angular,css,productivity,webdev]
+tags:
+  - angular
+  - css
+  - productivity
+  - webdev
 last_modified_at: null
 published: true
 sitemap: true
@@ -299,8 +302,7 @@ private removeMacStylesIfRunningInWindowsOS() {
   }
 ```
 
-GitHub Repository: https://github.com/rupeshtiwari/organize-css-angular 
-
+GitHub Repository: https://github.com/rupeshtiwari/organize-css-angular
 
 ## Become full stack developer 💻
 
@@ -322,7 +324,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

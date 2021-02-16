@@ -5,7 +5,6 @@ date: "2021-01-09 00:00 +0000"
 description: Learn creating Angular Build Azure CI Pipeline
 subtitle: Learn creating Angular Build Azure CI Pipeline
 image: "https://i.imgur.com/OCEHPk5.jpg"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/OCEHPk5.jpg"
 thumbnail-img: "https://i.imgur.com/vkmKw3A.jpg"
 share-img: "https://i.imgur.com/OCEHPk5.jpg"
@@ -124,7 +123,6 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-
 
 **💖 Say 👋 to me!**
 

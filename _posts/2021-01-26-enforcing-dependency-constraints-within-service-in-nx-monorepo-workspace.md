@@ -5,11 +5,14 @@ date: "2021-01-26 00:00 +0000"
 subtitle: learn how to enforce dependency constraints on individual projects
 description: learn how to enforce dependency constraints on individual projects
 image: "https://i.imgur.com/H6AlL2d.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/H6AlL2d.png"
 thumbnail-img: "https://i.imgur.com/GGaoewS.png"
 share-img: "https://i.imgur.com/GGaoewS.png"
-tags: [nx,beginners,angular,monorepo]
+tags:
+  - nx
+  - beginners
+  - angular
+  - monorepo
 last_modified_at: null
 published: true
 sitemap: true
@@ -376,7 +379,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

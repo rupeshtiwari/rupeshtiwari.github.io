@@ -5,11 +5,14 @@ date: "2021-01-17 00:00 +0000"
 subtitle: Learn how to subscribe to your azure ci pipeline notification
 description: Learn how to subscribe to your azure ci pipeline notification
 image: "https://i.imgur.com/6SEjbG6.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/6SEjbG6.png"
 thumbnail-img: "https://i.imgur.com/CbQcFLl.png"
 share-img: "https://i.imgur.com/CbQcFLl.png"
-tags: [devops,azure,beginners,tutorial]
+tags:
+  - devops
+  - azure
+  - beginners
+  - tutorial
 last_modified_at: null
 published: true
 sitemap: true

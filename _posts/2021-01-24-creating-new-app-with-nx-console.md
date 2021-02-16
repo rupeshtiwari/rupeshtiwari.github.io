@@ -5,11 +5,14 @@ date: "2021-01-24 00:00 +0000"
 subtitle: learn creating new application using nx console in monorepo
 description: learn creating new application using nx console in monorepo
 image: "https://i.imgur.com/UJNuoEj.jpg"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/UJNuoEj.jpg"
 thumbnail-img: "https://i.imgur.com/KVtdDlT.png"
 share-img: "https://i.imgur.com/KVtdDlT.png"
-tags: [nx,angular,beginners,monorepo]
+tags:
+  - nx
+  - angular
+  - beginners
+  - monorepo
 last_modified_at: null
 published: true
 sitemap: true
@@ -133,7 +136,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

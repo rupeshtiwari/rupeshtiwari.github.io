@@ -5,13 +5,16 @@ date: "2021-01-25 00:00 +0000"
 subtitle: learn how to publish angular app to npm from nx monorepo apps
 description: learn how to publish angular app to npm from nx monorepo apps
 image: "https://i.imgur.com/QETXvJI.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/QETXvJI.png"
 thumbnail-img: "https://i.imgur.com/bgL1DCX.png"
 share-img: "https://i.imgur.com/bgL1DCX.png"
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-01-24-publishing-nx-monorepo-angular-app-to-npm/
-tags: [nx,angular,npm,beginners]
+tags:
+  - nx
+  - angular
+  - npm
+  - beginners
 last_modified_at: null
 published: true
 sitemap: true
@@ -201,7 +204,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

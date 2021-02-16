@@ -5,13 +5,16 @@ description: Learn cross-posting to dev to from jekyll blog
 subtitle: Learn cross-posting to dev to from jekyll blog
 date: "2021-02-01 15:03 -0500"
 image: "https://i.imgur.com/TBAF05L.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/TBAF05L.png"
 thumbnail-img: "https://i.imgur.com/oKh8TiX.png"
 share-img: "https://i.imgur.com/oKh8TiX.png"
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-01-publishing-jekyll-blog-post-to-dev-to-using-github-ci-cd-pipeline/
-tags: [jekyll,github,devops,webdev]
+tags:
+  - jekyll
+  - github
+  - devops
+  - webdev
 last_modified_at: "2021-02-01 15:03 -0500"
 published: true
 sitemap: true
@@ -155,7 +158,7 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-**💖 Say 👋 to me!**
+> **💖 Say 👋 to me!**
 
 <div> 
 Rupesh Tiwari </div><div>

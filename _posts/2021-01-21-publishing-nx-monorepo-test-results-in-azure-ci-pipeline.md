@@ -7,11 +7,14 @@ subtitle:
 description:
   Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
 image: "https://i.imgur.com/WQ5z6KK.png"
-cover-img: "https://i.imgur.com/NRaQUA5.png"
 cover_image: "https://i.imgur.com/WQ5z6KK.png"
 thumbnail-img: "https://i.imgur.com/3ysBPoZ.png"
 share-img: "https://i.imgur.com/3ysBPoZ.png"
-tags: [devops,nx,angular,beginners]
+tags:
+  - devops
+  - nx
+  - angular
+  - beginners
 last_modified_at: null
 published: true
 sitemap: true
@@ -121,8 +124,6 @@ Monthly video calls.
 > You bright future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
-
-
 
 **💖 Say 👋 to me!**
 
