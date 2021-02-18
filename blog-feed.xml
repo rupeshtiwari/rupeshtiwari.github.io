@@ -1,7 +1,6 @@
 ---
 layout: null
----
-<?xml version="1.0" encoding="UTF-8"?>
+---<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         {% if site.title %}
@@ -55,9 +54,7 @@ layout: null
 
             <!-- IMAGE-->
             {% if post.cover_image %}
-            <cover_image>
-                <url>{{post.cover_image}}</url>
-            </cover_image>
+            <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.cover_image | xml_escape }}" />
             {% endif %}
 
             {% assign post_image = post.image.path | default: post.thumbnail-img %}
