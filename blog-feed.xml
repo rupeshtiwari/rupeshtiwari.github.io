@@ -54,7 +54,7 @@ layout: null
 
             <!-- IMAGE-->
             {% if post.cover_image %}
-            <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.cover_image | xml_escape }}" />
+            <media:cover_image xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.cover_image | xml_escape }}" />
             {% endif %}
 
             {% assign post_image = post.image.path | default: post.thumbnail-img %}
