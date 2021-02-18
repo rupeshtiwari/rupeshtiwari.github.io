@@ -52,11 +52,15 @@ layout: null
 
 
             <!-- IMAGE-->
+            {% if post.cover_image %}
+            <cover_image>{{post.cover_image}}</cover_image>
+            {% endif %}
+
             {% assign post_image = post.image.path | default: post.thumbnail-img %}
-        {% if post_image %}
-          {% unless post_image contains "://" %}
-            {% assign post_image = post_image | absolute_url %}
-          {% endunless %}
+            {% if post_image %}
+                {% unless post_image contains "://" %}
+                     {% assign post_image = post_image | absolute_url %}
+                {% endunless %}
             <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post_image | xml_escape }}" />
             <media:content medium="image" url="{{ post_image | xml_escape }}" xmlns:media="http://search.yahoo.com/mrss/" />
             {% endif %}
