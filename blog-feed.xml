@@ -55,7 +55,9 @@ layout: null
 
             <!-- IMAGE-->
             {% if post.cover_image %}
-            <cover_image>{{post.cover_image}}</cover_image>
+            <cover_image>
+                <url>{{post.cover_image}}</url>
+            </cover_image>
             {% endif %}
 
             {% assign post_image = post.image.path | default: post.thumbnail-img %}
