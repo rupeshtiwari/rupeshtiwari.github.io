@@ -24,19 +24,13 @@ layout: null
             <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post_title }}" />
             <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
 
-            <description>
-            {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-            {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
-            </description>
-
-
             <summary>
                 {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
                 {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
             </summary>
 
 
-            <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
+            <description type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</description>
 
             <!-- AUTHOR-->
             {% assign post_author = post.author | default: post.authors[0] | default: site.author %}
