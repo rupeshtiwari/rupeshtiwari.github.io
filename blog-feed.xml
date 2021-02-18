@@ -23,7 +23,9 @@ layout: null
             <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
             <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post_title }}" />
             <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-
+            {% for tag in post.tags %}
+            <category term="{{ tag | xml_escape }}" />
+            { % endfor %}
             <summary>
                 {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
                 {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
