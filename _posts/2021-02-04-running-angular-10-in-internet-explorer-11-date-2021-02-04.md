@@ -54,8 +54,8 @@ npm install --save classlist.js
 
 ## Importing core-js in polyfills.js
 
-Symbols, promise etc will not work in IE11 unless you put core-js in the
-polyfills. Therefore, please import core-js in polyfills.
+Symbols, promise etc. will not work in IE11 unless you put `core-js` in the
+`polyfills`. Therefore, please import `core-js` in `polyfills`.
 
 `import 'core-js'`
 
@@ -116,7 +116,7 @@ If you want to maintain both version **es2015** and **es5** then follow below:
 
 ![](https://i.imgur.com/ZFf99iB.png)
 
-4. Add below scripts in package.json
+4. Add below scripts in `package.json`
 
 ```json
 "build:ie":"ng build --configuration es5",
