@@ -21,7 +21,7 @@ layout: null
         <published>{{ post.published | default:false }}</published>
         <pubDate>{{ post.date | default: post.date | date_to_xmlschema }}</pubDate>
         <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
-        <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post_title }}" />
+        <link href="{{ post.url | absolute_url }}" rel="alternate" title="{{ post_title }}" />
         <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
 
         <description>
