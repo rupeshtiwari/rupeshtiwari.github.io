@@ -34,7 +34,7 @@ layout: null
         </summary>
 
 
-        <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
+        <description type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</description>
 
         <!-- AUTHOR-->
             {% assign post_author = post.author | default: post.authors[0] | default: site.author %}
