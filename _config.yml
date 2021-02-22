@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Rupesh Tiwari Software Architect & Trainer
 email: info@rupeshtiwari.com
+url: https://www.rupeshtiwari.com
 description: >-
   Become a full stack web developer and learn the most in-demand programming languages and technique with Rupesh Tiwari
 twitter_username: rupeshtiwari_co
@@ -26,7 +27,7 @@ search: true
 repository: "rupeshtiwari/rupeshtiwari.github.io"
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.22.0"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
