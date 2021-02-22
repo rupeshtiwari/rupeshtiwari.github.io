@@ -6,12 +6,11 @@ comments: true
 social-share: true
 categories:
   - dotnet
-  - dotnet MVC
 tags:
   - dotnet
-  - dotnet MVC Framework
-  - Microsoft
-  - MVC3
+  - tutorial
+  - beginners
+  - csharp
 description: ASP.Net MVC 3 introduces Razor a new view engine
 toc: true
 related: true

@@ -6,11 +6,11 @@ comments: true
 social-share: true
 categories:
   - angular
-  - Express.JS
+  - express.JS
   - Full Stack Master
 tags:
   - angular
-  - Express
+  - express
   - javascript
   - beginners
 toc: true

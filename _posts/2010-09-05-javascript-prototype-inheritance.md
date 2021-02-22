@@ -8,8 +8,9 @@ categories:
   - javascript
 tags:
   - javascript
-  - Object-Oriented
-  - prototypal inheritance
+  - oop
+  - inheritance
+  - beginners
 description: >-
   In this Article I will explain what prototype is and how protoBy using
   Prototypal inheritance technique, we can create the instance of an object.

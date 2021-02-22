@@ -8,7 +8,7 @@ categories:
   - rxjs
   - typescript
 tags:
-  - BehaviorSubject
+  - rxjs
   - filter
   - publish
   - subscribe

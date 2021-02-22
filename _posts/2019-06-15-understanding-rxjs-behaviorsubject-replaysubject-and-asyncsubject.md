@@ -7,7 +7,7 @@ social-share: true
 categories:
   - rxjs
 tags:
-  - BehaviorSubject
+  - rxjs
   - State Management
 description: >-
   What are RxJS subjects and the benefits of using them. How to understand RxJS

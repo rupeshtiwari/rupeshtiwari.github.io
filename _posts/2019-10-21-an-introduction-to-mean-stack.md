@@ -6,13 +6,13 @@ comments: true
 social-share: true
 categories:
   - angularJS
-  - Express.JS
+  - express.JS
   - MEAN
   - Mongo Db
   - node
 tags:
   - angular
-  - Express
+  - express
   - mongodb
 toc: true
 related: true

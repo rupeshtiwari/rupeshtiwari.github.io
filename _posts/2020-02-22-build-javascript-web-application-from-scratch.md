@@ -6,7 +6,7 @@ comments: true
 social-share: true
 categories:
   - CSS
-  - Express.JS
+  - express.JS
   - HTML
   - javascript
   - jquery

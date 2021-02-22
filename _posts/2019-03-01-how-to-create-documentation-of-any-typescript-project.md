@@ -6,7 +6,7 @@ comments: true
 social-share: true
 categories:
   - javascript
-  - NodeJS
+  - node
   - typescript
   - Webpack
 tags:

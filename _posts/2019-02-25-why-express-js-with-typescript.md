@@ -5,10 +5,10 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Express.JS
+  - express.JS
   - javascript
   - MEAN
-  - NodeJS
+  - node
   - typescript
   - Webpack
 tags:
