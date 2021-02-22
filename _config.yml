@@ -13,15 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Seniro Software Architect
+title: Rupesh Tiwari Software Architect & Trainer
 email: info@rupeshtiwari.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: air
+  Become a full stack web developer and learn the most in-demand programming languages and technique with Rupesh Tiwari 
+twitter_username: rupeshtiwari_co
+github_username: rupeshtiwari
+minimal_mistakes_skin: sunrise
+masthead_title: "Rupesh Tiwari"
 baseurl: ""
 search: true
 repository: "rupeshtiwari/rupeshtiwari.github.io"
