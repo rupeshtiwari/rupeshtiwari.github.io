@@ -60,7 +60,7 @@ plugins:
 
 author:
   name: "Rupesh Tiwari"
-  avatar: "/assets/images/bio-photo.jpg/"
+  avatar: "/assets/images/bio-photo.jpg"
   bio: "Hi, I am Sr. Software/Solution Architect, Professional Trainer & Pluralsight Author. I help students and professionals to become Full Stack Software Developer in less than a year!"
   links:
     - label: "Email"
