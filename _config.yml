@@ -96,6 +96,9 @@ footer:
     - label: "Fullstack Master"
       icon: "fas fa-graduation-cap"
       url: "https://www.fullstackmaster.net"
+    - label: "YouTube"
+      icon: "fab fa-youtube-square"
+      url: "https://www.youtube.com/fullstackmaster"
 
 defaults:
   # _posts
