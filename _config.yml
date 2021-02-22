@@ -67,7 +67,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "fullstackmaster1@gmail.com"
     - label: "Fullstack Master"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-graduation-cap"
       url: "https://www.fullstackmaster.net"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -76,8 +76,8 @@ author:
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/fullstackmaster1"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-square"
-      url: "https://www.facebook.com/fullstackmaster1"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rupesh-tiwari"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "http://github.com/rupeshtiwari"
@@ -93,6 +93,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/rupeshtiwari.co/"
+    - label: "Fullstack Master"
+      icon: "fas fa-graduation-cap"
+      url: "https://www.fullstackmaster.net"
 
 defaults:
   # _posts
