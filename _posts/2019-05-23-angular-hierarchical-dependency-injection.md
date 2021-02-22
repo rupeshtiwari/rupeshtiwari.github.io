@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Angular Hierarchical Dependency Injection
 date: 2019-05-23T10:54:01.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,42 +10,11 @@ categories:
 tags:
   - Angular
   - Dependency Injection
-meta:
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1606935975;s:7:"payload";a:0:{}}}
-  _edit_last: "1"
-  _thumbnail_id: "2015"
-  wpmm_postgrid_views: "432"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:41:"Angular Hierarchical Dependency
-    Injection";s:7:"og_desc";s:160:"In 0008-7- angular: Hierarchical Dependency
-    Injection video session, you will see how Angular hierarchical dependency
-    injection system works. You will discover
-    ";s:8:"og_image";s:69:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/AngularI.png";s:10:"card_title";s:41:"Angular
-    Hierarchical Dependency Injection";s:9:"card_desc";s:160:"In 0008-7-
-    angular: Hierarchical Dependency Injection video session, you will see how
-    Angular hierarchical dependency injection system works. You will discover
-    ";s:10:"card_image";s:69:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/AngularI.png";}
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "30"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "178"
-  _qode-like: "0"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /angular-hierarchical-dependency-injection/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>In <a href="https://www.youtube.com/watch?v=vJ8OvXgzMBo" target="_blank" rel="noopener noreferrer"><strong>0008-7- angular: Hierarchical Dependency Injection </strong></a>video session<strong><em>,</em></strong> you will see how Angular hierarchical dependency injection system works. You will discover how same service can be scoped by component rather than the entire app.</p>

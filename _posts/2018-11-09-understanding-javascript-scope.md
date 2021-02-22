@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Understanding JavaScript Scope
 date: 2018-11-10T00:50:53.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -11,66 +9,16 @@ categories:
 tags:
   - JavaScript
   - scope
-meta:
-  _publicize_twitter_user: "@roopkt"
-  _thumbnail_id: "1467"
-  _wpas_done_all: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609237655;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2537;}i:1;a:1:{s:2:"id";i:2545;}i:2;a:1:{s:2:"id";i:2542;}}}}
-  _wpas_mess: >-
-    JavaScript has 4 types of scopes. Global scope, Local scope, Closure scope,
-    Lexical scope.  Imagine Scope as a boundary within that things can be
-    isolated. Like in your colony there are certain areas which has stuffs that
-    are accessible to everyone in your colony.
-  advanced_seo_description: >-
-    JavaScript has 4 types of scopes. Global scope, Local scope, Closure scope,
-    Lexical scope.  Imagine Scope as a boundary within that things can be
-    isolated. Like in your colony there are certain areas which has stuffs that
-    are accessible to everyone in your colony.
-  _qode-like: "0"
-  _oembed_7029dd248190becb1b058fe48bdca1a6: "{{unknown}}"
-  _oembed_1e85e81b077aaeffdb8c37993aeffe40: "{{unknown}}"
-  _oembed_ebcb4712318959564cfbba11c3f74e39: "{{unknown}}"
-  _oembed_ff4bcb81bf6128eeed93f21d5a8e4458: "{{unknown}}"
-  _oembed_c7aff1aff9f11c9a7ee2f51e0547300a: >-
-    <iframe width="1060" height="596"
-    src="https://www.youtube.com/embed/videoseries?list=PLZed_adPqIJoGpa6R2QdJy9RnqmOIy1Qd"
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-    picture-in-picture" allowfullscreen></iframe>
-  _oembed_time_c7aff1aff9f11c9a7ee2f51e0547300a: "1554114861"
-  _oembed_001524e41d88d8cdcc6c443fb2a8cc2c: "{{unknown}}"
-  _oembed_27715570943de25613f885c75e87fd4e: "{{unknown}}"
-  _oembed_5ca8696b28884a3038d288697c0aa7b6: "{{unknown}}"
-  _oembed_b80f3d438880352296207f5824a49ca2: >-
-    <iframe width="764" height="430"
-    src="https://www.youtube.com/embed/videoseries?list=PLZed_adPqIJoGpa6R2QdJy9RnqmOIy1Qd"
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-    picture-in-picture" allowfullscreen></iframe>
-  _oembed_time_b80f3d438880352296207f5824a49ca2: "1554114881"
-  _oembed_658f5fa1b32f276c044ca95ccdd4446b: "{{unknown}}"
-  _edit_last: "1"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: "378"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /understanding-javascript-scope/
 description:
   "\n\t\t\t\tJavaScript has 4 types of scopes. Global scope, Local scope,
   Closure scope, Lexical scope.  Imagine Scope as a boundary within that things
   can be isolated. Like in your colony there are certain areas which has stuffs
   that are accessible to everyone in your colony.\t\t"
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <h2>What is Scope in JavaScript</h2>

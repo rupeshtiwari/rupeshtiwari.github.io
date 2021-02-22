@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Creating Angular Build Definition in Azure CI Pipeline
 date: "2021-01-09 00:00 +0000"
 description: Learn creating Angular Build Azure CI Pipeline
@@ -21,6 +20,10 @@ social-share: true
 excerpt_separator: <!--more-->
 id: 589355
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 If you want to create Build definition for Angular project in Azure DevOps, then

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: ASP.Net MVC 3 introduces Razor a new view engine
 date: 2010-12-23T04:08:54.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -14,29 +12,12 @@ tags:
   - ASP.NET MVC Framework
   - Microsoft
   - MVC3
-meta:
-  _edit_last: "1"
-  geo_latitude: "40.271005"
-  geo_longitude: "-74.838503"
-  geo_accuracy: "0"
-  geo_address: "1214 Scenic Drive, NJ, 08628"
-  geo_public: "1"
-  tagazine-media: >-
-    a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";s:1:"0";s:6:"author";s:6:"314015";s:7:"blog_id";s:6:"311011";s:9:"mod_stamp";s:19:"2010-12-23
-    05:11:27";}
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610888156;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:850;}i:1;a:1:{s:2:"id";i:361;}i:2;a:1:{s:2:"id";i:295;}}}}
-  wpmm_postgrid_views: "489"
-  _qode-like: "0"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /razor-view-engine-for-asp-net/
 description: ASP.Net MVC 3 introduces Razor a new view engine
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <div><span style="font-size:small;">I just read the great article <a href="http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx" target="_blank" rel="noopener noreferrer">Introducing "Razor" – a new view engine for ASP.NET</a> by <a href="http://weblogs.asp.net/scottgu" target="_blank" rel="noopener noreferrer">Scottgu</a>. I found Razor more comfortable than the other view engines.<br />

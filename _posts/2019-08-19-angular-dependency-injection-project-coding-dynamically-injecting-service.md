@@ -1,9 +1,7 @@
 ---
-layout: post
 title:
   Dynamically Injecting Service - Angular Dependency Injection Project coding
 date: 2019-08-19T10:00:59.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -13,44 +11,11 @@ categories:
 tags:
   - Angular
   - Dependency Injection
-meta:
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610275018;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2511;}i:1;a:1:{s:2:"id";i:2499;}i:2;a:1:{s:2:"id";i:2508;}}}}
-  _edit_last: "1"
-  _thumbnail_id: "2497"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "90"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "178"
-  wpmm_postgrid_views: "448"
-  _qode-like: "0"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:75:"Dynamically Injecting Service - Angular Dependency
-    Injection Project coding";s:7:"og_desc";s:160:"In our eighth angular coding
-    session Angular Coding Session Learn Dependency Injection | Practical | 8/8,
-    we will see how to dynamically inject the console or
-    h";s:8:"og_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/07/RUPESH-95.png";s:10:"card_title";s:75:"Dynamically
-    Injecting Service - Angular Dependency Injection Project
-    coding";s:9:"card_desc";s:160:"In our eighth angular coding session Angular
-    Coding Session Learn Dependency Injection | Practical | 8/8, we will see how
-    to dynamically inject the console or
-    h";s:10:"card_image";s:70:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/07/RUPESH-95.png";}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /angular-dependency-injection-project-coding-dynamically-injecting-service/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>In our eighth angular coding session <strong><a href="https://www.youtube.com/watch?v=triCx8mDfZA&amp;list=PLZed_adPqIJrQ5uFoaQg8P_fDNGjpeSRH&amp;index=35" target="_blank" rel="noopener noreferrer">Angular Coding Session Learn Dependency Injection | Practical | 8/8</a><em>, </em></strong>we will see how to dynamically inject the console or http logger based on the configuration settings in our project. Here we will see why http logger constructor will not be called even though we have provided it in the Http logger.</p>

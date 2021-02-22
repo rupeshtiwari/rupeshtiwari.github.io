@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Scope in Detail with example- Essential JavaScript Concepts
 date: 2019-08-26T10:00:16.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,44 +10,11 @@ tags:
   - fullstackmaster
   - JavaScript
   - rupeshtiwari
-meta:
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609993337;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2545;}i:1;a:1:{s:2:"id";i:2551;}i:2;a:1:{s:2:"id";i:2537;}}}}
-  _edit_last: "1"
-  _thumbnail_id: "2543"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "60"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "195"
-  wpmm_postgrid_views: "420"
-  _qode-like: "0"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:59:"Scope in Detail with example- Essential JavaScript
-    Concepts";s:7:"og_desc";s:160:"Though the concept of scope is not that easy
-    to understand for beginners, yet we have tried to explain it in easiest way
-    in our video tutorial JavaScript
-    Concep";s:8:"og_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/08/RUPESH-43-javascript.png";s:10:"card_title";s:59:"Scope
-    in Detail with example- Essential JavaScript
-    Concepts";s:9:"card_desc";s:160:"Though the concept of scope is not that
-    easy to understand for beginners, yet we have tried to explain it in easiest
-    way in our video tutorial JavaScript
-    Concep";s:10:"card_image";s:81:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/08/RUPESH-43-javascript.png";}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /scope-in-detail-with-example-essential-javascript-concepts/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>Though the concept of scope is not that easy to understand for beginners, yet we have tried to explain it in easiest way in our video tutorial <a href="https://www.youtube.com/watch?v=0n7XEO6qmeg&amp;list=PLZed_adPqIJoGpa6R2QdJy9RnqmOIy1Qd&amp;index=2" target="_blank" rel="noopener noreferrer"><strong>JavaScript Concepts: Scope Example | 0004-02</strong></a>. Understanding of this JS feature will make your code stand out, reduce errors and help you make powerful design patterns with it. Let us deep dive into this through one practical example.</p>

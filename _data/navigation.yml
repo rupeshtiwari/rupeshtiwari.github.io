@@ -1,0 +1,11 @@
+main:
+  - title: "Angular Training"
+    url: /angular-training/
+  - title: "Blog"
+    url: /posts/
+  - title: "About"
+    url: /about/
+  - title: "Tags"
+    url: /tags/
+
+# membership page

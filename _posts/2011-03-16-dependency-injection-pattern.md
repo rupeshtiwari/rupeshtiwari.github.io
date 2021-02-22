@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Dependency Injection Patterns
 date: 2011-03-17T03:17:26.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -14,30 +12,12 @@ tags:
   - Loose coupling
   - Separation of concerns
   - Unit Testing
-meta:
-  _edit_last: "1"
-  geo_latitude: "40.271005"
-  geo_longitude: "-74.838503"
-  geo_accuracy: "0"
-  geo_address: "1214 Scenic Drive, NJ, 08628"
-  geo_public: "1"
-  _wpas_done_twitter: "1"
-  _wpas_done_fb: "1"
-  _wpas_skip_yup: "1"
-  _wpas_skip_ms: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609259452;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2077;}i:1;a:1:{s:2:"id";i:2132;}i:2;a:1:{s:2:"id";i:2511;}}}}
-  _qode-like: "0"
-  wpmm_postgrid_views: "409"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /dependency-injection-pattern/
 description: Dependency Injection Patterns
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Publishing Nx Monorepo Angular App to NPM
 date: "2021-01-25 00:00 +0000"
 subtitle: learn how to publish angular app to npm from nx monorepo apps
@@ -23,6 +22,10 @@ social-share: true
 excerpt_separator: <!--more-->
 id: 590438
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 > Do you want to publish your [nx monorepo](https://nx.dev) app to npmjs.org? In

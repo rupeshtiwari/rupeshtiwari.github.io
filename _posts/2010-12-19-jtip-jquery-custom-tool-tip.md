@@ -1,8 +1,6 @@
 ---
-layout: post
 title: "jTip: jQuery Custom Tool Tip"
 date: 2010-12-19T12:24:04.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -15,26 +13,12 @@ tags:
   - JavaScript
   - JQuery
   - Tooltip
-meta:
-  _edit_last: "1"
-  geo_latitude: "40.271005"
-  geo_longitude: "-74.838503"
-  geo_accuracy: "0"
-  geo_address: "1214 Scenic Drive, NJ, 08628"
-  geo_public: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1602616538;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:361;}i:1;a:1:{s:2:"id";i:850;}i:2;a:1:{s:2:"id";i:311;}}}}
-  _qode-like: "0"
-  wpmm_postgrid_views: "507"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /jtip-jquery-custom-tool-tip/
 description: jQuery Custom Tool Tip
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <div><span style="font-size:small;">Plethora of times it is required to show complex tool tip. Complex, I mean the tool tip that can contain images, links , text decoration etc...To show the custom tool tip is really impossible by using existing Java or .Net visual studio Editor.  There are many ways to implement it.</span><span style="font-size:small;"> </span></div>

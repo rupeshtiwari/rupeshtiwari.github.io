@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Model in Domain Driven Design
 date: 2019-02-07T12:00:12.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,39 +10,15 @@ categories:
   - Domain Model
 tags:
   - Model
-meta:
-  _wpas_done_all: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612201160;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:554;}i:1;a:1:{s:2:"id";i:2302;}i:2;a:1:{s:2:"id";i:3421;}}}}
-  _thumbnail_id: "1444"
-  _publicize_twitter_user: "@roopkt"
-  advanced_seo_description:
-    "Model in Domain Driven Design is a system of abstraction that eliminates
-    things which are not required. Domain Model allows us to think about a
-    particular domain in a particular way.\_"
-  _qode-like: "0"
-  wpmm_postgrid_views: "497"
-  _edit_last: "1"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /model-in-domain-driven-design/
 description:
   "\n\t\t\t\tModel in Domain Driven Design is a system of abstraction that
   eliminates things which are not required. Domain Model allows us to think
   about a particular domain in a particular way.\_\t\t"
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>Model in Domain Driven Design is a system of abstraction that eliminates things which are not required. Domain Model allows us to think about a particular domain in a particular way.</p>

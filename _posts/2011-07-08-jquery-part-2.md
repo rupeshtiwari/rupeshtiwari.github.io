@@ -1,42 +1,22 @@
 ---
-layout: post
 title: Basics of jQuery
 date: 2011-07-08T19:46:16.000Z
-type: post
 published: true
 comments: true
 social-share: true
 categories:
   - jQuery
-tags: [jquery,beginners,tutorial,javascript]
-meta:
-  _edit_last: "1"
-  _wpas_done_twitter: "1"
-  _wpas_skip_yup: "1"
-  _wpas_skip_ms: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1606457441;s:7:"payload";a:0:{}}}
-  _publicize_twitter_user: "@roopkt"
-  _thumbnail_id: "1485"
-  _qode-like: "0"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: "446"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /jquery-part-2/
+tags:
+  - jquery
+  - beginners
+  - tutorial
+  - javascript
 description: Basics of jQuery Part 2
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p><span style="font-size: small;">I took session on jQuery. It was nice experience to talk in front of my colleagues. </span>First time I took session where some of my colleagues joined on phone also with live meeting request. Overall the session was good and learning. If you get chance to check out these videos:</p>

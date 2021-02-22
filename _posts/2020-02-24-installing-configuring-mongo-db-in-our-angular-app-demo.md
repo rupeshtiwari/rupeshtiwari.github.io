@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Installing & Configuring Mongo DB in our angular app - Demo
 date: 2020-02-24T11:00:47.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -13,45 +11,11 @@ tags:
   - Angular
   - fullstackmaster
   - JavaScript
-meta:
-  _edit_last: "1"
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610727679;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:3003;}i:1;a:1:{s:2:"id";i:3011;}i:2;a:1:{s:2:"id";i:2965;}}}}
-  _thumbnail_id: "2996"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "30"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "179"
-  wpmm_postgrid_views: "296"
-  _qode-like: "0"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:59:"Installing & Configuring Mongo DB in our angular
-    app - Demo";s:7:"og_desc";s:247:"Now in this demo session Installing And
-    Configuring Mongodb & Mongoose | Demo | 0009-21 we will see how to install
-    MongoDB in our machine and how to use it in our angular-NodeJS project. It’s
-    a very flexible and very famous open source
-    database.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/02/RUPESH-112.png";s:10:"card_title";s:59:"Installing
-    & Configuring Mongo DB in our angular app - Demo";s:9:"card_desc";s:160:"Now
-    in this demo session Installing And Configuring Mongodb &amp; Mongoose |
-    Demo | 0009-21 we will see how to install MongoDB in our machine and how to
-    use it
-    ";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2020/02/RUPESH-112.png";}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /installing-configuring-mongo-db-in-our-angular-app-demo/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>Now in this demo session <a href="https://www.youtube.com/watch?v=MAJpsTGU470&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=22&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Installing And Configuring Mongodb &amp; Mongoose | Demo | 0009-21 </strong></a>we will see how to install MongoDB in our machine and how to use it in our angular-NodeJS project. It’s a very flexible and very famous open source database. With flexibility like we can save any kind of data in MongoDB as a positive point, it also brings some serious concerns. There is no type check or validations to store data inside it. It makes it vulnerable to data corruption. This is the reason we need a robust modeling way to create our entities. That means we should have some modeling tool which helps us in validation, defining schemas and query our database elegantly. Best solution for this is usage of Mongoose data modeling tool.</p>

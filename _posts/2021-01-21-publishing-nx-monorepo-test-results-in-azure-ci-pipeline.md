@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Publishing Nx Monorepo Test Results in Azure CI Pipeline
 date: "2021-01-30 00:00 +0000"
 subtitle:
@@ -23,6 +22,10 @@ social-share: true
 excerpt_separator: <!--more-->
 id: 589923
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 `Publish Test Results task` publishes test results to Azure CI Pipelines.

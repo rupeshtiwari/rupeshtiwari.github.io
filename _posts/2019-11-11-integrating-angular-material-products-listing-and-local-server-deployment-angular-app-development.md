@@ -1,10 +1,8 @@
 ---
-layout: post
 title: >-
   Integrating angular material, products listing and local server deployment -
   Angular app development
 date: 2019-11-11T11:00:44.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -14,45 +12,11 @@ tags:
   - Angular
   - fullstackmaster
   - rupeshtiwari
-meta:
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1601949304;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2622;}i:1;a:1:{s:2:"id";i:2630;}i:2;a:1:{s:2:"id";i:2643;}}}}
-  _edit_last: "1"
-  _thumbnail_id: "2653"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "90"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "178"
-  wpmm_postgrid_views: "349"
-  _qode-like: "0"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:126:"Integrating angular material, products listing -
-    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
-    Training";s:7:"og_desc";s:82:"So far in our angular project development from
-    scratch we have covered two
-    things:";s:8:"og_image";s:69:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/10/RUPESH-8.png";s:10:"card_title";s:100:"Integrating
-    angular material, products listing and local server deployment - Angular app
-    development";s:9:"card_desc";s:160:"So far in our angular project
-    development from scratch we have covered two things: Environmental setup
-    Creation of project using angular CLI An important
-    questi";s:10:"card_image";s:69:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/10/RUPESH-8.png";}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: >-
-  /integrating-angular-material-products-listing-and-local-server-deployment-angular-app-development/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>So far in our angular project development from scratch we have covered two things:</p>

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Creating NPMRC in Windows Developer Box for Azure DevOps Server
 date: "2021-02-14 00:00 +0000"
 subtitle: setting npm authentication for dev box for restoring npm packages
@@ -15,13 +14,20 @@ tags:
   - npm
   - node
   - beginners
+categories: []
 last_modified_at: null
 published: true
 sitemap: true
 comments: true
 social-share: true
 toc: true
+toc_sticky: true
+toc_icon: cog
 excerpt_separator: <!--more-->
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 > Are you wondering how to create an `.npmrc` file and put an

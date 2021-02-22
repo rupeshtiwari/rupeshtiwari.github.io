@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Integrate GitHub-Pages in Angular 6 App
 date: 2018-11-02T03:31:50.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -16,96 +14,12 @@ tags:
   - GitHub
   - JavaScript
   - Typescript
-meta:
-  _oembed_time_3918cecbb725afb14d994a16789aca7e: "1553110299"
-  _oembed_time_534fc6302cc4954bb48c464051ebdcc5: "1553110300"
-  _publicize_twitter_user: "@roopkt"
-  _wpas_done_all: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612241801;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2630;}i:1;a:1:{s:2:"id";i:2643;}i:2;a:1:{s:2:"id";i:2770;}}}}
-  _thumbnail_id: "1473"
-  _oembed_534fc6302cc4954bb48c464051ebdcc5: >-
-    <div class="github-embed github-embed-repository"><p><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample"
-    target="_blank"><strong>Sample project to demo how to create typescript
-    library and consume it from other typescript project using webpack.
-    </strong></a><br/><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample"
-    target="_blank">https://github.com/roopkt/webpack-typesript-library-consumption-sample</a><br/><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/network"
-    target="_blank">1</a> forks.<br/><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/stargazers"
-    target="_blank">1</a> stars.<br/><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/issues"
-    target="_blank">0</a> open issues.<br/>Recent commits:<ul
-    class="github_commits"><li class="github_commit"><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/commit/0dc92bff2761c92e718988c37f5deaf825a6445e"
-    target="_blank">Update README.md</a>, GitHub</li><li
-    class="github_commit"><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/commit/0cce5e5a9f4b4c7ffa44c4e9b3e343ea5b0fa5c7"
-    target="_blank">Merge pull request #1 from coderbydesign/patch-1Update
-    README.md</a>, GitHub</li><li class="github_commit"><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/commit/ae36ed0707a2b7cfb1c8ee18da0c8c0b130f91be"
-    target="_blank">Update README.mdNice! Minor typo fixes as I was reading
-    through the documentation.</a>, GitHub</li><li class="github_commit"><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/commit/76286ecd25f11a6e2b5fdd699bbe96b4a7581892"
-    target="_blank">Update README.md</a>, GitHub</li><li
-    class="github_commit"><a
-    href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/commit/42490288ca3b7d6efbb56672860ae76c27981237"
-    target="_blank">fixing @types project name</a>, roopkt</li></ul></p></div>
-  _oembed_3918cecbb725afb14d994a16789aca7e: >-
-    <div class="github-embed github-embed-repository"><p><a
-    href="https://github.com/roopkt/e-store" target="_blank"><strong>Sample
-    application that demonstrate client side UI Composition necessary for
-    Service Oriented Architecture (SOA) using Angular and
-    Redux</strong></a><br/><a href="https://github.com/roopkt/e-store"
-    target="_blank">https://github.com/roopkt/e-store</a><br/><a
-    href="https://github.com/roopkt/e-store/network" target="_blank">3</a>
-    forks.<br/><a href="https://github.com/roopkt/e-store/stargazers"
-    target="_blank">4</a> stars.<br/><a
-    href="https://github.com/roopkt/e-store/issues" target="_blank">4</a> open
-    issues.<br/>Recent commits:<ul class="github_commits"><li
-    class="github_commit"><a
-    href="https://github.com/roopkt/e-store/commit/0fb1d4b0a713435e39e9009d11826c018b5af8b3"
-    target="_blank">Update README.md</a>, GitHub</li><li
-    class="github_commit"><a
-    href="https://github.com/roopkt/e-store/commit/1f48186ae16be128a05c0af5fe27e49421c5830c"
-    target="_blank">submit order page</a>, roopkt</li><li
-    class="github_commit"><a
-    href="https://github.com/roopkt/e-store/commit/8c83e2ecbf826607ce0b0adb2d5248c5ef202e4a"
-    target="_blank">removed not used scripts</a>, roopkt</li><li
-    class="github_commit"><a
-    href="https://github.com/roopkt/e-store/commit/57c8bb2ae79e04ce1b8b2cc453b7af4455aad6f1"
-    target="_blank">updated package.json</a>, roopkt</li><li
-    class="github_commit"><a
-    href="https://github.com/roopkt/e-store/commit/3f1eedee280e7cab56a7c2714bdd1775e052733d"
-    target="_blank">updated package.json</a>, roopkt</li></ul></p></div>
-  _qode-like: "0"
-  _oembed_c5abb426aca19b8f6cf5860df110fd3c: "{{unknown}}"
-  _oembed_5ea39ac4d0a56e4c5d90cb00587d4270: "{{unknown}}"
-  _oembed_df43d19f6bdd3acf4d268c12e6c5ad8a: "{{unknown}}"
-  _oembed_16efbef9e9f0df8550528b7248c5e4e8: "{{unknown}}"
-  _oembed_a14de08eb85f1ea1a72eddd0d2e27514: "{{unknown}}"
-  _oembed_54ca97c82f1627d3ab6404d29441531f: "{{unknown}}"
-  _edit_last: "1"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: "413"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /integrate-github-pages-in-angular-6-app/
 description: Integrate GitHub-Pages in Angular 6 App
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <h2>What is GhPages</h2>

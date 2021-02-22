@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Managing CSS in Angular App for Cross Browsers and OS
 date: "2021-02-03 13:50 -0500"
 subtitle:
@@ -25,6 +24,10 @@ social-share: true
 excerpt_separator: <!--more-->
 id: 591323
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 > Do you want to organize your **CSS** files in your **angular** app? Do you

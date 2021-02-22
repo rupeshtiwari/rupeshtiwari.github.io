@@ -1,8 +1,6 @@
 ---
-layout: post
 title: SETTING UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM SCRATCH
 date: 2019-06-01T14:02:20.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,49 +10,15 @@ tags:
   - Node.js
   - Typescript
   - webpack
-meta:
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611612411;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:1021;}i:2;a:1:{s:2:"id";i:493;}}}}
-  _edit_last: "1"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:58:"SETTING UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM
-    SCRATCH";s:7:"og_desc";s:220:"Welcome to step by step hands-on guide to
-    setup webpack in your upcoming typescript project. Please follow the steps
-    and you should be able to create your own webpack project. Please download
-    the source code from
-    github.";s:8:"og_image";s:84:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/feature-createwebpack-1.jpg";s:10:"card_title";s:58:"SETTING
-    UP WEBPACK FOR ANY TYPESCRIPT PROJECT FROM
-    SCRATCH";s:9:"card_desc";s:220:"Welcome to step by step hands-on guide to
-    setup webpack in your upcoming typescript project. Please follow the steps
-    and you should be able to create your own webpack project. Please download
-    the source code from
-    github.";s:10:"card_image";s:84:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/feature-createwebpack-1.jpg";}
-  slide_template: default
-  _yoast_wpseo_primary_category: "214"
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "60"
-  wpmm_postgrid_views: "639"
-  _qode-like: "0"
-  _thumbnail_id: "2176"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /setting-up-webpack-for-any-typescript-project-from-scratch/
 description: >-
   Welcome to step by step hands-on guide to setup webpack in your upcoming
   typescript project. Please follow the steps and you should be able to create
   your own webpack project. Please download the source code from github.
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p><!-- wp:heading {"level":1} --></p>

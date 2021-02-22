@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Creating Typescript Library using Webpack
 date: 2018-11-23T10:43:35.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -14,70 +12,6 @@ tags:
   - npm
   - Typescript
   - webpack
-meta:
-  _oembed_b6a2baaf56308d9ff824d94c7d48c311: "{{unknown}}"
-  _oembed_87d6ec630ce0e87a35b8b5bebccc0e84: "{{unknown}}"
-  _thumbnail_id: "1461"
-  _wpas_mess:
-    "Creating Typescript Library using Webpack: In this article we will see how
-    can you create your own typescript library\_that you can easily consume in
-    your another `typescript` project. Also we will see how we can create
-    typedefinition\_bundle file for our own library. Finally we will see which
-    folder is required to publish to npm\_portal to have our own little library
-    published and available for our friends."
-  advanced_seo_description:
-    "In this article we will see how can you create your own typescript
-    library\_that you can easily consume in your another `typescript` project.
-    Also we will see how we can create typedefinition\_bundle file for our own
-    library. Finally we will see which folder is required to publish to
-    npm\_portal to hav"
-  _edit_last: "1"
-  _publicize_twitter_user: "@roopkt"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612065126;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:493;}i:1;a:1:{s:2:"id";i:2643;}i:2;a:1:{s:2:"id";i:1000;}}}}
-  _wpas_done_all: "1"
-  _qode-like: "0"
-  _oembed_dfb1fb7e21fc796808a7d4c5a66cae29: "{{unknown}}"
-  _oembed_989924688e24d4f07da4f3875ef093ce: "{{unknown}}"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: "4747"
-  _b2s_post_meta:
-    "a:6:{s:8:\"og_title\";s:41:\"Creating Typescript Library using
-    Webpack\";s:7:\"og_desc\";s:368:\"In this article we will see how can you
-    create your own typescript library\_that you can easily consume in your
-    another `typescript` project. Also we will see how we can create
-    typedefinition\_bundle file for our own library. Finally we will see which
-    folder is required to publish to npm\_portal to have our own little library
-    published and available for our
-    friends.\";s:8:\"og_image\";s:110:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/12/creating-typescript-webpack-library-rupesh-tiwari.jpg\";s:10:\"card_title\";s:41:\"Creating
-    Typescript Library using Webpack\";s:9:\"card_desc\";s:368:\"In this article
-    we will see how can you create your own typescript library\_that you can
-    easily consume in your another `typescript` project. Also we will see how we
-    can create typedefinition\_bundle file for our own library. Finally we will
-    see which folder is required to publish to npm\_portal to have our own
-    little library published and available for our
-    friends.\";s:10:\"card_image\";s:110:\"https://blog.rupeshtiwari.com/wp-content/uploads/2018/12/creating-typescript-webpack-library-rupesh-tiwari.jpg\";}"
-  _yoast_wpseo_primary_category: "195"
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "60"
-  _inpost_head_script: >-
-    a:1:{s:19:"synth_header_script";s:63:"<script
-    src="https://gumroad.com/js/gumroad-embed.js"></script>";}
-  _wpcom_is_markdown: "1"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /creating-typescript-library-using-webpack/
 description:
   "\n\t\t\t\tIn this article we will see how can you create your own typescript
   library\_that you can easily consume in your another `typescript` project.
@@ -85,7 +19,11 @@ description:
   library. Finally we will see which folder is required to publish to
   npm\_portal to have our own little library published and available for our
   friends.\t\t"
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p><!-- wp:html --></p>

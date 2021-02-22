@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Running Angular 10 in Internet Explorer 11
 date: "2021-02-04 00:00 +0000"
 subtitle: Learn supporting Internet Explorer in Angular
@@ -25,6 +24,10 @@ gh-badge: star
 gh-repo: rupeshtiwari/rupeshtiwari.github.io
 excerpt_separator: <!--more-->
 id: 592350
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 > Are you worried that new angular 10 project is not running in "**IE11**" even

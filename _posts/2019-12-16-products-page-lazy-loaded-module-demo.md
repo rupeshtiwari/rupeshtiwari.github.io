@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Products page & Lazy Loaded Module - Demo
 date: 2019-12-16T11:00:14.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,44 +10,11 @@ tags:
   - Angular
   - fullstackmaster
   - rupeshtiwari
-meta:
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609848089;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2828;}i:1;a:1:{s:2:"id";i:3290;}i:2;a:1:{s:2:"id";i:2248;}}}}
-  _edit_last: "1"
-  _thumbnail_id: "2838"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "90"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "178"
-  wpmm_postgrid_views: "274"
-  _qode-like: "0"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:121:"Products page & Lazy Loaded Module - Demo -
-    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
-    Training";s:7:"og_desc";s:143:"In continuity of our demo session Creating
-    Products Module | Lazy loaded module | Angular | 0009-09 we will see how to
-    create Products page
-    for";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-101.png";s:10:"card_title";s:41:"Products
-    page & Lazy Loaded Module - Demo";s:9:"card_desc";s:160:"In continuity of
-    our demo session Creating Products Module | Lazy loaded module | Angular |
-    0009-09 we will see how to create Products page for our app keeping
-    ";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/11/RUPESH-101.png";}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /products-page-lazy-loaded-module-demo/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>In continuity of our demo session <strong><a href="https://www.youtube.com/watch?v=emlJbYT7MbY&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=10&amp;t=0s" target="_blank" rel="noopener noreferrer">Creating Products Module | Lazy loaded module | Angular | 0009-09</a> </strong>we will see how to create Products page for our app keeping in mind Lazy load concept. We will not load our products on homepage instead will create separate product module and load it on demand or on click of our products page icon. Below are few coding snapshots and its respective outcomes from our demo session.</p>

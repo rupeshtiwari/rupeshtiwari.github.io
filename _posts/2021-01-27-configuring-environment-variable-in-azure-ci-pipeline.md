@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Configuring Environment Variable in Azure CI Pipeline
 date: "2021-01-27 00:00 +0000"
 subtitle: Learn how to define and use environment variable in azure ci pipeline
@@ -22,6 +21,10 @@ social-share: true
 excerpt_separator: <!--more-->
 id: 590145
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 > Do you want to create environment level variable for your Azure Build CI

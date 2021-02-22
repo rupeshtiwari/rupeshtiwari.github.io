@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Creating Custom jQuery Widget
 date: 2010-11-21T23:46:48.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -10,22 +8,12 @@ categories:
   - jQuery
 tags:
   - JQuery
-meta:
-  _edit_last: "1"
-  _publicize_twitter_user: "@roopkt"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609226441;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:278;}i:1;a:1:{s:2:"id";i:361;}i:2;a:1:{s:2:"id";i:275;}}}}
-  _qode-like: "0"
-  wpmm_postgrid_views: "358"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /creating-custom-jquery-widget/
 description: Creating Custom jQuery Widget
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>Hi I just came across a greate website <a href="http://bililite.com/blog/understanding-jquery-ui-widgets-a-tutorial/">http://bililite.com/blog/understanding-jquery-ui-widgets-a-tutorial/</a></p>

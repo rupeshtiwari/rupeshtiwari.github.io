@@ -1,295 +1,124 @@
-# Welcome to Beautiful Jekyll!
-# This config file is meant for settings that affect your entire website. When you first
-# set up your website you should go through all these settings and edit them, but after
-# the initial set up you won't need to come back to this file often.
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# --- Required options --- #
-
-# Name of website
-title: Rupesh Tiwari - Software Architect and Trainer
-
-# Your name to show in the footer
-author: rupesh
-
-# --- List of links in the navigation bar --- #
-
-navbar-links:
-  About Me: "aboutme/"
-  Full Stack Training:
-    - All-Access Pro plan: "https://www.fullstackmaster.net/pro"
-    - All-Access ELite Plan: "https://www.fullstackmaster.net/elite"
-    - Angular Training: "https://www.fullstackmaster.net/"
-  Home: "rupesh/"
-
-# --- Logo --- #
-
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
-
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
-
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
-# then specify the following parameter
-title-img: /assets/img/fsm.png
-
-# --- Footer social media links --- #
-
-# Select the social network links that you want to show in the footer.
-# Uncomment the links you want to show and add your information to each one.
-social-network-links:
-  email: "fullstackmaster1@gmail.com"
-  facebook: fullstackmaster1
-  github: rupeshtiwari
-  twitter: rupeshtiwari_co
-  patreon: fullstackmaster
-  youtube: c/fullstackmaster
-  #  reddit: yourname
-  linkedin: rupesh-tiwari
-  #  xing: yourname
-  stackoverflow: "1949796/rupesh-kumar-tiwari"
-  #  snapchat: deanat78
-  #  instagram: deanat78
-  #  spotify: yourname
-  telephone: +16083362070
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-
-# If you want to show a link to an RSS in the footer, add the site description here.
-# If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
-
-# --- General options --- #
-
-# Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
-
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "www.rupeshtiwari.com"
-
-# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
-
-# Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
-
-# Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
-
-# Enable a search bar on the home page to search blog posts
-post_search: true
-
-# Enable anchors on site
-anchors: true
-
-# Enable mermaid
-mermaid: true
-
-# Enable below section to enable applause on blog post
-applause:
-  enabled: false
-  multiclap: true
-  initial-clap-count: 50
-  color: "#ea2c6d"
-
-# Related Posts on each blog post
-related-posts:
-  enabled: true
-
-# The keywords to associate with your website, for SEO purposes
-keywords: "angular,javascript,node.js,webpack"
-
-# --- Colours / background image --- #
-
-# Personalize the colours in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to an image
-# instead of colour
-
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
-
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
-
-# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-site-css:
-  - "/assets/css/custom-styles.css"
-
-# If you have common JavaScript files that should be included in every page, list them here
-#site-js:
-#  - "/assets/js/custom-script.js"
-
-# --- Web Analytics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: "UA-128916623-7"
-
-# Fill in your Google Analytics ID to track your website using Google Analytics
-google_analytics: "UA-128916623-7"
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
-
-# --- Comments --- #
-
-# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-disqus: "https-rupeshtiwari-github-io-1"
-
-# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-# fb_comment_id: "421181512329379"
-
-# To use Utterances comments: (0) uncomment the following section, (1) fill in
-# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
-# (3) Install the Utterances app in your repository https://github.com/apps/utterances
-# See more details about the parameters below at https://utteranc.es/
-#utterances:
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-#  theme: github-light # Utterances theme
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
-
-# To use Staticman comments, first invite `staticmanlab` as a collaborator to your repository and
-# accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`.
-# Then uncomment the following section and fill in "repository" and "branch".
-# If you want to use reCaptcha for staticman (optional for spam protection), then fill
-# in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
-# See more details at https://staticman.net/
-#staticman:
-repository: "rupeshtiwari/rupeshtiwari.github.io-1"
-branch: master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
-#  reCaptcha:
-#    siteKey  : # Use your own site key, you need to apply for one on Google
-#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
-
-# --- Misc --- #
-
-# Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
-
-# Facebook App ID
-fb_app_id: "421181512329379"
-
-# --- You don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/New_York"
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Seniro Software Architect
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+twitter_username: username
+github_username: username
+minimal_mistakes_skin: sunrise
+baseurl: ""
+search: true
+repository: "rupeshtiwari/mm_blog"
+# Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-kramdown:
-  input: GFM
+include:
+  - _pages
 
-# Default YAML values (more information on Jekyll's site)
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Rupesh Tiwari"
+  avatar : "/assets/images/bio-photo.jpg/"
+  bio    : "Hi, I am Sr. Software/Solution Architect, Professional Trainer & Pluralsight Author. I help students and professionals to become Full Stack Software Developer in less than a year!"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "fullstackmaster1@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.fullstackmaster.net"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "http://twitter.com/rupeshtiwari_co"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/fullstackmaster1"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "http://github.com/rupeshtiwari"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/rupeshtiwari.co/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "http://twitter.com/rupeshtiwari_co"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "http://github.com/rupeshtiwari"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/rupeshtiwari.co/"
+
 defaults:
+  # _posts
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
-      comments: true # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
   - scope:
-      path: "" # any file that's not a post will be a "page" layout by default
+      path: "_pages"
+      type: pages
     values:
-      layout: "page"
+      layout: single
+      author_profile: true
 
-# Exclude these files from production site
-exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
-remote_theme: daattali/beautiful-jekyll@5.0.0
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-last-modified-at
-  - jekyll-analytics
-  - jekyll-remote-theme
-  - jekyll-paginate
-
-# Composing Blog
-jekyll_compose:
-  default_front_matter:
-    drafts:
-      subtitle:
-      description:
-      image: "https://i.imgur.com/XXX.png"
-      cover-img: "https://i.imgur.com/NRaQUA5.png"
-      cover_image: "https://i.imgur.com/XXX.png"
-      thumbnail-img: "https://i.imgur.com/XXX.png"
-      share-img: "https://i.imgur.com/XXX.png"
-      canonical_url: "https://rupeshtiwari.github.io/SOMEARTICLE"
-      tags:
-      last_modified_at:
-      published: true
-      sitemap: true
-      comments: true
-      social-share: true
-      toc: true
-      excerpt_separator: <!--more-->
-    posts:
-      subtitle:
-      description:
-      image: "https://i.imgur.com/XXX.png"
-      cover-img: "https://i.imgur.com/NRaQUA5.png"
-      cover_image: "https://i.imgur.com/XXX.png"
-      thumbnail-img: "https://i.imgur.com/XXX.png"
-      share-img: "https://i.imgur.com/XXX.png"
-      canonical_url: "https://rupeshtiwari.github.io/SOMEARTICLE"
-      tags:
-      last_modified_at:
-      published: true
-      sitemap: true
-      comments: true
-      social-share: true
-      toc: true
-      excerpt_separator: <!--more-->
-
-jekyll-crosspost_to_medium:
-  enabled: false
-
-future: false
+teaser: "/assets/images/teaser.png"

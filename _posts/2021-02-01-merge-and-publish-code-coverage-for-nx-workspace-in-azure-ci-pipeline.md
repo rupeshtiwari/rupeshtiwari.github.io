@@ -1,5 +1,4 @@
 ---
-layout: post
 title:
   Publishing Merged Code Coverage Report of Nx Workspace in Azure CI Pipeline
 subtitle: Showing Nx Monorepo code coverage report in azure ci pipeline
@@ -24,6 +23,10 @@ social-share: true
 excerpt_separator: <!--more-->
 id: 589921
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 If you are working on [Nx Monorepo](https://nx.dev/) workspace and have many

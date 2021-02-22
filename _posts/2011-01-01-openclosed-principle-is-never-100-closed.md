@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Open/Closed principle is never 100% closed
 date: 2011-01-02T00:25:38.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,30 +10,12 @@ tags:
   - Design Pattern
   - Object-oriented programming
   - Open/closed principle
-meta:
-  geo_latitude: "40.271005"
-  _edit_last: "1"
-  geo_longitude: "-74.838503"
-  geo_accuracy: "0"
-  geo_address: "1214 Scenic Drive, NJ, 08628"
-  geo_public: "1"
-  _wpas_done_fb: "1"
-  _wpas_done_twitter: "1"
-  _wpas_skip_yup: "1"
-  _wpas_skip_ms: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1600703592;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:295;}i:1;a:1:{s:2:"id";i:2254;}i:2;a:1:{s:2:"id";i:2502;}}}}
-  _qode-like: "0"
-  wpmm_postgrid_views: "403"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /openclosed-principle-is-never-100-closed/
 description: Open/Closed principle is never 100% closed
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>

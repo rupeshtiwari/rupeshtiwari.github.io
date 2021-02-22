@@ -1,8 +1,6 @@
 ---
-layout: post
 title: How to Show Logo in ReadMe.Md file or in npm Package Home Page
 date: 2018-11-02T16:06:26.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -11,44 +9,12 @@ categories:
 tags:
   - JavaScript
   - node.js
-meta:
-  _publicize_twitter_user: "@roopkt"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611578741;s:7:"payload";a:0:{}}}
-  _wpas_done_all: "1"
-  _thumbnail_id: "1471"
-  _qode-like: "0"
-  _oembed_cb36ff011263559ff29cfe1fb8d91b51: "{{unknown}}"
-  _oembed_dacdf14fed1c4bf3e6a6717a199884e5: "{{unknown}}"
-  _edit_last: "1"
-  qode_show-sidebar: default
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: "637"
-  _oembed_e27710d47028b0a9cd91968d7459b92f: "{{unknown}}"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:62:"How to Show Logo in ReadMe.Md file or in npm
-    Package Home
-    Page";s:7:"og_desc";s:7:"";s:8:"og_image";s:72:"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/logo-readme.png";s:10:"card_title";s:62:"How
-    to Show Logo in ReadMe.Md file or in npm Package Home
-    Page";s:9:"card_desc";s:7:"";s:10:"card_image";s:72:"https://blog.rupeshtiwari.com/wp-content/uploads/2018/11/logo-readme.png";}
-  _yoast_wpseo_primary_category: ""
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "90"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /how-to-show-logo-in-readme-md-file-or-in-npm-package-home-page/
 description: How to Show Logo in ReadMe.Md file or in npm Package Home Page
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <h1>How to add your own logo on README.md file</h1>

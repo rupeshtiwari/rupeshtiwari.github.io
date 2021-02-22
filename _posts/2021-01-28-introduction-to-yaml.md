@@ -1,5 +1,4 @@
 ---
-layout: post
 tags:
   - devops
   - yaml
@@ -18,6 +17,10 @@ comments: true
 excerpt_separator: <!--more-->
 id: 589332
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 `Yaml` files are used in Azure Pipelines for build and release definition. Yaml

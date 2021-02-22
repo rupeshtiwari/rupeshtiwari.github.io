@@ -1,51 +1,21 @@
 ---
-layout: post
 title: Tricks to build Interview-winning Resume
 date: 2019-04-18T09:51:05.000Z
-type: post
 published: true
 comments: true
 social-share: true
 categories:
   - Interview
-tags: [angular,beginner,node,tutorial]
-meta:
-  _edit_last: "1"
-  _thumbnail_id: "1893"
-  wpmm_postgrid_views: "756"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _qode-like: "0"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:40:"Tricks to build Interview-winning
-    Resume";s:7:"og_desc";s:160:"Along with choosing right template, best resume
-    format, putting educational qualifications etc, the most important component
-    required in an interview-winning
-    ex";s:8:"og_image";s:68:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/traning.jpg";s:10:"card_title";s:40:"Tricks
-    to build Interview-winning Resume";s:9:"card_desc";s:160:"Along with
-    choosing right template, best resume format, putting educational
-    qualifications etc, the most important component required in an
-    interview-winning
-    ex";s:10:"card_image";s:68:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/04/traning.jpg";}
-  _yoast_wpseo_primary_category: ""
-  _yoast_wpseo_content_score: "30"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1608370741;s:7:"payload";a:0:{}}}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /tricks-to-build-interview-winning-resume/
-
+tags:
+  - angular
+  - beginner
+  - node
+  - tutorial
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p><ins datetime="2019-04-19T06:22:50+00:00"></ins>Along with choosing right template, best resume format, putting educational qualifications etc, the most important component required in an interview-winning experienced person’s resume is, your work history. It is very important how you put your past job accomplishments relevant to your skill set with examples. Interviewers will be keen to know what you worked there, what challenges you faced, how you resolved them and what responsibilities you held in each role you had. They will be looking to see how your experience, knowledge lines up with their job profile. By putting your knowledge, skills and abilities briefly with proper examples, aligned to your current project scenarios, you can engage interviewer to specific skill set where you are confident about. You can turn the interview to topics, skills which you want to discuss.</p>

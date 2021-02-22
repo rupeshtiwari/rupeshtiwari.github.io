@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Publishing Jekyll Blog Post to DevTo using GitHub CI and CD Pipeline
 description: Learn cross-posting to dev to from jekyll blog
 subtitle: Learn cross-posting to dev to from jekyll blog
@@ -21,6 +20,11 @@ sitemap: true
 excerpt_separator: <!--more-->
 id: 589272
 toc: true
+related: true
+share: true
+comments: true
+read_time: true
+author_profile: true
 ---
 
 If you have a blogging site using **Jekyll** and you want to publish your blogs

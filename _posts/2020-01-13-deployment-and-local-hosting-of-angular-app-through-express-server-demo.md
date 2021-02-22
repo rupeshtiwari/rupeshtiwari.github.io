@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Deployment and local hosting of angular app through Express server - Demo
 date: 2020-01-13T11:00:43.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -14,45 +12,11 @@ tags:
   - fullstackmaster
   - JavaScript
   - rupeshtiwari
-meta:
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610275031;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2840;}i:1;a:1:{s:2:"id";i:2953;}i:2;a:1:{s:2:"id";i:2643;}}}}
-  _edit_last: "1"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "90"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "178"
-  wpmm_postgrid_views: "276"
-  _qode-like: "0"
-  _thumbnail_id: "2891"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:119:"Deployment and local hosting of angular - Rupesh
-    Tiwari - Author Developer & Trainer | Professional Full Stack
-    Training";s:7:"og_desc";s:148:"In our previous demo sessions we successfully
-    created our Product Mart app. Now we are ready to deploy our code to so
-    called production
-    environment.";s:8:"og_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/12/RUPESH-105.png";s:10:"card_title";s:73:"Deployment
-    and local hosting of angular app through Express server -
-    Demo";s:9:"card_desc";s:160:"In our previous demo sessions we successfully
-    created our Product Mart app. Now we are ready to deploy our code to so
-    called production environment. For this
-    we";s:10:"card_image";s:71:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/12/RUPESH-105.png";}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /deployment-and-local-hosting-of-angular-app-through-express-server-demo/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>In our previous demo sessions we successfully created our Product Mart app. Now we are ready to deploy our code to so called production environment. For this we need to follow below steps and all these steps are also explained in our demo session <a href="https://www.youtube.com/watch?v=T_tu5Yw-rKQ&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=15&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Running Local Server | Express | Angular | Demo | 0009-14 </strong></a>in detail.</p>

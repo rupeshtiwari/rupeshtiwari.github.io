@@ -1,8 +1,6 @@
 ---
-layout: post
 title: How to create RxJS Publish Subscribe Library?
 date: 2019-03-07T20:00:08.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -14,55 +12,17 @@ tags:
   - filter
   - publish
   - subscribe
-meta:
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1612128943;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2275;}i:1;a:1:{s:2:"id";i:775;}i:2;a:1:{s:2:"id";i:2302;}}}}
-  _wpas_done_all: "1"
-  _thumbnail_id: "1448"
-  _edit_last: "1"
-  _qode-like: "0"
-  wpmm_postgrid_views: "975"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:45:"How to create RxJS Publish Subscribe
-    Library?";s:7:"og_desc";s:350:"Did you know you can create your own
-    publish-subscribe library for your RxJS project? By using BehaviorSubject
-    and filter operator it is possible to create your first pub sub library.
-    Publish and Subscribe framework is very helpful to create isolated modules.
-    Therefore, I will explain and demonstrate you how can you create your own
-    pub sub
-    library.";s:8:"og_image";s:78:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/03/subscribe-library.jpg";s:10:"card_title";s:45:"How
-    to create RxJS Publish Subscribe Library?";s:9:"card_desc";s:350:"Did you
-    know you can create your own publish-subscribe library for your RxJS
-    project? By using BehaviorSubject and filter operator it is possible to
-    create your first pub sub library. Publish and Subscribe framework is very
-    helpful to create isolated modules. Therefore, I will explain and
-    demonstrate you how can you create your own pub sub
-    library.";s:10:"card_image";s:78:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/03/subscribe-library.jpg";}
-  _wpcom_is_markdown: "1"
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "90"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /simple-pub-sub-with-rxjs/
 description:
   "\n\t\t\t\tDid you know you can create your own publish-subscribe library for
   your RxJS project? By using BehaviorSubject and filter operator it is possible
   to create your first pub sub library. Publish and Subscribe framework is very
   helpful to create isolated modules. Therefore, I will explain and demonstrate
   you how can you create your own pub sub library.\t\t"
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p><!-- wp:paragraph --></p>

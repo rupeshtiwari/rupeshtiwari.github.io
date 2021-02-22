@@ -1,24 +1,24 @@
 {
-  "name": "rupeshtiwari-blogs",
+  "name": "rupesh",
   "version": "1.0.0",
-  "description": "Rupesh Tiwari Blogs",
-  "repository": "rupeshtiwari/rupeshtiwari.github.io",
-  "private": true,
+  "description": "my blog and personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupeshtiwari/rupeshtiwari.github.io.git"
+  },
   "keywords": [
-    "dev.to",
-    "blog",
-    "articles"
+    "rupesh"
   ],
-  "author": {
-    "name": "Rupesh Tiwari",
-    "url": "https://twitter.com/rupeshtiwari_co"
+  "author": "Rupesh Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupeshtiwari/rupeshtiwari.github.io/issues"
   },
-  "license": "MIT",
-  "dependencies": {
-    "applause-button": "^3.4.0",
-    "mfb": "^0.12.0",
-    "simple-jekyll-search": "^1.9.1"
-  },
+  "homepage": "https://github.com/rupeshtiwari/rupeshtiwari.github.io#readme",
   "devDependencies": {
     "frontformatter": "^1.1.0"
   }

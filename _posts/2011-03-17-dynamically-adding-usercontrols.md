@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Dynamically Adding UserControls
 date: 2011-03-18T00:20:51.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -11,40 +9,12 @@ categories:
   - C#
 tags:
   - Dynamic UserControl
-meta:
-  _edit_last: "1"
-  geo_latitude: "40.271005"
-  geo_longitude: "-74.838503"
-  geo_accuracy: "0"
-  geo_address: "1214 Scenic Drive, NJ, 08628"
-  geo_public: "1"
-  _wpas_done_twitter: "1"
-  _wpas_done_fb: "1"
-  _wpas_skip_yup: "1"
-  _wpas_skip_ms: "1"
-  _publicize_twitter_user: "@roopkt"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610137869;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:217;}i:1;a:1:{s:2:"id";i:2275;}i:2;a:1:{s:2:"id";i:2511;}}}}
-  _thumbnail_id: "1488"
-  _qode-like: "0"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: "487"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /dynamically-adding-usercontrols/
 description: Dynamically Adding UserControls in Asp Net
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p><span style="font-family: calibri; font-size: 1.2em;"><br />

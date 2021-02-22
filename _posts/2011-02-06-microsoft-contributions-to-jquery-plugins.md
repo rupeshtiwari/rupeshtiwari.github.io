@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Microsoft contributions to jQuery Plugins
 date: 2011-02-07T03:21:12.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,30 +10,12 @@ categories:
 tags:
   - JQuery
   - jquery plugin
-meta:
-  _edit_last: "1"
-  geo_latitude: "40.271005"
-  geo_longitude: "-74.838503"
-  geo_accuracy: "0"
-  geo_address: "1214 Scenic Drive, NJ, 08628"
-  geo_public: "1"
-  _wpas_done_fb: "1"
-  _wpas_done_twitter: "1"
-  _wpas_skip_yup: "1"
-  _wpas_skip_ms: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609993696;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:361;}i:1;a:1:{s:2:"id";i:264;}i:2;a:1:{s:2:"id";i:2329;}}}}
-  _qode-like: "0"
-  wpmm_postgrid_views: "386"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /microsoft-contributions-to-jquery-plugins/
 description: Microsoft contributions to jQuery Plugins
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>

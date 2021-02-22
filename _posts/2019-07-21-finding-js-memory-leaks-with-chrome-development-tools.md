@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Finding JS Memory leaks with chrome development tools
 date: 2019-07-21T16:23:39.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -14,61 +12,11 @@ tags:
   - heap
   - JavaScript
   - rupesh tiwari
-meta:
-  qode_page_background_image_fixed: "yes"
-  _edit_last: "1"
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610887330;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:320;}i:1;a:1:{s:2:"id";i:850;}i:2;a:1:{s:2:"id";i:2248;}}}}
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:53:"Finding JS Memory leaks with chrome development
-    tools";s:7:"og_desc";s:155:"Memory IssuesTrouble shooting memory issues in
-    web application is very important and it needs careful understanding of
-    memory analysis. There are various
-    m";s:8:"og_image";s:83:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/Thumbnail-Final-Design.png";s:10:"card_title";s:53:"Finding
-    JS Memory leaks with chrome development tools";s:9:"card_desc";s:160:"
-
-    Memory Issues
-
-
-
-
-    Trouble shooting memory issues in web application is very important and it
-    needs careful understanding of memory analysis. There are various
-    m";s:10:"card_image";s:83:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/06/Thumbnail-Final-Design.png";}
-  slide_template: default
-  _yoast_wpseo_primary_category: "195"
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "60"
-  wpmm_postgrid_views: "1399"
-  _qode-like: "0"
-  _thumbnail_id: "2366"
-  _oembed_46444233a23be2c73698df386300ca8e: >-
-    <iframe title="js-memory-leak - StackBlitz" class="wp-embedded-content"
-    sandbox="allow-scripts" security="restricted"
-    src="https://stackblitz.com/edit/js-memory-leak?embed=1#?secret=fjFmRt9Qnw"
-    data-secret="fjFmRt9Qnw" height="400" width="745"></iframe>
-  _oembed_time_46444233a23be2c73698df386300ca8e: "1561673428"
-  _oembed_3988cfd03fe99ff8241c64c6ef925f8e: >-
-    <iframe title="js-memory-leak - StackBlitz" class="wp-embedded-content"
-    sandbox="allow-scripts" security="restricted"
-    src="https://stackblitz.com/edit/js-memory-leak?ctl=1&#038;embed=1&#038;file=index.html&#038;hideExplorer=1&#038;hideNavigation=1&#038;view=preview#?secret=3rixrxvzxP"
-    data-secret="3rixrxvzxP" height="400" width="745"></iframe>
-  _oembed_time_3988cfd03fe99ff8241c64c6ef925f8e: "1561673488"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /finding-js-memory-leaks-with-chrome-development-tools/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p><!-- wp:heading --></p>
@@ -269,12 +217,15 @@ $('#container').html(addTodoForm); focusTodo();
 
 window.addEventListener('keyup', function (e) { if (e.which == 27) {
 $('#container').html(addMoreTodo); $('#addMoreTodo').focus();
-$('#addMoreTodo').on('click', function () { $('#container').html(addTodoForm);
+$('#addMoreTodo').on('click',
+function () {
+$('#container').html(addTodoForm);
 focusTodo(); return false; }); } }); $('#addtodo').on('click', function () {
 const todo = $('#todotext').val();
 $('#list').append(`&lt;li class="list-group-item"> ${todo} &lt;/li>`);
 $('#todotext').val('').focus(); return false; }) function focusTodo() {
-$('#todotext').focus(); } });</pre>
+$('#todotext').focus();
+} });</pre>
 
 <p><!-- /wp:enlighter/codeblock --></p>
 <p><!-- wp:enlighter/codeblock --></p>

@@ -1,9 +1,7 @@
 ---
-layout: post
 title:
   "Methods to change Context – CALL and APPLY: Essential JavaScript Concepts"
 date: 2019-09-09T10:00:10.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,45 +10,11 @@ categories:
 tags:
   - fullstackmaster
   - JavaScript
-meta:
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1611062595;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2555;}i:1;a:1:{s:2:"id";i:2586;}i:2;a:1:{s:2:"id";i:2595;}}}}
-  _edit_last: "1"
-  _wpcom_is_markdown: "1"
-  _thumbnail_id: "2584"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "30"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "195"
-  wpmm_postgrid_views: "362"
-  _qode-like: "0"
-  _b2s_post_meta:
-    "a:6:{s:8:\"og_title\";s:125:\"Methods to change Context – CALL and APPLY: -
-    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
-    Training\";s:7:\"og_desc\";s:147:\"In our previous article JavaScript
-    Concepts: What Is this Keyword | 0004-08\_We read about ‘This’ concept of
-    JavaScript which refers to
-    calling\";s:8:\"og_image\";s:81:\"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-51-javascript.png\";s:10:\"card_title\";s:125:\"Methods
-    to change Context – CALL and APPLY: - Rupesh Tiwari - Author Developer &
-    Trainer | Professional Full Stack Training\";s:9:\"card_desc\";s:147:\"In
-    our previous article JavaScript Concepts: What Is this Keyword | 0004-08\_We
-    read about ‘This’ concept of JavaScript which refers to
-    calling\";s:10:\"card_image\";s:81:\"https://blog.rupeshtiwari.com/wp-content/uploads/2019/09/RUPESH-51-javascript.png\";}"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /methods-to-change-context-call-and-apply-essential-javascript-concepts/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>In our previous article <a href="https://www.youtube.com/watch?v=3JFm7DS6SG8" target="_blank" rel="noopener noreferrer"><strong>JavaScript Concepts: What Is this Keyword | 0004-08</strong></a> We read about ‘This’ concept of JavaScript which refers to calling context of the function. Now we will see, what are the available possible ways to call the context we have.</p>

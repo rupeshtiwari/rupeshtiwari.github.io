@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Finding Affected Builds in Nrwl Nx Monorepo
 date: "2021-01-24 00:00 +0000"
 subtitle: >-
@@ -26,6 +25,10 @@ comments: true
 social-share: true
 excerpt_separator: <!--more-->
 toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 > In this article, I will explain how to know which applications or libraries

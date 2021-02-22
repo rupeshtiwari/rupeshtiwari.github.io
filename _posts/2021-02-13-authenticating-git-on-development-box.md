@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Authenticating GIT on Development Box
 date: "2021-02-13 00:00 +0000"
 subtitle: Learn how to login your company on premise git repo
@@ -22,6 +21,10 @@ comments: true
 social-share: true
 toc: true
 excerpt_separator: <!--more-->
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 > Are you using windows machine for local development? Do you have Azure DevOp's

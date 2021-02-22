@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Webpack assets run time dependency injection
 date: 2019-02-06T00:00:44.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,33 +10,12 @@ categories:
 tags:
   - JavaScript
   - webpack
-meta:
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1610723753;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:668;}i:2;a:1:{s:2:"id";i:493;}}}}
-  _wpas_done_all: "1"
-  _publicize_twitter_user: "@roopkt"
-  _thumbnail_id: "1456"
-  advanced_seo_description: "how to pass public path to webpack assets bundle. "
-  _qode-like: "0"
-  _edit_last: "1"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-  wpmm_postgrid_views: "739"
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /webpack-assets-run-time-dependency-injection/
 description: "\n\t\t\t\tHow to pass public path to webpack assets bundle. \t\t"
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <h2>How to Inject Base Assets path URL dependency to webpack CSS bundle?</h2>

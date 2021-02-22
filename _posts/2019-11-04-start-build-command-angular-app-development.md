@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Start & Build Command - Angular app development
 date: 2019-11-04T11:00:16.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -12,44 +10,11 @@ tags:
   - Angular
   - fullstackmaster
   - rupeshtiwari
-meta:
-  _wpcom_is_markdown: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"9f37a613e2d1e5411bb71cfbb231e1d2";a:2:{s:7:"expires";i:1608053663;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2630;}i:1;a:1:{s:2:"id";i:2618;}i:2;a:1:{s:2:"id";i:2881;}}}}
-  _edit_last: "1"
-  _thumbnail_id: "2648"
-  slide_template: default
-  _wpb_vc_js_status: "false"
-  _yoast_wpseo_content_score: "90"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  _yoast_wpseo_primary_category: "178"
-  wpmm_postgrid_views: "303"
-  _qode-like: "0"
-  _b2s_post_meta: >-
-    a:6:{s:8:"og_title";s:127:"Start & Build Command - Angular app development -
-    Rupesh Tiwari - Author Developer & Trainer | Professional Full Stack
-    Training";s:7:"og_desc";s:141:"We saw in our previous session Creating
-    Angular App using Angular CLI | 0009-03 how to do environmental set up and
-    installation for our
-    first";s:8:"og_image";s:69:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/10/RUPESH-7.png";s:10:"card_title";s:47:"Start
-    & Build Command - Angular app development";s:9:"card_desc";s:160:"We saw in
-    our previous session Creating Angular App using Angular CLI | 0009-03 how to
-    do environmental set up and installation for our first angular project.
-    I";s:10:"card_image";s:69:"https://blog.rupeshtiwari.com/wp-content/uploads/2019/10/RUPESH-7.png";}
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /start-build-command-angular-app-development/
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <p>We saw in our previous session <a href="https://www.youtube.com/watch?v=t_cLb4OyAsA&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=4&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Creating Angular App using Angular CLI | 0009-03 </strong></a>how to do environmental set up and installation for our first angular project. In this video session <a href="https://www.youtube.com/watch?v=KN7Svhp9-IE&amp;list=PLZed_adPqIJrl9pwlERGhU-RCNOtKqvyD&amp;index=5&amp;t=0s" target="_blank" rel="noopener noreferrer"><strong>Explaining angular project with start and build command | 0009-04</strong></a> we will see</p>

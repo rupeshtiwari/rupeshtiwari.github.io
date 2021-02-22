@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Decorators in Typescript and Angular
 date: 2018-12-03T18:57:46.000Z
-type: post
 published: true
 comments: true
 social-share: true
@@ -15,56 +13,16 @@ tags:
   - Angular
   - Decorator
   - Typescript
-meta:
-  _thumbnail_id: "1460"
-  advanced_seo_description: >-
-    Rupesh Tiwari is explaining Decorator in Typescript and Angular .  Decorator
-    is a concept in Typescript that can be used to annotate a class or it's
-    members. Decorator also enables meta programming where one can collect as
-    many meta data as required during run time.
-  _wpas_mess: >-
-    Decorators in Typescript and Angular. Decorator is a concept in Typescript
-    that can be used to annotate a class or it's members. Decorator also enables
-    meta programming where one can collect as many meta data as required during
-    run time.
-  _wpas_done_all: "1"
-  _jetpack_related_posts_cache: >-
-    a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1609217045;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:775;}i:1;a:1:{s:2:"id";i:2124;}i:2;a:1:{s:2:"id";i:1000;}}}}
-  _publicize_twitter_user: "@roopkt"
-  wpmm_postgrid_views: "945"
-  _qode-like: "0"
-  _oembed_df35f285ab9c140d92365fa9c696cc6c: "{{unknown}}"
-  _oembed_30a1a19fa10b2734c3909df21f9c9eac: "{{unknown}}"
-  _oembed_da408983eead5671079ed3f865df4b07: "{{unknown}}"
-  _oembed_9be872b659747a53e7ed695f53e22e14: "{{unknown}}"
-  _oembed_3943d83a8e53f49708f062bc9193306a: "{{unknown}}"
-  _oembed_4bab7834e81bb6d12e98a22a377c5398: "{{unknown}}"
-  _oembed_4e2ee55d8f56da7622b58c8cd80302dc: "{{unknown}}"
-  _oembed_9de62a6445cdef242a2a66382d28e02f: "{{unknown}}"
-  _oembed_414ba627225e23d3501de411e15857a4: "{{unknown}}"
-  _oembed_add43e3f5844c8cd031199e25863c54d: "{{unknown}}"
-  _edit_last: "1"
-  qode_page_background_image_fixed: "yes"
-  qode_hide-featured-image: "no"
-  qode_post_style_masonry_date_image: full
-  qode_post_style_masonry_gallery: default
-  qode_show-sidebar: default
-  gallery_type: slider
-  video_format_choose: youtube
-  slide_template: default
-author:
-  login: rupeshtiwari
-  email: roopkt@gmail.com
-  display_name: Rupesh Tiwari
-  first_name: Rupesh
-  last_name: Tiwari
-permalink: /decorators-in-typescript-and-angular/
 description:
   "\n\t\t\t\tDecorators in Typescript and Angular. Decorator is a concept in
   Typescript that can be used to annotate a class or it's members. Decorator
   also enables meta programming where one can collect as many meta data as
   required during run time.\t\t"
-
+toc: true
+related: true
+share: true
+read_time: true
+author_profile: true
 ---
 
 <h2><img class="alignnone size-full wp-image-921" src="{{ site.baseurl }}/assets/2018/12/decorator-in-typescript-and-Angular.jpg" alt="Decorator in Typescript and Angular" width="750" height="501" /></h2>
