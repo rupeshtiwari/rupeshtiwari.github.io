@@ -6,11 +6,11 @@ comments: true
 social-share: true
 categories:
   - angular
-  - Full Stack Master
-  - MEAN.js
+  - beginners
+  - mean
 tags:
   - angular
-  - mean.js
+  - mean
 description: |-
   JavaScript future courses on full stack master school: 
   JavaScript Getting Started

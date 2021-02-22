@@ -6,7 +6,7 @@ comments: true
 social-share: true
 categories:
   - angular
-  - Full Stack Master
+  - beginners
   - javascript
 tags:
   - angular

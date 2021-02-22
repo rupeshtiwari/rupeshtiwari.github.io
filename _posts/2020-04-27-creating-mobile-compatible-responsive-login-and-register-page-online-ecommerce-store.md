@@ -9,7 +9,7 @@ social-share: true
 categories:
   - angular
   - express.JS
-  - Full Stack Master
+  - beginners
 tags:
   - angular
   - express

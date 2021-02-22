@@ -8,7 +8,7 @@ categories: []
 tags:
   - angular
   - express
-  - full stack master
+  - beginners
   - mongodb
   - node
   - software

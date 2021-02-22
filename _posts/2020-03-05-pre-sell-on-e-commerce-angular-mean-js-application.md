@@ -8,7 +8,7 @@ categories: []
 tags:
   - angular
   - fullstack
-    - mean.js
+  - mean
   - beginners
 toc: true
 related: true
