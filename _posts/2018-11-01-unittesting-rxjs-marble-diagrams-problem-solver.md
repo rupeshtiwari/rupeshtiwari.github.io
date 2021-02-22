@@ -5,11 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Pluralsight
+  - pluralsight
   - rxjs
 tags:
-  - Jasmine Marbles
-  - Marble Testing
+  - beginners
+  - marbletesting
+  - testing
   - rxjs
 description: UnitTesting-RxJS-Marble-Diagrams Problem Solver
 toc: true

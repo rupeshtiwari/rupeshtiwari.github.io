@@ -7,7 +7,10 @@ social-share: true
 categories:
   - angular
 tags:
-  - angular 8
+  - angular8
+  - beginners
+  - tutorial
+  - webdev
 toc: true
 related: true
 share: true

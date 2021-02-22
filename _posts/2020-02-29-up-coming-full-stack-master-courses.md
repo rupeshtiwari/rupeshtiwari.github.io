@@ -11,6 +11,8 @@ categories:
 tags:
   - angular
   - mean
+  - tutorial
+  - beginners
 description: |-
   JavaScript future courses on full stack master school: 
   JavaScript Getting Started

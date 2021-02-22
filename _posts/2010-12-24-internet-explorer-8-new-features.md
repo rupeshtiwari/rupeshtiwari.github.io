@@ -5,10 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Internet Explorer 8
+  - ie
 tags:
-  - Accelerators
-  - Web Slice
+  - ie
+  - webdev
+  - tutorial
+  - beginners
 description: Internet Explorer 8 - new features
 toc: true
 related: true

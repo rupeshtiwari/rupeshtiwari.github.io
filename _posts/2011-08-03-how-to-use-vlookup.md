@@ -5,10 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Excel
+  - excel
 tags:
-  - Excel Sheet
-  - VLOOKUP
+  - productivity
+  - webdev
+  - beginners
+  - excel
 description: How to use VLOOKUP in Microsoft Excel
 toc: true
 related: true

@@ -9,10 +9,9 @@ categories:
   - Pluralsight
 tags:
   - angular
-  - Jasmine Test
-  - Marble Diagram
+  - testing
+  - marble
   - rxjs
-  - Unit Testing
 description: My First Pluralsight Course
 toc: true
 related: true

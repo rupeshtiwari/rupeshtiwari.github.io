@@ -7,8 +7,6 @@ social-share: true
 categories:
   - jasmine
   - javascript
-  - Test Driven Development (TDD)
-  - Unit Testing
 tags:
   - beginners
   - javascript
