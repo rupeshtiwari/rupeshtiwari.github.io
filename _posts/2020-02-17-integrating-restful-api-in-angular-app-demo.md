@@ -8,9 +8,7 @@ categories:
   - Angular
 tags:
   - Angular
-  - fullstackmaster
   - JavaScript
-  - rupeshtiwari
 toc: true
 related: true
 share: true

@@ -15,15 +15,12 @@ categories:
 tags:
   - bootstrap
   - css
-  - fullstackmaster
   - heroku
   - html
   - JavaScript
   - JQuery
   - Node.js
-  - publish subscribe
-  - rupeshtiwari
-  - webpack
+
 description: >-
   Build your own JavaScript Event Based Web application from scratch and deploy
   it to the cloud  using Heroku. I will use express to build server. It will

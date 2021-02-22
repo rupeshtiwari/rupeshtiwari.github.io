@@ -10,9 +10,7 @@ categories:
   - MEAN.js
 tags:
   - Angular
-  - fullstackmaster
   - mean.js
-  - rupesh tiwari
 description: |-
   JavaScript future courses on full stack master school: 
   JavaScript Getting Started

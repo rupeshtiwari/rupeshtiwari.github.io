@@ -10,9 +10,8 @@ categories:
   - JavaScript
 tags:
   - Angular
-  - fullstackmaster
+  - beginners
   - JavaScript
-  - rupeshtiwari
 toc: true
 related: true
 share: true

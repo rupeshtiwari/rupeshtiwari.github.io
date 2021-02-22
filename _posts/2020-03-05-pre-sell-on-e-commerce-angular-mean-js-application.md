@@ -8,10 +8,8 @@ categories: []
 tags:
   - Angular
   - fullstack
-  - fullstackmaster
-  - mean.js
-  - rupesh tiwari
-  - rupeshtiwari
+    - mean.js
+  - beginners
 toc: true
 related: true
 share: true

@@ -11,7 +11,7 @@ categories:
 tags:
   - Angular
   - Express
-  - fullstackmaster
+  - beginners
   - JavaScript
 toc: true
 related: true

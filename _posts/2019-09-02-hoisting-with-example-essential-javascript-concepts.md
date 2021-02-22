@@ -7,9 +7,7 @@ social-share: true
 categories:
   - JavaScript
 tags:
-  - fullstackmaster
   - JavaScript
-  - rupeshtiwari
 toc: true
 related: true
 share: true

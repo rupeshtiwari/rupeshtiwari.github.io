@@ -9,7 +9,6 @@ categories:
   - Agile Methodologies
 tags:
   - agile
-  - rupeshtiwari
 toc: true
 related: true
 share: true

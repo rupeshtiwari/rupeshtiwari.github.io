@@ -8,10 +8,9 @@ categories:
   - JavaScript
 tags:
   - fixing memory issue
-  - fullstackmaster
   - heap
   - JavaScript
-  - rupesh tiwari
+  - beginners
 toc: true
 related: true
 share: true

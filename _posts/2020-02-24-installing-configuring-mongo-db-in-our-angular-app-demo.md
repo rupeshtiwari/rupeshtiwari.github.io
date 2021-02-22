@@ -9,7 +9,6 @@ categories:
   - JavaScript
 tags:
   - Angular
-  - fullstackmaster
   - JavaScript
 toc: true
 related: true

@@ -6,12 +6,14 @@ comments: true
 social-share: true
 categories:
   - jasmine
-  - JavaScriipt
+  - javascript
   - Test Driven Development (TDD)
   - Unit Testing
 tags:
-  - rupesh tiwari
-  - rupeshtiwari
+  - beginners
+  - javascript
+  - tutorial
+  - testing
 description: >-
   Jasmine createSpyObj allows you to create an object only with methods. However
   suppose you object has some properties as well. Then how will you create a

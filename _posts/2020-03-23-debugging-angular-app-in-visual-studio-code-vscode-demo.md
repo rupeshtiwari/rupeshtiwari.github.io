@@ -9,8 +9,9 @@ categories:
   - JavaScript
 tags:
   - Angular
-  - fullstackmaster
   - JavaScript
+  - beginners
+  - webdev
 toc: true
 related: true
 share: true

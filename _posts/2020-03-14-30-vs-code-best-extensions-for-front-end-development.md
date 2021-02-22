@@ -7,10 +7,11 @@ social-share: true
 categories:
   - VSCode
 tags:
-  - fullstack master school
-  - fullstackmaster
-  - rupesh tiwari
-  - rupeshtiwari
+  - vscode
+  - webdev
+  - beginners
+  - tutorial
+
 description: >-
   One of the most impressive parts of Visual Studio Code is customizability,
   especially via extensions. If you're a web developer, you won't be able to

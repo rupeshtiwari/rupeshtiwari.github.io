@@ -12,9 +12,7 @@ categories:
 tags:
   - Angular
   - fullstack master school
-  - fullstackmaster
-  - rupesh tiwari
-  - rupeshtiwari
+    - beginners
 toc: true
 related: true
 share: true

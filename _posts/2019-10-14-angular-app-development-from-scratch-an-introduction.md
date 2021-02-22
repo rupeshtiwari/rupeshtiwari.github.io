@@ -9,9 +9,7 @@ categories:
 tags:
   - Angular
   - Express
-  - fullstackmaster
   - mongodb
-  - rupeshtiwari
 toc: true
 related: true
 share: true

@@ -7,7 +7,6 @@ social-share: true
 categories:
   - JavaScript
 tags:
-  - fullstackmaster
   - JavaScript
 toc: true
 related: true
