@@ -1,6 +1,7 @@
 ---
 permalink: /angular-training/
 title: "Advance your skills with in-depth Angular Courses"
+classes: wide
 header:
     image: https://i.imgur.com/lk6xwna.png
 ---
