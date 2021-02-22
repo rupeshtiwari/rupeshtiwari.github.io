@@ -130,3 +130,8 @@ tag_archive:
   path: /tags/
 
 teaser: "/assets/images/teaser.png"
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "https-rupeshtiwari-github-io-1"
