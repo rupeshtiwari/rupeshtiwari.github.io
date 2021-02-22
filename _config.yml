@@ -66,7 +66,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "fullstackmaster1@gmail.com"
-    - label: "Website"
+    - label: "Fullstack Master"
       icon: "fas fa-fw fa-link"
       url: "https://www.fullstackmaster.net"
     - label: "Twitter"
@@ -75,12 +75,12 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/fullstackmaster1"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://www.facebook.com/fullstackmaster1"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "http://github.com/rupeshtiwari"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/rupeshtiwari.co/"
 
 footer:
   links:
