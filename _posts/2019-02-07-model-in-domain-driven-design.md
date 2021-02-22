@@ -5,11 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - DDD
-  - Domain Driven Design ( DDD )
-  - Domain Model
+  - ddd
 tags:
-  - Model
+  - architecture
+  - ddd
+  - beginners
+  - webdev
 description:
   "\n\t\t\t\tModel in Domain Driven Design is a system of abstraction that
   eliminates things which are not required. Domain Model allows us to think

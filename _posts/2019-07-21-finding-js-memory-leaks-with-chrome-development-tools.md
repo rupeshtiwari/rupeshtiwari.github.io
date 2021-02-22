@@ -7,8 +7,8 @@ social-share: true
 categories:
   - javascript
 tags:
-  - fixing memory issue
-  - heap
+  - chrome
+  - webdev
   - javascript
   - beginners
 toc: true
