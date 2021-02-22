@@ -5,7 +5,7 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScriipt
+  - javascript
 tags:
   - javascript
 toc: true

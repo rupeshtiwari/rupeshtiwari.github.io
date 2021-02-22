@@ -6,11 +6,12 @@ comments: true
 social-share: true
 categories:
   - designpatterns
-  - JavaScriipt
+  - javascript
 tags:
   - designpattern
   - javascript
-  - Object-oriented programming
+  - oop
+  - beginners
 description: JavaScript Module Pattern
 toc: true
 related: true

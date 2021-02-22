@@ -6,10 +6,10 @@ comments: true
 social-share: true
 categories:
   - Authoring
-  - RxJS
+  - rxjs
   - Youtube
 tags:
-  - RxJS
+  - rxjs
 description: My YouTube Channel Fullstackmaster
 toc: true
 related: true

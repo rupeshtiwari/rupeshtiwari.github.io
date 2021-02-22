@@ -7,7 +7,7 @@ social-share: true
 categories:
   - javascript
   - NodeJS
-  - Typescript
+  - typescript
   - Webpack
 tags:
   - automation

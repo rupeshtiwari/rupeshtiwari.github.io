@@ -8,8 +8,9 @@ categories:
   - designpatterns
 tags:
   - designpattern
-  - Object-oriented programming
-  - Open/closed principle
+  - devops
+  - oop
+  - beginners
 description: Open/Closed principle is never 100% closed
 toc: true
 related: true

@@ -13,7 +13,7 @@ tags:
   - GhPages
   - GitHub
   - javascript
-  - Typescript
+  - typescript
 description: Integrate GitHub-Pages in Angular 6 App
 toc: true
 related: true

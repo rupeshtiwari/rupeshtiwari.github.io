@@ -11,7 +11,7 @@ tags:
   - angular
   - Jasmine Test
   - Marble Diagram
-  - RxJS
+  - rxjs
   - Unit Testing
 description: My First Pluralsight Course
 toc: true

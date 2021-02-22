@@ -8,7 +8,7 @@ categories:
   - Webpack
 tags:
   - node
-  - Typescript
+  - typescript
   - webpack
 description: >-
   Welcome to step by step hands-on guide to setup webpack in your upcoming

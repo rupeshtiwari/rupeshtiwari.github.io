@@ -8,11 +8,11 @@ categories:
   - angular
   - Decorator Design Pattern
   - javascript
-  - Typescript
+  - typescript
 tags:
   - angular
   - Decorator
-  - Typescript
+  - typescript
 description:
   "\n\t\t\t\tDecorators in Typescript and Angular. Decorator is a concept in
   Typescript that can be used to annotate a class or it's members. Decorator

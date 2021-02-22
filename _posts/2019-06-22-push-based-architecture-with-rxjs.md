@@ -5,14 +5,14 @@ published: true
 comments: true
 social-share: true
 categories:
-  - RxJS
+  - rxjs
 tags:
   - A push-based architecture
   - Managing State Using RxJS Subjects
   - Pull vs. Push
   - push based architecture
   - push based architecture with rxjs
-  - RxJS
+  - rxjs
   - "RxJS: Managing Operator State"
   - state management in angular rxjs
   - state management rxjs

@@ -6,10 +6,10 @@ comments: true
 social-share: true
 categories:
   - Marble Diagrams
-  - RxJS
+  - rxjs
 tags:
   - Marble Diagrams
-  - RxJS
+  - rxjs
 description:
   "RxJS Marble Diagrams are made to visualize the values emitted from the RxJS
   Observable over timeline.Hi in this article I will explain why we need marble

@@ -5,8 +5,8 @@ published: true
 comments: true
 social-share: true
 categories:
-  - RxJS
-  - Typescript
+  - rxjs
+  - typescript
 tags:
   - BehaviorSubject
   - filter

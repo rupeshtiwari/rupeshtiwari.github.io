@@ -9,7 +9,7 @@ categories:
   - javascript
   - MEAN
   - NodeJS
-  - Typescript
+  - typescript
   - Webpack
 tags:
   - express

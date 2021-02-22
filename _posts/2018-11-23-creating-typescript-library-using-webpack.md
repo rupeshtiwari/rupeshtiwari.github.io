@@ -6,11 +6,11 @@ comments: true
 social-share: true
 categories:
   - javascript
-  - Typescript
+  - typescript
   - Webpack
 tags:
   - npm
-  - Typescript
+  - typescript
   - webpack
 description:
   "\n\t\t\t\tIn this article we will see how can you create your own typescript
