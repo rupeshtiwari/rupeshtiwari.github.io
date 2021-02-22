@@ -8,18 +8,18 @@ categories:
   - CSS
   - Express.JS
   - HTML
-  - JavaScript
-  - jQuery
-  - Node.js
+  - javascript
+  - jquery
+  - node
   - Webpack
 tags:
   - bootstrap
   - css
   - heroku
   - html
-  - JavaScript
-  - JQuery
-  - Node.js
+  - javascript
+  - jquery
+  - node
 
 description: >-
   Build your own JavaScript Event Based Web application from scratch and deploy

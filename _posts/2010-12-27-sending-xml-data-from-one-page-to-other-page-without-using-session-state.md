@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - ASP.Net
-  - jQuery
+  - dotnet
+  - jquery
 tags:
-  - Asp.Net
-  - JavaScript
-  - JQuery
+  - dotnet
+  - javascript
+  - jquery
 description:
   Sending xml data from one page to other page without using session state
 toc: true

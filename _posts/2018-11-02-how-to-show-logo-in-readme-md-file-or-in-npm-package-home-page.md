@@ -5,10 +5,10 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScript
+  - javascript
 tags:
-  - JavaScript
-  - node.js
+  - javascript
+  - node
 description: How to Show Logo in ReadMe.Md file or in npm Package Home Page
 toc: true
 related: true

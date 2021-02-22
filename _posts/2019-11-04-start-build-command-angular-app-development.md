@@ -1,13 +1,13 @@
 ---
-title: Start & Build Command - Angular app development
+title: Start & Build Command - angular app development
 date: 2019-11-04T11:00:16.000Z
 published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
 tags:
-  - Angular
+  - angular
 toc: true
 related: true
 share: true

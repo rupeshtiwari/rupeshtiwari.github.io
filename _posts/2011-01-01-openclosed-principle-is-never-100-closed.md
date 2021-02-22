@@ -5,9 +5,9 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Design Patterns
+  - designpatterns
 tags:
-  - Design Pattern
+  - designpattern
   - Object-oriented programming
   - Open/closed principle
 description: Open/Closed principle is never 100% closed

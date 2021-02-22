@@ -5,14 +5,14 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
-  - JavaScript
+  - angular
+  - javascript
   - npm
 tags:
-  - Angular
+  - angular
   - GhPages
   - GitHub
-  - JavaScript
+  - javascript
   - Typescript
 description: Integrate GitHub-Pages in Angular 6 App
 toc: true

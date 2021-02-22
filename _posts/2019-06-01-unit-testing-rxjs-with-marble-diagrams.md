@@ -7,7 +7,7 @@ social-share: true
 categories:
   - RxJS
 tags:
-  - Angular
+  - angular
 description: >-
   Marble diagrams enables you to understand the behavior of RxJS observables and
   operators visually. It also helps to write unit test for asynchronous code in

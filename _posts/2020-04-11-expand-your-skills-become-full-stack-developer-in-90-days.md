@@ -6,11 +6,11 @@ comments: true
 social-share: true
 categories: []
 tags:
-  - Angular
+  - angular
   - Express
   - full stack master
   - mongodb
-  - Node.js
+  - node
   - software
 description: >-
   Enroll now as Full Stack Master is giving a special discounted price monthly

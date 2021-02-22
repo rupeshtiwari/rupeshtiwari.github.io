@@ -5,9 +5,9 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScript
+  - javascript
 tags:
-  - JavaScript
+  - javascript
   - npm
 description:
   "\n\t\t\t\tWhat is a Barrel, Why Should I use Barrel, How to Create a Barrel,

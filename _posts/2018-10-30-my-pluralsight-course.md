@@ -8,7 +8,7 @@ categories:
   - Authoring
   - Pluralsight
 tags:
-  - Angular
+  - angular
   - Jasmine Test
   - Marble Diagram
   - RxJS

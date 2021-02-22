@@ -8,8 +8,8 @@ categories:
   - Cloud
 tags:
   - heroku
-  - JavaScript
-  - Node.js
+  - javascript
+  - node
 description:
   "Heroku is a cloud platform that lets you to build, deliver, monitor and scal
   application. Heroku is Platform as Service (PaaS) artitecture. In this article

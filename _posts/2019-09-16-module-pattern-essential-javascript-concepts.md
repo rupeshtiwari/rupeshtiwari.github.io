@@ -5,9 +5,9 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScript
+  - javascript
 tags:
-  - JavaScript
+  - javascript
 toc: true
 related: true
 share: true

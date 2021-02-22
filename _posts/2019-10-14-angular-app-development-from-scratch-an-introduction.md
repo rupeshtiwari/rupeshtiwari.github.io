@@ -5,9 +5,9 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
 tags:
-  - Angular
+  - angular
   - Express
   - mongodb
 toc: true

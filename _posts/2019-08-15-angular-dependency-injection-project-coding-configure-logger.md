@@ -1,15 +1,15 @@
 ---
-title: Configure Logger - Angular Dependency Injection Project coding
+title: Configure Logger - angular Dependency Injection Project coding
 date: 2019-08-15T10:00:29.000Z
 published: true
 comments: true
 social-share: true
 categories:
-  - Angular
-  - Dependency Injection
+  - angular
+  - dependencyinjection
 tags:
-  - Angular
-  - Dependency Injection
+  - angular
+  - dependencyinjection
 toc: true
 related: true
 share: true

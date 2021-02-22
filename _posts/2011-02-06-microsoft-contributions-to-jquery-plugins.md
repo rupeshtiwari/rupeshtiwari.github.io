@@ -5,11 +5,13 @@ published: true
 comments: true
 social-share: true
 categories:
-  - ASP.Net
-  - jQuery
+  - dotnet
+  - jquery
 tags:
-  - JQuery
-  - jquery plugin
+  - jquery
+  - plugin 
+  - beginners 
+  - javascript
 description: Microsoft contributions to jQuery Plugins
 toc: true
 related: true

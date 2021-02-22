@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
   - Decorator Design Pattern
-  - JavaScript
+  - javascript
   - Typescript
 tags:
-  - Angular
+  - angular
   - Decorator
   - Typescript
 description:

@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
-  - AngularJS
+  - angular
+  - angularJS
   - MEAN
   - UI Decomposition
 tags:
-  - Angular
+  - angular
   - angular architecture
 description: >-
   How to define a highly scalable folder structure for your Angular project.

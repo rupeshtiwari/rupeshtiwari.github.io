@@ -5,9 +5,9 @@ published: true
 comments: true
 social-share: true
 categories:
-  - jQuery
+  - jquery
 tags:
-  - JQuery
+  - jquery
 description: Creating Custom jQuery Widget
 toc: true
 related: true

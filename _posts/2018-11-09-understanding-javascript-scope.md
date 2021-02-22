@@ -5,9 +5,9 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScript
+  - javascript
 tags:
-  - JavaScript
+  - javascript
   - scope
 description:
   "\n\t\t\t\tJavaScript has 4 types of scopes. Global scope, Local scope,

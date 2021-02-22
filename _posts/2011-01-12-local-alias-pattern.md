@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Design Patterns
-  - JavaScript
+  - designpatterns
+  - javascript
 tags:
   - C#
-  - Design Pattern
-  - JavaScript
+  - designpattern
+  - javascript
 description: Local Alias pattern
 toc: true
 related: true

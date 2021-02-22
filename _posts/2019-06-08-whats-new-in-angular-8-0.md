@@ -5,7 +5,7 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
 tags:
   - angular 8
 toc: true

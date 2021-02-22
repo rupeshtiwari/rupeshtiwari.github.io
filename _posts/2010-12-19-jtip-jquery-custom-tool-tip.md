@@ -5,13 +5,13 @@ published: true
 comments: true
 social-share: true
 categories:
-  - ASP.Net
-  - JavaScript
-  - jQuery
+  - dotnet
+  - javascript
+  - jquery
 tags:
-  - Asp.Net
-  - JavaScript
-  - JQuery
+  - dotnet
+  - javascript
+  - jquery
   - Tooltip
 description: jQuery Custom Tool Tip
 toc: true

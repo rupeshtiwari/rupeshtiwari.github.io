@@ -6,7 +6,7 @@ comments: true
 social-share: true
 categories: []
 tags:
-  - Angular
+  - angular
   - fullstack
     - mean.js
   - beginners

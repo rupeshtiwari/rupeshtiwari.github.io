@@ -5,10 +5,10 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Dependency Injection
+  - dependencyinjection
 tags:
-  - Angular
-  - Dependency Injection
+  - angular
+  - dependencyinjection
 toc: true
 related: true
 share: true

@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
-  - JavaScript
+  - angular
+  - javascript
 tags:
-  - Angular
+  - angular
   - beginners
-  - JavaScript
+  - javascript
 toc: true
 related: true
 share: true

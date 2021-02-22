@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Dependency Injection
-  - Design Patterns
-  - JavaScript
+  - dependencyinjection
+  - designpatterns
+  - javascript
   - React
 tags:
-  - Dependency Injection
+  - dependencyinjection
   - Ract DOM
   - react
 description:

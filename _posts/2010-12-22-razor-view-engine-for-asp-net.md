@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - ASP.Net
-  - Asp.Net MVC
+  - dotnet
+  - dotnet MVC
 tags:
-  - Asp.Net
-  - ASP.NET MVC Framework
+  - dotnet
+  - dotnet MVC Framework
   - Microsoft
   - MVC3
 description: ASP.Net MVC 3 introduces Razor a new view engine

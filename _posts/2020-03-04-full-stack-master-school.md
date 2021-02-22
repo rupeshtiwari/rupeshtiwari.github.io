@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
   - Full Stack Master
   - MEAN
   - MEAN.js
 tags:
-  - Angular
+  - angular
   - fullstack master school
     - beginners
 toc: true

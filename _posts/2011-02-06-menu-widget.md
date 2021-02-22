@@ -5,10 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - jQuery
+  - jquery
 tags:
-  - JQuery
-  - jquery plugin
+  - jquery
+  - plugin 
+  - beginners 
+  - javascript
 description: Menu Widget in jQuery
 toc: true
 related: true

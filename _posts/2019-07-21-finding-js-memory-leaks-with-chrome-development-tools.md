@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScript
+  - javascript
 tags:
   - fixing memory issue
   - heap
-  - JavaScript
+  - javascript
   - beginners
 toc: true
 related: true

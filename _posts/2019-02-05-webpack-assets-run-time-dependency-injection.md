@@ -5,10 +5,10 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScript
+  - javascript
   - Webpack
 tags:
-  - JavaScript
+  - javascript
   - webpack
 description: "\n\t\t\t\tHow to pass public path to webpack assets bundle. \t\t"
 toc: true

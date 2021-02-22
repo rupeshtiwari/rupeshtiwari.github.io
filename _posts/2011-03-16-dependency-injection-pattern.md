@@ -5,7 +5,7 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Design Patterns
+  - designpatterns
 tags:
   - Abstract Factory Pattern
   - Inversion of Control

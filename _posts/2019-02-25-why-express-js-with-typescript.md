@@ -6,7 +6,7 @@ comments: true
 social-share: true
 categories:
   - Express.JS
-  - JavaScript
+  - javascript
   - MEAN
   - NodeJS
   - Typescript

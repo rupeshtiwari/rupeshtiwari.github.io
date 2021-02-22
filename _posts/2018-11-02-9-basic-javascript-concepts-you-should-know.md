@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - JavaScript
+  - javascript
 tags:
   - closure
   - hoisting
-  - JavaScript
+  - javascript
 description:
   "\n\t\t\t\tAlthough learning JavaScript deeply is highly appreciated. However,
   I believe there are below concepts that one good JavaScript developer must

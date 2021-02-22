@@ -5,7 +5,7 @@ published: true
 comments: true
 social-share: true
 categories:
-  - jQuery
+  - jquery
 tags:
   - jquery
   - beginners

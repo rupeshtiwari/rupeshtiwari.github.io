@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - AngularJS
-  - Dependency Injection
+  - angularJS
+  - dependencyinjection
 tags:
-  - Angular
-  - Dependency Injection
+  - angular
+  - dependencyinjection
 toc: true
 related: true
 share: true

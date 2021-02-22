@@ -5,13 +5,13 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
   - Express.JS
   - Full Stack Master
 tags:
-  - Angular
+  - angular
   - Express
-  - JavaScript
+  - javascript
   - beginners
 toc: true
 related: true

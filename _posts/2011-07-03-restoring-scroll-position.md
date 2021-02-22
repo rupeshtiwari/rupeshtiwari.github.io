@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - ASP.Net
-  - JavaScript
+  - dotnet
+  - javascript
 tags:
-  - Asp.Net
-  - JavaScript
+  - dotnet
+  - javascript
 description: Restoring Scroll Position in Html page
 toc: true
 related: true

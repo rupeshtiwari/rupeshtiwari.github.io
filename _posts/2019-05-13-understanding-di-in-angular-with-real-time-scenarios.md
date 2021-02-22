@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
-  - Dependency Injection
+  - angular
+  - dependencyinjection
 tags:
-  - Angular
-  - Dependency Injection
+  - angular
+  - dependencyinjection
 toc: true
 related: true
 share: true
@@ -21,5 +21,5 @@ author_profile: true
 - Injecting Substitute class<br />
 - Injecting Liked objects<br />
 - By Replacing a class<br />
-In our tutorial video <a href="https://www.youtube.com/watch?v=UKBknWuXD3A" target="_blank" rel="noopener noreferrer"><strong>0008-5- Angular: Dependency Injection Scenarios</strong></a>, we have explained Angular Dependency Injection capabilities with real time scenarios. This video also helps you to build up your mindset as per Interviewer perspective. It helps you to answer important interview questions related to Angular DI concepts like Why Dependency Injection is required, how it works, where it fits in and what are its benefits in Angular. Knowledge of DI in Angular makes you more confident and competitive in app building. It gives you more maturity in understanding and providing solution for complex user cases. It makes code easy to follow, easier to write and extension of applications become simple &amp; easy.</p>
+In our tutorial video <a href="https://www.youtube.com/watch?v=UKBknWuXD3A" target="_blank" rel="noopener noreferrer"><strong>0008-5- angular: Dependency Injection Scenarios</strong></a>, we have explained Angular Dependency Injection capabilities with real time scenarios. This video also helps you to build up your mindset as per Interviewer perspective. It helps you to answer important interview questions related to Angular DI concepts like Why Dependency Injection is required, how it works, where it fits in and what are its benefits in Angular. Knowledge of DI in Angular makes you more confident and competitive in app building. It gives you more maturity in understanding and providing solution for complex user cases. It makes code easy to follow, easier to write and extension of applications become simple &amp; easy.</p>
 <p><iframe width="790" height="350" src="https://www.youtube.com/embed/UKBknWuXD3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>

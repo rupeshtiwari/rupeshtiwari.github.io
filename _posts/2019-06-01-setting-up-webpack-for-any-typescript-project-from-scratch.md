@@ -7,7 +7,7 @@ social-share: true
 categories:
   - Webpack
 tags:
-  - Node.js
+  - node
   - Typescript
   - webpack
 description: >-

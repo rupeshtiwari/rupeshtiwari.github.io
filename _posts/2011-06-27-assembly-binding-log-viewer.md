@@ -5,10 +5,10 @@ published: true
 comments: true
 social-share: true
 categories:
-  - ASP.Net
+  - dotnet
 tags:
   - .NET assembly
-  - Asp.Net
+  - dotnet
 description: Assembly Binding Log Viewer
 toc: true
 related: true

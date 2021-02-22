@@ -1,13 +1,13 @@
 ---
-title: Environment setup & Installation- Angular app development
+title: Environment setup & Installation- angular app development
 date: 2019-10-28T10:00:55.000Z
 published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
 tags:
-  - Angular
+  - angular
 toc: true
 related: true
 share: true

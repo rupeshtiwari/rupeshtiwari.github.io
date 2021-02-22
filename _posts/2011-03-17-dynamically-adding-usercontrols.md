@@ -5,7 +5,7 @@ published: true
 comments: true
 social-share: true
 categories:
-  - ASP.Net
+  - dotnet
   - C#
 tags:
   - Dynamic UserControl

@@ -7,7 +7,7 @@ social-share: true
 categories:
   - JavaScriipt
 tags:
-  - JavaScript
+  - javascript
 toc: true
 related: true
 share: true

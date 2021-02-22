@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Design Patterns
+  - designpatterns
   - JavaScriipt
 tags:
-  - Design Pattern
-  - JavaScript
+  - designpattern
+  - javascript
   - Object-oriented programming
 description: JavaScript Module Pattern
 toc: true

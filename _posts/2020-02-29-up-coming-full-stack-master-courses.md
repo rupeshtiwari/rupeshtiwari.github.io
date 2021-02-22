@@ -5,11 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
   - Full Stack Master
   - MEAN.js
 tags:
-  - Angular
+  - angular
   - mean.js
 description: |-
   JavaScript future courses on full stack master school: 

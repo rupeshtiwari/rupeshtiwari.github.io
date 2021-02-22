@@ -5,12 +5,12 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Angular
+  - angular
   - Full Stack Master
-  - JavaScript
+  - javascript
 tags:
-  - Angular
-  - JavaScript
+  - angular
+  - javascript
 toc: true
 related: true
 share: true
