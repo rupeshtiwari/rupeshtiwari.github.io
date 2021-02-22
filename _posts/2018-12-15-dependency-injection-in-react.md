@@ -8,11 +8,12 @@ categories:
   - dependencyinjection
   - designpatterns
   - javascript
-  - React
+  - react
 tags:
   - dependencyinjection
-  - Ract DOM
   - react
+  - webdev
+  - beginners
 description:
   "In Software Engineering Dependency Injection is a technique where one object
   injects or passes the dependency object to other object at run time.According

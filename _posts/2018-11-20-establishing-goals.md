@@ -5,12 +5,14 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Communication
-  - Personal Development
+  - softskill
+  - carrier
+  
 tags:
-  - Communication
-  - goals
-  - Personal Developent
+  - carrier
+  - productivity
+  - webdev
+  - beginners
 description:
   "\n\t\t\t\tSort out your life goals. Write them up in a paper using pen. When
   you write goal on paper it becomes more concrete. You do not need to worry how

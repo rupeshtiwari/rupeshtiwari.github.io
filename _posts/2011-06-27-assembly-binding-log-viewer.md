@@ -7,8 +7,10 @@ social-share: true
 categories:
   - dotnet
 tags:
-  - .NET assembly
   - dotnet
+  - csharp
+  - webdev
+  - beginners
 description: Assembly Binding Log Viewer
 toc: true
 related: true
