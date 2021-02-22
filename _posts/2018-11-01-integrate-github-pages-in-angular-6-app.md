@@ -10,7 +10,6 @@ categories:
   - npm
 tags:
   - angular
-  - GhPages
   - github
   - javascript
   - typescript

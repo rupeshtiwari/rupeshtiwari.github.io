@@ -8,7 +8,10 @@ categories:
   - dotnet
   - csharp
 tags:
-  - Dynamic UserControl
+  - csharp
+  - dotnet
+  - begineers
+  - webdev
 description: Dynamically Adding UserControls in Asp Net
 toc: true
 related: true

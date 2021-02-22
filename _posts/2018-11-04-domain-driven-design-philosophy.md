@@ -5,16 +5,17 @@ published: true
 comments: true
 social-share: true
 categories:
-  - DDD
-  - system design
+  - ddd
 tags:
-  - Domain Driven Design ( DDD )
-  - System Design
+  - ddd
+  - architecture
+  - webdev
+  - beginners
 description:
-  "\n\t\t\t\tEric Even wrote Domain Driven Design (DDD) book. Eric says DDD is
+  "Eric Even wrote Domain Driven Design (DDD) book. Eric says DDD is
   the Philosophy of software design that helps projects dealing with complex
   problem. I have been practicing DDD from last 5 years and here I will try to
-  explain the philosophy of DDD here in this article.\_ Let's begin...\t\t"
+  explain the philosophy of DDD here in this article. Let's begin.."
 toc: true
 related: true
 share: true
