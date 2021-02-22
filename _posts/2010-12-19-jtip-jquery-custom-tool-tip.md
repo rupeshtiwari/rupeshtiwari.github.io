@@ -12,7 +12,7 @@ tags:
   - dotnet
   - javascript
   - jquery
-  - Tooltip
+  - beginners
 description: jQuery Custom Tool Tip
 toc: true
 related: true
