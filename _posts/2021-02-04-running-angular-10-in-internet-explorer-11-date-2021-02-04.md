@@ -3,6 +3,9 @@ title: Running Angular 10 in Internet Explorer 11
 date: "2021-02-04 00:00 +0000"
 subtitle: Learn supporting Internet Explorer in Angular
 description: Learn supporting Internet Explorer in Angular
+header: 
+  image: "https://i.imgur.com/FtOy5i6.png"
+  teaser: "https://i.imgur.com/7pgedpv.png"
 image: "https://i.imgur.com/FtOy5i6.png"
 cover_image: "https://i.imgur.com/FtOy5i6.png"
 thumbnail-img: "https://i.imgur.com/7pgedpv.png"

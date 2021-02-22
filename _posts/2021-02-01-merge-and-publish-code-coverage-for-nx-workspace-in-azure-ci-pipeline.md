@@ -4,6 +4,9 @@ title:
 subtitle: Showing Nx Monorepo code coverage report in azure ci pipeline
 description: Showing Nx Monorepo code coverage report in azure ci pipeline
 date: "2021-02-01 18:55 -0500"
+header: 
+  image: "https://i.imgur.com/6gxkEV3.png"
+  teaser: "https://i.imgur.com/cqwnG3N.png"
 image: "https://i.imgur.com/6gxkEV3.jpg"
 cover_image: "https://i.imgur.com/6gxkEV3.jpg"
 thumbnail-img: "https://i.imgur.com/cqwnG3N.jpg"

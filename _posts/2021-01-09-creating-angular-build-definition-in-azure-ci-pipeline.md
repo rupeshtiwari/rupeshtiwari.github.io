@@ -3,6 +3,9 @@ title: Creating Angular Build Definition in Azure CI Pipeline
 date: "2021-01-09 00:00 +0000"
 description: Learn creating Angular Build Azure CI Pipeline
 subtitle: Learn creating Angular Build Azure CI Pipeline
+header: 
+  image: "https://i.imgur.com/OCEHPk5.jpg"
+  teaser: https://i.imgur.com/vkmKw3A.jpg
 image: "https://i.imgur.com/OCEHPk5.jpg"
 cover_image: "https://i.imgur.com/OCEHPk5.jpg"
 thumbnail-img: "https://i.imgur.com/vkmKw3A.jpg"

@@ -4,6 +4,9 @@ date: "2021-01-20 00:00 +0000"
 subtitle: Learn how to protect Master branch of git repository in azure devops
 description:
   Learn how to protect Master branch of git repository in azure devops
+header: 
+  image: "https://i.imgur.com/S8uujlY.jpg"
+  teaser: https://i.imgur.com/fN6F867.jpg
 image: "https://i.imgur.com/S8uujlY.jpg"
 cover_image: "https://i.imgur.com/S8uujlY.jpg"
 thumbnail-img: "https://i.imgur.com/fN6F867.jpg"

@@ -1,6 +1,10 @@
 ---
 title: Adding Tag to GIT Branch in Azure CI Pipelines
 date: "2021-02-21 00:00 +0000"
+header:
+  teaser: https://i.imgur.com/ulkZsbK.png
+  image: https://i.imgur.com/FPNZHjY.png
+cover_image: 'https://i.imgur.com/FPNZHjY.png'
 toc: true
 related: true
 toc_sticky: true

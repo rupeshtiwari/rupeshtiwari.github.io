@@ -3,6 +3,9 @@ title: Scheduling Jekyll Post on GitHub Pages
 date: "2021-02-28 00:00 +0000"
 subtitle: Writing GitHub action to schedule Jekyll blog post publish
 description: Writing GitHub action to schedule Jekyll blog post publish
+header: 
+  image: "https://i.imgur.com/5nUUsN1.jpg"
+  teaser: https://i.imgur.com/RrLzSEP.jpg
 image: "https://i.imgur.com/5nUUsN1.png"
 cover_image: "https://i.imgur.com/5nUUsN1.png"
 thumbnail-img: "https://i.imgur.com/RrLzSEP.png"

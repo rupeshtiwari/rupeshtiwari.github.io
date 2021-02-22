@@ -5,6 +5,9 @@ subtitle:
   Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
 description:
   Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
+header: 
+  image: "https://i.imgur.com/WQ5z6KK.jpg"
+  teaser: https://i.imgur.com/3ysBPoZ.jpg
 image: "https://i.imgur.com/WQ5z6KK.png"
 cover_image: "https://i.imgur.com/WQ5z6KK.png"
 thumbnail-img: "https://i.imgur.com/3ysBPoZ.png"

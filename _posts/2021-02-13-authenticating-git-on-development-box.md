@@ -3,6 +3,9 @@ title: Authenticating GIT on Development Box
 date: "2021-02-13 00:00 +0000"
 subtitle: Learn how to login your company on premise git repo
 description: Learn how to login your company on premise git repo
+header: 
+  image: "https://i.imgur.com/HyaOzzF.jpg"
+  teaser: https://i.imgur.com/IspOKgj.jpg
 image: "https://i.imgur.com/HyaOzzF.png"
 cover_image: "https://i.imgur.com/HyaOzzF.png"
 thumbnail-img: "https://i.imgur.com/IspOKgj.png"

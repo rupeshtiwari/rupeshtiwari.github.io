@@ -5,6 +5,9 @@ subtitle:
   Learn creating multiple css files for cross browsers and os in angular app
 description:
   Learn creating multiple css files for cross browsers and os in angular app
+header: 
+  image: "https://i.imgur.com/Eiyywcv.png"
+  teaser: "https://i.imgur.com/knMB5bS.png"
 image: "https://i.imgur.com/Eiyywcv.png"
 cover_image: "https://i.imgur.com/Eiyywcv.png"
 thumbnail-img: "https://i.imgur.com/knMB5bS.png"

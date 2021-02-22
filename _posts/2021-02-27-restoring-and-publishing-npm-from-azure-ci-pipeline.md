@@ -7,6 +7,9 @@ subtitle: >-
 description: >-
   restoring and publishing scoped npm packages from azure pipeline to azure
   artifacts
+header: 
+  image: "https://i.imgur.com/MR0eU4y.jpg"
+  teaser: https://i.imgur.com/d12se9m.jpg
 image: "https://i.imgur.com/MR0eU4y.png"
 cover_image: "https://i.imgur.com/MR0eU4y.png"
 thumbnail-img: "https://i.imgur.com/d12se9m.png"

@@ -3,6 +3,9 @@ title: Publishing Code Coverage in Azure CI Pipeline
 date: "2021-03-07 00:00 +0000"
 subtitle: Learn how to show Angular Code Coverage Report in Azure CI Pipeline
 description: Learn how to show Angular Code Coverage Report in Azure CI Pipeline
+header: 
+  image: "https://i.imgur.com/oaeFs3U.jpg"
+  teaser: https://i.imgur.com/lF87q1A.jpg
 image: "https://i.imgur.com/oaeFs3U.png"
 cover_image: "https://i.imgur.com/oaeFs3U.png"
 thumbnail-img: "https://i.imgur.com/lF87q1A.png"
