@@ -7,11 +7,10 @@ social-share: true
 categories:
   - designpatterns
 tags:
-  - Abstract Factory Pattern
-  - Inversion of Control
-  - Loose coupling
-  - Separation of concerns
-  - Unit Testing
+  - webdev
+  - beginners
+  - tutorial
+  - oop
 description: Dependency Injection Patterns
 toc: true
 related: true

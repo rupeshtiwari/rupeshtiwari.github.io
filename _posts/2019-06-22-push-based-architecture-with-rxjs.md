@@ -7,15 +7,10 @@ social-share: true
 categories:
   - rxjs
 tags:
-  - A push-based architecture
-  - Managing State Using RxJS Subjects
-  - Pull vs. Push
-  - push based architecture
-  - push based architecture with rxjs
   - rxjs
-  - "RxJS: Managing Operator State"
-  - state management in angular rxjs
-  - state management rxjs
+  - javascript
+  - beginners
+  - tutorial
 description: >-
   There are 2 types of architectures one is Pull Based the second one is Push
   Based. I will explain you how can we leverage RxJS BehaviorSubject to

@@ -8,7 +8,7 @@ categories:
   - designpatterns
   - javascript
 tags:
-  - C#
+  - csharp
   - designpattern
   - javascript
 description: Local Alias pattern

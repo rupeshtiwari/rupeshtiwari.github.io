@@ -6,7 +6,7 @@ comments: true
 social-share: true
 categories:
   - dotnet
-  - C#
+  - csharp
 tags:
   - Dynamic UserControl
 description: Dynamically Adding UserControls in Asp Net
