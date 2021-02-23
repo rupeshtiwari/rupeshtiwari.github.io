@@ -135,3 +135,11 @@ comments:
   provider: "disqus"
   disqus:
     shortname: "https-rupeshtiwari-github-io-1"
+
+analytics: 
+  provider: "google-gtag" 
+  google:     
+    tracking_id: "UA-128916623-7"   
+    anonymize_ip: false # default
+
+
