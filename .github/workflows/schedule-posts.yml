@@ -3,7 +3,7 @@ on:
   schedule:
    - cron: '0 9 * * *' # Run at the end of every day.
 jobs:
-  dailyBuild:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: curl
