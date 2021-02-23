@@ -5,7 +5,10 @@ subtitle:
   Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
 description:
   Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
-image: "https://i.imgur.com/YJnJNSe.jpg"
+header: 
+  image: "https://i.imgur.com/YJnJNSe.jpg"
+  teaser:  "https://i.imgur.com/YJnJNSe.jpg"
+  og_image: "https://i.imgur.com/YJnJNSe.jpg"
 cover_image: "https://i.imgur.com/YJnJNSe.jpg"
 thumbnail-img: "https://i.imgur.com/YJnJNSe.jpg"
 share-img: "https://i.imgur.com/YJnJNSe.jpg"
