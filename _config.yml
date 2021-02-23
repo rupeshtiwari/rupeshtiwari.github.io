@@ -142,6 +142,7 @@ analytics:
     tracking_id: "UA-128916623-7"   
     anonymize_ip: false # default
 
+bing_site_verification: 8BC08291167B3E15CC4FCC21C5895052    
 
 ## Personal Configs
 jekyll_compose:
