@@ -1,7 +1,7 @@
 name: Build every day
 on:
   schedule:
-   - cron: '0 9 * * *' # Run at the end of every day.
+   - cron: '15 6 * * *' # 6:15 AM (UTC) every day.
 jobs:
   build:
     runs-on: ubuntu-latest
