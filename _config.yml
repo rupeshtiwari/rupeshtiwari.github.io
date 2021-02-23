@@ -20,7 +20,7 @@ description: >-
   Become a full stack web developer and learn the most in-demand programming languages and technique with Rupesh Tiwari
 twitter_username: rupeshtiwari_co
 github_username: rupeshtiwari
-minimal_mistakes_skin: sunrise
+minimal_mistakes_skin: default
 masthead_title: "Sr. Software Architect"
 baseurl: ""
 search: true
@@ -143,3 +143,26 @@ analytics:
     anonymize_ip: false # default
 
 
+## Personal Configs
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    posts:
+      layout: posts
+      description:
+      author_profile: true
+      published: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      header:
+        image:
+        teaser: 
+        og_image: 
+      category:
+      tags:
+      
+future: false # Schedule posts
