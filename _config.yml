@@ -86,21 +86,21 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "http://twitter.com/rupeshtiwari_co"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "http://github.com/rupeshtiwari"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/rupeshtiwari.co/"
-    - label: "Fullstack Master"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/fullstackmaster1"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rupesh-tiwari"
+    - label: "Build Angular App MEAN Stack"
+      icon: "fab fa-angular"
+      url: "https://fullstackmaster.net/course/3/mastering-meanjs"
+    - label: "ELITE Angular Training"
+      icon: "fas fa-crown"
+      url: "https://www.fullstackmaster.net/elite"
+    - label: "PRO Angular Training"
       icon: "fas fa-graduation-cap"
-      url: "https://www.fullstackmaster.net"
-    - label: "YouTube"
-      icon: "fab fa-youtube-square"
-      url: "https://www.youtube.com/fullstackmaster"
+      url: "https://www.fullstackmaster.net/pro"
 
 defaults:
   # _posts
