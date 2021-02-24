@@ -24,6 +24,7 @@ minimal_mistakes_skin: default
 masthead_title: "Rupeshtiwari.com"
 baseurl: ""
 logo: "/assets/images/logo.png"
+og_image: "/assets/images/bio-photo.jpg"
 search: true
 repository: "rupeshtiwari/rupeshtiwari.github.io"
 # Build settings
