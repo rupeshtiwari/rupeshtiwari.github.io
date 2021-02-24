@@ -146,6 +146,10 @@ analytics:
 
 bing_site_verification: 8BC08291167B3E15CC4FCC21C5895052    
 
+# Social Sharing
+twitter:
+  username               : rupeshtiwari_co
+
 ## Personal Configs
 jekyll_compose:
   auto_open: true
