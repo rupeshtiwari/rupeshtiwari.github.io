@@ -3,6 +3,7 @@ layout: posts
 title: "Azure DevOps Server 2020 Do's & Don't"
 date: 2021-03-12 00:00 +0000
 description: "Guidelines for on-premise Azure DevOp's Server"
+canonical_url: https://rupeshtiwari.com/devops/azure-devops-server-2020-dos-dont/
 author_profile: true
 published: true
 read_time: true

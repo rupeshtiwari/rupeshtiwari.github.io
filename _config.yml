@@ -21,7 +21,7 @@ description: >-
 twitter_username: rupeshtiwari_co
 github_username: rupeshtiwari
 minimal_mistakes_skin: default
-masthead_title: "Sr. Software Architect"
+masthead_title: "RupeshTiwari.com"
 baseurl: ""
 logo: "/assets/images/logo.png"
 search: true
@@ -62,7 +62,7 @@ plugins:
 author:
   name: "Rupesh Tiwari"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Hi, I am Sr. Software/Solution Architect, Professional Trainer & Pluralsight Author. I help students and professionals to become Full Stack Software Developer in less than a year!"
+  bio: "Sr Software Architect and Software Trainer. I help students and professionals to become Full Stack Software Developer in less than a year!"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -152,6 +152,7 @@ jekyll_compose:
     posts:
       layout: posts
       description:
+      canonical_url: 
       author_profile: true
       published: true
       read_time: true
