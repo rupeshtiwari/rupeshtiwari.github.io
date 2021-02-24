@@ -23,6 +23,7 @@ github_username: rupeshtiwari
 minimal_mistakes_skin: default
 masthead_title: "Sr. Software Architect"
 baseurl: ""
+logo: "/assets/images/logo.png"
 search: true
 repository: "rupeshtiwari/rupeshtiwari.github.io"
 # Build settings
