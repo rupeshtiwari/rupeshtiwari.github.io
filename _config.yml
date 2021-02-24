@@ -21,7 +21,7 @@ description: >-
 twitter_username: rupeshtiwari_co
 github_username: rupeshtiwari
 minimal_mistakes_skin: default
-masthead_title: "RupeshTiwari.com"
+masthead_title: "Rupeshtiwari.com"
 baseurl: ""
 logo: "/assets/images/logo.png"
 search: true
@@ -152,7 +152,6 @@ jekyll_compose:
     posts:
       layout: posts
       description:
-      canonical_url: 
       author_profile: true
       published: true
       read_time: true
