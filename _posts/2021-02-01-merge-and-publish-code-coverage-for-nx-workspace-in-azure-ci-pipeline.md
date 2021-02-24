@@ -18,7 +18,7 @@ tags:
   - beginners
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-01-merge-and-publish-code-coverage-for-nx-workspace-in-azure-ci-pipeline/
-last_modified_at: "2021-02-01 18:55 -0500"
+last_modified_at: "2021-02-24 18:55 -0500"
 published: true
 sitemap: true
 comments: true
@@ -84,6 +84,13 @@ package is a Utility to merge multiple cobertura xml files into one. I will use
 this npm package to merge my all code-coverage files.
 
 ![](https://i.imgur.com/Huz8YLq.png)
+
+
+In case **cobertura-merge** is failing to install or failing to run and you are in windows machine then run below script:
+
+```
+npm --add-python-to-path='true' --debug install --global windows-build-tools
+```
 
 ## Installing Glob npm package
 
