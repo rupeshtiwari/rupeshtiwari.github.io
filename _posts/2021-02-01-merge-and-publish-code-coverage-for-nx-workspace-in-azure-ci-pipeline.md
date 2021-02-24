@@ -7,6 +7,7 @@ date: "2021-02-01 18:55 -0500"
 header: 
   image: "https://i.imgur.com/6gxkEV3.png"
   teaser: "https://i.imgur.com/cqwnG3N.png"
+  og_image: "https://i.imgur.com/cqwnG3N.png"
 image: "https://i.imgur.com/6gxkEV3.jpg"
 cover_image: "https://i.imgur.com/6gxkEV3.jpg"
 thumbnail-img: "https://i.imgur.com/cqwnG3N.jpg"
@@ -14,8 +15,10 @@ share-img: "https://i.imgur.com/cqwnG3N.jpg"
 tags:
   - devops
   - nx
-  - tutorial
+  - angular
   - beginners
+category: 
+  - devops
 canonical_url: >-
   https://rupeshtiwari.github.io/2021-02-01-merge-and-publish-code-coverage-for-nx-workspace-in-azure-ci-pipeline/
 last_modified_at: "2021-02-24 18:55 -0500"
