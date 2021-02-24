@@ -1,8 +1,10 @@
 main:
   - title: "Angular Training"
     url: /angular-training/
+  - title: "Consulting"
+    url: /consulting/
   - title: "Blog"
-    url: /posts/
+    url: /blog/
   - title: "About"
     url: /about/
   - title: "Tags"

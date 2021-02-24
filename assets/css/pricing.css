@@ -30,7 +30,8 @@
 .price li {
     border-bottom: 1px solid #a1a1a1;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    margin: 0; padding: 0;
 }
 
 .price li:last-child { border-bottom: none; }
