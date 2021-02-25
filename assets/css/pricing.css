@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+
 .pricing {
     box-sizing: border-box;
 }
@@ -10,46 +12,69 @@
 
 .price {
     list-style-type: none;
-    border: 1px solid #1f1f1f;
+    border: 1px solid #b8b7b7;
     margin: 0;
     padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
 }
 
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(208, 245, 76, 0.705)
+    box-shadow: 0 8px 12px 0 rgb(119, 117, 117)
 }
 
 .price .header {
     background-color: #0392ca;
     color: white;
-    font-size: 25px;
+    font-size: 2em;
+    font-weight: 50;
+    height: 90px;
+    padding: 10;
+    margin:0 auto;
+    text-align: center;
 }
 
-.price li {
-    border-bottom: 1px solid #a1a1a1;
+.price .row {
+    border-bottom: 0.2px solid #e6e3e3;
     padding: 20px;
     text-align: left;
-    margin: 0; padding: 0;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 16px;
+    cursor: pointer;
+
 }
 
-.price li:last-child { border-bottom: none; }
-
-.price .grey {
-    background-color: #eee;
-    font-size: 20px;
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
+.price .row span {
+    color: royalblue;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: 50;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 875ms ease;
     text-decoration: none;
-    font-size: 18px;
 }
+
+.price .row span:hover {
+    background-position: 0 100%;
+}
+
+.price .footer {
+    font-size: 20px;
+    text-align: center;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     .columns {

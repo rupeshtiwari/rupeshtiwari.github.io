@@ -1,6 +1,10 @@
 ---
 permalink: /consulting/
 title: "Architect Hotline"
+read_time: true
+comments: true
+share: true
+related: true
 header:
   image: "https://i.imgur.com/6Mugloc.png"
 ---
