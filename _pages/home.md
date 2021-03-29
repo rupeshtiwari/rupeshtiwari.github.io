@@ -3,6 +3,7 @@ permalink: /
 hidden: true
 classes: wide
 ---
+
    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -18,7 +19,7 @@ classes: wide
 
 <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>Rupesh Tiwari</h1>
@@ -67,42 +68,28 @@ classes: wide
   <main id="main">
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="section-title">
           <h2>About Me</h2>
-          <p class="subtitle">  Rupesh provides a variety of resources such as visual courses and training materials. So far Rupesh has
-            physically trained more than a thousand students, a couple of thousands online, and revel in a 95% repeat
-            hire rate. </p>
+          <p class="subtitle">Rupesh provides a variety of resources such as visual courses and training materials. So far Rupesh has physically trained more than a thousand students, a couple of thousands online, and revel in a 95% repeat hire rate. </p>
         </div>
         <div class="row content">
           <div class="col-lg-6">
-            <p>
-              Rupesh brings something new to the world of web solution technologies, rather than mediocre agile
-              methodologies,
-              he brings transforming risk mitigation and project management skills and training on another comprehensive
-              level.
-              Rupesh is also a successful PluralSight Author, professionally Rupesh is an expert at AngularJs, Express,
-              Node.JS,
-              Object Oriented design but with a particular focus on MEAN stack and Asp.Net.
+            <p class="about-description">
+              Rupesh brings something new to the world of web solution technologies, rather than mediocre agile methodologies. He brings transforming risk mitigation and project management skills and training on another comprehensive level. Rupesh is also a successful PluralSight Author, professionally Rupesh is an expert at Angular, Express,
+              Node.JS, Object Oriented Design but with a particular focus on Service Oriented Architecture, DDD, MEAN stack and Asp.Net.
             </p>
-            <p>
-              Full stack development job opportunities are increasing from 135,000 to 853,000. Teach yourself the coding
-              skills you need to
-              become a JavaScript <br>full stack developer in less than a year & get handsome pay packages from your
-              dream
-              companies. Learn to design
+            <p class="about-description">
+              Full stack development job opportunities are increasing from 135,000 to 853,000. Teach yourself the coding sills you need to become a JavaScript <br>full stack developer in less than a year & get handsome pay packages from your dream companies. Learn to design
               and develop powerful modern web applications that form the foundation for apps, websites and more.
             </p>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
+            <p class="about-description">
               In recent times, Rupesh engages closely with the development team to determine
               the best technical implementation methods for a product feature, as well as a reasonable
               schedule of execution. Rupesh Tiwari has been making educational YouTube tutorial videos.
-              With over 120 videos on his YouTube channel and about a hundred subscribers (and counting),
-              his YouTube channel has garnered increasing views from Front End Website Solutions Technologies
-              enthusiasts and development teams. New videos are released every Tuesdays and Thursdays of each new week.
-              His interest prompted him to participate in many GitHub open source projects.
+              With over 200+ videos on his YouTube channel and about a thousands subscribers (and counting), his YouTube channel has garnered increasing views from Front End Website Solutions Technologies enthusiasts and development teams. New videos are released every Tuesdays and Thursdays of each new week. His interest prompted him to participate in many GitHub open source projects.
             </p>
             <a href="https://fullstackmaster.net/pro" class="btn-learn-more">Subscribe Course</a>
           </div>
@@ -115,7 +102,7 @@ classes: wide
         <div class="row justify-content-end">
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-toggle="counter-up">100</span>
+              <span data-toggle="counter-up">200</span>
               <p>Happy Online Students</p>
             </div>
           </div>
@@ -133,7 +120,7 @@ classes: wide
           </div>
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-toggle="counter-up">50</span>
+              <span data-toggle="counter-up">60</span>
               <p>Happy Offline Students</p>
             </div>
           </div>
@@ -152,9 +139,7 @@ classes: wide
           <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3>Training Principles</h3>
             <p class="font-italic">
-              Enroll now as Full Stack Master is giving a special discounted price monthly $29 only to access all
-              premium
-              javascript courses and future upcoming courses on JavaScript foundation, ngRX and much more.
+              Enroll now as Full Stack Master is giving a special discounted price monthly $29 only to access all premium javascript courses and future upcoming courses on JavaScript foundation, ngRX and much more.
             </p>
             <ul>
               <li><i class="bx bx-check-double"></i> Informative</li>
@@ -593,14 +578,13 @@ classes: wide
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Rupesh Tiwari</h3>
-            <h5>
-              USA, India <br>
-              <h6>
-                Become a software engineer. <a href="https://fullstackmaster.net/">Fullstack Master</a> is an innovative
-                software development school
-              </h6> <br>
+            <strong>
+              USA, India </strong>
+              <p>
+                Become a software developer. <a href="https://fullstackmaster.net/">Fullstack Master</a> is an innovative software development training school
+              </p> <br>
               <strong>Email:</strong> info@rupeshtiwari.com<br>
-            </h5>
+
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
