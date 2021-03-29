@@ -1,0 +1,22 @@
+main:
+  - title: "Blog"
+    url: /posts/
+  - title: "Subscribe"
+    url: /subscribe/
+  - title: "Consulting"
+    url: /consulting/
+  - title: "Angular Courses"
+    url: https://www.fullstackmaster.net
+  - title: "Sing in"
+    url: https://fullstackmaster.net/login
+  - title: "About"
+    url: /about/
+  - title: "Tags"
+    url: /tags/
+  - title: "Angular Training"
+    url: https://www.fullstackmaster.net/pro
+  - title: "Angular Live Training"
+    url: https://www.fullstackmaster.net/elite
+  - title: "Sign up"
+    url: https://fullstackmaster.net/register
+
