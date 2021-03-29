@@ -8,7 +8,7 @@ categories:
   - rxjs
 tags:
   - rxjs
-  - State Management
+  - statemanagement
 description: >-
   What are RxJS subjects and the benefits of using them. How to understand RxJS
   subjects such that you can apply it in your day to day coding at your own

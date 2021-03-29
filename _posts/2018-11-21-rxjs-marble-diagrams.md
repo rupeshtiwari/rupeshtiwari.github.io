@@ -5,10 +5,9 @@ published: true
 comments: true
 social-share: true
 categories:
-  - Marble Diagrams
   - rxjs
 tags:
-  - Marble Diagrams
+  - marblediagrams
   - rxjs
 description:
   "RxJS Marble Diagrams are made to visualize the values emitted from the RxJS

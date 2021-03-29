@@ -5,13 +5,11 @@ published: true
 comments: true
 social-share: true
 categories:
-  - angular
-  - Decorator Design Pattern
-  - javascript
   - typescript
 tags:
   - angular
-  - Decorator
+  - decorator
+  - beginners
   - typescript
 description:
   "\n\t\t\t\tDecorators in Typescript and Angular. Decorator is a concept in
