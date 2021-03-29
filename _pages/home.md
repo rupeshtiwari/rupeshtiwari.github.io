@@ -3,6 +3,7 @@ permalink: /
 hidden: true
 classes: wide
 ---
+
    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -18,7 +19,7 @@ classes: wide
 
 <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="30">
+    <div class="container position-relative" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>Rupesh Tiwari</h1>
@@ -28,7 +29,6 @@ classes: wide
       <div class="text-center">
         <a href="#about" class="btn-get-started scrollto">Read More</a>
       </div>
-
       <div class="row icon-boxes">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="60">
           <div class="icon-box">
@@ -38,7 +38,6 @@ classes: wide
               industry best practices from his 15 years of experiences.</p>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="90">
           <div class="icon-box">
             <div class="icon"><i class="ri-palette-line"></i></div>
@@ -47,7 +46,6 @@ classes: wide
               theoretical knowledge while working on practical projects.</p>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="120">
           <div class="icon-box">
             <div class="icon"><i class="ri-command-line"></i></div>
@@ -56,7 +54,6 @@ classes: wide
               JavaScript. Hence you will become a true full stack master.</p>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="150">
           <div class="icon-box">
             <div class="icon"><i class="ri-fingerprint-line"></i></div>
@@ -65,14 +62,10 @@ classes: wide
               with real world projects. Hence you get ready for your next technical interviews.</p>
           </div>
         </div>
-
       </div>
     </div>
-
   </section><!-- End Hero -->
-
   <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -82,7 +75,6 @@ classes: wide
             physically trained more than a thousand students, a couple of thousands online, and revel in a 95% repeat
             hire rate. </p>
         </div>
-
         <div class="row content">
           <div class="col-lg-6">
             <p>
@@ -116,61 +108,48 @@ classes: wide
             <a href="https://fullstackmaster.net/pro" class="btn-learn-more">Subscribe Course</a>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
-
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">
       <div class="container">
-
         <div class="row justify-content-end">
-
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <span data-toggle="counter-up">100</span>
               <p>Happy Online Students</p>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <span data-toggle="counter-up">50</span>
               <p>Projects</p>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <span data-toggle="counter-up">15</span>
               <p>Years of experience</p>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <span data-toggle="counter-up">50</span>
               <p>Happy Offline Students</p>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Counts Section -->
-
     <!-- ======= About Video Section ======= -->
     <section id="about-video" class="about-video">
       <div class="container" data-aos="fade-up">
-
         <div class="row">
-
           <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="30">
             <img src="assets/img/about-video.jpg" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=gzqDoHYO_xk" class="venobox play-btn mb-4" data-vbtype="video"
               data-autoplay="true"></a>
           </div>
-
           <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="30">
             <h3>Training Principles</h3>
             <p class="font-italic">
@@ -189,44 +168,32 @@ classes: wide
               To continuously avail students with detailed tutorials on pragmatic and tested web solutions.
             </p>
           </div>
-
         </div>
-
       </div>
     </section><!-- End About Video Section -->
-
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
           </div>
-
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
           </div>
-
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
           </div>
-
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
           </div>
-
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
           </div>
-
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
           </div>
-
         </div>
-
       </div>
     </section><!-- End Clients Section -->
 
