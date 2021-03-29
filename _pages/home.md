@@ -3,7 +3,6 @@ permalink: /
 hidden: true
 classes: wide
 ---
-
    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -19,7 +18,7 @@ classes: wide
 
 <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>Rupesh Tiwari</h1>
@@ -30,7 +29,7 @@ classes: wide
         <a href="#about" class="btn-get-started scrollto">Read More</a>
       </div>
       <div class="row icon-boxes">
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="60">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon"><i class="ri-stack-line"></i></div>
             <h4 class="title"><a>Full Stack Master</a></h4>
@@ -38,7 +37,7 @@ classes: wide
               industry best practices from his 15 years of experiences.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="90">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box">
             <div class="icon"><i class="ri-palette-line"></i></div>
             <h4 class="title"><a>Professional Training</a></h4>
@@ -46,7 +45,7 @@ classes: wide
               theoretical knowledge while working on practical projects.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="120">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
           <div class="icon-box">
             <div class="icon"><i class="ri-command-line"></i></div>
             <h4 class="title"><a>Deep Learning</a></h4>
@@ -54,7 +53,7 @@ classes: wide
               JavaScript. Hence you will become a true full stack master.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="150">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box">
             <div class="icon"><i class="ri-fingerprint-line"></i></div>
             <h4 class="title"><a>Prepare For Interview</a></h4>
@@ -145,12 +144,12 @@ classes: wide
     <section id="about-video" class="about-video">
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="30">
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/about-video.jpg" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=gzqDoHYO_xk" class="venobox play-btn mb-4" data-vbtype="video"
               data-autoplay="true"></a>
           </div>
-          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="30">
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3>Training Principles</h3>
             <p class="font-italic">
               Enroll now as Full Stack Master is giving a special discounted price monthly $29 only to access all
@@ -187,13 +186,17 @@ classes: wide
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
           </div>
+
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
           </div>
+
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="zoom-in">
             <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
           </div>
+
         </div>
+
       </div>
     </section><!-- End Clients Section -->
 
@@ -267,7 +270,7 @@ classes: wide
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -283,7 +286,7 @@ classes: wide
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="60">
+            data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +302,7 @@ classes: wide
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="90">
+            data-aos-delay="300">
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -314,7 +317,7 @@ classes: wide
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="30">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-yellow">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -329,7 +332,7 @@ classes: wide
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="60">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-red">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -344,7 +347,7 @@ classes: wide
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="90">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -396,7 +399,7 @@ classes: wide
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="90">
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-paid">
             <div class="portfolio-wrap">
@@ -483,7 +486,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="30">
+            <li data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
                 class="collapsed">Do you provide certification after your course completion? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
@@ -494,7 +497,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="60">
+            <li data-aos="fade-up" data-aos-delay="200">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
                 class="collapsed">Does your Pro Plan provides Live Q&A Session?<i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
@@ -507,7 +510,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="90">
+            <li data-aos="fade-up" data-aos-delay="300">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4"
                 class="collapsed">What time I can contact you for help? <i class="bx bx-chevron-down icon-show"></i><i
                   class="bx bx-chevron-up icon-close"></i></a>
@@ -519,7 +522,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="120">
+            <li data-aos="fade-up" data-aos-delay="400">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5"
                 class="collapsed">How to purchase your course? <i class="bx bx-chevron-down icon-show"></i><i
                   class="bx bx-chevron-up icon-close"></i></a>
