@@ -86,6 +86,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "http://github.com/rupeshtiwari"
+    - label: "Blogs"
+      icon: "fa fa-th-large"
+      url: "/posts/"
 
 footer:
   links:
