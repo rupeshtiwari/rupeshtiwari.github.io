@@ -8,19 +8,17 @@ classes: wide
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
 <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="30">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>Rupesh Tiwari</h1>
@@ -32,7 +30,7 @@ classes: wide
       </div>
 
       <div class="row icon-boxes">
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="60">
           <div class="icon-box">
             <div class="icon"><i class="ri-stack-line"></i></div>
             <h4 class="title"><a>Full Stack Master</a></h4>
@@ -41,7 +39,7 @@ classes: wide
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="90">
           <div class="icon-box">
             <div class="icon"><i class="ri-palette-line"></i></div>
             <h4 class="title"><a>Professional Training</a></h4>
@@ -50,16 +48,16 @@ classes: wide
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="120">
           <div class="icon-box">
             <div class="icon"><i class="ri-command-line"></i></div>
             <h4 class="title"><a>Deep Learning</a></h4>
-            <p class="description">Learn JavaScript from the beginning. Both front-end & back-end coding with
+            <p class="description">Learn JavaScript, Angular from the beginning. Both front-end & back-end coding with
               JavaScript. Hence you will become a true full stack master.</p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="150">
           <div class="icon-box">
             <div class="icon"><i class="ri-fingerprint-line"></i></div>
             <h4 class="title"><a>Prepare For Interview</a></h4>
@@ -70,6 +68,7 @@ classes: wide
 
       </div>
     </div>
+
   </section><!-- End Hero -->
 
   <main id="main">
@@ -79,9 +78,9 @@ classes: wide
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>About Me</h2>
-          <p>Rupesh provides a variety of resources such as visual courses and training materials. So far Rupesh has
+          <p class="subtitle">  Rupesh provides a variety of resources such as visual courses and training materials. So far Rupesh has
             physically trained more than a thousand students, a couple of thousands online, and revel in a 95% repeat
-            hire rate.</p>
+            hire rate. </p>
         </div>
 
         <div class="row content">
@@ -166,13 +165,13 @@ classes: wide
 
         <div class="row">
 
-          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="30">
             <img src="assets/img/about-video.jpg" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=gzqDoHYO_xk" class="venobox play-btn mb-4" data-vbtype="video"
               data-autoplay="true"></a>
           </div>
 
-          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="30">
             <h3>Training Principles</h3>
             <p class="font-italic">
               Enroll now as Full Stack Master is giving a special discounted price monthly $29 only to access all
@@ -301,7 +300,7 @@ classes: wide
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +316,7 @@ classes: wide
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
+            data-aos-delay="60">
             <div class="icon-box iconbox-orange ">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -333,7 +332,7 @@ classes: wide
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
+            data-aos-delay="90">
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -348,7 +347,7 @@ classes: wide
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="30">
             <div class="icon-box iconbox-yellow">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +362,7 @@ classes: wide
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="60">
             <div class="icon-box iconbox-red">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -378,7 +377,7 @@ classes: wide
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="90">
             <div class="icon-box iconbox-teal">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -420,7 +419,7 @@ classes: wide
               School</a></p>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="150">
+        <div class="row" data-aos="fade-up" data-aos-delay="45">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -430,7 +429,7 @@ classes: wide
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="90">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-paid">
             <div class="portfolio-wrap">
@@ -492,7 +491,7 @@ classes: wide
       </div>
     </section><!-- End Courses Section -->
 
-   
+
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
@@ -517,7 +516,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="100">
+            <li data-aos="fade-up" data-aos-delay="30">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
                 class="collapsed">Do you provide certification after your course completion? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
@@ -528,7 +527,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="200">
+            <li data-aos="fade-up" data-aos-delay="60">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
                 class="collapsed">Does your Pro Plan provides Live Q&A Session?<i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
@@ -541,7 +540,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="300">
+            <li data-aos="fade-up" data-aos-delay="90">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4"
                 class="collapsed">What time I can contact you for help? <i class="bx bx-chevron-down icon-show"></i><i
                   class="bx bx-chevron-up icon-close"></i></a>
@@ -553,7 +552,7 @@ classes: wide
               </div>
             </li>
 
-            <li data-aos="fade-up" data-aos-delay="400">
+            <li data-aos="fade-up" data-aos-delay="120">
               <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5"
                 class="collapsed">How to purchase your course? <i class="bx bx-chevron-down icon-show"></i><i
                   class="bx bx-chevron-up icon-close"></i></a>
@@ -697,11 +696,12 @@ classes: wide
         <a href="https://www.linkedin.com/in/rupesh-tiwari/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
+
   </footer>
   <!-- End Footer -->
 
+<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -711,19 +711,10 @@ classes: wide
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-
-
-
-
- 
-
-
- 

@@ -258,7 +258,7 @@
                     blocktitle = $('.vbox-title');
                     $preloader = $('.vbox-preloader');
 
-                    $preloader.show();
+                 //   $preloader.show();
 
                     if (option.titlePosition == 'top') {
                         sharepos = 'bottom';
@@ -450,7 +450,7 @@
                       content.addClass('vbox-animated').addClass('swipe-left');
                     }
 
-                    $preloader.show();
+                  //  $preloader.show();
 
                     content.animate({
                       opacity : 0,

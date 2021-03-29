@@ -4,9 +4,9 @@
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
-        $(this).remove();
-      });
+      // $('#preloader').delay(100).fadeOut('slow', function() {
+      //   $(this).remove();
+      // });
     }
   });
 
@@ -184,11 +184,11 @@
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function() {
-      $('.venobox').venobox({
-        'share': false
-      });
-    });
+    // $(document).ready(function() {
+    //   $('.venobox').venobox({
+    //     'share': false
+    //   });
+    // });
   });
 
   // Portfolio details carousel
