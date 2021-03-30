@@ -187,6 +187,11 @@ Notice both jobs are completed:
 
 ![](https://imgur.com/zp6CsLX.png)
 
+
+### Complete workflow so far
+
+{% gist c062101984b3dea4e953f5698ed09be2 %}
+
 ## Deploying Angular App
 
 Next once you know your project is passing all these below steps under `CI` job.
