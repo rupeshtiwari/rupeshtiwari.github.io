@@ -22,7 +22,7 @@ tags:
   - actions
   - beginners
 ---
-> While building angular program on build machine or azure pipelines or github workflows. The main problem we face is `npm install` or `npm ci` takes large amount of time to finish. Which slows-down the productivity of the team. With GitHub workflow dependency caching you can reduce the **install time to half**.  Therefore, in this article we will learn how can you leverage the `GitHub caching` workflow dependencies mechanism to improve speed and save network utilization or bandwidth of your build server.  
+> While building/compiling **angular** program on `Local Build Machine` or `Azure Pipelines` or `GitHub Workflows` or `Netflix` or `Heroku`. The main problem we face is `npm install` or `npm ci` which takes large amount of time to finish. Which slows-down the productivity of the team. With `GitHub Workflows` **dependency caching** you can reduce the **install time to half**.  Therefore, in this article we will learn how can you leverage the `GitHub caching` workflow dependencies mechanism to improve speed and save network utilization or bandwidth of your build server.  
 
 ![](https://imgur.com/AbCNcxB.gif)
 
