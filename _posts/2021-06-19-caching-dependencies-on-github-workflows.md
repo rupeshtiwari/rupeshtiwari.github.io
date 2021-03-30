@@ -179,8 +179,6 @@ All done 🎉 enjoy full speed GitHub cache action!
 
 Checkout my [workflow file here](https://github.com/rupeshtiwari/angular-npm-cache-demo/blob/main/.github/workflows/main.yml). 
 
-{{ https://raw.githubusercontent.com/rupeshtiwari/angular-npm-cache-demo/main/.github/workflows/main.yml }}
-
 
 ## References
 

@@ -351,7 +351,10 @@ Now if you push the changes workflow will trigger and CI/CD will succeed 🆒!
 ![](https://imgur.com/aflIgUO.png)
 
 
-All done 🎉 enjoy your angular ci/cd all free! 
+All done 🎉 enjoy your angular ci/cd all free! Here is my [demo site live](http://www.rupeshtiwari.com/angular-ci-cd-with-github-actions/)
+
+[![](https://i.imgur.com/lZ1Qij8.png)](http://www.rupeshtiwari.com/angular-ci-cd-with-github-actions/)
+
 
 
 ---
