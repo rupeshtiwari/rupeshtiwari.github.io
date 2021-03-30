@@ -344,9 +344,14 @@ Finally let's deploy the app to GitHub Pages.
 Here is my [final workflow](https://gist.github.com/rupeshtiwari/9f252dc665656c434c4d50a70519f9ac): 
 {% gist 9f252dc665656c434c4d50a70519f9ac %}
 
+![](https://imgur.com/YpOnPp5.gif)
+
 Now if you push the changes workflow will trigger and CI/CD will succeed 🆒! 
 
 ![](https://imgur.com/aflIgUO.png)
+
+
+All done 🎉 enjoy your angular ci/cd all free! 
 
 
 ---
