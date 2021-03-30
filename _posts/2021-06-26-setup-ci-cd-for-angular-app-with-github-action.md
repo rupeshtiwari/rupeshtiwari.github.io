@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/cOq4pON.png
 header:
   image: https://i.imgur.com/5HhDisG.png
@@ -45,7 +45,7 @@ Run Below script to create new angular app.
 - ✔️ Lint 
 - ✔️ Test 
 
-## Creating GitHub Workflow
+## Creating GitHub Actions
 
 Let's create GitHub workflow with jobs. Note that now a days GitHub actions runner sets the `CI=true` by default. [Learn more here](https://github.blog/changelog/2020-04-15-github-actions-sets-the-ci-environment-variable-to-true/)...
 
@@ -188,11 +188,11 @@ Notice both jobs are completed:
 ![](https://imgur.com/zp6CsLX.png)
 
 
-### Complete workflow so far
+### Complete YAML file 
 
 {% gist c062101984b3dea4e953f5698ed09be2 %}
 
-## Deploying Angular App
+## Deploying Angular App to GitHub Pages
 
 Next once you know your project is passing all these below steps under `CI` job.
 - ✔️ Build 
@@ -236,68 +236,10 @@ Notice our site is up and running on GitHub Pages
 
 ![](https://imgur.com/lZ1Qij8.png)
 
-### Complete YAML file
 
-{% gist c062101984b3dea4e953f5698ed09be2 %}
+## Update GitHub Actions to Deploy Angular App
 
-```yaml
-name: Angular GitHub CI
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  ci:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          # caching node_modules
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - name: Install Dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        run: |
-          npm ci
-
-      - name: Build
-        run: |
-          npm run build -- --prod
-
-      - name: Lint
-        run: |
-          npm run lint
-
-      - name: Test
-        run: |
-          npm run test -- --prod
-```
-
-## Deploying Angular App with GitHub Actions
-
-Next lets update the workflow to deploy our app over GitHub Pages. Below 2 steps we will run whenever previous steps are passing. Note that that `if: success()` is always implied unless you specify `if: always()` or `if: failure()` . Therefore, I am not adding if condition in my steps. 
+Next let's update the workflow to deploy our app over GitHub Pages. Below 2 steps we will run whenever previous steps are passing. Note that that `if: success()` is always implied unless you specify `if: always()` or `if: failure()` . Therefore, I am not adding if condition in my steps. 
 
 ### Creating Change Log
 
@@ -325,18 +267,6 @@ Next we will use [Conventional ChangeLog Action](https://github.com/TriPSs/conve
 
 {% gist 432995b8ead5171de82e2623f446b60f %}
 
-```yaml
-- name: Create Release
-  uses: actions/create-release@v1
-  if: ${{ steps.changelog.outputs.skipped == 'false' }}
-  env:
-    GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_ACTION }}
-  with:
-    tag_name: ${{ steps.changelog.outputs.tag }}
-    release_name: ${{ steps.changelog.outputs.tag }}
-    body: ${{ steps.changelog.outputs.clean_changelog }}
-```
-
 ### Deploy to GitHub Pages
 
 Finally let's deploy the app to GitHub Pages. 
@@ -347,7 +277,7 @@ Finally let's deploy the app to GitHub Pages.
     npm run deploy
 ```
  
-### Final Workflow
+### Complete YAML file including 
 
 Here is my [final workflow](https://gist.github.com/rupeshtiwari/9f252dc665656c434c4d50a70519f9ac): 
 {% gist 9f252dc665656c434c4d50a70519f9ac %}
