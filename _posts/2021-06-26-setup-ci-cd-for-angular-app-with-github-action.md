@@ -303,6 +303,7 @@ Add secret called as `TOKEN_GITHUB_ACTION` to your repository.
 
 Next we will use [Conventional ChangeLog Action](https://github.com/TriPSs/conventional-changelog-action) to create our change log. 
 
+{% gist ae8a69e9004fd19773e1cdfbf9dad768 %}
 
 ```yaml
 - name: Conventional Changelog Action
@@ -316,6 +317,8 @@ Next we will use [Conventional ChangeLog Action](https://github.com/TriPSs/conve
 ### Creating GitHub Release
 
 Next we will use [Conventional ChangeLog Action](https://github.com/TriPSs/conventional-changelog-action) to tag our repo and create GitHub Release. Note: If you have no changes then this will **not** create a **release**. 
+
+{% gist 432995b8ead5171de82e2623f446b60f %}
 
 ```yaml
 - name: Create Release
