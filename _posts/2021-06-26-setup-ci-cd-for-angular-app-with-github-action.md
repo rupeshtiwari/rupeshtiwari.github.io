@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/thumbnail.png
+image: https://i.imgur.com/cOq4pON.png
 header:
-  image: https://i.imgur.com/FEATUREIMAGE.png
-  teaser: https://i.imgur.com/thumbnail.png
-  og_image: https://i.imgur.com/thumbnail.png
+  image: https://i.imgur.com/5HhDisG.png
+  teaser: https://i.imgur.com/cOq4pON.png
+  og_image: https://i.imgur.com/cOq4pON.png
 tags:
  - github
  - angular
@@ -23,9 +23,13 @@ tags:
 ---
 
 
-## What are we going to build
+> Do you want to **build** your first **Angular App** and **deploy** over cloud using **GitHub Actions**? Did you use **GitHub Actions** to **build** and **deploy** **Angular** App over **GitHub Pages**? Stay tuned in this article I will show you step by step from creating angular app to building and deploying using **GitHub Actions**. 
 
-We will build an angular application. 
+![](https://imgur.com/YpOnPp5.gif)
+
+## What are we building
+
+We will build an angular application & deploy over [GitHub Pages](https://pages.github.com/). 
 
 ## Creating an Angular Application
 
@@ -42,7 +46,10 @@ Run Below script to create new angular app.
 - ✔️ Test 
 
 ## Creating GitHub Workflow
+
 Let's create GitHub workflow with jobs. Note that now a days GitHub actions runner sets the `CI=true` by default. [Learn more here](https://github.blog/changelog/2020-04-15-github-actions-sets-the-ci-environment-variable-to-true/)...
+
+
 ### Name of Workflow
 
 ```yaml
@@ -75,6 +82,10 @@ jobs:
         node-version: [10.x, 12.x] 
         # 👆
 ```
+
+Note we are using `node10` and `node12`/ Therefore, at  a time there will be parallelly 2 jobs will run one for 10.x and one for `12.x`
+
+![](https://imgur.com/gHBzHqt.png)
 
 ### Checkout source code
 
@@ -115,11 +126,11 @@ Next we must install node packages conditionally. [Learn more here](https://www.
 
 ### Building Project
 
-Let's run build to compile our project. 
+Let's run build in `production mode` to compile our project. We need to pass `-- --prod` so that `ng build --prod` will be executed. 
 
 ```yaml
 - name: Build
-  run: npm run build
+  run: npm run build -- --prod
 ```
 
 ### Linting Project
@@ -133,10 +144,227 @@ Let's run linting.
 
 ### Testing Project
 
-Let's run test. 
+Let's run test in production mode. We need to make sure while running Test:
+- ✔️ we are using **chrome headless browser** `"browsers": "ChromeHeadless"` and 
+- ✔️ Generating code coverage `"codeCoverage": true,`
+- ✔️ Ignoring Source Map `"sourceMap": false`
+- 👁️ Make sure not in watch mode ` "watch": false`
+
+
+All of the above settings can be done in `angular.json` file. 
+
+Navigate to `angular.json` file identify project name. 
+
+1. Go to test object. `projects.sample-app.architect.test`
+2. Add below code configuration for production. 
+
+```json
+"configurations": {
+  "production": {
+    "sourceMap": false,
+    "codeCoverage": true,
+    "browsers": "ChromeHeadless",
+    "watch": false
+  }
+},
+```
+
+Lets add below script in the `main.yml` file. Which will use above production test configuration while running in build machine. 
 
 ```yaml
 - name: Test
-  run: npm run test
+  run: npm run test -- --prod
 ```
+
+### Triggering GitHub Workflow
+
+Now is the time to see our workflow in action. Go ahead and push the changes to GitHub and check your actions tab on github. 
+
+
+![](https://imgur.com/O8K0LCG.png)
+
+Notice both jobs are completed:
+
+![](https://imgur.com/zp6CsLX.png)
+
+## Deploying Angular App
+
+Next once you know your project is passing all these below steps under `CI` job.
+- ✔️ Build 
+- ✔️ Lint 
+- ✔️ Test 
+
+Next we must deploy the app to somewhere. In this example I will deploy our app to [GitHub Pages](https://pages.github.com/). 
+
+
+### GitHub Pages 
+
+**GitHub Pages** are free where you can host your static site. I am going explain you the steps to deploy your angular app there. 
+
+### Using Ng Deploy
+
+`ng deploy` is the **Angular CLI command** that automates the deployment of Angular App to **GitHub Pages**. When you run `ng deploy`, it executes a builder that performs the deployment for you. 
+
+Install [`angular-cli-ghpages`](https://www.npmjs.com/package/angular-cli-ghpages) builder by Running script `ng add angular-cli-ghpages` on command line from root of your project.
+
+### Deploying to GitHub Pages
+
+In GitHub Page server we must give `base-href` to our `repository name` so that It can host our static files successfully. Since our repository name is `angular-ci-cd-with-github-actions` my deploy script would be:  `ng deploy --base-href=/angular-ci-cd-with-github-actions/`
+
+Add below script on `package.json`
+
+```shell
+    "deploy": "ng deploy --base-href=/angular-ci-cd-with-github-actions/"
+```
+
+You can even run the deploy command from local machine to test `npm run deploy` 
+
+![](https://imgur.com/wHjIBg7.png)
+
+### Your App is Live on GitHubPage
+
+Go to the settings of your GitHub Repository and notice the Site is published. Wait for 2-5 mins and then browse your app. 
+
+![](https://imgur.com/QMizEsH.png)
+
+Notice our site is up and running on GitHub Pages
+
+![](https://imgur.com/lZ1Qij8.png)
+
+### Complete YAML file
+
+{% gist c062101984b3dea4e953f5698ed09be2 %}
+
+```yaml
+name: Angular GitHub CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          # caching node_modules
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: |
+          npm ci
+
+      - name: Build
+        run: |
+          npm run build -- --prod
+
+      - name: Lint
+        run: |
+          npm run lint
+
+      - name: Test
+        run: |
+          npm run test -- --prod
+```
+
+## Deploying Angular App with GitHub Actions
+
+Next lets update the workflow to deploy our app over GitHub Pages. Below 2 steps we will run whenever previous steps are passing. Note that that `if: success()` is always implied unless you specify `if: always()` or `if: failure()` . Therefore, I am not adding if condition in my steps. 
+
+### Creating Change Log
+
+
+Add secret called as `TOKEN_GITHUB_ACTION` to your repository. 
+
+![](https://imgur.com/tQNt59s.png)
+
+Next we will use [Conventional ChangeLog Action](https://github.com/TriPSs/conventional-changelog-action) to create our change log. 
+
+
+```yaml
+- name: Conventional Changelog Action
+  id: changelog
+  uses: TriPSs/conventional-changelog-action@v3
+  with:
+    github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
+    output-file: "false"
+```
+
+### Creating GitHub Release
+
+Next we will use [Conventional ChangeLog Action](https://github.com/TriPSs/conventional-changelog-action) to tag our repo and create GitHub Release. Note: If you have no changes then this will **not** create a **release**. 
+
+```yaml
+- name: Create Release
+  uses: actions/create-release@v1
+  if: ${{ steps.changelog.outputs.skipped == 'false' }}
+  env:
+    GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_ACTION }}
+  with:
+    tag_name: ${{ steps.changelog.outputs.tag }}
+    release_name: ${{ steps.changelog.outputs.tag }}
+    body: ${{ steps.changelog.outputs.clean_changelog }}
+```
+
+### Deploy to GitHub Pages
+
+Finally let's deploy the app to GitHub Pages. 
+
+```yaml
+- name: Deploy
+  run: |
+    npm run deploy
+```
+ 
+### Final Workflow
+
+Here is my [final workflow](https://gist.github.com/rupeshtiwari/9f252dc665656c434c4d50a70519f9ac): 
+{% gist 9f252dc665656c434c4d50a70519f9ac %}
+
+Now if you push the changes workflow will trigger and CI/CD will succeed 🆒! 
+
+![](https://imgur.com/aflIgUO.png)
+
+
+---
+ 
+*Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.*
+
+## Become full stack developer 💻
+
+I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
+
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access *current* and *future* **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask ***doubts/questions*** and get more help, tips and tricks.
+
+> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+
+**💖 Say 👋 to me!** 
+<br>Rupesh Tiwari
+<br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
+<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a> 
+<br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
 
