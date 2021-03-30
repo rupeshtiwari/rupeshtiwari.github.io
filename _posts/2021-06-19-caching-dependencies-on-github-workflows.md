@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/thumbnail.png
+image: https://i.imgur.com/fucBPz6.gif
 header:
-  image: https://i.imgur.com/FEATUREIMAGE.png
-  teaser: https://i.imgur.com/thumbnail.png
-  og_image: https://i.imgur.com/thumbnail.png
+  image: https://i.imgur.com/7nGHUOC.png
+  teaser: https://i.imgur.com/fucBPz6.gif
+  og_image: https://i.imgur.com/fucBPz6.gif
 tags:
   - github
   - angular
@@ -83,28 +83,10 @@ Below is one example how can you add `actions/cache@v2` action in your GitHub wo
 
 When `package-lock.json` file changes we want to recreate cache. Therefore, let's use `package-lock.json` in our key. Also key will have `os` and `cach-name`.
 
-`key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}`
-
 Once the **cache hit** happens then the below step will output `cache-hit as true`. Therefore, this express `steps.cache-nodemodules.outputs.cache-hit` will be `true`
 
-
-```yaml
-- name: Cache node modules
-  id: cache-nodemodules
-  uses: actions/cache@v2
-  env:
-    cache-name: cache-node-modules
-  with:
-    # caching node_modules
-    path: node_modules # 👈 path for node_modules folder
-    key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-    # 👆 name of the chache key includes package-lock.json
-    restore-keys: |
-      ${{ runner.os }}-build-${{ env.cache-name }}-
-      ${{ runner.os }}-build-
-      ${{ runner.os }}-
-
-```
+{% gist 81a8c36affe7ed445b78941a1070996d %}
+ 
 ### Skip Npm Install 
 
 Now lets check if `steps.cache-nodemodules.outputs.cache-hit` will be `true` then we must not run `npm install`. 
@@ -119,41 +101,6 @@ Now lets check if `steps.cache-nodemodules.outputs.cache-hit` will be `true` the
 ### Complete Workflow Yaml
 
 Create `.github\workflows\main.yml` file and add below script. 
-
-```yaml
-name: Caching npm packages
-
-on: push
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Cache node modules
-      id: cache-nodemodules
-      uses: actions/cache@v2
-      env:
-        cache-name: cache-node-modules
-      with:
-        # caching node_modules
-        path: node_modules
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-
-    - name: Install Dependencies
-      if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-      run: npm ci
-
-    - name: Build
-      run: npm build
-
-```
 
 {% gist 44ebec690f2c01bf1df9b1d215a0e723 %}
 
@@ -230,7 +177,7 @@ So you learned whenever `package-lock.json` is changed workflow will be slow. Ho
 All done 🎉 enjoy full speed GitHub cache action! 
  
 
-Checkout my [workflow file here](https://raw.githubusercontent.com/rupeshtiwari/angular-npm-cache-demo/main/.github/workflows/main.yml). 
+Checkout my [workflow file here](https://github.com/rupeshtiwari/angular-npm-cache-demo/blob/main/.github/workflows/main.yml). 
 
 {{ https://raw.githubusercontent.com/rupeshtiwari/angular-npm-cache-demo/main/.github/workflows/main.yml }}
 
