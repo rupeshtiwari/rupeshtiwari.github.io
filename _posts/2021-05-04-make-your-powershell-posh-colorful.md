@@ -208,6 +208,8 @@ Download the [Microsoft Terminal](https://www.microsoft.com/en-us/p/windows-term
 ## References
 
 1. https://ohmyposh.dev/docs/upgrading/
+2. https://www.hanselman.com/blog/now-is-the-time-to-make-a-fresh-new-windows-terminal-profilesjson
+3. https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh
 
 ---
 
