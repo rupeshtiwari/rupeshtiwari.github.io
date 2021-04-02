@@ -38,6 +38,12 @@ Run on admin PowerShell
 Install-Module posh-git -Scope CurrentUser
 ```
 
+If you are using PowerShell 7 then use below script to install posh-git
+
+```powershell
+PowerShellGet\\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
+```
+
 ### Installing Oh My Posh
 
 Run on admin PowerShell
@@ -45,7 +51,11 @@ Run on admin PowerShell
 ```powershell
 Install-Module oh-my-posh -Scope CurrentUser
 ```
+If you are using **PowerShell 7** then use below script to install **oh-my-posh**
 
+```powershell
+Install-Module oh-my-posh -Scope CurrentUser -AllowPrerelease -Force
+```
 ## 🎨 PowerShell Theme
 
 ### Browse All existing themes
