@@ -173,6 +173,25 @@ Set-PoshPrompt -Theme jandedobbeleer
 ![](https://imgur.com/UW6uzpc.gif)
 All done 🎉 Enjoy your new theme 😃
 
+## VS Code PowerShell
+
+### Apply Posh Theme 
+
+Open user settings in `json` and paste below code.
+
+```json
+"terminal.external.osxExec": "iTerm.app",
+"terminal.integrated.cursorBlinking": true,
+"terminal.integrated.enableBold": true,
+"terminal.integrated.fontFamily": "'MesloLGL NF'", 👈
+"terminal.integrated.fontSize": 14,
+"terminal.integrated.rightClickCopyPaste": true,
+```
+
+If you are using `Fira Code` then change the `fontFamily` accordingly.
+
+
+
 ## References
 
 1. https://ohmyposh.dev/docs/upgrading/
