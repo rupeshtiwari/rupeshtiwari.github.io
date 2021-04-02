@@ -58,6 +58,10 @@ Get-PoshThemes
 
 ![](https://imgur.com/lOQIM6c.png)
 
+Here are some top listed Nerd Fonts
+
+![](https://imgur.com/ZfjdTEu.png)
+
 ### Setting a Theme
 
 Run on admin PowerShell to setup `agnoster` theme. 
@@ -128,10 +132,11 @@ Lets fix them.
 ### Download Nerd Fonts 
 
 1. On windows machine go to the link and [download](https://www.nerdfonts.com/font-downloads) your favorite fonts.
-
 2. Right click on the specific font face & "Install for all users". Check the GIF for clarification where I'm using the `3270 Nerd Font` face.
+  
+![](https://imgur.com/rlgfSrf.gif)
 
-### Set Font on PowerShell
+### Set PowerShell Fonts
 
 1. Open PowerShell
 2. Right Click Properties next go to font Tab.
@@ -140,6 +145,8 @@ Lets fix them.
 Now open new PowerShell Terminal and enjoy your brand new colorful theme.
 
 ![](https://imgur.com/1j53eJU.png)
+
+![](https://imgur.com/26La18u.gif)
 
 
 ## 🥇Changing  PowerShell Theme
