@@ -51,7 +51,7 @@ This is where you will **write** your code/logic. **Azure Functions** **executes
 
 >Using **Logic Apps** **you can design workflow and orchestrate multiple process**. 
 
-Many times you want to manage the **workflow** of your **Functions**. You can use **Connectors** present in Logic Apps. **Logic Apps Connectors** like send an email through office 365 etc. You do not need to write the code to connect to those office 365 **apis** they already done by **Logic Apps Connectors**.
+Many times you want to manage the **workflow** of your **Functions**. You can use **Connectors** present in Logic Apps. **Logic Apps Connectors** like send an email through office 365 etc. You do not need to write the code to connect to those office 365 **API's** they already done by **Logic Apps Connectors**.
 
 ### <i class="fa fa-th" style="color: firebrick" aria-hidden="true"></i> Azure Event Grid
 >**Event Grid** manages all **events** that can **trigger code** or logic.
@@ -238,7 +238,7 @@ Notice our **folder name** is same as our **function name** `read-users`.
 1. **First** binding is for input. Where you say http trigger that you are ready for **listening** for **incoming Http Requests**. 
 2. **Second** binding is for output. Where you tell **azure functions** runtime that you are returning an **HTTP response**.
 
-#### injdex.ts File
+#### index.ts File
 
 
 ```ts
