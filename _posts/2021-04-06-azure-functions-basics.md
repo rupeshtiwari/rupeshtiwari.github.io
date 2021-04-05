@@ -1,6 +1,6 @@
 ---
 title: Azure Functions Basics
-date: 2021-04-03 00:00 +0000
+date: 2021-04-06 00:00 +0000
 description: Learn Azure Functions basics and create your own first azure functions and deploy to azure.
 author_profile: true
 published: true
