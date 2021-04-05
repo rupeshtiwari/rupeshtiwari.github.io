@@ -11,11 +11,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/uoU0rT4.png 
+image: https://i.imgur.com/Es14TmL.png 
 header:
-  image: https://i.imgur.com/POFrKvA.png
-  teaser: https://i.imgur.com/uoU0rT4.png
-  og_image: https://i.imgur.com/uoU0rT4.png
+  image: https://i.imgur.com/LGGQgWQ.png
+  teaser: https://i.imgur.com/Es14TmL.png
+  og_image: https://i.imgur.com/Es14TmL.png
 tags:
   - azure
   - certification
