@@ -79,7 +79,7 @@ pie
   - Implement NoSQL databases
   - Implement Azure SQL databases
 
-### AZ-304 measured skills
+### You must learn below for AZ-304 exam
 Below skills are tested in the AZ-304. 
 
 - Design monitoring (10-15%)
@@ -99,14 +99,14 @@ pie
 
 ## Learning Materials
 
-### AZ 303 Resources 
+### AZ-303 Resources 
 
 - [Free course on AZ-303 exam from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-learning-paths)
 - [Paid course on AZ-303 exam From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-instructor-led)
 - [Paid course on AZ-303 exam from Pluralsight](https://app.pluralsight.com/paths/certificate/microsoft-azure-architect-technologies-az-300)
 
 
-### AZ 304 Resources 
+### AZ-304 Resources 
 
 - [Free course on AZ-304 exam from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-learning-paths)
 - [Paid course on AZ-304 exam From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-instructor-led)
