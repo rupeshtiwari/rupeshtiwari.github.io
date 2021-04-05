@@ -48,7 +48,7 @@ In order to achieve the Azure Solutions Expert Certification, you must pass two 
 
 ## Skills Measured
 
-### AZ 303 measured skills
+### You must learn below for AZ-303 exam
 Below skills are tested in the AZ-303. 
 
 <div class="mermaid">
@@ -59,8 +59,34 @@ pie
     "Data" : 15
 </div>
 
+- **Implement and monitor an Azure infrastructure (50-55%)**
+  - Implement cloud infrastructure monitoring
+  - Implement storage accounts
+  - Implement VMs for Windows and Linux
+  - Automate deployment and configuration of resources
+  - Implement virtual networking
+  - Implement Azure Active Directory
+  - Implement and manage hybrid identities
+- **Implement management and security solutions (25-30%)**
+  - Manage workloads in Azure
+  - Implement load balancing and network security
+  - Implement and manage Azure governance solutions
+  - Manage security for applications
+- **Implement solutions for apps (10-15%)**
+  - Implement an application infrastructure
+  - Implement container-based applications
+- **Implement and manage data platforms (10-15%)**
+  - Implement NoSQL databases
+  - Implement Azure SQL databases
+
 ### AZ-304 measured skills
 Below skills are tested in the AZ-304. 
+
+- Design monitoring (10-15%)
+- Design identity and security (25-30%)
+- Design data storage (15-20%)
+- Design business continuity (10-15%)
+- Design infrastructure (25-30%)
 
 <div class="mermaid">
 pie
@@ -90,6 +116,7 @@ pie
 
 You will get 20-30% more salary than an Azure Developer Associate. 
 
+![](https://imgur.com/DyJXiIW.png)
 
 ---
  
