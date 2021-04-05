@@ -1,0 +1,112 @@
+---
+
+title: Microsoft Azure Solution Architect Expert Certification Basics
+date: 2021-07-10 00:00 +0000
+description: Learn how to become an Azure Solution Architect Expert. 
+author_profile: true
+published: true
+read_time: true
+comments: true
+share: true
+related: true
+toc: true
+toc_sticky: true
+image: https://i.imgur.com/uoU0rT4.png 
+header:
+  image: https://i.imgur.com/POFrKvA.png
+  teaser: https://i.imgur.com/uoU0rT4.png
+  og_image: https://i.imgur.com/uoU0rT4.png
+tags:
+  - azure
+  - certification
+  - beginners
+  - career
+---
+
+> In order to become **Azure Solution Architect Expert** You must give [AZ-303](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303) and [AZ-304](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303) certification exams. 
+
+## Introduction
+
+The Azure Solutions Architect Expert certification is one of the highest-level Microsoft Azure accreditations. You must clear both AZ-303 & AZ-304 exams. 
+
+## Should you give this exam?
+
+- If you want to become Azure Cloud Architect then consider for this certification. 
+- If you want to apply jobs for Azure Solution Architect 
+
+## Exam Details
+
+In order to achieve the Azure Solutions Expert Certification, you must pass two individual exams;
+
+[AZ-303 : Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303)
+[AZ-301 : Microsoft Azure Architect Design](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304)
+
+## Prerequisites
+
+- Candidates are expected to have at least two years' experience of using Azure and designing
+- An understanding of software development patterns and technologies. 
+
+## Skills Measured
+
+### AZ 303 measured skills
+Below skills are tested in the AZ-303. 
+
+<div class="mermaid">
+pie
+    "Infrastructure" : 55
+    "Security" : 30
+    "Solutions" : 15
+    "Data" : 15
+</div>
+
+### AZ-304 measured skills
+Below skills are tested in the AZ-304. 
+
+<div class="mermaid">
+pie
+    "Monitoring" : 15
+    "Security" : 30
+    "Storage" : 20
+    "Business" : 15
+    "Infrastructure" : 15
+</div>
+
+## Learning Materials
+
+### AZ 303 Resources 
+
+- [Free from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-learning-paths)
+- [Paid From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-instructor-led)
+- [Paid from Pluralsight](https://app.pluralsight.com/paths/certificate/microsoft-azure-architect-technologies-az-300)
+
+
+### AZ 304 Resources 
+
+- [Free from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-learning-paths)
+- [Paid From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-instructor-led)
+- [Paid from Pluralsight ](https://app.pluralsight.com/paths/certificate/microsoft-azure-architect-design-az-301)
+
+## Salary of Cloud Architect 
+
+You will get 20-30% more salary than an Azure Developer Associate. 
+
+
+---
+ 
+*Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.*
+
+## Become full stack developer 💻
+
+I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
+
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access *current* and *future* **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask ***doubts/questions*** and get more help, tips and tricks.
+
+> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+
+**💖 Say 👋 to me!** 
+<br>Rupesh Tiwari
+<br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
+<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a> 
+<br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
+
