@@ -101,16 +101,16 @@ pie
 
 ### AZ 303 Resources 
 
-- [Free from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-learning-paths)
-- [Paid From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-instructor-led)
-- [Paid from Pluralsight](https://app.pluralsight.com/paths/certificate/microsoft-azure-architect-technologies-az-300)
+- [Free course on AZ-303 exam from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-learning-paths)
+- [Paid course on AZ-303 exam From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303?tab=tab-instructor-led)
+- [Paid course on AZ-303 exam from Pluralsight](https://app.pluralsight.com/paths/certificate/microsoft-azure-architect-technologies-az-300)
 
 
 ### AZ 304 Resources 
 
-- [Free from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-learning-paths)
-- [Paid From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-instructor-led)
-- [Paid from Pluralsight ](https://app.pluralsight.com/paths/certificate/microsoft-azure-architect-design-az-301)
+- [Free course on AZ-304 exam from Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-learning-paths)
+- [Paid course on AZ-304 exam From Microsoft](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304?tab=tab-instructor-led)
+- [Paid course on AZ-304 exam from Pluralsight ](https://app.pluralsight.com/paths/certificate/microsoft-azure-architect-design-az-301)
 
 ## Salary of Cloud Architect 
 
