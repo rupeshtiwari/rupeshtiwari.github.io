@@ -1,6 +1,5 @@
 ---
 title: Precompiled Azure Functions
-date: 2021-05-29 00:00 +0000
 description:
 author_profile: true
 published: true
