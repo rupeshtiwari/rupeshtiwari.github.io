@@ -82,12 +82,6 @@ pie
 ### You must learn below for AZ-304 exam
 Below skills are tested in the AZ-304. 
 
-- Design monitoring (10-15%)
-- Design identity and security (25-30%)
-- Design data storage (15-20%)
-- Design business continuity (10-15%)
-- Design infrastructure (25-30%)
-
 <div class="mermaid">
 pie
     "Monitoring" : 15
@@ -96,6 +90,12 @@ pie
     "Business" : 15
     "Infrastructure" : 15
 </div>
+
+- Design monitoring (10-15%)
+- Design identity and security (25-30%)
+- Design data storage (15-20%)
+- Design business continuity (10-15%)
+- Design infrastructure (25-30%)
 
 ## Learning Materials
 
