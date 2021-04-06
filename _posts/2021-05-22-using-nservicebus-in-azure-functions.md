@@ -171,29 +171,7 @@ Now if you again invoke by navigating to URL you will see live log here.
 
 ![](https://imgur.com/muioplL.png)
 
-## Azure Service Bus Topics
 
-Events goes to the Topic and Subscription.
-
-`bundle-1` is the topic created by N-Service Bus. ![](https://imgur.com/s8ilrE0.png)
-
-`bundle-1` has `Subscriptions` across the endpoints and each Subscription has `Rules`. Rules are the filters defined by the subscribers and once the Rule satisfied then only message arrives to the subscriber.
-Whenever, receiver defines the filter in the source code then only the rules are created.
-
-<pre>
-📦Topics
- └ 📂bundle-1
- │ └ 📂Subscribers
- │ │ ├ 📂Subscriber.Endpoint1
- │ │ │ └ 📂Rules
- │ │ │ │ └ 📜$default 👈Default Rule 1=0
- │ │ └ 📂Subscriber.Endpoint2
- │ │ │ └ 📂Rules
- │ │ │ │ ├ 📜$default
- │ │ │ │ └ 📜only-prime 👈Custom Rule
-</pre>
-
-Whenever message will comes to a Topic that runs to the rules of each subscriber of the endpoint. And if the message has prime number then it will only go to `Endpoint2` `only-prime` subscriber.
 
 ## NServiceBus Topology
 
@@ -220,7 +198,25 @@ I don't prefer this topology because In order to subscribe to an event, the subs
 ![](https://imgur.com/638DjGm.png)
 The `ForwardingTopology` was introduced to take advantage of the **broker nature of the Azure Service Bus** and to leverage its native capabilities.
 
-N-Service Bus creates the Topic `bundle-1` for each endpoint. When you run `enableInstaller`. 
+`bundle-1` is the topic created by N-Service Bus. ![](https://imgur.com/s8ilrE0.png)
+
+`bundle-1` has `Subscriptions` across the endpoints and each Subscription has `Rules`. Rules are the filters defined by the subscribers and once the Rule satisfied then only message arrives to the subscriber.
+Whenever, receiver defines the filter in the source code then only the rules are created.
+
+<pre>
+📦Topics
+ └ 📂bundle-1
+ │ └ 📂Subscribers
+ │ │ ├ 📂Subscriber.Endpoint1
+ │ │ │ └ 📂Rules
+ │ │ │ │ └ 📜$default 👈Default Rule 1=0
+ │ │ └ 📂Subscriber.Endpoint2
+ │ │ │ └ 📂Rules
+ │ │ │ │ ├ 📜$default
+ │ │ │ │ └ 📜only-prime 👈Custom Rule
+</pre>
+
+Whenever message will comes to a Topic that runs to the rules of each subscriber of the endpoint. And if the message has prime number then it will only go to `Endpoint2` `only-prime` subscriber.
 
 ## Service Bus Explorer
 
