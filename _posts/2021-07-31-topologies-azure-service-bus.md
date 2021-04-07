@@ -50,7 +50,7 @@ Topics and subscriptions provide a `one-to-many` form of communication in a publ
 
 ## Consumer/Producer Pattern
 
-Once you send a message to a `Queue` and if there is any `Function` listening to the queue gets triggered and they execute the function.
+Once you send a message to a `Queue` and if there is any `Function` listening to the queue gets triggered and they execute the function. 
 
 You can treat these kind of messages as `command`.
 
@@ -135,7 +135,7 @@ N-Service bus has `enableInstaller` method once you call it. Then N-Service Bus 
 3. Creates default Rule in the message of the subscription with default condition `1=0`. So that message will not satisfy this rule by default any all events will not arrive to this endpoint.
 4. Creates a input queue for the endpoint. Subscription forwards the message to the `Input Queue` of the `endpoint` once Rules get satisfied.
 
-`endpoint` is N-Service Bus concept that is coupled to Azure Service Bus `Queue`.
+`endpoint` is N-Service Bus concept that is coupled to Azure Service Bus `Queue`. Using `endpoint` you can either send or receive messages. 
 
 
 📔 **N-Service Bus** is _not_ able to create the topology when it is hosted on the Azure Function _as of now_. Learn how you can do by [your own topology setup in Azure Function here](https://weblogs.asp.net/sfeldman/automatic-nservicebus-topology-creation-for-function)
