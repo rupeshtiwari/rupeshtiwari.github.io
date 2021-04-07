@@ -1,5 +1,5 @@
 ---
-title: Hosting NServiceBus in Azure Functions
+title: Hosting N-Service Bus in Azure Functions
 date: 2021-05-22 00:00 +0000
 description: Learn how to host NServiceBus within an Azure Function.
 author_profile: true
@@ -170,57 +170,6 @@ Next you can see all of your **Azure Functions logs** messages live in Azure por
 Now if you again invoke by navigating to URL you will see live log here.
 
 ![](https://imgur.com/muioplL.png)
-
-
-
-## NServiceBus Topology
-
-[Topology](https://docs.particular.net/transports/azure-service-bus/topology#:~:text=Messaging%20topology%20is%20a%20specific,configuring%20Azure%20Service%20Bus%20entities) Messaging topology is a specific arrangement of the messaging entities, such as queues, topics, subscriptions, and rules. The following topologies are available:
-
-- EndpointOrientedTopology
-- ForwardingTopology
-
-No default topology is set by the Azure Service Bus transport. Topology has to be explicitly configured using [configuration API](https://docs.particular.net/transports/azure-service-bus/legacy/configuration/full).
-
-Learn more about all [Topologies here](https://docs.particular.net/transports/azure-service-bus/legacy/topologies#:~:text=Forwarding%20topology&text=Subscriptions%20are%20created%20under%20topic,decoupling%20between%20publishers%20and%20subscribers.).
-
-Pre-built topology is `ForwardingTopology`.
-
-### EndpointOrientedTopology
-
-![](https://imgur.com/i3VofMU.png)
-The `EndpointOrientedTopology` is backward compatible with the **Azure Service Bus transport Version 6** and below.
-
-I don't prefer this topology because In order to subscribe to an event, the subscriber must know the publishing endpoint's name, causing coupling between publisher and subscriber.
-
-### ForwardingTopology
-
-![](https://imgur.com/638DjGm.png)
-The `ForwardingTopology` was introduced to take advantage of the **broker nature of the Azure Service Bus** and to leverage its native capabilities.
-
-`bundle-1` is the topic created by N-Service Bus. ![](https://imgur.com/s8ilrE0.png)
-
-`bundle-1` has `Subscriptions` across the endpoints and each Subscription has `Rules`. Rules are the filters defined by the subscribers and once the Rule satisfied then only message arrives to the subscriber.
-Whenever, receiver defines the filter in the source code then only the rules are created.
-
-<pre>
-📦Topics
- └ 📂bundle-1
- │ └ 📂Subscribers
- │ │ ├ 📂Subscriber.Endpoint1
- │ │ │ └ 📂Rules
- │ │ │ │ └ 📜$default 👈Default Rule 1=0
- │ │ └ 📂Subscriber.Endpoint2
- │ │ │ └ 📂Rules
- │ │ │ │ ├ 📜$default
- │ │ │ │ └ 📜only-prime 👈Custom Rule
-</pre>
-
-Whenever message will comes to a Topic that runs to the rules of each subscriber of the endpoint. And if the message has prime number then it will only go to `Endpoint2` `only-prime` subscriber.
-
-## Service Bus Explorer
-
-You can download the [`Service Bus Explorer`](https://github.com/paolosalvatori/ServiceBusExplorer/releases) an open source windows UI that helps us to visualize the Topologies.
 
 ---
 

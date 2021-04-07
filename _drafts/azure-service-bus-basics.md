@@ -225,9 +225,9 @@ Sender send message to Topic not to queue
 
 Every topic has multiple subscription ( up to 2000 )
 
-For each subsriber copy of the message will 
+For each subscriber copy of the message will 
 
-Subcirpt is a virtual queue that holds messages. 
+Subscription is a virtual queue that holds messages. 
 
 ![](https://imgur.com/tbUNsP9.png)
 

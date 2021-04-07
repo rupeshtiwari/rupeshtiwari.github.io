@@ -312,6 +312,15 @@ Now you can add the debug point at any lines of code in your azure functions and
 
 ![](https://i.imgur.com/NQ80IAD.png)
 
+## Deploying Function Summary
+While deploying Azure Function to Azure You have to specify:   
+1. `Function Apps` associated to an App Service Plan. 
+2. `Subscription`
+3. `Resource Group`
+4. `App Service Plan`  
+5. `Storage Account` (every Azure functions requires storage account)
+
+Once deployment is done then all the Functions within the Project get deploys to the Function App within the same App Service Plan. 
 
 
 ## References
