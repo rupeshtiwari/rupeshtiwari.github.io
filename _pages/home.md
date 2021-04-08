@@ -583,7 +583,7 @@ classes: wide
               <p>
                 Become a software developer. <a href="https://fullstackmaster.net/">Fullstack Master</a> is an innovative software development training school
               </p> <br>
-              <strong>Email:</strong> info@rupeshtiwari.com<br>
+              <strong>Email:</strong>rupesh.tiwari.info@gmail.com<br>
 
           </div>
 
