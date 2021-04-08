@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/thumbnail.png
+image: https://i.imgur.com/qyTdaCD.png
 header:
-  image: https://i.imgur.com/FEATUREIMAGE.png
-  teaser: https://i.imgur.com/thumbnail.png
-  og_image: https://i.imgur.com/thumbnail.png
+  image: https://i.imgur.com/NCoU8U2.png
+  teaser: https://i.imgur.com/qyTdaCD.png
+  og_image: https://i.imgur.com/qyTdaCD.png
 tags:
   - azure
   - beginners
@@ -25,6 +25,8 @@ tags:
 > **Azure Storage account** is a **resource** in Azure. You can select create resource and search for **Storage Account** and then create new storage account for you.
 
 ![](https://imgur.com/jTJmWoP.png)
+
+![](https://imgur.com/0UoZ9OD.gif)
 
 ## Basic Setup 🧮
 
@@ -206,4 +208,8 @@ You can add your own encryption keys for Tables and Queues and it can **not be t
 
 This is common feature for all Azure resources where you can create tags. 
 
+## Demo
+
 Finally you can review your account and create them. Enjoy your Azure Storage Account 😄
+
+![](https://imgur.com/0UoZ9OD.gif)
