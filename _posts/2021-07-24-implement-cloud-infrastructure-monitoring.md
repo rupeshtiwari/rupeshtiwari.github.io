@@ -188,8 +188,8 @@ This is a product that helps you to:
 
 ### Limitations on Linux VMs
 
-1. VMs Red Hat Linux (RHEL)6 does not support "**Available Memory**" feature from Azure Monitoring.
-2. **Metrics** are only available for data disks on Linux VMs using XFS filesystems or EXT filesystem family (EXT2,EXT3,EXT4)
+1. VMs **Red Hat Linux (RHEL)6** does not support "**Available Memory**" feature from Azure Monitoring.
+2. **Metrics** are only available for data disks on Linux VMs using **XFS filesystems or EXT filesystem** family (EXT2,EXT3,EXT4)
 
 ---
 
