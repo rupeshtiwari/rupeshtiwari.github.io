@@ -62,6 +62,31 @@ There is a `Topic` few subscribers are listening to that topic with some filter 
 ![](https://imgur.com/5t4MGUZ.png)
 
 
+## Request/Reply Pattern
+
+`Request/Reply` pattern is also treated as `Producer/Consumer` pattern. If you are working with distributed architecture including cloud. Then it is difficult to do synchronous actions. However, using Request/Reply pattern you can work just like synchronous operation.
+![](https://imgur.com/hCR7iki.png)
+Example: Suppose you have UI says create order and once order is created you must show order-id in the UI. We will use Azure Function and Azure Service Bus in order to Achieve this.
+
+You will create `Azure Function-1` to trigger by `Http` request. Then it will send a `message` to the `Queue` and you will write another `Azure Function-2` to get triggered by the Queue & execute the use case. However, once the `Function-2` is done it will `reply back` to the `Function-1`. Finally the result will be returned back to the UI/Client.
+
+Below is the pseudo code for above example:
+
+```csharp
+[HttpGet("orders/create")]
+public async Task<IActionResult> CreateOrder(Order order) {
+
+  const result = await requestReplyService.Request();
+
+  return Ok(result);
+}
+```
+
+1. `Request/Reply` is not the same as `Request/Response`. Request/Reply is usually associated with `asynchronous` messages while Request/Response with the `web`.
+
+2. For `Request/Reply` to work, both the sender and the receiver require a designated queue. There is a dedicated handler and receiver for a message Request/Reply.
+
+
 ## Topology
 
 **Messaging topology** is a specific arrangement of the messaging entities, such as queues, topics, subscriptions, and rules. **Azure Service Bus transport** operates on a topology created on the **broker**. Topology handles exchanging **messages between endpoints**, by creating and configuring Azure Service Bus entities.
