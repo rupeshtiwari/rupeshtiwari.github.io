@@ -72,6 +72,9 @@ author:
     - label: "Fullstack Master"
       icon: "fas fa-graduation-cap"
       url: "https://www.fullstackmaster.net"
+    - label: "Blogs"
+      icon: "fa fa-th-large"
+      url: "/posts/"
     - label: "RupeshTiwari.com"
       icon: "fa fa-briefcase"
       url: "http://www.rupeshtiwari.com"
@@ -87,9 +90,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "http://github.com/rupeshtiwari"
-    - label: "Blogs"
-      icon: "fa fa-th-large"
-      url: "/posts/"
 
 footer:
   links:
