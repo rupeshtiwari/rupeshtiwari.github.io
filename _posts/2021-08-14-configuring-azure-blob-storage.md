@@ -31,5 +31,5 @@ tags:
 
 ## Settings 
 
-Storage Account has lots of settings related to security and networking. 
+Storage Account has lots of settings related to implementing security and network access. 
 
