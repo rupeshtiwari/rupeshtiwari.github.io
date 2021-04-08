@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/thumbnail.png
+image: https://i.imgur.com/P7C5SR6.png
 header:
-  image: https://i.imgur.com/FEATUREIMAGE.png
-  teaser: https://i.imgur.com/thumbnail.png
-  og_image: https://i.imgur.com/thumbnail.png
+  image: https://i.imgur.com/TJY2vwh.png
+  teaser: https://i.imgur.com/P7C5SR6.png
+  og_image: https://i.imgur.com/P7C5SR6.png
 tags:
   - csharp
   - beginners
@@ -110,7 +110,7 @@ For N-Service Bus this is the recommended option for all new projects.
  │ └ 📂Subscribers
  │ │ ├ 📂Subscriber.Endpoint1
  │ │ │ └ 📂Rules
- │ │ │ │ └ 📜$default 👈Default Rule 1=0
+ │ │ │ │ └ 📜$default 👈FalseFilter Rule 1=0
  │ │ └ 📂Subscriber.Endpoint2
  │ │ │ └ 📂Rules
  │ │ │ │ ├ 📜$default
@@ -132,7 +132,7 @@ N-Service bus has `enableInstaller` method once you call it. Then N-Service Bus 
 
 1. Creates a `Topic` with name `bundle`.
 2. Creates `Subscription` for that `topic`.
-3. Creates default Rule in the message of the subscription with default condition `1=0`. So that message will not satisfy this rule by default any all events will not arrive to this endpoint.
+3. Creates default Rule in the message of the subscription with default condition `FalseFilter Rule` i.e. `1=0`. So that message will not satisfy this rule by default any all events will not arrive to this endpoint.
 4. Creates a input queue for the endpoint. Subscription forwards the message to the `Input Queue` of the `endpoint` once Rules get satisfied.
 
 `endpoint` is N-Service Bus concept that is coupled to Azure Service Bus `Queue`. Using `endpoint` you can either send or receive messages. 
@@ -141,11 +141,32 @@ N-Service bus has `enableInstaller` method once you call it. Then N-Service Bus 
 📔 **N-Service Bus** is _not_ able to create the topology when it is hosted on the Azure Function _as of now_. Learn how you can do by [your own topology setup in Azure Function here](https://weblogs.asp.net/sfeldman/automatic-nservicebus-topology-creation-for-function)
 
 
+
+
+
+## Creating Azure Service Bus Namespace
+Let's create Azure service bus namespace from the Azure portal. ![](https://imgur.com/ZUdj70X.gif)
+
+Get the connection string and open the connection string on the Azure Explorer. 
+
+
+
 ## Service Bus Explorer
 
 You can download the [`Service Bus Explorer`](https://github.com/paolosalvatori/ServiceBusExplorer/releases) an open source windows UI that helps us to visualize the Topologies.
 
+Connect to your Azure Service Bus Namespace by using connection string. 
+
+![](https://imgur.com/PYOY7fj.png)
+
+
+
+
 📓 N-Service bus helps us to retrieve the message and search for subscriber and invoke the handle method of the Handler. All of this code is already written in N-Service Bus. That helps a lot when you are working with Azure Service Bus Transport. I recommend using N-Service Bus.
+
+
+
+
 
 
 
