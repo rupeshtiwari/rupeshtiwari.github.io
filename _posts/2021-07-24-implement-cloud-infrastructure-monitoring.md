@@ -24,6 +24,18 @@ tags:
 
 > Are you preparing for the Microsoft exam **AZ-303**? ​This article will teach you t​he cloud **monitoring skills** needed for this exam.
 
+## Introduction 
+
+**Implement and Monitor an Azure Infrastructure** is 50-55% in Az-303. Under **Implement cloud infrastructure monitoring** we have below topics to cover:
+
+- monitor security
+- monitor performance
+- monitor health and availability
+- monitor cost
+- configure advanced logging
+- configure logging for workloads Initiate automated responses by using Action Groups
+- configure and manage advanced alerts
+
 ## Configure logging for workloads
 We will use **Azure Platform Logs** to get the detail logs of the Azure resources. 
 
@@ -54,28 +66,26 @@ Logs can send to below places:
 3. For **storage account log**. Create new storage account for log only don't put other data in this. So that you have good control over logs.
 
 ### Demo Configure Logging
-We will create Analytics Workspace, Azure Storage Account and Event Hub for logging our Azure Function Resource. Next we will configure the Diagnostics Settings to write logs to all of the above destinations.
+We will create **Analytics Workspace, Azure Storage Account and Event Hub** for logging our **Azure Function Resource**. Next we will configure the Diagnostics Settings to write logs to all of the above destinations.
 
 #### Creating Log Storage Account
-First create Azure storage for logging at the same region as your Azure resource exist. Sign in to the Azure portal at https://portal.azure.com and follow steps: 
-![](https://imgur.com/mjyQ79X.png)
 ![](https://imgur.com/qnL9pT0.gif)
+First create Azure storage for logging at the same region as your Azure resource exist. Sign in to the Azure portal at https://portal.azure.com and follow steps. 
+![](https://imgur.com/mjyQ79X.png)
+
 
 #### Creating Log Analytics Workspace
 
 A Log Analytics workspace provides:
-
-- A geographic location for data storage.
-- Data isolation by granting different users access rights following one of our recommended design strategies.
-- Scope for configuration of settings like pricing tier, retention, and data capping.
-
-When you create workspace in the same region as the Azure resources it manages then there is no outbound data transfer charges. 
-
-Next lets [create a workspace for Analytics Workspace logs](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace). Sign in to the Azure portal at https://portal.azure.com and follow steps: 
+- A **Geographic Location** for the **data storage**.
+- **Data isolation** by granting different users access rights following one of our recommended design strategies.
+- **Scope for configuration** of settings like pricing tier, retention, and data capping.
 
 ![](https://imgur.com/Uma4T5m.gif)
+Let's [create a workspace for Analytics Workspace logs](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace). When you create workspace in the **same region** as the Azure resources it manages then there is **no** **outbound data transfer charges**. 
 
-#### Configure to send logs To Analytics Workspace and Azure storage
+
+#### Configure Diagnostic Setting to send logs To Analytics Workspace and Azure storage
 
 Next let's find our azure function and create diagnostic settings to send the log to Analytics Workspace and Storage Account together. 
 
@@ -89,7 +99,7 @@ Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
 📓 Make sure you give Shared access policy as **Manage, Send and Listen** to the Event Hub. 
 
-#### Configure to send logs to Event Hub
+#### Configure Diagnostic Setting to send logs to Event Hub
 
 Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
@@ -102,27 +112,81 @@ Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
 Is a unified infrastructure security management system. 
 
-#### Security Challenges
+### Security Challenges
 
 1. In cloud workloads are changing quickly and we must make sure the developers/devops are following the security best practices while provisioning the resources. 
 2. Internet Security attacks risk is always there if your resources are internet facing. 
 3. Also Security skills are less with developers. 
 
 
-#### Solving Security Challenges 
+### Solving Security Challenges 
 
-1. Strengthen Security Posture: Using Azure Security Monitor you can examine your resources and give you security reports.
-2. Protect against threats: Azure security monitor can generate security alerts and raises threat prevention suggestions on your Azure resources.
-3. Auto Secure: You can give auto-provisioning to resolve security issues faster. 
+1. **Strengthen Security Posture**: Using Azure Security Monitor you can examine your resources and give you security reports.
+2. **Protect against threats**: Azure security monitor can generate security alerts and raises threat prevention suggestions on your Azure resources.
+3. **Auto Secure**: You can give auto-provisioning to resolve security issues faster. 
 
 
 ### Resources Protected by Azure Security Center
 
 There are lots of resources which are automatically **protected and monitor** by security center.
 
-1. All Azure PaaS resources like DB engine and Storage accounts.
-2. Non-Azure Virtual Machines on cloud. You must install Log Analytics Agents on them ( both windows and Linux ) supported. 
+1. All **Azure PaaS resources** like DB engine and Storage accounts.
+2. Non-Azure **Virtual Machines** on cloud or on premises. You must install Log Analytics Agents on them ( both windows and Linux ) supported. 
+3. **Azure VMs**
+4. **Security alerts** are created when threat is found on the azure workloads. One has to investigate the security alerts.
 
+### Security Center on Azure Portal
+
+#### Overview screen
+![](https://imgur.com/Ck6y2fp.gif)
+
+1. **Secure Score**- over all health score
+2. **Regulatory compliance** - how compliant you are for the resources.
+3. **Azure Defender** - protects resources against security threats.
+4. **Firewall Manager**
+5. **Insights**
+
+
+#### Recommendations screen
+![](https://imgur.com/UJit8lQ.gif)
+Displays the Secure Score, security improvement for all resources & their recommendation and Quick fixes.
+
+
+#### Security alerts
+![](https://imgur.com/UJit8lQ.gif)
+
+If there is any security threats found on your resources then you will see alerts here. 
+
+
+#### Cloud security 
+![](https://imgur.com/UJit8lQ.gif)
+Here you can see secure score and check your overall health score plus you can visit the recommendations. 
+
+
+## Azure Monitor for VMs
+
+>You can monitor performance and health of VMs and VMs scale sets, running processors and other resources dependencies. 
+
+This is a product that helps you to: 
+- Deliver **predictable performance and availability**
+- Identify **performance bottlenecks** and existing **network issues**
+- Identify other dependencies issues and external storage.
+
+### What kind of VMs supported?
+- Azure VMs
+- Azure VMs scale sets
+- Hybrid VMs connected with Azure Arc
+- On-premises virtual machines
+- Virtual machines hosted in another cloud environment like AWS
+
+### How to configure VMs for Azure Monitoring
+1. [Create a Log Analytics Workspace](#creating-log-analytics-workspace)
+2. Add **VMInsights solutions** to the Workspace.
+3. Install agents on virtual machine and virtual machine scale sets.
+
+### Limitations on Linux VMs
+1. VMs Red Hat Linux (RHEL)6 does not support "**Available Memory**" feature from Azure Monitoring.
+2. **Metrics** are only available for data disks on Linux VMs using XFS filesystems or EXT filesystem family (EXT2,EXT3,EXT4)
 
 
 ---
