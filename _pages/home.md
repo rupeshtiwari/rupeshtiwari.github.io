@@ -564,7 +564,7 @@ classes: wide
 
              <div class="col-lg-4">
 
-  <img src="https://imgur.com/tcH3UJu.png" />
+  <img src="https://imgur.com/tcH3UJu.png" width="450" height="250" />
              </div>
 
         </div>
@@ -588,7 +588,7 @@ classes: wide
               <p>
                 Become a software developer. <a href="https://fullstackmaster.net/">Fullstack Master</a> is an innovative software development training school
               </p> <br>
-              <strong>Email:</strong>rupesh.tiwari.info@gmail.com<br>
+              <strong>Email</strong> <br> rupesh.tiwari.info@gmail.com<br>
 
           </div>
 
@@ -623,7 +623,7 @@ classes: wide
               action="https://rupeshtiwari.us19.list-manage.com/subscribe/post?u=05bd81a6160dc05d867637e69&amp;id=7b700ea727"
               method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
               target="_blank" novalidate>
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email" style="border:0px none"><input type="submit" value="Subscribe">
             </form>
           </div>
 
