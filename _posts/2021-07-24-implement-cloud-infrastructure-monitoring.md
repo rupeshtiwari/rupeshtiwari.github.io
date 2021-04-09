@@ -15,6 +15,9 @@ header:
   image: https://i.imgur.com/vDLu5gY.png
   teaser: https://i.imgur.com/nbHefDR.png
   og_image: https://i.imgur.com/nbHefDR.png
+  video:
+    id: DBFvFR_xVX4
+    provider: youtube
 tags:
   - azure
   - certification
@@ -24,34 +27,36 @@ tags:
 
 > Are you preparing for the Microsoft exam **AZ-303**? ​This article will teach you t​he cloud **monitoring skills** needed for this exam.
 
-## Implement Infrastructure Monitoring with Azure Monitoring
+## Introduction
 
 **Implement and Monitor an Azure Infrastructure** is 50-55% in Az-303. Under **Implement cloud infrastructure monitoring** we have below topics to cover:
 
-- monitor security
-- monitor performance
-- monitor health and availability
-- monitor cost
-- configure advanced logging
-- configure logging for workloads Initiate automated responses by using Action Groups
-- configure and manage advanced alerts
+| az-303                                                                              | azure                           |
+| :---------------------------------------------------------------------------------- | :------------------------------ |
+| monitor security                                                                    | Azure Security Center           |
+| monitor performance                                                                 | Azure Monitor Metrics           |
+| monitor health and availability                                                     | Azure Monitor                   |
+| monitor cost                                                                        | Cost Management & Azure Adviser |
+| configure advanced logging                                                          | App Insights & Log Analytics    |
+| configure logging for workloads Initiate automated responses by using Action Groups |                                 |
+| configure and manage advanced alerts                                                |                                 |
 
-### Configure Diagnostic Logs for Azure Resources
+## Implementing Infrastructure Monitoring with Azure Monitor 🐒
 
 We will use **Azure Platform Logs** to get the detail logs of the Azure resources.
 
-#### Azure Platform Logs
+### Azure Platform Logs
 
 Provides detailed **diagnostics** and **auditing** information for Azure resources and the Azure platform they depend on.
 
-#### Types of Platform Logs
+### Types of Platform Logs
 
 Azure platform logs are of 2 types:
 
 1. **Activity Logs**: This works on **subscription** level. Who did what and when can be seen here. Example who deleted Azure blob container or Azure Key Vault etc. You can check all of the write operations here.
 2. **Resource Logs**: **Created for each individual resource**. You can get logs like who was trying to fetch secretes from **Azure vault Instance**?
 
-#### Destinations of Logs
+### Destinations of Logs
 
 Use the **Diagnostic settings** to configure Azure Resources to write platform logs to different destinations. ![](https://imgur.com/31ZUgS4.png) ![](https://imgur.com/Bsl9lSA.png)
 Logs can send to below places:
@@ -61,23 +66,23 @@ Logs can send to below places:
 2. **Archive to Storage Account**: Cheaper option so you can keep your log for long time.
 3. **Stream to an event hub**: To stream logs to external systems. Example: security information & event management software.
 
-#### Destination Requirements
+### Destination Requirements
 
 1. In order to log at **Analytics Workspace** make sure you put both workspace and resource instance at the **same region**. This gives performance also.
 2. For streaming to **Event Hubs** you need **Send**, **Listen** and **Manage** permissions.
 3. For **storage account log**. Create new storage account for log only don't put other data in this. So that you have good control over logs.
 
-#### Demo Configure Logging
+### Demo Configure Logging
 
 We will create **Analytics Workspace, Azure Storage Account and Event Hub** for logging our **Azure Function Resource**. Next we will configure the Diagnostics Settings to write logs to all of the above destinations.
 
-##### Creating Log Storage Account
+#### Creating Log Storage Account
 
 ![](https://imgur.com/qnL9pT0.gif)
 First create Azure storage for logging at the same region as your Azure resource exist. Sign in to the Azure portal at https://portal.azure.com and follow steps.
 ![](https://imgur.com/mjyQ79X.png)
 
-##### Creating Log Analytics Workspace
+#### Creating Log Analytics Workspace
 
 A Log Analytics workspace provides:
 
@@ -88,36 +93,40 @@ A Log Analytics workspace provides:
 ![](https://imgur.com/Uma4T5m.gif)
 Let's [create a workspace for Analytics Workspace logs](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace). When you create workspace in the **same region** as the Azure resources it manages then there is **no** **outbound data transfer charges**.
 
-##### Configure Diagnostic Setting to send logs To Analytics Workspace and Azure storage
+#### Configure Diagnostic Setting to send logs To Analytics Workspace and Azure storage
 
 Next let's find our azure function and create diagnostic settings to send the log to Analytics Workspace and Storage Account together.
 
 ![](https://imgur.com/gqzGN86.png)
 
-##### Creating Event Hub for Logging
+#### Creating Event Hub for Logging
 
 Sign in to the Azure portal at https://portal.azure.com and follow steps:
 ![](https://imgur.com/wMdGcUo.gif)
 
 📓 Make sure you give Shared access policy as **Manage, Send and Listen** to the Event Hub.
 
-##### Configure Diagnostic Setting to send logs to Event Hub
+#### Configure Diagnostic Setting to send logs to Event Hub
 
 Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
 ![](https://imgur.com/DnfeA4b.gif)
 
-## Monitor Security Center
+## Azure Security Center 🚔
 
-### Azure Security Center
+![](https://imgur.com/HzMy9LY.png)
 
-Is a unified infrastructure security management system.
+**Azure Security center** is a unified infrastructure security management system.
+
+This is your "**base layer**" for monitoring the **security** configuration and **health** of your workloads. Azure Security Center collects events from **Azure** or **log analytics agents** and correlates them in a **security analytics engine**, to provide you with tailored recommendations (hardening tasks). Strengthening your security posture can be achieved by implementing these **recommendations**.
+
+The Azure Security Center uses a built-in Azure Policy initiative in audit-only mode (the Azure Security Benchmark) as well as Azure Monitor logs and other Azure security solutions like Microsoft Cloud App Security. [Learn more here...](https://techcommunity.microsoft.com/t5/itops-talk-blog/what-s-the-difference-between-azure-security-center-azure/ba-p/2155188)
 
 ### Security Challenges
 
-1. In cloud workloads are changing quickly and we must make sure the developers/devops are following the security best practices while provisioning the resources.
-2. Internet Security attacks risk is always there if your resources are internet facing.
-3. Also Security skills are less with developers.
+1. In cloud **workloads are changing quickly** and we must make sure the developers/devops are following the security best practices while provisioning the resources.
+2. Internet **Security attacks** risk is always there if your resources are internet facing.
+3. Also Security **skills are less** with developers.
 
 ### Solving Security Challenges
 
@@ -162,7 +171,7 @@ If there is any security threats found on your resources then you will see alert
 ![](https://imgur.com/UJit8lQ.gif)
 Here you can see secure score and check your overall health score plus you can visit the recommendations.
 
-## Azure Monitor for VMs
+## Azure Monitor for VMs 💻
 
 > You can monitor performance and health of VMs and VMs scale sets, running processors and other resources dependencies.
 
@@ -225,7 +234,7 @@ Log Analytics workspace helps us to:
 - Use `Kusto Queries(KQ)` Language to search and analyze logs
 - Connect with other Azure services like `Azure Sentinel` for security analytics for entire enterprise.
 
-## Azure Adviser
+## Azure Adviser 👨‍🏫
 
 - Azure Adviser is an `Azure service`.
 - Helps you to follow best practices to **optimize** Azure **deployments**.
@@ -235,13 +244,13 @@ Azure Advisor has recommendations and monitoring.
 
 ### Overview
 
-![]https://imgur.com/IgCObNA
+![](https://imgur.com/IgCObNA.png)
 In overview you get advisory/recommendations for below stuffs:
 
 - Cost
 - Security: Also available in Azure Security Center
 - Reliability: Like enable soft delete to protect your blob storage
-- Operational Excellence: 
+- Operational Excellence:
 - Performance
 
 ### Cost Recommendations
@@ -260,30 +269,178 @@ In overview you get advisory/recommendations for below stuffs:
 - Under **settings/configuration** select all of the **resources** that you want get advise. You can also drill down up to resource group level.
   ![](https://imgur.com/gXgI8Mn.png)
 
+## Cost Reports and Budget Setup 💲
 
-## Cost Reports and Budget Setup
+**Azure Monitor** also helps us to:
 
-Azure Monitor also helps us 
+- Monitor the resource cost
+- Get cost reports
+- Setup budget and alert
 
+### Cost Management & Billing
 
+![](https://imgur.com/vYFVU0q.png)
+Cost Management & Billing is service in Azure.
 
+In overview screen you will see:
 
+- **History** of all the previous bills
+- Which specific **resource** cost you **more price**
 
+### Cost Management
 
+#### Cost Analysis
 
+![](https://imgur.com/ZCpkOQS.png)
 
+#### Cost Alerts
 
+You can setup your own alerts so that you will be notified once you cross your budget or about to reach your budget.
 
+#### Budgets
 
+You can create or delete the budges.
 
+#### Advisor recommendations
 
+This will redirect to the Azure Adviser page where you can see cost recommendations.
 
+### Billing
 
+Invoices and payments can be find here.
+
+### Settings
+
+![](https://imgur.com/NlKaFVr.png)
+Configurations and you can even connect to AWS resources and check the cost recommendations on them.
+
+## Visualize Azure Monitor Logs and Metrics 📈
+
+You can use below services to visualize log data [Learn them in detail](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations)...
+
+- Workbooks
+- Power BI
+- Azure Dashboards
+- Grafana
+- Azure Monitor Views (deprecated)
+- Custom Applications.
+
+### Metrics
+
+- Specify the resource group and resource you want to see metrics for like VM or function app.
+- Choose which metrics you want to see like VM CPU utilization etc.
+
+### Workbooks
+
+**Workbooks** are interactive documents that provide deep insights into your data.
+
+- You can create empty or use template (like VM performance) to create your new workbook
+- You must need specify log analytics workspace to workbooks
+- Time Range last 4 hours data etc.
+
+### Azure Dashboards
+
+In Azure Portal you can have multiple dashboards.
+
+You can create your own Dashboard for one VM resource and add below stuff like:
+
+1. VMs performance Metrics
+2. Clock
+3. Multiple chart and diagrams.
+
+## Configure Advanced Logging 🧑‍💻
+
+Advance logging for Azure resources.
+
+### Azure Monitor Insights
+
+**Azure Monitor Insights** is **group of services** for getting **customized** monitoring reports for **applications and services**. They collect and analyze both **logs and metrics**.
+
+Azure Monitor Insights for below resources are present:
+
+1. Application Insights: Help you monitor live **web application** on any platform.
+2. Containers: Helps you to monitor the **performance** of container workloads.
+3. Networks: Provides a comprehensive view of network **health** and **metrics**.
+4. Cosmos DB
+5. Resource Group
+6. Storage
+7. VMs
+8. Key Vault
+9. Redis Cache
+
+### Application Insights
+
+Workspace-based Application insights (recommended) needs **Log Analytics Workspace** so make sure you create that first and then App Insights can help on below things:
+
+- Tracing
+- performance anomalies
+- analytics tools to help you to find and resolve issues.
+
+![](https://imgur.com/Xkm4foO.png)
+
+1. Install **Instrumentation package SDK** in your web application.
+2. Instrumentation instance **monitors** the **web app** and **logs the telemetry data** into the Application Insights Resource.
+3. Each log entry must have `Instrumentation Key` GUID.
+
+### What Data Application Insights Monitor
+
+- Request rates
+- Response time
+- Failure rate
+- Exceptions
+- Page views and load performance
+- AJAX calls
+- User session count
+- Performance counters
+- Host diagnostics from Azure or Docker
+- Diagnostic trace logs
+- Custom events and metrics
+
+You can use these data to visualize using:
+
+- Application Map
+- Profiler
+- Usage Analysis
+- Diagnostic Search for instance data
+- Visual Studio
+
+### Creating a MVC Web app with Application Insights
+
+{% include video id="DBFvFR_xVX4" provider="youtube" %}
+
+We will use automatic approach to send telemetry data to Azure. We will also create workspace-based App Insights.
+
+- Create a web application .net framework
+- Install the Application Insights Telemetry on this project
+- Create Log Analytics Workspace on Azure portal
+- Create Application Insights on Azure portal
+- Get the instrumentation key from the overview of the App Insights.
+- Update the MVC project web.config with the Key so that your app will send
+
+Here is the [source code for implementing Azure App Insights](https://github.com/rupeshtiwari/app-insight-demo-mvc-net)
+
+## Azure Monitor For Containers 🛢️
+
+Monitors the performance of containers deployed to several platforms.
+You can monitor below:
+
+- Azure Kubernetes Service (AKS)
+- Self-managed K8 cluster hosted on Azure using AKS Engine
+- Azure Container Instances
+- Self-managed K8 clusters hosted on Azure Stack or on-premises
+- Azure Red Hat OpenShift
+- Azure Arc enabled Kubernetes
+
+### Implementing Azure Monitor for Kubernetes
+
+## References
+
+1. https://techcommunity.microsoft.com/t5/itops-talk-blog/what-s-the-difference-between-azure-security-center-azure/ba-p/2155188
 
 ---
 
 _Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
- 
+
 ## Become full stack developer 💻
 
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.

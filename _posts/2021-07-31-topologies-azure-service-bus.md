@@ -185,15 +185,7 @@ Connect to your Azure Service Bus Namespace by using connection string.
 ![](https://imgur.com/PYOY7fj.png)
 
 
-
-
 📓 N-Service bus helps us to retrieve the message and search for subscriber and invoke the handle method of the Handler. All of this code is already written in N-Service Bus. That helps a lot when you are working with Azure Service Bus Transport. I recommend using N-Service Bus.
-
-
-
-
-
-
 
 ## References
 
