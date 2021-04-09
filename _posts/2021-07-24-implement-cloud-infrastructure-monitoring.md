@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/nbHefDR.png
 header:
   image: https://i.imgur.com/vDLu5gY.png
@@ -24,7 +24,7 @@ tags:
 
 > Are you preparing for the Microsoft exam **AZ-303**? ​This article will teach you t​he cloud **monitoring skills** needed for this exam.
 
-## Introduction
+## Implement Infrastructure Monitoring with Azure Monitoring
 
 **Implement and Monitor an Azure Infrastructure** is 50-55% in Az-303. Under **Implement cloud infrastructure monitoring** we have below topics to cover:
 
@@ -48,7 +48,7 @@ Provides detailed **diagnostics** and **auditing** information for Azure resourc
 
 Azure platform logs are of 2 types:
 
-1. **Activity Logs**: Who did what and when can be seen here. Example who deleted Azure blob container or Azure Key Vault etc. You can check all of the write operations here.
+1. **Activity Logs**: This works on **subscription** level. Who did what and when can be seen here. Example who deleted Azure blob container or Azure Key Vault etc. You can check all of the write operations here.
 2. **Resource Logs**: **Created for each individual resource**. You can get logs like who was trying to fetch secretes from **Azure vault Instance**?
 
 ### Destinations of Logs
@@ -190,6 +190,95 @@ This is a product that helps you to:
 
 1. VMs **Red Hat Linux (RHEL)6** does not support "**Available Memory**" feature from Azure Monitoring.
 2. **Metrics** are only available for data disks on Linux VMs using **XFS filesystems or EXT filesystem** family (EXT2,EXT3,EXT4)
+
+### Monitoring
+
+![](https://imgur.com/W5ZpfLv.png)
+
+Once you have created VM in azure then you can see **insights** under Monitoring group of VMs. You can **enable** monitoring for the virtual machine which will **install** the **agent** on VM to work with Azure Monitor.
+![](https://imgur.com/14Xqb1v.png)
+You must connect to Log Analytics Workspace also. Then after 5-10 mins VM will start sending data to the Azure Monitoring. All the data goes to Azure Analytics Workspace.
+You see 3 kinds of data in Azure monitoring.
+
+#### Map
+
+![](https://imgur.com/ZniCark.png)
+
+List of processes running on virtual machine, which port, IP address, VM properties
+
+#### Performance
+
+![](https://imgur.com/7YXyLX6.png)
+Logical disk, size, percentage of use, CPU utilization.
+
+#### Health
+
+Health of the VM
+
+## Log Analytics Workspace
+
+![](https://imgur.com/pRUjhup.png)
+
+Log Analytics workspace helps us to:
+
+- Creates alerts when CPU goes high etc.
+- Use `Kusto Queries(KQ)` Language to search and analyze logs
+- Connect with other Azure services like `Azure Sentinel` for security analytics for entire enterprise.
+
+## Azure Advisor
+
+- Azure Adviser is an `Azure service`.
+- Helps you to follow best practices to **optimize** Azure **deployments**.
+- Deallocate/delete/downgrade resource based on its usages and reduce cost.
+
+Azure Advisor has recommendations and monitoring.
+
+### Overview
+
+![]https://imgur.com/IgCObNA
+In overview you get advisory/recommendations for below stuffs:
+
+- Cost
+- Security: Also available in Azure Security Center
+- Reliability: Like enable soft delete to protect your blob storage
+- Operational Excellence: 
+- Performance
+
+### Cost Recommendations
+
+- Optimize VM **costs** by **resizing** or **shutting down** underutilized instances.
+- Downgrade or reduce size of DB engines like Maria DB, MySQL or PostgreSQL
+- Buy **reserved capacities** for Azure SQL, Cosmos DB, Storage Account etc. Because reserved capacity resources are cheaper.
+- Delete **unused public IP** addresses.
+
+### Azure Adviser on Azure Portal
+
+![](https://imgur.com/2sFY9nb.png)
+
+- Go to all services
+- Select advisor
+- Under **settings/configuration** select all of the **resources** that you want get advise. You can also drill down up to resource group level.
+  ![](https://imgur.com/gXgI8Mn.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 

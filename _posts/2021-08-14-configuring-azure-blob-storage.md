@@ -1,5 +1,5 @@
 ---
-title: Configuring Azure Blob Storage in the Storage Account
+title: Configuring Azure Blob Storage in the Storage Account AZ-303
 date: 2021-08-14 00:00 +0000
 description: Microsoft Azure Solutions Architect AZ 303 material for creating Azure Blob Storage within a Storage account.
 author_profile: true
