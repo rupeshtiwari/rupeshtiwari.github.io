@@ -36,22 +36,22 @@ tags:
 - configure logging for workloads Initiate automated responses by using Action Groups
 - configure and manage advanced alerts
 
-## Configure logging for workloads
+### Configure Diagnostic Logs for Azure Resources
 
 We will use **Azure Platform Logs** to get the detail logs of the Azure resources.
 
-### Azure Platform Logs
+#### Azure Platform Logs
 
 Provides detailed **diagnostics** and **auditing** information for Azure resources and the Azure platform they depend on.
 
-### Types of Platform Logs
+#### Types of Platform Logs
 
 Azure platform logs are of 2 types:
 
 1. **Activity Logs**: This works on **subscription** level. Who did what and when can be seen here. Example who deleted Azure blob container or Azure Key Vault etc. You can check all of the write operations here.
 2. **Resource Logs**: **Created for each individual resource**. You can get logs like who was trying to fetch secretes from **Azure vault Instance**?
 
-### Destinations of Logs
+#### Destinations of Logs
 
 Use the **Diagnostic settings** to configure Azure Resources to write platform logs to different destinations. ![](https://imgur.com/31ZUgS4.png) ![](https://imgur.com/Bsl9lSA.png)
 Logs can send to below places:
@@ -61,23 +61,23 @@ Logs can send to below places:
 2. **Archive to Storage Account**: Cheaper option so you can keep your log for long time.
 3. **Stream to an event hub**: To stream logs to external systems. Example: security information & event management software.
 
-### Destination Requirements
+#### Destination Requirements
 
 1. In order to log at **Analytics Workspace** make sure you put both workspace and resource instance at the **same region**. This gives performance also.
 2. For streaming to **Event Hubs** you need **Send**, **Listen** and **Manage** permissions.
 3. For **storage account log**. Create new storage account for log only don't put other data in this. So that you have good control over logs.
 
-### Demo Configure Logging
+#### Demo Configure Logging
 
 We will create **Analytics Workspace, Azure Storage Account and Event Hub** for logging our **Azure Function Resource**. Next we will configure the Diagnostics Settings to write logs to all of the above destinations.
 
-#### Creating Log Storage Account
+##### Creating Log Storage Account
 
 ![](https://imgur.com/qnL9pT0.gif)
 First create Azure storage for logging at the same region as your Azure resource exist. Sign in to the Azure portal at https://portal.azure.com and follow steps.
 ![](https://imgur.com/mjyQ79X.png)
 
-#### Creating Log Analytics Workspace
+##### Creating Log Analytics Workspace
 
 A Log Analytics workspace provides:
 
@@ -88,26 +88,26 @@ A Log Analytics workspace provides:
 ![](https://imgur.com/Uma4T5m.gif)
 Let's [create a workspace for Analytics Workspace logs](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace). When you create workspace in the **same region** as the Azure resources it manages then there is **no** **outbound data transfer charges**.
 
-#### Configure Diagnostic Setting to send logs To Analytics Workspace and Azure storage
+##### Configure Diagnostic Setting to send logs To Analytics Workspace and Azure storage
 
 Next let's find our azure function and create diagnostic settings to send the log to Analytics Workspace and Storage Account together.
 
 ![](https://imgur.com/gqzGN86.png)
 
-#### Creating Event Hub for Logging
+##### Creating Event Hub for Logging
 
 Sign in to the Azure portal at https://portal.azure.com and follow steps:
 ![](https://imgur.com/wMdGcUo.gif)
 
 📓 Make sure you give Shared access policy as **Manage, Send and Listen** to the Event Hub.
 
-#### Configure Diagnostic Setting to send logs to Event Hub
+##### Configure Diagnostic Setting to send logs to Event Hub
 
 Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
 ![](https://imgur.com/DnfeA4b.gif)
 
-## Monitor Security
+## Monitor Security Center
 
 ### Azure Security Center
 
@@ -215,7 +215,7 @@ Logical disk, size, percentage of use, CPU utilization.
 
 Health of the VM
 
-## Log Analytics Workspace
+### Log Analytics Workspace
 
 ![](https://imgur.com/pRUjhup.png)
 
@@ -225,7 +225,7 @@ Log Analytics workspace helps us to:
 - Use `Kusto Queries(KQ)` Language to search and analyze logs
 - Connect with other Azure services like `Azure Sentinel` for security analytics for entire enterprise.
 
-## Azure Advisor
+## Azure Adviser
 
 - Azure Adviser is an `Azure service`.
 - Helps you to follow best practices to **optimize** Azure **deployments**.
@@ -261,9 +261,9 @@ In overview you get advisory/recommendations for below stuffs:
   ![](https://imgur.com/gXgI8Mn.png)
 
 
+## Cost Reports and Budget Setup
 
-
-
+Azure Monitor also helps us 
 
 
 
@@ -283,7 +283,7 @@ In overview you get advisory/recommendations for below stuffs:
 ---
 
 _Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
-
+ 
 ## Become full stack developer 💻
 
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.

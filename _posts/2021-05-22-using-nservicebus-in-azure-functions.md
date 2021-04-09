@@ -46,6 +46,9 @@ You might have this question why to use NService Bus in Azure Service Bus? Well 
 3. **Extensible Message Processing Pipeline** You can take the advantages of this feature also.
 4. **Tooling** NSB provides tooling like **AppInsight** , **Service Control** and **Service Pulse** to track your messages and retry failed one manually. Check health of your handlers etc.
 5. **NSB** framework **enables to publish base messages once the child message is published**. Example if `AccountCreatedV2` Message inherits from `AccountCreatedV1` class. And if we publish `AccountCreatedV2` event then NSB will also publish the `AccountCreatedV1` event so that both message handlers will be invoked out of the box.
+6. **NSB** also help us to route all of the messages sitting in the dead-letter queues to corresponding destinations or receivers. 
+7. **NSB** uses `sendvia` feature and creates default topology 
+
 
 ## Getting Started with NSB Sample code
 
