@@ -172,5 +172,4 @@ From the container list you can select the action per container level.
 
 - **Acquire lease** : No one can delete this container
 - **Change access level** : You can change the public access level at container level. 
-
-### 
+ 
