@@ -167,7 +167,7 @@ facebook:
   app_id: 421181512329379
   publisher: https://www.facebook.com/fullstackmaster1 
 
-
+breadcrumbs: true
 
 ## Personal Configs
 jekyll_compose:
