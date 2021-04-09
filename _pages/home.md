@@ -650,7 +650,7 @@ classes: wide
         <a href="https://www.linkedin.com/in/rupesh-tiwari/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       
-      ![](https://imgur.com/tcH3UJu.png)
+      <img src="https://imgur.com/tcH3UJu.png" />
     </div>
 
   </footer>
