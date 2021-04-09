@@ -1,27 +1,25 @@
 ---
 permalink: /about/
-title: "About"
+title: 'About'
 header:
-  image: https://i.imgur.com/x0T7uvl.png
+  image: https://i.imgur.com/mo78hWM.png
 ---
-
 
 My name is Rupesh Tiwari. I am Sr. Software/Solution Architect, Professional Trainer & Pluralsight Author. I help students and professionals to become Full Stack Software Developer in less than a year!
 
-### My Learning Updates 
+### My Learning Updates
 
-- Currently exploring `Jekyll`. I have created this blog site using [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) theme. I 💖 this them! 
-- Recently Explored: 
-  -  [Nrwl Nx Monorepo](https://nx.dev), Check out my [Nx blogs](https://rupeshtiwari.github.io/tags/#nx)
-  -  Azure DevOps, Check out my [DevOps blogs](https://rupeshtiwari.github.io/tags/#devops)
- 
+- Currently exploring `Jekyll`. I have created this blog site using [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll) theme. I 💖 this them!
+- Recently Explored:
+  - [Nrwl Nx Monorepo](https://nx.dev), Check out my [Nx blogs](https://rupeshtiwari.github.io/tags/#nx)
+  - Azure DevOps, Check out my [DevOps blogs](https://rupeshtiwari.github.io/tags/#devops)
 
-### Where I train professionals? 
+### Where I train professionals?
 
-- I train professionals free at [Fullstack Master YouTube Channel](https://youtube.com/fullstackmaster) 
+- I train professionals free at [Fullstack Master YouTube Channel](https://youtube.com/fullstackmaster)
 - I teach at [Pluralsight](https://www.pluralsight.com/)
   - Check out my course: [Unit Testing RxJS with Marble Diagrams](https://www.pluralsight.com/courses/unit-testing-rxjs-marble-diagrams)
-- I have started teaching at [Fullstack Master Site](https://www.fullstackmaster.net). There I have Free as well as paid course. 
+- I have started teaching at [Fullstack Master Site](https://www.fullstackmaster.net). There I have Free as well as paid course.
 
 ### Fullstack Master Software Development Training Details
 
