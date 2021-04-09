@@ -12,7 +12,7 @@ toc: true
 toc_sticky: false
 image: https://i.imgur.com/qyTdaCD.png
 header:
-  image: https://i.imgur.com/NCoU8U2.png
+  image: https://i.imgur.com/3TIgwIE.png
   teaser: https://i.imgur.com/qyTdaCD.png
   og_image: https://i.imgur.com/qyTdaCD.png
 tags:
@@ -22,13 +22,19 @@ tags:
   - webdev
 ---
 
-> **Azure Storage account** is a **resource** in Azure. You can select create resource and search for **Storage Account** and then create new storage account for you.
+> **Azure Storage account** is a **resource** in Azure. Storage Account will give your group of services like **Blob** Service, **File** Service, **Table** Service, **Queue** Service.
 
-![](https://imgur.com/jTJmWoP.png)
+## Introduction
+
+![](https://imgur.com/dMLZ7o2.png)
 
 ![](https://imgur.com/0UoZ9OD.gif)
 
-## Basic Setup 🧮
+## Basics 🧮
+
+Login to https://portal.azure.com/ and create resource and search for **Storage Account** and then create new storage account for you.
+
+![](https://imgur.com/jTJmWoP.png)
 
 ### Name
 
@@ -179,17 +185,19 @@ if you **disabled** public access at the storage account level you can still **a
 
 #### NFS v3
 
-Network File System(NFS) enables **Windows or Linux clients**  to **mount a container** in **Blob Storage** from a **Azure Virtual Machine**(VM) . This is in preview and only available for few region as of now. ⚠️Signup is required.
+Network File System(NFS) enables **Windows or Linux clients** to **mount a container** in **Blob Storage** from a **Azure Virtual Machine**(VM) . This is in preview and only available for few region as of now. ⚠️Signup is required.
 
 ### Data Lake Storage Gen2
 
 #### Hierarchical namespace
+
 If **disabled** then Blob storage uses **virtual file system** by default that creates URL for a blob with no real folder structures. Each blob can be located by this URL format:
 https://rupesh.blob.core.windows.net/**container2**/**myimages**/**image.png**
-That contains container name and sub folders name and file name. However they **are not** really **folders** they are just **part of the URL**. 
+That contains container name and sub folders name and file name. However they **are not** really **folders** they are just **part of the URL\*\*.
 
 If **enabled** then below benefits will happen:
-- Blob storage will use **actual file systems**. So you get actual folder structures and that helps to setup **security** and other **atomic operations** at folder level. 
+
+- Blob storage will use **actual file systems**. So you get actual folder structures and that helps to setup **security** and other **atomic operations** at folder level.
 
 - **Data Lake Storage Gen2** is built on top of the Blob Storage Service. So it can be used by other Azure services like Azure HDInsight, Azure DataBricks and Azure Synapse Analytics
 
@@ -199,14 +207,13 @@ If **enabled** then below benefits will happen:
 
 It is for Azure Files Services so that you can allow file share upto **100TB of size**. Only **Local** and **Zone** redundant storage and it can **not be turned off** when enabled.
 
-
 ### Tables and Queues
 
 You can add your own encryption keys for Tables and Queues and it can **not be turned off** when enabled.
 
 ## Tags 🏳️
 
-This is common feature for all Azure resources where you can create tags. 
+This is common feature for all Azure resources where you can create tags.
 
 ## Demo
 
