@@ -455,7 +455,7 @@ classes: wide
           <h2>Frequently Asked Questions</h2>
           <p>Students and Instructors, those who are visiting my website having some questions in their Mind! Hope all
             your basic questions are mentioned below! And still if you have your Personal Question then <a
-              href="mailto:info@rupeshtiwari.com">Click Here</a></p>
+              href="mailto:rupesh.tiwari.info@gmail.com">Click Here</a></p>
         </div>
 
         <div class="faq-list">
@@ -583,7 +583,7 @@ classes: wide
               <p>
                 Become a software developer. <a href="https://fullstackmaster.net/">Fullstack Master</a> is an innovative software development training school
               </p> <br>
-              <strong>Email:</strong> info@rupeshtiwari.com<br>
+              <strong>Email:</strong>rupesh.tiwari.info@gmail.com<br>
 
           </div>
 
@@ -649,6 +649,8 @@ classes: wide
 
         <a href="https://www.linkedin.com/in/rupesh-tiwari/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
+      
+      ![](https://imgur.com/tcH3UJu.png)
     </div>
 
   </footer>
