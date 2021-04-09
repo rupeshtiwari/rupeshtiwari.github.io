@@ -562,6 +562,11 @@ classes: wide
 
           </div>
 
+             <div class="col-lg-4">
+
+  <img src="https://imgur.com/tcH3UJu.png" />
+             </div>
+
         </div>
 
       </div>
@@ -649,8 +654,8 @@ classes: wide
 
         <a href="https://www.linkedin.com/in/rupesh-tiwari/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
-      
-      <img src="https://imgur.com/tcH3UJu.png" />
+
+
     </div>
 
   </footer>
