@@ -1,22 +1,24 @@
 main:
-  - title: "Blog"
-    url: /posts/
-  - title: "Subscribe"
-    url: /subscribe/
-  - title: "Consulting"
-    url: /consulting/
-  - title: "Angular Courses"
-    url: https://www.fullstackmaster.net
-  - title: "Sing in"
-    url: https://fullstackmaster.net/login
-  - title: "About"
+  - title: "about"
     url: /about/
-  - title: "Tags"
+  - title: "blog"
+    url: /posts/
+  - title: "youtube"
+    url: https://youtube.com/fullstackmaster
+  - title: "tags"
     url: /tags/
-  - title: "Angular Training"
+  - title: "subscribe"
+    url: /subscribe/
+  - title: "consulting"
+    url: /consulting/
+  - title: "angular courses"
+    url: https://www.fullstackmaster.net
+  - title: "sign in"
+    url: https://fullstackmaster.net/login
+  - title: "angular training"
     url: https://www.fullstackmaster.net/pro
-  - title: "Angular Live Training"
+  - title: "angular elite training"
     url: https://www.fullstackmaster.net/elite
-  - title: "Sign up"
+  - title: "sign up"
     url: https://fullstackmaster.net/register
 
