@@ -463,7 +463,7 @@ Let's create and deploy a docker container to AKS. [Source code for azure app in
 
 #### Creating Kubernetes Cluster in Azure
 
-![](https://imgur.com/rxhclSU.png)
+![](https://imgur.com/Ov87oEs.png)
 
 Follow the video steps to create the Kubernetes Cluster.
 
