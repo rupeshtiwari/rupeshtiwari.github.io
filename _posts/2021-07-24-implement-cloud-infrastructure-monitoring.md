@@ -430,6 +430,8 @@ You can monitor below:
 
 ### Implementing Azure Monitor for Kubernetes
 
+![](https://imgur.com/vG39wgW.png)
+
 Let's create and deploy a docker container to AKS. [Source code for azure app insight for docker container](https://github.com/rupeshtiwari/azure-app-container-insights-demo).
 
 #### Creating MVC application with docker
@@ -458,6 +460,21 @@ Let's create and deploy a docker container to AKS. [Source code for azure app in
 - Select Docker Container Registry
 - Next select azure container registry
 - Select your resource group and azure container registry to publish then select publish. It will take some time to publish your image to Azure Container Registry.
+
+#### Creating Kubernetes Cluster in Azure
+
+![](https://imgur.com/rxhclSU.png)
+
+Follow the video steps to create the Kubernetes Cluster.
+
+**Authentication method**: required to connect Azure Container Registry to get the docker image. **Integration**: Select your own Container Registry that is we created where we have our docker image. You can check the **performance** of your container by going to the Monitor Insights. Once our container will be deployed to the Kubernetes then we can observe performance.
+
+
+**Azure Container Registry** has Docker Image and in order to connect to your own docker container image you will get **container name** and **registry name** that will help you to host your docker image to any Azure container hosting services. 
+
+**Azure Kubernetes Cluster** host the docker container and exposes the container into public 8080 port using in-built high performance load balancer. 
+
+
 
 
 ## References
