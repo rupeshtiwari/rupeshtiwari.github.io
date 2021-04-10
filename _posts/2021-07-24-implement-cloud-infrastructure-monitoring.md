@@ -15,9 +15,6 @@ header:
   image: https://i.imgur.com/vDLu5gY.png
   teaser: https://i.imgur.com/nbHefDR.png
   og_image: https://i.imgur.com/nbHefDR.png
-  video:
-    id: DBFvFR_xVX4
-    provider: youtube
 tags:
   - azure
   - certification
@@ -432,6 +429,36 @@ You can monitor below:
 - Azure Arc enabled Kubernetes
 
 ### Implementing Azure Monitor for Kubernetes
+
+Let's create and deploy a docker container to AKS. [Source code for azure app insight for docker container](https://github.com/rupeshtiwari/azure-app-container-insights-demo).
+
+#### Creating MVC application with docker
+
+{% include video id="5c2Ccdq_0xg" provider="youtube" %}
+
+- First create MVC asp.net project select docker Linux support.
+- Run project locally
+- Package this app in container and deploy into container registry
+- You can use Docker hub or Azure Container Registry
+
+#### Creating Azure Container Registry
+
+{% include video id="_G5I2JojkN0" provider="youtube" %}
+
+- Next I am going to use **Azure Container Registry Service** to create new container registry.
+- Under **repository** of my container registry My MVC application docker image will appear.
+- Visual Studio will package my app into a **docker image** and deploy to my **azure docker container registry**.
+- Once my docker image any docker host like **Azure Container Instances** or **Azure Kubernetes Service** (AKS).
+
+#### Publishing Asp.net Docker Image to Azure
+
+{% include video id="nklZHjzh2Z4" provider="youtube" %}
+
+- Right click application and publish
+- Select Docker Container Registry
+- Next select azure container registry
+- Select your resource group and azure container registry to publish then select publish. It will take some time to publish your image to Azure Container Registry.
+
 
 ## References
 
