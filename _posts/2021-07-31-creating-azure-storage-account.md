@@ -1,6 +1,6 @@
 ---
 title: Creating Azure Storage Account AZ-303
-date: 2021-08-07 00:00 +0000
+date: 2021-07-31 00:00 +0000
 description: Microsoft Azure Solutions Architect AZ 303 material for creating Azure Storage Account.
 author_profile: true
 published: true

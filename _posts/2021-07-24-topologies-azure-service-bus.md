@@ -1,6 +1,6 @@
 ---
 title: Topologies Azure Service Bus 
-date: 2021-07-31 00:00 +0000
+date: 2021-07-24 00:00 +0000
 description: Learn what is Topology in Azure service bus and how N-Service bus help us to build it.
 author_profile: true
 published: true
