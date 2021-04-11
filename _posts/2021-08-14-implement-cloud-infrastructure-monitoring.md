@@ -403,8 +403,8 @@ You can use these data to visualize using:
 
 ### Creating a MVC Web app with Application Insights
 
-{% include video id="DBFvFR_xVX4" provider="youtube" %}
-We will create workspace-based App Insights so that logs can be sent to Azure Analytics Workspace further it can be used in Azure Sentinel. We will also use automatic approach to send telemetry data to the Azure. 
+{% include video id="xoN1efAAEBg" provider="youtube" %}
+We will create workspace-based App Insights so that logs can be sent to Azure Analytics Workspace further it can be used in Azure Sentinel. We will also use automatic approach to send telemetry data to the Azure.
 
 - Create a web application .net framework
 - Install the Application Insights Telemetry on this project
@@ -464,26 +464,60 @@ Let's create and deploy a docker container to AKS. [Source code for azure app in
 
 ![](https://imgur.com/Ov87oEs.png)
 **Kubernetes Cluster concepts**
-1. **Azure Container Registry** has Docker Image and in order to connect to your own docker container image you will get **container name** and **registry name** that will help you to host your docker image to any Azure container hosting services. 
 
-2. **Azure Kubernetes Cluster** host the docker container and exposes the container into public **8080** port using in-built high performance **load balancer**. 
-   1. You need **pod** workflow from Kubernetes Cluster which will connect to the container registry using container name and registry name and create internal 80 port for your app. 
+1. **Azure Container Registry** has Docker Image and in order to connect to your own docker container image you will get **container name** and **registry name** that will help you to host your docker image to any Azure container hosting services.
+
+2. **Azure Kubernetes Cluster** host the docker container and exposes the container into public **8080** port using in-built high performance **load balancer**.
+   1. You need **pod** workflow from Kubernetes Cluster which will connect to the container registry using container name and registry name and create internal 80 port for your app.
    2. Next you need **service** to expose internal port 80 to public 8080 over load balancer.
+
+While creating Kubernetes Cluster remember 3 things.
+
+1. **Authentication method**: required to connect Azure Container Registry to get the docker image.
+2. **Integration**: Which Container Registry to select your own Container Registry that is we created where we have our docker image.
+3. You can check the **performance** of your container by going to the Monitor Insights. Once our container will be deployed to the Kubernetes then we can observe performance.
+
+Here is the YML for creating POD in k8 cluster.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: insights-demo01 # give any name
+  labels:
+    app: insights-demo01 # app name
+    component: netcore-app
+spec:
+  containers: # which container u want to deploy
+    - image: regdemo01.azurecr.io/appcontainerinsightsdemo:latest # <NameOfTheContainerRegistry>/<NAMEofTheDockerContainer>:latest
+      name: webapi
+      ports:
+        - containerPort: 80
+```
+
+YML for creating service in K8 cluster.
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: insights-demo01 # give any name
+  name: insights-demo01 # give any name
+spec:
+  ports:
+    - port: 8080 # public port
+      protocol: TCP
+      targetPort: 80 # internal port
+  selector:
+    app: insights-demo01
+    component: netcore-app
+  type: LoadBalancer
+```
 
 Follow the video steps to create the Kubernetes Cluster including pod and service.
 
-While creating Kubernetes Cluster remember 3 things. 
-1. **Authentication method**: required to connect Azure Container Registry to get the docker image. 
-2. **Integration**: Which Container Registry to select your own Container Registry that is we created where we have our docker image. 
-3. You can check the **performance** of your container by going to the Monitor Insights. Once our container will be deployed to the Kubernetes then we can observe performance.
-
-
-
-
-
-
-
-
+{% include video id="xoN1efAAEBg" provider="youtube" %}
 
 ## References
 
