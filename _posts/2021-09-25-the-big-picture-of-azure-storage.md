@@ -1,6 +1,6 @@
 ---
-title: Azure Storage- The big picture
-date: 2021-04-12 06:18 -0400
+title: Azure Storage - The big picture
+date: 2021-09-25 06:18 -0400
 description: Understand the use case of Azure storage account
 author_profile: true
 published: true
@@ -19,7 +19,7 @@ tags:
   - azure
   - webdev
   - beginners
-  - tutorial
+  - certification
 ---
 
 ## Azure Core Storage Services

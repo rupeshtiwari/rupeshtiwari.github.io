@@ -1,6 +1,6 @@
 ---
 title: Azure Blob Access Tiers and Lifecycle Management
-date: 2021-08-28 00:00 +0000
+date: 2021-10-02 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -18,7 +18,7 @@ header:
 tags:
   - azure
   - webdev
-  - tutorial
+  - certification
   - beginners
 ---
 > Azure Storage has no upfront cost, no termination fees and pay only for what you use. 

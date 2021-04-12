@@ -18,7 +18,7 @@ header:
 tags:
   - azure
   - beginners
-  - tutorial
+  - certification
   - webdev
 ---
 

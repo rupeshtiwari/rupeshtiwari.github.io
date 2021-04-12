@@ -20,7 +20,7 @@ tags:
   - azure
   - webdev
   - beginners
-  - tutorial
+  - certification
 ---
 
 > You can monitor **performance** and **health** of Virtual Machines and Virtual Machines scale sets, running processors and other resources dependencies with **Azure Monitoring**. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
