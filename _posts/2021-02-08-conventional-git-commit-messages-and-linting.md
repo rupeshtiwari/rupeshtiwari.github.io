@@ -1,13 +1,13 @@
 ---
 title: Conventional Git Commit Messages and Linting
-date: "2021-02-08 08:53 -0500"
+date: '2021-02-08 08:53 -0500'
 subtitle: Vscode linting to enforce conventional commit message
 description: Vscode linting to enforce conventional commit message
-header: 
-  image: "https://i.imgur.com/60xKLYV.jpg"
+header:
+  image: 'https://i.imgur.com/60xKLYV.jpg'
   teaser: https://i.imgur.com/INHV6Ax.jpg
   og_image: https://i.imgur.com/INHV6Ax.jpg
-image: "https://i.imgur.com/INHV6Ax.png"
+image: 'https://i.imgur.com/INHV6Ax.png'
 tags:
   - javascript
   - linting
@@ -263,7 +263,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

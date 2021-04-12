@@ -23,32 +23,31 @@ tags:
   - dotnet
 ---
 
->  Do you prefer **LINQ queries**? I do because they provide a single **consistent programming model** across how they work with objects in application code and how they express **query logic** running in the **database**. In this article I will teach you how can you make **LINQ queries** as well as **SQL queries** to fetch documents from **Cosmos DB**. 
+> Do you prefer **LINQ queries**? I do because they provide a single **consistent programming model** across how they work with objects in application code and how they express **query logic** running in the **database**. In this article I will teach you how can you make **LINQ queries** as well as **SQL queries** to fetch documents from **Cosmos DB**.
 
 ## Pre-requisite
 
 If you have not yet setup your **azure development environment** then please read my below articles to start.
+
 1. [Get Free Sandbox Azure account for learning Azure](http://www.rupeshtiwari.com/blog/azure-sandbox-free-account-for-learning/)
 2. [Creating Cosmos DB from DotNet Core Project](http://www.rupeshtiwari.com/blog/creating-cosmos-db-from-dotnet-core-project/)
 3. [CRUD with Cosmos DB using Dotnet Core](http://www.rupeshtiwari.com/blog/crud-with-cosmos-db-and-dotnet-core/)
 
 ## How LINQ work in Cosmos DB
 
-**LINQ** is a .Net Programming model that gives us an **abstraction** over querying data. Either you query XML or File or Object you always write a same program. 
+**LINQ** is a .Net Programming model that gives us an **abstraction** over querying data. Either you query XML or File or Object you always write a same program.
 
 You can create an **`IQueryable`** object that directly queries **Azure Cosmos DB**, which translates the **LINQ query** into an **Azure Cosmos DB** query. The query is then passed to the Azure Cosmos DB server to retrieve a set of results in JSON format. The returned results are **de-serialized into a stream of .NET objects** on the client side.
 
-
 ## Executing LINQ on Cosmos DB
 
-Now we will fetch the user by their last name. This time I will write LINQ. 
+Now we will fetch the user by their last name. This time I will write LINQ.
 
 ![](https://imgur.com/5XcsfJY.gif)
 
 ### Using CreateDocumentQuery Method
 
-`CreateDocumentQuery` will help us to run LINQ on cosmos DB. While querying we will enable the cross partition query. 
-
+`CreateDocumentQuery` will help us to run LINQ on cosmos DB. While querying we will enable the cross partition query.
 
 ```csharp
 private void ExecuteLinqQuery (string databaseName, string collectionName) {
@@ -72,6 +71,7 @@ private void ExecuteLinqQuery (string databaseName, string collectionName) {
 }
 
 ```
+
 ### Fetch User By LastName using LINQ Query
 
 ```csharp
@@ -105,22 +105,23 @@ private async Task InitializeDB () {
     this.ExecuteLinqQuery ("customers", "users");
 }
 ```
+
 Run `dotnet run` & notice we fetched the user. [Source Code](https://github.com/rupeshtiwari/dotnet-azure-cosmos-db-example/commit/e4bac7e8cc7c6b8e468f72c14d0db554440e759e)
 
 ![](https://imgur.com/kAaBKok.png)
 
-
 ## Executing SQL Query on Cosmos DB
 
-You may surprise that Cosmos DB also support running SQL querries to search an item. 
-Let's write code to select user by last name using SQL. 
+You may surprise that Cosmos DB also support running SQL querries to search an item.
+Let's write code to select user by last name using SQL.
 
 ```sql
 SELECT * FROM User WHERE User.lastName = 'Pindakova'"
 ```
+
 ![](https://imgur.com/Zr0I2rX.gif)
 
-### Using CreateDocumentQuery Method 
+### Using CreateDocumentQuery Method
 
 Let's create new method where I will write SQL query to fetch user by his last name.
 
@@ -136,7 +137,7 @@ private void ExecuteSQLQuery (string databaseName, string collectionName) {
 
     Console.WriteLine ("Running direct SQL query...");
     foreach (User user in userQueryInSql) {
-        Console.WriteLine ("\tRead {0}", 
+        Console.WriteLine ("\tRead {0}",
           JsonConvert.SerializeObject (user, Formatting.Indented));
     }
 
@@ -179,7 +180,7 @@ private async Task InitializeDB () {
     // Run LINQ
     this.ExecuteLinqQuery ("customers", "users");
 
-    👇 // Run SQL 
+    👇 // Run SQL
     this.ExecuteSQLQuery("customers", "users");
 }
 ```
@@ -190,25 +191,21 @@ Notice the output by running SQL query only. The console displays the output of 
 
 ![](https://imgur.com/bjhHDzT.png)
 
-
-
-
 ---
- 
-*If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.*
+
+_If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
 
 ## Become full stack developer 💻
 
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
 
-- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access *current* and *future* **angular, node.js** and related courses.
-- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask ***doubts/questions*** and get more help, tips and tricks.
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
-**💖 Say 👋 to me!** 
+**💖 Say 👋 to me!**
 <br>Rupesh Tiwari
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
-<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a> 
+<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
-

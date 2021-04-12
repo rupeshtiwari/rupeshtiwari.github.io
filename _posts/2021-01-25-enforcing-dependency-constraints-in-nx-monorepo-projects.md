@@ -1,16 +1,16 @@
 ---
 title: Enforcing Dependency Constraints in Nx Monorepo Projects
-date: "2021-01-25 00:00 +0000"
+date: '2021-01-25 00:00 +0000'
 subtitle: >-
   learn configuration required to enforce dependency in your nx monorepo
   workspace
 description: >-
   learn configuration required to enforce dependency in your nx monorepo
   workspace
-image: "https://i.imgur.com/NLPsgZR.png"
-cover_image: "https://i.imgur.com/NLPsgZR.png"
-thumbnail-img: "https://i.imgur.com/nx2bZiB.png"
-share-img: "https://i.imgur.com/nx2bZiB.png"
+image: 'https://i.imgur.com/NLPsgZR.png'
+cover_image: 'https://i.imgur.com/NLPsgZR.png'
+thumbnail-img: 'https://i.imgur.com/nx2bZiB.png'
+share-img: 'https://i.imgur.com/nx2bZiB.png'
 tags:
   - nx
   - monorepo
@@ -220,7 +220,7 @@ Remember the Rule for Sales Service: 👍
 
 ```ts
 // sales project
-import { SharedLoggerModule } from "@myorg/shared/logger";
+import { SharedLoggerModule } from '@myorg/shared/logger';
 ```
 
 2.  Try to import `CustomersUserEditorModule` from Customers scope and run
@@ -228,7 +228,7 @@ import { SharedLoggerModule } from "@myorg/shared/logger";
 
 ```ts
 // Sales project can not depend on Customers project
-import { CustomersUserEditorModule } from "@myorg/customers-user-editor";
+import { CustomersUserEditorModule } from '@myorg/customers-user-editor';
 ```
 
 You will see below error:
@@ -248,7 +248,7 @@ with "scope:sales" can only depend on libs tagged with "scope:sales", "scope:bra
 
 ```ts
 // Sales project can depend on other sales project
-import { SalesProductEditorModule } from "@myorg/sales-product-editor";
+import { SalesProductEditorModule } from '@myorg/sales-product-editor';
 ```
 
 ## Conclusion
@@ -273,7 +273,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

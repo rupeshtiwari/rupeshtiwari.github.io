@@ -1,11 +1,11 @@
 ---
 title: Adding Tag to GIT Branch in Azure CI Pipelines
-date: "2021-02-21 00:00 +0000"
-image: "https://i.imgur.com/ulkZsbK.png"
+date: '2021-02-21 00:00 +0000'
+image: 'https://i.imgur.com/ulkZsbK.png'
 header:
-  image: "https://i.imgur.com/FPNZHjY.png"
-  teaser: "https://i.imgur.com/ulkZsbK.png"
-  og_image: "https://i.imgur.com/ulkZsbK.png"
+  image: 'https://i.imgur.com/FPNZHjY.png'
+  teaser: 'https://i.imgur.com/ulkZsbK.png'
+  og_image: 'https://i.imgur.com/ulkZsbK.png'
 last_modified_at: null
 published: true
 sitemap: true
@@ -51,10 +51,10 @@ Add this task to your `azure-pipelines.yaml` file.
 
 ```yaml
 - task: tagBuildOrRelease@0
-  displayName: "Add Tag to git"
+  displayName: 'Add Tag to git'
   inputs:
-    type: "Build"
-    tags: "TEST-$(Build.BuildNumber)"
+    type: 'Build'
+    tags: 'TEST-$(Build.BuildNumber)'
 ```
 
 ## Running Azure CI Pipelines
@@ -93,7 +93,7 @@ video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

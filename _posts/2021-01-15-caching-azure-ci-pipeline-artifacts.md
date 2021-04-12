@@ -1,13 +1,11 @@
 ---
 title: Caching Azure CI Pipeline Artifacts
-date: "2021-01-15 00:00 +0000"
-subtitle:
-  Learn how Caching improves speed of your Angular Build in Azure CI build
-description:
-  Learn how Caching improves speed of your Angular Build in Azure CI build
+date: '2021-01-15 00:00 +0000'
+subtitle: Learn how Caching improves speed of your Angular Build in Azure CI build
+description: Learn how Caching improves speed of your Angular Build in Azure CI build
 
-header: 
-  image: "https://i.imgur.com/hR3hWDC.jpg"
+header:
+  image: 'https://i.imgur.com/hR3hWDC.jpg'
   teaser: https://i.imgur.com/xCqDrOE.jpg
   og_image: https://i.imgur.com/xCqDrOE.jpg
 
@@ -131,27 +129,26 @@ pool:
 
 steps:
   - task: Cache@2
-    displayName: "Cache npm Dependencies"
+    displayName: 'Cache npm Dependencies'
     inputs:
-      key:
-        "**/package-lock.json, !**/node_modules/**/package-lock.json,
-        !**/.*/**/package-lock.json"
-      path: "$(Build.SourcesDirectory)/node_modules"
+      key: '**/package-lock.json, !**/node_modules/**/package-lock.json,
+        !**/.*/**/package-lock.json'
+      path: '$(Build.SourcesDirectory)/node_modules'
       cacheHitVar: CacheRestored
 
   - task: Npm@1
-    displayName: "npm ci"
+    displayName: 'npm ci'
     inputs:
       command: ci
       verbose: false
     condition: eq(variables['CacheRestored'],False)
 
   - task: Npm@1
-    displayName: "npm build"
+    displayName: 'npm build'
     inputs:
       command: custom
       verbose: false
-      customCommand: "run build"
+      customCommand: 'run build'
 ```
 
 ## Become full stack developer 💻
@@ -171,7 +168,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

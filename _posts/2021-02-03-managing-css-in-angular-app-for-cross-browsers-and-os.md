@@ -1,15 +1,13 @@
 ---
 title: Managing CSS in Angular App for Cross Browsers and OS
-date: "2021-02-03 13:50 -0500"
-subtitle:
-  Learn creating multiple css files for cross browsers and os in angular app
-description:
-  Learn creating multiple css files for cross browsers and os in angular app
-header: 
-  image: "https://i.imgur.com/Eiyywcv.png"
-  teaser: "https://i.imgur.com/knMB5bS.png"
-  og_image: "https://i.imgur.com/knMB5bS.png"
-image: "https://i.imgur.com/knMB5bS.png"
+date: '2021-02-03 13:50 -0500'
+subtitle: Learn creating multiple css files for cross browsers and os in angular app
+description: Learn creating multiple css files for cross browsers and os in angular app
+header:
+  image: 'https://i.imgur.com/Eiyywcv.png'
+  teaser: 'https://i.imgur.com/knMB5bS.png'
+  og_image: 'https://i.imgur.com/knMB5bS.png'
+image: 'https://i.imgur.com/knMB5bS.png'
 tags:
   - angular
   - css
@@ -59,16 +57,16 @@ Add below code in app component to see how **ngx-device-detector** works.
 **app.component.ts**
 
 ```typescript
-import { Component } from "@angular/core";
-import { DeviceDetectorService, DeviceInfo } from "ngx-device-detector";
+import { Component } from '@angular/core';
+import { DeviceDetectorService, DeviceInfo } from 'ngx-device-detector';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = "manage-css";
+  title = 'manage-css';
   deviceInfo: DeviceInfo;
   constructor(private deviceDetectorService: DeviceDetectorService) {
     this.deviceInfo = this.deviceDetectorService.getDeviceInfo();
@@ -194,11 +192,11 @@ remove them.
 Create `style.service.ts` add below code:
 
 ```typescript
-import { DOCUMENT } from "@angular/common";
-import { Inject, Injectable } from "@angular/core";
-import { DeviceDetectorService, DeviceInfo } from "ngx-device-detector";
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable } from '@angular/core';
+import { DeviceDetectorService, DeviceInfo } from 'ngx-device-detector';
 
-@Injectable({ providedIn: "root" })
+@Injectable({ providedIn: 'root' })
 export class StyleService {
   deviceInfo: DeviceInfo;
   constructor(
@@ -212,10 +210,10 @@ export class StyleService {
 
   private removeIEStylesIfRunningInChrome() {
     this.deviceInfo = this.deviceDetectorService.getDeviceInfo();
-    const head = this.document.getElementsByTagName("head")[0];
-    if (this.deviceInfo.browser === "Chrome") {
-      [...(this.document.querySelectorAll("link") as any)]
-        .filter((x) => x.href?.indexOf("-ie.css") > -1)
+    const head = this.document.getElementsByTagName('head')[0];
+    if (this.deviceInfo.browser === 'Chrome') {
+      [...(this.document.querySelectorAll('link') as any)]
+        .filter((x) => x.href?.indexOf('-ie.css') > -1)
         .forEach((f) => head.removeChild(f));
     }
   }
@@ -225,7 +223,7 @@ export class StyleService {
 Create `init-styles.ts`
 
 ```typescript
-import { StyleService } from "./style.service";
+import { StyleService } from './style.service';
 
 export function initStyles(styleService: StyleService) {
   return () => {
@@ -323,7 +321,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

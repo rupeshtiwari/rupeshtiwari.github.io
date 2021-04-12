@@ -1,16 +1,15 @@
 ---
 title: Branch protection in Azure DevOps
-date: "2021-01-20 00:00 +0000"
+date: '2021-01-20 00:00 +0000'
 subtitle: Learn how to protect Master branch of git repository in azure devops
-description:
-  Learn how to protect Master branch of git repository in azure devops
-header: 
-  image: "https://i.imgur.com/S8uujlY.jpg"
+description: Learn how to protect Master branch of git repository in azure devops
+header:
+  image: 'https://i.imgur.com/S8uujlY.jpg'
   teaser: https://i.imgur.com/fN6F867.jpg
-image: "https://i.imgur.com/S8uujlY.jpg"
-cover_image: "https://i.imgur.com/S8uujlY.jpg"
-thumbnail-img: "https://i.imgur.com/fN6F867.jpg"
-share-img: "https://i.imgur.com/S8uujlY.jpg"
+image: 'https://i.imgur.com/S8uujlY.jpg'
+cover_image: 'https://i.imgur.com/S8uujlY.jpg'
+thumbnail-img: 'https://i.imgur.com/fN6F867.jpg'
+share-img: 'https://i.imgur.com/S8uujlY.jpg'
 tags:
   - azure
   - devops
@@ -262,7 +261,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

@@ -1,12 +1,12 @@
 ---
 title: Creating New App with Nx Console
-date: "2021-01-24 00:00 +0000"
+date: '2021-01-24 00:00 +0000'
 subtitle: learn creating new application using nx console in monorepo
 description: learn creating new application using nx console in monorepo
-image: "https://i.imgur.com/UJNuoEj.jpg"
-cover_image: "https://i.imgur.com/UJNuoEj.jpg"
-thumbnail-img: "https://i.imgur.com/KVtdDlT.png"
-share-img: "https://i.imgur.com/KVtdDlT.png"
+image: 'https://i.imgur.com/UJNuoEj.jpg'
+cover_image: 'https://i.imgur.com/UJNuoEj.jpg'
+thumbnail-img: 'https://i.imgur.com/KVtdDlT.png'
+share-img: 'https://i.imgur.com/KVtdDlT.png'
 tags:
   - nx
   - angular
@@ -136,7 +136,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

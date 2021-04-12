@@ -1,5 +1,5 @@
 ---
-title: Topologies Azure Service Bus 
+title: Topologies Azure Service Bus
 date: 2021-07-24 00:00 +0000
 description: Learn what is Topology in Azure service bus and how N-Service bus help us to build it.
 author_profile: true
@@ -36,13 +36,13 @@ You can create queues using the `Azure portal, PowerShell, CLI, or Resource Mana
 
 ## Topic
 
-Topic is just like a virtual queue where messages are pushed and get broad-casted to multiple receivers. 
+Topic is just like a virtual queue where messages are pushed and get broad-casted to multiple receivers.
 
 ## Subscription
 
-Subscription has one virtual input queue via that it receives a specific message and executes the receivers. 
+Subscription has one virtual input queue via that it receives a specific message and executes the receivers.
 
-Topics and subscriptions provide a `one-to-many` form of communication in a publish and subscribe pattern. It's useful for scaling to large numbers of recipients.  
+Topics and subscriptions provide a `one-to-many` form of communication in a publish and subscribe pattern. It's useful for scaling to large numbers of recipients.
 
 ![](https://imgur.com/EqW5y1K.png)
 
@@ -50,7 +50,7 @@ Topics and subscriptions provide a `one-to-many` form of communication in a publ
 
 ## Consumer/Producer Pattern
 
-Once you send a message to a `Queue` and if there is any `Function` listening to the queue gets triggered and they execute the function. 
+Once you send a message to a `Queue` and if there is any `Function` listening to the queue gets triggered and they execute the function.
 
 You can treat these kind of messages as `command`.
 
@@ -60,7 +60,6 @@ When you have an `event` that has to be consumed by `multiple systems`. Then we 
 
 There is a `Topic` few subscribers are listening to that topic with some filter rule. Then if you publish an event to that `Topic`. Then subscribers will receive the event if the rules are satisfied.
 ![](https://imgur.com/5t4MGUZ.png)
-
 
 ## Request/Reply Pattern
 
@@ -85,7 +84,6 @@ public async Task<IActionResult> CreateOrder(Order order) {
 1. `Request/Reply` is not the same as `Request/Response`. Request/Reply is usually associated with `asynchronous` messages while Request/Response with the `web`.
 
 2. For `Request/Reply` to work, both the sender and the receiver require a designated queue. There is a dedicated handler and receiver for a message Request/Reply.
-
 
 ## Topology
 
@@ -117,7 +115,7 @@ I don't prefer this topology because In order to subscribe to an event, the subs
 
 The forwarding topology defines a `queue` per `endpoint` and a shared `topic` to do the `publishing`. The `ForwardingTopology` was introduced to take advantage of the **broker nature of the Azure Service Bus** and to leverage its native capabilities.
 
-Azure Service Bus has facility to forward a event from a `Subscription` to the `Queue`. We will use this technique to setup this topology. 
+Azure Service Bus has facility to forward a event from a `Subscription` to the `Queue`. We will use this technique to setup this topology.
 
 ![](https://imgur.com/638DjGm.png)
 
@@ -160,30 +158,23 @@ N-Service bus has `enableInstaller` method once you call it. Then N-Service Bus 
 3. Creates default Rule in the message of the subscription with default condition `FalseFilter Rule` i.e. `1=0`. So that message will not satisfy this rule by default any all events will not arrive to this endpoint.
 4. Creates a input queue for the endpoint. Subscription forwards the message to the `Input Queue` of the `endpoint` once Rules get satisfied.
 
-`endpoint` is N-Service Bus concept that is coupled to Azure Service Bus `Queue`. Using `endpoint` you can either send or receive messages. 
-
+`endpoint` is N-Service Bus concept that is coupled to Azure Service Bus `Queue`. Using `endpoint` you can either send or receive messages.
 
 📔 **N-Service Bus** is _not_ able to create the topology when it is hosted on the Azure Function _as of now_. Learn how you can do by [your own topology setup in Azure Function here](https://weblogs.asp.net/sfeldman/automatic-nservicebus-topology-creation-for-function)
 
-
-
-
-
 ## Creating Azure Service Bus Namespace
+
 Let's create Azure service bus namespace from the Azure portal. ![](https://imgur.com/ZUdj70X.gif)
 
-Get the connection string and open the connection string on the Azure Explorer. 
-
-
+Get the connection string and open the connection string on the Azure Explorer.
 
 ## Service Bus Explorer
 
 You can download the [`Service Bus Explorer`](https://github.com/paolosalvatori/ServiceBusExplorer/releases) an open source windows UI that helps us to visualize the Topologies.
 
-Connect to your Azure Service Bus Namespace by using connection string. 
+Connect to your Azure Service Bus Namespace by using connection string.
 
 ![](https://imgur.com/PYOY7fj.png)
-
 
 📓 N-Service bus helps us to retrieve the message and search for subscriber and invoke the handle method of the Handler. All of this code is already written in N-Service Bus. That helps a lot when you are working with Azure Service Bus Transport. I recommend using N-Service Bus.
 
@@ -202,7 +193,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari

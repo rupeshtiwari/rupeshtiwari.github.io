@@ -1,13 +1,13 @@
 ---
 title: Publishing Code Coverage in Azure CI Pipeline
-date: "2021-03-07 00:00 +0000"
+date: '2021-03-07 00:00 +0000'
 subtitle: Learn how to show Angular Code Coverage Report in Azure CI Pipeline
 description: Learn how to show Angular Code Coverage Report in Azure CI Pipeline
-header: 
-  image: "https://i.imgur.com/oaeFs3U.jpg"
+header:
+  image: 'https://i.imgur.com/oaeFs3U.jpg'
   teaser: https://i.imgur.com/lF87q1A.jpg
   og_image: https://i.imgur.com/lF87q1A.jpg
-image: "https://i.imgur.com/lF87q1A.png"
+image: 'https://i.imgur.com/lF87q1A.png'
 tags:
   - devops
   - angular
@@ -65,9 +65,9 @@ Next use `PublishCodeCoverageResults@1` task from azure DevOps to publish the
   enabled: true
   displayName: Code Coverage
   inputs:
-    codeCoverageTool: "Cobertura"
+    codeCoverageTool: 'Cobertura'
     summaryFileLocation:
-      "./coverage/fsms-angular-pubsub/cobertura-coverage.xml"
+      './coverage/fsms-angular-pubsub/cobertura-coverage.xml'
       # 👆  put your coverage file path
   condition: |
     succeeded()
@@ -104,7 +104,7 @@ video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

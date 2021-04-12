@@ -1,13 +1,13 @@
 ---
 title: Authenticating GIT on Development Box
-date: "2021-02-13 00:00 +0000"
+date: '2021-02-13 00:00 +0000'
 subtitle: Learn how to login your company on premise git repo
 description: Learn how to login your company on premise git repo
-header: 
-  image: "https://i.imgur.com/HyaOzzF.jpg"
+header:
+  image: 'https://i.imgur.com/HyaOzzF.jpg'
   teaser: https://i.imgur.com/IspOKgj.jpg
   og_image: https://i.imgur.com/IspOKgj.jpg
-image: "https://i.imgur.com/IspOKgj.png"
+image: 'https://i.imgur.com/IspOKgj.png'
 tags:
   - git
   - github
@@ -64,7 +64,7 @@ video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

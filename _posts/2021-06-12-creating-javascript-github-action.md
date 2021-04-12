@@ -174,7 +174,7 @@ jobs:
 
 ## Triggering our Local GitHub Action
 
-Let's commit and push our code at this point to trigger local action. 
+Let's commit and push our code at this point to trigger local action.
 
 ### Commit and Push your code
 
@@ -188,15 +188,15 @@ git push
 
 ![](https://imgur.com/1kS1TlZ.png)
 
-Notice 👆 our workflow success and action executed. 
+Notice 👆 our workflow success and action executed.
 
 ## Publishing your Action to Public
 
-Now this is the time to make our action public. 
+Now this is the time to make our action public.
 
 ### tag and push your action to GitHub
 
-In order for making our action public we must tag and push to GitHub that's it. 
+In order for making our action public we must tag and push to GitHub that's it.
 
 ```shell
 git add action.yml index.js node_modules/* package.json package-lock.json README.md
@@ -231,28 +231,27 @@ jobs:
 
 ### Triggering Your Published Action
 
-Again push your code and notice our public action is triggered as well Hurray! Time for party 🍕 ! 
+Again push your code and notice our public action is triggered as well Hurray! Time for party 🍕 !
 
 ![](https://imgur.com/ZgPFkKN.png)
 
-Download my [source code here for custom JavaScript GitHub Action](https://github.com/rupeshtiwari/hello-world-javascript-action) 
+Download my [source code here for custom JavaScript GitHub Action](https://github.com/rupeshtiwari/hello-world-javascript-action)
 
 ---
- 
-*Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.*
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
 
 ## Become full stack developer 💻
 
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
 
-- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access *current* and *future* **angular, node.js** and related courses.
-- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask ***doubts/questions*** and get more help, tips and tricks.
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
-**💖 Say 👋 to me!** 
+**💖 Say 👋 to me!**
 <br>Rupesh Tiwari
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
-<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a> 
+<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
-

@@ -1,15 +1,15 @@
 ---
 title: Creating Subscription in Azure CI Pipeline
-date: "2021-01-17 00:00 +0000"
+date: '2021-01-17 00:00 +0000'
 subtitle: Learn how to subscribe to your azure ci pipeline notification
 description: Learn how to subscribe to your azure ci pipeline notification
-header: 
-  image: "https://i.imgur.com/6SEjbG6.jpg"
+header:
+  image: 'https://i.imgur.com/6SEjbG6.jpg'
   teaser: https://i.imgur.com/CbQcFLl.jpg
-image: "https://i.imgur.com/6SEjbG6.png"
-cover_image: "https://i.imgur.com/6SEjbG6.png"
-thumbnail-img: "https://i.imgur.com/CbQcFLl.png"
-share-img: "https://i.imgur.com/CbQcFLl.png"
+image: 'https://i.imgur.com/6SEjbG6.png'
+cover_image: 'https://i.imgur.com/6SEjbG6.png'
+thumbnail-img: 'https://i.imgur.com/CbQcFLl.png'
+share-img: 'https://i.imgur.com/CbQcFLl.png'
 tags:
   - devops
   - azure
@@ -70,7 +70,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

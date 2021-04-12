@@ -26,19 +26,19 @@ tags:
 > Do you want to create **Cosmos DB** & **Collection** from **DotNet Core Project**? Read this article to create your first .net core project. And write **csharp** code to create DB and Collections. You will learn how to connect **Azure Cosmos DB endpoint** from **Dotnet** Project and ensure your database and collection exist.
 
 ![](https://imgur.com/44Fxeih.gif)
-## Pre-requisites 
+
+## Pre-requisites
 
 1. You must have **Cosmos DB Account**.
-2. Valid **active Azure Subscription**. Check my blog where I have explained how can you get your [Free Sandbox Azure Account](http://rupeshtiwari.com/blog/azure-sandbox-free-account-for-learning/). 
+2. Valid **active Azure Subscription**. Check my blog where I have explained how can you get your [Free Sandbox Azure Account](http://rupeshtiwari.com/blog/azure-sandbox-free-account-for-learning/).
 
 ## Creating a Dotnet Console App in Visual Studio Code
 
 I am a big fan of **Visual Studio Code** therefore, I will use Visual Studio Code editor to create my **dotnet** project.
 
-
 ### Creating New Console App
 
-Open **Visual Studio Code PowerShell** Terminal and run below script to create your first **dotnet** app. 
+Open **Visual Studio Code PowerShell** Terminal and run below script to create your first **dotnet** app.
 
 ```shell
 dotnet new console
@@ -54,12 +54,11 @@ Notice there is **program.cs** file in our project.
 
 ![](https://imgur.com/OcsgK0p.png)
 
-
 ### Running Dotnet app in Visual Studio Code
 
-Now let's run our dotnet console app in  **Visual Studio Code PowerShell** Terminal.
+Now let's run our dotnet console app in **Visual Studio Code PowerShell** Terminal.
 
-Please run below script 
+Please run below script
 
 ```shell
 dotnet run
@@ -71,13 +70,13 @@ Notice you just run your first **dotnet** console app right in vscode.
 
 ## Connecting to Azure Cosmos DB from Dotnet Console App
 
-Now we will write code to connect with our cosmos DB. Make sure you have active subscription. 
+Now we will write code to connect with our cosmos DB. Make sure you have active subscription.
 
 ### Installing required Nuget Packages
 
 Now we will install couple of NuGet packages to connect to **Cosmos DB**.
 
-Open PowerShell Terminal and run below scrips. 
+Open PowerShell Terminal and run below scrips.
 
 ```shell
 dotnet add package System.Net.Http
@@ -90,8 +89,7 @@ dotnet add package System.Linq
 dotnet restore
 ```
 
-
-In your csproj file you will see packages name and versions. 
+In your csproj file you will see packages name and versions.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -117,7 +115,7 @@ In your csproj file you will see packages name and versions.
 
 ### Creating App.Config File
 
-Next in order for connecting dotnet app to cosmos db we need to place cosmos DB connection strings and **accountkey**. We will create **App.Config** file in the root of the project. 
+Next in order for connecting dotnet app to cosmos db we need to place cosmos DB connection strings and **accountkey**. We will create **App.Config** file in the root of the project.
 
 **App.config file**
 
@@ -145,6 +143,7 @@ Azure Cosmos DB Connection String comprises of **accountEndpoint** and **account
 AccountEndpoint=https://rupesh-first-db-sql-acc.documents.azure.com:443/;
 AccountKey=gLqGg49XeCCFXRycZkez4bZ61PiISPXGSscPaeCq8xpm8XAcqVRjFEAOg0UXp6TokVzmu1T4u3ljeG7vLVtxHg==
 ```
+
 You must paste the values in app.config.xml file.
 
 ```xml
@@ -159,20 +158,20 @@ You must paste the values in app.config.xml file.
 
 ### Run Dotnet Console App
 
-
 Next let's run our app again.
 
 ```shell
 dotnet run
 ```
 
-## Creating Database & Collections Programmatically 
+## Creating Database & Collections Programmatically
 
 Now we will write **csharp** code to create database and collection.
 
-We will create **customers** database and **users** collection. 
+We will create **customers** database and **users** collection.
 
 ### Creating Client & DB
+
 Add a new **asynchronous task** to create a new **client**, and check whether the **customers** database exists
 
 ```csharp
@@ -227,38 +226,31 @@ Next let's update the **main** method to call **InitializeDB** method.
         }
 ```
 
-
 ### Final Program.cs Code
 
+## Running Dotnet App
 
-## Running  Dotnet App 
-
-Now run `dotnet run` and see the magic your **database** and **collection** got created right in visual studio. 
+Now run `dotnet run` and see the magic your **database** and **collection** got created right in visual studio.
 
 ![](https://imgur.com/VvdL9uC.gif)
 
-
 Congratulations! 🍰 you connected the Azure Cosmos DB from dotnet app and created your brand new database and collection! Enjoy Azure learning! 😄
 
-
-
-
 ---
- 
-*If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.*
+
+_If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
 
 ## Become full stack developer 💻
 
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
 
-- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access *current* and *future* **angular, node.js** and related courses.
-- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask ***doubts/questions*** and get more help, tips and tricks.
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
-**💖 Say 👋 to me!** 
+**💖 Say 👋 to me!**
 <br>Rupesh Tiwari
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
-<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a> 
+<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
-

@@ -1,14 +1,12 @@
 ---
 title: Sharing Variables within Tasks in Azure CI Pipeline
-date: "2021-01-22 00:00 +0000"
-subtitle:
-  Learn how to create custom variable and share among Azure CI Pipeline tasks
-description:
-  Learn how to create custom variable and share among Azure CI Pipeline tasks
-image: "https://i.imgur.com/3vFNOtc.png"
-cover_image: "https://i.imgur.com/3vFNOtc.png"
-thumbnail-img: "https://i.imgur.com/MxavTGI.png"
-share-img: "https://i.imgur.com/MxavTGI.png"
+date: '2021-01-22 00:00 +0000'
+subtitle: Learn how to create custom variable and share among Azure CI Pipeline tasks
+description: Learn how to create custom variable and share among Azure CI Pipeline tasks
+image: 'https://i.imgur.com/3vFNOtc.png'
+cover_image: 'https://i.imgur.com/3vFNOtc.png'
+thumbnail-img: 'https://i.imgur.com/MxavTGI.png'
+share-img: 'https://i.imgur.com/MxavTGI.png'
 tags:
   - devops
   - ci
@@ -141,7 +139,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

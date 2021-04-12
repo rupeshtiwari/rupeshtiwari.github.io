@@ -1,13 +1,13 @@
 ---
 title: Scheduling Jekyll Post on GitHub Pages
-date: "2021-02-28 00:00 +0000"
+date: '2021-02-28 00:00 +0000'
 subtitle: Writing GitHub action to schedule Jekyll blog post publish
 description: Writing GitHub action to schedule Jekyll blog post publish
-header: 
-  image: "https://i.imgur.com/5nUUsN1.jpg"
+header:
+  image: 'https://i.imgur.com/5nUUsN1.jpg'
   teaser: https://i.imgur.com/RrLzSEP.jpg
   og_image: https://i.imgur.com/RrLzSEP.jpg
-image: "https://i.imgur.com/RrLzSEP.png"
+image: 'https://i.imgur.com/RrLzSEP.png'
 tags:
   - jekyll
   - github
@@ -54,7 +54,7 @@ name: Build every hour
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Run at the end of every day.
+    - cron: '0 0 * * *' # Run at the end of every day.
 jobs:
   curl:
     runs-on: ubuntu-latest
@@ -134,7 +134,7 @@ video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

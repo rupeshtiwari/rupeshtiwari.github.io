@@ -1,17 +1,15 @@
 ---
 title: Publishing Code Coverage in Azure CI Pipelines
-date: "2021-01-27 00:00 +0000"
-subtitle:
-  Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
-description:
-  Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
-header: 
-  image: "https://i.imgur.com/YJnJNSe.jpg"
-  teaser:  "https://i.imgur.com/YJnJNSe.jpg"
-  og_image: "https://i.imgur.com/YJnJNSe.jpg"
-cover_image: "https://i.imgur.com/YJnJNSe.jpg"
-thumbnail-img: "https://i.imgur.com/YJnJNSe.jpg"
-share-img: "https://i.imgur.com/YJnJNSe.jpg"
+date: '2021-01-27 00:00 +0000'
+subtitle: Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
+description: Learn showing Angular Project Code Coverage from specs in Azure CI pipeline
+header:
+  image: 'https://i.imgur.com/YJnJNSe.jpg'
+  teaser: 'https://i.imgur.com/YJnJNSe.jpg'
+  og_image: 'https://i.imgur.com/YJnJNSe.jpg'
+cover_image: 'https://i.imgur.com/YJnJNSe.jpg'
+thumbnail-img: 'https://i.imgur.com/YJnJNSe.jpg'
+share-img: 'https://i.imgur.com/YJnJNSe.jpg'
 tags:
   - devops
   - angular
@@ -179,7 +177,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

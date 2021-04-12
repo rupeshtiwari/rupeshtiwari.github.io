@@ -4,13 +4,13 @@ tags:
   - yaml
   - yml
   - tutorial
-date: "2021-01-02 19:32 -0500"
+date: '2021-01-02 19:32 -0500'
 title: Introduction to YAML
 description: Introduction to YAML
-image: "https://i.imgur.com/jZQbmj4.jpg"
-cover_image: "https://i.imgur.com/jZQbmj4.jpg"
-thumbnail-img: "https://i.imgur.com/jZQbmj4.jpg"
-share-img: "https://i.imgur.com/jZQbmj4.jpg"
+image: 'https://i.imgur.com/jZQbmj4.jpg'
+cover_image: 'https://i.imgur.com/jZQbmj4.jpg'
+thumbnail-img: 'https://i.imgur.com/jZQbmj4.jpg'
+share-img: 'https://i.imgur.com/jZQbmj4.jpg'
 published: true
 sitemap: true
 comments: true
@@ -115,6 +115,6 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.

@@ -21,8 +21,8 @@ tags:
   - beginners
   - exam
 ---
-> In order to become Azure Developer Associate you must pass [**AZ-204**](https://docs.microsoft.com/en-us/learn/certifications/exams/az-203?wt.mc_id=learningredirect_certs-web-wwl) exam. If you want to become **Cloud Solution Architect** then consider giving Microsoft **AZ-204** certification exam. 
 
+> In order to become Azure Developer Associate you must pass [**AZ-204**](https://docs.microsoft.com/en-us/learn/certifications/exams/az-203?wt.mc_id=learningredirect_certs-web-wwl) exam. If you want to become **Cloud Solution Architect** then consider giving Microsoft **AZ-204** certification exam.
 
 ## Prerequisites
 
@@ -36,7 +36,8 @@ tags:
 - Apply for any Microsoft cloud jobs
 
 ## Skills Measured in Exam
-Below skills are tested in the exam. 
+
+Below skills are tested in the exam.
 
 <div class="mermaid">
 pie
@@ -55,42 +56,40 @@ pie
 - Monitor, troubleshoot, and optimize solutions (10-15%)
 - Connect to and consume Azure and third-party services (20-25%)
 
-## Learning  Materials
+## Learning Materials
 
 ### Free AZ-204 Tutorials
 
-- Microsoft has [free learning paths](https://docs.microsoft.com/en-us/learn/certifications/exams/az-203?wt.mc_id=learningredirect_certs-web-wwl&tab=tab-learning-paths) to gain the skills needed to become certified. 
+- Microsoft has [free learning paths](https://docs.microsoft.com/en-us/learn/certifications/exams/az-203?wt.mc_id=learningredirect_certs-web-wwl&tab=tab-learning-paths) to gain the skills needed to become certified.
 
 ### Paid AZ-204 Tutorials
 
-- [Microsoft has paid learning paths](https://docs.microsoft.com/en-us/learn/certifications/exams/az-203?wt.mc_id=learningredirect_certs-web-wwl&tab=tab-instructor-led) as well. 
-- [Pluralsight has learning path](https://app.pluralsight.com/paths/certificate/developing-solutions-for-microsoft-azure-az-204) to get skills required for AZ-204. 
-
+- [Microsoft has paid learning paths](https://docs.microsoft.com/en-us/learn/certifications/exams/az-203?wt.mc_id=learningredirect_certs-web-wwl&tab=tab-instructor-led) as well.
+- [Pluralsight has learning path](https://app.pluralsight.com/paths/certificate/developing-solutions-for-microsoft-azure-az-204) to get skills required for AZ-204.
 
 ## Path
 
-Next you should clear AZ-400 which is [DevOps Expert certification](https://docs.microsoft.com/en-us/learn/certifications/exams/az-400). 
+Next you should clear AZ-400 which is [DevOps Expert certification](https://docs.microsoft.com/en-us/learn/certifications/exams/az-400).
 
 ## Salary
-There are over 3,000 jobs currently on LinkedIn and Indeed for individuals who are Azure certified. The average salary for an Azure developer starts around $40,000 and ranges to $170,000. 
 
+There are over 3,000 jobs currently on LinkedIn and Indeed for individuals who are Azure certified. The average salary for an Azure developer starts around $40,000 and ranges to $170,000.
 
 ---
- 
-*Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.*
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
 
 ## Become full stack developer 💻
 
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
 
-- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access *current* and *future* **angular, node.js** and related courses.
-- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask ***doubts/questions*** and get more help, tips and tricks.
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
-**💖 Say 👋 to me!** 
+**💖 Say 👋 to me!**
 <br>Rupesh Tiwari
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
-<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a> 
+<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
-

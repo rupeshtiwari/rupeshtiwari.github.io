@@ -1,12 +1,12 @@
 ---
 title: Enforcing Dependency Constraints Within Service in Nx Monorepo workspace
-date: "2021-01-26 00:00 +0000"
+date: '2021-01-26 00:00 +0000'
 subtitle: learn how to enforce dependency constraints on individual projects
 description: learn how to enforce dependency constraints on individual projects
-image: "https://i.imgur.com/H6AlL2d.png"
-cover_image: "https://i.imgur.com/H6AlL2d.png"
-thumbnail-img: "https://i.imgur.com/GGaoewS.png"
-share-img: "https://i.imgur.com/GGaoewS.png"
+image: 'https://i.imgur.com/H6AlL2d.png'
+cover_image: 'https://i.imgur.com/H6AlL2d.png'
+thumbnail-img: 'https://i.imgur.com/GGaoewS.png'
+share-img: 'https://i.imgur.com/GGaoewS.png'
 tags:
   - nx
   - beginners
@@ -183,7 +183,7 @@ Notice you did _not_ see any tslint errors.
 Editor should not depend on Products project. Let's test it.
 
 ```ts
-import { Products } from "@myorg/sales-products";
+import { Products } from '@myorg/sales-products';
 ```
 
 Now you should notice the tslint error is showing as a squiggly line and it says
@@ -379,7 +379,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

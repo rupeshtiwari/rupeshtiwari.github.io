@@ -1,17 +1,17 @@
 ---
 title: Restoring and Publishing NPM Packages from Azure CI Pipeline
-date: "2021-02-27 00:00 +0000"
+date: '2021-02-27 00:00 +0000'
 subtitle: >-
   restoring and publishing scoped npm packages from azure pipeline to azure
   artifacts
 description: >-
   restoring and publishing scoped npm packages from azure pipeline to azure
   artifacts
-header: 
-  image: "https://i.imgur.com/MR0eU4y.jpg"
+header:
+  image: 'https://i.imgur.com/MR0eU4y.jpg'
   teaser: https://i.imgur.com/d12se9m.jpg
   og_image: https://i.imgur.com/d12se9m.jpg
-image: "https://i.imgur.com/d12se9m.png"
+image: 'https://i.imgur.com/d12se9m.png'
 tags:
   - devops
   - azure
@@ -157,17 +157,17 @@ trigger:
   - master
 
 pool:
-  name: "Default"
+  name: 'Default'
 
 steps:
   - task: CopyFiles@2
     displayName: copy npmrc file
     inputs:
-      sourceFolder: "npmrc"
-      Contents: "**"
-      targetFolder: "./"
+      sourceFolder: 'npmrc'
+      Contents: '**'
+      targetFolder: './'
   - task: Npm@1
-    displayName: "NPM CI"
+    displayName: 'NPM CI'
     inputs:
       command: ci
       verbose: false
@@ -255,7 +255,7 @@ Now we will run `npm publish` from `dist` folder. Add below script on
 ```yaml
 - script: npm publish
   displayName: Publish
-  workingDirectory: "./dist"
+  workingDirectory: './dist'
 ```
 
 Notice publish is success:
@@ -277,9 +277,9 @@ it.
 ![](https://i.imgur.com/JhzAAa8.png)
 
 ```javascript
-const { log } = require("@myorg-branding/testing-cicd");
+const { log } = require('@myorg-branding/testing-cicd');
 
-log("Working with my new package logger");
+log('Working with my new package logger');
 ```
 
 See my package is working ![](https://i.imgur.com/xmpUF7b.png)
@@ -306,7 +306,7 @@ video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

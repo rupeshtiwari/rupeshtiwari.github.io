@@ -1,12 +1,12 @@
 ---
 title: Testing Nrwl Nx Angular Monorepo Projects using JEST
-date: "2021-01-26 00:00 +0000"
+date: '2021-01-26 00:00 +0000'
 subtitle: learn how to debug nx monorepo specs in chrome and vs code
 description: learn how to debug nx monorepo specs in chrome and vs code
-image: "https://i.imgur.com/P9U4q6m.png"
-cover_image: "https://i.imgur.com/P9U4q6m.png"
-thumbnail-img: "https://i.imgur.com/AfCDCO2.png"
-share-img: "https://i.imgur.com/AfCDCO2.png"
+image: 'https://i.imgur.com/P9U4q6m.png'
+cover_image: 'https://i.imgur.com/P9U4q6m.png'
+thumbnail-img: 'https://i.imgur.com/AfCDCO2.png'
+share-img: 'https://i.imgur.com/AfCDCO2.png'
 tags:
   - nx
   - angular
@@ -164,7 +164,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

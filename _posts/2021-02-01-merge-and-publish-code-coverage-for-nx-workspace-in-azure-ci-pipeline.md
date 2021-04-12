@@ -1,22 +1,21 @@
 ---
-title:
-  Publishing Merged Code Coverage Report of Nx Workspace in Azure CI Pipeline
+title: Publishing Merged Code Coverage Report of Nx Workspace in Azure CI Pipeline
 subtitle: Showing Nx Monorepo code coverage report in azure ci pipeline
 description: Showing Nx Monorepo code coverage report in azure ci pipeline
-date: "2021-02-01 18:55 -0500"
-header: 
-  image: "https://i.imgur.com/6gxkEV3.png"
-  teaser: "https://i.imgur.com/cqwnG3N.png"
-  og_image: "https://i.imgur.com/cqwnG3N.png"
-image: "https://i.imgur.com/cqwnG3N.jpg"
+date: '2021-02-01 18:55 -0500'
+header:
+  image: 'https://i.imgur.com/6gxkEV3.png'
+  teaser: 'https://i.imgur.com/cqwnG3N.png'
+  og_image: 'https://i.imgur.com/cqwnG3N.png'
+image: 'https://i.imgur.com/cqwnG3N.jpg'
 tags:
   - devops
   - nx
   - angular
   - beginners
-category: 
+category:
   - devops
-last_modified_at: "2021-02-24 18:55 -0500"
+last_modified_at: '2021-02-24 18:55 -0500'
 published: true
 sitemap: true
 comments: true
@@ -83,7 +82,6 @@ this npm package to merge my all code-coverage files.
 
 ![](https://i.imgur.com/Huz8YLq.png)
 
-
 In case **cobertura-merge** is failing to install or failing to run and you are in windows machine then run below script:
 
 ```
@@ -119,12 +117,12 @@ Lets create a `merge-codecoverage.js` JavaScript file to search all xml files we
 will use `glob` npm package.
 
 ```javascript
-const glob = require("glob");
-const path = require("path");
+const glob = require('glob');
+const path = require('path');
 
-const targetDir = path.resolve(__dirname, "../../coverage");
+const targetDir = path.resolve(__dirname, '../../coverage');
 
-glob(targetDir + "/**/*.xml", {}, (err, files) => {
+glob(targetDir + '/**/*.xml', {}, (err, files) => {
   console.log(files);
 });
 ```
@@ -154,9 +152,9 @@ crate single `merged-cobertura-coverage.xml` file.
 
 ```javascript
 function copyCodeCoverageToMergedFolder() {
-  const coverageDir = path.resolve(__dirname, "../../coverage");
-  const mergedDir = path.join(coverageDir, "/merged");
-  const files = glob(coverageDir + "/**/*.xml", { sync: true });
+  const coverageDir = path.resolve(__dirname, '../../coverage');
+  const mergedDir = path.join(coverageDir, '/merged');
+  const files = glob(coverageDir + '/**/*.xml', { sync: true });
 
   files.forEach((f, i) => {
     const x = `${path.basename(f)}-${i}.xml`; // creating unique file name
@@ -194,11 +192,11 @@ Here is the JavaScript for merging code coverage files.
 
 ```javascript
 function mergeCodeCoverage() {
-  const files = glob(mergedDir + "/**/*.xml", { sync: true });
+  const files = glob(mergedDir + '/**/*.xml', { sync: true });
 
   const packages = files
     .map((f, i) => `package${i + 1}=${path.basename(f)}`)
-    .join(" ");
+    .join(' ');
   const script = `cobertura-merge -o merged-cobertura-coverage.xml ${packages}`;
 
   execSync(script, {
@@ -218,8 +216,8 @@ Use below task to publish merged code coverage report in azure pipeline.
   enabled: false
   displayName: Code Coverage
   inputs:
-    codeCoverageTool: "Cobertura"
-    summaryFileLocation: "$(Build.SourcesDirectory)/coverage/merged/merged-cobertura-coverage.xml"
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(Build.SourcesDirectory)/coverage/merged/merged-cobertura-coverage.xml'
   condition: |
     and(
       succeeded(),
@@ -306,7 +304,7 @@ Change the merge code coverage in JavaScript
 function mergeCodeCoverage() {
   copyCodeCoverageToMergedFolder();
 
-  const files = glob(mergedDir + "/**/*.xml", { sync: true });
+  const files = glob(mergedDir + '/**/*.xml', { sync: true });
 
   const packages = files
     .map((f, i) => {
@@ -315,7 +313,7 @@ function mergeCodeCoverage() {
 
       return `${projectName}=${fileName}`;
     })
-    .join(" ");
+    .join(' ');
 
   const script = `npx cobertura-merge -o merged-cobertura-coverage.xml ${packages}`;
 
@@ -327,10 +325,10 @@ function mergeCodeCoverage() {
 
 function copyCodeCoverageToMergedFolder() {
   fs.emptyDirSync(mergedDir);
-  const files = glob(coverageDir + "/**/*.xml", { sync: true });
+  const files = glob(coverageDir + '/**/*.xml', { sync: true });
 
   files.forEach((f, i) => {
-    const x = f.split("/coverage/")[1].replace(/\//g, "-").split("/").pop();
+    const x = f.split('/coverage/')[1].replace(/\//g, '-').split('/').pop();
     fs.copySync(f, `${mergedDir}/${x}`);
   });
 }
@@ -371,7 +369,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

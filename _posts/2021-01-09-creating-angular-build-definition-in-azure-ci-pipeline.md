@@ -1,15 +1,15 @@
 ---
 title: Creating Angular Build Definition in Azure CI Pipeline
-date: "2021-01-09 00:00 +0000"
+date: '2021-01-09 00:00 +0000'
 description: Learn creating Angular Build Azure CI Pipeline
 subtitle: Learn creating Angular Build Azure CI Pipeline
-header: 
-  image: "https://i.imgur.com/OCEHPk5.jpg"
+header:
+  image: 'https://i.imgur.com/OCEHPk5.jpg'
   teaser: https://i.imgur.com/vkmKw3A.jpg
-image: "https://i.imgur.com/OCEHPk5.jpg"
-cover_image: "https://i.imgur.com/OCEHPk5.jpg"
-thumbnail-img: "https://i.imgur.com/vkmKw3A.jpg"
-share-img: "https://i.imgur.com/OCEHPk5.jpg"
+image: 'https://i.imgur.com/OCEHPk5.jpg'
+cover_image: 'https://i.imgur.com/OCEHPk5.jpg'
+thumbnail-img: 'https://i.imgur.com/vkmKw3A.jpg'
+share-img: 'https://i.imgur.com/OCEHPk5.jpg'
 tags:
   - devops
   - ci
@@ -61,31 +61,31 @@ pool:
 
 steps:
   - task: Npm@1
-    displayName: "npm install"
+    displayName: 'npm install'
     inputs:
       verbose: false
 
   - task: Npm@1
-    displayName: "npm build"
+    displayName: 'npm build'
     inputs:
       command: custom
       verbose: false
-      customCommand: "run build:apps"
+      customCommand: 'run build:apps'
 
   - task: CopyFiles@2
-    displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
     inputs:
-      SourceFolder: "$(Build.SourcesDirectory)/dist"
-      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      SourceFolder: '$(Build.SourcesDirectory)/dist'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
   - task: ArchiveFiles@2
-    displayName: "Archive $(Build.ArtifactStagingDirectory)"
+    displayName: 'Archive $(Build.ArtifactStagingDirectory)'
     inputs:
-      rootFolderOrFile: "$(Build.ArtifactStagingDirectory)"
+      rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
       includeRootFolder: false
 
   - task: PublishBuildArtifacts@1
-    displayName: "Publish Artifact: drop"
+    displayName: 'Publish Artifact: drop'
 ```
 
 ## Running Angular Build on Azure Devops
@@ -126,7 +126,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

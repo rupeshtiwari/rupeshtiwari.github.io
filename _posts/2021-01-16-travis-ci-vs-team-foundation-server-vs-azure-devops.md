@@ -1,15 +1,15 @@
 ---
 title: Travis CI vs Team Foundation Server vs Azure DevOps
-date: "2021-01-16 00:00 +0000"
+date: '2021-01-16 00:00 +0000'
 subtitle: Learn and decide which cloud based ci cd service you like
 description: Learn and decide which cloud based ci cd service you like
-header: 
-  image: "https://i.imgur.com/73heuwv.jpg"
+header:
+  image: 'https://i.imgur.com/73heuwv.jpg'
   teaser: https://i.imgur.com/7dBEoja.jpg
-image: "https://i.imgur.com/73heuwv.png"
-cover_image: "https://i.imgur.com/73heuwv.png"
-thumbnail-img: "https://i.imgur.com/7dBEoja.png"
-share-img: "https://i.imgur.com/7dBEoja.png"
+image: 'https://i.imgur.com/73heuwv.png'
+cover_image: 'https://i.imgur.com/73heuwv.png'
+thumbnail-img: 'https://i.imgur.com/7dBEoja.png'
+share-img: 'https://i.imgur.com/7dBEoja.png'
 tags:
   - devops
   - travis
@@ -93,7 +93,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

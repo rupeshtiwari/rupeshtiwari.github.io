@@ -30,7 +30,6 @@ You will learn how to integrate `Azure Functions` with `Azure Service Bus Queue`
 
 Microsoft Azure Service Bus `sessions` enable joint and ordered handling of unbounded sequences of related messages. Sessions can be used in `first in, first out (FIFO) and request-response` patterns. This article shows how to use session to implement Request/Reply patterns when using Service Bus.
 
-
 ## Request/Reply Pattern
 
 `Request/Reply` pattern is also treated as `Producer/Consumer` pattern. If you are working with distributed architecture including cloud. Then it is difficult to do synchronous actions. However, using Request/Reply pattern you can work just like synchronous operation.
@@ -55,8 +54,6 @@ public async Task<IActionResult> CreateOrder(Order order) {
 
 2. For `Request/Reply` to work, both the sender and the receiver require a designated queue. There is a dedicated handler and receiver for a message Request/Reply.
 
-
-
 ### Writing to Azure Service Queue
 
 Once we receive payload from client we are going to put the message on service bus Queue.
@@ -74,9 +71,10 @@ If you're using binding extensions (e.g. Azure Storage, ServiceBus, Timers, etc.
 
 In order for connecting to Azure Service Bus Queue we need Azure Web Job Service Bus Connection string that you get from Root Manage Shared Access Key from Azure Portal. ![](https://imgur.com/KuTiOQf.png)
 
-Add `AzureWebJobsServiceBus` in `local.settings.json` file. 
+Add `AzureWebJobsServiceBus` in `local.settings.json` file.
 
-Also provide Azure Web Job Storage to use Azure Emulator. `"AzureWebJobsStorage": "UseDevelopmentStorage=true",` 
+Also provide Azure Web Job Storage to use Azure Emulator. `"AzureWebJobsStorage": "UseDevelopmentStorage=true",`
+
 ```json
 {
   "IsEncrypted": false,
@@ -91,11 +89,9 @@ Also provide Azure Web Job Storage to use Azure Emulator. `"AzureWebJobsStorage"
 [Download the Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) if you want to see the data visually.
 ![](https://imgur.com/nxJYgUu.png)
 
-
-In order to get `MessageSender` we must setup startup where we have to register the `MessageSender` so that function will receive in-built `MessageSender` service from Azure. 
+In order to get `MessageSender` we must setup startup where we have to register the `MessageSender` so that function will receive in-built `MessageSender` service from Azure.
 
 ConfigurationManager can be found by installing `dotnet add package Microsoft.Extensions.Configuration`
-
 
 ## References
 
@@ -112,7 +108,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari

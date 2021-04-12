@@ -1,19 +1,19 @@
 ---
 title: Integrating CkEditor In Nx Monorepo
-date: "2021-02-01 10:22 -0500"
+date: '2021-02-01 10:22 -0500'
 subtitle: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
 description: Learn how to integrate ckeditor with custom plugin in Nx Monorepo
-image: "https://imgur.com/6ySnUBQ.png"
-header: 
-  image: "https://imgur.com/H43sJjo.png"
-  teaser: "https://imgur.com/6ySnUBQ.png"
-  og_image: "https://imgur.com/6ySnUBQ.png"
+image: 'https://imgur.com/6ySnUBQ.png'
+header:
+  image: 'https://imgur.com/H43sJjo.png'
+  teaser: 'https://imgur.com/6ySnUBQ.png'
+  og_image: 'https://imgur.com/6ySnUBQ.png'
 tags:
   - nx
   - angular
   - ckeditor
   - beginners
-last_modified_at: "2021-02-01 10:22 -0500"
+last_modified_at: '2021-02-01 10:22 -0500'
 published: true
 sitemap: true
 excerpt_separator: <!--more-->
@@ -184,31 +184,31 @@ export default class PlaceholderButtonUI extends Plugin {
 ![](https://i.imgur.com/GVCbl7H.png)
 
 ```javascript
-import InlineEditorBase from "@ckeditor/ckeditor5-editor-inline/src/inlineeditor";
-import Essentials from "@ckeditor/ckeditor5-essentials/src/essentials";
-import UploadAdapter from "@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter";
-import Autoformat from "@ckeditor/ckeditor5-autoformat/src/autoformat";
-import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold";
-import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic";
-import BlockQuote from "@ckeditor/ckeditor5-block-quote/src/blockquote";
-import CKFinder from "@ckeditor/ckeditor5-ckfinder/src/ckfinder";
-import EasyImage from "@ckeditor/ckeditor5-easy-image/src/easyimage";
-import Heading from "@ckeditor/ckeditor5-heading/src/heading";
-import Image from "@ckeditor/ckeditor5-image/src/image";
-import ImageCaption from "@ckeditor/ckeditor5-image/src/imagecaption";
-import ImageStyle from "@ckeditor/ckeditor5-image/src/imagestyle";
-import ImageToolbar from "@ckeditor/ckeditor5-image/src/imagetoolbar";
-import ImageUpload from "@ckeditor/ckeditor5-image/src/imageupload";
-import Indent from "@ckeditor/ckeditor5-indent/src/indent";
-import Link from "@ckeditor/ckeditor5-link/src/link";
-import List from "@ckeditor/ckeditor5-list/src/list";
-import MediaEmbed from "@ckeditor/ckeditor5-media-embed/src/mediaembed";
-import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
-import PasteFromOffice from "@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice";
-import Table from "@ckeditor/ckeditor5-table/src/table";
-import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
-import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
-import Placeholder from "./plugins/placeholder/placeholder";
+import InlineEditorBase from '@ckeditor/ckeditor5-editor-inline/src/inlineeditor';
+import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
+import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
+import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
+import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
+import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
+import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
+import Heading from '@ckeditor/ckeditor5-heading/src/heading';
+import Image from '@ckeditor/ckeditor5-image/src/image';
+import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
+import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
+import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
+import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+import Link from '@ckeditor/ckeditor5-link/src/link';
+import List from '@ckeditor/ckeditor5-list/src/list';
+import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
+import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
+import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
+import Table from '@ckeditor/ckeditor5-table/src/table';
+import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Placeholder from './plugins/placeholder/placeholder';
 
 export default class InlineEditor extends InlineEditorBase {}
 
@@ -244,40 +244,40 @@ InlineEditor.builtinPlugins = [
 InlineEditor.defaultConfig = {
   toolbar: {
     items: [
-      "heading",
-      "|",
-      "bold",
-      "italic",
-      "link",
-      "bulletedList",
-      "numberedList",
-      "|",
-      "indent",
-      "outdent",
-      "|",
-      "imageUpload",
-      "blockQuote",
-      "insertTable",
-      "mediaEmbed",
-      "undo",
-      "redo",
-      "|",
-      "placeholder",
+      'heading',
+      '|',
+      'bold',
+      'italic',
+      'link',
+      'bulletedList',
+      'numberedList',
+      '|',
+      'indent',
+      'outdent',
+      '|',
+      'imageUpload',
+      'blockQuote',
+      'insertTable',
+      'mediaEmbed',
+      'undo',
+      'redo',
+      '|',
+      'placeholder',
     ],
   },
   image: {
     toolbar: [
-      "imageStyle:full",
-      "imageStyle:side",
-      "|",
-      "imageTextAlternative",
+      'imageStyle:full',
+      'imageStyle:side',
+      '|',
+      'imageTextAlternative',
     ],
   },
   table: {
-    contentToolbar: ["tableColumn", "tableRow", "mergeTableCells"],
+    contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
   },
   // This value must be kept in sync with the language defined in webpack.config.js.
-  language: "en",
+  language: 'en',
 };
 ```
 
@@ -307,25 +307,25 @@ Final webpack file:
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-undef */
 
-const path = require("path");
-const webpack = require("webpack");
-const { bundler, styles } = require("@ckeditor/ckeditor5-dev-utils");
-const CKEditorWebpackPlugin = require("@ckeditor/ckeditor5-dev-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+const path = require('path');
+const webpack = require('webpack');
+const { bundler, styles } = require('@ckeditor/ckeditor5-dev-utils');
+const CKEditorWebpackPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  devtool: "source-map",
+  devtool: 'source-map',
   performance: { hints: false },
 
-  entry: path.resolve(__dirname, "src/lib", "ckeditor.js"),
+  entry: path.resolve(__dirname, 'src/lib', 'ckeditor.js'),
 
   output: {
     // The name under which the editor will be exported.
-    library: "InlineEditor",
-    path: path.resolve(__dirname, "src"),
-    filename: "index.js",
-    libraryTarget: "umd",
-    libraryExport: "default",
+    library: 'InlineEditor',
+    path: path.resolve(__dirname, 'src'),
+    filename: 'index.js',
+    libraryTarget: 'umd',
+    libraryExport: 'default',
   },
 
   optimization: {
@@ -360,25 +360,25 @@ module.exports = {
     rules: [
       {
         test: /\.svg$/,
-        use: ["raw-loader"],
+        use: ['raw-loader'],
       },
       {
         test: /\.css$/,
         use: [
           {
-            loader: "style-loader",
+            loader: 'style-loader',
             options: {
-              injectType: "singletonStyleTag",
+              injectType: 'singletonStyleTag',
               attributes: {
-                "data-cke": true,
+                'data-cke': true,
               },
             },
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: styles.getPostCssConfig({
               themeImporter: {
-                themePath: require.resolve("@ckeditor/ckeditor5-theme-lark"),
+                themePath: require.resolve('@ckeditor/ckeditor5-theme-lark'),
               },
               minify: true,
             }),
@@ -455,13 +455,13 @@ Angular Project created
 Create Editor.Directive.ts under `editor` lib
 
 ```typescript
-import { Directive, ElementRef, Input, OnInit } from "@angular/core";
+import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 
-import * as InlineEditor from "@myorg/branding-ckeditor";
+import * as InlineEditor from '@myorg/branding-ckeditor';
 
 @Directive({
   // tslint:disable-next-line: directive-selector
-  selector: "[editor]", // If you put something else it will not work. Keep it editor.
+  selector: '[editor]', // If you put something else it will not work. Keep it editor.
 })
 export class BrandingEditorDirective implements OnInit {
   constructor(private elementRef: ElementRef) {}
@@ -491,9 +491,9 @@ export class BrandingEditorDirective implements OnInit {
 Export the directive so to use in other projects.
 
 ```typescript
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { BrandingEditorDirective } from "./editor.directive";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BrandingEditorDirective } from './editor.directive';
 
 @NgModule({
   imports: [CommonModule],
@@ -506,8 +506,8 @@ export class BrandingEditorModule {}
 Export directive from index.ts file
 
 ```typescript
-export * from "./lib/branding-editor.module";
-export * from "./lib/editor.directive";
+export * from './lib/branding-editor.module';
+export * from './lib/editor.directive';
 ```
 
 ## Using Editor Angular Directive inside Other Angular Library
@@ -517,11 +517,11 @@ Now I will use the editor inside my angular project `puppy-editor`
 1. Import `BrandingEditorModule`
 
 ```typescript
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { RouterModule, Route } from "@angular/router";
-import { AddPuppyComponent } from "./add-puppy/add-puppy.component";
-import { BrandingEditorModule } from "@myorg/branding-editor";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Route } from '@angular/router';
+import { AddPuppyComponent } from './add-puppy/add-puppy.component';
+import { BrandingEditorModule } from '@myorg/branding-editor';
 
 export const salesPuppyEditorRoutes: Route[] = [];
 
@@ -530,7 +530,7 @@ export const salesPuppyEditorRoutes: Route[] = [];
     CommonModule,
     BrandingEditorModule, // importing module
     RouterModule.forChild([
-      { path: "", pathMatch: "full", component: AddPuppyComponent },
+      { path: '', pathMatch: 'full', component: AddPuppyComponent },
     ]),
   ],
   declarations: [AddPuppyComponent],
@@ -760,7 +760,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > <a href="https://www.fullstackmaster.net"> >

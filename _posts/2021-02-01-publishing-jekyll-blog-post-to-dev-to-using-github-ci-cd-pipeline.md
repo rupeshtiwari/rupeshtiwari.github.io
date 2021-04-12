@@ -2,18 +2,18 @@
 title: Publishing Jekyll Blog Post to DevTo using GitHub CI and CD Pipeline
 description: Learn cross-posting to dev to from Jekyll blog
 subtitle: Learn cross-posting to dev to from Jekyll blog
-date: "2021-02-01 15:03 -0500"
-header: 
-  image: "https://i.imgur.com/TBAF05L.png"
-  teaser: "https://i.imgur.com/oKh8TiX.png"
-  og_image: "https://i.imgur.com/oKh8TiX.png"
-image: "https://i.imgur.com/oKh8TiX.png"
+date: '2021-02-01 15:03 -0500'
+header:
+  image: 'https://i.imgur.com/TBAF05L.png'
+  teaser: 'https://i.imgur.com/oKh8TiX.png'
+  og_image: 'https://i.imgur.com/oKh8TiX.png'
+image: 'https://i.imgur.com/oKh8TiX.png'
 tags:
   - jekyll
   - github
   - devops
   - webdev
-last_modified_at: "2021-02-01 15:03 -0500"
+last_modified_at: '2021-02-01 15:03 -0500'
 published: true
 sitemap: true
 excerpt_separator: <!--more-->
@@ -158,7 +158,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

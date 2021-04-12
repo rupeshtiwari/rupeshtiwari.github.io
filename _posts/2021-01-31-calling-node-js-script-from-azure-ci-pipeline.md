@@ -1,12 +1,12 @@
 ---
 title: Calling Node.js Script from Azure CI Pipeline
-date: "2021-01-31 00:00 +0000"
+date: '2021-01-31 00:00 +0000'
 subtitle: Learn how to execute custom node.js script from azure ci pipeline
 description: Learn how to execute custom node.js script from azure ci pipeline
-img: "https://i.imgur.com/hiQZ0BG.png"
-cover_image: "https://i.imgur.com/mGXdBOh.png"
-thumbnail-img: "https://i.imgur.com/uXPOglx.png"
-share-img: "https://i.imgur.com/uXPOglx.png"
+img: 'https://i.imgur.com/hiQZ0BG.png'
+cover_image: 'https://i.imgur.com/mGXdBOh.png'
+thumbnail-img: 'https://i.imgur.com/uXPOglx.png'
+share-img: 'https://i.imgur.com/uXPOglx.png'
 tags:
   - devops
   - node
@@ -82,7 +82,7 @@ steps:
   - script: |
       export num=$(node ./build.js $(Build.BuildId) $(Build.SourceBranchName))
       echo "node.js returned $num"
-    displayName: "Executing Node.js script"
+    displayName: 'Executing Node.js script'
 ```
 
 ## Running Azure CI Pipeline
@@ -120,7 +120,7 @@ Add script to update the build number in the Azure pipelines
     export num=$(node ./build.js $(Build.BuildId) $(Build.SourceBranchName))
     echo "node.js returned $num"
     echo "##vso[build.updatebuildnumber]$num"
-  displayName: "Update Build Number"
+  displayName: 'Update Build Number'
 ```
 
 Add another new script to show the build number.
@@ -131,7 +131,7 @@ number.
 
 ```yaml
 - script: echo "new buildnumber ~>$(Build.BuildNumber)"
-  displayName: "Display New Build Number"
+  displayName: 'Display New Build Number'
 ```
 
 Updating build number ![](https://i.imgur.com/A2UbZDE.png) Displaying new build
@@ -154,7 +154,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

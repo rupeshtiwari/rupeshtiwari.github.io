@@ -1,13 +1,13 @@
 ---
 title: Running Angular 10 in Internet Explorer 11
-date: "2021-02-04 00:00 +0000"
+date: '2021-02-04 00:00 +0000'
 subtitle: Learn supporting Internet Explorer in Angular
 description: Learn supporting Internet Explorer in Angular
-header: 
-  image: "https://i.imgur.com/FtOy5i6.png"
-  teaser: "https://i.imgur.com/7pgedpv.png"
-  og_image: "https://i.imgur.com/7pgedpv.png"
-image: "https://i.imgur.com/7pgedpv.png"
+header:
+  image: 'https://i.imgur.com/FtOy5i6.png'
+  teaser: 'https://i.imgur.com/7pgedpv.png'
+  og_image: 'https://i.imgur.com/7pgedpv.png'
+image: 'https://i.imgur.com/7pgedpv.png'
 tags:
   - angular
   - css
@@ -155,7 +155,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

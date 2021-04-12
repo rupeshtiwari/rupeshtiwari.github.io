@@ -46,9 +46,8 @@ You might have this question why to use NService Bus in Azure Service Bus? Well 
 3. **Extensible Message Processing Pipeline** You can take the advantages of this feature also.
 4. **Tooling** NSB provides tooling like **AppInsight** , **Service Control** and **Service Pulse** to track your messages and retry failed one manually. Check health of your handlers etc.
 5. **NSB** framework **enables to publish base messages once the child message is published**. Example if `AccountCreatedV2` Message inherits from `AccountCreatedV1` class. And if we publish `AccountCreatedV2` event then NSB will also publish the `AccountCreatedV1` event so that both message handlers will be invoked out of the box.
-6. **NSB** also help us to route all of the messages sitting in the dead-letter queues to corresponding destinations or receivers. 
-7. **NSB** uses `sendvia` feature and creates default topology 
-
+6. **NSB** also help us to route all of the messages sitting in the dead-letter queues to corresponding destinations or receivers.
+7. **NSB** uses `sendvia` feature and creates default topology
 
 ## Getting Started with NSB Sample code
 
@@ -185,7 +184,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari

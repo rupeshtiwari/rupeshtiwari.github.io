@@ -1,17 +1,15 @@
 ---
 title: Publishing Nx Monorepo Test Results in Azure CI Pipeline
-date: "2021-01-30 00:00 +0000"
-subtitle:
-  Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
-description:
-  Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
-header: 
-  image: "https://i.imgur.com/WQ5z6KK.jpg"
+date: '2021-01-30 00:00 +0000'
+subtitle: Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
+description: Learn writing Azure CI pipeline to show Nx Monorepo combined Test Results
+header:
+  image: 'https://i.imgur.com/WQ5z6KK.jpg'
   teaser: https://i.imgur.com/3ysBPoZ.jpg
-image: "https://i.imgur.com/WQ5z6KK.png"
-cover_image: "https://i.imgur.com/WQ5z6KK.png"
-thumbnail-img: "https://i.imgur.com/3ysBPoZ.png"
-share-img: "https://i.imgur.com/3ysBPoZ.png"
+image: 'https://i.imgur.com/WQ5z6KK.png'
+cover_image: 'https://i.imgur.com/WQ5z6KK.png'
+thumbnail-img: 'https://i.imgur.com/3ysBPoZ.png'
+share-img: 'https://i.imgur.com/3ysBPoZ.png'
 tags:
   - devops
   - nx
@@ -79,8 +77,8 @@ For that we will use `mergeTestResults: true` flag.
 # Publish Test Results
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: "JUnit"
-    testResultsFiles: "**/testresults/**/*.xml"
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/testresults/**/*.xml'
     mergeTestResults: true
   condition: |
     and(
@@ -127,7 +125,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

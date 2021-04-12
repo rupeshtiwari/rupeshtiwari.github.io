@@ -1,13 +1,13 @@
 ---
 title: Fixing Nrwl Nx Monorepo Workspace Dependency Graph Error
-date: "2021-03-06 00:00 +0000"
+date: '2021-03-06 00:00 +0000'
 subtitle: nx monorepo workspace tslint dependency error fix
 description: nx monorepo workspace tslint dependency error fix
-header: 
-  image: "https://i.imgur.com/BOUqmSS.jpg"
+header:
+  image: 'https://i.imgur.com/BOUqmSS.jpg'
   teaser: https://i.imgur.com/ymSlvgi.jpg
   og_image: https://i.imgur.com/ymSlvgi.jpg
-image: "https://i.imgur.com/ymSlvgi.png"
+image: 'https://i.imgur.com/ymSlvgi.png'
 tags:
   - nx
   - monorepo
@@ -208,7 +208,7 @@ video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 

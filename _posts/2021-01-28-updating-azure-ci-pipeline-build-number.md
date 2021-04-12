@@ -1,12 +1,12 @@
 ---
 title: Updating Azure CI Pipeline Build Number
-date: "2021-01-28 00:00 +0000"
+date: '2021-01-28 00:00 +0000'
 subtitle: Learn how to update build number in azure ci pipeline
 description: Learn how to update build number in azure ci pipeline
-image: "https://i.imgur.com/1Ncfprq.png"
-cover_image: "https://i.imgur.com/1Ncfprq.png"
-thumbnail-img: "https://i.imgur.com/MxavTGI.png"
-share-img: "https://i.imgur.com/MxavTGI.png"
+image: 'https://i.imgur.com/1Ncfprq.png'
+cover_image: 'https://i.imgur.com/1Ncfprq.png'
+thumbnail-img: 'https://i.imgur.com/MxavTGI.png'
+share-img: 'https://i.imgur.com/MxavTGI.png'
 tags:
   - devops
   - node
@@ -51,7 +51,7 @@ Duration: 6s
 - script: |
     export newNumber=123-$(Build.SourceBranchName)
     echo "##vso[task.setvariable variable=NEWBUILDNUMBER;]$newNumber"
-  displayName: "Get New Build Number"
+  displayName: 'Get New Build Number'
 ```
 
 ## Display New Build Number
@@ -59,7 +59,7 @@ Duration: 6s
 ```yaml
 - script: |
     echo new build number $(NEWBUILDNUMBER)
-  displayName: "Display New Build Number"
+  displayName: 'Display New Build Number'
 ```
 
 ## Update build number with new Build Number
@@ -67,7 +67,7 @@ Duration: 6s
 ```yaml
 - script: |
     echo "##vso[build.updatebuildnumber]$NEWBUILDNUMBER"
-  displayName: "Update Build Number"
+  displayName: 'Update Build Number'
 ```
 
 ## Display updated build number
@@ -75,7 +75,7 @@ Duration: 6s
 ```yaml
 - script: |
     echo "New Build Number is: $(Build.BuildNumber)"
-  displayName: "Display Updated Build Number"
+  displayName: 'Display Updated Build Number'
 ```
 
 ## Check Azure CI Pipeline
@@ -94,21 +94,21 @@ steps:
       echo "===== creating new variable ====="
       echo "##vso[task.setvariable variable=NEWBUILDNUMBER;]$newNumber"
       echo "===== creating new variable ====="
-    displayName: "Get New Build Number"
+    displayName: 'Get New Build Number'
 
   - script: |
       echo new build number $(NEWBUILDNUMBER)
-    displayName: "Display New Build Number"
+    displayName: 'Display New Build Number'
 
   - script: |
       echo "===== updating buildnumber ====="
       echo "##vso[build.updatebuildnumber]$NEWBUILDNUMBER"
       echo "===== updating buildnumber ====="
-    displayName: "Update Build Number"
+    displayName: 'Update Build Number'
 
   - script: |
       echo "New Build Number is: $(Build.BuildNumber)"
-    displayName: "Display Updated Build Number"
+    displayName: 'Display Updated Build Number'
 ```
 
 ## Become full stack developer 💻
@@ -128,7 +128,7 @@ Monthly video calls.
   live Q&A video call with Rupesh and you can ask doubts/questions and get more
   help, tips and tricks.
 
-> You bright future is waiting for you so visit today
+> Your future is waiting for you so visit today
 > [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board
 > on your dream software company as a Developer,Architect or Lead Engineer role.
 > **💖 Say 👋 to me!**

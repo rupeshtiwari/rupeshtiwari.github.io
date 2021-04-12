@@ -51,11 +51,13 @@ Run on admin PowerShell
 ```powershell
 Install-Module oh-my-posh -Scope CurrentUser
 ```
+
 If you are using **PowerShell 7** then use below script to install **oh-my-posh**
 
 ```powershell
 Install-Module oh-my-posh -Scope CurrentUser -AllowPrerelease -Force
 ```
+
 ## 🎨 PowerShell Theme
 
 ### Browse All existing themes
@@ -232,7 +234,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> You bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari
