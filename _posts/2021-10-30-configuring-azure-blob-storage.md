@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/KghTIqI.png
+image: https://i.imgur.com/WaTRME2.png
 header:
-  image: https://i.imgur.com/JG4JIOS.png
-  teaser: https://i.imgur.com/KghTIqI.png
-  og_image: https://i.imgur.com/KghTIqI.png
+  image: https://i.imgur.com/DnqjYls.png
+  teaser: https://i.imgur.com/WaTRME2.png
+  og_image: https://i.imgur.com/WaTRME2.png
 tags:
   - azure
   - beginners
