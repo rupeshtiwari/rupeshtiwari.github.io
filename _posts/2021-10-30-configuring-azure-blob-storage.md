@@ -159,9 +159,11 @@ Some of the files like `.txt` can be edited right in the azure portal.
 
 ### Snapshots
 
+
 You can create a **copy** of the current version and mark them as snapshot which can be downloaded or promoted as the current version or deleted if not required.
 
 ### Generating SAS
+![](https://imgur.com/8ThrLEy.png)
 
 Shared Access Signature (SAS) is a **string** appended at the **end of the URL** for **accessing** a blob file.
 
@@ -173,6 +175,47 @@ From the container list you can select the action per container level.
 
 - **Acquire lease** : No one can delete this container
 - **Change access level** : You can change the public access level at container level.
+
+
+## Other Blob Services
+
+![](https://imgur.com/Eah5XeO.png)
+
+### Containers
+ To create new container or see existing containers. 
+
+### Custom domain 
+![](https://imgur.com/m3BsA4D.png)
+For the Azure storage account you can setup your own public domain. 
+
+
+### Data Protection
+
+![](https://imgur.com/a61H9IX.png)
+
+You can update the recovery and tracking settings of your storage account. This settings also available when you are creating the azure storage account. 
+
+### Object Replication
+
+![](https://imgur.com/aysb3aT.png)
+
+Asynchronously copying your blob to another storage account. Example you can copy blobs from standard account to premium or vice-versa. 
+
+### Azure CDN
+![](https://imgur.com/BX02dgg.png) 
+Cache your content on the CDN and delivery to your user faster. 
+
+### Azure Search
+![](https://imgur.com/gDLSxSa.png)
+
+## Static Website
+
+Website don't require server side processing JAM stack sites can be hosted here. A special blob container will be created where you can host your website on your own domain.
+
+![](https://imgur.com/JQ6iQaZ.png)
+
+
+
 
 ---
 
