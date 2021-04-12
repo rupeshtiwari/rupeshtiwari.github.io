@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/WaTRME2.png
+image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/DnqjYls.png
-  teaser: https://i.imgur.com/WaTRME2.png
-  og_image: https://i.imgur.com/WaTRME2.png
+  image: https://i.imgur.com/0STZvEy.png
+  teaser: https://i.imgur.com/h4QI62f.png
+  og_image: https://i.imgur.com/h4QI62f.png
 tags:
   - azure
   - beginners
@@ -22,7 +22,7 @@ tags:
   - webdev
 ---
 
-> **Azure Security Center** is the base infrastructure service to collect logs analyze them and generate tailored recommendations. Learn how can you review and fix **general**, **cloud** securities and manage security concerns of your resources in Azure. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303). 
+> **Azure Security Center** is the base infrastructure service to collect logs analyze them and generate tailored recommendations. Learn how can you review and fix **general**, **cloud** securities and manage security concerns of your resources in Azure. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
 ![](https://imgur.com/HzMy9LY.png)
 
@@ -82,7 +82,6 @@ If there is any security threats found on your resources then you will see alert
 
 ![](https://imgur.com/UJit8lQ.gif)
 Here you can see secure score and check your overall health score plus you can visit the recommendations.
-
 
 ---
 

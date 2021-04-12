@@ -1,5 +1,5 @@
 ---
-title: Configuring Azure Diagnostics Log
+title: Configuring Azure Diagnostics Log 
 date: 2021-07-31 00:00 +0000
 description: Demo configuring azure diagnostics log for azure functions.
 author_profile: true

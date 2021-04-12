@@ -10,17 +10,18 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/WaTRME2.png
+image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/DnqjYls.png
-  teaser: https://i.imgur.com/WaTRME2.png
-  og_image: https://i.imgur.com/WaTRME2.png
+  image: https://i.imgur.com/0STZvEy.png
+  teaser: https://i.imgur.com/h4QI62f.png
+  og_image: https://i.imgur.com/h4QI62f.png
 tags:
   - azure
   - webdev
   - beginners
   - certification
 ---
+
 > Did you know you can enable web application tracing, performance check, request response time trace and exception tracing all free using Azure Application Insight. Learn how to implement and configure app insight in your .net application. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
 ## Configure Advanced Logging 🧑‍💻
@@ -92,7 +93,6 @@ We will create workspace-based App Insights so that logs can be sent to Azure An
 - Update the MVC project web.config with the Key so that your app will send
 
 Here is the [source code for implementing Azure App Insights](https://github.com/rupeshtiwari/app-insight-demo-mvc-net)
-
 
 ---
 

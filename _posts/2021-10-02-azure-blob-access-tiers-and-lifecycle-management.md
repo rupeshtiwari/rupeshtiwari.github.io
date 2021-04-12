@@ -10,18 +10,19 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/WaTRME2.png
+image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/DnqjYls.png
-  teaser: https://i.imgur.com/WaTRME2.png
-  og_image: https://i.imgur.com/WaTRME2.png
+  image: https://i.imgur.com/0STZvEy.png
+  teaser: https://i.imgur.com/h4QI62f.png
+  og_image: https://i.imgur.com/h4QI62f.png
 tags:
   - azure
   - webdev
   - certification
   - beginners
 ---
-> Azure Storage has no upfront cost, no termination fees and pay only for what you use. 
+
+> Azure Storage has no upfront cost, no termination fees and pay only for what you use.
 
 ## Azure Service Pricing
 

@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/WaTRME2.png
+image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/DnqjYls.png
-  teaser: https://i.imgur.com/WaTRME2.png
-  og_image: https://i.imgur.com/WaTRME2.png
+  image: https://i.imgur.com/0STZvEy.png
+  teaser: https://i.imgur.com/h4QI62f.png
+  og_image: https://i.imgur.com/h4QI62f.png
 tags:
   - azure
   - webdev
@@ -74,6 +74,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
 > Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+
 ---
 
 **💖 Say 👋 to me!**

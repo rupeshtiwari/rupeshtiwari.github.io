@@ -1,7 +1,7 @@
 ---
 title: Visualize Azure Monitor Logs and Metrics
 date: 2021-09-11 00:00 +0000
-description: Learn how to visualize your Azure log and metrics, create workbooks and your personalized dashboard on Azure Portal. 
+description: Learn how to visualize your Azure log and metrics, create workbooks and your personalized dashboard on Azure Portal.
 author_profile: true
 published: true
 read_time: true
@@ -10,17 +10,18 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/WaTRME2.png
+image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/DnqjYls.png
-  teaser: https://i.imgur.com/WaTRME2.png
-  og_image: https://i.imgur.com/WaTRME2.png
+  image: https://i.imgur.com/0STZvEy.png
+  teaser: https://i.imgur.com/h4QI62f.png
+  og_image: https://i.imgur.com/h4QI62f.png
 tags:
   - azure
   - webdev
   - beginners
   - certification
 ---
+
 > Azure portal is great while visualizing Azure log and metrics. You can see the pie chart, graph for resources like VMs etc. You can also create your custom multiple dashboard views with these visualizations. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
 ## Visualize Azure Monitor Logs and Metrics 📈
@@ -48,6 +49,7 @@ You can use below services to visualize log data [Learn them in detail](https://
 - Time Range last 4 hours data etc.
 
 ### Azure Dashboards
+
 ![](https://imgur.com/E3nrxc5.gif)
 
 In Azure Portal you can have multiple dashboards.
@@ -57,8 +59,6 @@ You can create your own Dashboard for one VM resource and add below stuff like:
 1. VMs performance Metrics
 2. Clock
 3. Multiple chart and diagrams.
-
-
 
 ---
 

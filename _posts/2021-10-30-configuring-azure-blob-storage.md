@@ -1,5 +1,5 @@
 ---
-title: Configuring Azure Blob Storage in the Storage Account AZ-303
+title: Configuring Azure Blob Storage in the Storage Account
 date: 2021-10-30 00:00 +0000
 description: Microsoft Azure Solutions Architect AZ 303 material for creating Azure Blob Storage within a Storage account.
 author_profile: true
@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: false
-image: https://i.imgur.com/WaTRME2.png
+image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/DnqjYls.png
-  teaser: https://i.imgur.com/WaTRME2.png
-  og_image: https://i.imgur.com/WaTRME2.png
+  image: https://i.imgur.com/0STZvEy.png
+  teaser: https://i.imgur.com/h4QI62f.png
+  og_image: https://i.imgur.com/h4QI62f.png
 tags:
   - azure
   - beginners
@@ -173,8 +173,6 @@ From the container list you can select the action per container level.
 
 - **Acquire lease** : No one can delete this container
 - **Change access level** : You can change the public access level at container level.
-
-
 
 ---
 
