@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Azure Storage- The big picture
 date: 2021-04-12 06:18 -0400
 description: Understand the use case of Azure storage account
@@ -25,15 +24,15 @@ tags:
 
 ## Azure Core Storage Services
 
-![](https://imgur.com/TtSeiho.png)
+![](https://imgur.com/0uXKnai.png)
 
-1. Blob
+1. Blobs
 2. Files
 3. Queues
 4. Tables
 5. Disks
 
-### Azure Blob
+### Azure Blobs Storage
 
 ![](https://imgur.com/OmyjBKy.png)
 
@@ -51,7 +50,7 @@ tags:
 - Application which can not talk to blob api and need Network file share then you can use Azure files to access files on network.
 - File share can be connect to on-premise computer
 
-### Azure Table
+### Azure Tables
 
 - **Structured** data only
 - Data broke down into Fields
@@ -80,11 +79,11 @@ There is another **service** for **Azure Queues** called **Azure Service Bus**
 
 ## Accessible
 
-Azure CLI, Azure storage Explorer, Azure portal, AZ copy, Powershell and program everyone can use REST api to access all data. All of the data are exposed to REST endpoint.
+Azure CLI, Azure storage Explorer, Azure portal, AZ copy, Powershell and program everyone can use **REST API** to access all data. All of the data are exposed to REST endpoint.
 
 ## Security
 
-You can limit who can access your data. You can encrypt by your own encryption keys for blob and file services by uploading on Azure Key Vault.
+You can limit who can access your data. You can encrypt by your own encryption keys for **blobs and files** services by uploading on Azure Key Vault. By default Microsoft put all data encrypted at rest.
 
 ## Durable and highly available
 
