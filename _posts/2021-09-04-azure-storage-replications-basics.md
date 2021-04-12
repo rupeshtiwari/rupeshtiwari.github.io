@@ -1,7 +1,7 @@
 ---
 title: Azure Storage Replications Basics
 date: 2021-09-04 00:00 +0000
-description:
+description: Learn how can you keep your data durable and highly available in azure storage.
 author_profile: true
 published: true
 read_time: true

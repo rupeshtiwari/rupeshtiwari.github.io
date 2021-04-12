@@ -1,7 +1,7 @@
 ---
-title: Implement Azure cloud infrastructure monitoring AZ-303
-date: 2021-08-14 00:00 +0000
-description: Microsoft Azure Solutions Architect - Implement a Cloud Infrastructure Monitoring Strategy
+title: Configuring Azure Diagnostics Log
+date: 2021-07-31 00:00 +0000
+description: Demo configuring azure diagnostics log for azure functions.
 author_profile: true
 published: true
 read_time: true
@@ -17,12 +17,12 @@ header:
   og_image: https://i.imgur.com/nbHefDR.png
 tags:
   - azure
-  - certification
-  - architect
+  - webdev
+  - beginners
   - tutorial
 ---
 
-> Are you preparing for the Microsoft exam **AZ-303**? ​This article will teach you t​he cloud **monitoring skills** needed for this exam.
+> ​This article will teach you t​he how to configure and implement **diagnostics log** for Azure resources. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303). 
 
 ## Introduction
 
@@ -109,127 +109,7 @@ Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
 ![](https://imgur.com/DnfeA4b.gif)
 
-## Azure Security Center 🚔
 
-![](https://imgur.com/HzMy9LY.png)
-
-**Azure Security center** is a unified infrastructure security management system.
-
-This is your "**base layer**" for monitoring the **security** configuration and **health** of your workloads. Azure Security Center collects events from **Azure** or **log analytics agents** and correlates them in a **security analytics engine**, to provide you with tailored recommendations (hardening tasks). Strengthening your security posture can be achieved by implementing these **recommendations**.
-
-The Azure Security Center uses a built-in Azure Policy initiative in audit-only mode (the Azure Security Benchmark) as well as Azure Monitor logs and other Azure security solutions like Microsoft Cloud App Security. [Learn more here...](https://techcommunity.microsoft.com/t5/itops-talk-blog/what-s-the-difference-between-azure-security-center-azure/ba-p/2155188)
-
-### Security Challenges
-
-1. In cloud **workloads are changing quickly** and we must make sure the developers/devops are following the security best practices while provisioning the resources.
-2. Internet **Security attacks** risk is always there if your resources are internet facing.
-3. Also Security **skills are less** with developers.
-
-### Solving Security Challenges
-
-1. **Strengthen Security Posture**: Using Azure Security Monitor you can examine your resources and give you security reports.
-2. **Protect against threats**: Azure security monitor can generate security alerts and raises threat prevention suggestions on your Azure resources.
-3. **Auto Secure**: You can give auto-provisioning to resolve security issues faster.
-
-### Resources Protected by Azure Security Center
-
-There are lots of resources which are automatically **protected and monitor** by security center.
-
-1. All **Azure PaaS resources** like DB engine and Storage accounts.
-2. Non-Azure **Virtual Machines** on cloud or on premises. You must install Log Analytics Agents on them ( both windows and Linux ) supported.
-3. **Azure VMs**
-4. **Security alerts** are created when threat is found on the azure workloads. One has to investigate the security alerts.
-
-### Security Center on Azure Portal
-
-#### Overview screen
-
-![](https://imgur.com/Ck6y2fp.gif)
-
-1. **Secure Score**- over all health score
-2. **Regulatory compliance** - how compliant you are for the resources.
-3. **Azure Defender** - protects resources against security threats.
-4. **Firewall Manager**
-5. **Insights**
-
-#### Recommendations screen
-
-![](https://imgur.com/UJit8lQ.gif)
-Displays the Secure Score, security improvement for all resources & their recommendation and Quick fixes.
-
-#### Security alerts
-
-![](https://imgur.com/UJit8lQ.gif)
-
-If there is any security threats found on your resources then you will see alerts here.
-
-#### Cloud security
-
-![](https://imgur.com/UJit8lQ.gif)
-Here you can see secure score and check your overall health score plus you can visit the recommendations.
-
-## Azure Monitor for VMs 💻
-
-> You can monitor performance and health of VMs and VMs scale sets, running processors and other resources dependencies.
-
-This is a product that helps you to:
-
-- Deliver **predictable performance and availability**
-- Identify **performance bottlenecks** and existing **network issues**
-- Identify other dependencies issues and external storage.
-
-### What kind of VMs supported?
-
-- Azure **VMs**
-- Azure **VMs scale sets**
-- **Hybrid VMs** connected with **Azure Arc**
-- **On-premises** virtual machines
-- Virtual machines hosted in **another cloud** environment like AWS
-
-### How to configure VMs for Azure Monitoring
-
-1. [Create a Log Analytics Workspace](#creating-log-analytics-workspace)
-2. Add **VMInsights solutions** to the Workspace.
-3. **Install** **agents** on virtual machine and virtual machine scale sets.
-
-### Limitations on Linux VMs
-
-1. VMs **Red Hat Linux (RHEL)6** does not support "**Available Memory**" feature from Azure Monitoring.
-2. **Metrics** are only available for data disks on Linux VMs using **XFS filesystems or EXT filesystem** family (EXT2,EXT3,EXT4)
-
-### Monitoring
-
-![](https://imgur.com/W5ZpfLv.png)
-
-Once you have created VM in azure then you can see **insights** under Monitoring group of VMs. You can **enable** monitoring for the virtual machine which will **install** the **agent** on VM to work with Azure Monitor.
-![](https://imgur.com/14Xqb1v.png)
-You must connect to Log Analytics Workspace also. Then after 5-10 mins VM will start sending data to the Azure Monitoring. All the data goes to Azure Analytics Workspace.
-You see 3 kinds of data in Azure monitoring.
-
-#### Map
-
-![](https://imgur.com/ZniCark.png)
-
-List of processes running on virtual machine, which port, IP address, VM properties
-
-#### Performance
-
-![](https://imgur.com/7YXyLX6.png)
-Logical disk, size, percentage of use, CPU utilization.
-
-#### Health
-
-Health of the VM
-
-### Log Analytics Workspace
-
-![](https://imgur.com/pRUjhup.png)
-
-Log Analytics workspace helps us to:
-
-- Creates alerts when CPU goes high etc.
-- Use `Kusto Queries(KQ)` Language to search and analyze logs
-- Connect with other Azure services like `Azure Sentinel` for security analytics for entire enterprise.
 
 ## Azure Adviser 👨‍🏫
 
@@ -244,11 +124,12 @@ Azure Advisor has recommendations and monitoring.
 ![](https://imgur.com/IgCObNA.png)
 In overview you get advisory/recommendations for below stuffs:
 
-- Cost
-- Security: Also available in Azure Security Center
-- Reliability: Like enable soft delete to protect your blob storage
-- Operational Excellence:
-- Performance
+- **Cost**
+- **Security**: Also available in Azure Security Center
+- **Reliability**: Like enable soft delete to protect your blob storage
+- **Operational Excellence**
+- **Performance**
+- **All recommendations** 
 
 ### Cost Recommendations
 
