@@ -22,7 +22,7 @@ tags:
   - certification
 ---
 
-> Azure Network Watcher is a **monitoring service** with lots of other important services for network. Learn everything about Network Watcher in this article.
+> Azure Network Watcher is a **monitoring service** with lots of other important services for network. **Most network diagnostics issues can be detected and analyzed with Azure Network Watcher**. Learn everything about Network Watcher in this article.
 
 ## What Network Watcher Does?
 
@@ -37,9 +37,61 @@ tags:
 
 ## Capabilities of Network Watcher
 
-Network Watcher is available in all below:
+### Monitoring
 
-**Monitoring**: Network Watcher can monitor communication between a VM and another endpoint (could be VM).
+- Network Watcher can monitor communication between a VM and another endpoint (could be VM).
+- Network Watcher can view resources in a virtual network.
+
+### Diagnostics
+
+- It can diagnose network traffic filtering problems to or from a VM.
+- It can diagnose network routing problems from a VM.
+- It can diagnose outbound connections from a VM.
+- It can capture packets to and from VM.
+- It can determine relative latencies between Azure regions and Internet Service Providers (ISPs).
+- It can show security rules for an interface like network interface for a VM.
+
+### Metrics and Logs
+
+- It can analyze network security groups traffic.
+- It can show diagnostics logs for network resources.
+
+## Network Watcher in Azure Portal
+
+### Topology
+
+![](https://imgur.com/aMuidSb.png){: .align-center}
+You can monitor the topology of your virtual network and you can click on any component to view them.
+
+### Connection Monitor
+
+![](https://imgur.com/1XfzXrM.png){: .align-center}
+Connection Monitor monitors the health of the connections between 2 endpoints could be 2 virtual networks or 2 VMs.
+
+### Next hop
+
+This will give you the next network hop from a given source IP address to a destination IP address. You can use this to troubleshoot the issues.
+
+![](https://imgur.com/dvmPfCr.png){: .align-center}
+Example: Source IP address could be your VM in azure and destination IP address could be your local home machine IP address.
+
+![](https://imgur.com/eYveirr.png){: .align-left}
+So in this example the next hop is Internet.
+
+### Effective Security Rules
+
+![](https://imgur.com/vr6xfiR.gif){: .align-center}
+
+Check security settings of your IaaS. Example: Check the security settings for your VM in Azure.
+
+### Packet capture
+
+![](https://imgur.com/ChIOGIv.gif){: .align-center}
+
+Investigate network by capturing the network packets. You can choose the Remote or local IP and port addresses.
+
+{: .notice--info}
+👨‍🏫 In Exam remember: **Most network diagnostics issues can be detected and analyzed with Azure Network Watcher**
 
 ---
 
