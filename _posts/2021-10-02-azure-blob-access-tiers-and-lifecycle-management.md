@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/lSrPIvO.png
+  image: https://i.imgur.com/po7VJxp.png
   teaser: https://i.imgur.com/h4QI62f.png
   og_image: https://i.imgur.com/h4QI62f.png
 tags:
@@ -23,9 +23,6 @@ tags:
 ---
 
 > Azure Storage has no upfront cost, no termination fees and pay only for what you use. In this article you will learn about Azure storage access tiers and their pricing. It will help you to decide which file type to put in which access tier.
-
-
-
 
 ## Access Tiers
 
@@ -108,8 +105,6 @@ Only below type of services can have these 2 types of storage accounts.
 - Not support page blob
 - Not available everywhere
 - LRS and ZRS only supported
-
-
 
 ## Azure Service Pricing
 

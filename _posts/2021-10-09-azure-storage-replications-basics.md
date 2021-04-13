@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/lSrPIvO.png
+  image: https://i.imgur.com/po7VJxp.png
   teaser: https://i.imgur.com/h4QI62f.png
   og_image: https://i.imgur.com/h4QI62f.png
 tags:
@@ -28,7 +28,6 @@ GRS (geographically redundant storage)
 RA GRS (read-access geographically redundant storage)
 GZRS (geographically zone redundant storage)
 RA GZRS (read-access geographically zone redundant storage)
-
 
 Availability and Durability
 Disaster recovery

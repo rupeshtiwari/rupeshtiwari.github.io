@@ -1,5 +1,5 @@
 ---
-title: Configuring Azure Diagnostics Log 
+title: Configuring Azure Diagnostics Log
 date: 2021-07-31 00:00 +0000
 description: Demo configuring azure diagnostics log for azure functions.
 author_profile: true
@@ -12,7 +12,7 @@ toc: true
 toc_sticky: false
 image: https://i.imgur.com/nbHefDR.png
 header:
-  image: https://i.imgur.com/vDLu5gY.png
+  image: https://i.imgur.com/po7VJxp.png
   teaser: https://i.imgur.com/nbHefDR.png
   og_image: https://i.imgur.com/nbHefDR.png
 tags:
@@ -22,7 +22,7 @@ tags:
   - certification
 ---
 
-> ​This article will teach you t​he how to configure and implement **diagnostics log** for Azure resources. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303). 
+> ​This article will teach you t​he how to configure and implement **diagnostics log** for Azure resources. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
 ## Introduction
 
@@ -109,6 +109,9 @@ Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
 ![](https://imgur.com/DnfeA4b.gif)
 
+----------------temporary--------------
+
+# AZ-304
 
 ## References
 
