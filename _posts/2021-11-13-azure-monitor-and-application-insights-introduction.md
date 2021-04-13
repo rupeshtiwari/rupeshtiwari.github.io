@@ -22,14 +22,22 @@ tags:
   - certification
 ---
 
-> What are Azure Monitor and Application Insights? How exactly Azure Monitor work? How can you visualize Application Map with Application Insights? Learn all of this in this article. Helpful article for AZ-304 Exam.
+> What are **Azure Monitor** and **Application Insights**? How exactly Azure Monitor work? How can you visualize Application Map with Application Insights? Learn the log retentions and exports. Learn all of this in this article. Helpful article for **AZ-304** Exam.
+
+## Types of Data to consider
+
+1. **Log**: web application tracings and logs.
+2. **time-series**: data sensitive to time like performance counter.
+3. **raw data**: un-transformed data which is in raw format received from sources
+4. **Aggregated data**: which has a lot less detail and consists counts, averages and other statistical data that you see in Metric Explorer.
+5. **Debug Snapshots**: which contains debugging data
 
 ## Azure Monitor
 
 ![](https://imgur.com/Qej8BE6.png){: .align-center}
 
-- Azure Monitor is an overview of all the monitoring data available
-- It is a center monitoring hub for all of the services
+- Azure Monitor provides an overview of all the monitoring data available.
+- It is a center monitoring hub for all of the services.
 - You can monitor blow things:
   - **Activity Logs**: who created the service
   - **Metrics**: CPU usages of VMs
@@ -42,7 +50,7 @@ tags:
 - **Insights** to trace web apps
   **Automate alert responses**: react on a specific data with an alert and take some actions. Example: if 10 HTTP exceptions occurs on web app then create a bug automatically.
 
-## Azure Application Insights
+## Application Insights
 
 ![](https://imgur.com/z6Hsa09.png){: .align-center}
 
@@ -70,7 +78,7 @@ Logs are created by below things:
 3. Virtual Machines Agents
 4. Data Collector APIs
 
-### Logs in Data Stores
+### Storing Log data
 
 Above data is stored in one or more datastores. Example: In **Log Analytics Workspace**, this is a **data lake** that stores data in raw format and translate it into table-like structure that you can query using **Kusto Query Language** (KQL).
 
@@ -79,7 +87,7 @@ The data in the Log Analytics Workspace is called **Azure Monitor Logs**.
 
 The other data store is **time series** datastore. This is optimized to store time based data like **performance counter** and other metrics that comes in granularity of every second, minute or other granularities.
 
-## Analyzing Logs
+### Analyzing Log data
 
 - **Log Analytics** is a **feature** of Azure Monitor. Logs can be queried by **Log Analytics** where Azure Monitor can analyze log data with the Kusto Query Language.
 
@@ -89,26 +97,49 @@ The other data store is **time series** datastore. This is optimized to store ti
 
 ## Data Retention
 
+[How long is the data kept](https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy#how-long-is-the-data-kept)? Data kept longer than 90 days will [incur addition charges](https://azure.microsoft.com/pricing/details/monitor/).
 
-![](https://imgur.com/z6Hsa09.png) {: .align-center}
-- Application Insights send its data to **Log Analytics Workspace**.
-- Application Insights can store its **raw data** for up to **730 days (2 Years)**
+### Application Insights Data Retention
 
+![](https://imgur.com/z6Hsa09.png){: .align-center}
 
+- Application Insights send its data to **Log Analytics Workspace** which Azure Monitor can use.
+- Application Insights can store its **raw data** for up to **730 days (2 Years)**.
+- You can use [Continuous Export (deprecated)](https://docs.microsoft.com/en-us/azure/azure-monitor/app/export-telemetry) or **Diagnostics Settings** (current) to store log data in Azure Storage, Event Hub as soon as data arrives. You can export data to Azure storage account with vNet, firewalls and private links.
+- **Aggregated data** is retained at a granularity of **1 minute for 90 days**.
+- **Debug Snapshots** are kept for **15 days**.
 
+### Azure Monitor Logs Retention
 
+![](https://imgur.com/ZVAHwXf.png){: .align-center}
 
+- The data which is present in the **Azure Analytics Workspace** can stay up to 730 days. You can choose lower days also.
+- You can **export** this data to Azure **Storage** or Azure **Event Hubs** to be processed by another system.
 
+### Azure Monitor Metrics Retention
 
+![](https://imgur.com/LwjC4Kj.png){: .align-center}
 
+- **Metrics** can be stored for max **93 days**.
+- **Performance counters** collected by **Log Analytics Agents** which further can be sent to **Log Analytics Workspace** and because of that it can be stored for **31 days by default to 730 days**.
 
+## Azure Monitor Agents
 
+Virtual machines and other compute resources require an agent to collect monitoring data required to measure the performance and availability of their guest operating system and workloads.
 
+### Windows Agents
 
+Check the latest Windows agents updates [here.](https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview#windows-agents)
 
+![](https://imgur.com/2jUXY9q.png){: .align-center}
 
+[Windows Agents](https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview#windows-agents) are small application that collects data and sends to Azure Log Analytics workspace or Metrics Datastore. If you run windows based machine or VM you can install an Azure Monitor agent.
 
+### Linux Agents
 
+Check the latest Linux agents updates [here](https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview#linux-agents).
+
+![](https://imgur.com/XGMHugW.png){: .align-center}
 
 ---
 
