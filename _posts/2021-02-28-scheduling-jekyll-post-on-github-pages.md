@@ -100,7 +100,7 @@ is done.
     subject: Publishing Blog
     # Literal body:
     body: Build job of ${{github.repository}} completed successfully!
-    to: fullstackmaster1@gmail.com
+    to: rupesh.tiwari.info@gmail.com
     from: GitHub Blog Repo
 ```
 
@@ -140,5 +140,5 @@ video calls.
 
 **💖 Say 👋 to me!** Rupesh Tiwari <a href="https://www.rupeshtiwari.com">
 www.rupeshtiwari.com</a> ✉️
-<a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a> Founder
+<a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> Founder
 of <a href="https://www.fullstackmaster.net"> Fullstack Master</a>

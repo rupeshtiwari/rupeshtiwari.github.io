@@ -253,5 +253,5 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
-<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)

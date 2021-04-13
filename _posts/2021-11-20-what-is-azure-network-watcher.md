@@ -1,7 +1,7 @@
 ---
-title: Visualize Azure Monitor Logs and Metrics
-date: 2021-09-11 00:00 +0000
-description: Learn how to visualize your Azure log and metrics, create workbooks and your personalized dashboard on Azure Portal.
+title: What is Azure Network Watcher
+date: 2021-11-20 00:00 +0000
+description: This is a monitoring service with lots of other important services for network
 author_profile: true
 published: true
 read_time: true
@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/h4QI62f.png
+image: https://i.imgur.com/7I0NoBe.png
 header:
-  image: https://i.imgur.com/po7VJxp.png
-  teaser: https://i.imgur.com/h4QI62f.png
-  og_image: https://i.imgur.com/h4QI62f.png
+  image: https://i.imgur.com/vce9zzl.png
+  teaser: https://i.imgur.com/7I0NoBe.png
+  og_image: https://i.imgur.com/7I0NoBe.png
 tags:
   - azure
   - webdev
@@ -22,43 +22,24 @@ tags:
   - certification
 ---
 
-> Azure portal is great while visualizing Azure log and metrics. You can see the pie chart, graph for resources like VMs etc. You can also create your custom multiple dashboard views with these visualizations. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
+> Azure Network Watcher is a **monitoring service** with lots of other important services for network. Learn everything about Network Watcher in this article.
 
-## Visualize Azure Monitor Logs and Metrics 📈
+## What Network Watcher Does?
 
-You can use below services to visualize log data [Learn them in detail](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations)...
+![](https://imgur.com/H2mtWg4.png){: .align-center}
 
-- Workbooks
-- Power BI
-- Azure Dashboards
-- Grafana
-- Azure Monitor Views (deprecated)
-- Custom Applications.
+- You use Network Watcher to monitor and repair the network health of IaaS (Infrastructure as Service) resources.
+- It can capture network packets by sniffing the network
+- It can analyze and display the network topology
+- It can audit the security rules of network and VMs.
+- It is a regional service
+- It is automatically enabled in a region when you create or update a virtual network (vNet) in it.
 
-### Metrics
+## Capabilities of Network Watcher
 
-- Specify the resource group and resource you want to see metrics for like VM or function app.
-- Choose which metrics you want to see like VM CPU utilization etc.
+Network Watcher is available in all below:
 
-### Workbooks
-
-**Workbooks** are interactive documents that provide deep insights into your data.
-
-- You can create empty or use template (like VM performance) to create your new workbook
-- You must need specify log analytics workspace to workbooks
-- Time Range last 4 hours data etc.
-
-### Azure Dashboards
-
-![](https://imgur.com/E3nrxc5.gif)
-
-In Azure Portal you can have multiple dashboards.
-
-You can create your own Dashboard for one VM resource and add below stuff like:
-
-1. VMs performance Metrics
-2. Clock
-3. Multiple chart and diagrams.
+**Monitoring**: Network Watcher can monitor communication between a VM and another endpoint (could be VM).
 
 ---
 
@@ -72,8 +53,6 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
 > Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
-
----
 
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari

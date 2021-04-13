@@ -17,19 +17,19 @@ title: Rupesh Tiwari - Founder of Fullstack Master
 email: info@rupeshtiwari.com
 url: https://www.rupeshtiwari.com
 description: >-
-  Rupesh is a world renowned Senior Software Architect & Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design & Web Development. Make your next project a success or save a late project. 
+  Rupesh is a world renowned Senior Software Architect & Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design & Web Development. Make your next project a success or save a late project.
 twitter_username: rupeshtiwari_co
 github_username: rupeshtiwari
 minimal_mistakes_skin: default
-masthead_title: "Rupesh Tiwari"
-subtitle: "Sr. Software Architect, Author & Trainer"
-baseurl: ""
-og_image: "/assets/images/bio-photo.jpg"
+masthead_title: 'Rupesh Tiwari'
+subtitle: 'Sr. Software Architect, Author & Trainer'
+baseurl: ''
+og_image: '/assets/images/bio-photo.jpg'
 search: true
-repository: "rupeshtiwari/rupeshtiwari.github.io"
+repository: 'rupeshtiwari/rupeshtiwari.github.io'
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+remote_theme: 'mmistakes/minimal-mistakes@4.22.0'
 
 # Outputting
 permalink: /:categories/:title/
@@ -62,63 +62,63 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "Rupesh Tiwari"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "I help students and professionals to become Full Stack Software Developer in less than a year!"
+  name: 'Rupesh Tiwari'
+  avatar: '/assets/images/bio-photo.jpg'
+  bio: 'I help students and professionals to become Full Stack Software Developer in less than a year!'
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "fullstackmaster1@gmail.com"
-    - label: "Blogs"
-      icon: "fa fa-th-large"
-      url: "/posts/"
-    - label: "Medium"
-      icon: "fab fa-medium"
-      url: "https://rupesh-tiwari.medium.com/"
-    - label: "Dev.to"
-      icon: "fab fa-dev"
-      url: "https://dev.to/rupeshtiwari"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "http://github.com/rupeshtiwari"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/rupesh-tiwari"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "http://twitter.com/rupeshtiwari_co"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/fullstackmaster1"
-    - label: "Angular Training"
-      icon: "fas fa-graduation-cap"
-      url: "https://www.fullstackmaster.net"
+    - label: 'Email'
+      icon: 'fas fa-fw fa-envelope-square'
+      url: 'rupesh.tiwari.info@gmail.com'
+    - label: 'Blogs'
+      icon: 'fa fa-th-large'
+      url: '/posts/'
+    - label: 'Medium'
+      icon: 'fab fa-medium'
+      url: 'https://rupesh-tiwari.medium.com/'
+    - label: 'Dev.to'
+      icon: 'fab fa-dev'
+      url: 'https://dev.to/rupeshtiwari'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'http://github.com/rupeshtiwari'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/rupesh-tiwari'
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
+      url: 'http://twitter.com/rupeshtiwari_co'
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
+      url: 'https://www.facebook.com/fullstackmaster1'
+    - label: 'Angular Training'
+      icon: 'fas fa-graduation-cap'
+      url: 'https://www.fullstackmaster.net'
 
 footer:
   links:
-    - label: "Rupesh Tiwari"
-      icon: "fas fa-registered"
-      url: "https://www.rupeshtiwari.com"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/fullstackmaster1"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/rupesh-tiwari"
-    - label: "Build Angular App MEAN Stack"
-      icon: "fab fa-angular"
-      url: "https://fullstackmaster.net/course/3/mastering-meanjs"
-    - label: "ELITE Angular Training"
-      icon: "fas fa-crown"
-      url: "https://www.fullstackmaster.net/elite"
-    - label: "PRO Angular Training"
-      icon: "fas fa-graduation-cap"
-      url: "https://www.fullstackmaster.net/pro"
+    - label: 'Rupesh Tiwari'
+      icon: 'fas fa-registered'
+      url: 'https://www.rupeshtiwari.com'
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
+      url: 'https://www.facebook.com/fullstackmaster1'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/rupesh-tiwari'
+    - label: 'Build Angular App MEAN Stack'
+      icon: 'fab fa-angular'
+      url: 'https://fullstackmaster.net/course/3/mastering-meanjs'
+    - label: 'ELITE Angular Training'
+      icon: 'fas fa-crown'
+      url: 'https://www.fullstackmaster.net/elite'
+    - label: 'PRO Angular Training'
+      icon: 'fas fa-graduation-cap'
+      url: 'https://www.fullstackmaster.net/pro'
 
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
@@ -131,7 +131,7 @@ defaults:
       toc_sticky: true
   # _pages
   - scope:
-      path: "_pages"
+      path: '_pages'
       type: pages
     values:
       layout: single
@@ -144,17 +144,17 @@ tag_archive:
   type: liquid
   path: /tags/
 
-teaser: "/assets/images/teaser.png"
+teaser: '/assets/images/teaser.png'
 
 comments:
-  provider: "disqus"
+  provider: 'disqus'
   disqus:
-    shortname: "https-rupeshtiwari-github-io-1"
+    shortname: 'https-rupeshtiwari-github-io-1'
 
 analytics:
-  provider: "google-gtag"
+  provider: 'google-gtag'
   google:
-    tracking_id: "UA-128916623-7"
+    tracking_id: 'UA-128916623-7'
     anonymize_ip: false # default
 
 bing_site_verification: 8BC08291167B3E15CC4FCC21C5895052
@@ -165,7 +165,7 @@ twitter:
 
 facebook:
   app_id: 421181512329379
-  publisher: https://www.facebook.com/fullstackmaster1 
+  publisher: https://www.facebook.com/fullstackmaster1
 
 breadcrumbs: true
 
@@ -183,18 +183,16 @@ jekyll_compose:
       related: true
       toc: true
       toc_sticky: true
-      image: "https://i.imgur.com/thumbnail.png"
+      image: 'https://i.imgur.com/thumbnail.png'
       header:
-        image: "https://i.imgur.com/FEATUREIMAGE.png"
-        teaser: "https://i.imgur.com/thumbnail.png"
-        og_image: "https://i.imgur.com/thumbnail.png"
+        image: 'https://i.imgur.com/FEATUREIMAGE.png'
+        teaser: 'https://i.imgur.com/thumbnail.png'
+        og_image: 'https://i.imgur.com/thumbnail.png'
       tags:
         - test
 
-
 # DEV
-# future: true 
+# future: true
 
-# PROD        
-future: false 
-
+# PROD
+future: false

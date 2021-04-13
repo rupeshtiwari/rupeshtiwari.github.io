@@ -24,7 +24,6 @@ tags:
 
 > Did you know you can enable web application tracing, performance check, request response time trace and exception tracing all free using Azure Application Insight. Learn how to implement and configure app insight in your .net application. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
-
 ## Azure Monitor Insights
 
 **Azure Monitor Insights** is **group of services** for getting **customized** monitoring reports for **applications and services**. They collect and analyze both **logs and metrics**.
@@ -109,5 +108,5 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
-<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)

@@ -24,8 +24,8 @@ excerpt: 'Become software developer & board on to your dream company. Your brigh
       Why to buy individual courses when you can get all of them with just minimum monthly payment? <b>All-access
         membership</b> plan gives you unlimited access to all existing and future angular courses and source code.
     </p>
-    <p>Not sure what is right for your business?<a href="mailto:fullstackmaster1@gmail.com"> Contact Sales</a></p>
-    <p>For Yearly Plans <a href="mailto:fullstackmaster1@gmail.com">Click Here</a></p>
+    <p>Not sure what is right for your business?<a href="mailto:rupesh.tiwari.info@gmail.com"> Contact Sales</a></p>
+    <p>For Yearly Plans <a href="mailto:rupesh.tiwari.info@gmail.com">Click Here</a></p>
   </div>
 <div class="row">
   <div class="col-sm-3 col-md-6 col-lg-4" data-aos="zoom-im" data-aos-delay="100">

@@ -281,6 +281,6 @@ Monthly video calls.
 <div> 
 Rupesh Tiwari </div><div>
 <a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div><div>
-✉️ <a href="mailto:fullstackmaster1@gmail.com?subject=Hi"> Email Rupesh</a> </div><div>
+✉️ <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> </div><div>
 Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div><div>
 </div>

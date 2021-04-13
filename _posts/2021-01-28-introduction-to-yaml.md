@@ -78,7 +78,7 @@ person:
 # Preserve the format with | just like <pre> tag in html
     signature: |
         Rupesh Tiwari
-        email: fullstackmaster1@gmail.com
+        email: rupesh.tiwari.info@gmail.com
 
 # Anchor some value
     state: &location "NJ"

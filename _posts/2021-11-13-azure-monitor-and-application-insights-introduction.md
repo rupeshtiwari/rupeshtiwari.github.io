@@ -97,7 +97,7 @@ The other data store is **time series** datastore. This is optimized to store ti
 
 ## Data Retention
 
-[How long is the data kept](https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy#how-long-is-the-data-kept)? Data kept longer than 90 days will [incur addition charges](https://azure.microsoft.com/pricing/details/monitor/). Data retention for **0 days** means you want  to save the data **forever**.
+[How long is the data kept](https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy#how-long-is-the-data-kept)? Data kept longer than 90 days will [incur addition charges](https://azure.microsoft.com/pricing/details/monitor/). Data retention for **0 days** means you want to save the data **forever**.
 
 ### Application Insights Data Retention
 
@@ -157,5 +157,5 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
-<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
+<br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
