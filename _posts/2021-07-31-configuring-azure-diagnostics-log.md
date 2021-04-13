@@ -111,8 +111,6 @@ Sign in to the Azure portal at https://portal.azure.com and follow steps:
 
 ----------------temporary--------------
 
-# AZ-304
-
 ## References
 
 1. https://techcommunity.microsoft.com/t5/itops-talk-blog/what-s-the-difference-between-azure-security-center-azure/ba-p/2155188

@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/thumbnail.png
+image: https://i.imgur.com/7I0NoBe.png
 header:
-  image: https://i.imgur.com/FEATUREIMAGE.png
-  teaser: https://i.imgur.com/thumbnail.png
-  og_image: https://i.imgur.com/thumbnail.png
+  image: https://i.imgur.com/vce9zzl.png
+  teaser: https://i.imgur.com/7I0NoBe.png
+  og_image: https://i.imgur.com/7I0NoBe.png
 tags:
   - azure
   - beginners
@@ -34,22 +34,29 @@ Below are the topics you should know:
 - Choose a mechanism for event routing and escalation.
 - Recommend a logging solution for compliance requirements.
 
-In this article we are focusing on 
+In this article we are focusing on
 
 ## Options for Monitoring Applications in Azure
 
 ![](https://imgur.com/RRBB8Ya.png)
 Below are the **services** to Monitor your applications:
 
-You can monitor at **Application-level** using below services.
+**Application-level** monitoring services:
 
 1. Application Insights
 2. App Center
 
-You can monitor at **Subscription / resource group / virtual network level** using below services: 3. Network Watcher 4. Monitor 5. Security Center 6. Advisor 7. Sentinel
-These services can provide more of an overview than just status of application.
+**Subscription / resource group / virtual network level** monitoring services:
 
-## Application Insight
+1. Network Watcher
+2. Azure Monitor
+3. Security Center
+4. Advisor
+5. Sentinel
+
+Above services can provide more of an overview than just status of application.
+
+### Application Insight
 
 ![](https://imgur.com/z6Hsa09.png){: .align-center}
 
@@ -58,20 +65,20 @@ These services can provide more of an overview than just status of application.
 - from marketing standpoint, it is feature for Azure Monitor.
 - in reality it is a Standalone feature.
 
-## Visual Studio App Center
+### Visual Studio App Center
 
 ![](https://imgur.com/34J9bDe.png){: .align-center}
 
 - use to monitor mobile app
 - also used to deploy and test mobile app
 
-## Network Watcher
+### Network Watcher
 
 ![](https://imgur.com/tdsC3xy.png){: .align-center}
 
 - use to monitor and inspect network traffic.
 
-## Azure Monitor
+### Azure Monitor
 
 ![](https://imgur.com/RcfzQj7.png){: .align-center}
 
@@ -79,14 +86,14 @@ These services can provide more of an overview than just status of application.
 - can see overview of other monitoring services like App Insights.
 - analyze and query logs and metrics from other monitoring services.
 
-## Azure Security Center
+### Azure Security Center
 
 ![](https://imgur.com/IXm0u3e.png){: .align-center}
 
 - provides an overview of security status & recommendations of your services
 - helps prevent security incidents
 
-## Azure Advisor
+### Azure Advisor
 
 ![](https://imgur.com/8Ykd5S9.png){: .align-center}
 
@@ -100,3 +107,22 @@ These services can provide more of an overview than just status of application.
 
 - security focused service like security center.
 - works with security center to analyze and hunt for threats and security incidents and fix them.
+
+---
+
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+
+## Become full stack developer 💻
+
+I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
+
+- Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
+
+> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+
+**💖 Say 👋 to me!**
+<br>Rupesh Tiwari
+<br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
+<br>Email: <a href="mailto:fullstackmaster1@gmail.com?subject=Hi">fullstackmaster1@gmail.com</a>
+<br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)

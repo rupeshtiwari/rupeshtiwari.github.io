@@ -24,11 +24,25 @@ tags:
 
 > Did you know you can enable web application tracing, performance check, request response time trace and exception tracing all free using Azure Application Insight. Learn how to implement and configure app insight in your .net application. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
-## Configure Advanced Logging 🧑‍💻
+## Azure Monitor
 
-Advance logging for Azure resources.
+![](https://imgur.com/Qej8BE6.png){: .align}
 
-### Azure Monitor Insights
+- overview of all the monitoring data available
+- center monitoring hub for all of the services
+- You can monitor
+  - **Activity Logs**: who created the service
+  - **Metrics**: CPU usages of VMs
+  - **Azure Services**: which queries executed on **Cosmos DB** or how many users visited to **App Service web app**.
+
+**You can drill down the specific data:**
+
+- You can search data using SQL like query called **Kusto Query Language (KQL)**
+- **Workbooks** templates to visualize data as reports or create custom **Workbooks**.
+- **Insights** to trace web apps
+  **Automate alert responses** react a data with alert and take some actions. If 10 HTTP exceptions occurs on web app then create a bug automatically.
+
+## Azure Monitor Insights
 
 **Azure Monitor Insights** is **group of services** for getting **customized** monitoring reports for **applications and services**. They collect and analyze both **logs and metrics**.
 
@@ -44,7 +58,7 @@ Azure Monitor Insights for below resources are present:
 8. Key Vault
 9. Redis Cache
 
-### Application Insights
+## Application Insights
 
 Workspace-based Application insights (recommended) needs **Log Analytics Workspace** so make sure you create that first and then App Insights can help on below things:
 
@@ -58,7 +72,7 @@ Workspace-based Application insights (recommended) needs **Log Analytics Workspa
 2. Instrumentation instance **monitors** the **web app** and **logs the telemetry data** into the Application Insights Resource.
 3. Each log entry must have `Instrumentation Key` GUID.
 
-### What Data Application Insights Monitor
+## What Data Application Insights Monitor
 
 - Request rates
 - Response time
@@ -80,7 +94,7 @@ You can use these data to visualize using:
 - Diagnostic Search for instance data
 - Visual Studio
 
-### Creating a MVC Web app with Application Insights
+## Creating a MVC Web app with Application Insights
 
 {% include video id="xoN1efAAEBg" provider="youtube" %}
 We will create workspace-based App Insights so that logs can be sent to Azure Analytics Workspace further it can be used in Azure Sentinel. We will also use automatic approach to send telemetry data to the Azure.
