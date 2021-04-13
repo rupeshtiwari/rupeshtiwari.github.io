@@ -109,9 +109,7 @@ Only below type of services can have these 2 types of storage accounts.
 - Not available everywhere
 - LRS and ZRS only supported
 
-## Azure Access Tier Summary
 
-![](https://imgur.com/kLfVn8O.png)
 
 ## Azure Service Pricing
 
@@ -166,6 +164,10 @@ I pay more to store it and less to interact for higher tier. **Premium** is most
 ### Reading data pricing
 
 Hot is cheaper and Cool is medium and Archive is more expensive.
+
+## Azure Access Tier Summary
+
+![](https://imgur.com/vUC4mXr.png)
 
 ## Lifecycle Management
 
