@@ -22,7 +22,7 @@ tags:
   - webdev
 ---
 
-> **Blob Storage** is helpful to upload images, videos, documents, pdfs etc. over the Azure cloud. In order to create new **Azure Blob Storage**. You must need to [create Azure Storage Account](https://rupeshtiwari.com/creating-azure-storage-account/). Because Azure **Blob Storage** is one of the **services** of the Azure** Storage Account**.
+> **Blob Storage** is helpful to upload images, videos, documents, pdfs etc. over the Azure cloud. In order to create new **Azure Blob Storage**. You must need to [create Azure Storage Account](https://rupeshtiwari.com/creating-azure-storage-account/). Azure **Blob Storage** is one of the core **services** of the **Azure Storage Account**.
 
 ## Prerequisite 👍
 

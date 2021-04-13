@@ -1,5 +1,5 @@
 ---
-title: Creating Azure Storage Account AZ-303
+title: Creating Azure Storage Account
 date: 2021-10-23 00:00 +0000
 description: Microsoft Azure Solutions Architect AZ 303 material for creating Azure Storage Account.
 author_profile: true
@@ -22,9 +22,9 @@ tags:
   - webdev
 ---
 
-> **Azure Storage account** is a **resource** in Azure. Storage Account will give your group of services like **Blob** Service, **File** Service, **Table** Service, **Queue** Service.
->
-> ![](https://imgur.com/0UoZ9OD.gif)
+> **Azure Storage account** is a **resource** in Azure. Storage Account will give your group of services like **Blob** Service, **File** Service, **Table** Service, **Queue** Service. In this article I will walk you through the steps of creating your first Azure storage account.
+
+![](https://imgur.com/0UoZ9OD.gif)
 
 ## Introduction
 
@@ -32,7 +32,8 @@ tags:
 
 1. Azure Storage Account provides a **unique namespace** through which the contained storage objects are accessed.
 2. It is located in a **specific region**
-3. Have a certain **replication** types.
+3. Have a certain [**replication** types](../azure-storage-replications-basics/).
+4. Different account types and performance tiers.
 
 ## Creating Azure Storage Account Basics 🧮
 
@@ -56,31 +57,71 @@ Name of the storage account should be **unique** in Azure.
 
 ### Performance
 
-Performance tiers are of **Standard** or **Premium** type. With premium only **locally-redundant storage** is supported.
 ![](https://imgur.com/pL5m18r.png)
 
-### Account Kind
+- Performance tiers are of **Standard** or **Premium** type.
+- With premium only **locally-redundant storage** is supported.
+- Files or Blobs or any resource **can not automatically move** between **Standard and Premium** Accounts.
+- You must do file copy in order to move them between **Standard and Premium** Accounts.
+- This setting **can't be changed after the storage account is created**. It is just like a type of account. Either you create standard or premium performance account.
 
-#### standard
+### Account Kinds
 
-- **GPV2** (👈 recommended) v2 has all latest features is the default.
+Normally you should select the **general-purpose v2 (GPv2)** storage kind. Because this is the recommended type from Microsoft which has both blob storage and other features.
+
+#### In Standard Performance Account
+
+You have **3 options** to choose your account kinds:
+![](https://imgur.com/LArPndF.png)
+
+1. **general-purpose v2** (StorageV2)
+2. **general-purpose v1** (Storage)
+3. **BlobStorage**
+
+- A **general-purpose v2 (GPv2)** (👈 recommended) has all latest features is the default.
+- A **general-purpose v2 (GPv2)** storage account provides access to all of the Azure Storage services: **blobs, files, queues, tables, and disks**.
 - **GPV1** v1 is when u want to integrate with **VMs** or **older network** using classic Azure Model
 - **Blob Storage**: only has the **blob services** this is the **legacy account** type.
 
-#### premium
+#### In Premium Performance Account
 
-![](https://imgur.com/LArPndF.png)
+![](https://imgur.com/nIK1GQL.png)
+You have **4 options** to choose your account kinds:
 
-- **GPV2** : stored in SSD drive
-- **GPV1**: stored in SSD drive
-- **Block Blob Storage**: has** lower latency and high transaction** rates. It can only store blob and has **no hot cold tiers** so no support for blob access tiers.
+1. **general-purpose v2** (StorageV2)
+2. **general-purpose v2** (Storage)
+3. **BlockBlobStorage**
+4. **FileStorage**
+
+- **general-purpose v2** : stored in SSD drive
+- **general-purpose v2**: stored in SSD drive
+- **Block Blob Storage**: has **lower latency and high transaction** rates. It can only store blob and has **no hot cold tiers** so no support for blob access tiers.
 - **File Storage**: only for files + SSD and additional performance.
 
 ### Replication
 
-![](https://imgur.com/0L3hpH3.png)
+Replication will make sure the data redundancy is happening. The default one is **`Read-access geo-redundant storage (RA-GRS)`**.
 
-Replication will make sure the data redundancy is happening. The default one is `Read-access geo-redundant storage (RA-GRS)`.
+Replication options depends on:
+
+1. **location** of the storage account
+2. **performance type** of the storage account.
+
+**Example**: If you select **(Asia Pacific) Korea South** location & Standard performance account then you will only get **LRS, GRS and RA-GRS**.
+
+![](https://imgur.com/vy02TLS.png)
+
+#### In Standard Performance Account
+
+![](https://imgur.com/ma70t5Z.png)
+In standard performance account, If you select the location which has all replication options available then generally you will see **6 replications** strategy options.
+
+Example: for **(Canada) Canada Central** you get all 6 replication strategies: **LRS, ZRS, GRS, RA-GRS, GZRS,RA-GZRS**.
+
+#### In Premium Performance Account
+
+![](https://imgur.com/CPaWzRY.png)
+In **Premium performance** account, regardless of location you select. At this time **only LRS** replication strategy is supported.
 
 ## Networking 🥅
 
