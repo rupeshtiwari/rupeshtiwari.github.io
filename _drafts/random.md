@@ -5,13 +5,20 @@ description: Big picture of Azure storage
 
 # In Azure Storage Account
 
-# Service Means
+# Feature
 
-File, Blob, Queues,
+Feature is capability of a service. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
 
-# Resource Means
+# Service
 
-Container is a resource
-Service is a resource
-Object is a resource
+File, Blob, Queues, Azure Monitor
 
+# Resource
+
+Container  
+Service  
+Object  
+
+# Log Analytics Workspace
+
+Log Analytics Workspace is actually a **Azure Data Lake**.
