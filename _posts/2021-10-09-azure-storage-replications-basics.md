@@ -22,6 +22,14 @@ tags:
   - beginners
 ---
 
+LRS (locally redundant storage)
+ZRS (zone redundant storage)
+GRS (geographically redundant storage)
+RA GRS (read-access geographically redundant storage)
+GZRS (geographically zone redundant storage)
+RA GZRS (read-access geographically zone redundant storage)
+
+
 Availability and Durability
 Disaster recovery
 Recovery time objectives (RTO)

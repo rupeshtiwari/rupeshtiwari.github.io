@@ -32,7 +32,7 @@ tags:
 
 1. Azure Storage Account provides a **unique namespace** through which the contained storage objects are accessed.
 2. It is located in a **specific region**
-3. Have a certain [**replication** types](../azure-storage-replications-basics/).
+3. Have a certain [**replication** types](https://rupeshtiwari.com/azure-storage-replications-basics/).
 4. Different account types and performance tiers.
 
 ## Creating Azure Storage Account Basics 🧮
