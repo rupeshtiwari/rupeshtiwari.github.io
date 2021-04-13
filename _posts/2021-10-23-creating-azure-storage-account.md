@@ -12,7 +12,7 @@ toc: true
 toc_sticky: false
 image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/0STZvEy.png
+  image: https://i.imgur.com/lSrPIvO.png
   teaser: https://i.imgur.com/h4QI62f.png
   og_image: https://i.imgur.com/h4QI62f.png
 tags:
@@ -23,14 +23,18 @@ tags:
 ---
 
 > **Azure Storage account** is a **resource** in Azure. Storage Account will give your group of services like **Blob** Service, **File** Service, **Table** Service, **Queue** Service.
+>
+> ![](https://imgur.com/0UoZ9OD.gif)
 
 ## Introduction
 
 ![](https://imgur.com/dMLZ7o2.png)
 
-![](https://imgur.com/0UoZ9OD.gif)
+1. Azure Storage Account provides a **unique namespace** through which the contained storage objects are accessed.
+2. It is located in a **specific region**
+3. Have a certain **replication** types.
 
-## Basics 🧮
+## Creating Azure Storage Account Basics 🧮
 
 Login to https://portal.azure.com/ and create resource and search for **Storage Account** and then create new storage account for you.
 

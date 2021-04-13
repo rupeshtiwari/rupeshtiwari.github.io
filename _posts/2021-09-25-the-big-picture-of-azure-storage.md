@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/0STZvEy.png
+  image: https://i.imgur.com/lSrPIvO.png
   teaser: https://i.imgur.com/h4QI62f.png
   og_image: https://i.imgur.com/h4QI62f.png
 tags:
@@ -36,7 +36,7 @@ tags:
 
 ![](https://imgur.com/OmyjBKy.png)
 
-- It is a object storage solution
+- It is an **object storage** solution
 - **Unstructured data** can be stored
 - 3 types of blobs: block,append and page
 - files, documents, binary data like image, video, audio files, databases and disks can be stored in blob storage.

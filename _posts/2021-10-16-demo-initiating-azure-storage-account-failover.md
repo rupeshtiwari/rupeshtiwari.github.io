@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 image: https://i.imgur.com/h4QI62f.png
 header:
-  image: https://i.imgur.com/0STZvEy.png
+  image: https://i.imgur.com/lSrPIvO.png
   teaser: https://i.imgur.com/h4QI62f.png
   og_image: https://i.imgur.com/h4QI62f.png
 tags:
