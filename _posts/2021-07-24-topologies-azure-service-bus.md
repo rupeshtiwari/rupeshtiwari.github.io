@@ -151,7 +151,7 @@ So this arrangement of Topic, Subscription, Queue and Rules are called Forwardin
 
 ## What N-Service Bus Did?
 
-N-Service bus has `enableInstaller` method once you call it. Then N-Service Bus creates topology and does below for a given endpoint:
+N-Service bus has `enableInstaller` method once you call it. Then N-Service Bus creates **Forwarding Topology** and does below for a given endpoint:
 
 1. Creates a `Topic` with name `bundle`.
 2. Creates `Subscription` for that `topic`.
@@ -179,7 +179,7 @@ Connect to your Azure Service Bus Namespace by using connection string.
 ![](https://imgur.com/PYOY7fj.png)
 
 {: .notice--info}
-<i class="fas fa-info-circle"></i> <br>
+<i class="fas fa-info-circle"></i> <br> **Note**
 **N-Service Bus** helps us to retrieve the message and search for subscriber and invoke the handle method of the Handler. All of this code is already written in N-Service Bus. That helps a lot when you are working with Azure Service Bus Transport. I recommend using N-Service Bus.
 
 ## References
