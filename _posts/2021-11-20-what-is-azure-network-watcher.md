@@ -111,3 +111,115 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
+
+## Working with **Events** to your application in Azure options:
+
+2. Storage Queues
+3. Service Bus Queues
+4. Service Bus Topics
+5. Event Grid
+6. Event Hubs
+7. IoT Hub
+8. Notification Hubs
+9. SignalR Services
+10. Logic Apps
+
+## Monitoring you applications in Azure Options:
+
+1. Application Insights
+2. Visual Studio App Center
+3. Log Analytics
+4. Network Watcher
+5. Azure Monitor
+6. Security Center
+7. Advisor
+8. Sentinel
+
+## Adding **Intelligence** to your applications in Azure Options:
+
+1. Azure Machine Learning Studio
+   1. Use ML Web Services
+2. Azure Machine Learning Service
+3. Azure Cognitive Services
+   1. Speech API
+   2. Computer Vision API
+   3. LUIS (Language Understanding Intelligence Service) API
+   4. Text Analytics API
+4. Azure Bot Service
+
+## Speeding up you Applications in Azure Options:
+
+1. Azure CDN (Content Delivery Network) service
+2. Azure Redis Cache
+3. Azure Traffic Manager
+
+## Storing Data for your Application in Azure Options:
+
+### Relational Data storage options
+
+1. Azure SQL Database
+2. Azure Databases for
+   1. MySQL
+   2. PostgreSQL
+   3. MariaDB
+
+### Unstructured / Document data storage options
+
+3. Azure Cosmos DB
+4. Azure Storage
+   1. File
+   2. Blob
+   3. Table
+   4. Disk
+   5. Queue
+
+### Data Analytics data storage options
+
+5. Azure Synapse Analytics
+6. Azure Data Lake Store
+
+## Securing Applications in Azure Options
+
+1. Azure Active Directory
+2. Azure Key Vault
+3. Azure App Service Certificate
+4. Data store encryption features
+
+## Working with Media in Azure Options
+
+1. Azure Media Services
+   1. Encoding
+   2. Content Protection
+   3. Streaming
+   4. Media player
+   5. Media Analytics
+2. Azure CDN ( Content Delivery Network )
+
+## Deploying and Testing in Azure Options
+
+1. Visual Studio Team Services
+2. Visual Studio App Center
+3. Azure DevOps Projects
+
+## Data Analytics options in Azure:
+
+1. Azure Data Factory
+2. Azure Analysis Services
+3. Azure Data Lake Analytics
+4. Azure Stream Analytics
+5. Azure Time Series Insights
+6. Azure Databricks
+7. Azure HDInsight
+   1. Microsoft Machine Learning Server (in R language)
+   2. Apache Spark cluster
+   3. Apache Storm cluster
+   4. Apache HBASE cluster
+   5. Apache Kafka cluster
+   
+## Running Application in Azure Options
+1. Azure Virtual Machine (VM)
+2. Kubernetes Service (AKS)
+3. Container Instances
+4. Web App for Containers
+5. Azure Batch
+6. Service Fabric (Mesh)
