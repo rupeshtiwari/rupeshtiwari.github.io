@@ -149,7 +149,7 @@ So this arrangement of Topic, Subscription, Queue and Rules are called Forwardin
 | Topic          | End Point             |
 | Azure Function | Message Handler       |
 
-## What N-Service Bus Did
+## What N-Service Bus Did?
 
 N-Service bus has `enableInstaller` method once you call it. Then N-Service Bus creates topology and does below for a given endpoint:
 

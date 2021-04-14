@@ -91,7 +91,7 @@ The other data store is **time series** datastore. This is optimized to store ti
 
 - **Log Analytics** is a **feature** of Azure Monitor. Logs can be queried by **Log Analytics** where Azure Monitor can analyze log data with the Kusto Query Language.
 - **Metrics Explorer** is a different **feature** of Azure Monitor. Azure Monitor analyzes metrics with the **Metrics Analyzer**.
-- **Workbooks** allows you to
+- **Workbooks** allows you to:
   - Combine data from various Azure data sources and data types.
   - Enable at-scale views across multiple resources
   - Visualize related data in a single interactive report.
