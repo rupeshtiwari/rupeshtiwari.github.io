@@ -1,5 +1,5 @@
 ---
-title: What to Use When in Azure
+title: When to use what in Azure
 date: 2021-11-27 00:00 +0000
 description:
 author_profile: true
@@ -22,19 +22,19 @@ tags:
   - tutorial
 ---
 
-> Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what Azure service?
+> Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service?
 
 ## Working with **Events** to your application in Azure options:
 
-2. Storage Queues
-3. Service Bus Queues
-4. Service Bus Topics
-5. Event Grid
-6. Event Hubs
-7. IoT Hub
-8. Notification Hubs
-9. SignalR Services
-10. Logic Apps
+1. Storage Queues
+2. Service Bus Queues
+3. Service Bus Topics
+4. Event Grid
+5. Event Hubs
+6. IoT Hub
+7. Notification Hubs
+8. SignalR Services
+9. Logic Apps
 
 ## Monitoring you applications in Azure Options:
 
@@ -146,10 +146,8 @@ tags:
 10. Function App
 11. Logic App
 
-| When                                                               | Use these Azure Service                                                                                |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| Full control & responsibility, Stay vendor agnostic (run anywhere) | VM, Container Instances, Kubernetes Service, Web App for Containers, Azure Batch, Service Fabric (Mesh) |
-| Azure manages your app, You manage scaling and configuration       | Batch, Cloud Service, Mobile App, Web App, Service Fabric                                              |
-| Azure manage your app, **including** **scaling**, You manage configuration | Azure Function App, Logic App                                                                          |
-
-
+| When                                                                       | Use these Azure Service                                                                                 |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Full control & responsibility, Stay vendor agnostic (run anywhere)         | VM, Container Instances, Kubernetes Service, Web App for Containers, Azure Batch, Service Fabric (Mesh) |
+| Azure manages your app, You manage scaling and configuration               | Batch, Cloud Service, Mobile App, Web App, Service Fabric                                               |
+| Azure manage your app, **including** **scaling**, You manage configuration | Azure Function App, Logic App                                                                           |
