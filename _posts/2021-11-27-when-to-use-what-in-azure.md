@@ -37,8 +37,8 @@ tags:
 9. Logic Apps
 
 ### Storage Queues
-
-Use this if you need simple queueing mechanism. Sender and receiver are decoupled. Each message is processed by one receiver only. However, many sender can put the message on queue. Message must be string. The Maximum size of message 64KB. Azure Storage will provide the transaction logs for each message. All of the Azure Storage features will be available here.
+![](https://imgur.com/sugyXgH.png){: .align-left}
+Use this if you need **simple queueing mechanism**. Sender and receiver are decoupled. Each message is processed by **one receiver only**. However, **many sender can put the message** on queue. Message must be **string** only. You can convert complex message into `JSON`. The Maximum size of message **64KB**. Azure Storage will provide the **transaction logs** for each message. All of the Azure Storage features will be available here.
 
 ### Service Bus Queues
 
