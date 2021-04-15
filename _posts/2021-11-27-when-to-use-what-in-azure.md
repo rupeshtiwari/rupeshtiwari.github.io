@@ -41,8 +41,8 @@ tags:
 Use this if you need **simple queueing mechanism**. Sender and receiver are decoupled. Each message is processed by **one receiver only**. However, **many sender can put the message** on queue. Message must be **string** only. You can convert complex message into `JSON`. The Maximum size of message **64KB**. Azure Storage will provide the **transaction logs** for each message. All of the Azure Storage features will be available here.
 
 ### Service Bus Queues
-
-Use this as advance queueing mechanism. One ore more applications can put the message on the queue but still only one application can recive the message from queue. Message consists key/value properties. Like customer="Microsoft" and id="23". Message contains body that is binary so it can contain any data like image, json, text. Message size 256KB -1MB. Dead-letter sub-queue is there where timed-out or poisoned messages can be placed. It gives duplicate message detection feature out of the box.
+![](https://imgur.com/Zy7AlUJ.png){: .align-left}
+Use this as `advance queueing mechanism`. One `ore more applications can put the message` on the queue but still `only one` application can recive the message from queue. Message consists `key/value` properties. Like `customer="Microsoft"` and `id="23"`. Message contains `body` that is `binary data` so it can contain any data like `image, json, text`. Message size `256KB -1MB`. `Dead-letter sub-queue` is there where timed-out or poisoned messages can be placed. It gives duplicate message detection feature out of the box.
 
 ## Monitoring you applications in Azure Options:
 
