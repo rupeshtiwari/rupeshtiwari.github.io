@@ -1,7 +1,7 @@
 ---
-title: Setup CI/CD for Angular App with GitHub Action
+title: How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action 
 date: 2021-06-26 00:00 +0000
-description: Learn how to setup a ci/cd pipeline for angular application with GitHub Actions and workflow.
+description: Learn how to deploy angular apps to GitHub Pages by setup a ci/cd pipeline for angular application with GitHub Actions and workflow.
 author_profile: true
 published: true
 read_time: true
@@ -22,7 +22,7 @@ tags:
   - beginners
 ---
 
-> Do you want to **build** your first **Angular App** and **deploy** over cloud using **GitHub Actions**? Did you use **GitHub Actions** to **build** and **deploy** **Angular** App over **GitHub Pages**? Stay tuned in this article I will show you step by step from creating angular app to building and deploying using **GitHub Actions**.
+> Do you want to **build** your first **Angular App** and **deploy** over cloud using **GitHub Actions**? How to deploy/publish Angular App to GitHub Pages automatically? Did you use **GitHub Actions** to **build** and **deploy** **Angular** App over **GitHub Pages**? Stay tuned in this article I will show you step by step from creating angular app to building and deploying using **GitHub Actions**.
 
 ![](https://imgur.com/YpOnPp5.gif)
 
@@ -37,6 +37,10 @@ Run Below script to create new angular app.
 `ng new sample-app`
 
 ![](https://imgur.com/h9kicuF.png)
+
+### Install Npm package
+
+ `ng add angular-cli-ghpages` 
 
 ## What are the steps on Build
 
@@ -169,6 +173,35 @@ Navigate to `angular.json` file identify project name.
 },
 ```
 
+It will look like this:
+```json
+       "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "configurations": { 👈
+            "production": {
+              "sourceMap": false,
+              "codeCoverage": true,
+              "browsers": "ChromeHeadless",
+              "watch": false
+            }
+          },👈
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+```
+
 Lets add below script in the `main.yml` file. Which will use above production test configuration while running in build machine.
 
 ```yaml
@@ -273,7 +306,7 @@ Finally let's deploy the app to GitHub Pages.
     npm run deploy
 ```
 
-### Complete YAML file including
+### Complete YAML for deploying angular app to GitHub-Pages
 
 Here is my [final workflow](https://gist.github.com/rupeshtiwari/9f252dc665656c434c4d50a70519f9ac):
 {% gist 9f252dc665656c434c4d50a70519f9ac %}
