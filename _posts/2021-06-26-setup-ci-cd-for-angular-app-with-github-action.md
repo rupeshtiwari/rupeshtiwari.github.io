@@ -245,25 +245,13 @@ Install [`angular-cli-ghpages`](https://www.npmjs.com/package/angular-cli-ghpage
 
 ### Deploying to GitHub Pages From Local machine
 
-In GitHub Page server we must give `base-href` to our `repository name` so that It can host our static files successfully. Since our repository name is `angular-ci-cd-with-github-actions` my deploy script would be: `ng deploy --base-href=/angular-ci-cd-with-github-actions/`
+In GitHub Page server we must give `base-href` to our `repository name` so that It can host our static files successfully. Since our GitHub repository name is `angular-ci-cd-with-github-actions` my deploy script would be: `ng deploy --base-href=/angular-ci-cd-with-github-actions/`
 
 Add below script on `package.json`
 
 ```shell
-    "deploy": "ng deploy --base-href=/angular-ci-cd-with-github-actions/ --dir=dist/sample-app"
+    "deploy": "ng deploy --base-href=/angular-ci-cd-with-github-actions/"
 ```
-
-Under `dist` folder you have project at `sample-app` folder. Therefore, you must ask deploy task to use the directory `dist/sample-app`. Which is not supported now by node package as of now check [the issue in GitHub](https://github.com/angular-schule/angular-cli-ghpages/issues/114). 
-
-Go to `angular.json` and remove the subfolder and make sure your project compile and put in `dist` folder directly.
-
-```json
- "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist", 👈
-```
-
 
 You can even run the deploy command from local machine to test `npm run deploy`
 
