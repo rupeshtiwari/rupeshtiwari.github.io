@@ -159,7 +159,7 @@ Did you know Azure Service Fabrics is a technology that Microsoft uses itself to
 
 ## Where to Run your Background Tasks?
 
-| Options                                       | ![](https://imgur.com/qVB2rWEs.png) Cloud Services | ![](https://imgur.com/Cr23UTTs.png) Web Jobs | ![](https://imgur.com/ZWWXH9G.png) Functions | ![](https://imgur.com/0nJeR1Ts.png)Batch |
+| Options                                       | ![](https://imgur.com/qVB2rWEs.png) Cloud Services | ![](https://imgur.com/OcHd8Qi.png) Web Jobs | ![](https://imgur.com/ZWWXH9G.png) Functions | ![](https://imgur.com/0nJeR1T.png)Batch |
 | --------------------------------------------- | -------------------------------------------------- | -------------------------------------------- | --------------------------------------------- | ---------------------------------------- |
 | **Short-running tasks**                       | ✔️                                                 | ✔️                                           | ✔️                                            | ✔️                                       |
 | **Long-running tasks**                        | ✔️                                                 | ✔️                                           | ✔️                                            | ✔️                                       |
