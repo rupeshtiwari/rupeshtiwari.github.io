@@ -26,19 +26,21 @@ tags:
 > It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.
 
 ## Running Application in Azure Options
+
 You can use various services from Azure to run your applications. It depends what exactly is your requirements. Below are the services available from Azure.
-1. Azure Virtual Machines. (VMs)
-2. Azure Kubernetes Services (AKS)
-3. Container instances
-4. Azure Web App for Containers
-5. Azure Batch
-6. Azure Service Fabric (Mesh)
-7. Cloud Services
-8. Azure App Services Web Apps
-9. Azure App Services WebJobs
-10. Azure App Services Mobile Apps
-11. Function Apps
-12. Azure Logic Apps
+
+1. ![](https://imgur.com/YPcnULJ.png) Azure Virtual Machines. (VMs)
+2. ![](https://imgur.com/ukowMIs.png) Azure Kubernetes Services (AKS)
+3. ![](https://imgur.com/5IrDqJM.png) Container instances
+4. ![](https://imgur.com/qwLOnPT.png)Azure Web App for Containers
+5. ![](https://imgur.com/3HK1rtT.png)Azure Batch
+6. ![](https://imgur.com/cdq4W3I.png)Azure Service Fabric (Mesh)
+7. ![](https://imgur.com/eIRJkJj.png)Cloud ServicesX
+8. ![](https://imgur.com/iH0hVvs.png)Azure App Services Web Apps
+9. ![](https://imgur.com/OcHd8Qi.png) Azure App Services WebJobs
+10. ![](https://imgur.com/SRk7YqX.png)Azure App Services Mobile Apps
+11. ![](https://imgur.com/j1Y4A4B.png) Function Apps
+12. ![](https://imgur.com/z0fI8LX.png) Azure Logic Apps
 
 ### Virtual Machines (VMs)
 
@@ -135,7 +137,7 @@ Learn more about [Azure Container Instances](https://azure.microsoft.com/en-us/s
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Infrastructure as a Service (IaaS)** offering from Microsoft Azure.
+`Azure Batch` is under **Infrastructure as a Service (IaaS)** offering from Microsoft Azure.
 
 - Allows you to run your job across many `Virtual Machines` at `massive` scale (thousands of VMs). You can use it to run a calculating job that needs lots of compute power or rendering video files.
 - Orchestrates running your job in parallel
@@ -155,7 +157,7 @@ Learn more about [Azure Batch](https://azure.microsoft.com/en-us/services/batch/
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Infrastructure as a Service (IaaS)** as well as **Platform as a Service (PaaS)** offering from Microsoft Azure.
+`Azure Service Fabric (Mesh)` is under **Infrastructure as a Service (IaaS)** as well as **Platform as a Service (PaaS)** offering from Microsoft Azure.
 
 - Run your applications reliably and resilient.
 - Orchestrates running your app over multiple nodes
@@ -181,7 +183,7 @@ Did you know Azure Service Fabrics is a technology that Microsoft uses itself to
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
+`Cloud Services` is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
 
 - Run your applications in VMs and manages in the form of Web worker or Worker roles.
 - Abstracts the VM so that you don't have to deal with OS or network.
@@ -202,7 +204,7 @@ Did you know **Azure Cloud Services** was one of the first `Platform-as-a-Servic
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
+`Azure App Services Web Apps` is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
 
 - Runs your app in a Webserver-as-a-service like `IIS` or `Tomcat`
 - .Net, Java, PHP, Node.js and Python
@@ -226,7 +228,7 @@ Learn more about [Azure Web Apps](https://azure.microsoft.com/en-us/services/app
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
+`Azure App Services WebJobs` is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
 
 - Runs your background task in App Services
 - Runs inside your App Service
@@ -248,7 +250,7 @@ Learn more about [Azure App Services WebJob](https://docs.microsoft.com/en-us/az
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
+`Azure App Services Mobile Apps` is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
 {: .notice--success}
 
 - Run your app as a backend for mobile clients
@@ -266,14 +268,14 @@ This is under **Platform as a Service (PaaS)** offering from Microsoft Azure.
 {: .notice--success}
 Learn more about [Azure App Services Mobile Apps](https://azure.microsoft.com/en-us/services/app-service/mobile/)
 
-### Function App
+### Function Apps
 
 ![](https://imgur.com/Q7lOW1P.png){: .full}
 
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Serverless or Logic as a Service** offering from Microsoft Azure.
+`Function Apps` is under **Serverless or Logic as a Service** offering from Microsoft Azure.
 {: .notice--success}
 
 - This is also part of `Azure App Services`
@@ -305,7 +307,7 @@ In consumption mode Azure Functions become ideal after 5 mins of non-running. Le
 {: .notice--info}
 💁 **Important** \
 \
-This is under **Serverless or Logic as a Service** offering from Microsoft Azure.
+`Azure Logic Apps` is under **Serverless or Logic as a Service** offering from Microsoft Azure.
 
 - Execute a pipeline of tasks in a process
 - Replaces for BizTalk Services
@@ -371,17 +373,15 @@ Learn more about [Azure Logic Apps](https://azure.microsoft.com/en-us/services/l
 | **Feature deployment slots, Auth**                                 | ✔️                                         | ✔️                                            | ✔️                                               |                                                   | ✔️                                          |                                              |
 | **Run (micro) services at massive scale**                          |                                            |                                               |                                                  | ✔️                                                | ✔️                                          |
 
-
-
-
 ---
 
- _Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
+_Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
 
 ## Become full stack developer 💻
 
 {: .notice--success}
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
+
 - Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
@@ -393,4 +393,3 @@ Your future is waiting for you so visit today [FullstackMaster](www.fullstackmas
 <br>Founder of [Fullstack Master](https://www.fullstackmaster.net)
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: [www.rupeshtiwari.com](https://www.rupeshtiwari.com) | [www.fullstackmaster.net](https://www.fullstackmaster.net)
-
