@@ -157,37 +157,43 @@ Did you know Azure Service Fabrics is a technology that Microsoft uses itself to
 10. Function App
 11. Logic App
 
+## High level Separation
+
+{: .notice--info}
+| When | Use these Azure Service |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Full control** & responsibility, Stay vendor agnostic (run anywhere vendor agnostic) | **VMs, Container Instances, Kubernetes Service, Web App for Containers, Azure Batch, Service Fabric (Mesh)** |
+| **Azure manages** your app, You manage scaling and configuration | **Batch, Cloud Services, Mobile App, Web App, Service Fabric** |
+| Be able to **RDP** in VMs | **Batch, Cloud Services, Service Fabric(Mesh)** |
+| **Azure manage** your app, **including** **scaling**, You manage configuration | **Azure Function App, Logic App** |
+
 ## Where to Run your Background Tasks?
 
-| Options                                       | ![](https://imgur.com/qVB2rWEs.png) Cloud Services | ![](https://imgur.com/OcHd8Qi.png) Web Jobs | ![](https://imgur.com/ZWWXH9G.png) Functions | ![](https://imgur.com/0nJeR1T.png)Batch |
-| --------------------------------------------- | -------------------------------------------------- | -------------------------------------------- | --------------------------------------------- | ---------------------------------------- |
-| **Short-running tasks**                       | ✔️                                                 | ✔️                                           | ✔️                                            | ✔️                                       |
-| **Long-running tasks**                        | ✔️                                                 | ✔️                                           | ✔️                                            | ✔️                                       |
-| **Resource intensive tasks**                  |                                                    |                                              |                                               | ✔️                                       |
-| **Pay all month**                             | ✔️                                                 | ✔️                                           |                                               |                                          |
-| **Pay only for what and when you run**        |                                                    |                                              | ✔️                                            |                                          |
-| **Need to deploy a complete app to run**      | ✔️                                                 |                                              |                                               | ✔️                                       |
-| **Can deploy only the code necessary to run** |                                                    | ✔️                                           | ✔️                                            |                                          |
+{: .notice--info}
+| Scenarios | ![](https://imgur.com/igw7qxL.png) Cloud Services | ![](https://imgur.com/OcHd8Qi.png) Web Jobs | ![](https://imgur.com/ZWWXH9G.png) Functions | ![](https://imgur.com/0nJeR1T.png)Batch |
+| --------------------------------------------- | ------------------------------------------------- | ------------------------------------------- | -------------------------------------------- | --------------------------------------- |
+| **Short-running tasks** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **Long-running tasks** | ✔️ | ✔️ | ✔️ | ✔️ |
+| **Resource intensive tasks** | | | | ✔️ |
+| **Pay all month** | ✔️ | ✔️ | | |
+| **Pay only for what and when you run** | | | ✔️ | |
+| **Need to deploy a complete app to run** | ✔️ | | | ✔️ |
+| **Can deploy only the code necessary to run** | | ✔️ | ✔️ | |
 
 ## Where to Run your Applications?
 
-| Options                                                            | Web App | Mobile App | Cloud Services | Service Fabric | Functions | Logic App |
-| ------------------------------------------------------------------ | ------- | ---------- | -------------- | -------------- | --------- | --------- |
-| **Host web applications**                                          | ✔️      |            | ✔️             | ✔️             |           |           |
-| **Host your own APIs**                                             | ✔️      |            | ✔️             | ✔️             | ✔️        |           |
-| **Host backend for mobile apps** (push notification, offline sync) |         | ✔️         |                |                |           |           |
-| **Automate one step of a process**                                 |         |            |                |                | ✔️        |           |
-| **Automate a complete process**                                    |         |            | ✔️             |                |           | ✔️        |
-| **Feature deployment slots, Auth**                                 | ✔️      | ✔️         | ✔️             |                | ✔️        |           |
-| **Run (micro) services at massive scale**                          |         | ✔️         | ✔️             | ✔️             | ✔️        |           |
+{: .notice--info}
+| Scenarios | ![](https://imgur.com/iH0hVvs.png) Web App | ![](https://imgur.com/SRk7YqX.png) Mobile App | ![](https://imgur.com/eIRJkJj.png)Cloud Services | ![](https://imgur.com/cdq4W3I.png) Service Fabric | ![](https://imgur.com/j1Y4A4B.png)Functions | ![](https://imgur.com/z0fI8LX.png) Logic App |
+| ------------------------------------------------------------------ | ------------------------------------------ | --------------------------------------------- | ------------------------------------------------ | ------------------------------------------------- | ------------------------------------------- | -------------------------------------------- |
+| **Host web applications** | ✔️ | | ✔️ | ✔️ | | |
+| **Host your own APIs** | ✔️ | | ✔️ | ✔️ | ✔️ | |
+| **Host backend for mobile apps** (push notification, offline sync) | | ✔️ | | | | |
+| **Automate one step of a process** | | | | | ✔️ | |
+| **Automate a complete process** | | | ✔️ | | | ✔️ |
+| **Feature deployment slots, Auth** | ✔️ | ✔️ | ✔️ | | ✔️ | |
+| **Run (micro) services at massive scale** | | ✔️ | ✔️ | ✔️ | ✔️ | |
 
 ---
-
-| When                                                                       | Use these Azure Service                                                                                 |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Full control & responsibility, Stay vendor agnostic (run anywhere)         | VM, Container Instances, Kubernetes Service, Web App for Containers, Azure Batch, Service Fabric (Mesh) |
-| Azure manages your app, You manage scaling and configuration               | Batch, Cloud Service, Mobile App, Web App, Service Fabric                                               |
-| Azure manage your app, **including** **scaling**, You manage configuration | Azure Function App, Logic App                                                                           |
 
 ## Working with **Events** to your application in Azure options:
 
