@@ -249,7 +249,7 @@ Learn more about [Azure Blob Storage](https://azure.microsoft.com/en-us/services
 \
 `Azure Table Storage` can store **Unstructured Data**. It is optimized for [**OLTP (Online Transactional Processing)**](#online-transaction-processing-oltp-datastores).
 
-- A ` NoSQL`` key-value ` store for rapid development using massive `semi-structured datasets`
+- A **NoSQL key-value store for rapid development using massive semi-structured datasets**.
 - **Flexible data schema**: the table schema is flexible means one row might have 5 the other can have 23 columns.
 - You get all Azure Storage features
   - Firewalls and Virtual Network
