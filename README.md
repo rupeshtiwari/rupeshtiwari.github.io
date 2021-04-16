@@ -17,4 +17,6 @@
 ## Serve in dev
 `bundle exec jekyll serve`
 
+`bundle exec jekyll serve --limit_posts=5`
+
 [![Build every day](https://github.com/rupeshtiwari/blog/actions/workflows/schedule-posts.yml/badge.svg?branch=main)](https://github.com/rupeshtiwari/blog/actions/workflows/schedule-posts.yml)

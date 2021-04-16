@@ -159,7 +159,7 @@ Did you know Azure Service Fabrics is a technology that Microsoft uses itself to
 
 ## High level Separation
 
-{: .notice--info}
+{: .my-table} 
 | When | Use these Azure Service |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | **Full control** & responsibility, Stay vendor agnostic (run anywhere vendor agnostic) | **VMs, Container Instances, Kubernetes Service, Web App for Containers, Azure Batch, Service Fabric (Mesh)** |
@@ -167,10 +167,20 @@ Did you know Azure Service Fabrics is a technology that Microsoft uses itself to
 | Be able to **RDP** in VMs | **Batch, Cloud Services, Service Fabric(Mesh)** |
 | **Azure manage** your app, **including** **scaling**, You manage configuration | **Azure Function App, Logic App** |
 
+## Comparing Container Options and VMs
+
+| Scenarios                                | ![](https://imgur.com/YPcnULJ.png) VM | ![](https://imgur.com/5IrDqJM.png) Container Instances | ![](https://imgur.com/ukowMIs.png) Kubernetes Services | ![](https://imgur.com/qwLOnPT.png) WebApp for Containers | ![](https://imgur.com/3HK1rtT.png) Batch | ![](https://imgur.com/cdq4W3I.png) Service Fabric |
+| ---------------------------------------- | ------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------ | -------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------- |
+| **Lift-and shift your app to the cloud** | ✔️                                    |                                                        |                                                        |                                                          |                                          |                                                   |
+| **Simple apps (without orchestrator)**   | ✔️                                    | ✔️                                                     |                                                        |                                                          |                                          |                                                   |
+| **Complex apps (with orchestrator)**     |                                       |                                                        | ✔️                                                     |                                                          |                                          |                                         ✔️          |
+| **Run orchestrated microservices**     |                                       |                                                        |                                                     |                                                          |                                          |                                         ✔️          |
+| **Run anywhere**     |                                       |                                                        |                                                     |                                                          |                                          |                                         ✔️          |
+
 ## Where to Run your Background Tasks?
 
-{: .notice--info}
-| Scenarios | ![](https://imgur.com/igw7qxL.png) Cloud Services | ![](https://imgur.com/OcHd8Qi.png) Web Jobs | ![](https://imgur.com/ZWWXH9G.png) Functions | ![](https://imgur.com/0nJeR1T.png)Batch |
+ 
+| Scenarios | ![](https://imgur.com/eIRJkJj.png) Cloud Services | ![](https://imgur.com/OcHd8Qi.png) Web Jobs | ![](https://imgur.com/ZWWXH9G.png) Functions | ![](https://imgur.com/0nJeR1T.png)Batch |
 | --------------------------------------------- | ------------------------------------------------- | ------------------------------------------- | -------------------------------------------- | --------------------------------------- |
 | **Short-running tasks** | ✔️ | ✔️ | ✔️ | ✔️ |
 | **Long-running tasks** | ✔️ | ✔️ | ✔️ | ✔️ |
@@ -182,7 +192,7 @@ Did you know Azure Service Fabrics is a technology that Microsoft uses itself to
 
 ## Where to Run your Applications?
 
-{: .notice--info}
+ 
 | Scenarios | ![](https://imgur.com/iH0hVvs.png) Web App | ![](https://imgur.com/SRk7YqX.png) Mobile App | ![](https://imgur.com/eIRJkJj.png)Cloud Services | ![](https://imgur.com/cdq4W3I.png) Service Fabric | ![](https://imgur.com/j1Y4A4B.png)Functions | ![](https://imgur.com/z0fI8LX.png) Logic App |
 | ------------------------------------------------------------------ | ------------------------------------------ | --------------------------------------------- | ------------------------------------------------ | ------------------------------------------------- | ------------------------------------------- | -------------------------------------------- |
 | **Host web applications** | ✔️ | | ✔️ | ✔️ | | |
