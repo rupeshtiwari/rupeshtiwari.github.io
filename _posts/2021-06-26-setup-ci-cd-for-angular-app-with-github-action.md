@@ -1,5 +1,5 @@
 ---
-title: How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action 
+title: How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action
 date: 2021-06-26 00:00 +0000
 description: Learn how to deploy angular apps to GitHub Pages by setup a ci/cd pipeline for angular application with GitHub Actions and workflow.
 author_profile: true
@@ -40,7 +40,7 @@ Run Below script to create new angular app.
 
 ### Install Npm package
 
- `ng add angular-cli-ghpages` 
+`ng add angular-cli-ghpages`
 
 ## What are the steps on Build
 
@@ -174,6 +174,7 @@ Navigate to `angular.json` file identify project name.
 ```
 
 It will look like this:
+
 ```json
        "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -332,7 +333,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
-> Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+> Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 **💖 Say 👋 to me!**
 <br>Rupesh Tiwari

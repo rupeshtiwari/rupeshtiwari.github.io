@@ -143,7 +143,6 @@ Check the latest Linux agents updates [here](https://docs.microsoft.com/en-us/az
 
 ![](https://imgur.com/XGMHugW.png){: .align-center}
 
-
 ---
 
 _Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box._
@@ -157,7 +156,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
 {: .notice--warning}
-Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 <div class="notice--success">
 <strong>💖 Say 👋 to me!</strong>
@@ -166,3 +165,4 @@ Your future is waiting for you so visit today [FullstackMaster](www.fullstackmas
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
+![](https://imgur.com/a32nUcu.png)

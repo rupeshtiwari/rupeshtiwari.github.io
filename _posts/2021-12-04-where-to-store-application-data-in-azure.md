@@ -22,6 +22,8 @@ tags:
   - tutorial
 ---
 
+> Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you. 
+
 ## Storing Data in Azure options
 
 1. ![](https://imgur.com/CY4p62V.png)Azure SQL Database
@@ -357,20 +359,18 @@ The main difference among `Azure SQL, MySQL, PSQL and MariaDB` is the `ecosystem
 
 | Scenarios                             | ![](https://imgur.com/CY4p62V.png) SQL | ![](https://imgur.com/7NE8XB7.png) MySQL | ![](https://imgur.com/0JerP9s.png) PSQL | ![](https://imgur.com/viVzgo7.png) MariaDB | ![](https://imgur.com/xr0vqr0.png)Cosmos DB | ![](https://imgur.com/TPnk15t.png) Storage |
 | ------------------------------------- | -------------------------------------- | ---------------------------------------- | --------------------------------------- | ------------------------------------------ | ------------------------------------------- | ------------------------------------------ |
-| **Relational data**                   | ✔️                                     | ✔️                                       | ✔️                                      |                                            |                                             |
-| **Semi- or non-relational data data** |                                        |                                          |                                         | ✔️                                         | ✔️                                          |
-| **Can use Microsoft tools to manage** | ✔️                                     |                                          |                                         | ✔️                                         | ✔️                                          |
-| **Can use Microsoft tools to manage** | ✔️                                     |                                          |                                         | ✔️                                         | ✔️                                          |
-| **Advanced querying capabilities**    | ✔️                                     | ✔️                                       | ✔️                                      | ✔️                                         |                                             |
-| **Advanced querying capabilities**    | ✔️                                     | ✔️                                       | ✔️                                      | ✔️                                         | ✔️                                          |
-| **Use multiple APIs to access data**  |                                        |                                          |                                         | ✔️                                         |                                             |
+| **Relational data**                   | ✔️                                     | ✔️                                       | ✔️                                      |                ✔️                            |                                             |
+| **Semi- or non-relational data data** |                                        |                                          |                                       |                                         |      ✔️                                       |✔️ 
+| **Can use Microsoft tools to manage** | ✔️                                     |                                          |                                         |                                         |          ✔️                                |✔️  
+| **Advanced querying capabilities**    | ✔️                                     | ✔️                                       | ✔️                                      | ✔️                                         |     ✔️                                        |
+| **Use multiple APIs to access data**  |                                        |                                          |                                         |                                         |     ✔️                                         |
 
 ### Compare Azure Storage Type Services
 
 {: .notice--info}
 💁 **Important** \
 \
-All Azure storage types have the same Azure Storage Features like `Shared Access Signatures` and `data encryption at rest`.
+**All Azure storage** types have the same Azure Storage Features like **Shared Access Signatures** and **data encryption at rest**.
 
 | Scenarios                                    | ![](https://imgur.com/0FWw8PM.png) File | ![](https://imgur.com/Wjk68MS.png) Blob | ![](https://imgur.com/MNutzpz.png) Table | ![](https://imgur.com/HsvZyX0.png) Disk |
 | -------------------------------------------- | --------------------------------------- | --------------------------------------- | ---------------------------------------- | --------------------------------------- |
@@ -407,7 +407,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
 {: .notice--warning}
-Your future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 <div class="notice--success">
 <strong>💖 Say 👋 to me!</strong>
@@ -416,3 +416,4 @@ Your future is waiting for you so visit today [FullstackMaster](www.fullstackmas
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
+![](https://imgur.com/a32nUcu.png)
