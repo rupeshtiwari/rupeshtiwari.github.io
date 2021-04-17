@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Monitoring your Virtual Machines with Azure Monitor
 date: 2021-08-14 00:00 +0000
 description:

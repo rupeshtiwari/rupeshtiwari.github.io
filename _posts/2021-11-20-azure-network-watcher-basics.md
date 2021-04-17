@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Azure Network Watcher Basics
 date: 2021-11-20 00:00 +0000
 description: This is a network monitoring service from azure with lots of other important services and tools for network.
@@ -93,8 +92,6 @@ Investigate network by capturing the network packets. You can choose the Remote 
 
 {: .notice--info}
 👨‍🏫 In Exam remember: **Most network diagnostics issues can be detected and analyzed with Azure Network Watcher**
-
-
 
 ---
 
