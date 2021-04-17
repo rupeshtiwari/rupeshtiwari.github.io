@@ -1,5 +1,6 @@
 # Rupesh Blogs
 
+[![Build every day](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/schedule-posts.yml/badge.svg?branch=main)](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/schedule-posts.yml)
 ## Writing New Blog command
 
 `bundle exec jekyll compose "Importing WordPress or Blogger Blogs to Jekyll Blog" --date 2021-03-20`
@@ -19,4 +20,3 @@
 
 `bundle exec jekyll serve --limit_posts=5`
 
-[![Build every day](https://github.com/rupeshtiwari/blog/actions/workflows/schedule-posts.yml/badge.svg?branch=main)](https://github.com/rupeshtiwari/blog/actions/workflows/schedule-posts.yml)
