@@ -1,18 +1,16 @@
 name: Build every day
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  #push:
-    #branches: [ main ]
-  schedule:
-    - cron: '15 6 * * *' # 6:15 AM (UTC) every day.
+  push:
+    branches: [main]
+  #schedule:
+  # - cron: '15 6 * * *' # 6:15 AM (UTC) every day.
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: curl
-      uses: wei/curl@master
-      with:
-        args: "-X POST -H 'Authorization: token ${{ secrets.GH_TOKEN }}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/rupeshtiwari/rupeshtiwari.github.io/pages/builds"
-        # args: "-X POST -H 'Authorization: token ${{ secrets.GH_TOKEN }}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/YourUserName/YourRepository/pages/builds"
-
-        
+      - name: curl
+        uses: wei/curl@master
+        with:
+          args: "-X POST -H 'Authorization: token ${{ secrets.GH_TOKEN }}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/rupeshtiwari/rupeshtiwari.github.io/pages/builds"
+          # args: "-X POST -H 'Authorization: token ${{ secrets.GH_TOKEN }}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/YourUserName/YourRepository/pages/builds"
