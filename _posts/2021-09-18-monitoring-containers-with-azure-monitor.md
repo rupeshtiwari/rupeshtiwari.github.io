@@ -69,6 +69,10 @@ Let's create and deploy a docker container to AKS. [Source code for azure app in
 - Next select azure container registry
 - Select your resource group and azure container registry to publish then select publish. It will take some time to publish your image to Azure Container Registry.
 
+### What is the meaning of word Kubernetes?
+
+The name **“Kubernetes”** stems from an ancient Greek word for “helmsman,” (someone who steers a ship, like a container ship) which explains the ship wheel logo.
+
 #### Creating Kubernetes Cluster in Azure
 
 ![](https://imgur.com/Ov87oEs.png)

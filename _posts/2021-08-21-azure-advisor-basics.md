@@ -22,6 +22,11 @@ tags:
   - certification
 ---
 
+> Azure Advisor collects recommendations from all of the services within your subscription and display them in a single page.
+> Example you can see recommendation like Cost, Security, Performance etc. In this short article I will summaries Azure Advisor.
+
+
+
 ## Introduction 👨‍🏫
 
 ![](https://imgur.com/Q3l5JUe.png)

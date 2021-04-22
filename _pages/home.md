@@ -2,6 +2,8 @@
 permalink: /
 hidden: true
 classes: wide
+header:
+  image: https://imgur.com/zipiW93.png
 ---
 
    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
@@ -27,7 +29,7 @@ classes: wide
         </div>
       </div>
       <div class="text-center">
-        <a href="#about" class="btn-get-started scrollto">Read More</a>
+        <a href="/about" class="btn-get-started scrollto">Read More</a>
       </div>
       <div class="row icon-boxes">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
@@ -67,16 +69,16 @@ classes: wide
   </section><!-- End Hero -->
   <main id="main">
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <!-- <section  class="about">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="section-title">
-          <h2>About Me</h2>
+          <h2 id="about"> About Me</h2>
           <p class="subtitle">Rupesh provides a variety of resources such as visual courses and training materials. So far Rupesh has physically trained more than a thousand students, a couple of thousands online, and revel in a 95% repeat hire rate. </p>
         </div>
         <div class="row content">
           <div class="col-lg-6">
             <p class="about-description">
-              Rupesh brings something new to the world of web solution technologies, rather than mediocre agile methodologies. He brings transforming risk mitigation and project management skills and training on another comprehensive level. Rupesh is also a successful  <a href="https://www.pluralsight.com/authors/rupesh-tiwari"> Pluralsight Author </a>, professionally Rupesh is an expert at Angular, Express, Node.JS, Asp.net, Microsoft Azure, Object Oriented Design but with a particular focus on Service Oriented Architecture, Domain Driven Design and Clean Code, MEAN stack. 
+              Rupesh brings something new to the world of web solution technologies, rather than mediocre agile methodologies. He brings transforming risk mitigation and project management skills and training on another comprehensive level. Rupesh is also a successful  <a href="https://www.pluralsight.com/authors/rupesh-tiwari"> Pluralsight Author </a>, professionally Rupesh is an expert at Angular, Express, Node.JS, Asp.net, <a href="http://www.rupeshtiwari.com/posts/#azure"> Microsoft Azure</a>, Object Oriented Design but with a particular focus on Service Oriented Architecture, Domain Driven Design and Clean Code, MEAN stack. 
             </p>
             <p class="about-description">
               Full stack development job opportunities are increasing from 135,000 to 853,000. Teach yourself the coding sills you need to become a JavaScript <br>full stack developer in less than a year & get handsome pay packages from your dream companies. Learn to design and develop powerful modern web applications that form the foundation for apps, websites and more. Rupesh has created MEAN stack extensive course to teach you full stack development from scratch. Visit <a href="https://fullstackmaster.net/course/3/mastering-meanjs"> Mastering MEAN JS Full stack ultimate course</a> today! 
@@ -94,7 +96,8 @@ classes: wide
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section> -->
+    <!-- End About Section -->
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">
       <div class="container">

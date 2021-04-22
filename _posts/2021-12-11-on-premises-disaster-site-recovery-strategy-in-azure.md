@@ -28,19 +28,19 @@ tags:
 
 Before even failover to Azure VM from on-premises machine make sure you have setup your replication to Azure VM.
 
-{% include video id="KQJCOCWLGeU" provider="youtube" %}
+{% include video id="zU1glIxnPnM" provider="youtube" %}
 
 ![](https://imgur.com/CEHLtIe.png){: .full}
 
-## Workflow for Site Recovery
+## Stages for On-Premises Disaster Recovery
 
 ![](https://imgur.com/TO8eYHW.png){: .full}
 
 After replication is setup to Azure VM follow this workflow to accomplish Site Recovery in 4 steps.
 
-{% include video id="jDKthSwRqR4" provider="youtube" %}
+{% include video id="rb7mRDol2hs" provider="youtube" %}
 
-## Failover and failback in Site Recovery has four stages
+##  On-Premises Failover and failback four stages
 
 Let's learn all the 4 steps required for site recovery.
 
@@ -68,7 +68,7 @@ After setting up replication to Azure for on-premises machines, when your on-pre
 
 In Azure, you reprotect the Azure VMs so that they start replicating back to the on-premises site. The on-premises VM (if available) is turned off during reprotection, to help ensure data consistency.
 
-{% include video id="vDxt3ojD2Wo" provider="youtube" %}
+{% include video id="f8LLLYzv4pI" provider="youtube" %}
 
 ### Stage 3: Fail over from Azure
 
@@ -76,13 +76,13 @@ In Azure, you reprotect the Azure VMs so that they start replicating back to the
 
 When your on-premises site is running as normal again, you run another failover, this time to fail back Azure VMs to your on-premises site. You can fail back to the original location from which you failed over, or to an alternate location.
 
-{% include video id="uw3T0oUIlr4" provider="youtube" %}
+{% include video id="4qG5b6pkXpQ" provider="youtube" %}
 
 ### Stage 4: Reprotect on-premises machines
 
 After failing back, again enable replication of the on-premises machines to Azure.
 
-{% include video id="LBZvxJ_39_Y" provider="youtube" %}
+{% include video id="o3f83mayYKQ" provider="youtube" %}
 
 ![](https://imgur.com/XXAYraF.png)
 
