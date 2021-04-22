@@ -76,20 +76,19 @@ classes: wide
         <div class="row content">
           <div class="col-lg-6">
             <p class="about-description">
-              Rupesh brings something new to the world of web solution technologies, rather than mediocre agile methodologies. He brings transforming risk mitigation and project management skills and training on another comprehensive level. Rupesh is also a successful PluralSight Author, professionally Rupesh is an expert at Angular, Express,
-              Node.JS, Object Oriented Design but with a particular focus on Service Oriented Architecture, DDD, MEAN stack and Asp.Net.
+              Rupesh brings something new to the world of web solution technologies, rather than mediocre agile methodologies. He brings transforming risk mitigation and project management skills and training on another comprehensive level. Rupesh is also a successful  <a href="https://www.pluralsight.com/authors/rupesh-tiwari"> Pluralsight Author </a>, professionally Rupesh is an expert at Angular, Express, Node.JS, Asp.net, Microsoft Azure, Object Oriented Design but with a particular focus on Service Oriented Architecture, Domain Driven Design and Clean Code, MEAN stack. 
             </p>
             <p class="about-description">
-              Full stack development job opportunities are increasing from 135,000 to 853,000. Teach yourself the coding sills you need to become a JavaScript <br>full stack developer in less than a year & get handsome pay packages from your dream companies. Learn to design
-              and develop powerful modern web applications that form the foundation for apps, websites and more.
+              Full stack development job opportunities are increasing from 135,000 to 853,000. Teach yourself the coding sills you need to become a JavaScript <br>full stack developer in less than a year & get handsome pay packages from your dream companies. Learn to design and develop powerful modern web applications that form the foundation for apps, websites and more. Rupesh has created MEAN stack extensive course to teach you full stack development from scratch. Visit <a href="https://fullstackmaster.net/course/3/mastering-meanjs"> Mastering MEAN JS Full stack ultimate course</a> today! 
             </p>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p class="about-description">
               In recent times, Rupesh engages closely with the development team to determine
               the best technical implementation methods for a product feature, as well as a reasonable
-              schedule of execution. Rupesh Tiwari has been making educational YouTube tutorial videos.
-              With over 200+ videos on his YouTube channel and about a thousands subscribers (and counting), his YouTube channel has garnered increasing views from Front End Website Solutions Technologies enthusiasts and development teams. New videos are released every Tuesdays and Thursdays of each new week. His interest prompted him to participate in many GitHub open source projects.
+              schedule of execution. Rupesh Tiwari has been making educational <a href="https://www.youtube.com/fullstackmaster"> YouTube tutorial videos </a>.
+              With over 200+ videos on his YouTube channel and about a thousands subscribers (and counting), his YouTube channel has garnered increasing views from Front End Website Solutions Technologies enthusiasts and development teams. New videos are released once in a week. 
+              His interest prompted him to participate in many GitHub open source projects. His recent popular project is <a href="https://www.npmjs.com/package/@fsms/angular-pubsub"> Angular Pub Sub framework </a> you can download from npm.
             </p>
             <a href="https://fullstackmaster.net/pro" class="btn-learn-more">Subscribe Course</a>
           </div>
