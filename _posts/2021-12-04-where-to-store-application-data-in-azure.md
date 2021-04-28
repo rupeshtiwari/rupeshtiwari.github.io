@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/3PR1wRa.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
@@ -22,7 +22,7 @@ tags:
   - tutorial
 ---
 
-> Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you. 
+> Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.
 
 ## Storing Data in Azure options
 
@@ -359,11 +359,11 @@ The main difference among `Azure SQL, MySQL, PSQL and MariaDB` is the `ecosystem
 
 | Scenarios                             | ![](https://imgur.com/CY4p62V.png) SQL | ![](https://imgur.com/7NE8XB7.png) MySQL | ![](https://imgur.com/0JerP9s.png) PSQL | ![](https://imgur.com/viVzgo7.png) MariaDB | ![](https://imgur.com/xr0vqr0.png)Cosmos DB | ![](https://imgur.com/TPnk15t.png) Storage |
 | ------------------------------------- | -------------------------------------- | ---------------------------------------- | --------------------------------------- | ------------------------------------------ | ------------------------------------------- | ------------------------------------------ |
-| **Relational data**                   | ✔️                                     | ✔️                                       | ✔️                                      |                ✔️                            |                                             |
-| **Semi- or non-relational data data** |                                        |                                          |                                       |                                         |      ✔️                                       |✔️ 
-| **Can use Microsoft tools to manage** | ✔️                                     |                                          |                                         |                                         |          ✔️                                |✔️  
-| **Advanced querying capabilities**    | ✔️                                     | ✔️                                       | ✔️                                      | ✔️                                         |     ✔️                                        |
-| **Use multiple APIs to access data**  |                                        |                                          |                                         |                                         |     ✔️                                         |
+| **Relational data**                   | ✔️                                     | ✔️                                       | ✔️                                      | ✔️                                         |                                             |
+| **Semi- or non-relational data data** |                                        |                                          |                                         |                                            | ✔️                                          | ✔️                                         |
+| **Can use Microsoft tools to manage** | ✔️                                     |                                          |                                         |                                            | ✔️                                          | ✔️                                         |
+| **Advanced querying capabilities**    | ✔️                                     | ✔️                                       | ✔️                                      | ✔️                                         | ✔️                                          |
+| **Use multiple APIs to access data**  |                                        |                                          |                                         |                                            | ✔️                                          |
 
 ### Compare Azure Storage Type Services
 

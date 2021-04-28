@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/3PR1wRa.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
@@ -25,9 +25,10 @@ tags:
 > Did you know you can write a script and run from your machine to create and destroy multiple cloud infrastructures? Well yes I am not joking this is possible. Read this article to learn more about codifying cloud APIs into declarative configuration files.
 
 ## Write Plan and Apply Infrastructure.
+
 ![](https://imgur.com/d7uPRXv.gif){: .full}
 
-Suppose you have Google Cloud (GCS), Amazon Web Services (AWS) or Azure and you wan to write a configuration file to manage the workflow of each cloud infrastructure. It is possible via [HashiCorp Terraform](https://www.terraform.io/). 
+Suppose you have Google Cloud (GCS), Amazon Web Services (AWS) or Azure and you wan to write a configuration file to manage the workflow of each cloud infrastructure. It is possible via [HashiCorp Terraform](https://www.terraform.io/).
 
 ## HashiCorp Terraform
 

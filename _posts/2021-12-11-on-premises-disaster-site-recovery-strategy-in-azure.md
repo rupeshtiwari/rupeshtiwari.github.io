@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/3PR1wRa.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
@@ -40,7 +40,7 @@ After replication is setup to Azure VM follow this workflow to accomplish Site R
 
 {% include video id="rb7mRDol2hs" provider="youtube" %}
 
-##  On-Premises Failover and failback four stages
+## On-Premises Failover and failback four stages
 
 Let's learn all the 4 steps required for site recovery.
 

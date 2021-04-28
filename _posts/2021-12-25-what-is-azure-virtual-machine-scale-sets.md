@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/3PR1wRa.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
@@ -63,7 +63,7 @@ VMs in a scale set are identical, so you can create them from the same base oper
 
 ## How Virtual Machine Scale Set (VMSS) works
 
-VMSS uses [minimum instance](#minimum-instance) to start with and you can set the [maximum instance](#maximum-instance) of your virtual machine. You can setup rules based on [Time](#time-based-scaling), [Metrics](#metrics) based to increase or decrease VM instances. VMSS has in build [load balancers](#load-balancer-in-scale-set). Public load balancer works with internet traffic to your VMs. Which looks upon the CPU metrics and if CPU utilization is more than 75% then wait for some time and add another VM instance without any manual steps required. 
+VMSS uses [minimum instance](#minimum-instance) to start with and you can set the [maximum instance](#maximum-instance) of your virtual machine. You can setup rules based on [Time](#time-based-scaling), [Metrics](#metrics) based to increase or decrease VM instances. VMSS has in build [load balancers](#load-balancer-in-scale-set). Public load balancer works with internet traffic to your VMs. Which looks upon the CPU metrics and if CPU utilization is more than 75% then wait for some time and add another VM instance without any manual steps required.
 
 ### Minimum Instance
 
@@ -84,6 +84,7 @@ If you don't know where you are going to get the maximum business, it may be tod
 **Custom** : You can do **Time Based** increment or decrement Here you can schedule your VMs to scale out and scale in. For example every Saturday increase the VM instance to 4 and on Sunday reduce it back to 1. You can schedule these rules.
 
 ### Load Balancer in Scale Set
+
 ![](https://imgur.com/8H6dwMy.png){: .full}
 
 An **Azure load balancer** is a Layer-4 (TCP, UDP) **load balancer** that provides high availability by distributing incoming traffic among healthy VMs. A **[public load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** can provide outbound connections for virtual machines (VMs) inside your virtual network. Public Load Balancers are used to load balance internet traffic to your VMs. An **[internal (or private) load balancer](https://docs.microsoft.com/en-us/azure/load-balancer/components#frontend-ip-configurations)** is used where private IPs are needed at the frontend only. Internal load balancers are used to load balance traffic inside a virtual network.
@@ -103,8 +104,6 @@ Virtual Machine Scale Set (VMSS) deploys Virtual Machines in a single subnet of 
 **Storage**: VMSS can use managed disks or unmanaged disks for Virtual Machine storage. Managed disks are required to create more than 100 Virtual Machines. Unmanaged disks are limited to 100 VMs and single Placement Group.
 
 **VM Diagnostic Logs** are guest OS performance counters and are streamed to Azure storage Account. VMSS uses this data for making Auto-scaling decisions.
-
-
 
 ## Why use Virtual Machine Scale Sets?
 
@@ -130,7 +129,8 @@ The **management** and **automation** features, such as auto-scale and redundanc
 | High availability and redundancy | Manually create Availability set or distribute and track VMs across Availability Zones | Automatic distribution of VM instances across Availability Zones or Availability Sets |
 | Scaling of VMs                   | Manual monitoring and Azure Automation                                                 | Auto scale based on host metrics, in-guest metrics, Application Insights, or schedule |
 
-Using scale set is a wiser decision with zero additional cost! 
+Using scale set is a wiser decision with zero additional cost!
+
 ## Building Azure VM using Azure VM Image Builder
 
 ![](https://imgur.com/Ut26mIt.png){: .full}
@@ -154,7 +154,6 @@ Next, we need to create Gallery definition for storing windows images:
 ```powershell
 New-AzGalleryImageDefinition -GalleryName “azdemogallery” -ResourceGroupName “Azure-demo” -location “West US” -Name “winserverimages” -OsState generalized -Ostype windows -Publisher demo -offer windows -sku ‘win2016’
 ```
-
 
 ## How to monitor scale sets
 

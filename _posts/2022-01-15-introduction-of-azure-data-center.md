@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/3PR1wRa.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
@@ -28,7 +28,7 @@ tags:
 
 ![](https://i.imgur.com/VLOm3Gl.png){: .full}
 
-Azure Data Center has **Servers**, Networks Switch, Power Supply & Hardware's. Servers are placed on a **Server Rack**. Each Server Rack with it's own Power Supply and Network Switch is called as [**Fault Domain**](#why-do-we-separate-servers-in-different-racks). Each Server Rack has multiple [Update Domains](#why-group-servers-in-update-domains). Data-center normally comprises of lots of Fault Domains. 
+Azure Data Center has **Servers**, Networks Switch, Power Supply & Hardware's. Servers are placed on a **Server Rack**. Each Server Rack with it's own Power Supply and Network Switch is called as [**Fault Domain**](#why-do-we-separate-servers-in-different-racks). Each Server Rack has multiple [Update Domains](#why-group-servers-in-update-domains). Data-center normally comprises of lots of Fault Domains.
 
 ![](https://imgur.com/m79b5dF.png){: .full}
 
@@ -109,12 +109,12 @@ Suppose if you keep 3 VMs in 3 different Availability Zones. Then if 1st Availab
 
 With Availability Zone Microsoft offers industries best SLA 99.99% up time.
 
-| Single VM                                    | Availability Sets                                                            | Availability Zones                     | Region Pairs                        |
-| -------------------------------------------- | :--------------------------------------------------------------------------- | :------------------------------------- | :---------------------------------- |
-| 99.9% with Premium Storage only              | 99.95% up time( 4:50 down time)                                              | 99.99% up time (0:53 down time)        | -                                   |
+| Single VM                                    | Availability Sets                                                            | Availability Zones                     | Region Pairs                       |
+| -------------------------------------------- | :--------------------------------------------------------------------------- | :------------------------------------- | :--------------------------------- |
+| 99.9% with Premium Storage only              | 99.95% up time( 4:50 down time)                                              | 99.99% up time (0:53 down time)        | -                                  |
 | Single VM easier for lift and shift scenario | Protecting against hardware failures, network outages or power interruptions | Protecting against Data Center Failure | Protecting against region disaster |
-| Single VM                                    | 2 or More VMs                                                                | 2 or more VMs                          | 2 or more VMs                       |
-| ![](https://imgur.com/vKlJkWt.png)           | ![](https://imgur.com/YS2YNDx.png)                                           | ![](https://imgur.com/qPsYLLC.png)     | ![](https://imgur.com/bJlTzJr.png)  |
+| Single VM                                    | 2 or More VMs                                                                | 2 or more VMs                          | 2 or more VMs                      |
+| ![](https://imgur.com/vKlJkWt.png)           | ![](https://imgur.com/YS2YNDx.png)                                           | ![](https://imgur.com/qPsYLLC.png)     | ![](https://imgur.com/bJlTzJr.png) |
 
 ## Reference
 

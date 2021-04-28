@@ -1,5 +1,5 @@
 ---
-title: Microsoft Azure Architect Design Random Question Flashcards
+title: Random Flashcards for Microsoft Azure Architect Design
 date: 2022-02-19 00:00 +0000
 description:
 author_profile: true
@@ -10,16 +10,16 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/3PR1wRa.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
   - beginners
-  - tutorial
+  - az304
 ---
 
 > Do you want to refresh AZ 304 Microsoft Azure Architect Design related random questions? This article will give you great random flashcards to remember Azure concepts.
@@ -41,20 +41,17 @@ tags:
 
 ## Which stage in the failover and failback in Site Recovery enables replication of the on-premises machines to Azure after failing back?
 
-Stage 4: Reprotect on-premises machines. Learn more about [On-Premises Disaster Site Recovery Strategy with Azure VM](https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/) 
-
+Stage 4: Reprotect on-premises machines. Learn more about [On-Premises Disaster Site Recovery Strategy with Azure VM](https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/)
 
 ## Which cmdlet is used to view the tag of a resource?
 
-`Get-AzResource`.  Learn more about [Create, Update and Delete tags in Azure using Powershell CLI](https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/)
-
+`Get-AzResource`. Learn more about [Create, Update and Delete tags in Azure using Powershell CLI](https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/)
 
 ## What objects are used to run multiple instances of your application and maintain a consistent configuration across your environment?
 
 Azure Virtual Machine Scale Sets
 
-
-## Which Azure service manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise? 
+## Which Azure service manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise?
 
 Azure Kubernetes Services (AKS)
 
@@ -65,11 +62,6 @@ Azure Kubernetes Services (AKS)
 ## Which type of API Management policy is used for actions such as enforcing the existence of an HTTP header, limiting the call rate, restricting caller IPs, and setting quotas?
 
 Access Restriction Policies. Learn more about [Access Restriction Policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-access-restriction-policies)
-
-
-
-
-
 
 ---
 

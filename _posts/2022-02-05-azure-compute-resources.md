@@ -10,45 +10,48 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/7I0NoBe.png
+image: https://i.imgur.com/rFW3EiY.png
 header:
-  image: https://i.imgur.com/vce9zzl.png
-  teaser: https://i.imgur.com/7I0NoBe.png
-  og_image: https://i.imgur.com/7I0NoBe.png
+  image: https://i.imgur.com/3PR1wRa.png
+  teaser: https://i.imgur.com/rFW3EiY.png
+  og_image: https://i.imgur.com/rFW3EiY.png
 tags:
   - azure
   - webdev
   - beginners
   - tutorial
 ---
-> Do You want to start IT Business and you don't have equipments? Don't worry Azure is the solution for your business. By using Azure Compute Resources you can setup your business cloud needs. You can get high processor machine or high available app services to host your workers. Read this article to know the fundamentals of Azure compute Resources. 
 
+> Do You want to start IT Business and you don't have equipments? Don't worry Azure is the solution for your business. By using Azure Compute Resources you can setup your business cloud needs. You can get high processor machine or high available app services to host your workers. Read this article to know the fundamentals of Azure compute Resources.
 
 ## What is Azure Compute Resources?
 
-Suppose you want to edit videos and host your website to show your videos. However, you do not have equipments to do this. Well You can use Azure to do your business. 
+Suppose you want to edit videos and host your website to show your videos. However, you do not have equipments to do this. Well You can use Azure to do your business.
 
 Azure compute is an on-demand computing service for running cloud-based applications. You can create Azure Compute resources, configure them to work together. You pay only for what resource you use.
 
 ### Infrastructure Compute Resources
 
 You need to setup infrastructure then you can use Azure compute resources like:
-1. Multi-core processor 
+
+1. Multi-core processor
 2. VM to make your supercomputers
-3. Containers to host your applications with dependencies. 
+3. Containers to host your applications with dependencies.
 
 ### Serverless Compute Resources
 
 You can also run your applications/jobs without creating any infrastructure over Azure and use server less computing resources like:
+
 1. You can create serverless resources within seconds or minutes.
-2. Configure them 
+2. Configure them
 3. Available on-demand
-4. Auto scalable 
-5. Only pay for what you use and how long you use. 
+4. Auto scalable
+5. Only pay for what you use and how long you use.
 
 ### How many techniques to perform computing in Azure?
 
-There are 4 techniques to perform computing in Azure: 
+There are 4 techniques to perform computing in Azure:
+
 1. Virtual Machines
 2. Containers
 3. Azure App Services
@@ -57,10 +60,6 @@ There are 4 techniques to perform computing in Azure:
 ## Save money 💰
 
 You only pay for the underlying compute resources such as the VM instances, load balancer, or Managed Disk storage.
-
-
-
-
 
 ---
 
