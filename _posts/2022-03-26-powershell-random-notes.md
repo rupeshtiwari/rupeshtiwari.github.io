@@ -125,12 +125,14 @@ Function Do-Something
 
 ## Multiple line comment in Powershell
 
+```powershell
 <#
 Function Do-Something
 {
 Write-Host "The entire function is commented"
 }
 #>
+```
 
 ## Contains vs Match vs Like in Powershell
 
@@ -169,6 +171,55 @@ Whenever error occurs in batch file it save the error code in the environment va
 ```shell
 echo "Return Code:" %ERRORLEVEL%
 ```
+
+## Un-archive zip file
+
+### Using Expand-Archive cmdlet
+
+`Expand-Archive` is built-in powershell 5 module.
+
+```powershell
+ expand-archive -path c:\fsms\test.zip -destinationpath c:\fsms\unpack
+```
+
+![](https://imgur.com/gxliBJQ.png){: .full}
+
+### Using .Net class [System.IO.Compression.ZipFile]
+
+`ZipFile.ExtractToDirectory()` is .Net Framework 4.5 built-in api.
+
+```powershell
+[System.IO.Compression.ZipFile]::ExtractToDirectory("c:\fsms\test.zip","c:\fsms\unpack")
+```
+
+![](https://imgur.com/Ku8Q3t5.gif){: .full}
+
+### Using Folder.CopyHere() Method of Shell.Application Class
+
+Using `COM object` created from `Shell.Application` class. Use `namespace().items()` to get all items then copy them to destination folder. Make sure destination folder exist before you copy. Also this way of un-archiving files seems lil lengthy. However, I found that COM method to un-archive files are reliable since it is not modifying the modified date time of the files inside the zip file.
+
+{: .notice--success}
+🏆 **ProTip** \
+\
+For example if there is a file called as `Web.config` inside your `web.zip\Content\website` folder. Then if the actual modified date time is `5/4/2021 07:00:11 AM` then this will show exact same time. However, if u use powershell cmdlet `Expand-Archive` or .Net `ExtractToDirectory` methods they will sometime display `+1` hour so they will show file `lastwritetime` as `5/4/2021 08:00:11 AM`. Note here it is showing `8AM` rather `7AM`.
+
+Suppose
+
+```powershell
+$shell = new-object -com Shell.Application
+$targetFolderToCopyUnzippedFiles = "c:\fsms\unpack"
+# create a target folder if not exist. Make sure you have the folder otherwise un-archive will fail.
+if(!(test-path $targetFolderToCopyUnzippedFiles)) {
+  new-item -itemtype directory -path $targetFolderToCopyUnzippedFiles -force
+}
+$zipFile = "c:\fsms\test.zip"
+# Unarchive and copy to target folder
+$shell.namespace($targetFolderToCopyUnzippedFiles).copyhere($shell.namespace($zipFile).items(),4)
+```
+
+## References
+
+- https://ridicurious.com/2019/07/29/3-ways-to-unzip-compressed-files-using-powershell/
 
 If you know any other Powershell Built-In method that you use frequently then please write them in comment box. I may add those method details in this blog :slightly_smiling_face 🙂
 
