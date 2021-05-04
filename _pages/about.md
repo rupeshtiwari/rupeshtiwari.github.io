@@ -29,7 +29,7 @@ I conduct software development trainings. Here are some of my training materials
   - Please subscribe to [All Access Membership Elite](www.fullstackmaster.net/elite) to get everything from PRO plan. Additionally you will get access to monthly live Q&A video call with Rupesh and ask doubts and get more tips and tricks.
 
 {: .notice--warning}
-Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+Your bright future is awaiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 ## My Open Source Contributions
 

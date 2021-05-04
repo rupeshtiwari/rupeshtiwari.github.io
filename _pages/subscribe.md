@@ -10,7 +10,7 @@ header:
   actions:
     - label: 'Enroll Today'
       url: https://fullstackmaster.net/pro
-excerpt: 'Become software developer & board on to your dream company. Your bright future is waiting for you, join us!'
+excerpt: 'Become software developer & board on to your dream company. Your bright future is awaiting for you, join us!'
 ---
 
 <link href="../assets/css/style.css" rel="stylesheet">
