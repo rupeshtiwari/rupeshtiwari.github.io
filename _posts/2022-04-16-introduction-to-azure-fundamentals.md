@@ -22,7 +22,7 @@ tags:
   - az-900
 ---
 
-> Can you describe **basic concepts** of cloud computing? Is Azure **right solution** for your business needs? How can you create your Azure **subscription** today? I will explain all in this article. This is 1st article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
+> Can you describe **basic concepts** of cloud computing? Is Azure **right solution** for your business needs? How can you create your Azure **subscription** today? I will explain all in this article. This is the 1st article on "**Azure Fundamentals part 1: Describe core Azure concepts**".
 
 ![](https://i.imgur.com/bJhy0o9.png)
 
@@ -216,7 +216,7 @@ The Azure portal is a web-based, unified console that provides an alternative to
 
 ![](https://i.imgur.com/3Vabs2f.png){: .full}
 
-Azure Marketplace is an online store that hosts applications that are certified and optimized to run in Azure. Many types of applications are available, ranging from AI and machine learning to web applications. 
+Azure Marketplace is an online store that hosts applications that are certified and optimized to run in Azure. Many types of applications are available, ranging from AI and machine learning to web applications.
 
 ## Azure Services
 
@@ -496,7 +496,7 @@ I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to b
 - Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to a monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
 {: .notice--warning}
-Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+Your bright future is awaiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 <div class="notice--success">
 <strong>💖 Say 👋 to me!</strong>

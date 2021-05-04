@@ -26,4 +26,4 @@ Grow your carrier as Lead Developer/Architect & become full stack software devel
 - Please subscribe to [All Access Membership Pro](www.fullstackmaster.net/pro) to watch angular, node.js and related technology courses.
 - Please subscribe to [All Access Membership Elite](www.fullstackmaster.net/elite) to get everything from PRO plan. Additionally you will get access to monthly live Q&A video call with Rupesh and ask doubts and get more tips and tricks.
 
-> Your bright future is waiting for you so visit today www.fullstackmaster.net and allow me to help you to board on your dream software architect/lead role.
+> Your bright future is awaiting for you so visit today www.fullstackmaster.net and allow me to help you to board on your dream software architect/lead role.
