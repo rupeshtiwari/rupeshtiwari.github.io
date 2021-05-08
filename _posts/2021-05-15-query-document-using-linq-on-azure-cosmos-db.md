@@ -29,9 +29,9 @@ tags:
 
 If you have not yet setup your **azure development environment** then please read my below articles to start.
 
-1. [Get Free Sandbox Azure account for learning Azure](http://www.rupeshtiwari.com/blog/azure-sandbox-free-account-for-learning/)
-2. [Creating Cosmos DB from DotNet Core Project](http://www.rupeshtiwari.com/blog/creating-cosmos-db-from-dotnet-core-project/)
-3. [CRUD with Cosmos DB using Dotnet Core](http://www.rupeshtiwari.com/blog/crud-with-cosmos-db-and-dotnet-core/)
+1. [Get Free Sandbox Azure account for learning Azure](http://www.rupeshtiwari.com/azure-sandbox-free-account-for-learning/)
+2. [Creating Cosmos DB from DotNet Core Project](http://www.rupeshtiwari.com/creating-cosmos-db-from-dotnet-core-project/)
+3. [CRUD with Cosmos DB using Dotnet Core](http://www.rupeshtiwari.com/crud-with-cosmos-db-and-dotnet-core/)
 
 ## How LINQ work in Cosmos DB
 

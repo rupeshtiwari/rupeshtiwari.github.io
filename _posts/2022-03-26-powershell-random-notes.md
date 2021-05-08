@@ -203,7 +203,7 @@ Using `COM object` created from `Shell.Application` class. Use `namespace().item
 \
 For example if there is a file called as `Web.config` inside your `web.zip\Content\website` folder. Then if the actual modified date time is `5/4/2021 07:00:11 AM` then this will show exact same time. However, if u use powershell cmdlet `Expand-Archive` or .Net `ExtractToDirectory` methods they will sometime display `+1` hour so they will show file `lastwritetime` as `5/4/2021 08:00:11 AM`. Note here it is showing `8AM` rather `7AM`.
 
-Suppose
+Example: 
 
 ```powershell
 $shell = new-object -com Shell.Application
@@ -216,6 +216,8 @@ $zipFile = "c:\fsms\test.zip"
 # Unarchive and copy to target folder
 $shell.namespace($targetFolderToCopyUnzippedFiles).copyhere($shell.namespace($zipFile).items(),4)
 ```
+
+![](https://imgur.com/e904y8V.gif){: .full}
 
 ## References
 

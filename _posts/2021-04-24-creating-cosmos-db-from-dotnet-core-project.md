@@ -30,7 +30,7 @@ tags:
 ## Pre-requisites
 
 1. You must have **Cosmos DB Account**.
-2. Valid **active Azure Subscription**. Check my blog where I have explained how can you get your [Free Sandbox Azure Account](http://rupeshtiwari.com/blog/azure-sandbox-free-account-for-learning/).
+2. Valid **active Azure Subscription**. Check my blog where I have explained how can you get your [Free Sandbox Azure Account](http://rupeshtiwari.com/azure-sandbox-free-account-for-learning/).
 
 ## Creating a Dotnet Console App in Visual Studio Code
 

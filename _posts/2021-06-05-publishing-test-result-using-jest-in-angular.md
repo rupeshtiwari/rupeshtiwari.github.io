@@ -24,7 +24,7 @@ tags:
 
 > Are you wondering how to publish **Test Results** over **Azure CI Build** while using **Angular** and **JEST**? In this article I will demonstrate **nx monorepo** publishing test results using **azure pipeline**.
 
-If you are u are using Karma Test Runner then read my previous article [Publishing Nx Monorepo Test Results in Azure CI Pipeline](https://www.rupeshtiwari.com/blog/publishing-nx-monorepo-test-results-in-azure-ci-pipeline/).
+If you are u are using Karma Test Runner then read my previous article [Publishing Nx Monorepo Test Results in Azure CI Pipeline](https://www.rupeshtiwari.com/publishing-nx-monorepo-test-results-in-azure-ci-pipeline/).
 
 ![](https://imgur.com/XwPm3dn.gif)
 
