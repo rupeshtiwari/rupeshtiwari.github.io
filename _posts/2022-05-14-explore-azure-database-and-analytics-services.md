@@ -239,6 +239,10 @@ The analytics service can handle jobs of any scale instantly by setting the dial
 
 ![](https://imgur.com/**gnJIvtM.png){: .full}
 
+![]("https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx/blob/0cdc9a042b4d8cfc1604d39d43b5c5ca39d5f032/enterprise-angular-mono-repo-patterns.pdf")
+
+![](https://imgur.com/ziGmUtD.png){: .full}
+
 ## References
 
 - [Explore Azure database and analytics services](https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/)
