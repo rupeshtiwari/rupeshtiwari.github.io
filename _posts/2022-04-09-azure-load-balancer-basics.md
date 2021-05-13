@@ -106,7 +106,7 @@ Below are the limitations of Azure Load Balancers:
 
   You can use Standard Load Balancer to be zonal redundant for high availability however they must be within single VNet.
 
-## Knowledge Check
+## Knowledge Check 👨‍🏫
 
 How many Virtual Networks can a load balancer connect? \
 **Correct Answer:** only 1
