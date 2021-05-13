@@ -22,7 +22,7 @@ tags:
   - azure
 ---
 
-> Azure Load Balancer evenly distributes incoming network traffic load among backend resources or servers. It works at layer 4 of OSI (Open Systems Interconnection) Model. Inbound load flows from frontend to backend instances of load balancer.
+> Azure Load Balancer evenly distributes incoming network traffic load among backend resources or servers. It works at layer 4 (Transport Layer) of OSI (Open Systems Interconnection) Model. Inbound load flows from frontend to backend instances of load balancer.
 
 ![](https://imgur.com/LgrTV0m.png){: .full}
 
@@ -112,7 +112,7 @@ How many Virtual Networks can a load balancer connect? \
 **Correct Answer:** only 1
 
 At which OSI Layer does an Azure load balancer operate? \
-**Correct Answer:** 4 ( Network Layer )
+**Correct Answer:** Layer 4 (Transport Layer) of OSI (Open Systems Interconnection) Model.
 
 ---
 
