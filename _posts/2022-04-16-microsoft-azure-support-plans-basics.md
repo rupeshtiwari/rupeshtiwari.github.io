@@ -47,10 +47,12 @@ This is a free support for every Microsoft Azure customers. No support for any i
 
 - This is for non-production or trial environments.
 - You can raise only severity **C** tickets and it will be resolved within **8** business hours.
+- You will get support for Non-Microsoft technologies running on Azure like Linux.
 
 ## Standard Support
 
 - For production workloads and environments
+- You will get support for Non-Microsoft technologies running on Azure like Linux.
 - Severity **A** tickets resolved within **1** Business hours
 - Severity **B** tickets resolved within **4** Business hours
 - Severity **C** tickets resolved within **8** Business hours
@@ -58,16 +60,32 @@ This is a free support for every Microsoft Azure customers. No support for any i
 ## Professional Direct
 
 - For Business Critical environments
+- You will get support for Non-Microsoft technologies running on Azure like Linux.
+- Escalation management
+- Support API
+- Advisory services (Guidance based on best practices )
+- Pooled service account management (Microsoft dedicated pooled team)
 - Severity **A** tickets resolved within **1** Business hours
 - Severity **B** tickets resolved within **2** Business hours
 - Severity **C** tickets resolved within **4** Business hours
 
-## Premier Support
+## Enterprise Support
+
+### Premier Support for Partners
 
 - For Microsoft partners
 - You will get **onsite** support from Microsoft Engineers.
 
-## Unified Support
+[Download what's included in Premier Support](https://assetsprod.microsoft.com/mpn/en-us/microsoft-premier-support-for-partners-to-partner-brochure.pdf){: .btn .btn--success}
+
+### Premier Support for Enterprise
+
+- 24/7 support with service hub.
+- onsite and remote support for all Microsoft products
+
+[Download the entire benefits of Premier support for enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4z9ba){: .btn .btn--success}
+
+### Unified Support
 
 - This is the highest level of support beyond Premier Support
 - You get dedicated help from Microsoft Account Team
@@ -81,7 +99,12 @@ This is a free support for every Microsoft Azure customers. No support for any i
 **Question:** If a customer purchased the Premier Azure support plan, do they receive onsite support? \
 **Correct Answer:** yes
 
+**Question:** If a customer purchased the Developer Azure support plan, do they receive support for non-Microsoft technologies that run on Azure platforms, like Linux? \
+**Correct Answer:** yes
+
 ## References
+
+Please dive deeper and click on below links to learn more about the support plan offered by Microsoft Azure team.
 
 - [Compare all Microsoft Support Plans](https://azure.microsoft.com/en-us/support/plans/){: .btn .btn--info}
 - [Premier Support for Partners](https://partner.microsoft.com/en-US/support/microsoft-services-premier-support){: .btn .btn--info}
