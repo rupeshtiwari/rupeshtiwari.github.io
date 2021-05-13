@@ -113,6 +113,8 @@ Network File System (NFS)
 
 Server Message Block (SMB)
 
+![](https://imgur.com/eOrGZls.png){: .full}
+
 ## FQDN
 
 fully qualified domain name
@@ -125,9 +127,53 @@ Azure Database Migration Service
 
 User Defined Routing (UDR)
 
+## NAT
+
+Network Address Translation (NAT)
+
+## NVA
+
+network virtual appliances (NVAs)
+
+## HA Ports
+
+High Available Ports
+
+## WAF
+
+web application firewall (WAF)
+
+## FQDNs
+
+fully qualified domain names (FQDNs)
+
+## DNAT
+
+Destination Network Address Translation (DNAT)
+
 ## DDoS
 
 Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
+
+## Workgroups
+
+A workgroup is a collection of computers that each maintain their own security information. Here the security is distributed, not centralized.
+
+## Domains
+
+A domain is a collection of computers where security is handled centrally.Each domain has one or more domain controllers.
+
+## ICMP
+
+**Internet Control Message Protocol (ICMP)** is a control protocol, meaning that it designed to not carry application data, but rather information about the status of the network itself. The best known example of ICMP in practice is the ping utility, that uses ICMP to probe remote hosts for responsiveness and overall round-trip time of the probe messages.
+
+## UDP
+
+**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection.
+
+## TCP
+
+**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. UDP is used to pass the actual user data.It guarantees that all sent packets will reach the destination in the correct order.
 
 ## Azure Infrastructure and Management
 
@@ -215,21 +261,27 @@ graph TD;
 
 Azure Mobile App gives an easy and secure way to manage your Azure resources, even when you are out of the office and not near computer.
 
-//-----
-
 ## Azure Fundamentals Certification (AZ 900)
 
 **Azure Fundamentals** certification needs 6 part to be finished.
 
 1. Part 1: Describe core Azure concepts
-   1. Introduction to Azure fundamentals
-   2. Discuss Azure fundamental concepts
-   3. Describe core Azure architecture components
 2. Part 2: Describe core Azure services
 3. Part 3: Describe core solutions and management tools on Azure
 4. Part 4: Describe general security and network security features
 5. Part 5: Describe identity, governance, privacy, and compliance features
 6. Part 6: Describe Azure cost management and service level agreements
+
+![](https://imgur.com/ulz9JTX.png){: .full}
+
+### Part 3: Describe core solutions and management tools on Azure
+
+- Choose the best AI service for your needs
+- Choose the best tools to help organizations build better solutions
+- Choose the best monitoring service for visibility, insight, and outage mitigation
+- Choose the best tools for managing and configuring your Azure environment
+- Choose the best Azure serverless technology for your business scenario
+- Choose the best Azure IoT service for your application
 
 ## Part 1: Describe core Azure concepts
 
