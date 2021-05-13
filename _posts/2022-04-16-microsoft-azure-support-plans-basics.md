@@ -100,7 +100,7 @@ This is a free support for every Microsoft Azure customers. No support for any i
 **Correct Answer:** yes
 
 **Question:** If a customer purchased the Developer Azure support plan, do they receive support for non-Microsoft technologies that run on Azure platforms, like Linux? \
-**Correct Answer:** yes
+**Correct Answer:** no
 
 ## References
 
