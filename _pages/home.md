@@ -597,7 +597,7 @@ header:
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://rupeshtiwari.com/blog">Blogs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://rupeshtiwari.com/posts">Blogs</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://fullstackmaster.net/">Fullstack Master</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://fullstackmaster.net/elite">ELITE Membership</a>
               </li>
