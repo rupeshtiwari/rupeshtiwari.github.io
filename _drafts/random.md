@@ -3,35 +3,6 @@ title: Configuring Azure Storage Account
 description: Big picture of Azure storage
 ---
 
-# In Azure Storage Account
-
-# Feature
-
-Feature is capability of a service. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
-
-# Service
-
-File, Blob, Queues, Azure Monitor
-
-# Resource
-
-Container  
-Service  
-Object
-
-# Log Analytics Workspace
-
-Log Analytics Workspace is actually a **Azure Data Lake**.
-
-# VM Scale Set
-
-![](httpss://imgur.com/uGhua33.png)
-
-- VM scale set is an Azure service allows you to run
-- It contains multiple VMs with the same image and contents.
-- It has instances, which are the VMs.
-- You can create more VMs by scaling it up from Azure Portal or Enable auto scale.
-
 ## SAN
 
 SAN: [storage area network (SAN) ](httpss://docs.microsoft.com/en-US/azure/migrate/prepare-for-migration#configure-san-policy)
@@ -174,6 +145,62 @@ A domain is a collection of computers where security is handled centrally.Each d
 ## TCP
 
 **Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. UDP is used to pass the actual user data.It guarantees that all sent packets will reach the destination in the correct order.
+
+## OWIN
+
+Open Web Interface for .NET (OWIN)
+
+
+## RPO
+recovery point objective (RPO) 
+
+## ERT
+and estimated recovery time (ERT)
+
+
+
+## What is Docker Swarm Cluster?
+A Docker Swarm is a group of either physical or virtual machines that are running the Docker application and that have been configured to join together in a cluster.
+
+
+
+
+
+
+
+
+
+
+
+
+# In Azure Storage Account
+
+# Feature
+
+Feature is capability of a service. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
+
+# Service
+
+File, Blob, Queues, Azure Monitor
+
+# Resource
+
+Container  
+Service  
+Object
+
+# Log Analytics Workspace
+
+Log Analytics Workspace is actually a **Azure Data Lake**.
+
+# VM Scale Set
+
+![](httpss://imgur.com/uGhua33.png)
+
+- VM scale set is an Azure service allows you to run
+- It contains multiple VMs with the same image and contents.
+- It has instances, which are the VMs.
+- You can create more VMs by scaling it up from Azure Portal or Enable auto scale.
 
 ## Azure Infrastructure and Management
 
