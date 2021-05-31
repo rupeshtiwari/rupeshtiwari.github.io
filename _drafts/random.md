@@ -3,6 +3,35 @@ title: Configuring Azure Storage Account
 description: Big picture of Azure storage
 ---
 
+# In Azure Storage Account
+
+# Feature
+
+Feature is capability of a service. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
+
+# Service
+
+File, Blob, Queues, Azure Monitor
+
+# Resource
+
+Container  
+Service  
+Object
+
+# Log Analytics Workspace
+
+Log Analytics Workspace is actually a **Azure Data Lake**.
+
+# VM Scale Set
+
+![](httpss://imgur.com/uGhua33.png)
+
+- VM scale set is an Azure service allows you to run
+- It contains multiple VMs with the same image and contents.
+- It has instances, which are the VMs.
+- You can create more VMs by scaling it up from Azure Portal or Enable auto scale.
+
 ## SAN
 
 SAN: [storage area network (SAN) ](httpss://docs.microsoft.com/en-US/azure/migrate/prepare-for-migration#configure-san-policy)
@@ -146,61 +175,73 @@ A domain is a collection of computers where security is handled centrally.Each d
 
 **Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. UDP is used to pass the actual user data.It guarantees that all sent packets will reach the destination in the correct order.
 
-## OWIN
+## OLTP
 
-Open Web Interface for .NET (OWIN)
+OLTP (Online Transactional Processing)
+
+## SMTP
+
+Simple Mail Transfer Protocol (SMTP) to send emails.
+
+## DDL
+
+Data Definition Language (DDL)
+
+## K-ISMS
+
+Korea-Information Security Management System (K-ISMS)
+
+## B2C
+
+Business-To-Consumer (B2C)
+
+## ISV
+
+Independent Software Vendor (ISV) - also known as a software publisher, is an organization specializing in making and selling software, as opposed to computer hardware, designed for mass or niche markets.
+
+## LOB
+
+line-of-business (LOB) - used only for your company or your employees.
+
+## SIEM
+
+Security Incident and Event Monitoring (SIEM) - Monitor apps through reports that use Security Incident and Event Monitoring (SIEM) tools in Microsoft Azure.
+
+## UPN
+
+user principal name (UPN)
+
+## SPN
+
+security principal name (SPN)
+
+## MSAL
+
+Microsoft Authentication Library (MSAL)
 
 
-## RPO
-recovery point objective (RPO) 
+## ADAL
 
-## ERT
-and estimated recovery time (ERT)
+Active Directory Authentication Library (ADAL) 
 
-
-
-## What is Docker Swarm Cluster?
-A Docker Swarm is a group of either physical or virtual machines that are running the Docker application and that have been configured to join together in a cluster.
+Active Directory Authentication Library (ADAL) integrates with the Azure AD for developers (v1.0) endpoint, where MSAL integrates with the Microsoft identity platform. [Learn More...](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview#differences-between-adal-and-msal)
 
 
+## OIDC
 
+OpenID Connect (OIDC) - authentication and authorization protocol
 
+## MSRP
 
+[Managed Identity Resource Provider (MSRP)](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-managed-identities-work-vm#how-it-works)
 
+## Delta Query
 
+Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request.
 
+## How many VNets allowed in Azure
 
-
-
-
-# In Azure Storage Account
-
-# Feature
-
-Feature is capability of a service. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
-
-# Service
-
-File, Blob, Queues, Azure Monitor
-
-# Resource
-
-Container  
-Service  
-Object
-
-# Log Analytics Workspace
-
-Log Analytics Workspace is actually a **Azure Data Lake**.
-
-# VM Scale Set
-
-![](httpss://imgur.com/uGhua33.png)
-
-- VM scale set is an Azure service allows you to run
-- It contains multiple VMs with the same image and contents.
-- It has instances, which are the VMs.
-- You can create more VMs by scaling it up from Azure Portal or Enable auto scale.
+500 VNets, You can only have one VPN Gateway with 1 VNet.
 
 ## Azure Infrastructure and Management
 
