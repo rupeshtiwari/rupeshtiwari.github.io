@@ -235,6 +235,20 @@ OpenID Connect (OIDC) - authentication and authorization protocol
 
 [Managed Identity Resource Provider (MSRP)](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-managed-identities-work-vm#how-it-works)
 
+
+## ATP 
+Azure Advanced Threat Protection ( ATP ) - Now it is known as "Microsoft Defender for Identity"
+
+
+## SSPR
+
+Self-Service Password Reset 
+
+
+
+
+
+
 ## Delta Query
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request.
