@@ -51,15 +51,15 @@ First `main` function will call the `mergeSort` with entire given array.
 
 ![](https://i.imgur.com/JsR9WiT.png){: .full}
 
-1st Recursion call to `mergeSort` with left part of the array `[2,4,1,6]` and pause the function execution at line `number-7`.
+`1st` Recursion call to `mergeSort` with left part of the array `[2,4,1,6]` and pause the function execution at line `number-7`.
 
 ![](https://i.imgur.com/hHS3xNl.png){: .full}
 
-2nd recursion call with Array `[2, 4]` and pervious function pauses at line `number -7`.
+`2nd` recursion call with Array `[2, 4]` and pervious function pauses at line `number -7`.
 
 ![](https://i.imgur.com/phJfnSY.png){: .full}
 
-3rd recursion call with array `[2]` and previous function pauses at line `number-7`
+`3rd` recursion call with array `[2]` and previous function pauses at line `number-7`
 
 ![](https://i.imgur.com/eIa9tQY.png){: .full}
 
@@ -67,58 +67,77 @@ Resume 2nd recursion call with array `[2,4]` and call merge sort with right part
 
 ![](https://i.imgur.com/E4lHVoS.png){: .full}
 
-3rd recursion call with array `[4]` and previous function pauses at line `number -8`. This function will exit since length is `less than 2`.
+`3rd` recursion call with array `[4]` and previous function pauses at line `number -8`. 
 
 ![](https://i.imgur.com/BPGqO9K.png){: .full}
 
-Therefore, 3rd recursion call resumes and executes at line `number-9`.
+This function will exit since length is `less than 2`. Therefore, 3rd recursion call resumes and executes at line `number-9`.
 
 ![](https://i.imgur.com/qRlvs1g.png){: .full}
 
 Which is a call to `stitch` method which will join both left and right array and `re-order` them in `ascending` order.
 
-![](https://i.imgur.com/cinoEQX.png){: .full}
+![](https://i.imgur.com/Sac57Mq.png){: .full}
 
-Resume 2nd recursion method at line `number-7` and call `mergeSort` with right part of the array `[1,6]`.
+Resume `2nd` recursion method at line `number-7` and call `mergeSort` with right part of the array `[1,6]`.
 
 ![](https://i.imgur.com/EDo7OuL.png){: .full}
 
 Pause the function at line `numnber-7` and call `mergeSort` with `[1]` which will exit because of base condition.
 
-![](https://i.imgur.com/crHGUQM.png){: .full}
+![](https://i.imgur.com/IWO421x.png){: .full}
 
 Function resume at line `numnber-7` and execute line `number-8` call `mergeSort` with `[6]`
 
-![](https://i.imgur.com/CqbyltH.png){: .full}
+![](https://i.imgur.com/Et0NceF.png){: .full}
 
-`mergeSort` with `[6]` will exit because of base condition.
+Next `mergeSort` with `[6]` will exit because of base condition. Next function will resume at line `number-9` and `stitch` method will call that will re-order array `[1,6]`. 
 
-![](https://i.imgur.com/gBGkjOw.png){. full}
+![](https://i.imgur.com/IqzLMOY.png){: .full}
 
-Next Resume 1st recursion at line `number-7` and execute `mergeSort` with `[8,5,3,7]`. Next function will pause at line `number-7` and will call `mergeSort` recursively with `[8,5]`.
+Next Resume `1st` recursion at line `number-7` and execute `mergeSort` with `[8,5,3,7]`. Next function will pause at line `number-7` and will call `mergeSort` recursively with `[8,5]`.
 
-![](https://i.imgur.com/C3dDwAe.png){: .full}
+![](https://i.imgur.com/4nkvxgp.png){: .full}
 
 Next first it will make `mergeSort` with [8] and pause at line `number-7`.
 
 ![](https://i.imgur.com/tgRaKe4.png){: .full}
 
-Next It will pause the previous function at line `number-7`. And Resume at line `number-7` and call `mergeSort` recursively and pause again at line `number-8` with `[5]` which will exit. Therefore, function will resume at line `number-8` and execute `stitch` to sort the array. Hence the array will become `[5,8]` and exit the function. The previous function resumes at line `number-7` and call `mergeSort` recursively with `[3,7]` and pauses at line `number-9`.
+Next It will pause the previous function at line `number-7`. And Resume at line `number-8` and call `mergeSort` recursively  with `[5]` and pause again at line `number-8`, which will exit. 
 
-![](https://i.imgur.com/jr2jbo4.png){: .full}
+![](https://i.imgur.com/yF0Dmqm.png){: .full}
 
-Next it will call `mergeSort` with `[3]` recursively then pause at line `number-7`. `mergeSort` with `[3]` will exit and then previous function will resume again at `number-7` and execute next line which will call call `mergeSort` with `[7]` recursively then pause at line `number-8`. `mergeSort` with `[7]` exits and then previous function will resume again at `number-8` and execute next line `stitch` function that will sort the array to `[3,7]` and exit.
+Therefore, function will resume at line `number-8` and execute `stitch` to sort the array. Hence the array will become `[5,8]` and exit the function. The previous function resumes at line `number-7` and call `mergeSort` recursively with `[3,7]` and pauses at line `number-9`.
+
+![](https://i.imgur.com/kEnaF5C.png){: .full}
+
+Next, it will call `mergeSort` with `[3]` recursively then pause at line `number-7`. 
+
+![](https://i.imgur.com/6Bb8EZy.png){: .full}
+
+
+`mergeSort` with `[3]` will exit and then previous function will resume again at `number-7` and execute next line which will call `mergeSort` with `[7]` recursively then pauses at line `number-8`. `mergeSort` with `[7]` exit function.
 
 ![](https://i.imgur.com/kZ1hvzE.png){: .full}
 
-Finally The 1st function will resume at line `number-8` and call `stitch` method to re-order the array `[1,2,3,4,5,6,7,8]` and finally exit.
+And then previous function will resume again at `number-8` and execute next line `stitch` function that will sort the array in ascending order to `[3,7]` and exit.
+
+
+![](https://i.imgur.com/xyLPW86.png){: .full}
+
+Next `1st` iteration function will resume at line `number-9` and `stitch` the array `[5,8]`  and `[3,7]` and reorder the array `A` to `[3,5,7,8]`. 
+
+![](https://i.imgur.com/bZgzA0b.png){: .full}
+
+
+Finally, the `1st` function will resume at line `number-8` and call `stitch` method to re-order the array `[1,2,3,4,5,6,7,8]` and finally exit.
 This way you get the sorted array.
 
-![](https://i.imgur.com/961lEJW.png){: .full}
+![](https://i.imgur.com/xBTClXY.png){: .full}
 
 Sorting is done! however let me explain you the stitch algorithm which is the core part or merge sort.
 
-## Merge sort Stich algorithm
+## Merge sort Stitch algorithm
 
 You might have noticed that `MergeSort` Method is calling stitch at every recursion method. Now I will explain the `stitch` function to you. This is the algorithm that takes `left`, `right` and original array. Then it will re-order the original array in ascending order.
 
