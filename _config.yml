@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Rupesh Tiwari - Founder of Fullstack Master
-email: info@rupeshtiwari.com
+email: rupesh.tiwari.info@gmail.com
 url: https://www.rupeshtiwari.com
 description: >-
   Rupesh is a world renowned Senior Software Architect & Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design & Web Development. Make your next project a success or save a late project.
