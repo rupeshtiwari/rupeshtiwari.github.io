@@ -1,6 +1,7 @@
 ---
 permalink: /
 hidden: true
+layout: splash
 classes: wide
 author_profile: false
 header:
