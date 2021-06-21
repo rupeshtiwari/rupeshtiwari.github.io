@@ -4,16 +4,21 @@ hidden: true
 layout: splash
 classes: wide
 author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/banner-rupesh.png
-  actions:
-    - label: "Download"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
 # header:
+  # overlay_color: "#000"
   # overlay_filter: "0.5"
-  # image: https://imgur.com/zipiW93.png
+  # overlay_image: /assets/images/banner-rupesh.png
+  # actions:
+    # - label: "Download"
+      # url: "https://github.com/mmistakes/minimal-mistakes/"
+      
+header:
+  overlay_filter: "0.5"
+  image: https://imgur.com/zipiW93.png
+  actions:
+    - label: "Fullstack Master"
+      url: "https://fullstackmaster.net/"
+  
 ---
 
    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
