@@ -96,24 +96,34 @@ author:
 
 footer:
   links:
-    - label: 'Rupesh Tiwari'
+    - label: 'Blogs for Developers'
       icon: 'fas fa-registered'
-      url: 'https://www.rupeshtiwari.com'
+      url: 'https://www.rupeshtiwari.com/posts'
     - label: 'Facebook'
       icon: 'fab fa-fw fa-facebook-square'
       url: 'https://www.facebook.com/fullstackmaster1'
     - label: 'LinkedIn'
       icon: 'fab fa-fw fa-linkedin'
       url: 'https://www.linkedin.com/in/rupesh-tiwari'
-    - label: 'Build Angular App MEAN Stack'
+    - label: 'Learn Angular'
       icon: 'fab fa-angular'
       url: 'https://fullstackmaster.net/course/3/mastering-meanjs'
-    - label: 'ELITE Angular Training'
+    - label: 'Become Software Developer Free'
       icon: 'fas fa-crown'
-      url: 'https://www.fullstackmaster.net/elite'
-    - label: 'PRO Angular Training'
+      url: 'https://github.com/rupeshtiwari#javascript-for-beginners-client-side'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'http://github.com/rupeshtiwari'
+    - label: 'Medium'
+      icon: 'fab fa-medium'
+      url: 'https://rupesh-tiwari.medium.com/'
+    - label: 'Dev.to'
+      icon: 'fab fa-dev'
+      url: 'https://dev.to/rupeshtiwari'
+    - label: 'Fullstack Master'
       icon: 'fas fa-graduation-cap'
-      url: 'https://www.fullstackmaster.net/pro'
+      url: 'https://www.fullstackmaster.net'
+
 
 defaults:
   # _posts
