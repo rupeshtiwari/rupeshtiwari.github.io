@@ -2,6 +2,7 @@
 permalink: /
 hidden: true
 classes: wide
+author_profile: false
 header:
   image: https://imgur.com/zipiW93.png
 ---
