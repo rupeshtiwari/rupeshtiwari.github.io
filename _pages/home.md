@@ -46,6 +46,11 @@ header:
       <div class="text-center">
         <a href="/about" class="btn-get-started scrollto">Read More</a>
       </div>
+      <div class="grid__wrapper">
+        {% for post in site.posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
       <div class="row icon-boxes">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
