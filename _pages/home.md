@@ -5,20 +5,19 @@ layout: splash
 classes: wide
 author_profile: false
 # header:
-  # overlay_color: "#000"
-  # overlay_filter: "0.5"
-  # overlay_image: /assets/images/banner-rupesh.png
-  # actions:
-    # - label: "Download"
-      # url: "https://github.com/mmistakes/minimal-mistakes/"
-      
+# overlay_color: "#000"
+# overlay_filter: "0.5"
+# overlay_image: /assets/images/banner-rupesh.png
+# actions:
+# - label: "Download"
+# url: "https://github.com/mmistakes/minimal-mistakes/"
+
 header:
-  overlay_filter: "0.5"
+  overlay_filter: '0.5'
   image: https://imgur.com/zipiW93.png
   actions:
-    - label: "Fullstack Master"
-      url: "https://fullstackmaster.net/"
-  
+    - label: 'Fullstack Master'
+      url: 'https://fullstackmaster.net/'
 ---
 
    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
@@ -35,7 +34,7 @@ header:
   <link href="assets/css/style.css" rel="stylesheet">
 
 <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" style="margin-top:100px">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
@@ -46,12 +45,16 @@ header:
       <div class="text-center">
         <a href="/about" class="btn-get-started scrollto">Read More</a>
       </div>
-      <div class="grid__wrapper">
+       <div class="section-title" style="margin-top:100px">
+          <h2>Recent Technical blogs for developers</h2>
+          <p>Visit recent JavaScript, Angular, Azure and Coding blogs</p>
+        </div>
+      <div class="grid__wrapper" style="margin-top:-50px">
         {% for post in site.posts limit:4 %}
-          {% include archive-single.html type="grid" %}
+          {% include blog-grid.html type="grid" %}
         {% endfor %}
-      </div>
-      <div class="row icon-boxes">
+      </div>  
+      <div class="row icon-boxes container"  style="margin-bottom:300px">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon"><i class="ri-stack-line"></i></div>
@@ -88,61 +91,31 @@ header:
     </div>
   </section><!-- End Hero -->
   <main id="main">
-    <!-- ======= About Section ======= -->
-    <!-- <section  class="about">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="section-title">
-          <h2 id="about"> About Me</h2>
-          <p class="subtitle">Rupesh provides a variety of resources such as visual courses and training materials. So far Rupesh has physically trained more than a thousand students, a couple of thousands online, and revel in a 95% repeat hire rate. </p>
-        </div>
-        <div class="row content">
-          <div class="col-lg-6">
-            <p class="about-description">
-              Rupesh brings something new to the world of web solution technologies, rather than mediocre agile methodologies. He brings transforming risk mitigation and project management skills and training on another comprehensive level. Rupesh is also a successful  <a href="https://www.pluralsight.com/authors/rupesh-tiwari"> Pluralsight Author </a>, professionally Rupesh is an expert at Angular, Express, Node.JS, Asp.net, <a href="http://www.rupeshtiwari.com/posts/#azure"> Microsoft Azure</a>, Object Oriented Design but with a particular focus on Service Oriented Architecture, Domain Driven Design and Clean Code, MEAN stack. 
-            </p>
-            <p class="about-description">
-              Full stack development job opportunities are increasing from 135,000 to 853,000. Teach yourself the coding sills you need to become a JavaScript <br>full stack developer in less than a year & get handsome pay packages from your dream companies. Learn to design and develop powerful modern web applications that form the foundation for apps, websites and more. Rupesh has created MEAN stack extensive course to teach you full stack development from scratch. Visit <a href="https://fullstackmaster.net/course/3/mastering-meanjs"> Mastering MEAN JS Full stack ultimate course</a> today! 
-            </p>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p class="about-description">
-              In recent times, Rupesh engages closely with the development team to determine
-              the best technical implementation methods for a product feature, as well as a reasonable
-              schedule of execution. Rupesh Tiwari has been making educational <a href="https://www.youtube.com/fullstackmaster"> YouTube tutorial videos </a>.
-              With over 200+ videos on his YouTube channel and about a thousands subscribers (and counting), his YouTube channel has garnered increasing views from Front End Website Solutions Technologies enthusiasts and development teams. New videos are released once in a week. 
-              His interest prompted him to participate in many GitHub open source projects. His recent popular project is <a href="https://www.npmjs.com/package/@fsms/angular-pubsub"> Angular Pub Sub framework </a> you can download from npm.
-            </p>
-            <a href="https://fullstackmaster.net/pro" class="btn-learn-more">Subscribe Course</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End About Section -->
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">
       <div class="container">
         <div class="row justify-content-end">
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-toggle="counter-up">200</span>
+              <span data-toggle="counter-up">500</span>
               <p>Happy Online Students</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-toggle="counter-up">50</span>
+              <span data-toggle="counter-up">150</span>
               <p>Projects</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-toggle="counter-up">15</span>
+              <span data-toggle="counter-up">17</span>
               <p>Years of experience</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-toggle="counter-up">60</span>
+              <span data-toggle="counter-up">100</span>
               <p>Happy Offline Students</p>
             </div>
           </div>
