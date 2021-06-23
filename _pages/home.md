@@ -34,7 +34,7 @@ header:
   <link href="assets/css/style.css" rel="stylesheet">
 
 <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center" style="margin-top:100px">
+  <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
@@ -45,16 +45,16 @@ header:
       <div class="text-center">
         <a href="/about" class="btn-get-started scrollto">Read More</a>
       </div>
-       <div class="section-title" style="margin-top:100px">
+       <div class="section-title">
           <h2>Recent Technical blogs for developers</h2>
           <p>Visit recent JavaScript, Angular, Azure and Coding blogs</p>
         </div>
-      <div class="grid__wrapper" style="margin-top:-50px">
+      <div class="grid__wrapper">
         {% for post in site.posts limit:4 %}
           {% include blog-grid.html type="grid" %}
         {% endfor %}
       </div>  
-      <div class="row icon-boxes container"  style="margin-bottom:300px">
+      <div class="row icon-boxes container">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon"><i class="ri-stack-line"></i></div>
