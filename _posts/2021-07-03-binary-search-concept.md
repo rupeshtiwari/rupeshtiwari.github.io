@@ -26,7 +26,7 @@ tags:
 
 ## Binary Search Concept
 
-Please watch this YouTube video from `@Errichto`. This is the best binary search video I have ever seen. Next solve all the problems as he is going in his lecture.
+Please watch [this YouTube video from Errichto](https://www.youtube.com/watch?v=GU7DpgHINWQ&list=PLl0KD3g-oDOHpWRyyGBUJ9jmul0lUOD80&index=3). This is the best binary search video I have ever seen. Next solve all the problems as he is going in his lecture.
 
 Binary search can be done on a given sorted array and it is is used to perform:
 
