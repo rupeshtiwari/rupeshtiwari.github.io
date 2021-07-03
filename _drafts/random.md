@@ -219,13 +219,11 @@ security principal name (SPN)
 
 Microsoft Authentication Library (MSAL)
 
-
 ## ADAL
 
-Active Directory Authentication Library (ADAL) 
+Active Directory Authentication Library (ADAL)
 
 Active Directory Authentication Library (ADAL) integrates with the Azure AD for developers (v1.0) endpoint, where MSAL integrates with the Microsoft identity platform. [Learn More...](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview#differences-between-adal-and-msal)
-
 
 ## OIDC
 
@@ -235,23 +233,25 @@ OpenID Connect (OIDC) - authentication and authorization protocol
 
 [Managed Identity Resource Provider (MSRP)](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-managed-identities-work-vm#how-it-works)
 
+## ATP
 
-## ATP 
 Azure Advanced Threat Protection ( ATP ) - Now it is known as "Microsoft Defender for Identity"
-
 
 ## SSPR
 
-Self-Service Password Reset 
-
-
-
-
-
+Self-Service Password Reset
 
 ## Delta Query
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request.
+
+## Workbook Playbook & Notebook
+
+Workbook : Visualize data by Kusto query. Azure Workbooks is a great tool for operations and DevOps teams because they can combine metrics and queries.
+
+Playbook: Playbooks are collections of procedures that can be run from Azure Sentinel in response to an alert or incident.
+
+Notebook: Azure Notebooks is an implementation of the widely used open-source `Jupyter Notebook`.
 
 ## How many VNets allowed in Azure
 
