@@ -300,6 +300,10 @@ function findMaximumInIncreasingDecreasingArray(array) {
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
+### All Binary Search Basic problems 
+
+Here is the link to [see all binary search basic questions](https://codepen.io/collection/ZMQobd)
+
 ### References
 
 - [Errichto Binary Search YouTube video](https://www.youtube.com/watch?v=GU7DpgHINWQ&list=PLl0KD3g-oDOHpWRyyGBUJ9jmul0lUOD80&index=3)
