@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/hnKqdLc.png
+image: https://i.imgur.com/YKvxckX.png
 header:
-  image: https://i.imgur.com/ulAWY5t.png
+  image: https://i.imgur.com/YKvxckX.png
   teaser: https://i.imgur.com/UQSsXt8.png
-  og_image: https://i.imgur.com/hnKqdLc.png
+  og_image: https://i.imgur.com/YKvxckX.png
 tags:
   - binarysearch
   - algorithms
