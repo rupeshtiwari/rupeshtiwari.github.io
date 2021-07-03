@@ -39,7 +39,7 @@ Binary search can be done on a given sorted array and it is is used to perform:
 > Divide your array in set of TRUE and FALSE values then find the First occurrence of TRUE or the last occurrence of TRUE. Binary Search Array should be partially false and partially true. We need to find the boundary between them.
 
 
-![](https://i.imgur.com/yI68ZFU.png) 
+![](https://i.imgur.com/yI68ZFU.png){: .full} 
 
 
 ## Binary Search Algorithm
