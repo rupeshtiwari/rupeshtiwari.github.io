@@ -105,12 +105,37 @@ So basically the rules that I follow in my project:
 - If you feature branch build is passing.
 - Then only merge your code to main/master branch.
 
-You can always setup branch policy that no one directly push to your main/master branch. Everyone has to create pull request. 
+You can always setup branch policy that no one directly push to your main/master branch. Everyone has to create pull request.
 
-That way you can secure your code base in master/main branch. 
+That way you can secure your code base in master/main branch.
 
-I hope this is helpful. 
+I hope this is helpful.
 
+## How to skip GitHub actions CI to run on push
+
+Sometime if you want to just update the project documents like readme file etc. and push your code and you do not want to run the entire CI to build, test and deploy etc. Then use the trick use `[skip CI]` in your commit comments. Also add the filter in your workflow template to not run build when `[skip CI]` text present in commit comments. 
+
+Add below expression in your workflow template:
+
+```yaml
+if: "!contains(github.event.head_commit.message, '[skip CI]')"
+```
+
+[Check my template file](https://github.com/rupeshtiwari/coding-examples-final-450-by-love-babbar/blob/main/.github/workflows/main.yaml).
+
+Here is example to skip ci build in GitHub actions:
+
+`chore: updating readme [skip CI]`
+
+See my CI build did not run 
+
+![](https://i.imgur.com/4SixDmE.png){: .full}
+
+![](https://i.imgur.com/XT4wwvh.png){: .full}
+
+
+
+Hope this article is helpful for all beginners for GitHub actions and node.js like me! 
 
 
 
