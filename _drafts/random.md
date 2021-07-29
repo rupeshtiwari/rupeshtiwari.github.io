@@ -79,7 +79,11 @@ Virtual Private Network (VPN). In Azure VPN is a type of Virtual Network Gateway
 
 ## VIP
 
-Virtual IP address. VIP is an IP address that doesn't correspond to an actual physical network interface.
+Virtual IP address aka frontend. VIP is an IP address that doesn't correspond to an actual physical network interface.
+
+## DIP
+
+A dynamic IP (DIP) pool is a range of IP addresses.
 
 ## BGP
 
@@ -133,11 +137,11 @@ Network Address Translation (NAT)
 
 ## NVA
 
-network virtual appliances (NVAs)
+Network Virtual Appliances (NVAs)
 
 ## HA Ports
 
-High Available Ports
+High Available Ports:  [High availability (HA) ports](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) is a type of load balancing rule that provides an easy way to load-balance all flows that arrive on all ports of an internal Standard Load Balancer. 
 
 ## WAF
 

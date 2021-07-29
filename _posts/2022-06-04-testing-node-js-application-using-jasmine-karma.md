@@ -133,7 +133,7 @@ You need to follow below steps to show your spec text in chrome browser:
 
 - Install npm i -D karma-jasmine-html-reporter
 - Open `karma.conf.js`
-- add 'kjhtml' in your reporter.
+- add `'kjhtml'` in your reporter.
 - add client:{clearContext:false}
 
 ```json
