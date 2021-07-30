@@ -59,7 +59,9 @@ In your angular project you will have the following things:
 - **ApiService** should call an angular HTTP client. It should not do any logic.
 - **Service** has business logic, makes HTTP calls using `ApiService` and updates the model if required. Example: use `apiService` to post HTTP to create items. On success get the new id, version from the output and update the model with the new version or id. If you are following NgRX then your effect will make HTTP calls and reducer will update store on action.
 
-## While Modeling Check List
+Note: This structure may differ as per your project architecture.
+
+## While Modeling What is my Check List
 
 You have been assigned a `PBI` or task where you have to come up with a solution and also write production code. Then it has 2 steps. First step is to model your solution and find the approach. Once you know the approach then do coding.
 
@@ -117,6 +119,19 @@ Design Angular components. You should be able to add Employee, show the added em
 `EmployeeList` Component is Dumb it takes list of employees render in table. It emits a delete message when the user clicks on the delete button.
 
 The `ManageEmployee` Component will read the employee list from store and it will implement delete use-case where it sends a message to delete employees.
+
+## Follow TDD strictly
+
+Write the test first before you write production code. That is called TDD ( Test Driven Development ). In code walkthrough ceremony, show you spec first before showing your code. If you write bad spec, it may cause build failure and slow down you and other people work as well.
+
+Do not use `new Date()` in your spec models. Rather use predictive time or create `IProvideDate` service and use it in your code base to provide datetime value. This way you can easily mock your date time.
+
+Mock any side-effects that can happen in your spec. Below are some list:
+
+- Date time
+- Set Timeout
+- Web API calls
+- Alert or Confirm
 
 ## While Writing Specs/Unit-Tests
 
