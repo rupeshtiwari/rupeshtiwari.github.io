@@ -93,16 +93,18 @@ However, you want to restrict both `subnet-data` and `subnet-business` resources
 ## Why do I create Subnets in Azure, how it help securing resources?
 
 I categorize Azure resources in 3 divisions:
-1- Public/Internet exposed resources
-2- Internal business resources
-3- Private resources
+
+- Public/Internet exposed resources
+- Internal business resources
+- Private resources
 
 In order to secure private resources over azure. We should restrict outside IP addresses to communicate our private Azure resources like Azure storage, DB, Key Vault etc.
 
 To secure resources in Azure we can use below Azure services:
-1- Azure Firewall
-2- Network Security Group
-3- Application Gateway. (2 and 3 are required when we have multiple subnets. Partitioning resources in various subnets are recommended also.)
+
+- Azure Firewall
+- Network Security Group
+- Application Gateway. (2 and 3 are required when we have multiple subnets. Partitioning resources in various subnets are recommended also.)
 
 For robust security, we must deploy both Azure Firewall and Azure Network Security Group or Azure Application Gateway. I personally prefer `Azure Firewall and Application Gateway`. Because Application Gateway provides easy and friendly way to manage resources.
 
@@ -139,12 +141,11 @@ If in your Azure, your are putting all resources in single subnet or no subnet j
 
 ## Securing Azure resources using Azure Firewall
 
-`Azure Firewall` can filter all perimeter network. You can also put filter such that all the traffic towards your VNet should go through Firewall. If you have hybrid connection then on-premise traffic can also be diverted to go through Azure Firewall. 
+`Azure Firewall` can filter all perimeter network. You can also put filter such that all the traffic towards your VNet should go through Firewall. If you have hybrid connection then on-premise traffic can also be diverted to go through Azure Firewall.
 
 ![](https://i.imgur.com/pcZVspH.png)
 
-Your subnets within the Spoke VNet can be configured to use UDR (user defined routes). Where you can put the routing rules. Like `subnet-web` can not talk to `subnet-data` etc. Also we need to setup rules that traffic on subnets within spoke VNet should go out through `Azure Firewall` only. 
-
+Your subnets within the Spoke VNet can be configured to use UDR (user defined routes). Where you can put the routing rules. Like `subnet-web` can not talk to `subnet-data` etc. Also we need to setup rules that traffic on subnets within spoke VNet should go out through `Azure Firewall` only.
 
 ## References
 
