@@ -252,7 +252,7 @@ Mostly, this depends on velocity of your team. Run your sprint couple of weeks a
 
 If you are doing 2 week sprint. Then don't take 3 point stories more than once.
 
-## How are you implementing Features in sprint.
+## How are you implementing Features in sprint?
 
 Take business requirement as feature. Create Feature in Team foundation or any tool you are using. Then within the feature you can start creating stories. Story can be pure technical if you want to setup some framework or environment etc. Story could be tangible where business user can see something. However, keep your feature very thin focused on one thing.
 
@@ -276,6 +276,25 @@ Below are the client side tasks assuming you are working on Angular framework.
 1- Task to work on `Components`
 2- Task to work on `Services & Composition (if required)`  
 3- Task to work on `DATA + In-Memory Api`
+
+## Should you take a 3 pointer story in your 2 week sprint? 
+
+Entire team should think on this and reply. Don't hesitate to dis-agree with me and feel-free to give your opinion. 
+
+As per my believe don't take any story which is at the higher end of 3 points. ( when you think it is 3-4 or 3-5 pointer stories). 
+
+If one person thinks every story is 2 or 3 points which is okay. However, the rest of the members should think that one person is not going to code all the stories. Therefore, You should also think that you are going to code the story and do  your estimation. 
+
+Keep in mind every use case has 3 part by default: 
+- Build Client 
+- Build Server 
+- Integrate 
+
+You should do a staggered deployment to QA. Deploy something on Thursday. An entire story by Next week Monday max to max if it is a 3 pointer. Otherwise by Friday if it is 2 pointers. 
+  
+3 pointer stories which are higher 3 points above 3 points are mostly stories which we are not able to deliver or we end up working late night and delivery by WEDNESDAY.  We should avoid these types of stories to reduce STRESS and LATE night work. And bad quality code. 
+
+Therefore, either you split those 3-4 or 3-5 point stories. While splitting whether it is testable or not testable that should not matter according to me. As far as development team can write TDD and develop the piece of work and deploy to QA. It should be okay. Finally when we do the Integration story that time Business can see and TEST.
 
 ## Conclusion
 
