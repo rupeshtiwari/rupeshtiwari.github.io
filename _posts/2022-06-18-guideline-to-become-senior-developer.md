@@ -1,5 +1,5 @@
 ---
-title: Guideline to Become Senior Developer
+title: Guideline to Become Responsible Senior Developer
 date: 2022-06-18 00:00 +0000
 description: Senior Developer Coding Guideline
 author_profile: true
@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
@@ -26,9 +26,17 @@ tags:
 
 In this article, I will list out all the best practices that a developer should follow to become a responsible senior developer.
 
+## What do I mean by Responsible developer?
+
+A responsible developer has following attributes:
+
+- While working if you learned something, you document them and share with your collogues in code walkthrough ceremony.
+- While you are working on project and you find some code refectory that you could do to improve code base quality. You will do that and inform your senior about that.
+- Whenever, your senior explains you something important related to project or any best-practice. You should note that and next time when you participate in meeting make sure you recollect the previous learning and apply it in future discussions. Example: In your angular project, If you have been told that you should never mutate `model` state in `component` class. You must ask question why? Next you should note this point and remember. Next time during modeling session, if someone propose solution where they are trying to mutate model in component you should bring this point and correct them.
+
 ## What is a modeling session for developers?
 
-In the modeling session developers discuss the business user acceptance requirements. They come up with an optimal approach to solve the business problems by following the clean code principle and other policies and patterns that your company is already following. Next they divide the solutions into small tasks, distribute among them and go to their respective work stations and write the code, write the specs/unit-test and deploy to QA.
+After sprint grooming and planning is done. Developers collaborate together and discuss high level solution/approach to the given user story. This session is called `modeling session`. In the modeling session developers discuss the given Business User Acceptance Requirements. They come up with an optimal approach to solve the problems by following the `clean code principle`, `best practices`, `their industry practices and patterns`, design philosophy like `DDD (Domain Driven Design), SOA (Service Oriented Architecture)` etc. Next they divide the solutions into small tasks, distribute among them and go to their respective work stations and write the `code`, write the `specs/unit-test` and `deploy` to QA.
 
 ## What do Architects expect from Senior Developers?
 
@@ -42,15 +50,15 @@ In the modeling session developers discuss the business user acceptance requirem
 
 I would recommend creating a chat group called Architecture Oversight Feedback group where developers post their source code pictures as they develop if architects are not available to check your source code.
 
-## How to improve on modeling and become a responsible developer?
+## How to improve on modeling and solve problems?
 
-You should learn fundamental building blocks of your Angular project. Then we will see what the check-list you will follow while doing modeling and showing your approach to the architect to avoid mistakes. Finally, you will learn what you should unit-test.
+First thing is You should learn fundamental building blocks of `your project` that you have been assigned. Then I will explain you what are the check-list you can follow while doing modeling. I will also show you my approach that I follow to solve problems to avoid architectural mistakes. Finally, you will learn in your project what are the files you should unit-test them.
 
 Let's understand our angular project architecture.
 
 ## Angular Project Architecture
 
-In your angular project you will have the following things:
+According to me, In a typical angular project you will have the following things:
 
 - **Model** is a `data-structure` that has public properties. Do not put any logic keep this as `datastructure` class.
 - **Store** is the home for the model and it has all the queries made on the model.  
@@ -59,26 +67,30 @@ In your angular project you will have the following things:
 - **ApiService** should call an angular HTTP client. It should not do any logic.
 - **Service** has business logic, makes HTTP calls using `ApiService` and updates the model if required. Example: use `apiService` to post HTTP to create items. On success get the new id, version from the output and update the model with the new version or id. If you are following NgRX then your effect will make HTTP calls and reducer will update store on action.
 
-Note: This structure may differ as per your project architecture.
+![](https://i.imgur.com/6i2SxSG.png){: .full}
 
-## While Modeling What is my Check List
+{: .notice--warning}
+⚠️ Note: This project structure may differ as per your company's project architecture.
 
-You have been assigned a `PBI` or task where you have to come up with a solution and also write production code. Then it has 2 steps. First step is to model your solution and find the approach. Once you know the approach then do coding.
+## While Modeling What guideline I should follow?
+
+You have been assigned a `PBI` or task where you have to come up with a solution and also write production code. First step is to model your solution and find the approach. Discuss your approach with senior After that you can start coding.
 
 ### Overall Modeling Strategy
 
 Read below before you are solving any problem for a given task or story.
 
 1. Follow the [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), check if you are duplicating any logic if yes then justify. Try to avoid it. If you can not justify and you have to put a duplicate then talk to the architect.
-
-_Don’t avoid **DRY** because it may cause many deep hidden design/technical issues._
-
+   _Don’t avoid **DRY** because it may cause many deep hidden design/technical issues._
 2. Follow [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), check if the logic is spread across many places already or in your design then put them all in one place. And manage the related concerns in one place.
 3. Following the [SOLID principle](https://en.wikipedia.org/wiki/SOLID) strictly, this is mandatory.
+4. Be consistent, check existing design in your project most of the time you will be solving a problem which is already solved. Therefore, you should not waste time to re-invent the wheels. Just follow the same design and structure that you have in your project. It will save your and team time. This is most important principle to remember always be `consistent in your project`.
 
-### Designing Angular Components
+Later, I will give you some examples about `DRY` and `Separation of Concerns` principles.
 
-Read below before you are going to decide what component I need to create.
+### Use below guidelines while designing/solving Angular Problems
+
+Read below before you are going to decide your solution in Angular project.
 
 1. **Models** can be directly updated from HTML since we are doing 2 way-data binding and template form. Model gets updated directly from HTML.
 2. Models can’t be updated directly from component methods. You must send a message to update the model. Write a service to listen to messages and update models.
@@ -87,7 +99,7 @@ Read below before you are going to decide what component I need to create.
 5. The **Child Component** should only get input and emit the output event. It should not have any logic to decide whether to show a button or not. This logic should be in parent.
 6. If you have parent and child components, make sure all use-case implementations are in the **Parent component** only. So in the previous example `ClassificationSetComponent` will have add level, delete level, create classification set etc.
 
-#### What is the Smart Component?
+### What is the Smart Component?
 
 Most of the Parent components are modeled as Smart components. Below are the characteristics of Smart Components:
 
@@ -98,7 +110,7 @@ Most of the Parent components are modeled as Smart components. Below are the cha
 - It should pass all the data required for its child component.
 - It should implement the @Output events coming from the child component.
 
-#### What is the Presentation Component?
+### What is the Presentation Component?
 
 Child component which is only responsible to render data is called `Presentation` or `Dumb` Component. Below are the characteristics of Smart Components:
 
@@ -108,7 +120,7 @@ Child component which is only responsible to render data is called `Presentation
 
 Once your design or modeling is done please read the checklist again and make sure your discovered approach is not violating any of these points. If you need help bring your architects in the room and ask questions.
 
-## Example: Design Manage Employee Angular Components 
+### Example: Model Manage Employee Angular Components 
 
 **Requirements:**
 
@@ -120,7 +132,9 @@ Design Angular components. You should be able to add Employee, show the added em
 
 The `ManageEmployee` Component will read the employee list from store and it will implement delete use-case where it sends a message to delete employees.
 
-## Follow TDD strictly
+With above knowledge you should be good to solve any angular problems. Now if you started writing code. You must start writing unit test first, then write corresponding production code. That is what we call Test Driven Development TDD. Lets understand what are the files you should test and what best practice you should follow.
+
+## Follow TDD (Test Driven Development) strictly
 
 Write the test first before you write production code. That is called TDD ( Test Driven Development ). In code walkthrough ceremony, show you spec first before showing your code. If you write bad spec, it may cause build failure and slow down you and other people work as well.
 
@@ -133,7 +147,7 @@ Mock any side-effects that can happen in your spec. Below are some list:
 - Web API calls
 - Alert or Confirm
 
-## While Writing Specs/Unit-Tests
+### While Writing Specs/Unit-Tests
 
 You need to write specs for the following things:
 
@@ -143,6 +157,8 @@ You need to write specs for the following things:
 4. **Store**
 
 ### Testing Angular Service
+
+Angular service is where I will write business logic and web api calls. So we must assert all the mutation done on model and any api call happened with correct payload and URL.
 
 You must assert the following conditions:
 
@@ -177,7 +193,41 @@ You must test your component when it is created without model data.  Another sc
 
 - Make sure you pass correct parameters to the angular `HttpClient` service.
 
-## Practical Modeling Example 1
+### Testing Models
+
+Mostly you will try to keep your models `anemic` in client side. Rather write `service` and put business logic over there. So I would advise not to write any specs on models.
+
+### Testing DateTime
+
+If your model is use property with date time type. Then never-ever use `new Date()` to assign the value. Always create a dedicated service to provide you new Date. So that you can always mock that service while testing. You must make your date predictable every time so that It does not break in build machine.
+
+Create a `SystemDateTimeProvider` class and use this class in your service to create model with date time.
+
+```ts
+import { Injectable } from '@angular/core';
+
+export abstract class DateTimeProvider {
+  abstract now(): number;
+  abstract new(): Date;
+}
+
+@Injectable()
+export class SystemDateTimeProvider extends DateTimeProvider {
+  now(): number {
+    return Date.now();
+  }
+
+  new(): Date {
+    return new Date();
+  }
+}
+```
+
+In your spec you can now easily mock the `new()` method and return some constant date that will always remain same and never break in build machine or some other person machine.
+
+## Modeling Examples
+
+### Practical Modeling Example 1
 
 **Requirement:**
 
@@ -198,7 +248,7 @@ So in the above example we are violating both the DRY and Separation of Concerns
 1. Subscribe Approval Received and lock widget logic is in each and every widget, which is a violation of the DRY principle. The `WidgetStack` component can only subscribe to the `ApprovalReceived` event and pass an input value to all the widgets to lock them.
 2. We also violated separation of concern IT Ops is not supposed to listen to business events and change the button that belongs to widget service. Better solution is to move the button inside the widget stack and let the widget stack hide and show the button.
 
-## Practical Modeling Example 2
+### Practical Modeling Example 2
 
 **Requirement:**
 
@@ -236,7 +286,9 @@ Create Classification Definition as a presentation component.
 - Add template form in `html` with validations
 - Output create when the user wants to create a new definition
 
-## Guideline for assigning Hours to Sprint Story
+## Sprint Guidelines for senior developers
+
+### Guideline for assigning Hours to Sprint Story
 
 If you are following 2 week sprint. Then I would put below hours to the points. Sprint stories could be assigned points. We can assign 1,2 or 3 point. Here is the map of point to hours.
 
@@ -246,17 +298,17 @@ If you are following 2 week sprint. Then I would put below hours to the points. 
 
 Note: this hours can change based on your team velocity or capability of development.
 
-## How much point stories total I should take in sprint?
+### How much point stories total I should take in sprint?
 
 Mostly, this depends on velocity of your team. Run your sprint couple of weeks and check how much your team is able to deliver. Based on that you can decide how much you can take in sprint.
 
 If you are doing 2 week sprint. Then don't take 3 point stories more than once.
 
-## How are you implementing Features in sprint?
+### How are you implementing Features in sprint?
 
 Take business requirement as feature. Create Feature in Team foundation or any tool you are using. Then within the feature you can start creating stories. Story can be pure technical if you want to setup some framework or environment etc. Story could be tangible where business user can see something. However, keep your feature very thin focused on one thing.
 
-## Guideline to create Stories for Fullstack (Server work and Client work) feature.
+### Guideline to create Stories for Fullstack (Server work and Client work) feature.
 
 I would recommend not doing Fullstack story in your sprint. If you are 2 week sprint.
 However, if you have client heavy work and small work in server which can be doable within sprint. And you can deliver to QA by next Tuesday of next week ( ending week of sprint ). Otherwise, please don't take Fullstack stories. Split your stories in 2 part. One story is to build client side. One story is to build server side and integrate server to UI. Some time if server side story is large I would say split 2nd story further and create over all 3 stories.
@@ -269,7 +321,7 @@ However, if you have client heavy work and small work in server which can be doa
 
 Each story can be 1, 2 or 3 pointer based on the effort required to develop them.
 
-## Guideline to create Tasks for a pure Client side Story
+### Guideline to create Tasks for a pure Client side Story
 
 Below are the client side tasks assuming you are working on Angular framework.
 
@@ -277,22 +329,23 @@ Below are the client side tasks assuming you are working on Angular framework.
 2- Task to work on `Services & Composition (if required)`  
 3- Task to work on `DATA + In-Memory Api`
 
-## Should you take a 3 pointer story in your 2 week sprint? 
+### Should you take a 3 pointer story in your 2 week sprint?
 
-Entire team should think on this and reply. Don't hesitate to dis-agree with me and feel-free to give your opinion. 
+Entire team should think on this and reply. Don't hesitate to dis-agree with me and feel-free to give your opinion.
 
-As per my believe don't take any story which is at the higher end of 3 points. ( when you think it is 3-4 or 3-5 pointer stories). 
+As per my believe don't take any story which is at the higher end of 3 points. ( when you think it is 3-4 or 3-5 pointer stories).
 
-If one person thinks every story is 2 or 3 points which is okay. However, the rest of the members should think that one person is not going to code all the stories. Therefore, You should also think that you are going to code the story and do  your estimation. 
+If one person thinks every story is 2 or 3 points which is okay. However, the rest of the members should think that one person is not going to code all the stories. Therefore, You should also think that you are going to code the story and do your estimation.
 
-Keep in mind every use case has 3 part by default: 
-- Build Client 
-- Build Server 
-- Integrate 
+Keep in mind every use case has 3 part by default:
 
-You should do a staggered deployment to QA. Deploy something on Thursday. An entire story by Next week Monday max to max if it is a 3 pointer. Otherwise by Friday if it is 2 pointers. 
-  
-3 pointer stories which are higher 3 points above 3 points are mostly stories which we are not able to deliver or we end up working late night and delivery by WEDNESDAY.  We should avoid these types of stories to reduce STRESS and LATE night work. And bad quality code. 
+- Build Client
+- Build Server
+- Integrate
+
+You should do a staggered deployment to QA. Deploy something on Thursday. An entire story by Next week Monday max to max if it is a 3 pointer. Otherwise by Friday if it is 2 pointers.
+
+3 pointer stories which are higher 3 points above 3 points are mostly stories which we are not able to deliver or we end up working late night and delivery by WEDNESDAY. We should avoid these types of stories to reduce STRESS and LATE night work. And bad quality code.
 
 Therefore, either you split those 3-4 or 3-5 point stories. While splitting whether it is testable or not testable that should not matter according to me. As far as development team can write TDD and develop the piece of work and deploy to QA. It should be okay. Finally when we do the Integration story that time Business can see and TEST.
 
