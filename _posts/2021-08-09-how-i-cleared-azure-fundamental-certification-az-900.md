@@ -28,15 +28,15 @@ tags:
 
 ## How to Motivate yourself?
 
-In order to go out of you comfort zone and do something is the most challenging work. You have to keep yourself motivated that is the `mantra` and also difficult work. Many people loose their heart and stop working towards their goal. So I would ask you to first find your inspiration behind the work that you are doing. Find our why you want to do something get answer and stick to it. Whenever you get de-motivated read the answer that you found before starting your journey and motivate yourself. Or find out new motivation to work again.
+In order to go out of you comfort zone and do something is the most challenging work. You have to keep yourself motivated that is the `mantra` and also difficult work. Many people loose their heart and stop working towards their goal. So I would ask you to first find your inspiration behind the work that you are doing. Find/discover why you want to do/become something? Get their answers and stick to it. Whenever you get de-motivated read the answers that you discovered before starting your journey and motivate yourself. Or find out new motivation to work again and get going.
 
-Very important thing is to keep yourself motivated to prepare and give exams. Specially when you are a working professional and having married with family and kids. You will be almost busy with work and family and seldom get chance to carve out time to learn new things.
+Very important thing is to keep yourself motivated to prepare and give exams. Specially, when you are a working professional and having married with family and kids. You will be almost busy with work and family and seldom get chance to carve out time to learn new things.
 
-I am getting up at 5 AM (yes sacrificing my favorite sleep) and scheduling my studies accordingly. I used to learn Azure in the morning time before my office starts. In order to keep my self motivated I used to read [Swami Vivekananda](https://en.wikipedia.org/wiki/Swami_Vivekananda). One of his best quote that I remember is:
+So what and how I did? Well, I am getting up at 5 AM (yes sacrificing my favorite sleep) and scheduling my studies accordingly. I used to learn Azure in the morning time before my office starts. Like I said you have to keep yourself motivated and find your inspiration. In order to keep my-self motivated, I am reading [Swami Vivekananda](https://en.wikipedia.org/wiki/Swami_Vivekananda). One of his best quotes that I remember is:
 
 _"Whatever you believe, that you will be. [There is nothing to obstruct you!"_](https://quoteideas.com/swami-vivekananda-quotes/)
 
-So find-out your motivation and keep yourself inspired and keep working towards upgrading your IT skills.
+So find-out your motivation and keep yourself inspired and keep working towards upgrading your IT skills or goal.
 
 ## Will AZ-900 exam certification expires?
 
