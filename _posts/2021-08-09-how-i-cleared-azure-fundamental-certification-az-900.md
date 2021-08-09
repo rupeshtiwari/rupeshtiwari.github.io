@@ -81,13 +81,15 @@ Next it will route you for next learning module
 
 ### Read previous Az 900 exam questions
 
-For any exam you must first understand the concepts plus you must also remember couple of things. You must have to remember there is no short-cut. This is very important step. Let's discuss how I prepared?
+For any exam you must first understand the concepts plus you must also remember couple of concepts and answers. Yes!, you must have to remember or learn by-heart few things. There is no short-cut 😃. This is very important step. Let's discuss how I prepared?
 
 Did you remember in our college days. We used to attain daily class lecture and understand the concepts. However, before exam we used to first understand and prepare all the previous year questions and then go for exam. The same strategy I followed. I finished my homework by reading concepts from Microsoft on-line free training. Then I found many free resources to get previous Az-900 questions and learn them. I prepared [from this link](https://www.exam-answer.com/microsoft/az-900) and [this link](https://www.examtopics.com/exams/microsoft/az-900/). I also took paid service to practice for exam ( this is not compulsory for you ).
 
 ## Finally You will schedule for **exam**
 
-Scheduling exam is an on-line process. You have to pay $99 as of today this is the fee.
+Scheduling exam is an on-line process. You have to pay $99 as of today this is the fee. [Here is the link](https://docs.microsoft.com/en-us/learn/certifications/exams/az-900) to schedule for Az-900. As much possible try for going to give exam in center or lab. I tried to avoid from home.
+
+![](https://i.imgur.com/nfTKBXd.png){: .full}
 
 ## Exam from home or Center?
 
