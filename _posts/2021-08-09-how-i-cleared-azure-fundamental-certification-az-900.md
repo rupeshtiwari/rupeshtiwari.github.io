@@ -36,7 +36,7 @@ In order to keep my self motivated I used to read [Swami Vivekananda](https://en
 
 _"Whatever you believe, that you will be. [There is nothing to obstruct you!"_](https://quoteideas.com/swami-vivekananda-quotes/)
 
-So foldout your motivation and keep yourself inspired and upgrade your IT skills.
+So find-out your motivation and keep yourself inspired and keep working towards upgrading your IT skills.
 
 ## What should I read for Az 900?
 
@@ -59,7 +59,7 @@ Once you finish your on-line course you will receive badges from Microsoft like 
 
 ![](https://i.imgur.com/tlA7Tod.png){: .full}
 
-### Solve Question Answers given after each course in Microsoft on-line.
+### Solve Question Answers given after each module
 
 After finishing each module you will be asked questions. Make sure you give them to concrete your understanding.
 
@@ -97,7 +97,7 @@ Here is me standing in-front of my exam building facility.
 
 I was supposed to put all belongings like (mobile, watch, keys, cards) inside the locker. Then I entered in the exam room with Mask (mandatory).
 
-Azure 900 exam was 48 minutes and 38 questions. I attempted all questions since there was no negative marking.
+Azure 900 exam was 48 minutes and 38 questions. I attempted all questions since there was no negative marking. Well I finished my exam within 20 minutes since it won't take exam 48 mins to finish.
 
 ## You will get score immediately
 
@@ -110,7 +110,6 @@ The good part is you will get you score after completing exam. My score is 950.
 Next you can go to [Microsoft Certificate Dashboard](https://www.microsoft.com/en-us/learning/dashboard.aspx) and download your certificate.
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3c6d3cd0-842d-4b00-bc7c-8ff9c9f6a17c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
 
 ## Thanks
 
