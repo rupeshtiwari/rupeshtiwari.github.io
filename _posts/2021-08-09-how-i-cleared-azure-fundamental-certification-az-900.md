@@ -28,17 +28,21 @@ tags:
 
 ## How to Motivate yourself?
 
+In order to go out of you comfort zone and do something is bit challenging work. You have to keep yourself motivated that is the `mantra` and also difficult work. Many people loose their heart and stop working towards their goal. So I would ask you to first find your inspiration behind the work that you are doing. Find our why you want to do something get answer and stick to it. Whenever you get de-motivated read the answer that you found before starting your journey and motivate yourself. Or find out new motivation to work again.
+
 Very important thing is to keep yourself motivated to prepare and give exams. Specially when you are a working professional and having married with family and kids. You will be almost busy with work and family and seldom get chance to carve out time to learn new things.
 
-I am getting up at 5 AM and scheduling my studies accordingly. I used to learn Azure in the morning time before my office starts.
-
-In order to keep my self motivated I used to read [Swami Vivekananda](https://en.wikipedia.org/wiki/Swami_Vivekananda). One of his best quote that I remember is:
+I am getting up at 5 AM (yes sacrificing my favorite sleep) and scheduling my studies accordingly. I used to learn Azure in the morning time before my office starts. In order to keep my self motivated I used to read [Swami Vivekananda](https://en.wikipedia.org/wiki/Swami_Vivekananda). One of his best quote that I remember is:
 
 _"Whatever you believe, that you will be. [There is nothing to obstruct you!"_](https://quoteideas.com/swami-vivekananda-quotes/)
 
 So find-out your motivation and keep yourself inspired and keep working towards upgrading your IT skills.
 
-## What should I read for Az 900?
+## Will AZ-900 exam certification expires?
+
+The good part of exam AZ-900 is it never expires. It will remain in your profile forever as valid certificate. Other role based Azure exams will expire every 2 year or so. However, you can give renewal exam that is free of cost to update your certificates.
+
+## What should I read for preparing Az 900 exam?
 
 The best resource for me was [Microsoft Azure on-line free courses for Az 900](https://docs.microsoft.com/en-us/learn/certifications/exams/az-900). You should finish that course first which is divided in 6 parts.
 
@@ -61,7 +65,7 @@ Once you finish your on-line course you will receive badges from Microsoft like 
 
 ### Solve Question Answers given after each module
 
-After finishing each module you will be asked questions. Make sure you give them to concrete your understanding.
+After finishing each module from on-line Microsoft learning material. You will be asked questions. Make sure you give them to concrete your understanding.
 
 **Sample Questions**
 
@@ -77,7 +81,9 @@ Next it will route you for next learning module
 
 ### Read previous Az 900 exam questions
 
-Next you must read some of the previous questions that already came in AZ-900 exams. I prepared [from this link](https://www.exam-answer.com/microsoft/az-900).
+For any exam you must first understand the concepts plus you must also remember couple of things. You must have to remember there is no short-cut. This is very important step. Let's discuss how I prepared?
+
+Did you remember in our college days. We used to attain daily class lecture and understand the concepts. However, before exam we used to first understand and prepare all the previous year questions and then go for exam. The same strategy I followed. I finished my homework by reading concepts from Microsoft on-line free training. Then I found many free resources to get previous Az-900 questions and learn them. I prepared [from this link](https://www.exam-answer.com/microsoft/az-900) and [this link](https://www.examtopics.com/exams/microsoft/az-900/). I also took paid service to practice for exam ( this is not compulsory for you ).
 
 ## Finally You will schedule for **exam**
 
