@@ -28,7 +28,7 @@ tags:
 
 ## How to Motivate yourself?
 
-In order to go out of you comfort zone and do something is bit challenging work. You have to keep yourself motivated that is the `mantra` and also difficult work. Many people loose their heart and stop working towards their goal. So I would ask you to first find your inspiration behind the work that you are doing. Find our why you want to do something get answer and stick to it. Whenever you get de-motivated read the answer that you found before starting your journey and motivate yourself. Or find out new motivation to work again.
+In order to go out of you comfort zone and do something is the most challenging work. You have to keep yourself motivated that is the `mantra` and also difficult work. Many people loose their heart and stop working towards their goal. So I would ask you to first find your inspiration behind the work that you are doing. Find our why you want to do something get answer and stick to it. Whenever you get de-motivated read the answer that you found before starting your journey and motivate yourself. Or find out new motivation to work again.
 
 Very important thing is to keep yourself motivated to prepare and give exams. Specially when you are a working professional and having married with family and kids. You will be almost busy with work and family and seldom get chance to carve out time to learn new things.
 
