@@ -61,7 +61,7 @@ Use one of the following methods to classify and protect existing content:
 - **Cloud data storage**: Use [Microsoft Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/azip-integration) to apply your labels to documents in Box, SharePoint, and OneDrive.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 **What are the default labels for classification in Azure Information Protection?**
 Personal, Public, General, Confidential, and Highly Confidential

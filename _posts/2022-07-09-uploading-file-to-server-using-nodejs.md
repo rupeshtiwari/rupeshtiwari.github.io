@@ -35,7 +35,7 @@ On the client side we need to use a `file` type `<input>` html element that can 
 The input element with `type=”file”` allows us to choose one or more files from your device (mobile or machine). That chosen file can be uploaded to the server using form submission.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Using the File API, which was added to the DOM in HTML5, it's now possible for web content to ask the user to select local files and then read the contents of those files. This selection can be done by either using an HTML `<input type="file">` element or by drag and drop. The File API makes it possible to access a FileList containing File objects representing the files selected by the user.
 
@@ -95,6 +95,7 @@ app.post('/fileupload', (req, res) => {
 ![](https://i.imgur.com/r1Iz2mM.png){: .full}
 
 ## Inspecting multipart form data
+
 I told you that client browser can submit the file content in binary data. If you want to visualize the form data. Then upload any file and use [`fiddler`](https://www.telerik.com/fiddler) and check how content in binary data format looks like.
 
 ![](https://i.imgur.com/NlnKSAp.png){: .full}

@@ -199,11 +199,11 @@ echo "Return Code:" %ERRORLEVEL%
 Using `COM object` created from `Shell.Application` class. Use `namespace().items()` to get all items then copy them to destination folder. Make sure destination folder exist before you copy. Also this way of un-archiving files seems lil lengthy. However, I found that COM method to un-archive files are reliable since it is not modifying the modified date time of the files inside the zip file.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 For example if there is a file called as `Web.config` inside your `web.zip\Content\website` folder. Then if the actual modified date time is `5/4/2021 07:00:11 AM` then this will show exact same time. However, if u use powershell cmdlet `Expand-Archive` or .Net `ExtractToDirectory` methods they will sometime display `+1` hour so they will show file `lastwritetime` as `5/4/2021 08:00:11 AM`. Note here it is showing `8AM` rather `7AM`.
 
-Example: 
+Example:
 
 ```powershell
 $shell = new-object -com Shell.Application

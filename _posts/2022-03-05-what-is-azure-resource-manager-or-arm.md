@@ -37,7 +37,7 @@ The following image shows the role Azure Resource Manager plays in handling Azur
 ![](https://imgur.com/H2jU5kP.png){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
  ARM new functionality initially released through **APIs** will be represented in the **portal** within **180** days of initial release.
 
@@ -83,7 +83,7 @@ You can move a resource from one resource group to another group.
 When creating a resource group, you need to provide a location.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 **"Why does a resource group need a location?"** And, if the resources can have different locations than the resource group, why does the resource group location matter at all?" The resource group stores metadata about the resources. When you specify a location for the resource group, you're specifying where that metadata is stored. For compliance reasons, you may need to ensure that your data is stored in a particular region.
 See [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-groups).
@@ -111,7 +111,7 @@ You can [apply tags](https://docs.microsoft.com/en-us/azure/azure-resource-manag
 A resource can connect to resources in other resource groups.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
  You can have a web app that connects to a database in a different resource group. These two resources are related but don't share the same lifecycle however they can connect to each other.
 
@@ -128,7 +128,7 @@ You can deploy up to 800 instances of a resource type in each resource group.
 Some resources can exist outside of a resource group. These resources are deployed to the [subscription](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-subscription), [management group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-management-group), or [tenant](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant). Only specific resource types are supported at these scopes.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 ARM **Never taken down for maintenance** activities. ARM REST API are distributed across region and Availability Zones/regions.
 

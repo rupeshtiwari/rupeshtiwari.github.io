@@ -33,7 +33,7 @@ tags:
 ### What are some cloud computing advantages?
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember the sentence [**GASHED**](https://dictionary.cambridge.org/us/dictionary/english/gashed).
 **G** = **G**eo-distribution
@@ -104,7 +104,7 @@ The following chart illustrates the various levels of responsibility between a c
 It is a PaaS model. Normally used by developers to build applications faster. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code. Serverless architectures are highly scalable and event-driven, only using resources when a specific function or trigger occurs.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 The "serverless" name comes from the fact that the tasks associated with infrastructure provisioning and management are invisible to the developer. This approach enables developers to increase their focus on the business logic, and deliver more value to the core of the business.
 

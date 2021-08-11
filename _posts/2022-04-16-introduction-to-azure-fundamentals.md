@@ -63,7 +63,7 @@ Take Azure fundamentals if you:
 It's the **delivery of computing services over the internet**, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Save your company money 💰 "You'll only need to pay for **the resources and computing time that you use**".
 
@@ -91,7 +91,7 @@ The cloud provides on-demand access to:
 ### What are some cloud computing advantages?
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember the sentence [**GASHED**](https://dictionary.cambridge.org/us/dictionary/english/gashed).
 **G** = **G**eo-distribution
@@ -141,7 +141,7 @@ The following chart illustrates the various levels of responsibility between a c
 It is a PaaS model. Normally used by developers to build applications faster. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code. Serverless architectures are highly scalable and event-driven, only using resources when a specific function or trigger occurs.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 The "serverless" name comes from the fact that the tasks associated with infrastructure provisioning and management are invisible to the developer. This approach enables developers to increase their focus on the business logic, and deliver more value to the core of the business.
 
@@ -184,7 +184,7 @@ There is **Network Switch** which allows connectivity to all of the servers.
 Azure Fabric Controller is connected to **ORCHESTRATOR** software. An Orchestrator responds to user requests.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 In-fact **Azure Orchestrator** manages everything that happens in Azure. Like it can package the Virtual Machine request coming from user and send to Azure Fabric Controller to create it.
 
@@ -225,7 +225,7 @@ Let's take a quick tour of the high-level services Azure offers.
 ![](https://i.imgur.com/YsSaBXj.png){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember this sentence "_I can_ **DISBAND [CWM](https://wordunscrambler.me/dictionary/cwm)**"
 **D** = **D**atabases
@@ -280,7 +280,7 @@ Connect to large set of your IOT assets to monitor and manage. Analyze their dat
 Azure provides four main types of storage services.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember this sentence "**B**ig **Q**uality **T**ask **F**orce".
 **B** = **B**lob storage
@@ -293,7 +293,7 @@ Remember this sentence "**B**ig **Q**uality **T**ask **F**orce".
 ![](https://i.imgur.com/Of6L8Up.png){: .full}
 
 {: .notice--info}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 **Cosmos DB vs Table Storage** \
 **Cosmos DB** has 99.999% SLA, supports **many NoSQL APIs**, variations of **NoSQL storage** – Document, Graph, Key-Value and Tabular. However, **Table Storage** is just for NoSQL documents and cheaper than Cosmos DB.
@@ -307,7 +307,7 @@ Azure Storage Benefits are:
 - **S** = **S**calable
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember this sentence "**D**ouble **MASS**".
 
@@ -326,7 +326,7 @@ Run analytics on massive scale for Large volume of data using open source cluste
 - **Databricks** (Azure Databricks)
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 3 **V**'s of Big data is **variety, velocity, and volume**.
 
@@ -355,7 +355,7 @@ For example, when you shop online, machine learning helps recommend other produc
 Here are some examples of networking services in Azure.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember this sentence "3 **V**irus **LANDED** **C**apture **T**he **F**lag".
 **V** = **V**irtual Network
@@ -389,7 +389,7 @@ Create build and release pipe line for CI/CD
 Here are some examples of compute services in Azure.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember this sentence "**V**ery **S**pecial **K**ids **C**an join **B**order **S**ecurity **F**orce".
 **V** = **V**irtual Machine
@@ -409,7 +409,7 @@ Remember this sentence "**V**ery **S**pecial **K**ids **C**an join **B**order **
 Azure includes `first-class` support to build and host `web apps` and HTTP-based `web services`. The following Azure services are focused on web hosting.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember this sentence "**C**alm **ASANA**".
 **C** = **C**ognitive Search
@@ -430,7 +430,7 @@ Remember this sentence "**C**alm **ASANA**".
 With Azure, developers can create mobile back-end services for iOS, Android, and Windows apps quickly and easily.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Remember this sentence:
 **ABCO** "**A**ssociation of **B**usiness **C**onsulting **O**rganizations".
@@ -454,7 +454,7 @@ To create and use Azure services, you need an Azure subscription. When you creat
 ![](https://imgur.com/jEoLDBr.png){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 You **don't need to purchase an Azure account** before you can use any Azure resources. Because, You can use a free Azure account or a Microsoft Learn sandbox to create resources.
 

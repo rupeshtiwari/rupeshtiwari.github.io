@@ -5,25 +5,23 @@ description: Big picture of Azure storage
 
 # In Azure Storage Account
 
-# Feature
+## What is Azure Service
 
-Feature is capability of a service. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
+File, Blob, Queues, Azure Monitor, Cognitive search
 
-# Service
+## What is Feature in Azure Service
 
-File, Blob, Queues, Azure Monitor
+Feature is capability of a service in Azure. Like **Metrics Explorer** is a feature of **Azure Monitor** Service.
 
-# Resource
+## Resource in Azure
 
-Container  
-Service  
-Object
+Any service instance in Azure is called as resource. VM, VNet, Subnet, Function App, Public IP Address, NIC all are resources.
 
-# Log Analytics Workspace
+## Log Analytics Workspace in Azure
 
 Log Analytics Workspace is actually a **Azure Data Lake**.
 
-# VM Scale Set
+## VM Scale Set
 
 ![](httpss://imgur.com/uGhua33.png)
 
@@ -77,9 +75,18 @@ Stock Keeping Unit (SKU) Learn more about [SKU types in Azure](httpss://docs.mic
 
 Virtual Private Network (VPN). In Azure VPN is a type of Virtual Network Gateway.
 
+## ER
+
+[ExpressRoute](https://docs.microsoft.com/en-au/azure/expressroute/expressroute-introduction) (ER) lets you extend your on-premises network into the Microsoft cloud over a private connection with the help of connectivity provider.
+![](https://docs.microsoft.com/en-au/azure/expressroute/media/expressroute-introduction/expressroute-connection-overview.png){: .full}
+
+## DMZ
+
+A demilitarized zone (DMZ) is a perimeter network that protects an organization’s internal local-area network (LAN) from untrusted traffic.
+
 ## VIP
 
-Virtual IP address aka frontend. VIP is an IP address that doesn't correspond to an actual physical network interface.
+Virtual IP address aka front-end. VIP is an IP address that doesn't correspond to an actual physical network interface.
 
 ## DIP
 
@@ -88,6 +95,12 @@ A dynamic IP (DIP) pool is a range of IP addresses.
 ## BGP
 
 “Border Gateway Protocol (BGP)" is a standardized exterior gateway protocol designed to exchange routing and reachability information between autonomous systems (AS) on the Internet.
+
+![](https://i.imgur.com/r7EG6nf.png){: .full}
+
+## LSN
+
+Local Site Network (LSN)
 
 ## IKE
 
@@ -127,6 +140,10 @@ fully qualified domain name
 
 Azure Database Migration Service
 
+## DNS
+
+Domain Name System (DNS) is the [phonebook of the Internet](https://www.cloudflare.com/learning/dns/what-is-dns/).
+
 ## UDR
 
 User Defined Routing (UDR)
@@ -135,13 +152,27 @@ User Defined Routing (UDR)
 
 Network Address Translation (NAT)
 
+## SNAT
+
+Source Network Address Translation (SNAT) allows traffic from a private network to go out to the internet. Virtual machines launched on a private network can get to the internet by going through a gateway capable of performing SNAT. The device performing NAT changes the private IP address of the source host to public IP address.
+
+![](https://i.imgur.com/OnazkyD.png){: .full}
+
+## DNAT
+
+Destination Network Address Translation (DNAT) : Destination NAT changes the destination address in the IP header of a packet.
+
 ## NVA
 
-Network Virtual Appliances (NVAs)
+Network Virtual Appliances (NVAs): [An NVA(Network Virtual Appliance)](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/dmz/nva-ha?tabs=cli) is typically used to control the flow of network traffic from a perimeter network, also known as a DMZ, to other networks or subnets.
+
+## ILB
+
+Internal Load Balancer(ILB) is a security enhancement over the current public load balancing that is offered in Azure.
 
 ## HA Ports
 
-High Available Ports:  [High availability (HA) ports](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) is a type of load balancing rule that provides an easy way to load-balance all flows that arrive on all ports of an internal Standard Load Balancer. 
+High Available Ports: [High availability (HA) ports](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview) is a type of load balancing rule that provides an easy way to load-balance all flows that arrive on all ports of an internal Standard Load Balancer.
 
 ## WAF
 
@@ -245,19 +276,31 @@ Azure Advanced Threat Protection ( ATP ) - Now it is known as "Microsoft Defende
 
 Self-Service Password Reset
 
+## DHCP
+
+Dynamic Host Configuration Protocol (DHCP) : related to IP Addressing.
+
+DHCP helps ensure that devices ultimately correctly configured to join networks. DHCP does this by assigning IP addresses and other information to each host (or device) connecting to a network.
+
 ## Delta Query
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request.
 
-## Workbook Playbook & Notebook
+## Workbook Playbook Notebook Runbook
 
-Workbook : Visualize data by Kusto query. Azure Workbooks is a great tool for operations and DevOps teams because they can combine metrics and queries.
+- **Workbook** : Visualize data by Kusto query. Azure Workbooks is a great tool for operations and `DevOps` teams because they can combine metrics and queries.
+- **Playbook**: Playbooks are collections of procedures that can be run from Azure Sentinel in response to an alert or incident.
+- **Notebook**: Azure Notebooks is an implementation of the widely used open-source `Jupyter Notebook`.
+- **Runbooks**: are used to create automation in Azure. Like in the evening shut down all of the DEV Virtual machines.
 
-Playbook: Playbooks are collections of procedures that can be run from Azure Sentinel in response to an alert or incident.
+## Front Door vs Traffic Manager
 
-Notebook: Azure Notebooks is an implementation of the widely used open-source `Jupyter Notebook`.
+| FrontDoor                                                | Traffic Manager                                                                                  |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Http and Https protocol                                  | Used for File and Image                                                                          |
+| Used for multi region **app**, agnostic of PIP public IP | Used for sharing and accessing multi-region deployed Files and Images, agnostic of PIP public IP |
 
-## How many VNets allowed in Azure
+## How many VNets allowed in Azure?
 
 500 VNets, You can only have one VPN Gateway with 1 VNet.
 
@@ -303,7 +346,7 @@ Notebook: Azure Notebooks is an implementation of the widely used open-source `J
 [Planned Maintenance](#planned-maintenance), [Health Advisories](#health-advisories), [Security Advisories](#security-advisories), [Service Issues](#service-issues). Azure Health also allows you to configure health alerts based on above categories events. You can also add action groups to either email or SMS or phone call on desired health events.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Azure Service Health is: **Planned, Health & Security, Service**.
 
@@ -346,72 +389,3 @@ graph TD;
 ### Azure Mobile App
 
 Azure Mobile App gives an easy and secure way to manage your Azure resources, even when you are out of the office and not near computer.
-
-## Azure Fundamentals Certification (AZ 900)
-
-**Azure Fundamentals** certification needs 6 part to be finished.
-
-1. Part 1: Describe core Azure concepts
-2. Part 2: Describe core Azure services
-3. Part 3: Describe core solutions and management tools on Azure
-4. Part 4: Describe general security and network security features
-5. Part 5: Describe identity, governance, privacy, and compliance features
-6. Part 6: Describe Azure cost management and service level agreements
-
-![](https://imgur.com/ulz9JTX.png){: .full}
-
-### Part 3: Describe core solutions and management tools on Azure
-
-- Choose the best AI service for your needs
-- Choose the best tools to help organizations build better solutions
-- Choose the best monitoring service for visibility, insight, and outage mitigation
-- Choose the best tools for managing and configuring your Azure environment
-- Choose the best Azure serverless technology for your business scenario
-- Choose the best Azure IoT service for your application
-
-## Part 1: Describe core Azure concepts
-
-You will learn below things:
-
-- Understand the **benefits of cloud computing** in Azure and how it can save you time and money
-- Explain **cloud concepts** such as high availability, scalability, elasticity, agility, and disaster recovery
-- Describe **core Azure architecture components** such as subscriptions, management groups, resources and resource groups
-- Summarize **geographic distribution concepts** such as Azure regions, region pairs, and availability zones
-
-### 1. Introduction to Azure fundamentals
-
-![](https://imgur.com/N5UL5ZV.png){: .full}
-
-Upon completion of this module, you'll be able to:
-
-- What is **cloud computing**
-- What is **Azure**, how it works.
-- How to get started with Azure's subscriptions and **accounts**.
-
-I have below 3 articles on Introduction to Azure fundamentals:
-
-- [What is Azure](https://www.rupeshtiwari.com/what-is-microsoft-azure/)
-- [Azure Services](https://www.rupeshtiwari.com/tour-of-azure-services/)
-- [Azure accounts](https://www.rupeshtiwari.com/getting-started-with-azure-accounts/)
-
-### 2. Discuss Azure fundamental concepts
-
-![](https://imgur.com/71griXY.png){: .full}
-
-Upon completion of this module, you'll be able to:
-
-- Identify the **benefits**(Pay as you use, Scalability, Geo-distribution) and considerations of using **cloud services**.
-- Describe the differences between **categories**(IaaS,PaaS,SaaS) of **cloud services**.
-- Describe the differences between **types**(Public,Private,Hybrid) of cloud computing.
-
-I have below 1 article on [Discuss Azure fundamentals Concepts](https://www.rupeshtiwari.com/discuss-azure-fundamental-concepts/):
-
-### 3. Describe core Azure architectural components
-
-![](https://imgur.com/pPJkgAN.png){: .full}
-
-After completing this module, you'll be able to describe the benefits and usage of:
-
-- Azure subscriptions and management groups.
-- Azure resources, resource groups, and Azure Resource Manager.
-- Azure regions, region pairs, and availability zones.

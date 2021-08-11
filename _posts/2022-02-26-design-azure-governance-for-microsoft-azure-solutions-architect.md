@@ -155,7 +155,7 @@ Azure policy JSON contains below elements
   - effect
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Check [Microsoft Built-In Policies](https://docs.microsoft.com/en-us/azure/governance/policy/samples/)
 
@@ -283,7 +283,7 @@ Next give permission and location of the policy
 ![](https://imgur.com/7EzFxLW.png){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 [**Remediation**](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) is accomplished by instructing **Azure Policy** to run the deployIfNotExists effect or the modify operations of the assigned **policy** on your existing resources and subscriptions, whether that assignment is to a management group, a subscription, a resource group, or an individual resource.
 
@@ -334,7 +334,7 @@ Everything in Azure is defined by JSOn. Best way to define a resource is to by t
 ![](https://i.imgur.com/nudE9V8.png){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 You must follow [Microsoft Naming and Tagging Resources Best Practice](https://docs.microsoft.com/en-us/system-center/scsm/sm-parts?view=sc-sm-2019) \
 \
@@ -432,7 +432,7 @@ When you publish your blueprint you have to give some version like `v1.0`. Next 
 ![](https://imgur.com/9aabgj4.gif){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 When you **delete** Azure Blueprint it does **not delete the resources** that it deployed. when you want to assign a blueprint across the subscriptions under your enterprise then Assign it at Management Group level.
 

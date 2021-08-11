@@ -73,14 +73,14 @@ For example, you can grant permission to a Function App with their Managed Ident
 Managed identities provide an `identity` for `applications` to use when `connecting` to `resources` that support `Azure Active Directory (Azure AD) authentication`. Applications may use the managed identity to obtain Azure AD tokens from a special Azure endpoint `http://169.254.169.254/metadata/`.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Only resources that support **Azure Active Directory (Azure AD) authentication** & has a authorization form can allow to connect themselves to other resources using `Managed Identities`.
 
 For example, an application may use a managed identity to access resources like [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview) where developers can store credentials in a secure manner. You can request different token for Azure Storage Accounts. Or you can read secrete from Azure Key Vault and access to Azure blob storage if you have read permission.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Managed Identities is **free of cost** 💰 no additional charges to use. Microsoft will create a **Security Principle in Azure AD** when you create Managed Identity.
 
@@ -93,7 +93,7 @@ There are two types of managed Identities:
 System-Assigned Identity is **one-to-one** relationship between identity and resource. When you enable a system-assigned managed identity an identity is created in Azure AD that is tied to the **lifecycle** of that service instance. So when the resource is deleted, Azure automatically deletes the identity for you. For example, an application that runs on a single virtual machine. You can not use or share system-assigned identity with different resources than it created. You can always create the
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 When you have VM you give **system-assigned** when you delete the VM your identity from Azure AD gets deleted. It **shares the lifecycle of the resource**. You **can not share** identity with different resources.
 
@@ -102,7 +102,7 @@ When you have VM you give **system-assigned** when you delete the VM your identi
 User-assigned is **one-to-many** relationship between identity and resources. It has standalone its own lifecycle. You can [create a user-assigned managed identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal) and assign it to one or more instances of an Azure service. For example, a workload where multiple virtual machines need to access the same resource
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 When you create **user-assigned identity** then you can use them in many Function Apps, many Virtual Machines, and as many resources as you want. It is **sharable** identity across resources.
 If you delete the resource then user-assigned identity never deletes automatically. You must manually delete them explicitly.

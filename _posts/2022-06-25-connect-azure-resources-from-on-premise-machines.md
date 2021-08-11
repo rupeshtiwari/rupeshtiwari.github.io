@@ -56,7 +56,7 @@ All resources inside Azure VNet can browse internet. (outbound is allowed by def
 **However, from internet you can not connect to the VM or any resources present within a VNet by default inbound are restricted from any public IP**. In order to perform this activity you must deploy Azure Public IP resource in your VNet. [Read more here.](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview#communicate-with-the-internet). Therefore, VNet provides isolation to your Azure resources over cloud.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 I was wondering **Why we are able to communicate our web apps in Azure from internet?**
 And I found this answer promising. **By default, apps hosted in App Service are accessible directly through the internet.** [Read more here](https://docs.microsoft.com/en-us/azure/app-service/networking-features).
@@ -70,7 +70,7 @@ In order to create Azure `Virtual Network Gateway`, you have to first create `Ga
 ![](https://i.imgur.com/SHuiEd0.png){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Only one `VPN Gateway` is allowed in `Azure Virtual Network (VNet)`
 

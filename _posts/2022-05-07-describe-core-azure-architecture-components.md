@@ -101,7 +101,7 @@ For example, you can apply policies to a management group that limits the region
 Create structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 ☑️ You can create a hierarchy that **applies a policy**.
 ☑️ You can use management groups is to provide user **access to multiple subscriptions**.
@@ -160,7 +160,7 @@ The following image shows the role Resource Manager plays in handling Azure requ
 ![Diagram showing a Resource Manager request model.](https://i.imgur.com/2Wjh42D.jpg){: .full}
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 All capabilities that are available in the Azure portal are also available through **PowerShell, the Azure CLI, REST APIs, and client SDKs**. Functionality initially released through APIs will be represented in the portal **within 180 days** of initial release.
 
@@ -202,7 +202,7 @@ Here's a view of all the available regions as of June 2020.
 Azure has more global regions than any other cloud provider. These regions give you the flexibility to bring applications closer to your users no matter where they are. Global regions provide better scalability and redundancy. They also preserve data residency for your services.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Regions are what you use to identify the location for your resources.
 
@@ -238,7 +238,7 @@ Availability zones are primarily for VMs, managed disks, load balancers, and SQL
 - **Zone-redundant services**: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database)
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Availability zones are created by using one or more datacenters.
 
@@ -261,7 +261,7 @@ Because the pair of regions is directly connected and far enough apart to be iso
 - Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 Having a broadly distributed set of datacenters allows Azure to provide a high guarantee of availability.
 

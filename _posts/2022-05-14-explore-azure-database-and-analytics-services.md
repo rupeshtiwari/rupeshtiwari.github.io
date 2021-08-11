@@ -76,7 +76,7 @@ Azure SQL Database is a platform as a service (PaaS) database engine. It handles
 You can use both relational data and non-relational structures, such as graphs, JSON, spatial, and XML.
 
 {: .notice--success}
-🏆 **ProTip** \
+🏆 **Pro Tip** \
 \
 The newest capabilities of SQL Server are released first to **SQL Database**, and then to SQL Server itself.
 
