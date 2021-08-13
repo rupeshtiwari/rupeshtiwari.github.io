@@ -238,9 +238,12 @@ Independent Software Vendor (ISV) - also known as a software publisher, is an or
 
 line-of-business (LOB) - used only for your company or your employees.
 
+## ITSM
+
+IT Service Management (ITSM) Few ITSM tools are ServiceNow, System Center Service Manager, Provance, Cherwell. You can use [IT Service Management Connector](https://docs.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-overview) in Azure to connect your own ITSM tools.
 ## SIEM
 
-Security Incident and Event Monitoring (SIEM) - Monitor apps through reports that use Security Incident and Event Monitoring (SIEM) tools in Microsoft Azure.
+Security Incident and Event Monitoring (SIEM) - Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. 
 
 ## UPN
 
