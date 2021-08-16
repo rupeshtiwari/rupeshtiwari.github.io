@@ -34,7 +34,7 @@ Very important thing is to keep yourself motivated to prepare and give exams. Sp
 
 So what and how I did? Well, I am getting up at 5 AM (yes sacrificing my favorite sleep) and scheduling my studies accordingly. I used to learn Azure in the morning time before my office starts. Like I said you have to keep yourself motivated and find your inspiration. In order to keep my-self motivated, I am reading [Swami Vivekananda](https://en.wikipedia.org/wiki/Swami_Vivekananda). One of his best quotes that I remember is:
 
-_"Whatever you believe, that you will be. [There is nothing to obstruct you!"_](https://quoteideas.com/swami-vivekananda-quotes/)
+_"Whatever you believe, that you will be. There is nothing to obstruct you!"_
 
 So find-out your motivation and keep yourself inspired and keep working towards upgrading your IT skills or goal.
 
