@@ -26,7 +26,7 @@ tags:
 
 ![](https://i.imgur.com/7x21cMd.png){: .full}
 
-## What is Azure Vitual Network
+## What is Azure Virtual Network
 
 [Azure Virtual Network (VNet)](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) is the fundamental building block for your private network in Azure. VNet enables many types of Azure resources, such as Azure Virtual Machines (VM), to securely communicate with each other, the internet, and on-premises networks. VNet is similar to a traditional network that you'd operate in your own data center, but brings with it additional benefits of Azure's infrastructure such as scale, availability, and isolation.
 
@@ -75,6 +75,18 @@ Name resolution between role instances or virtual machines in the same VNet you 
 
 {: .notice--warning}
 ⚠️ Note: VMs will require restart to utilize new or updated DNS.
+
+## Virtual Machine must have VNet
+
+- When you create VM then You have to create (Virtual Network ) VNet.
+- Each VM need one private IP address so it can communicate to other VMs or devices.
+- Each VNet must contain 1 or more subnets and VM should be part of subnet.
+- VNet is assigned an IP Address Space it is a range of IP Addresses.
+- Subnet will have address space which is subset of VNet Address Space.
+- In Subnet VM will be assigned to a private IP within the assigned Address Space.
+- In VNet VMs from subnets can communicate each other without extra configuration.
+
+![](https://i.imgur.com/jbxFehc.png){: .full}
 
 ## SNAT
 

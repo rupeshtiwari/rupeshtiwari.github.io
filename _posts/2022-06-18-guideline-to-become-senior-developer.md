@@ -30,7 +30,7 @@ In this article, I will list out all the best practices that a developer should 
 
 A responsible developer has following attributes:
 
-- While working if you learned something, you document them and share with your collogues in code walkthrough ceremony.
+- While working if you learned something, you document them and share with your collogues in code walk-through ceremony.
 - While you are working on project and you find some code refectory that you could do to improve code base quality. You will do that and inform your senior about that.
 - Whenever, your senior explains you something important related to project or any best-practice. You should note that and next time when you participate in meeting make sure you recollect the previous learning and apply it in future discussions. Example: In your angular project, If you have been told that you should never mutate `model` state in `component` class. You must ask question why? Next you should note this point and remember. Next time during modeling session, if someone propose solution where they are trying to mutate model in component you should bring this point and correct them.
 
@@ -286,68 +286,6 @@ Create Classification Definition as a presentation component.
 - Add template form in `html` with validations
 - Output create when the user wants to create a new definition
 
-## Sprint Guidelines for senior developers
-
-### Guideline for assigning Hours to Sprint Story
-
-If you are following 2 week sprint. Then I would put below hours to the points. Sprint stories could be assigned points. We can assign 1,2 or 3 point. Here is the map of point to hours.
-
-- **1 point** story-> **18** hours total. (Create 1 high level task of 18 hours)
-- **2 point** story-> **36** hours total. (Create 2 high level tasks each 18 hours)
-- **3 point** story-> **54** hours total. (Create 3 high level tasks each 18 hours)
-
-Note: this hours can change based on your team velocity or capability of development.
-
-### How much point stories total I should take in sprint?
-
-Mostly, this depends on velocity of your team. Run your sprint couple of weeks and check how much your team is able to deliver. Based on that you can decide how much you can take in sprint.
-
-If you are doing 2 week sprint. Then don't take 3 point stories more than once.
-
-### How are you implementing Features in sprint?
-
-Take business requirement as feature. Create Feature in Team foundation or any tool you are using. Then within the feature you can start creating stories. Story can be pure technical if you want to setup some framework or environment etc. Story could be tangible where business user can see something. However, keep your feature very thin focused on one thing.
-
-### Guideline to create Stories for Fullstack (Server work and Client work) feature.
-
-I would recommend not doing Fullstack story in your sprint. If you are 2 week sprint.
-However, if you have client heavy work and small work in server which can be doable within sprint. And you can deliver to QA by next Tuesday of next week ( ending week of sprint ). Otherwise, please don't take Fullstack stories. Split your stories in 2 part. One story is to build client side. One story is to build server side and integrate server to UI. Some time if server side story is large I would say split 2nd story further and create over all 3 stories.
-
-1- **Create Client side story**: Developer build UI and deliver something working with in-memory api in angular framework. QA can test UI with in-memory api. Check the [client side guideline above](#guideline-to-create-tasks-for-client-story).
-
-2- **Create Server side story**: Developer build server side piece, if it is web api. Then Developer can share web api URL and educate QA to test via URL. You can use postman config to setup authentication authorization to test use case via Web api. QA can test by using web api and confirm if Database is persisting data.
-
-3- **Create story for integrating server to client**: Development team make sure they integrate both client and server. QA is testing entire end to end story.
-
-Each story can be 1, 2 or 3 pointer based on the effort required to develop them.
-
-### Guideline to create Tasks for a pure Client side Story
-
-Below are the client side tasks assuming you are working on Angular framework.
-
-1- Task to work on `Components`
-2- Task to work on `Services & Composition (if required)`  
-3- Task to work on `DATA + In-Memory Api`
-
-### Should you take a 3 pointer story in your 2 week sprint?
-
-Entire team should think on this and reply. Don't hesitate to dis-agree with me and feel-free to give your opinion.
-
-As per my believe don't take any story which is at the higher end of 3 points. ( when you think it is 3-4 or 3-5 pointer stories).
-
-If one person thinks every story is 2 or 3 points which is okay. However, the rest of the members should think that one person is not going to code all the stories. Therefore, You should also think that you are going to code the story and do your estimation.
-
-Keep in mind every use case has 3 part by default:
-
-- Build Client
-- Build Server
-- Integrate
-
-You should do a staggered deployment to QA. Deploy something on Thursday. An entire story by Next week Monday max to max if it is a 3 pointer. Otherwise by Friday if it is 2 pointers.
-
-3 pointer stories which are higher 3 points above 3 points are mostly stories which we are not able to deliver or we end up working late night and delivery by WEDNESDAY. We should avoid these types of stories to reduce STRESS and LATE night work. And bad quality code.
-
-Therefore, either you split those 3-4 or 3-5 point stories. While splitting whether it is testable or not testable that should not matter according to me. As far as development team can write TDD and develop the piece of work and deploy to QA. It should be okay. Finally when we do the Integration story that time Business can see and TEST.
 
 ## Conclusion
 
