@@ -134,7 +134,7 @@ Server Message Block (SMB)
 
 ## FQDN
 
-fully qualified domain name
+Fully Qualified Domain Name (FQDN)
 
 ## DMS
 
@@ -208,7 +208,17 @@ A domain is a collection of computers where security is handled centrally.Each d
 
 ## TCP
 
-**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. UDP is used to pass the actual user data.It guarantees that all sent packets will reach the destination in the correct order.
+**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. TCP is used to pass the actual user data. It guarantees that all sent packets will reach the destination in the correct order.
+
+
+## SSL
+
+Secure Sockets Layer (SSL) now it is deprecated. 
+
+## TLS
+
+Transport Layer Security (TLS) provides communications security over a computer network. 
+
 
 ## OLTP
 

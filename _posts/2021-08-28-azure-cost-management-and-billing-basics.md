@@ -24,9 +24,11 @@ tags:
 
 > For entire azure resources even across subscriptions if you want to know about your **billing, invoice, budget, alerts, recommendations** then you must go to **Azure Cost Management** and billing page in Azure portal. This article will help you to prepare for [az-303: Microsoft Azure Architect Technologies](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
+
+
 ![](https://imgur.com/WCL8fbg.gif)
 
-## Cost Reports and Budget Setup 💲
+## Cost Reports and Budget Setup 
 
 **Azure Monitor** also helps us to:
 
