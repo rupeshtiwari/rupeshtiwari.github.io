@@ -1,7 +1,6 @@
 ---
 title: Definitions that you should know
 date: 2022-10-01 00:00 +0000
-description: 'IMPORTANT: REMOVE LAYOUT: POST'
 author_profile: true
 published: true
 read_time: true
@@ -21,6 +20,20 @@ tags:
   - beginners
   - azure
 ---
+
+> When I started learning Azure being a webdev and software architect background. I came across many IT lingo, jargons, abbrebiations that I did know about them. In this post I am putting all those in one place. I hope this will help you as well on your Azure Solution Architect journey!
+
+## RADIUS
+
+Remote Authentication Dial-In User Service (RADIUS) is a networking protocol that provides centralized authentication, authorization, and accounting management for users who connect and use a network service. RADIUS was developed by Livingston Enterprises in 1991 as an access server authentication and accounting protocol.
+
+## EAPOL
+
+Extensible Authentication Access Protocol over LAN
+
+## MAC
+
+Media Access Control Address: It uniquely identifies the device in the network. 48-bit hexadecimal number that is hard-coded on a NIC.
 
 ## ROI
 
@@ -129,31 +142,6 @@ Local Site Network (LSN)
 
 Internet Key Exchange
 
-## IPSec
-
-Internet Protocol Security (IPSec)
-
-## IPV
-
-Internet Protocol Version (IPV). **IPv6** is more advanced and has better features compared to **IPv4**.
-
-## OSI Layers
-
-Open System Interconnection (OSI)
-
-- **Software Layer**
-  - Application Layer
-  - Presentation Layer
-  - Session Layer
-- **Heart of OSI**
-  - Transport Layer
-- **Hardware Layer**
-  - Network Layer
-  - Data Link Layer
-  - Physical Layer
-
-Note: **All People Seems To Need Data Processing**.
-
 ## LNG
 
 The Local Network Gateway (LNG) typically refers to your on-premises location. [Learn...](httpss://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-create-site-to-site-rm-powershell)
@@ -246,9 +234,43 @@ Network Attached Storage (NAS)
 
 Redundant Array of Inexpensive/independent Disks(RAID). [It was created in 1988 as a means](https://www.imore.com/whats-raid-array-and-why-should-i-get-one) to combat the rising cost of disk drives. You'll often hear RAID as it relates to network attached storage or "NAS". You know in movies when you see the "mainframe" and it's rows and rows of hard drives backing up all of the evil corporation's information? That's NAS, and that's RAID in action. [RAID Wikipedia](https://en.wikipedia.org/wiki/RAID)
 
+## ALE
+
+Annual Loss Expectancy
+
+ALE = SLE x ARO
+
+## SLE
+
+Single Loss Expectancy
+
+## ARO
+
+Annualized Rate of Occurrence
+
+## CIA
+
+CIA - Confidentiality, Integrity and Availability. The CIA Triad is actually a security model that has been developed to help people think about various parts of IT security.
+
+## IPS
+
+Intrusion Prevention System
+
+## IDS
+
+Intrusion Detection System
+
 ## WAF
 
 web application firewall (WAF)
+
+## LDAP
+
+Lightweight Directory Access Protocol "Address Book" of user accounts used to authenticate users. Identifies level of acess, group membership etc.
+
+## SQL
+
+Structured Query Language(SQL)
 
 ## FQDNs
 
@@ -258,9 +280,17 @@ fully qualified domain names (FQDNs)
 
 Destination Network Address Translation (DNAT)
 
+## WAP
+
+Wireless Access Point (WAP)
+
+## ICMP
+
+Internet Control Message Protocol (ICMP) is one of the protocols of the TCP/IP suite. The ICMP echo request and the ICMP echo reply messages are commonly known as ping messages.
+
 ## DDoS
 
-Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
+Distributed denial of service (DDoS) [Learn More](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview). In a distributed denial-of-service (DDoS) attack, an attacker attempts to overwhelm a targeted server or network with junk network traffic — somewhat like bombarding a restaurant with fake delivery orders until it cannot provide service to legitimate customers.
 
 ## Workgroups
 
@@ -278,13 +308,47 @@ A domain is a collection of computers where security is handled centrally.Each d
 
 Universal Resource Locator (URL)
 
+## OSI Layers
+
+Open System Interconnection (OSI)
+
+- **Software Layer**
+  - Application Layer
+  - Presentation Layer
+  - Session Layer
+- **Heart of OSI**
+  - Transport Layer
+- **Hardware Layer**
+  - Network Layer
+  - Data Link Layer
+  - Physical Layer
+
+{: .notice--success}
+🏆 **Pro Tip** \
+\
+Top Down: **All People Seems To Need Data Processing**. \
+Bottom Up: **Please Do Not Through Sausage Pizza Away**.
+
+## Protocol
+
+In networking, a **protocol** is a specified way of formatting data so that any networked computer can interpret the data.
+
+Protocols and their ports:
+
+- HTTP = 80
+- FTP = 21 and 22
+- SMTP = 58
+- SMTP = 25
+- DNS = 53
+- SSL = 443
+
 ## UDP
 
-**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection. It is an Transport layer (layer-4) protocol.
+**User Datagram Protocol (UDP)** is a connection-less transportation protocol. UDP is used to pass the actual user data. Communication is datagram oriented, so the integrity is guaranteed only on the single datagram. Datagrams reach destination and can arrive out of order or don't arrive at all. It's generally used for real time communication, where a little percentage of packet loss rate is preferable to the overhead of a TCP connection. It is an Transport layer (layer-4) protocol. UDP, the User Datagram Protocol, does not set up these dedicated connections.
 
 ## TCP
 
-**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. TCP is used to pass the actual user data. It guarantees that all sent packets will reach the destination in the correct order.
+**Transmission Control Protocol (TCP)** TCP is a connection oriented transportation protocol. TCP is used to pass the actual user data. It guarantees that all sent packets will reach the destination in the correct order. TCP, the Transmission Control Protocol, sets up dedicated connections between devices and ensures that all packets arrive.
 
 ## SSL
 
@@ -297,6 +361,50 @@ Secure Sockets Layer (SSL) now it is deprecated. It is session layer protocol. I
 Transport Layer Security (TLS) provides communications security over a computer network. It is presentation and session layer protocol. It lies between Transport and application layer.
 
 ![](https://i.imgur.com/hlsEVeJ.png){: .full}
+
+## IP
+
+Internet Protocol (IP)
+
+## IPSec
+
+Internet Protocol Security (IPSec): IPsec is a group of protocols that are used together to set up encrypted connections between devices. IPsec is often used to set up VPNs, and it works by encrypting IP packets, along with authenticating the source where the packets come from. IPsec uses UDP because this allows IPsec packets to get through firewalls.
+
+IPsec is not one protocol, but a suite of protocols. Internet Protocol (IP) is not part of the IPsec suite, IPsec runs directly on top of IP. The following protocols make up the IPsec suite:
+
+**Authentication Header (AH):** The AH protocol ensures that data packets are from a trusted source and that the data has not been tampered with, like a tamper-proof seal on a consumer product. These headers do not provide any encryption; they do not help conceal the data from attackers.
+
+**Encapsulating Security Protocol (ESP):** ESP encrypts the IP header and the payload for each packet — unless transport mode is used, in which case it only encrypts the payload. ESP adds its own header and a trailer to each data packet.
+
+**Security Association (SA):** SA refers to a number of protocols used for negotiating encryption keys and algorithms. One of the most common SA protocols is Internet Key Exchange (IKE).
+
+Reference: https://www.cloudflare.com/learning/network-layer/what-is-ipsec/
+
+## Packet
+
+All data sent over a network is broken up into smaller pieces called [packets](https://www.cloudflare.com/learning/network-layer/what-is-gre-tunneling/), and all packets have two parts: the payload and the header. The payload is the packet’s actual contents, the data being sent. The header has information about where the packet comes from and what group of packets it belongs to. Each network protocol attaches a header to each packet.
+
+## Tunelling
+
+Encapsulating packets within other packets is called "[tunneling](https://www.cloudflare.com/learning/network-layer/what-is-gre-tunneling/)".
+
+To understand why this is called "tunneling," we can change the analogy slightly. If a car needs to pass from Point A on one side of a mountain to Point B on the other side, the most efficient way is to simply go through the mountain. However, ordinary cars are not capable of going straight through solid rock. As a result, the car has to drive all the way around the mountain to get from Point A to Point B.
+
+But imagine that a tunnel was created through the mountain. Now, the car can drive straight from Point A to Point B, which is much faster, and which it could not do without the tunnel.
+
+## GRE
+
+Generic Routing Encapsulation, or GRE, is a protocol for encapsulating data packets that use one routing protocol inside the packets of another protocol. "Encapsulating" means wrapping one data packet within another data packet, like putting a box inside another box. To understand how this works, think about the difference between a car and a ferry. A car travels over roads on land, while a ferry travels over water. A car cannot normally travel on water — however, a car can be loaded onto a ferry in order to do so.
+
+Reference: https://www.cloudflare.com/learning/network-layer/what-is-gre-tunneling/
+
+## IPV
+
+Internet Protocol Version (IPV). **IPv6** is more advanced and has better features compared to **IPv4**.
+
+## NTP
+
+Network Time Protocol (NTP) is a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks.
 
 ## TDS
 
@@ -386,7 +494,9 @@ Azure Advanced Threat Protection ( ATP ) - Now it is known as "Microsoft Defende
 
 Self-Service Password Reset
 
-##
+## SSPI
+
+Security Support Provider Interface (SSPI) is a component of Windows API that performs a security-related operations such as authentication.
 
 ## DHCP
 
