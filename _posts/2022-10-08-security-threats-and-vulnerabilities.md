@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
@@ -166,13 +166,13 @@ Here is the list of all attacks:
 
 ### Man In Middle
 
-Packet sniffing software to intrude the connection.
+Hacker can use Packet sniffing software (WIRESHARK) to intrude the connection. Get the sender and receiver server information. He can get access to the website as Alice or Bob.
 
 ![](https://i.imgur.com/ihAimsY.png) {: .full}
 
 ### Replay
 
-Sniffing the wired network. capture packet and put them back in the connection in the network.
+Sniffing the wired network. Capture packet and put them back in the connection in the network. If you don't get packet on sequence or delay then it is an alert for replay or man in middle attack.
 
 ![](https://i.imgur.com/wYC6XXI.png){: .full}
 
@@ -190,7 +190,9 @@ DDoS attack from China to USA
 
 ![](https://i.imgur.com/Pb3qrWQ.png){: .full}
 
-## Social Engineering Attacks
+## Social Engineering Attacks (Important Topic)
+
+![](https://i.imgur.com/lelEz3c.png){: .full}
 
 - Shoulder surfing: A person sitting side to you and get your pin
 - Dumpster diving: Stealing personal info from dustbin

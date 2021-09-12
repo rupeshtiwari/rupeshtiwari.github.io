@@ -10,7 +10,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
@@ -69,3 +69,7 @@ tags:
 - Symmetric vs. Asymmetric
 - LAN, WAN, Wireless considerations
 - Steganography and other methods to hide/steal data
+
+## Reference
+
+https://www.youtube.com/playlist?list=PL0bbor_qrUHgHF6cKAI8QNgkk4owMY7SF
