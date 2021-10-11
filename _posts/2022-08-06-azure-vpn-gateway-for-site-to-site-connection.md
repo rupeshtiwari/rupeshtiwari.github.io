@@ -1,7 +1,7 @@
 ---
 title: Azure VPN Gateway for Site to Site Connection
 date: 2022-08-06 00:00 +0000
-description:
+description: A virtual private network (VPN) is a type of private interconnected network. VPNs use an encrypted tunnel within another network. I will explain what is VPN Gateway and how to deploy in Azure.
 author_profile: true
 published: true
 read_time: true

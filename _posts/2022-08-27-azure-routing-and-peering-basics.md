@@ -1,7 +1,7 @@
 ---
 title: Azure Routing and Peering Basics
 date: 2022-08-27 00:00 +0000
-description:
+description: Azure architects must aware of fundamentals of routing and peering. In this article we will see fundamentals as well as we will see some examples of routing and peering of networks in Azure.
 author_profile: true
 published: true
 read_time: true

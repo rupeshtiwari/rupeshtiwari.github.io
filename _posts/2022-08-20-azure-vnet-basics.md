@@ -1,7 +1,7 @@
 ---
 title: Azure VNet Basics
 date: 2022-08-20 00:00 +0000
-description:
+description: Azure VNet is the fundamental unit of networking in Azure Cloud. You must know the basics of VNet. In this article we will explore Azure VNet.
 author_profile: true
 published: true
 read_time: true

@@ -1,7 +1,7 @@
 ---
 title: Uploading file to the server using Node and HTML5
 date: 2022-07-09 00:00 +0000
-description:
+description: In this article you will learn how you can upload a file to the server using node.js and HTML5.
 author_profile: true
 published: true
 read_time: true

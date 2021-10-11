@@ -1,7 +1,7 @@
 ---
-title: You Dont Know How to Use Azure Tags Effectively
+title: You don't Know How to Use Azure Tags Effectively
 date: 2022-07-30 00:00 +0000
-description:
+description: Are you wondering how can you separately track the billing of your resources allocated in same subscription? Did you think you could save money by turning off your DEV Virtual Machines over weekends, holidays or everyday evening? In this article I will discuss with you how can you achieve all of these by using Azure tags effectively.
 author_profile: true
 published: true
 read_time: true

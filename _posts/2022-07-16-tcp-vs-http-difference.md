@@ -1,7 +1,7 @@
 ---
 title: TCP vs Http difference
 date: 2022-07-16 00:00 +0000
-description:
+description: TCP is a transport-layer protocol, and HTTP is an application-layer protocol that runs over TCP
 author_profile: true
 published: true
 read_time: true
@@ -22,7 +22,7 @@ tags:
   - devops
 ---
 
-**TCP:** is a transport-layer protocol, and HTTP is an application-layer protocol that runs over TCP.
+> **TCP:** is a transport-layer protocol, and HTTP is an application-layer protocol that runs over TCP.
 
 To understand the difference between TCP and HTTP you need to understand the idea of a layered networking model. Essentially, there are different protocols that let a computer talk at different distances and different layers of abstraction.
 

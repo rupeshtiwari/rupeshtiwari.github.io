@@ -1,7 +1,7 @@
 ---
 title: Azure Service Endpoint Overview and Configuration
 date: 2022-09-17 00:00 +0000
-description:
+description: Did you know By default azure storage accounts are accessible by the public internet. How can u restrict all public traffic in to your azure storage account and only allow your VNet resources to connect it. Lets learn the same in this article.
 author_profile: true
 published: true
 read_time: true

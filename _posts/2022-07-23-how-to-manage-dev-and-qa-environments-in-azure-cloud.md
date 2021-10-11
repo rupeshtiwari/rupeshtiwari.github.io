@@ -1,7 +1,7 @@
 ---
 title: How to manage DEV, QA and PROD in Azure Cloud
 date: 2022-07-23 00:00 +0000
-description:
+description: How to manage DEV, QA and PROD environments in Azure Cloud? You end-up creating many resources and now how would you organize them for QA, DEV, UAT environments? Let's talk about the same in this article.
 author_profile: true
 published: true
 read_time: true
@@ -24,7 +24,7 @@ tags:
 
 > How to manage DEV, QA and PROD environments in Azure Cloud? You end-up creating many resources and now how would you organize them for QA, DEV, UAT environments? Let's talk about the same in this article.
 
-In Azure we create resource like web app, azure functions. Then we group them in resource groups. In order to manage pricing and bill we create azure subscriptions. We put azuer resource groups under subscription. So before I keep on going let me explain few concepts.
+In Azure we create resource like web app, azure functions. Then we group them in resource groups. In order to manage pricing and bill we create azure subscriptions. We put Azure resource groups under subscription. So before I keep on going let me explain few concepts.
 
 ## What is Azure Resource?
 

@@ -1,7 +1,7 @@
 ---
 title: Azure Monitoring Basics
 date: 2022-09-03 00:00 +0000
-description:
+description: Azure Monitor is the central service that can help you to improve performance of your application and dependencies. In this article I will go through the basic knowledge about Azure Monitor.
 author_profile: true
 published: true
 read_time: true

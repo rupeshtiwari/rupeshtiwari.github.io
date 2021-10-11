@@ -1,7 +1,7 @@
 ---
 title: Security Threats and Vulnerabilities
 date: 2022-10-08 00:00 +0000
-description: 'IMPORTANT: REMOVE LAYOUT: POST'
+description: Learn about malware, attacks to the network, social engineering attacks.
 author_profile: true
 published: true
 read_time: true
@@ -22,7 +22,7 @@ tags:
   - azure
 ---
 
-> Learn about malware, attacks to the network, social engineering attacks
+> Learn about malware, attacks to the network, social engineering attacks from scratch. 
 
 ## Malware
 
