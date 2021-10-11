@@ -1,7 +1,7 @@
 ---
 title: Azure solution for big-data transfer
 date: 2022-10-29 00:00 +0000
-description:
+description: All you should know about you on-premise Data migration to the cloud.
 author_profile: true
 published: true
 read_time: true
