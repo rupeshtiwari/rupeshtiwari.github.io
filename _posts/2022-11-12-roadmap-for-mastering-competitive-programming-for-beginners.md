@@ -48,11 +48,11 @@ Amazon, FB etc. they ask the questions from the Geek for Geeks sometime. So it i
 - Then do 50 questions per data structures
 - Do more than 50 for Array and String
 
-[https://i.imgur.com/t1YSbs8.png](https://i.imgur.com/t1YSbs8.png)
+[https://i.imgur.com/t1YSbs8.png](https://i.imgur.com/t1YSbs8.png){: .full}
 
 In Geek of Geeks you can filter difficulty level and you can also check which problem is asked in which company. Select Array then filter by Basic, Medium or Hard then work on them.
 
-![](https://i.imgur.com/CFduree.png)
+![](https://i.imgur.com/CFduree.png){: .full}
 
 Every day you do **2 basic, 2 medium and 1 hard** problems for each data structure
 
@@ -109,4 +109,4 @@ _Thanks for reading my article till end. I hope you learned something special to
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
-![](https://imgur.com/a32nUcu.png)
+![](https://imgur.com/a32nUcu.png){: .full}
