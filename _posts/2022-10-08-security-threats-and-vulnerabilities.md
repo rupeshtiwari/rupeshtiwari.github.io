@@ -61,7 +61,7 @@ Malicious code that install itself at the `OS or Kernel` level to avoid detectio
 
 ### Backdoor
 
-Software that installs for the purpose of opening ports and installing `additional sofwtare`. Backdoor can steal passwords. Full access to the system.
+Software that installs for the purpose of opening ports and installing `additional software`. Backdoor can steal passwords. Full access to the system.
 
 ### Logic Bomb
 

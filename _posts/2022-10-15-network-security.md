@@ -1,5 +1,5 @@
 ---
-title: Network Security
+title: Learn how to secure your Network
 date: 2022-10-15 00:00 +0000
 description: If you want to become Cloud Security Architect you must have basics of Networking. This article will discuss all fundamental concepts of networking. Learn about 6 security domains, understand the security is multi-pronged approach.
 author_profile: true
