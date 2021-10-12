@@ -9,7 +9,7 @@ comments: true
 share: true
 related: true
 toc: true
-toc_sticky: true
+toc_sticky: false
 image: https://i.imgur.com/qxXxmBa.png
 header:
   image: https://i.imgur.com/zipiW93.png
@@ -412,15 +412,13 @@ AWS can manage below:
 - Hardware
 - Manage server for SERVERLESS
 
-![](https://lh4.googleusercontent.com/l-PkNV3cUwNgOCCmVzpVKpyYWpNaDZ8xi2YopQYlseEnih-PVZ50AOI-HL_CXJA8OrBh1WiA6yXB5n1XUsPLBUEawlkR704iqna3fWKBhlUTtCnurP_Ohg4NU-07SZ4ojCJf-2o7=s0)
+![](https://i.imgur.com/2RQxYa9.png){: .full}
 
-## [https://aws.amazon.com/compliance/shared-responsibility-model/](https://aws.amazon.com/compliance/shared-responsibility-model/)
-
--
+[https://aws.amazon.com/compliance/shared-responsibility-model/](https://aws.amazon.com/compliance/shared-responsibility-model/)
 
 ## How do you secure VPC?
 
-Defense in Depth model
+Follow Defense in Depth model and secure from physical to data layer.
 
 ### Physical
 
@@ -443,7 +441,7 @@ Defense in Depth model
 2.  Encryption
 3.  Session protection (XSS, XSR, Session Fixation, Session Side Jacking)
 4.  Network segmentation
-5.  Insite VPC to keep unwanted traffic out of the subnet use ACL
+5.  Inside VPC to keep unwanted traffic out of the subnet use ACL
 
 ### Compute
 
@@ -469,12 +467,12 @@ Server less -> enable the threat detection -> SEIM , enable data encryption at r
 
 ## What are the options for using the cloud for disaster recovery?
 
-| #   | Plan                                                                                                                                                                                                                                                                                                    | Cost             | Speed                                                           |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------------- |
-| 1   | Manual Backup and Restore, **Point in time backups into the DR region.**                                                                                                                                                                                                                                | **Cheap($)**     | **RPO = Hours, RTO = Days**. Long time to come back to service. |
-| 2   | **Pilot Light (RPO 1min RTO 1hr)**. VMs are created on the DR site and turned off. However the database in the DR site is in active mode and you write your data in DR site live. WEB and Business VMs will have applications and configuration will be copied to DR sites however they are turned off. | **$$**           | **RPO=Minutes, RTO=Hours**.                                     |
-| 3   | **WARM standby(RPO 1sec, RTO 1Min)**. Replicate your environment but use very small instances in the DR site but place them in an auto scaling group. When DR workloads are scaled up fully then it is called HOT standby. The more scale up the RTO you get in the DR site.                            | **$$$**          | **RPO = Seconds, RTO = Minutes**                                |
-| 4   | **Multi Region (Multi Site) Active-Active (RPO and RTO are zero)** Your workload is deployed to, and actively serving traffic from, multiple AWS Regions. This strategy requires you to synchronize data across Regions. Use DNS to route the traffic                                                   | **Costly($$$$)** | **RPO = 0, RTO =0**                                             |
+| #   | Plan                                                                                                                                                                                                                                                                                                    | Cost            | Speed                                                           |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------- |
+| 1   | Manual Backup and Restore, **Point in time backups into the DR region.**                                                                                                                                                                                                                                | **Cheap($)**    | **RPO = Hours, RTO = Days**. Long time to come back to service. |
+| 2   | **Pilot Light (RPO 1min RTO 1hr)**. VMs are created on the DR site and turned off. However the database in the DR site is in active mode and you write your data in DR site live. WEB and Business VMs will have applications and configuration will be copied to DR sites however they are turned off. | **$$**          | **RPO=Minutes, RTO=Hours**.                                     |
+| 3   | **WARM standby(RPO 1sec, RTO 1Min)**. Replicate your environment but use very small instances in the DR site but place them in an auto scaling group. When DR workloads are scaled up fully then it is called HOT standby. The more scale up the RTO you get in the DR site.                            | **$$$**         | **RPO = Seconds, RTO = Minutes**                                |
+| 4   | **Multi Region (Multi Site) Active-Active (RPO and RTO are zero)** Your workload is deployed to, and actively serving traffic from, multiple AWS Regions. This strategy requires you to synchronize data across Regions. Use DNS to route the traffic                                                   | **Most Costly** | **RPO=0, RTO=0**                                                |
 
 ## When VPN and Direct connection?
 
@@ -782,9 +780,11 @@ Network load balancer:
 - High performance
 - Load balance backend servers
 
-## References
-- https://www.youtube.com/playlist?list=PL0azhNeBK66KfW04TZBQWkX62hhnFcb9E 
+I will publish one more article where I will explain what are the soft skills you need to be successful in your next cloud architect interview so stay tuned.
 
+## References
+
+- [Go Cloud Videos](https://www.youtube.com/playlist?list=PL0azhNeBK66KfW04TZBQWkX62hhnFcb9E)
 
 ---
 
