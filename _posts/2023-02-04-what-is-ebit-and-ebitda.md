@@ -127,6 +127,10 @@ EBITDA is mostly considered in heavily capitalized industries like telecommunica
 
 EBIT is mostly used for service oriented industries like Consulting and Technologies.
 
+## Why do C-Level Executives care more about EBITDA?
+
+Because when you move your company to cloud then you get rid of capital expenses and incur more operational expenses. As capital expenses decrease and operational expenses increase the EBITDA value decreases. In most of the companies C-level executives like CFO, CIO, CEO get incentives, bonus based on EBITDA value. If EBITDA decreases then their bonus money gets reduced. However, IT companies also have data center staff expenses that are being calculated as the operational cost. Since that costs are now reduced or completely removed based on how many data centers your company closes. That value can balance out the EBITDA value and make your c-executives happy in terms of financial bonus money.
+
 ## Conclusion 
 
 So EBITDA is the term used by many software IT industries to publish their financial growth. You can check Microsoft Azure EBITDA margin over the last 10 years here in this chart
