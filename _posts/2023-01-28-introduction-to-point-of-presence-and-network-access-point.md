@@ -16,7 +16,7 @@ header:
   teaser: https://i.imgur.com/YWhcyP7.png
   og_image: https://i.imgur.com/YWhcyP7.png
 tags:
-  - webdev
+  - telecom
   - tutorial
   - beginners
   - cloud
