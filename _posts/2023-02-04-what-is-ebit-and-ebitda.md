@@ -38,7 +38,7 @@ Balance Sheet consists of  Assets and Liabilities.
 
 **Liabilities** are 2 types: Long Term and Current. Long Term liabilities which you have to start paying after 1 year. Current liability which you have to pay off within 1 year.
 
-![](https://i.imgur.com/AN9wBPy.png)
+![](https://i.imgur.com/AN9wBPy.png){: .full}
 
 ## What is an Income or Profit & Loss (P&L) Statement? 
 
@@ -48,7 +48,7 @@ If you subtract your company Expenses from Revenue then you get the profit.
 Profit = Revenue - Expenses
 ```
 
-![](https://i.imgur.com/iMP6jRA.png)
+![](https://i.imgur.com/iMP6jRA.png){: .full}
 
 The profit that you make as cash is added to the Current Assets in your Balance Sheet. So if you make more profit your cash reserves increase that increases your assets as well.
 
@@ -62,7 +62,7 @@ Net Cash Flows = Cash In - Cash Out 
 
 Cash In could be in any form of money deposit to your bank account it could be loan, income revenue, friend deposit money. Cash out could be any form of withdrawal from your account for any reason. The net balance of your cash is the net cash flows of your account.
 
-![](https://i.imgur.com/bFayiGL.png)
+![](https://i.imgur.com/bFayiGL.png){: .full}
 
 EBIT & EBITDA is a metric of Profit and Loss statement that explains which company stock is good and which company is performing better at an operational level.
 
@@ -115,7 +115,7 @@ EBITDA = Net Profit + Interest + Tax + Depreciation + Amortization 
 
 Vehicle Manufacturing Company EBITDA & EBIT Statement
 
-![](https://i.imgur.com/eND0t6N.png)
+![](https://i.imgur.com/eND0t6N.png){: .full}
 
 ## Why is EBITDA important for a company?
 
@@ -135,7 +135,7 @@ Because when you move your company to cloud then you get rid of capital expenses
 
 So EBITDA is the term used by many software IT industries to publish their financial growth. You can check Microsoft Azure EBITDA margin over the last 10 years here in this chart
 
-![](https://i.imgur.com/5mJdn6U.png)
+![](https://i.imgur.com/5mJdn6U.png){: .full}
 
 [microsoft ebitda margin](https://www.macrotrends.net/stocks/charts/MSFT/microsoft/ebitda-margin)
 
@@ -150,4 +150,4 @@ _Thanks for reading my article till end. I hope you learned something special to
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
-![](https://imgur.com/a32nUcu.png){: .full}
+![](https://imgur.com/a32nUcu.png){: .full} 

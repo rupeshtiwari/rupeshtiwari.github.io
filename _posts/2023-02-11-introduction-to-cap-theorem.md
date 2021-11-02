@@ -22,8 +22,6 @@ tags:
   - cloud
 ---
 
-## Introduction to CAP Theorem
-
 > Are you planning to design your next advanced distributed architecture? Make sure you are aware of the concepts such as high availability, consistency and partition tolerance. The CAP theorem states that a distributed system cannot simultaneously be consistent, available, and partition tolerant. CAP Theorem is very important in the Distributed systems, Microservices architecture, Big Data world, especially when we need to make trade offs between the three, based on our unique customer’s use case.
 
 CAP stands for C - Consistency, A - Availability, P - Partition tolerance.

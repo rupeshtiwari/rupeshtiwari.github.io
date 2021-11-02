@@ -30,11 +30,11 @@ tags:
 
 Used in Binary Search algorithm
 
-![](https://i.imgur.com/IZu0fyb.png)
+![](https://i.imgur.com/IZu0fyb.png){: .full}
 
 ### Math.abs
 
-![](https://i.imgur.com/Fgh6Eca.png)
+![](https://i.imgur.com/Fgh6Eca.png){: .full}
 
 ## Array related
 
@@ -42,29 +42,29 @@ Used in Binary Search algorithm
 
 Used in Merge sort algorithm.
 
-![](https://i.imgur.com/TPf6sHD.png)
+![](https://i.imgur.com/TPf6sHD.png){: .full}
 
 ### Array Sort
 
-![](https://i.imgur.com/hY8qjWD.png)
+![](https://i.imgur.com/hY8qjWD.png){: .full}
 
 ### Initialize 2D array
 
-![](https://i.imgur.com/74bDGJV.png)
+![](https://i.imgur.com/74bDGJV.png){: .full}
 
 ## Map
 
 ### JavaScript Map
 
-![](https://i.imgur.com/TVb5n1i.png)
+![](https://i.imgur.com/TVb5n1i.png){: .full}
 
 ## Difference between i++ and ++i
 
 So basically ++i returns the value after it is incremented, while i++ return the value before it is incremented.
 
-![](https://i.imgur.com/mwT7aco.png)
+![](https://i.imgur.com/mwT7aco.png){: .full}
 
-![](https://i.imgur.com/mp77XBD.png)
+![](https://i.imgur.com/mp77XBD.png){: .full}
 
 ## Javascript Bitwise operator
 
@@ -95,4 +95,4 @@ _Thanks for reading my article till end. I hope you learned something special to
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
-![](https://imgur.com/a32nUcu.png){: .full}
+![](https://imgur.com/a32nUcu.png){: .full} 

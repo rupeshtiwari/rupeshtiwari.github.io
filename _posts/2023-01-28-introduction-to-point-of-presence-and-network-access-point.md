@@ -32,7 +32,7 @@ The internet is a massive network of interconnected smaller networks.
 
 Point of Presence (PoP) is the Network Interface Point between communicating entities. A PoP is located in a data-center that houses servers, routers, network, switches, multiplexers and other network interface equipment. PoPs are located at colocation centers and Internet exchange points. A PoP is the local access point for an Internet Service Provider (ISP). PoP consists of high-speed telecommunications equipment that  helps customers to connect to the internet via their ISPs.
 
-![](https://i.imgur.com/E4bOvEl.png)
+![](https://i.imgur.com/E4bOvEl.png){: .full}
 
 (image taken from [https://networkencyclopedia.com/point-of-presence-pop/](https://networkencyclopedia.com/point-of-presence-pop/) )
 
@@ -46,11 +46,11 @@ So we have 2 different networks. Each one has a point of presence. But how does 
 
 We need a Network Access Point (NAP) , a NAP is a building where Internet Service Providers can switch information on to each other’s network. Now Chris’s request can get all the way over to skynews.com by using the NAP. And  skynews.com can get all the way back to Chris's computer.
 
-![](https://i.imgur.com/v94nvmL.png)
+![](https://i.imgur.com/v94nvmL.png){: .full}
 
 And there are thousands of PoPs and NAPs all around the world, helping us all stay connected.
 
-![](https://i.imgur.com/WkeiuwV.png)
+![](https://i.imgur.com/WkeiuwV.png){: .full}
 (image taken from [https://www.youtube.com/watch?v=vUD8U7eLbQ0&ab_channel=BrooksBankict](https://www.youtube.com/watch?v=vUD8U7eLbQ0&ab_channel=BrooksBankict))
 
 ## What is a Colocation Center? 
@@ -72,4 +72,4 @@ _Thanks for reading my article till end. I hope you learned something special to
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
-![](https://imgur.com/a32nUcu.png){: .full}
+![](https://imgur.com/a32nUcu.png){: .full} 
