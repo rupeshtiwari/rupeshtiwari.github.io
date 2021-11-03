@@ -24,11 +24,9 @@ tags:
 
 How to make sure our workload in the cloud is secure, reliable. How to monitor the cost of your cloud resources consumption? Is there any automation you can do to remind you of your cloud budget expenses, future expected cost? Is there any on-click quick fix to terminate underutilized virtual machines. Well the answer to all of these questions is **Microsoft Azure Advisor**. Yes, you guessed it I will talk about azure advisor in this article. This is an important topic so stay tuned.
 
-## Azure Advisor
+## Azure Well-Architected Framework & Review
 
-Azure advisor gives recommendations to all cloud resources based on a well architected framework. You can access Azure Advisor recommendations as an owner, contributor, or reader of a subscription.
-
-[Azure well-architected framework](https://docs.microsoft.com/en-gb/assessments/?mode=pre-assessment&session=local) provides architectural best practices across the five pillars for designing and operating systems in the cloud. Those 5 pillars are as follows:
+[Azure well-architected framework](https://docs.microsoft.com/en-gb/assessments/?mode=pre-assessment&session=local) provides architectural best practices across the five pillars for designing and operating systems in the cloud.  Those 5 pillars are as follows:
 
 - Operational Excellence
 - Performance
@@ -36,33 +34,38 @@ Azure advisor gives recommendations to all cloud resources based on a well archi
 - Reliable
 - Secure
 
-Once moving workload on the cloud. Azure advisor is your personal advisor to keep you workload standout on 5 pillars of a well architected framework.
+Microsoft has a [well architected review](https://docs.microsoft.com/en-gb/assessments/?mode=questionnaire&session=d5ecfe19-a58f-497d-9df4-0b176437c610&question=threat&category=Security) that will give you recommendations that customers can focus on. It will include existing workload and recommend things to learn and implement to improve.
+![](https://i.imgur.com/xYMTMmS.png){: .full}
 
-![](https://i.imgur.com/kCqwu9D.png)
+## Azure Advisor
+
+Azure advisor gives recommendations to all cloud resources based on a well architected framework. You can access Azure Advisor recommendations as an owner, contributor, or reader of a subscription. Once moving workload on the cloud. Azure advisor is your personal advisor to keep you workload standout on 5 pillars of a well architected framework.
+
+![](https://i.imgur.com/kCqwu9D.png){: .full}
 
 ## Overall Advisor Score for C-Level Executives
 
 Azure Advisor shows overall score this is the high level view for your entire resources present within the subscription. The higher the score the healthier your technical portfolio is. This is the number that is more likely you will show to your CTO.
 
-![](https://i.imgur.com/4ktlepW.png)
+![](https://i.imgur.com/4ktlepW.png){: .full}
 
 ## Creating Advisory Automatic Alerts
 
 Checking these recommendations given by Azure Advisor manually is not a great idea. Therefore, you must create automatic alerts in Azure Advisor. These alerts can do various actions including sending sms, emails to core team or even calling webhook to create tickets in zendesk.
 
-![](https://i.imgur.com/HKw9O7g.png)
+![](https://i.imgur.com/HKw9O7g.png){: .full}
 
 You can even create a digest for a given subscription and select the desired 5 pillars and weekly you will get a summary of Azure advisor recommendations.
 
-![](https://i.imgur.com/pJWFzP2.png)
+![](https://i.imgur.com/pJWFzP2.png){: .full}
 
 ## How do you know Advisor score is good?
 
 You can check the score history by monthly/weekly or days and understand if the score is increasing or decreasing by benchmarking it.
 
-![](https://i.imgur.com/0vGPqKw.png)
+![](https://i.imgur.com/0vGPqKw.png){: .full}
 
-![](https://i.imgur.com/Y7KjbnJ.png)
+![](https://i.imgur.com/Y7KjbnJ.png){: .full}
 
 The best way to increase score is by:
 
@@ -73,7 +76,7 @@ The best way to increase score is by:
 
 You must go to the Azure Advisor and check all of the 5 tabs related to the 5 pillars of a well architected framework and follow the quick fix and recommendations to improve your score.
 
-![](https://i.imgur.com/WBYLnMb.png)
+![](https://i.imgur.com/WBYLnMb.png){: .full}
 
 Here are the proposed recommendations that you should follow in order to make your system adhere to a well architected framework.
 
