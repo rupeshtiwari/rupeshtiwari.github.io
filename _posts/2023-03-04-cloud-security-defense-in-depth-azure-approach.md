@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/NEvhyqm.png
+image: https://i.imgur.com/WQWdzrb.png
 header:
-  image: https://i.imgur.com/NEvhyqm.png
-  teaser: https://i.imgur.com/NEvhyqm.png
-  og_image: https://i.imgur.com/NEvhyqm.png
+  image: https://i.imgur.com/WQWdzrb.png
+  teaser: https://i.imgur.com/WQWdzrb.png
+  og_image: https://i.imgur.com/WQWdzrb.png
 tags:
   - azure
   - tutorial
