@@ -142,7 +142,7 @@ If you want to get the custom icons for your files then make sure you have insta
 
 ```json
     "material-icon-theme.folders.associations": {
-        "itops": "Postcss",
+        "itops": "Vm",
 		    "presentation":"Views",
 		    "aggregate-score":"Sublime",
         "aspects": "Apollo",
