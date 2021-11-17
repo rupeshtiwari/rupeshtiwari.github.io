@@ -136,14 +136,15 @@ Check all todo comments `CTRL + SHIFT + P`
 
 ### Vscode Settings
 
-If you want to get the custom icons for your files then make sure you have installed VSCode Materials and copy below settings and paste in your local VSCode settings.json file located at `%appdata%\Roaming\Code\User\settings.json`
+If you want to get the custom icons for your files then make sure you have installed VSCode Materials and copy below settings and paste in your local VSCode settings.json file located at `%appdata%\Code\User\settings.json`
 
 {% gist a4190a29aac0132082430cdb8a2e85ad %}
 
 ```json
     "material-icon-theme.folders.associations": {
-		"Presentation":"Views",
-		"aggregate-score":"Sublime",
+        "itops": "Postcss",
+		    "presentation":"Views",
+		    "aggregate-score":"Sublime",
         "aspects": "Apollo",
         "contracts": "Scala",
         "message-handlers": "Serverless",
@@ -287,7 +288,7 @@ Regardless of empty or pre-populated workspace you must create your own `CI/CD` 
 
 ## Creating new Empty Nx Monorepo workspace
 
-Now we will create our monorepo workslpace that we will continue using it. We will start from scratch empty monorepo. 
+Now we will create our monorepo workslpace that we will continue using it. We will start from scratch empty monorepo.
 
 Creating empty Nx Monorepo workspace is our final option for this example. So let's create desired working folder and from that location open `powershell` on windows machine I found working on `git bash commands` were not working nicely.
 
