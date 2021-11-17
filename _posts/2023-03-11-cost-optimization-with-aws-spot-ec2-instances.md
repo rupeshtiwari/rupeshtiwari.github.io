@@ -1,5 +1,5 @@
 ---
-title: Cost Optimization with AWS Spot EC2 Instances
+title: Cost Optimization with Amazon EC2 Spot Instances
 date: 2023-03-11 00:00 +0000
 description: Creating cost optimized highly scalable cloud architecture is challenging but it is possible! Using Spot Amazon Elastic Compute Cloud (Amazon EC2) instances you can save up to 90% of on-demand pricing. In this article you will learn what spot instances and what should be your strategy to use spot instances. Additionally, I will give you scenarios where most of the customers are using spot instances.
 author_profile: true
@@ -10,11 +10,11 @@ share: true
 related: true
 toc: true
 toc_sticky: true
-image: https://i.imgur.com/XiWeK3H.png
+image: https://i.imgur.com/7tGRoEv.png
 header:
-  image: https://i.imgur.com/XiWeK3H.png
-  teaser: https://i.imgur.com/XiWeK3H.png
-  og_image: https://i.imgur.com/XiWeK3H.png
+  image: https://i.imgur.com/7tGRoEv.png
+  teaser: https://i.imgur.com/7tGRoEv.png
+  og_image: https://i.imgur.com/7tGRoEv.png
 tags:
   - aws
   - tutorial
@@ -41,7 +41,9 @@ Normally, when you are designing your workload in the cloud. Make sure you combi
 
 Pay for compute capacity by the second or hour with no long-term commitments. Mostly you will use these instances for the spiky workloads or to define needs of your workload. Example: Netflix uses on-demand EC2 instances at off hours to split, encode the video files.
 
-## Reserved Instances
+![](https://i.imgur.com/BAd22sC.png){: .full}
+
+### Reserved Instances
 
 Significant discount (up to 70%) compared to on-demand instance pricing. You should use these types of instances for steady state applications or predictable usages, databases. ![](https://lh6.googleusercontent.com/IYJsC3v5updKOqxDw2n2EdrOW6aG6tAU_D4iS0E-WgwCe0zsOK98aar8fYibwrKCu4CYfszSTxQyhqdjksyYIr14hq4Xgb1fJhXTpVk8IzHRu69ok4uJ19xNh86dWPZ1oAOegL9V)
 
@@ -129,23 +131,18 @@ In order to optimize your Amazon EC2 workload combine the purchase options.
 
 ## Bursty Workload Optimization strategy with Spot Instances 
 
+### Bursty Workload example
+
 In typical capital market domain different types of analytical workloads are there such as below:
 
-1.  Research
-
-1.  How to increase profit or reduce risk of a portfolio
-
-1.  Reactionary
-
-1.  Human or an automatic system determine significant market volatility in the middle of trading day
-
-1.  Overnight
-
-1.  At the end of the trading day, you collect most recent input for your models and  you run them at large scale
-
-1.  Model backtesting
-
-1.  When you make code changes to the model you need to test the changes with 10-20 years of historical data. High resource intensive workload and you need performance since you want to deploy the model in production as well.
+1. Research
+   - How to increase profit or reduce risk of a portfolio
+2. Reactionary
+   - Human or an automatic system determine significant market volatility in the middle of trading day
+3. Overnight Jobs
+   - At the end of the trading day, you collect most recent input for your models and  you run them at large scale
+4. Model backtesting
+   - When you make code changes to the model you need to test the changes with 10-20 years of historical data. High resource intensive workload and you need performance since you want to deploy the model in production as well.
 
 In order to support such a high bursty workload you need infrastructure to auto spinning spot instances and shut them down once a task is done. You can use your own job scheduler or open source from HashiCorp as below.
 
@@ -161,6 +158,8 @@ User sends the work job to Queue, the auto scaler docker container checks the st
 2000 jobs are put on the queue at the beginning of trading day they drain quickly. Then 8000, 15000 jobs are put on the queue they drain quickly.
 
 Similarly at the beginning in order to handle 2000 jobs you need 1000 workers then they all shut down again this is very bursty nature. Similarly at different time spans of the day different sets of workers will spin up like 3000 workers for 2 hours, next 4000-7000 workers for next 2 hours and so on. These are all bursty behaviour of your system.
+
+### Spot Instances Strategy for Bursty Workloads
 
 How would you strategize your spot market such that you create a healthy and performant workload in this situation?
 
