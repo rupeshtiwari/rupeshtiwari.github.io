@@ -287,6 +287,8 @@ Regardless of empty or pre-populated workspace you must create your own `CI/CD` 
 
 ## Creating new Empty Nx Monorepo workspace
 
+Now we will create our monorepo workslpace that we will continue using it. We will start from scratch empty monorepo. 
+
 Creating empty Nx Monorepo workspace is our final option for this example. So let's create desired working folder and from that location open `powershell` on windows machine I found working on `git bash commands` were not working nicely.
 
 Run below script to create empty workspace
