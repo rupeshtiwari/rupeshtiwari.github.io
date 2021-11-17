@@ -1574,7 +1574,7 @@ We have component layer, message handlers and api service layers.
 - Message Handler can depend on model and api
 - API service can depend on httpclient and dto
 
-## Before Push to Git Guidelines
+### Before Push to Git Guidelines
 
 ✅ RUN TEST: npm run affected:test
 ✅ RUN LINT: npm run affected:lint
@@ -1586,7 +1586,13 @@ npm run affected:test --base=origin/features/PBI23/MessageHandlers
 npm run affected:lint --base=origin/features/PBI23/MessageHandlers
 ```
 
-## Nx Related Questions
+### Naming conventions
+
+Feel free to follow any naming conventions provided in your organization. Here is what I recommend:
+
+![](https://i.imgur.com/Z7x7ZUP.png){: .full}
+
+### Nx Related Questions
 
 - **Does the lib projects have npm versions?**
   **Answer:** No, because they are not buildable and publishable.
