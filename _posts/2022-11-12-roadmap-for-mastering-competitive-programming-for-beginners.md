@@ -1,5 +1,5 @@
 ---
-title: Roadmap for mastering coding & competitive programming interview
+title: Roadmap for mastering Coding & Competitive Programming interview
 date: 2022-11-12 00:00 +0000
 description: If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. Learn how to start coding and become master.
 author_profile: true
@@ -24,6 +24,8 @@ tags:
 
 > Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in order to crack Big 4 (Google, Facebook, Amazon & Microsoft) companies coding-interviews?
 
+Nowadays, even consulting companies like Infosys, TCS etc., are asking some coding problems in their interview. Therefore, if you are not preparing for FAANGM ( facebook, apple, amazon, netflix, google, microsoft) still you must learn how to code and practice coding. Solve easy problems from each Data Structure and sharpen your Logic skills.
+
 If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. [Read this to know what is the difference between Data Structure and Algorithm problems and Competitive Programming problems](https://rupeshtiwari.com/how-to-start-preparing-for-coding-interview/). So basically, you have start learning coding from basic.
 
 Start solving problems in below sequence to practice:
@@ -33,10 +35,10 @@ Start solving problems in below sequence to practice:
 
 I myself did very hard work and trying to solve problems given by Love Babbar 450 questions and from many other places.
 
-- You can view my solutions in JavaScript [in this codepen link](https://codepen.io/your-work/?item_type=collection&grid_type=list).
+- You can view my solutions in JavaScript [in this codepen link](https://codepen.io/rupeshtiwari/collections/).
 - I also solved couple of problems related to basic [data structure and algorithm here](https://github.com/rupeshtiwari/coding-examples-interview-coding-datastructure-algorithm-in-javascript).
 
-You can always fork my codepen and do the changes. I have added Jasmine Test in my code pen so that you can write function and run your specs.
+You can always fork [my codepen](https://codepen.io/rupeshtiwari/collections/) and do the changes. I have added Jasmine Test in my code pen so that you can write function and run your specs.
 
 ![](https://i.imgur.com/SdGQz8M.png){: .full}
 
@@ -71,13 +73,11 @@ Here is the steps to start coding practice.
 - For each Data Structure target yourself to solve 50 questions
 - Do more than 50 questions for Array and String related problems especially
 
-![https://i.imgur.com/t1YSbs8.png](https://i.imgur.com/t1YSbs8.png){: .full}
-
 In Geek of Geeks you can filter difficulty level and you can also check which problem is asked in which company. Select Array then filter by Basic, Medium or Hard then work on them.
 
 ![](https://i.imgur.com/CFduree.png){: .full}
 
->If you want to dedicate more time on coding practice and finish early then every day you do **2 easy, 2 medium and 1 hard** problems for each data structure.
+> If you want to dedicate more time on coding practice and finish early then every day you do **2 easy, 2 medium and 1 hard** problems for each data structure.
 
 ## Which Data Structure Problem Should I Focus and solve? 
 
@@ -94,11 +94,12 @@ I have gone through [Academic Booster](https://www.youtube.com/channel/UCnlgufTx
 
 ## Which Algorithm Problem Should I Do? 
 
-Most of the companies ask DP problems, they are very important.
+Most of the companies ask Dynamic Programming problems, they are very important.
 
-- Sorting - do 50 problems
-- Greedy - do 70 problems
-- Dynamic Programming - do 70 problems
+- [Searching](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Searching&page=1&category%5B%5D=Searching) - do 50 problems
+- [Sorting](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Sorting&page=1&category%5B%5D=Sorting) - do 50 problems
+- [Greedy](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Greedy&page=1&category%5B%5D=Greedy) - do 70 problems
+- [Dynamic Programming](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Dynamic%20Programming&page=1&category%5B%5D=Dynamic%20Programming) - do 70 problems
 
 If you finish Dynamic programming then whatever Data Structure concepts that you have first finished. There you can optimize your solution using Dynamic Programming.
 
@@ -125,7 +126,9 @@ There are some rules that I used to follow to keep myself updated with the probl
 
 ### Before solving problem
 
-Create one Excel sheet or Google Sheet called “Coding Problems”. Add columns like Problem Statement, Logic, Algorithm Name, Need more practice, category and difficulty level.
+Create one Excel sheet or Google Sheet called `“Coding Problems”`. Add columns like Problem Statement, Logic, Algorithm Name, Need more practice, category and difficulty level.
+
+#### Coding Problem Cheat Sheet
 
 | Problem Statement          | Logic                       | Algorithm Name | Need more practice? | Category | Difficulty Level |
 | -------------------------- | --------------------------- | -------------- | ------------------- | -------- | ---------------- |
@@ -156,14 +159,13 @@ Once you do this entry then every time you start coding first read this excel an
 
 This is what I used to do to remember the logic of each problem that I solve. You may ask how can I remember 400 questions? So do not worry once you start working on this sheet your brain will be trained such that you will be able to solve many problems without even remembering. However, you have to start doing these notes and read them every time when you start coding practice.
 
-
 ## Should I solve all Array problems before starting Linked List problems? What is my strategy for coding practice?
 
-This is an interesting and very important issue. It depends where you are. If you are a beginner and you have a good amount of time if not working individually then 6 months and if you are working professional then you have 1 year time or so then you should do each problem from each Data Structure.  I personally prefer working with all Data Structures at the same time rather finishing one Data Structure completely before starting another. Example when you start coding for the first time, do one easy problem from each Data Structure ( Array, Linked List, Stack, Queue, Tree, Graph). Next day you pick 2 easy, 2 medium and 2 hard from each Data Structure. Or you keep doing one easy question from each Data Structure. This way you should combine your Data Structure while practicing. 
+This is an interesting and very important issue. It depends where you are. If you are a beginner and you have a good amount of time if not working individually then 6 months and if you are working professional then you have 1 year time or so then you should do each problem from each Data Structure. I personally prefer working with all Data Structures at the same time rather finishing one Data Structure completely before starting another. Example when you start coding for the first time, do one easy problem from each Data Structure ( Array, Linked List, Stack, Queue, Tree, Graph). Next day you pick 2 easy, 2 medium and 2 hard from each Data Structure. Or you keep doing one easy question from each Data Structure. This way you should combine your Data Structure while practicing.
 
-If you are an expert and you have already solved many problems and you want to just sharpen your skills with only one targeted Data Structure then pick that one and work on it. However, this one is only for the experts who had already done 50 problems from each Data Structure and they want to sharpen their skill on targeted one. 
+If you are an expert and you have already solved many problems and you want to just sharpen your skills with only one targeted Data Structure then pick that one and work on it. However, this one is only for the experts who had already done 50 problems from each Data Structure and they want to sharpen their skill on targeted one.
 
-If you have any futher question please write in comment box. 
+If you have any futher question please write in comment box.
 
 ## Reference
 
