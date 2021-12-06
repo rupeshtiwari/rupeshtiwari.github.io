@@ -85,7 +85,7 @@ I used to ask my-self question why should I read a book on algorithms and data s
 
 - [Learn Database Management](<[https://www.youtube.com/playlist?list=PLg6p_zdrEgHFwRhX3R8ZcXImGPUI9_lfX](https://www.youtube.com/playlist?list=PLg6p_zdrEgHFwRhX3R8ZcXImGPUI9_lfX)>)
 
-\[Learn Compiler]([https://www.youtube.com/playlist?list=PLg6p_zdrEgHFhAz\_-sAx9Rw44wbGcDz3l](https://www.youtube.com/playlist?list=PLg6p_zdrEgHFhAz_-sAx9Rw44wbGcDz3l))
+- [Learn Compiler](https://www.youtube.com/playlist?list=PLg6p_zdrEgHFhAz_-sAx9Rw44wbGcDz3l)
 
 ---
 
