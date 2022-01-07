@@ -1,6 +1,6 @@
 ---
 title: How to improve Reliability in the cloud?
-date: 2023-03-18 00:00 +0000
+date: 2023-03-18T10:00:37.000Z
 description: Did you get a phone call from your customer saying they want to improve their application reliability while you move their workload to the cloud? If yes then continue reading this article. I will use Microsoft Azure to explain the Reliability concept and its improvement steps. You can certainly do the same in Google Cloud or Amazon AWS.
 author_profile: true
 published: true
