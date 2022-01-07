@@ -1,5 +1,7 @@
 source "https://rubygems.org"
-
+platforms :mswin do
+  gem "x"
+end
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
