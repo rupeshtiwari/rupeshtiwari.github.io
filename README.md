@@ -1,5 +1,4 @@
-# Rupesh Blogs
-
+# Rupesh Home 
 [![Build every day](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/schedule-posts.yml/badge.svg?branch=main)](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/schedule-posts.yml)
 ## Writing New Blog command
 
