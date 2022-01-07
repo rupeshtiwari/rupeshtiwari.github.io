@@ -21,3 +21,9 @@ First time if you download the code in new machine then please install the depen
 
 `bundle exec jekyll serve --limit_posts=5`
 
+`jekyll server --unpublished`
+
+To preview your site locally, you can --future option
+`jekyll server --future`
+
+
