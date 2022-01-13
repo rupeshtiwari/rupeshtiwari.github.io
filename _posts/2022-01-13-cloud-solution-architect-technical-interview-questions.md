@@ -1,6 +1,6 @@
 ---
 title: Cloud Solution Architect Technical Interview Questions
-date: 2022-11-26 00:00 +0000
+date: 2022-01-13 00:00 +0000
 description: Cloud solution architect technical interview questions. 
 author_profile: true
 published: true

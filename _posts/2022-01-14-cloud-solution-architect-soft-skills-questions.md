@@ -1,6 +1,6 @@
 ---
 title: Cloud Solution Architect Soft Skills Questions
-date: 2022-11-26 00:00 +0000
+date: 2022-01-14 00:00 +0000
 description: Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you must prepare for your next up coming interview.
 author_profile: true
 published: true
