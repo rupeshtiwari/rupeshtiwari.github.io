@@ -70,4 +70,4 @@ Your bright future is awaiting for you so visit today [FullstackMaster](www.full
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
-![](https://imgur.com/a32nUcu.png)
+![](https://imgur.com/5fBatz9.png)

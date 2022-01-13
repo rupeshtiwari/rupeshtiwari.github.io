@@ -38,4 +38,4 @@ I write open source on angular & other JavaScript technologies.
 - Visit my public [GitHub Repositories](https://github.com/rupeshtiwari?tab=repositories)
 - Created Publish Subscribe Framework for Angular Project. Install [angular pub/sub library](https://www.npmjs.com/package/@fsms/angular-pubsub) from npm registry to write event driven angular project without using NgRX.
 
-![](https://imgur.com/a32nUcu.png)
+![](https://imgur.com/5fBatz9.png)

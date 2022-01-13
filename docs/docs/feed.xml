@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-13T08:12:12-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Cloud Solution Architect Technical Interview Questions</title><link href="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/" rel="alternate" type="text/html" title="Cloud Solution Architect Technical Interview Questions" /><published>2022-01-12T19:00:00-05:00</published><updated>2022-01-12T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions</id><content type="html" xml:base="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom"><generator
+    uri="https://jekyllrb.com/"
+    version="3.9.0"
+  >Jekyll</generator><link
+    href="https://www.rupeshtiwari.com/feed.xml"
+    rel="self"
+    type="application/atom+xml"
+  /><link
+    href="https://www.rupeshtiwari.com/"
+    rel="alternate"
+    type="text/html"
+  /><updated>2022-01-13T08:42:02-05:00</updated><id
+  >https://www.rupeshtiwari.com/feed.xml</id><title
+    type="html"
+  >Rupesh Tiwari - Founder of Fullstack Master</title><subtitle
+  >Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author
+  ><name>Rupesh Tiwari</name></author><entry><title
+      type="html"
+    >Cloud Solution Architect Technical Interview Questions</title><link
+      href="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/"
+      rel="alternate"
+      type="text/html"
+      title="Cloud Solution Architect Technical Interview Questions"
+    /><published>2022-01-12T19:00:00-05:00</published><updated
+    >2022-01-12T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution architect interview. My answers would not be perfect so feel free to search for better answers. Important part from this article is what kind of technical questions you should know to become a good cloud solution architect. So focus on the questions that I am asking here and learn from anywhere about their answers.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -921,7 +950,31 @@ THROUGHPUT = The amount of STUFF
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="webdev" /><category term="tutorial" /><category term="beginners" /><category term="cloud" /><summary type="html">Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution architect interview. My answers would not be perfect so feel free to search for better answers. Important part from this article is what kind of technical questions you should know to become a good cloud solution architect. So focus on the questions that I am asking here and learn from anywhere about their answers.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/4EIcRWN.png" /><media:content medium="image" url="https://i.imgur.com/4EIcRWN.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure</title><link href="https://www.rupeshtiwari.com/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="alternate" type="text/html" title="Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure" /><published>2022-01-07T19:00:00-05:00</published><updated>2022-01-07T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="webdev" /><category
+      term="tutorial"
+    /><category term="beginners" /><category term="cloud" /><summary
+      type="html"
+    >Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution architect interview. My answers would not be perfect so feel free to search for better answers. Important part from this article is what kind of technical questions you should know to become a good cloud solution architect. So focus on the questions that I am asking here and learn from anywhere about their answers.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/4EIcRWN.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/4EIcRWN.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure</title><link
+      href="https://www.rupeshtiwari.com/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/"
+      rel="alternate"
+      type="text/html"
+      title="Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure"
+    /><published>2022-01-07T19:00:00-05:00</published><updated
+    >2022-01-07T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of the box in Azure.to&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1041,7 +1094,31 @@ So that if one node is out of order then other node will automatically start and
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of the box in Azure.to</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introduction to Azure Infrastructure Architecture</title><link href="https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/" rel="alternate" type="text/html" title="Introduction to Azure Infrastructure Architecture" /><published>2021-12-31T19:00:00-05:00</published><updated>2021-12-31T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture</id><content type="html" xml:base="https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of the box in Azure.to</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >Introduction to Azure Infrastructure Architecture</title><link
+      href="https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/"
+      rel="alternate"
+      type="text/html"
+      title="Introduction to Azure Infrastructure Architecture"
+    /><published>2021-12-31T19:00:00-05:00</published><updated
+    >2021-12-31T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1177,7 +1254,31 @@ Azure Availability Zones are unique physical locations within an Azure region an
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What is Azure Virtual Machine Scale Sets</title><link href="https://www.rupeshtiwari.com/what-is-azure-virtual-machine-scale-sets/" rel="alternate" type="text/html" title="What is Azure Virtual Machine Scale Sets" /><published>2021-12-24T19:00:00-05:00</published><updated>2021-12-24T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/what-is-azure-virtual-machine-scale-sets</id><content type="html" xml:base="https://www.rupeshtiwari.com/what-is-azure-virtual-machine-scale-sets/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >What is Azure Virtual Machine Scale Sets</title><link
+      href="https://www.rupeshtiwari.com/what-is-azure-virtual-machine-scale-sets/"
+      rel="alternate"
+      type="text/html"
+      title="What is Azure Virtual Machine Scale Sets"
+    /><published>2021-12-24T19:00:00-05:00</published><updated
+    >2021-12-24T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/what-is-azure-virtual-machine-scale-sets</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/what-is-azure-virtual-machine-scale-sets/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for &lt;strong&gt;load-balancing, scaling, make application highly available&lt;/strong&gt; is super challenging on cloud. &lt;strong&gt;Azure Virtual Machine Scale sets&lt;/strong&gt; is the great tool which does all of these automatically with &lt;strong&gt;no extra cost&lt;/strong&gt; for you. Lets learn more about Scale sets in this article.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1373,7 +1474,31 @@ Azure Availability Zones are unique physical locations within an Azure region an
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for load-balancing, scaling, make application highly available is super challenging on cloud. Azure Virtual Machine Scale sets is the great tool which does all of these automatically with no extra cost for you. Lets learn more about Scale sets in this article.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Create Update and Delete Tags on Azure Resource</title><link href="https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/" rel="alternate" type="text/html" title="Create Update and Delete Tags on Azure Resource" /><published>2021-12-17T19:00:00-05:00</published><updated>2021-12-17T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource</id><content type="html" xml:base="https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for load-balancing, scaling, make application highly available is super challenging on cloud. Azure Virtual Machine Scale sets is the great tool which does all of these automatically with no extra cost for you. Lets learn more about Scale sets in this article.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >Create Update and Delete Tags on Azure Resource</title><link
+      href="https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/"
+      rel="alternate"
+      type="text/html"
+      title="Create Update and Delete Tags on Azure Resource"
+    /><published>2021-12-17T19:00:00-05:00</published><updated
+    >2021-12-17T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmdlet&lt;/code&gt; used to fetch tags from Azure resources.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1515,7 +1640,31 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Site Recovery Strategy in Azure</title><link href="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/" rel="alternate" type="text/html" title="Site Recovery Strategy in Azure" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/site-recoverystrategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >Site Recovery Strategy in Azure</title><link
+      href="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/"
+      rel="alternate"
+      type="text/html"
+      title="Site Recovery Strategy in Azure"
+    /><published>2021-12-10T19:00:00-05:00</published><updated
+    >2021-12-10T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/site-recoverystrategy-in-azure</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Learn the failover and failback stages in Site Recovery on Azure. Learn &lt;strong&gt;Business Continuity and Disaster Recovery&lt;/strong&gt; (BCDR) strategy in Azure.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1557,7 +1706,31 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/7I0NoBe.png" /><media:content medium="image" url="https://i.imgur.com/7I0NoBe.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On-Premises Disaster Site Recovery Strategy with Azure VM</title><link href="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/" rel="alternate" type="text/html" title="On-Premises Disaster Site Recovery Strategy with Azure VM" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/7I0NoBe.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/7I0NoBe.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >On-Premises Disaster Site Recovery Strategy with Azure VM</title><link
+      href="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/"
+      rel="alternate"
+      type="text/html"
+      title="On-Premises Disaster Site Recovery Strategy with Azure VM"
+    /><published>2021-12-10T19:00:00-05:00</published><updated
+    >2021-12-10T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn &lt;strong&gt;Business Continuity and Disaster Recovery&lt;/strong&gt; (BCDR) strategy in Azure.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1704,7 +1877,31 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Where to Store Application Data in Azure</title><link href="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/" rel="alternate" type="text/html" title="Where to Store Application Data in Azure" /><published>2021-12-03T19:00:00-05:00</published><updated>2021-12-03T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/where-to-store-application-data-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >Where to Store Application Data in Azure</title><link
+      href="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/"
+      rel="alternate"
+      type="text/html"
+      title="Where to Store Application Data in Azure"
+    /><published>2021-12-03T19:00:00-05:00</published><updated
+    >2021-12-03T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/where-to-store-application-data-in-azure</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -2286,7 +2483,31 @@ The &lt;strong&gt;Data Lake Store&lt;/strong&gt; stores the relational structure
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What to use to Run applications in Azure</title><link href="https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure/" rel="alternate" type="text/html" title="What to use to Run applications in Azure" /><published>2021-11-26T19:00:00-05:00</published><updated>2021-11-26T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >What to use to Run applications in Azure</title><link
+      href="https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure/"
+      rel="alternate"
+      type="text/html"
+      title="What to use to Run applications in Azure"
+    /><published>2021-11-26T19:00:00-05:00</published><updated
+    >2021-11-26T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get &lt;a href=&quot;https://azure.microsoft.com/en-us/resources/designing-distributed-systems/&quot;&gt;free e-book on Design Distributed Systems&lt;/a&gt;.
 It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2966,7 +3187,31 @@ It is difficult to compare options available in Azure. The comparison with the f
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get free e-book on Design Distributed Systems. It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Azure Network Watcher Basics</title><link href="https://www.rupeshtiwari.com/azure-network-watcher-basics/" rel="alternate" type="text/html" title="Azure Network Watcher Basics" /><published>2021-11-19T19:00:00-05:00</published><updated>2021-11-19T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/azure-network-watcher-basics</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-network-watcher-basics/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="tutorial" /><summary
+      type="html"
+    >Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get free e-book on Design Distributed Systems. It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry><entry><title
+      type="html"
+    >Azure Network Watcher Basics</title><link
+      href="https://www.rupeshtiwari.com/azure-network-watcher-basics/"
+      rel="alternate"
+      type="text/html"
+      title="Azure Network Watcher Basics"
+    /><published>2021-11-19T19:00:00-05:00</published><updated
+    >2021-11-19T19:00:00-05:00</updated><id
+    >https://www.rupeshtiwari.com/azure-network-watcher-basics</id><content
+      type="html"
+      xml:base="https://www.rupeshtiwari.com/azure-network-watcher-basics/"
+    >&lt;blockquote&gt;
   &lt;p&gt;Azure Network Watcher is a &lt;strong&gt;monitoring service&lt;/strong&gt; with lots of other important services for network. &lt;strong&gt;Most network diagnostics issues can be detected and analyzed with Azure Network Watcher&lt;/strong&gt;. Learn everything about Network Watcher in this article.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -3068,4 +3313,16 @@ So in this example the next hop is Internet.&lt;/p&gt;
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/a32nUcu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="certification" /><summary type="html">Azure Network Watcher is a monitoring service with lots of other important services for network. Most network diagnostics issues can be detected and analyzed with Azure Network Watcher. Learn everything about Network Watcher in this article.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author
+    ><name>Rupesh Tiwari</name></author><category term="azure" /><category
+      term="webdev"
+    /><category term="beginners" /><category term="certification" /><summary
+      type="html"
+    >Azure Network Watcher is a monitoring service with lots of other important services for network. Most network diagnostics issues can be detected and analyzed with Azure Network Watcher. Learn everything about Network Watcher in this article.</summary><media:thumbnail
+      xmlns:media="http://search.yahoo.com/mrss/"
+      url="https://i.imgur.com/zZYQYQA.png"
+    /><media:content
+      medium="image"
+      url="https://i.imgur.com/zZYQYQA.png"
+      xmlns:media="http://search.yahoo.com/mrss/"
+    /></entry></feed>
