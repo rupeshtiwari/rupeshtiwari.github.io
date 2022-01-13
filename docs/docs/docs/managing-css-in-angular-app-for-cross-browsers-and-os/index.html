@@ -1,0 +1,1122 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Managing CSS in Angular App for Cross Browsers and OS - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Learn creating multiple css files for cross browsers and os in angular app">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Managing CSS in Angular App for Cross Browsers and OS">
+<meta property="og:url" content="https://www.rupeshtiwari.com/managing-css-in-angular-app-for-cross-browsers-and-os/">
+
+
+  <meta property="og:description" content="Learn creating multiple css files for cross browsers and os in angular app">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/knMB5bS.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Managing CSS in Angular App for Cross Browsers and OS">
+  <meta name="twitter:description" content="Learn creating multiple css files for cross browsers and os in angular app">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/managing-css-in-angular-app-for-cross-browsers-and-os/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/knMB5bS.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-02-03T13:50:00-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/managing-css-in-angular-app-for-cross-browsers-and-os/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/Eiyywcv.png" alt="Managing CSS in Angular App for Cross Browsers and OS" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Managing CSS in Angular App for Cross Browsers and OS</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Managing CSS in Angular App for Cross Browsers and OS">
+    <meta itemprop="description" content="  Do you want to organize your CSS files in your angular app? Do youwant to find out the strategy to segregate the CSS based on cross browsers andoperating systems? You CSS designer should not be worried how to manage these.As a developer you should setup your angular app such that it works out of thebox.IntroductionI will use angular 10 project. Then I will install ngx-device-detector nodepackage and finally I will demonstrate the best practice to follow todynamically load cross browser and operating system related CSS files in yourangular application.Installing ngx-device-detector Angular LibraryI am assuming that you have created one angular project named as manage-cssusing angular cli ng new manage-css --styles=scss. I have angular projectcreated with sass styles.npm i -S ngx-device-detectorShowing OS and Browser Info using ngx-device-detector Angular LibraryAdd below code in app component to see how ngx-device-detector works.app.component.tsimport { Component } from &#39;@angular/core&#39;;import { DeviceDetectorService, DeviceInfo } from &#39;ngx-device-detector&#39;;@Component({  selector: &#39;app-root&#39;,  templateUrl: &#39;./app.component.html&#39;,  styleUrls: [&#39;./app.component.scss&#39;],})export class AppComponent {  title = &#39;manage-css&#39;;  deviceInfo: DeviceInfo;  constructor(private deviceDetectorService: DeviceDetectorService) {    this.deviceInfo = this.deviceDetectorService.getDeviceInfo();  }}app.component.html&lt;div&gt;  &lt;ul&gt;    &lt;li&gt;user Agent - &lt;/li&gt;    &lt;li&gt;Os - &lt;/li&gt;    &lt;li&gt;browser - &lt;/li&gt;    &lt;li&gt;device - &lt;/li&gt;    &lt;li&gt;os_version - &lt;/li&gt;    &lt;li&gt;browser_version - &lt;/li&gt;    &lt;li&gt;deviceType - &lt;/li&gt;    &lt;li&gt;orientation - &lt;/li&gt;  &lt;/ul&gt;&lt;/div&gt;Adding default style.scss for all Browsers (IE &amp; Chrome etc.)styles.scss would be our default style file. You could imagine this is ourbase style file.#test {  background-color: aqua;  height: auto;  width: 200px;}Let’s crate a div in app.component.html&lt;div id=&quot;test&quot;&gt;  This is angular app  &lt;br&gt;  Chrome color: aqua  &lt;br&gt;  IE color: yellow&lt;/div&gt;Now our site is running both in chrome and IE browser nicelyChrome:IE browser:Now I have requirement to show border only on IE browser not in Chrome.Adding IE Browser specific CSS Files in Angular AppLet’s assume we are writing CSS for chrome browser as default. And we want toextend few style class for IE browser. So lets create styles-ie.scss andextend one of our default class test from styles.scss.extended test class and added border@import &quot;./styles.scss&quot;;#test {  // @extend .test;  border: 5px red dashed;}We need to add this file in angular.json so that angular will add this tothe index.html file when we serve or build.Go to angular.json &gt; architect &gt; build &gt; options &gt; styles and addbelow code &quot;styles&quot;: [              { &quot;input&quot;: &quot;src/styles.scss&quot;, &quot;bundleName&quot;: &quot;styles&quot; },              { &quot;input&quot;: &quot;src/styles-ie.scss&quot;, &quot;bundleName&quot;: &quot;styles-ie&quot; }            ],Now lest run npm run build Notice we have 2 files styles.css andstyles-ie.css in dist/manage-css folderNow in the Index.hml you see Angular build add both CSS files.We do not want that. Because, I want IE style files to be removed while runningin Chrome.Loading only Chrome Styles on Chrome BrowserNow, I will use deviceInfo object to determine which browser I am in. Then Iwill use Document from @angular/common to remove the IE specific stylefiles.In order to do above I will prefer to create angular service StyleService andexecute this when my application initialized.Creating Style Service and Remove IE Specific style filesLets search all the link nodes with having style files ending with -ie.css andremove them.Create style.service.ts add below code:import { DOCUMENT } from &#39;@angular/common&#39;;import { Inject, Injectable } from &#39;@angular/core&#39;;import { DeviceDetectorService, DeviceInfo } from &#39;ngx-device-detector&#39;;@Injectable({ providedIn: &#39;root&#39; })export class StyleService {  deviceInfo: DeviceInfo;  constructor(    private readonly deviceDetectorService: DeviceDetectorService,    @Inject(DOCUMENT) private readonly document: any  ) {}  execute() {    this.removeIEStylesIfRunningInChrome();  }  private removeIEStylesIfRunningInChrome() {    this.deviceInfo = this.deviceDetectorService.getDeviceInfo();    const head = this.document.getElementsByTagName(&#39;head&#39;)[0];    if (this.deviceInfo.browser === &#39;Chrome&#39;) {      [...(this.document.querySelectorAll(&#39;link&#39;) as any)]        .filter((x) =&gt; x.href?.indexOf(&#39;-ie.css&#39;) &gt; -1)        .forEach((f) =&gt; head.removeChild(f));    }  }}Create init-styles.tsimport { StyleService } from &#39;./style.service&#39;;export function initStyles(styleService: StyleService) {  return () =&gt; {    styleService.execute();  };}In app.module.ts add provider to call initStyles providers: [    {      provide: APP_INITIALIZER,      useFactory: initStyles,      deps: [StyleService],      multi: true,    },  ],Showing Chrome and IE specific styles onlyNow lets run ng serveand in Chrome IE specific styles are removed only Chrome Styles are loaded 🙂and IE browser has extra style file for IE browser specific styles-ie.css 🙂Adding Operating system specific styles in Angular appI want to add styles-mac.scss and add black border to be shown only on MAC.Add styles-mac.scss@import &quot;./styles.scss&quot;;#test {  // @extend .test;  border: 5px black dashed;}Update angular.json to add MAC sass files.   &quot;styles&quot;: [              { &quot;input&quot;: &quot;src/styles.scss&quot;, &quot;bundleName&quot;: &quot;styles&quot; },              { &quot;input&quot;: &quot;src/styles-ie.scss&quot;, &quot;bundleName&quot;: &quot;styles-ie&quot; },              { &quot;input&quot;: &quot;src/styles-mac.scss&quot;, &quot;bundleName&quot;: &quot;styles-mac&quot; }            ],Update the styles.service to add new method to remove MAC styles if running onWindows OS and call on execute function.execute() {    this.removeIEStylesIfRunningInChrome();    this.removeMacStylesIfRunningInWindowsOS();}private removeMacStylesIfRunningInWindowsOS() {    this.deviceInfo = this.deviceDetectorService.getDeviceInfo();    const head = this.document.getElementsByTagName(&#39;head&#39;)[0];    if (this.deviceInfo.os === &#39;Windows&#39;) {      [...(this.document.querySelectorAll(&#39;link&#39;) as any)]        .filter((x) =&gt; x.href?.indexOf(&#39;-mac.css&#39;) &gt; -1)        .forEach((f) =&gt; head.removeChild(f));    }  }GitHub Repository: https://github.com/rupeshtiwari/organize-css-angularBecome full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
+    <meta itemprop="datePublished" content="2021-02-03T13:50:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Managing CSS in Angular App for Cross Browsers and OS
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#introduction">Introduction</a></li><li><a href="#installing-ngx-device-detector-angular-library">Installing ngx-device-detector Angular Library</a></li><li><a href="#showing-os-and-browser-info-using-ngx-device-detector-angular-library">Showing OS and Browser Info using ngx-device-detector Angular Library</a></li><li><a href="#adding-default-stylescss-for-all-browsers-ie--chrome-etc">Adding default style.scss for all Browsers (IE &amp; Chrome etc.)</a></li><li><a href="#adding-ie-browser-specific-css-files-in-angular-app">Adding IE Browser specific CSS Files in Angular App</a></li><li><a href="#loading-only-chrome-styles-on-chrome-browser">Loading only Chrome Styles on Chrome Browser</a></li><li><a href="#creating-style-service-and-remove-ie-specific-style-files">Creating Style Service and Remove IE Specific style files</a></li><li><a href="#showing-chrome-and-ie-specific-styles-only">Showing Chrome and IE specific styles only</a></li><li><a href="#adding-operating-system-specific-styles-in-angular-app">Adding Operating system specific styles in Angular app</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Do you want to organize your <strong>CSS</strong> files in your <strong>angular</strong> app? Do you
+want to find out the strategy to segregate the CSS based on cross browsers and
+operating systems? You CSS designer should not be worried how to manage these.
+As a developer you should setup your angular app such that it works out of the
+box.</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I will use angular 10 project. Then I will install <code class="language-plaintext highlighter-rouge">ngx-device-detector</code> node
+package and finally I will demonstrate the best practice to follow to
+dynamically load cross browser and operating system related CSS files in your
+angular application.</p>
+
+<h2 id="installing-ngx-device-detector-angular-library">Installing ngx-device-detector Angular Library</h2>
+
+<p>I am assuming that you have created one angular project named as <code class="language-plaintext highlighter-rouge">manage-css</code>
+using angular cli <code class="language-plaintext highlighter-rouge">ng new manage-css --styles=scss</code>. I have angular project
+created with <code class="language-plaintext highlighter-rouge">sass</code> styles.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i <span class="nt">-S</span> ngx-device-detector
+</code></pre></div></div>
+
+<h2 id="showing-os-and-browser-info-using-ngx-device-detector-angular-library">Showing OS and Browser Info using ngx-device-detector Angular Library</h2>
+
+<p>Add below code in app component to see how <strong>ngx-device-detector</strong> works.</p>
+
+<p><strong>app.component.ts</strong></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">DeviceDetectorService</span><span class="p">,</span> <span class="nx">DeviceInfo</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">ngx-device-detector</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Component</span><span class="p">({</span>
+  <span class="na">selector</span><span class="p">:</span> <span class="dl">'</span><span class="s1">app-root</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">templateUrl</span><span class="p">:</span> <span class="dl">'</span><span class="s1">./app.component.html</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">styleUrls</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">./app.component.scss</span><span class="dl">'</span><span class="p">],</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">AppComponent</span> <span class="p">{</span>
+  <span class="nx">title</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">manage-css</span><span class="dl">'</span><span class="p">;</span>
+  <span class="nl">deviceInfo</span><span class="p">:</span> <span class="nx">DeviceInfo</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="k">private</span> <span class="nx">deviceDetectorService</span><span class="p">:</span> <span class="nx">DeviceDetectorService</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">deviceInfo</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">deviceDetectorService</span><span class="p">.</span><span class="nx">getDeviceInfo</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>app.component.html</strong></p>
+
+<pre><code class="language-htmlembedded">&lt;div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;user Agent - &lt;/li&gt;
+    &lt;li&gt;Os - &lt;/li&gt;
+    &lt;li&gt;browser - &lt;/li&gt;
+    &lt;li&gt;device - &lt;/li&gt;
+    &lt;li&gt;os_version - &lt;/li&gt;
+    &lt;li&gt;browser_version - &lt;/li&gt;
+    &lt;li&gt;deviceType - &lt;/li&gt;
+    &lt;li&gt;orientation - &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<p><img src="https://i.imgur.com/2cX7wWZ.png" alt="" /></p>
+
+<h2 id="adding-default-stylescss-for-all-browsers-ie--chrome-etc">Adding default style.scss for all Browsers (IE &amp; Chrome etc.)</h2>
+
+<p><code class="language-plaintext highlighter-rouge">styles.scss</code> would be our default style file. You could imagine this is our
+base style file.</p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">#test</span> <span class="err">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="err">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nb">auto</span><span class="err">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="err">;</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
+<p>Let’s crate a <code class="language-plaintext highlighter-rouge">div</code> in <code class="language-plaintext highlighter-rouge">app.component.html</code></p>
+
+<pre><code class="language-htmlembedded">&lt;div id="test"&gt;
+  This is angular app
+  &lt;br&gt;
+  Chrome color: aqua
+  &lt;br&gt;
+  IE color: yellow
+&lt;/div&gt;
+</code></pre>
+
+<p>Now our site is running both in chrome and IE browser nicely</p>
+
+<p>Chrome:</p>
+
+<p><img src="https://i.imgur.com/VbdHBNB.png" alt="" /></p>
+
+<p>IE browser:</p>
+
+<p><img src="https://i.imgur.com/Yq10dRB.png" alt="" /></p>
+
+<p>Now I have requirement to show border only on IE browser not in Chrome.</p>
+
+<h2 id="adding-ie-browser-specific-css-files-in-angular-app">Adding IE Browser specific CSS Files in Angular App</h2>
+
+<p>Let’s assume we are writing CSS for chrome browser as default. And we want to
+extend few style class for IE browser. So lets create <code class="language-plaintext highlighter-rouge">styles-ie.scss</code> and
+extend one of our default class <code class="language-plaintext highlighter-rouge">test</code> from <code class="language-plaintext highlighter-rouge">styles.scss</code>.</p>
+
+<p>extended <code class="language-plaintext highlighter-rouge">test</code> class and added border</p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s">"./styles.scss";</span>
+
+<span class="nn">#test</span> <span class="err">{</span>
+  <span class="c1">// @extend .test;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">5px</span> <span class="no">red</span> <span class="nb">dashed</span><span class="err">;</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
+<p>We need to add this file in <strong>angular.json</strong> so that angular will add this to
+the <strong>index.html</strong> file when we serve or build.</p>
+
+<p>Go to <code class="language-plaintext highlighter-rouge">angular.json</code> &gt; <code class="language-plaintext highlighter-rouge">architect</code> &gt; <code class="language-plaintext highlighter-rouge">build</code> &gt; <code class="language-plaintext highlighter-rouge">options</code> &gt; <code class="language-plaintext highlighter-rouge">styles</code> and add
+below code</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w"> </span><span class="nl">"input"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/styles.scss"</span><span class="p">,</span><span class="w"> </span><span class="nl">"bundleName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"styles"</span><span class="w"> </span><span class="p">},</span><span class="w">
+              </span><span class="p">{</span><span class="w"> </span><span class="nl">"input"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/styles-ie.scss"</span><span class="p">,</span><span class="w"> </span><span class="nl">"bundleName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"styles-ie"</span><span class="w"> </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Now lest run <code class="language-plaintext highlighter-rouge">npm run build</code> Notice we have 2 files <code class="language-plaintext highlighter-rouge">styles.css</code> and
+<code class="language-plaintext highlighter-rouge">styles-ie.css</code> in dist/manage-css folder</p>
+
+<p><img src="https://i.imgur.com/T0kIkDw.png" alt="" /></p>
+
+<p>Now in the <code class="language-plaintext highlighter-rouge">Index.hml</code> you see Angular build add both CSS files.</p>
+
+<p><img src="https://i.imgur.com/s2j7PQB.png" alt="" /></p>
+
+<p>We do not want that. Because, I want IE style files to be removed while running
+in Chrome.</p>
+
+<p><img src="https://i.imgur.com/ea53Sa0.png" alt="" /></p>
+
+<h2 id="loading-only-chrome-styles-on-chrome-browser">Loading only Chrome Styles on Chrome Browser</h2>
+
+<p>Now, I will use deviceInfo object to determine which browser I am in. Then I
+will use <code class="language-plaintext highlighter-rouge">Document</code> from <code class="language-plaintext highlighter-rouge">@angular/common</code> to remove the IE specific style
+files.</p>
+
+<p>In order to do above I will prefer to create angular service <code class="language-plaintext highlighter-rouge">StyleService</code> and
+execute this when my application initialized.</p>
+
+<h2 id="creating-style-service-and-remove-ie-specific-style-files">Creating Style Service and Remove IE Specific style files</h2>
+
+<p>Lets search all the link nodes with having style files ending with <code class="language-plaintext highlighter-rouge">-ie.css</code> and
+remove them.</p>
+
+<p>Create <code class="language-plaintext highlighter-rouge">style.service.ts</code> add below code:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">DOCUMENT</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/common</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Inject</span><span class="p">,</span> <span class="nx">Injectable</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">DeviceDetectorService</span><span class="p">,</span> <span class="nx">DeviceInfo</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">ngx-device-detector</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Injectable</span><span class="p">({</span> <span class="na">providedIn</span><span class="p">:</span> <span class="dl">'</span><span class="s1">root</span><span class="dl">'</span> <span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">StyleService</span> <span class="p">{</span>
+  <span class="nl">deviceInfo</span><span class="p">:</span> <span class="nx">DeviceInfo</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="nx">deviceDetectorService</span><span class="p">:</span> <span class="nx">DeviceDetectorService</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">Inject</span><span class="p">(</span><span class="nx">DOCUMENT</span><span class="p">)</span> <span class="k">private</span> <span class="k">readonly</span> <span class="nb">document</span><span class="p">:</span> <span class="kr">any</span>
+  <span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">execute</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">removeIEStylesIfRunningInChrome</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="k">private</span> <span class="nx">removeIEStylesIfRunningInChrome</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">deviceInfo</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">deviceDetectorService</span><span class="p">.</span><span class="nx">getDeviceInfo</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">head</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">head</span><span class="dl">'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">deviceInfo</span><span class="p">.</span><span class="nx">browser</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">Chrome</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="p">[...(</span><span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">link</span><span class="dl">'</span><span class="p">)</span> <span class="k">as</span> <span class="kr">any</span><span class="p">)]</span>
+        <span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">x</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span><span class="p">.</span><span class="nx">href</span><span class="p">?.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">-ie.css</span><span class="dl">'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">f</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">head</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">f</span><span class="p">));</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Create <code class="language-plaintext highlighter-rouge">init-styles.ts</code></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">StyleService</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./style.service</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">function</span> <span class="nx">initStyles</span><span class="p">(</span><span class="nx">styleService</span><span class="p">:</span> <span class="nx">StyleService</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">styleService</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In <code class="language-plaintext highlighter-rouge">app.module.ts</code> add provider to call <code class="language-plaintext highlighter-rouge">initStyles</code></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">providers</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="na">provide</span><span class="p">:</span> <span class="nx">APP_INITIALIZER</span><span class="p">,</span>
+      <span class="na">useFactory</span><span class="p">:</span> <span class="nx">initStyles</span><span class="p">,</span>
+      <span class="na">deps</span><span class="p">:</span> <span class="p">[</span><span class="nx">StyleService</span><span class="p">],</span>
+      <span class="na">multi</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">],</span>
+</code></pre></div></div>
+
+<h2 id="showing-chrome-and-ie-specific-styles-only">Showing Chrome and IE specific styles only</h2>
+
+<p>Now lets run <code class="language-plaintext highlighter-rouge">ng serve</code></p>
+
+<p>and in Chrome IE specific styles are removed only Chrome Styles are loaded 🙂</p>
+
+<p><img src="https://i.imgur.com/ULGLJVp.png" alt="" /></p>
+
+<p>and IE browser has extra style file for IE browser specific <code class="language-plaintext highlighter-rouge">styles-ie.css</code> 🙂</p>
+
+<p><img src="https://i.imgur.com/h8hf0P3.png" alt="" /></p>
+
+<h2 id="adding-operating-system-specific-styles-in-angular-app">Adding Operating system specific styles in Angular app</h2>
+
+<p>I want to add <code class="language-plaintext highlighter-rouge">styles-mac.scss</code> and add black border to be shown only on MAC.</p>
+
+<p>Add <code class="language-plaintext highlighter-rouge">styles-mac.scss</code></p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s">"./styles.scss";</span>
+
+<span class="nn">#test</span> <span class="err">{</span>
+  <span class="c1">// @extend .test;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">5px</span> <span class="no">black</span> <span class="nb">dashed</span><span class="err">;</span>
+<span class="err">}</span>
+
+</code></pre></div></div>
+
+<p>Update <code class="language-plaintext highlighter-rouge">angular.json</code> to add MAC sass files.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">   </span><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w"> </span><span class="nl">"input"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/styles.scss"</span><span class="p">,</span><span class="w"> </span><span class="nl">"bundleName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"styles"</span><span class="w"> </span><span class="p">},</span><span class="w">
+              </span><span class="p">{</span><span class="w"> </span><span class="nl">"input"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/styles-ie.scss"</span><span class="p">,</span><span class="w"> </span><span class="nl">"bundleName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"styles-ie"</span><span class="w"> </span><span class="p">},</span><span class="w">
+              </span><span class="p">{</span><span class="w"> </span><span class="nl">"input"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/styles-mac.scss"</span><span class="p">,</span><span class="w"> </span><span class="nl">"bundleName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"styles-mac"</span><span class="w"> </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Update the <code class="language-plaintext highlighter-rouge">styles.service</code> to add new method to remove MAC styles if running on
+Windows OS and call on <code class="language-plaintext highlighter-rouge">execute</code> function.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">execute</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">removeIEStylesIfRunningInChrome</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">removeMacStylesIfRunningInWindowsOS</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="k">private</span> <span class="nx">removeMacStylesIfRunningInWindowsOS</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">deviceInfo</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">deviceDetectorService</span><span class="p">.</span><span class="nx">getDeviceInfo</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">head</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">head</span><span class="dl">'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">deviceInfo</span><span class="p">.</span><span class="nx">os</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">Windows</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="p">[...(</span><span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">link</span><span class="dl">'</span><span class="p">)</span> <span class="k">as</span> <span class="kr">any</span><span class="p">)]</span>
+        <span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">x</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span><span class="p">.</span><span class="nx">href</span><span class="p">?.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">-mac.css</span><span class="dl">'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">f</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">head</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">f</span><span class="p">));</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<p>GitHub Repository: https://github.com/rupeshtiwari/organize-css-angular</p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>If you want to become full stack developer and grow your carrier as new software
+developer or Lead Developer/Architect. Consider subscribing to our full stack
+development training programs. We have All-Access Monthly membership plans and
+you will get unlimited access to all of our video courses, slides, source code &amp;
+Monthly video calls.</p>
+
+<ul>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to
+access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to
+get everything from PRO plan. Additionally, you will get access to monthly
+live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more
+help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today
+<a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board
+on your dream software company as a Developer,Architect or Lead Engineer role.
+<strong>💖 Say 👋 to me!</strong></p>
+</blockquote>
+
+<div> 
+Rupesh Tiwari </div>
+<div>
+<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div>
+<div>
+✉️ <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> </div>
+<div>
+Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
+<div>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/tags/#css" class="page__taxonomy-item" rel="tag">css</a><span class="sep">, </span>
+    
+      <a href="/tags/#productivity" class="page__taxonomy-item" rel="tag">productivity</a><span class="sep">, </span>
+    
+      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-03T13:50:00-05:00">February 3, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Managing+CSS+in+Angular+App+for+Cross+Browsers+and+OS%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fmanaging-css-in-angular-app-for-cross-browsers-and-os%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fmanaging-css-in-angular-app-for-cross-browsers-and-os%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fmanaging-css-in-angular-app-for-cross-browsers-and-os%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/devops/merge-and-publish-code-coverage-for-nx-workspace-in-azure-ci-pipeline/" class="pagination--pager" title="Publishing Merged Code Coverage Report of Nx Workspace in Azure CI Pipeline
+">Previous</a>
+    
+    
+      <a href="/running-angular-10-in-internet-explorer-11-date-2021-02-04/" class="pagination--pager" title="Running Angular 10 in Internet Explorer 11
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/4EIcRWN.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-technical-interview-questions/" rel="permalink">Cloud Solution Architect Technical Interview Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          39 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-to-azure-infrastructure-architecture/" rel="permalink">Introduction to Azure Infrastructure Architecture
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/what-is-azure-virtual-machine-scale-sets/" rel="permalink">What is Azure Virtual Machine Scale Sets
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing ...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/managing-css-in-angular-app-for-cross-browsers-and-os/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/managing-css-in-angular-app-for-cross-browsers-and-os"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
