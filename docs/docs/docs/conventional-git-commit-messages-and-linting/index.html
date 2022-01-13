@@ -1,0 +1,1081 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Conventional Git Commit Messages and Linting - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Vscode linting to enforce conventional commit message">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Conventional Git Commit Messages and Linting">
+<meta property="og:url" content="https://www.rupeshtiwari.com/conventional-git-commit-messages-and-linting/">
+
+
+  <meta property="og:description" content="Vscode linting to enforce conventional commit message">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/INHV6Ax.jpg">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Conventional Git Commit Messages and Linting">
+  <meta name="twitter:description" content="Vscode linting to enforce conventional commit message">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/conventional-git-commit-messages-and-linting/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/INHV6Ax.jpg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-02-08T08:53:00-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/conventional-git-commit-messages-and-linting/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/60xKLYV.jpg" alt="Conventional Git Commit Messages and Linting" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Conventional Git Commit Messages and Linting</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Conventional Git Commit Messages and Linting">
+    <meta itemprop="description" content="  Do you want to follow Conventional Commits and want to enforce a rule suchthat your team also follows it? In this article, You will learn how to enforceConventional Commentingrule prior to commit your Angular or Nrwl.Nx Monorepo code in GitHub.Now a days all of open source library likengrx platformthey started following precise rules over how git commit messages must beformatted. This leads to more readable messages that are easy to followwhen looking through the project history.What is Conventional Commit?TheConventional Commitsspecification is a lightweight convention on top of commit messages. It providesan easy set of rules for creating an explicit commit history; which makes iteasier to write automated tools on top of. This convention dovetails withSemVer (Semantic Versioning), by describing the features,fixes, and breaking changes made in commit messages.Why is Conventional Commit?We will use the Conventional Commits specification. So that it will make easy towrite automated tools on top of it. Example if you follow conventional commitsthen you can write some automation to  Bump version of the package.json file based on commit message format.  You can generate the Changelog automatically.If you are convinced then continue reading to setup this rule in your angular orany node.js project.Examples of Conventional Message FormatCommit message with scope &amp; no bodydocs(readme): correct spelling of packageCommit message with scope, description and breaking change footerfeat(logger): need to depend on websocket libraryBREAKING CHANGE: the api parameters changedLearn more here.Conventional Commit Message FormatWe will useconventional commit to enforcethe discipline.The commit message should be structured as follows:&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;&lt;BLANK LINE&gt;&lt;body&gt;&lt;BLANK LINE&gt;&lt;footer&gt;The header is mandatory and the scope of the header is optional. Anyline of the commit message cannot be longer than 120 characters! This allows themessage to be easier to read on GitHub as well as in various git tools.Conventional Commit TypeType Must be one of the following:  build: Changes that affect the build system or external dependencies(example scopes: webpack, karma, npm)  ci: Changes to our CI configuration files and scripts (example scopes:azuredevops.yaml, Travis, Circle, BrowserStack, SauceLabs)  docs: Documentation only changes  feat: A new feature  fix: A bug fix  perf: A code change that improves performance  refactor: A code change that neither fixes a bug nor adds a feature  style: Changes that do not affect the meaning of the code (white-space,formatting, missing semi-colons, etc.)  test: Adding missing tests or correcting existing testsConventional Commit ScopeThe scope should be the name of the npm package affected (as perceived by theperson reading the changelog generated from commit messages. Example if you havea project where you have publishable libraries &amp; applications. Then you can usetheir project names.Apps: admin, client, dashboard Lib: logger, layout, messagingThe following is the list of supported scopes:  admin  client  dashboard  logger  layout  messagingConventional Commit SubjectThe subject contains a succinct description of the change and here is some tipsfor subject text:  use the imperative, present tense: “change” not “changed” nor “changes”  don’t capitalize the first letter  no dot (.) at the endConventional Commit BodyJust as in the subject, use the imperative, present tense: “change” not“changed” nor “changes”. The body should include the motivation for the changeand contrast this with previous behavior.Conventional Commit FooterThe footer should contain any information about Breaking Changes and is also theplace to reference GitHub issues that this commit Closes.Breaking Changes should start with the word BREAKING CHANGE:` with a space ortwo newlines. The rest of the commit message is then used for this.Example:feat(scope): commit messageBREAKING CHANGES:Describe breaking changes hereBEFORE:Previous code example hereAFTER:New code example hereLets learn how can we automate these rules in our own project such that no teammember can violate this rules.Commitlint Node PackageWe will usecommitlint node packageto enforce the constraints for commit message format.We will also use husky to run the linting rules before commit.Run below script to install commitlint &amp; husky.npm i -D husky @commitlint/cli @commitlint/config-conventionalAdding rules to package.json &quot;commitlint&quot;: {    &quot;extends&quot;: [      &quot;./node_modules/@commitlint/config-conventional&quot;    ],    &quot;rules&quot;: {      &quot;subject-case&quot;: [        0      ],      &quot;header-max-length&quot;: [        0,        &quot;always&quot;,        120      ]    }  },  &quot;husky&quot;: {    &quot;hooks&quot;: {      &quot;commit-msg&quot;: &quot;commitlint -E HUSKY_GIT_PARAMS&quot;    }  },What will happen here is that every time a commit is attempted, it will getlinted based on the conventional commit message rules. The developer will get anerror if they deviate. This is painful to start with but it becomes secondnature after a while!Testing Conventional Commit RulesAdd comment adding commit rules and try to commitNotice you see error. Commit error Lets fix our comment as per Conventional Commit Rule. Change the comment likebelow &amp; commitbuild: added new script for lintingNow you should be able to commit your code.Note we can successfully commit and push our code.ConclusionNow you learn how can you use conventional commits and enforce this rule in yourproject. In my next article I will explain how can you apply some automation onthis project. Like bumping package.json versions automatically, generatingchange log etc. So stay tuned.Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
+    <meta itemprop="datePublished" content="2021-02-08T08:53:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Conventional Git Commit Messages and Linting
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-is-conventional-commit">What is Conventional Commit?</a></li><li><a href="#why-is-conventional-commit">Why is Conventional Commit?</a></li><li><a href="#examples-of-conventional-message-format">Examples of Conventional Message Format</a></li><li><a href="#conventional-commit-message-format">Conventional Commit Message Format</a><ul><li><a href="#conventional-commit-type">Conventional Commit Type</a></li><li><a href="#conventional-commit-scope">Conventional Commit Scope</a></li><li><a href="#conventional-commit-subject">Conventional Commit Subject</a></li><li><a href="#conventional-commit-body">Conventional Commit Body</a></li><li><a href="#conventional-commit-footer">Conventional Commit Footer</a></li></ul></li><li><a href="#commitlint-node-package">Commitlint Node Package</a></li><li><a href="#adding-rules-to-packagejson">Adding rules to package.json</a></li><li><a href="#testing-conventional-commit-rules">Testing Conventional Commit Rules</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Do you want to follow Conventional Commits and want to enforce a rule such
+that your team also follows it? In this article, You will learn how to enforce
+<a href="https://www.conventionalcommits.org/en/v1.0.0/#summary">Conventional Commenting</a>
+rule prior to commit your <strong>Angular</strong> or <strong>Nrwl.Nx Monorepo</strong> code in GitHub.
+Now a days all of open source library like
+<a href="https://github.com/ngrx/platform/blob/master/CONTRIBUTING.md">ngrx platform</a>
+they started following precise rules over how git commit messages must be
+formatted. This leads to <strong>more readable messages</strong> that are easy to follow
+when looking through the project history.</p>
+</blockquote>
+
+<h2 id="what-is-conventional-commit">What is Conventional Commit?</h2>
+
+<p>The
+<a href="https://www.conventionalcommits.org/en/v1.0.0/#summary">Conventional Commits</a>
+specification is a lightweight convention on top of commit messages. It provides
+an easy set of rules for creating an explicit commit history; which makes it
+easier to write automated tools on top of. This convention dovetails with
+<a href="https://semver.org/">SemVer</a> (Semantic Versioning), by describing the features,
+fixes, and breaking changes made in commit messages.</p>
+
+<h2 id="why-is-conventional-commit">Why is Conventional Commit?</h2>
+
+<p>We will use the Conventional Commits specification. So that it will make easy to
+write automated tools on top of it. Example if you follow conventional commits
+then you can write some automation to</p>
+
+<ul>
+  <li>Bump version of the <code class="language-plaintext highlighter-rouge">package.json</code> file based on commit message format.</li>
+  <li>You can generate the Changelog automatically.</li>
+</ul>
+
+<p>If you are convinced then continue reading to setup this rule in your angular or
+any <code class="language-plaintext highlighter-rouge">node.js</code> project.</p>
+
+<h2 id="examples-of-conventional-message-format">Examples of Conventional Message Format</h2>
+
+<p><strong>Commit message with scope &amp; no body</strong>
+<code class="language-plaintext highlighter-rouge">docs(readme): correct spelling of package</code></p>
+
+<p><strong>Commit message with scope, description and breaking change footer</strong></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>feat<span class="o">(</span>logger<span class="o">)</span>: need to depend on websocket library
+BREAKING CHANGE: the api parameters changed
+</code></pre></div></div>
+
+<p>Learn<a href="https://www.conventionalcommits.org/en/v1.0.0/#summary"> more here</a>.</p>
+
+<h2 id="conventional-commit-message-format">Conventional Commit Message Format</h2>
+
+<p>We will use
+<a href="https://www.conventionalcommits.org/en/v1.0.0/">conventional commit</a> to enforce
+the discipline.</p>
+
+<p>The commit message should be structured as follows:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;<span class="nb">type</span><span class="o">&gt;(</span>&lt;scope&gt;<span class="o">)</span>: &lt;subject&gt;
+&lt;BLANK LINE&gt;
+&lt;body&gt;
+&lt;BLANK LINE&gt;
+&lt;footer&gt;
+</code></pre></div></div>
+
+<p>The <strong>header</strong> is mandatory and the <strong>scope</strong> of the header is optional. Any
+line of the commit message cannot be longer than 120 characters! This allows the
+message to be easier to read on GitHub as well as in various git tools.</p>
+
+<h3 id="conventional-commit-type">Conventional Commit Type</h3>
+
+<p>Type Must be one of the following:</p>
+
+<ul>
+  <li><strong>build</strong>: Changes that affect the build system or external dependencies
+(example scopes: webpack, karma, npm)</li>
+  <li><strong>ci</strong>: Changes to our CI configuration files and scripts (example scopes:
+azuredevops.yaml, Travis, Circle, BrowserStack, SauceLabs)</li>
+  <li><strong>docs</strong>: Documentation only changes</li>
+  <li><strong>feat</strong>: A new feature</li>
+  <li><strong>fix</strong>: A bug fix</li>
+  <li><strong>perf</strong>: A code change that improves performance</li>
+  <li><strong>refactor</strong>: A code change that neither fixes a bug nor adds a feature</li>
+  <li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space,
+formatting, missing semi-colons, etc.)</li>
+  <li><strong>test</strong>: Adding missing tests or correcting existing tests</li>
+</ul>
+
+<h3 id="conventional-commit-scope">Conventional Commit Scope</h3>
+
+<p>The scope should be the name of the <code class="language-plaintext highlighter-rouge">npm</code> package affected (as perceived by the
+person reading the changelog generated from commit messages. Example if you have
+a project where you have publishable libraries &amp; applications. Then you can use
+their project names.</p>
+
+<p>Apps: admin, client, dashboard Lib: logger, layout, messaging</p>
+
+<p>The following is the list of supported scopes:</p>
+
+<ul>
+  <li><strong>admin</strong></li>
+  <li><strong>client</strong></li>
+  <li><strong>dashboard</strong></li>
+  <li><strong>logger</strong></li>
+  <li><strong>layout</strong></li>
+  <li><strong>messaging</strong></li>
+</ul>
+
+<h3 id="conventional-commit-subject">Conventional Commit Subject</h3>
+
+<p>The subject contains a succinct description of the change and here is some tips
+for subject text:</p>
+
+<ul>
+  <li>use the imperative, present tense: “change” not “changed” nor “changes”</li>
+  <li>don’t capitalize the first letter</li>
+  <li>no dot (.) at the end</li>
+</ul>
+
+<h3 id="conventional-commit-body">Conventional Commit Body</h3>
+
+<p>Just as in the subject, use the imperative, present tense: “change” not
+“changed” nor “changes”. The body should include the motivation for the change
+and contrast this with previous behavior.</p>
+
+<h3 id="conventional-commit-footer">Conventional Commit Footer</h3>
+
+<p>The footer should contain any information about Breaking Changes and is also the
+place to reference GitHub issues that this commit Closes.</p>
+
+<p>Breaking Changes should start with the word <code class="language-plaintext highlighter-rouge">BREAKING CHANGE:</code>` with a space or
+two newlines. The rest of the commit message is then used for this.</p>
+
+<p>Example:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>feat<span class="o">(</span>scope<span class="o">)</span>: commit message
+
+BREAKING CHANGES:
+
+Describe breaking changes here
+
+BEFORE:
+
+Previous code example here
+
+AFTER:
+
+New code example here
+</code></pre></div></div>
+
+<p>Lets learn how can we automate these rules in our own project such that no team
+member can violate this rules.</p>
+
+<h2 id="commitlint-node-package">Commitlint Node Package</h2>
+
+<p>We will use
+<a href="https://commitlint.js.org/#/guides-local-setup?id=install-commitlint">commitlint node package</a>
+to enforce the constraints for commit message format.</p>
+
+<p>We will also use <code class="language-plaintext highlighter-rouge">husky</code> to run the linting rules before commit.</p>
+
+<p>Run below script to install commitlint &amp; husky.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i <span class="nt">-D</span> husky @commitlint/cli @commitlint/config-conventional
+</code></pre></div></div>
+
+<h2 id="adding-rules-to-packagejson">Adding rules to package.json</h2>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="nl">"commitlint"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"extends"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"./node_modules/@commitlint/config-conventional"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"rules"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"subject-case"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"header-max-length"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"always"</span><span class="p">,</span><span class="w">
+        </span><span class="mi">120</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="err">,</span><span class="w">
+  </span><span class="nl">"husky"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"hooks"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"commit-msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"commitlint -E HUSKY_GIT_PARAMS"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<p>What will happen here is that every time a commit is attempted, it will get
+linted based on the conventional commit message rules. The developer will get an
+error if they deviate. This is painful to start with but it becomes second
+nature after a while!</p>
+
+<h2 id="testing-conventional-commit-rules">Testing Conventional Commit Rules</h2>
+
+<p>Add comment <code class="language-plaintext highlighter-rouge">adding commit rules</code> and try to commit</p>
+
+<p><img src="https://i.imgur.com/6HQmgEa.png" alt="" /></p>
+
+<p>Notice you see error. <img src="https://i.imgur.com/3LSunpY.png" alt="" /></p>
+
+<p>Commit error <img src="https://i.imgur.com/q6kUXjw.png" alt="" /></p>
+
+<p>Lets fix our comment as per Conventional Commit Rule. Change the comment like
+below &amp; commit</p>
+
+<p><code class="language-plaintext highlighter-rouge">build: added new script for linting</code></p>
+
+<p><img src="https://i.imgur.com/DQmXFwM.png" alt="" /></p>
+
+<p>Now you should be able to commit your code.</p>
+
+<p>Note we can successfully commit and push our code.</p>
+
+<p><img src="https://i.imgur.com/N1krCDR.png" alt="" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Now you learn how can you use conventional commits and enforce this rule in your
+project. In my next article I will explain how can you apply some automation on
+this project. Like bumping package.json versions automatically, generating
+change log etc. So stay tuned.</p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>If you want to become full stack developer and grow your carrier as new software
+developer or Lead Developer/Architect. Consider subscribing to our full stack
+development training programs. We have All-Access Monthly membership plans and
+you will get unlimited access to all of our video courses, slides, source code &amp;
+Monthly video calls.</p>
+
+<ul>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to
+access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to
+get everything from PRO plan. Additionally, you will get access to monthly
+live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more
+help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today
+<a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board
+on your dream software company as a Developer,Architect or Lead Engineer role.</p>
+</blockquote>
+
+<p><strong>💖 Say 👋 to me!</strong></p>
+
+<div> 
+Rupesh Tiwari </div>
+<div>
+<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div>
+<div>
+✉️ <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> </div>
+<div>
+Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
+<div>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#javascript" class="page__taxonomy-item" rel="tag">javascript</a><span class="sep">, </span>
+    
+      <a href="/tags/#linting" class="page__taxonomy-item" rel="tag">linting</a><span class="sep">, </span>
+    
+      <a href="/tags/#vscode" class="page__taxonomy-item" rel="tag">vscode</a><span class="sep">, </span>
+    
+      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-08T08:53:00-05:00">February 8, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Conventional+Git+Commit+Messages+and+Linting%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fconventional-git-commit-messages-and-linting%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fconventional-git-commit-messages-and-linting%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fconventional-git-commit-messages-and-linting%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/running-angular-10-in-internet-explorer-11-date-2021-02-04/" class="pagination--pager" title="Running Angular 10 in Internet Explorer 11
+">Previous</a>
+    
+    
+      <a href="/authenticating-git-on-development-box/" class="pagination--pager" title="Authenticating GIT on Development Box
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/4EIcRWN.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-technical-interview-questions/" rel="permalink">Cloud Solution Architect Technical Interview Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          39 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-to-azure-infrastructure-architecture/" rel="permalink">Introduction to Azure Infrastructure Architecture
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/what-is-azure-virtual-machine-scale-sets/" rel="permalink">What is Azure Virtual Machine Scale Sets
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing ...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/conventional-git-commit-messages-and-linting/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/conventional-git-commit-messages-and-linting"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
