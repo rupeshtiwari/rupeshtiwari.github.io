@@ -1,6 +1,6 @@
 ---
 title: Roadmap for mastering Coding & Competitive Programming interview
-date: 2022-11-12 00:00 +0000
+date: 2022-01-19 00:00 +0000
 description: If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. Learn how to start coding and become master.
 author_profile: true
 published: true

@@ -1,6 +1,6 @@
 ---
 title: How to start preparing for coding interview
-date: 2022-11-05 00:00 +0000
+date: 2022-01-17 00:00 +0000
 description: How to start preparing for coding interview? What is data structure algorithms and competitive programming? Learn all of this in this article.
 author_profile: true
 published: true
