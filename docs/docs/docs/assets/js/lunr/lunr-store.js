@@ -1366,4 +1366,10 @@ var store = [{
         "tags": ["webdev","tutorial","beginners","cloud"],
         "url": "/cloud-solution-architect-soft-skills-questions/",
         "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Introduction of Azure Data Center",
+        "excerpt":"Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth. What is Azure Data Center? Azure Data Center has Servers, Networks Switch, Power Supply &amp;...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/introduction-of-azure-data-center/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
       }]
