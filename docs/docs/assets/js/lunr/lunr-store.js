@@ -1360,4 +1360,10 @@ var store = [{
         "tags": ["webdev","tutorial","beginners","cloud"],
         "url": "/cloud-solution-architect-technical-interview-questions/",
         "teaser": "https://i.imgur.com/4EIcRWN.png"
+      },{
+        "title": "Cloud Solution Architect Soft Skills Questions",
+        "excerpt":"Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you must prepare for your next up coming interview. This is part 2 of my cloud solution architect interview questions series. Read the part 1...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/cloud-solution-architect-soft-skills-questions/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
       }]

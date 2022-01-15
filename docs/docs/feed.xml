@@ -1,4 +1,250 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-13T13:33:13-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Cloud Solution Architect Technical Interview Questions</title><link href="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/" rel="alternate" type="text/html" title="Cloud Solution Architect Technical Interview Questions" /><published>2022-01-12T19:00:00-05:00</published><updated>2022-01-12T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions</id><content type="html" xml:base="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-14T08:59:03-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Cloud Solution Architect Soft Skills Questions</title><link href="https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions/" rel="alternate" type="text/html" title="Cloud Solution Architect Soft Skills Questions" /><published>2022-01-13T19:00:00-05:00</published><updated>2022-01-13T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions</id><content type="html" xml:base="https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions/">&lt;blockquote&gt;
+  &lt;p&gt;Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you must prepare for your next up coming interview.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is part 2 of my cloud solution architect interview questions series. Read the part 1 where you will get the basic &lt;a href=&quot;https://rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/&quot;&gt;technical questions most frequently asked in cloud solution architect interview&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;tell-me-about-yourself&quot;&gt;Tell me about yourself?&lt;/h2&gt;
+
+&lt;p&gt;Firstly Thank you for the opportunity to be an interviewee in AWS sr. A cloud solution architect role is a privilege. Hi everyone, My name is Rupesh Tiwari, I have been working in IT for the last 15 years. I have started my career as a junior software engineer. I am currently working as Sr. Software Architect.&lt;/p&gt;
+
+&lt;p&gt;You can also describe your previous domain that you worked on and current company detail.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-qualities-make-you-a-good-fit-for-the-job&quot;&gt;What qualities make you a good fit for the job?&lt;/h2&gt;
+
+&lt;p&gt;Read your job description and prepare your answer accordingly.&lt;/p&gt;
+
+&lt;p&gt;I like helping customers and solving their business problems with the latest innovative cloud solutions &amp;amp; technical expertise. I have been developing, maintaining, and optimizing cloud platform solutions and services.&lt;/p&gt;
+
+&lt;p&gt;I am providing thought leadership both on technical design and business development. I have been owning the technical engagement of many initiatives and helped customers to arrive at their goal. By earning customer trust, building relationships and I have become a SME for Driver and cloud related developments.&lt;/p&gt;
+
+&lt;p&gt;In my past and current organizations, I have been part of the hiring and training department therefore, I have been sharing my knowledge, coaching our team on cloud architecture and related technologies. Being part of the core team, I have been helping various teams by learning their framework and solving their technical issues by designing and improving their architecture.&lt;/p&gt;
+
+&lt;p&gt;Personally, I have been writing content from the last 10 years on cloud and related technologies, posting cloud and related technology contents on my YouTube channel. In our local community I started a cloud learning community and started speaking on cloud fundamentals and socializing concepts.&lt;/p&gt;
+
+&lt;p&gt;I am highly energetic, enthusiastic and innovative about technologies and I believe I can look at your challenges and help you to solve them and make your team  perform more effectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-do-you-want-to-join-us-your-company-name-&quot;&gt;Why do you want to join us (your company name) ?&lt;/h2&gt;
+
+&lt;p&gt;Sit down and close your eyes and think at least 3 points why you want to join this company.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-should-i-hire-you&quot;&gt;Why should I hire you?&lt;/h2&gt;
+
+&lt;p&gt;It is same as the question that I already asked you earlier.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-the-personality-type-of-your-hiring-manager&quot;&gt;What is the personality type of your hiring manager?&lt;/h2&gt;
+
+&lt;p&gt;Your hirring manager could be of type:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Analytical&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If your interviewer is asking for specifics, and some numbers and details.&lt;/li&gt;
+  &lt;li&gt;Show them statistic, fact, details, show correlation on chart&lt;/li&gt;
+  &lt;li&gt;Highly Logical : use detail, fact, figure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Intuitive&lt;/strong&gt;: They want to get to the point very fast. Don’t give them detail. You talk about Big Picture of your architecture don’t go details.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Personal&lt;/strong&gt;:  they are good on communication, great listener. You SHARE&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Functional&lt;/strong&gt;: Process-Oriented people. They need process and procedure for everything. They plan everything perfect. They go in details You show them HOW things are done. Be Methodical.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;4-personality-types&quot;&gt;4 PERSONALITY TYPES&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ANALYTICAL — FACTS AND FIGURES&lt;/li&gt;
+  &lt;li&gt;INTUlTlVE - BIG PICTURE&lt;/li&gt;
+  &lt;li&gt;FUNCTIONAL - PROCESSES&lt;/li&gt;
+  &lt;li&gt;PERSONAL - EMOTIONAL INTELLIGENCE (EQ)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;what-is-shut-down-interview-technique&quot;&gt;What is Shut Down interview technique?&lt;/h2&gt;
+
+&lt;p&gt;You control the interview is called shut down. Hiring manager wants to see my Your below skills:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Technical competency&lt;/li&gt;
+  &lt;li&gt;Verbal communication skills&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When he ask you technical question and u know it then answer in real depth. With so much depth so that there is no doubt that you are expert when they see and hear level of expertise and knowledge properly delivered there wont be any more technical questions.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-major-contribution-u-made-to-your-last-employer&quot;&gt;What Major contribution u made to your last employer?&lt;/h2&gt;
+
+&lt;p&gt;Go understand your current project and find which project you contributed a lot both technically as well as design and conversation with your client.&lt;/p&gt;
+
+&lt;h2 id=&quot;whatmajor-challenge-at-work-and-what-you-did-to-get-pass-it&quot;&gt;What Major Challenge at work and what you did to get pass it?&lt;/h2&gt;
+
+&lt;p&gt;Go understand your current project and find which project was most challenging and list your challenges.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-sale-yourself-how-to-become-a-best-sale-representative&quot;&gt;How to Sale yourself how to become a best sale representative?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Find your Hiring manager goal&lt;/li&gt;
+  &lt;li&gt;Find the way to create a solution to solve the customer problem by giving far more benefit with same quality.&lt;/li&gt;
+  &lt;li&gt;Show them your skills and your values are higher than the cost of their salary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hiring manager is looking for below skills:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Technical competency&lt;/li&gt;
+  &lt;li&gt;Trusty&lt;/li&gt;
+  &lt;li&gt;Emotional Intelligence&lt;/li&gt;
+  &lt;li&gt;Communication Skills&lt;/li&gt;
+  &lt;li&gt;Team player&lt;/li&gt;
+  &lt;li&gt;Energetic, enthusiastic&lt;/li&gt;
+  &lt;li&gt;Bring up best in other people.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-building-rapport&quot;&gt;What is building rapport?&lt;/h2&gt;
+
+&lt;p&gt;By creating Personal and emotional connection between people. If u establish rapport to the hiring manager and make a personal connection then every answer will sound better and everything u don’t know It will be not that matter.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Know how to be solution to their problem. Know about the role each and every details. If  you tell them how u can going to improve their business it is connecting rapport.&lt;/li&gt;
+  &lt;li&gt;Research the hiring manager&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-does-your-hiring-manager-want&quot;&gt;What does your hiring manager want?&lt;/h2&gt;
+
+&lt;p&gt;If asked direct question ask the direct answer don’t babble!&lt;/p&gt;
+
+&lt;p&gt;Any technology question is asked then answer below questions while describing answer:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What is this ?&lt;/li&gt;
+  &lt;li&gt;How this work?&lt;/li&gt;
+  &lt;li&gt;Why do you use it?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;They are hiring you to solve their problem, they are not hirring you to solve your problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-managers-want&quot;&gt;What Managers Want?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;They want someone who’s technically competent&lt;/li&gt;
+  &lt;li&gt;They want someone to help meet or exceed their goals&lt;/li&gt;
+  &lt;li&gt;They want someone they can trust&lt;/li&gt;
+  &lt;li&gt;They want someone who works well with people&lt;/li&gt;
+  &lt;li&gt;They want someone who brings energy&lt;/li&gt;
+  &lt;li&gt;They want someone with passion&lt;/li&gt;
+  &lt;li&gt;They want someone who works well in a&lt;/li&gt;
+  &lt;li&gt;They want someone who goes above and beyond&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tips-for-your-interview&quot;&gt;Tips for your Interview&lt;/h2&gt;
+
+&lt;h3 id=&quot;during-interview&quot;&gt;During Interview&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Be early for your interview&lt;/li&gt;
+  &lt;li&gt;Companies don’t like procrastinators&lt;/li&gt;
+  &lt;li&gt;Assume it’s an interview as soon as you walk in the door&lt;/li&gt;
+  &lt;li&gt;Show depth of knowledge when you can&lt;/li&gt;
+  &lt;li&gt;Highlight what you’re good at&lt;/li&gt;
+  &lt;li&gt;Be honest about your weaknesses&lt;/li&gt;
+  &lt;li&gt;Talk about what you’ve done&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;be-honest&quot;&gt;Be Honest&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Be upfront with what you know and what you don’t&lt;/li&gt;
+  &lt;li&gt;Show off your strengths but don’t lie about your weaknesses&lt;/li&gt;
+  &lt;li&gt;This helps gain trust and respect from the interviewer&lt;/li&gt;
+  &lt;li&gt;Point the conversation into the direction of your strengths&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;control-the-interview&quot;&gt;Control The Interview&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Show expertise in what you know and go into detail when possible&lt;/li&gt;
+  &lt;li&gt;This helps when over the employer&lt;/li&gt;
+  &lt;li&gt;Impress your interviewer upfront&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;know-what-you-dont-know&quot;&gt;Know What You Don’t Know&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t put things on your resume that you don’t know&lt;/li&gt;
+  &lt;li&gt;Be clear about your areas of expertise&lt;/li&gt;
+  &lt;li&gt;Being a specialist isn’t a bad thing&lt;/li&gt;
+  &lt;li&gt;Brush up on topics you’re not sure about&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;attitude&quot;&gt;Attitude&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Show that you’re motivated and passionate&lt;/li&gt;
+  &lt;li&gt;Being enthusiastic is noticeable right away&lt;/li&gt;
+  &lt;li&gt;Be the person that motivates the team as well&lt;/li&gt;
+  &lt;li&gt;Energize others&lt;/li&gt;
+  &lt;li&gt;Be Focused&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;soft-skills-for-solution-architect&quot;&gt;Soft skills for solution architect&lt;/h2&gt;
+
+&lt;p&gt;Read the body language of your hirring team or manager.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;55% what we look like when u say something&lt;/li&gt;
+  &lt;li&gt;38% sound like when u say something&lt;/li&gt;
+  &lt;li&gt;7% content of your saying&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;body-language&quot;&gt;Body Language&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If manager is &lt;strong&gt;Leaning&lt;/strong&gt; that means you should &lt;strong&gt;keep talking&lt;/strong&gt; they are willing to listen you.&lt;/li&gt;
+  &lt;li&gt;If manager is &lt;strong&gt;Leaning back&lt;/strong&gt; then you must &lt;strong&gt;stop talking&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;If manager is &lt;strong&gt;Crossing arm&lt;/strong&gt; then you must &lt;strong&gt;change what you are saying&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;If manager &lt;strong&gt;Feet’s are pointing towards the door&lt;/strong&gt; then they are ready to finish the interview you should don’t hold them and stop talking immediately.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;additional-points-to-remember-during-interview&quot;&gt;Additional points to remember during interview:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t say anything negative about your past employer/company&lt;/li&gt;
+  &lt;li&gt;Not getting to the point!&lt;/li&gt;
+  &lt;li&gt;Not reading body language&lt;/li&gt;
+  &lt;li&gt;Listen More than you speak: Listen to the hiring manager if your Hiring manager is babbling, just keep hearing him.&lt;/li&gt;
+  &lt;li&gt;Make your Strength and weakness ahead of time: Prepare your honest weakness and strength&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-dressed-for-interview&quot;&gt;How to Dressed for interview&lt;/h3&gt;
+
+&lt;p&gt;Make sure you were the business suite, shoes and belts are shining and polished.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vz9ezD4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;do-you-have-any-questions-for-me&quot;&gt;Do you have any questions for me?&lt;/h2&gt;
+
+&lt;p&gt;When hirring manger is asking at the end of interview to ask question. Then your answer could be:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“What is your goal Mr. Hirring Manager (Your manger name)? Because if I was part of your team I would want to know that I could help you solve your goals.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PL0azhNeBK66KfW04TZBQWkX62hhnFcb9E&quot;&gt;Go Cloud Videos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="webdev" /><category term="tutorial" /><category term="beginners" /><category term="cloud" /><summary type="html">Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you must prepare for your next up coming interview.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cloud Solution Architect Technical Interview Questions</title><link href="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/" rel="alternate" type="text/html" title="Cloud Solution Architect Technical Interview Questions" /><published>2022-01-12T19:00:00-05:00</published><updated>2022-01-12T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions</id><content type="html" xml:base="https://www.rupeshtiwari.com/cloud-solution-architect-technical-interview-questions/">&lt;blockquote&gt;
   &lt;p&gt;Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution architect interview. My answers would not be perfect so feel free to search for better answers. Important part from this article is what kind of technical questions you should know to become a good cloud solution architect. So focus on the questions that I am asking here and learn from anywhere about their answers.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -2966,106 +3212,4 @@ It is difficult to compare options available in Azure. The comparison with the f
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get free e-book on Design Distributed Systems. It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Azure Network Watcher Basics</title><link href="https://www.rupeshtiwari.com/azure-network-watcher-basics/" rel="alternate" type="text/html" title="Azure Network Watcher Basics" /><published>2021-11-19T19:00:00-05:00</published><updated>2021-11-19T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/azure-network-watcher-basics</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-network-watcher-basics/">&lt;blockquote&gt;
-  &lt;p&gt;Azure Network Watcher is a &lt;strong&gt;monitoring service&lt;/strong&gt; with lots of other important services for network. &lt;strong&gt;Most network diagnostics issues can be detected and analyzed with Azure Network Watcher&lt;/strong&gt;. Learn everything about Network Watcher in this article.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;what-network-watcher-does&quot;&gt;What Network Watcher Does?&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/H2mtWg4.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You use Network Watcher to monitor and repair the network health of IaaS (Infrastructure as Service) resources.&lt;/li&gt;
-  &lt;li&gt;It can capture network packets by sniffing the network&lt;/li&gt;
-  &lt;li&gt;It can analyze and display the network topology&lt;/li&gt;
-  &lt;li&gt;It can audit the security rules of network and VMs.&lt;/li&gt;
-  &lt;li&gt;It is a regional service&lt;/li&gt;
-  &lt;li&gt;It is automatically enabled in a region when you create or update a virtual network (vNet) in it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;capabilities-of-network-watcher&quot;&gt;Capabilities of Network Watcher&lt;/h2&gt;
-
-&lt;h3 id=&quot;monitoring&quot;&gt;Monitoring&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Network Watcher can monitor communication between a VM and another endpoint (could be VM).&lt;/li&gt;
-  &lt;li&gt;Network Watcher can view resources in a virtual network.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;diagnostics&quot;&gt;Diagnostics&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;It can diagnose network traffic filtering problems to or from a VM.&lt;/li&gt;
-  &lt;li&gt;It can diagnose network routing problems from a VM.&lt;/li&gt;
-  &lt;li&gt;It can diagnose outbound connections from a VM.&lt;/li&gt;
-  &lt;li&gt;It can capture packets to and from VM.&lt;/li&gt;
-  &lt;li&gt;It can determine relative latencies between Azure regions and Internet Service Providers (ISPs).&lt;/li&gt;
-  &lt;li&gt;It can show security rules for an interface like network interface for a VM.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;metrics-and-logs&quot;&gt;Metrics and Logs&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;It can analyze network security groups traffic.&lt;/li&gt;
-  &lt;li&gt;It can show diagnostics logs for network resources.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;network-watcher-in-azure-portal&quot;&gt;Network Watcher in Azure Portal&lt;/h2&gt;
-
-&lt;h3 id=&quot;topology&quot;&gt;Topology&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/aMuidSb.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
-You can monitor the topology of your virtual network and you can click on any component to view them.&lt;/p&gt;
-
-&lt;h3 id=&quot;connection-monitor&quot;&gt;Connection Monitor&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/1XfzXrM.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
-Connection Monitor monitors the health of the connections between 2 endpoints could be 2 virtual networks or 2 VMs.&lt;/p&gt;
-
-&lt;h3 id=&quot;next-hop&quot;&gt;Next hop&lt;/h3&gt;
-
-&lt;p&gt;This will give you the next network hop from a given source IP address to a destination IP address. You can use this to troubleshoot the issues.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/dvmPfCr.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
-Example: Source IP address could be your VM in azure and destination IP address could be your local home machine IP address.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/eYveirr.png&quot; alt=&quot;&quot; class=&quot;align-left&quot; /&gt;
-So in this example the next hop is Internet.&lt;/p&gt;
-
-&lt;h3 id=&quot;effective-security-rules&quot;&gt;Effective Security Rules&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/vr6xfiR.gif&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Check security settings of your IaaS. Example: Check the security settings for your VM in Azure.&lt;/p&gt;
-
-&lt;h3 id=&quot;packet-capture&quot;&gt;Packet capture&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/ChIOGIv.gif&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Investigate network by capturing the network packets. You can choose the Remote or local IP and port addresses.&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;👨‍🏫 In Exam remember: &lt;strong&gt;Most network diagnostics issues can be detected and analyzed with Azure Network Watcher&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="certification" /><summary type="html">Azure Network Watcher is a monitoring service with lots of other important services for network. Most network diagnostics issues can be detected and analyzed with Azure Network Watcher. Learn everything about Network Watcher in this article.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get free e-book on Design Distributed Systems. It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

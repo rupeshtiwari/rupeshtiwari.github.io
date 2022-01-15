@@ -1,4 +1,162 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-14T08:59:03-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Cloud Solution Architect Soft Skills Questions</title><link href="https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions/" rel="alternate" type="text/html" title="Cloud Solution Architect Soft Skills Questions" /><published>2022-01-13T19:00:00-05:00</published><updated>2022-01-13T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions</id><content type="html" xml:base="https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-15T18:45:41-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Introduction of Azure Data Center</title><link href="https://www.rupeshtiwari.com/introduction-of-azure-data-center/" rel="alternate" type="text/html" title="Introduction of Azure Data Center" /><published>2022-01-14T19:00:00-05:00</published><updated>2022-01-14T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/introduction-of-azure-data-center</id><content type="html" xml:base="https://www.rupeshtiwari.com/introduction-of-azure-data-center/">&lt;blockquote&gt;
+  &lt;p&gt;Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;what-is-azure-data-center&quot;&gt;What is Azure Data Center?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/VLOm3Gl.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Azure Data Center has &lt;strong&gt;Servers&lt;/strong&gt;, Networks Switch, Power Supply &amp;amp; Hardware’s. Servers are placed on a &lt;strong&gt;Server Rack&lt;/strong&gt;. Each Server Rack with it’s own Power Supply and Network Switch is called as &lt;a href=&quot;#why-do-we-separate-servers-in-different-racks&quot;&gt;&lt;strong&gt;Fault Domain&lt;/strong&gt;&lt;/a&gt;. Each Server Rack has multiple &lt;a href=&quot;#why-group-servers-in-update-domains&quot;&gt;Update Domains&lt;/a&gt;. Data-center normally comprises of lots of Fault Domains.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/m79b5dF.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the Data Center the servers are divided into multiple physical and logical groups. The physical grouping is called &lt;a href=&quot;#why-do-we-separate-servers-in-different-racks&quot;&gt;Fault Domain&lt;/a&gt; and logical grouping is called &lt;a href=&quot;#why-group-servers-in-update-domains&quot;&gt;Update Domain&lt;/a&gt;. Each Rack of servers with its own power supply and network switch as one fault domain. If there are 10 Racks in the Data Center means you have 10 different Fault Domains.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-planned-maintenance&quot;&gt;What is Planned Maintenance?&lt;/h2&gt;
+
+&lt;p&gt;A planned maintenance event is when the underlying Azure fabric that hosts VMs is updated by Microsoft.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Security Patch, Performance patch, add and update features are called as planed maintenance.&lt;/li&gt;
+  &lt;li&gt;After planned maintenance you must reboot your VMs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-unplanned-maintenance&quot;&gt;What is Unplanned Maintenance?&lt;/h2&gt;
+
+&lt;p&gt;Unplanned maintenance events involve a hardware failure in the data center, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;power outage&lt;/li&gt;
+  &lt;li&gt;disk failure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-do-we-separate-servers-in-different-racks&quot;&gt;Why do we separate servers in different Racks?&lt;/h2&gt;
+
+&lt;p&gt;In order to provide single point of failures like you spread your money in different banks and mutual funds 😃.
+&lt;img src=&quot;https://i.imgur.com/UOB76UE.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example lets say you have 100 servers in data center and they are all connected by single power supply and network switch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DTQaHad.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What if the single power supply or network will fail it will bring down to all of the servers in the data-center.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vmfzt7W.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Therefore, in a data-center we spread the servers in the different Racks with their own Power and Network Switch called as Fault Domain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/RPs6DUa.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So if one Rack with 10 servers are affected then rest of the other Racks means remaining 90 servers are still up and running.&lt;/p&gt;
+
+&lt;p&gt;By grouping servers in multiple Racks or Fault domains we are eliminating single point of failure.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-group-servers-in-update-domains&quot;&gt;Why group servers in Update Domains?&lt;/h2&gt;
+
+&lt;p&gt;Similar to Fault Domain your servers will be also grouped logically to an Update Domain. Very often planned maintenance requires server patches and software updates need to be applied on the Azure Hypervisor which is actually hosting your VMs. So your VM on that Azure Hypervisor can go down while patch is being applied. And we don’t all the servers to be rebooted at the same time.
+Therefore, all the servers within same update domain gets rebooted at one time and they take 30 minutes time to recover back. Meanwhile the machines which are in different update domain can serve the client requests. Therefore, update domain is a group of servers that can be updated and rebooted at the same time.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-availability-set-in-data-center&quot;&gt;What is Availability Set in Data-Center?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DvS3Egk.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Availability Set is a concept within a data-center. The servers in a data center are divided into multiple physical groups called Fault Domains and logical groups called Update Domains.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/WbB1nfl.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Availability Set&lt;/strong&gt; in data-center is made up of multiple Fault Domains and Update Domains.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/6LXoZsL.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you create an Availability Set you can decide how many Fault Domains and Update domains you want. A group of servers physically grouped are called Fault Domain and a logical group of server is called as Update Domain.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-availability-zones&quot;&gt;What is Availability Zones?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nUp33NS.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Availability Zones&lt;/strong&gt; also has multiple Fault Domains and Update Domains. So in case Availability Zones, each Availability Zone is consider as a single Fault Domain and Update Domain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/HcY2l6z.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Availability Zone is a unique physical location within an Azure Region. Each Availability Zone has multiple data-centers with independent Power supply, Network switch and Cooling system. All Region has Availability Zone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mCvNCTS.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each Region has minimum 3 Availability Zones. At the Region level you can think of Availability Zone as 3 Fault Domains and 3 Update Domains.
+&lt;img src=&quot;https://i.imgur.com/M9JL273.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose if you keep 3 VMs in 3 different Availability Zones. Then if 1st Availability Zone is down then your 1st VM will be not working. However, your business will not be affected since other 2 Availability Zones are still up and running. Azure will route your client request to next available Availability Zone.&lt;/p&gt;
+
+&lt;h2 id=&quot;azure-availability-sla&quot;&gt;Azure Availability SLA&lt;/h2&gt;
+
+&lt;p&gt;With Availability Zone Microsoft offers industries best SLA 99.99% up time.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Single VM&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Availability Sets&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Availability Zones&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Region Pairs&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;99.9% with Premium Storage only&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;99.95% up time( 4:50 down time)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;99.99% up time (0:53 down time)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Single VM easier for lift and shift scenario&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Protecting against hardware failures, network outages or power interruptions&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Protecting against Data Center Failure&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Protecting against region disaster&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Single VM&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2 or More VMs&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2 or more VMs&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2 or more VMs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://imgur.com/vKlJkWt.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;img src=&quot;https://imgur.com/YS2YNDx.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;img src=&quot;https://imgur.com/qPsYLLC.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;img src=&quot;https://imgur.com/bJlTzJr.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://www.youtube.com/watch?v=On3cjV4VaKU&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cloud Solution Architect Soft Skills Questions</title><link href="https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions/" rel="alternate" type="text/html" title="Cloud Solution Architect Soft Skills Questions" /><published>2022-01-13T19:00:00-05:00</published><updated>2022-01-13T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions</id><content type="html" xml:base="https://www.rupeshtiwari.com/cloud-solution-architect-soft-skills-questions/">&lt;blockquote&gt;
   &lt;p&gt;Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you must prepare for your next up coming interview.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1761,49 +1919,7 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Site Recovery Strategy in Azure</title><link href="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/" rel="alternate" type="text/html" title="Site Recovery Strategy in Azure" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/site-recoverystrategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/">&lt;blockquote&gt;
-  &lt;p&gt;Learn the failover and failback stages in Site Recovery on Azure. Learn &lt;strong&gt;Business Continuity and Disaster Recovery&lt;/strong&gt; (BCDR) strategy in Azure.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;failover-and-failback-in-site-recovery-has-four-stages&quot;&gt;Failover and failback in Site Recovery has four stages&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/TO8eYHW.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 1: Fail over from on-premises:&lt;/strong&gt; After setting up replication to Azure for on-premises machines, when your on-premises site goes down, you fail those machines over to Azure. After failover, Azure VMs are created from replicated data.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 2: Reprotect Azure VMs:&lt;/strong&gt; In Azure, you reprotect the Azure VMs so that they start replicating back to the on-premises site. The on-premises VM (if available) is turned off during reprotection, to help ensure data consistency.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 3: Fail over from Azure:&lt;/strong&gt; When your on-premises site is running as normal again, you run another failover, this time to fail back Azure VMs to your on-premises site. You can fail back to the original location from which you failed over, or to an alternate location.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 4: Reprotect on-premises machines:&lt;/strong&gt; After failing back, again enable replication of the on-premises machines to Azure.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/Zuy3Ijz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/site-recovery/failover-failback-overview#recovery-stages&quot;&gt;BCDR strategy in Azure here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is waiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/7I0NoBe.png" /><media:content medium="image" url="https://i.imgur.com/7I0NoBe.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On-Premises Disaster Site Recovery Strategy with Azure VM</title><link href="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/" rel="alternate" type="text/html" title="On-Premises Disaster Site Recovery Strategy with Azure VM" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On-Premises Disaster Site Recovery Strategy with Azure VM</title><link href="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/" rel="alternate" type="text/html" title="On-Premises Disaster Site Recovery Strategy with Azure VM" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/">&lt;blockquote&gt;
   &lt;p&gt;Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn &lt;strong&gt;Business Continuity and Disaster Recovery&lt;/strong&gt; (BCDR) strategy in Azure.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1950,7 +2066,49 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Where to Store Application Data in Azure</title><link href="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/" rel="alternate" type="text/html" title="Where to Store Application Data in Azure" /><published>2021-12-03T19:00:00-05:00</published><updated>2021-12-03T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/where-to-store-application-data-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Site Recovery Strategy in Azure</title><link href="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/" rel="alternate" type="text/html" title="Site Recovery Strategy in Azure" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/site-recoverystrategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/">&lt;blockquote&gt;
+  &lt;p&gt;Learn the failover and failback stages in Site Recovery on Azure. Learn &lt;strong&gt;Business Continuity and Disaster Recovery&lt;/strong&gt; (BCDR) strategy in Azure.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;failover-and-failback-in-site-recovery-has-four-stages&quot;&gt;Failover and failback in Site Recovery has four stages&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/TO8eYHW.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stage 1: Fail over from on-premises:&lt;/strong&gt; After setting up replication to Azure for on-premises machines, when your on-premises site goes down, you fail those machines over to Azure. After failover, Azure VMs are created from replicated data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stage 2: Reprotect Azure VMs:&lt;/strong&gt; In Azure, you reprotect the Azure VMs so that they start replicating back to the on-premises site. The on-premises VM (if available) is turned off during reprotection, to help ensure data consistency.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stage 3: Fail over from Azure:&lt;/strong&gt; When your on-premises site is running as normal again, you run another failover, this time to fail back Azure VMs to your on-premises site. You can fail back to the original location from which you failed over, or to an alternate location.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stage 4: Reprotect on-premises machines:&lt;/strong&gt; After failing back, again enable replication of the on-premises machines to Azure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/Zuy3Ijz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/site-recovery/failover-failback-overview#recovery-stages&quot;&gt;BCDR strategy in Azure here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is waiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/7I0NoBe.png" /><media:content medium="image" url="https://i.imgur.com/7I0NoBe.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Where to Store Application Data in Azure</title><link href="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/" rel="alternate" type="text/html" title="Where to Store Application Data in Azure" /><published>2021-12-03T19:00:00-05:00</published><updated>2021-12-03T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/where-to-store-application-data-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/">&lt;blockquote&gt;
   &lt;p&gt;Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -2532,684 +2690,4 @@ The &lt;strong&gt;Data Lake Store&lt;/strong&gt; stores the relational structure
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What to use to Run applications in Azure</title><link href="https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure/" rel="alternate" type="text/html" title="What to use to Run applications in Azure" /><published>2021-11-26T19:00:00-05:00</published><updated>2021-11-26T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure/">&lt;blockquote&gt;
-  &lt;p&gt;Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get &lt;a href=&quot;https://azure.microsoft.com/en-us/resources/designing-distributed-systems/&quot;&gt;free e-book on Design Distributed Systems&lt;/a&gt;.
-It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;running-application-in-azure-options&quot;&gt;Running Application in Azure Options&lt;/h2&gt;
-
-&lt;p&gt;You can use various services from Azure to run your applications. It depends what exactly is your requirements. Below are the services available from Azure.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/YPcnULJ.png&quot; alt=&quot;&quot; /&gt; Azure Virtual Machines. (VMs)&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/ukowMIs.png&quot; alt=&quot;&quot; /&gt; Azure Kubernetes Services (AKS)&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/5IrDqJM.png&quot; alt=&quot;&quot; /&gt; Container instances&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/qwLOnPT.png&quot; alt=&quot;&quot; /&gt;Azure Web App for Containers&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/3HK1rtT.png&quot; alt=&quot;&quot; /&gt;Azure Batch&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/cdq4W3I.png&quot; alt=&quot;&quot; /&gt;Azure Service Fabric (Mesh)&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/eIRJkJj.png&quot; alt=&quot;&quot; /&gt;Cloud ServicesX&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/iH0hVvs.png&quot; alt=&quot;&quot; /&gt;Azure App Services Web Apps&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/OcHd8Qi.png&quot; alt=&quot;&quot; /&gt; Azure App Services WebJobs&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/SRk7YqX.png&quot; alt=&quot;&quot; /&gt;Azure App Services Mobile Apps&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/j1Y4A4B.png&quot; alt=&quot;&quot; /&gt; Function Apps&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/z0fI8LX.png&quot; alt=&quot;&quot; /&gt; Azure Logic Apps&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;virtual-machines-vms&quot;&gt;Virtual Machines (VMs)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/lVMTAlR.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Virtual Machines&lt;/code&gt; is under &lt;strong&gt;Infrastructure as a Service (IaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Managed Virtual Machine Service in Cloud&lt;/li&gt;
-  &lt;li&gt;Starts and Stops in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minutes&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Many OS images are available.
-    &lt;ul&gt;
-      &lt;li&gt;You can choose your own OS image (Linux Windows). Explore the full list of &lt;a href=&quot;https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/&quot;&gt;Azure VM types&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;You can bring your own OS /Software License ( same money )&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Many Sizes to choose from (CPU, Memory, Disk Type)
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;General purpose&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPU&lt;/code&gt; (for Intense work like video rendering etc.)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Configuration options
-    &lt;ul&gt;
-      &lt;li&gt;Auto shutdown, Adding Disks, Adding VM to Networking&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;SLA &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;99.95%&lt;/code&gt; (Only if you run multiple instances)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-machines/&quot;&gt;Getting Started with Azure Virtual Machine&lt;/a&gt;. To get guarantied 99.95% SLA you must need 2 or more VMs.&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-kubernetes-services-aks&quot;&gt;Azure Kubernetes Services (AKS)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/H50OFsZ.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Kubernetes Service&lt;/code&gt; is under &lt;strong&gt;Infrastructure as a Service (IaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multiple&lt;/code&gt; containers that makeup your applications&lt;/li&gt;
-  &lt;li&gt;Starts and stops in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;seconds&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Managed version of the Kubernetes container &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orchestrator&lt;/code&gt;. It takes care of provisioning or de-provisioning the containers. It scales up and down and monitor containers.&lt;/li&gt;
-  &lt;li&gt;Runs &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linux&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Windows&lt;/code&gt; Containers&lt;/li&gt;
-  &lt;li&gt;You instantiate the container with images from
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Docker Hub&lt;/code&gt; or&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Container Registry&lt;/code&gt;, here you can host your own images or upload from somewhere.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;AKS runs in Azure on a cluster of VM so the availability is same as Azure VM.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Containers are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;light weight&lt;/code&gt; compare to VM. They starts and stops in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Seconds&lt;/code&gt; however VMs in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Minutes&lt;/code&gt;. Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/kubernetes-service/&quot;&gt;AKS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;container-instances&quot;&gt;Container Instances&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/9aKMeiF.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Container Instances&lt;/code&gt; is under &lt;strong&gt;Infrastructure as a Service (IaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;single&lt;/code&gt; containers that makeup your applications&lt;/li&gt;
-  &lt;li&gt;Starts and stops in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;seconds&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;No&lt;/code&gt; container &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orchestrator&lt;/code&gt; needed
-    &lt;ul&gt;
-      &lt;li&gt;Can work with orchestrators&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Runs &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linux&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Windows&lt;/code&gt; Containers&lt;/li&gt;
-  &lt;li&gt;You instantiate the container with images from
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Docker Hub&lt;/code&gt; or&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Container Registry&lt;/code&gt;, here you can host your own images or upload from somewhere.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;AKS runs in Azure on a cluster of VM so the availability is same as Azure VM.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/container-instances/&quot;&gt;Azure Container Instances&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-web-app-for-containers&quot;&gt;Azure Web App for Containers&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/ciwt04O.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Web App for Containers&lt;/code&gt; is under &lt;strong&gt;Infrastructure as a Service (IaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You can run container in Azure Web App for Container as Service. This allows you to run container on App Services.&lt;/li&gt;
-  &lt;li&gt;Starts and stops in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;seconds&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;No&lt;/code&gt; container &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;orchestrator&lt;/code&gt; needed&lt;/li&gt;
-  &lt;li&gt;Runs &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linux&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Windows&lt;/code&gt; Containers&lt;/li&gt;
-  &lt;li&gt;Use App Service Features
-    &lt;ul&gt;
-      &lt;li&gt;Easy to setup &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Continuous Deployments&lt;/code&gt; from source control&lt;/li&gt;
-      &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Deployment Slots&lt;/code&gt; which allows you deployment with no &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;downtime&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scale&lt;/code&gt; and automatic Scale by adding rules.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You instantiate the container with images from
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Docker Hub&lt;/code&gt; or&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Container Registry&lt;/code&gt;, here you can host your own images or upload from somewhere.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;azure-batch&quot;&gt;Azure Batch&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/q3vIFLU.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Batch&lt;/code&gt; is under &lt;strong&gt;Infrastructure as a Service (IaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Allows you to run your job across many &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Virtual Machines&lt;/code&gt; at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;massive&lt;/code&gt; scale (thousands of VMs). You can use it to run a calculating job that needs lots of compute power or rendering video files.&lt;/li&gt;
-  &lt;li&gt;Orchestrates running your job in parallel
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Scaling&lt;/code&gt; across machines&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Stages data&lt;/code&gt; for your job so you can insert data into your job.&lt;/li&gt;
-      &lt;li&gt;Create &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;job pipelines&lt;/code&gt; with tasks so you can determine what steps need to be done with the output.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Runs your job on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linux&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Windows&lt;/code&gt; based VMs&lt;/li&gt;
-  &lt;li&gt;Can &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run containers&lt;/code&gt;. So you can run your application in container in Azure Batch. It will run it on as many VMs as needed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/batch/&quot;&gt;Azure Batch&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-service-fabric-mesh&quot;&gt;Azure Service Fabric (Mesh)&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/EDhiF4b.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Service Fabric (Mesh)&lt;/code&gt; is under &lt;strong&gt;Infrastructure as a Service (IaaS)&lt;/strong&gt; as well as &lt;strong&gt;Platform as a Service (PaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Run your applications reliably and resilient.&lt;/li&gt;
-  &lt;li&gt;Orchestrates running your app over multiple nodes
-    &lt;ul&gt;
-      &lt;li&gt;Keeps it available&lt;/li&gt;
-      &lt;li&gt;Keeps it performant by scaling&lt;/li&gt;
-      &lt;li&gt;Performs rolling upgrades&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Can run
-    &lt;ul&gt;
-      &lt;li&gt;Any executable (type of apps)&lt;/li&gt;
-      &lt;li&gt;Reliable services (that persist state)&lt;/li&gt;
-      &lt;li&gt;Actor-based applications (that shares the state)&lt;/li&gt;
-      &lt;li&gt;And orchestrate containers&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Runs in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cloud&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on-premises&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;In production you must need minimum 5 VMs to run it reliably.&lt;/li&gt;
-  &lt;li&gt;Can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;serverless&lt;/code&gt; as &lt;strong&gt;Service Fabric&lt;/strong&gt; &lt;strong&gt;Mesh&lt;/strong&gt; service. You can spin up Service Fabric without using 5 VMs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Did you know Azure Service Fabrics is a technology that Microsoft uses itself to run many of their own Azure Services, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azur e SQL Databases&lt;/code&gt;? Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/service-fabric/&quot;&gt;Azure Service Fabrics&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;cloud-services&quot;&gt;Cloud Services&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/6cIWhPK.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cloud Services&lt;/code&gt; is under &lt;strong&gt;Platform as a Service (PaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Run your applications in VMs and manages in the form of Web worker or Worker roles.&lt;/li&gt;
-  &lt;li&gt;Abstracts the VM so that you don’t have to deal with OS or network.
-    &lt;ul&gt;
-      &lt;li&gt;It provides scaling&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You package your app and deploy it using VS template
-    &lt;ul&gt;
-      &lt;li&gt;To run as an HTTP-based application as web worker role, or&lt;/li&gt;
-      &lt;li&gt;To run as a background job as worker role.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Enable you to have some control over the VM
-    &lt;ul&gt;
-      &lt;li&gt;RDP into the VMs you can create task to install things in VMs.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Did you know &lt;strong&gt;Azure Cloud Services&lt;/strong&gt; was one of the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Platform-as-a-Service&lt;/code&gt; offering from Azure and takes care the management of VMs for you? Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/cloud-services/&quot;&gt;Azure Cloud Services&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-app-services-web-apps&quot;&gt;Azure App Services Web Apps&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/rsLK6zD.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure App Services Web Apps&lt;/code&gt; is under &lt;strong&gt;Platform as a Service (PaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Runs your app in a Webserver-as-a-service like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IIS&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tomcat&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;.Net, Java, PHP, Node.js and Python&lt;/li&gt;
-  &lt;li&gt;App Service features
-    &lt;ul&gt;
-      &lt;li&gt;Continuous Deployment&lt;/li&gt;
-      &lt;li&gt;Custom Domains&lt;/li&gt;
-      &lt;li&gt;Deployment Slots no downtime&lt;/li&gt;
-      &lt;li&gt;(automatic) scaling&lt;/li&gt;
-      &lt;li&gt;Authentication/ Authorization&lt;/li&gt;
-      &lt;li&gt;WebJobs&lt;/li&gt;
-      &lt;li&gt;Hybrid connections to on-premise resources ( like connect your own data-center database)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;SLA 99.95% even you run only one instance.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/app-service/web/&quot;&gt;Azure Web Apps&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-app-services-webjobs&quot;&gt;Azure App Services WebJobs&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/gGrP5wI.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure App Services WebJobs&lt;/code&gt; is under &lt;strong&gt;Platform as a Service (PaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Runs your background task in App Services&lt;/li&gt;
-  &lt;li&gt;Runs inside your App Service
-    &lt;ul&gt;
-      &lt;li&gt;Consumes resources&lt;/li&gt;
-      &lt;li&gt;Is dependent on your App Services ( If WebJob as a part of a Web App the WebJob will stop if Web App is stopped )&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Can be triggered
-    &lt;ul&gt;
-      &lt;li&gt;Continuously&lt;/li&gt;
-      &lt;li&gt;On a schedule ( like every 10 mins)&lt;/li&gt;
-      &lt;li&gt;By outsider resources
-        &lt;ul&gt;
-          &lt;li&gt;New message on a queue (WebJob SDK has in-build code to connect to Queues)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/app-service/webjobs-create&quot;&gt;Azure App Services WebJob&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-app-services-mobile-apps&quot;&gt;Azure App Services Mobile Apps&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/ntXbHFU.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info notice--success&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure App Services Mobile Apps&lt;/code&gt; is under &lt;strong&gt;Platform as a Service (PaaS)&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Run your app as a backend for mobile clients&lt;/li&gt;
-  &lt;li&gt;You can create backend app using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.Net or Node.js&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Mobile clients connect with the SDK
-    &lt;ul&gt;
-      &lt;li&gt;iOS, Android, Windows, Xamarin Forms&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Unique features offered by Mobile Apps that is not in Web Apps
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Offline sync&lt;/strong&gt; which enables the mobile app to loose connection to backend still continue working and sync back when connected to backend eventually )&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Push notifications&lt;/strong&gt; which enables you to send notifications to your mobile app like you get when you receive new email.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;All of the App Service features
-    &lt;ul&gt;
-      &lt;li&gt;Deployment Slots&lt;/li&gt;
-      &lt;li&gt;(Automatic) scaling&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;SLA 99.95%&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/app-service/mobile/&quot;&gt;Azure App Services Mobile Apps&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;function-apps&quot;&gt;Function Apps&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/Q7lOW1P.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info notice--success&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Function Apps&lt;/code&gt; is under &lt;strong&gt;Serverless or Logic as a Service&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This is also part of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure App Services&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Executes small pieces of code like execute whenever file get uploaded.&lt;/li&gt;
-  &lt;li&gt;Can be triggered
-    &lt;ul&gt;
-      &lt;li&gt;Continuously&lt;/li&gt;
-      &lt;li&gt;On a schedule ( like every 10 mins)&lt;/li&gt;
-      &lt;li&gt;By outsider resources
-        &lt;ul&gt;
-          &lt;li&gt;Web Hooks&lt;/li&gt;
-          &lt;li&gt;New messages in a queue&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Have bindings
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Incoming&lt;/strong&gt; Azure Blob value&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Outgoing&lt;/strong&gt; Azure Storage Queue Message&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;All of the App Service features
-    &lt;ul&gt;
-      &lt;li&gt;Deployment Slots&lt;/li&gt;
-      &lt;li&gt;Continuous Deployment&lt;/li&gt;
-      &lt;li&gt;(Automatic) scaling&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Can run in consumption mode (serverless)
-    &lt;ul&gt;
-      &lt;li&gt;Pay only for their execution&lt;/li&gt;
-      &lt;li&gt;Scale automatically&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;In consumption mode Azure Functions become ideal after 5 mins of non-running. Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview&quot;&gt;Azure Functions&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-logic-apps&quot;&gt;Azure Logic Apps&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/6ocXvSn.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Logic Apps&lt;/code&gt; is under &lt;strong&gt;Serverless or Logic as a Service&lt;/strong&gt; offering from Microsoft Azure.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Execute a pipeline of tasks in a process&lt;/li&gt;
-  &lt;li&gt;Replaces for BizTalk Services&lt;/li&gt;
-  &lt;li&gt;Can be triggered
-    &lt;ul&gt;
-      &lt;li&gt;Continuously&lt;/li&gt;
-      &lt;li&gt;On a schedule ( like every 10 mins)&lt;/li&gt;
-      &lt;li&gt;By outsider resources
-        &lt;ul&gt;
-          &lt;li&gt;Web Hooks&lt;/li&gt;
-          &lt;li&gt;New messages in a queue&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;After being triggered Azure Logic app goes on to execute a process by calling connectors which are basically APIs.
-    &lt;ul&gt;
-      &lt;li&gt;Many connectors to resources
-        &lt;ul&gt;
-          &lt;li&gt;Like connectors to Office 365, Twitter, SendGrid, or your own APIs.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Only run in &lt;strong&gt;consumption mode&lt;/strong&gt; (serverless)
-    &lt;ul&gt;
-      &lt;li&gt;Scales automatically&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/logic-apps/&quot;&gt;Azure Logic Apps&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;when-to-use-what&quot;&gt;When to use What?&lt;/h2&gt;
-
-&lt;h3 id=&quot;based-on-high-level-application-requirement&quot;&gt;Based on high level application requirement&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;When&lt;/th&gt;
-      &lt;th&gt;Use these Azure Service&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Full control&lt;/strong&gt; &amp;amp; responsibility, Stay vendor agnostic (run anywhere vendor agnostic)&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;VMs, Container Instances, Kubernetes Service, Web App for Containers, Azure Batch, Service Fabric (Mesh)&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Azure manages&lt;/strong&gt; your app, You manage scaling and configuration&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Batch, Cloud Services, Mobile App, Web App, Service Fabric&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Be able to &lt;strong&gt;RDP&lt;/strong&gt; in VMs&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Batch, Cloud Services, Service Fabric(Mesh)&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Azure manage&lt;/strong&gt; your app, &lt;strong&gt;including&lt;/strong&gt; &lt;strong&gt;scaling&lt;/strong&gt;, You manage configuration&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Azure Function App, Logic App&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;comparing-container-options-and-vms&quot;&gt;Comparing Container Options and VMs&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Scenarios&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/YPcnULJ.png&quot; alt=&quot;&quot; /&gt; VM&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/5IrDqJM.png&quot; alt=&quot;&quot; /&gt; Container Instances&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/ukowMIs.png&quot; alt=&quot;&quot; /&gt; Kubernetes Services&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/qwLOnPT.png&quot; alt=&quot;&quot; /&gt; WebApp for Containers&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/3HK1rtT.png&quot; alt=&quot;&quot; /&gt; Batch&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/cdq4W3I.png&quot; alt=&quot;&quot; /&gt; Service Fabric&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Lift-and shift your app to the cloud&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Simple apps (without orchestrator)&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Complex apps (with orchestrator)&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Run orchestrated microservices&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Run anywhere&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Run web app on Linux with App Service features&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Repetitive jobs (on massive scale)&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;where-to-run-your-background-tasks&quot;&gt;Where to Run your Background Tasks?&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Scenarios&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/eIRJkJj.png&quot; alt=&quot;&quot; /&gt; Cloud Services&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/OcHd8Qi.png&quot; alt=&quot;&quot; /&gt; Web Jobs&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/ZWWXH9G.png&quot; alt=&quot;&quot; /&gt; Functions&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/0nJeR1T.png&quot; alt=&quot;&quot; /&gt;Batch&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Short-running tasks&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Long-running tasks&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Resource intensive tasks&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Pay all month&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Pay only for what and when you run&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Need to deploy a complete app to run&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Can deploy only the code necessary to run&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;where-to-run-your-applications&quot;&gt;Where to Run your Applications?&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Scenarios&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/iH0hVvs.png&quot; alt=&quot;&quot; /&gt; Web App&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/SRk7YqX.png&quot; alt=&quot;&quot; /&gt; Mobile App&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/eIRJkJj.png&quot; alt=&quot;&quot; /&gt;Cloud Services&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/cdq4W3I.png&quot; alt=&quot;&quot; /&gt; Service Fabric&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/j1Y4A4B.png&quot; alt=&quot;&quot; /&gt;Functions&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/z0fI8LX.png&quot; alt=&quot;&quot; /&gt; Logic App&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Host web applications&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Host your own APIs&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Host backend for mobile apps&lt;/strong&gt; (push notification, offline sync)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Automate one step of a process&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Automate a complete process&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Feature deployment slots, Auth&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Run (micro) services at massive scale&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get free e-book on Design Distributed Systems. It is difficult to compare options available in Azure. The comparison with the features of the options provides you tools to choose the right service with your requirements.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
