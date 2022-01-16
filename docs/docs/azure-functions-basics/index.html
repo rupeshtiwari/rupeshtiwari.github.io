@@ -1,0 +1,1205 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Azure Functions Basics - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Learn Azure Functions basics and create your own first azure functions and deploy to azure.">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Azure Functions Basics">
+<meta property="og:url" content="https://www.rupeshtiwari.com/azure-functions-basics/">
+
+
+  <meta property="og:description" content="Learn Azure Functions basics and create your own first azure functions and deploy to azure.">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/zxJrPff.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Azure Functions Basics">
+  <meta name="twitter:description" content="Learn Azure Functions basics and create your own first azure functions and deploy to azure.">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/azure-functions-basics/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/zxJrPff.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-04-05T20:00:00-04:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/azure-functions-basics/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/DaG4dVr.png" alt="Azure Functions Basics" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Azure Functions Basics</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Azure Functions Basics">
+    <meta itemprop="description" content="  Are you beginner on Azure Functions and want to learn the basics of Azure Functions? Did you know you can create Azure Functions and publish to Azure using Typescript right from Visual Studio Code? In this article, I will walk you through the steps for creating and deploying Nodejs APIs with Azure Functions using Serverless on Azure from the beginning.">
+    <meta itemprop="datePublished" content="2021-04-05T20:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Azure Functions Basics
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-is-serverless">What is Serverless?</a><ul><li><a href="#-abstraction-of-servers"> Abstraction of Servers</a></li><li><a href="#-event-driven--instant-scale"> Event-Driven / Instant Scale</a></li><li><a href="#-micro-billing"> Micro Billing</a></li></ul></li><li><a href="#azure-serverless-application-platform-components">Azure Serverless Application Platform Components</a><ul><li><a href="#-azure-functions"> Azure Functions</a></li><li><a href="#-azure-logic-apps"> Azure Logic Apps</a></li><li><a href="#-azure-event-grid"> Azure Event Grid</a></li></ul></li><li><a href="#what-is-azure-functions">What is Azure Functions?</a><ul><li><a href="#azure-function-is-useful">Azure Function is Useful</a></li><li><a href="#azure-functions-development-tools">Azure Functions Development Tools</a></li></ul></li><li><a href="#creating-new-azure-functions-project-using-typescript">Creating New Azure Functions Project using Typescript</a><ul><li><a href="#installing-azure-functions-extensions-in-visual-studio-code">Installing Azure Functions Extensions in Visual Studio Code</a></li><li><a href="#sign-in-to-azure-account-from-visual-studio-code">Sign In to Azure Account from Visual Studio Code</a></li><li><a href="#creating-new-azure-functions-project">Creating New Azure Functions Project</a></li><li><a href="#azure-functions-project-code-walkthrough">Azure Functions Project Code Walkthrough</a><ul><li><a href="#vscode-folder">.vscode folder</a></li><li><a href="#hostjson">host.json</a></li><li><a href="#localsettingsjson">local.settings.json</a></li></ul></li><li><a href="#proxiesjson">Proxies.json</a></li></ul></li><li><a href="#creating-your-first-azure-functions">Creating Your First Azure Functions</a><ul><li><a href="#list-of-azure-function-events">List of Azure Function Events</a></li><li><a href="#creating-an-http-trigger-azure-functions">Creating an HTTP Trigger Azure Functions</a></li><li><a href="#azure-functions-code-walkthrough">Azure Functions Code Walkthrough</a><ul><li><a href="#functionjson">function.json</a></li><li><a href="#indexts-file">index.ts File</a></li></ul></li></ul></li><li><a href="#running-azure-functions-locally-in-visual-studio-code">Running Azure Functions Locally in Visual Studio Code</a><ul><li><a href="#installing-azure-functions-core-tools">Installing Azure Functions Core Tools</a></li><li><a href="#debugging--running-local-azure-functions">Debugging &amp; Running Local Azure Functions</a></li><li><a href="#calling-azure-functions-api-get">Calling Azure Functions API GET</a></li><li><a href="#debugging-azure-functions">Debugging Azure Functions</a></li></ul></li><li><a href="#deploying-function-summary">Deploying Function Summary</a></li><li><a href="#references">References</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Are you <strong>beginner</strong> on <strong>Azure Functions</strong> and want to learn the basics of Azure Functions? Did you know you can create <strong>Azure Functions</strong> and publish to <strong>Azure</strong> using <strong>Typescript</strong> right from <strong>Visual Studio Code</strong>? In this article, I will walk you through the steps for creating and deploying <strong>Nodejs APIs with Azure Functions using Serverless on Azure</strong> from the beginning.</p>
+</blockquote>
+
+<h2 id="what-is-serverless">What is <strong>Serverless</strong>?</h2>
+
+<p><strong>Serverless</strong> is really complicated way to talk about <strong>other people’s computers</strong> 😄. Like <strong>Microsoft</strong> <strong>Serverless</strong> has computers servers physically working for you at <strong>Microsoft premises</strong>. There’s a <strong>lot of</strong> <strong>servers</strong> involved in saying <strong>serverless</strong>. You want to build your modern application to be <strong>scaled</strong> and you should make sure that you are <strong>correctly paying</strong> for the <strong>right resources</strong> that you need. Sometimes you may have really <strong>complicated problems</strong> in your modern application that have to be solved. This is all taken care by <strong>Serverless</strong> architecture.</p>
+
+<blockquote>
+  <p>With <strong>serverless</strong> you can focus on the <strong>business code</strong> and think less about the <strong>infrastructure</strong>.</p>
+</blockquote>
+
+<ol>
+  <li>
+    <h3 id="-abstraction-of-servers"><i class="fa fa-server" aria-hidden="true" style="color: firebrick"></i> Abstraction of Servers</h3>
+    <ul>
+      <li>Still there is a server somewhere that you don’t need to configure just deploy your code.</li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="-event-driven--instant-scale"><i class="fa fa-gear fa-spin" style="color: firebrick"></i> Event-Driven / Instant Scale</h3>
+    <ul>
+      <li>Your code will react to some events happened on <strong>serverless</strong> platform or cloud.</li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="-micro-billing"><i class="fa fa-money" aria-hidden="true" style="color: firebrick"></i> Micro Billing</h3>
+    <ul>
+      <li>Application can be deployed in single container or thousands of container. However you will only pay when event occurred and your function/code executes. This is micro-billing. So You don’t pay if your code is not running. You don’t pay continuously to maintain the server, to scale, to secure your server etc.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="azure-serverless-application-platform-components">Azure Serverless Application Platform Components</h2>
+
+<p><strong>Azure Functions, Logic Apps &amp; Event Grid</strong> are the basic components of <strong>Azure Serverless</strong> Application Platform. These components has access to the Azure <strong>Database, Storage, Security, IoT, Analytics and Intelligence</strong>.</p>
+
+<h3 id="-azure-functions"><i class="fa fa-bolt" style="color: firebrick" aria-hidden="true"></i> Azure Functions</h3>
+
+<blockquote>
+  <p>Execute your code based on events you specify.</p>
+</blockquote>
+
+<p>This is where you will <strong>write</strong> your code/logic. <strong>Azure Functions</strong> <strong>executes</strong> your code based on <strong>events</strong> you specify. You can think of <strong>Azure Functions</strong> as a service.</p>
+
+<h3 id="-azure-logic-apps"><i class="fa fa-sitemap" aria-hidden="true" style="color: firebrick"></i> Azure Logic Apps</h3>
+
+<blockquote>
+  <p>Using <strong>Logic Apps</strong> <strong>you can design workflow and orchestrate multiple process</strong>.</p>
+</blockquote>
+
+<p>Many times you want to manage the <strong>workflow</strong> of your <strong>Functions</strong>. You can use <strong>Connectors</strong> present in Logic Apps. <strong>Logic Apps Connectors</strong> like send an email through office 365 etc. You do not need to write the code to connect to those office 365 <strong>API’s</strong> they already done by <strong>Logic Apps Connectors</strong>.</p>
+
+<h3 id="-azure-event-grid"><i class="fa fa-th" style="color: firebrick" aria-hidden="true"></i> Azure Event Grid</h3>
+
+<blockquote>
+  <p><strong>Event Grid</strong> manages all <strong>events</strong> that can <strong>trigger code</strong> or logic.</p>
+</blockquote>
+
+<p>It allows us to orchestrate events and interact with them.</p>
+
+<p><img src="https://i.imgur.com/ceghDqW.png" alt="" /></p>
+
+<h2 id="what-is-azure-functions">What is Azure Functions?</h2>
+
+<p>With <strong>Azure Functions</strong>, I don’t need to think about <strong>computers</strong>, <strong>server machines</strong> and I just need to think about <strong>functions</strong>. As an organization you can ship your business functionality out of the door faster to production using <strong>Azure Functions</strong>.</p>
+
+<ol>
+  <li><strong>Azure Functions</strong> has <strong>Multiple Language</strong> Support</li>
+  <li>Integration with other services like:
+    <ol>
+      <li><strong>Azure Key Vault</strong></li>
+      <li><strong>Azure DevOps</strong></li>
+    </ol>
+  </li>
+  <li><strong>Azure Functions</strong> provides flexible options will support even the most <strong>mission critical</strong> enterprise workloads.</li>
+</ol>
+
+<h3 id="azure-function-is-useful">Azure Function is Useful</h3>
+
+<p><strong>Azure Function</strong> says take the code that you care about that <strong>powers</strong> your application as per business. <strong>Publish</strong> that code in <strong>Azure</strong> Let azure to take care about <strong>scaling</strong> , <strong>operating</strong>, <strong>securing</strong> and <strong>resilient</strong>.</p>
+
+<h3 id="azure-functions-development-tools">Azure Functions Development Tools</h3>
+
+<p>One of the great thing about <strong>Azure Serverless &amp; Functions</strong> is the integration with <strong>development tooling</strong>. <strong>Azure Serverless</strong> is well integrated with:</p>
+
+<ol>
+  <li><strong>Azure Serverless</strong> is well integrated <strong>Visual Studio Code</strong></li>
+  <li><strong>Visual Studio</strong></li>
+  <li><strong>IntelliJ</strong></li>
+  <li><strong>Eclipse</strong> for Java Functions</li>
+</ol>
+
+<p>On top of that Azure Functions has other development advantages like IDE support, Integrated DevOps, Local Development, Monitoring and Visual Debug History.</p>
+
+<h2 id="creating-new-azure-functions-project-using-typescript">Creating New Azure Functions Project using Typescript</h2>
+
+<p>We will build <strong>NodeJS API</strong> using <strong>Azure Serverless</strong>.</p>
+
+<h3 id="installing-azure-functions-extensions-in-visual-studio-code">Installing Azure Functions Extensions in Visual Studio Code</h3>
+
+<p>Install <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions">Azure Functions extension</a> for Visual Studio from Microsoft. It will install <strong>Azure Account</strong> automatically.</p>
+
+<p><img src="https://i.imgur.com/0eqRtLM.png" alt="" /></p>
+
+<h3 id="sign-in-to-azure-account-from-visual-studio-code">Sign In to Azure Account from Visual Studio Code</h3>
+
+<ol>
+  <li>Click Azure Extension Icon on Visual Studio code <strong>Alt+Shift+A</strong>
+<img src="https://i.imgur.com/Y21Wdi7.png" alt="" /></li>
+  <li>Select <strong><a href="https://portal.azure.com/">Sign in to Azure</a></strong> and login to your azure account.
+<img src="https://i.imgur.com/3M3CXPo.png" alt="" />
+<img src="https://i.imgur.com/YSwRPqY.png" alt="" /></li>
+  <li>Select Azure Subscriptions
+<img src="https://i.imgur.com/yrPBdxW.png" alt="" /></li>
+  <li>Alternatively you can just do CTRL+SHIFT+P in VS Code and search for <strong>Azure Sign In</strong> A browser window should show up, asking you to sign in. Then suddenly your Microsoft Azure Account Extension should work again and it will pre-select the available.
+<img src="https://i.imgur.com/MrM9KWK.png" alt="" /></li>
+</ol>
+
+<h3 id="creating-new-azure-functions-project">Creating New Azure Functions Project</h3>
+
+<p>I will be able to deploy the functions logically connected to the same resource. In Visual Studio code Azure Extensions You can</p>
+
+<ol>
+  <li>Create Project</li>
+  <li>Create Azure Functions</li>
+  <li>And Deploy them in Azure</li>
+</ol>
+
+<p><img src="https://i.imgur.com/kmseV69.png" alt="" /></p>
+
+<p>Lets create new project. You can choose any language out of <strong>JavaScript, Typescript, C#, Python, Java, PowerShell</strong>. I will select <strong>Typescript</strong></p>
+
+<p><img src="https://i.imgur.com/sBOTnXI.png" alt="" /></p>
+
+<p>Next you will see pre-built templates available:
+<img src="https://i.imgur.com/lsjIzkH.png" alt="" /></p>
+
+<p>I will start with clean project so I will select <strong>skip now</strong>. Notice I get the project created.</p>
+
+<p><img src="https://i.imgur.com/xmBS1Yr.png" alt="" /></p>
+
+<h3 id="azure-functions-project-code-walkthrough">Azure Functions Project Code Walkthrough</h3>
+
+<h4 id="vscode-folder"><strong>.vscode folder</strong></h4>
+
+<p>I will run <code class="language-plaintext highlighter-rouge">npm i</code> to install all dev dependencies. All of the magical code to connect to azure is placed inside the <strong>.vscode</strong> folder. You are mostly no need to know what code it has and no need to modify it.</p>
+
+<p><img src="https://i.imgur.com/BPipSfX.png" alt="" /></p>
+
+<h4 id="hostjson"><strong>host.json</strong></h4>
+
+<p><strong>host.json</strong> defines which version of <strong>azure</strong> you are using. I am using <strong>2.0</strong> which is stable version supported for all <strong>operating systems</strong> now. In this file you can also <strong>configure</strong> other <strong>root/project level settings</strong>. Suppose you are using Http function then you can define the routing root api etc.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0"</span><span class="p">,</span><span class="err">👈</span><span class="w">
+  </span><span class="nl">"logging"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"applicationInsights"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"samplingSettings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"isEnabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"excludedTypes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"extensionBundle"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Microsoft.Azure.Functions.ExtensionBundle"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[1.*, 2.0.0)"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="localsettingsjson">local.settings.json</h4>
+
+<p>This is where we <strong>configure our application settings</strong> that we want to use in our local. So imagine when u r building functions or project that u run in your local want to connect your developer database development. You move to production you want to connect to production database. So here you will define <strong>Database Connection Strings</strong>.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"IsEncrypted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"Values"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"AzureWebJobsStorage"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"FUNCTIONS_WORKER_RUNTIME"</span><span class="p">:</span><span class="w"> </span><span class="s2">"node"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="proxiesjson">Proxies.json</h3>
+
+<p>You can create a <strong>thin layer on top of your existing azure functions</strong> application. You can **group multiple function apps **within the same proxy as your functions proxy.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"$schema"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://json.schemastore.org/proxies"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"proxies"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="creating-your-first-azure-functions">Creating Your First Azure Functions</h2>
+
+<p>Next let’s add a brand new azure functions in our newly created azure functions project.</p>
+
+<h3 id="list-of-azure-function-events">List of Azure Function Events</h3>
+
+<p>Click on the thunder+ icon on vscode
+<img src="https://i.imgur.com/2zD1evW.png" alt="" />
+And it will show all of the pre-existed events. You can select from them. This event list is growing very fast.
+<img src="https://i.imgur.com/dNuZixB.png" alt="" /></p>
+
+<p>Like you can write function to react on:</p>
+
+<ol>
+  <li>Http Request</li>
+  <li>Changes in blog storage account</li>
+  <li>Queue Storage</li>
+  <li>Service Bus</li>
+  <li>Timer trigger (React on Timeout or Interval etc.)</li>
+</ol>
+
+<h3 id="creating-an-http-trigger-azure-functions">Creating an HTTP Trigger Azure Functions</h3>
+
+<ol>
+  <li>Let’s create HTTP trigger</li>
+</ol>
+
+<p><img src="https://i.imgur.com/UQ940kt.png" alt="" /> 2. Give name <code class="language-plaintext highlighter-rouge">read-users</code></p>
+
+<p><img src="https://i.imgur.com/xE2zfZg.png" alt="" /> 3. <strong>Authorization Level</strong> Generally there are 3 levels of authorizations:
+<img src="https://i.imgur.com/plRsycf.png" alt="" /></p>
+
+<ol>
+  <li><strong>Anonymous</strong> means anyone can access the URL.</li>
+  <li><strong>Function</strong> means you will create a unique <strong>secrete code</strong> while running function you must pass this code otherwise you will get <strong>HTTP 401 Unauthorized</strong> error. This authorization functionality is already present in <strong>platform</strong>. You don’t have to write any code for this.</li>
+  <li><strong>Admin</strong> means only <strong>your subscriptions</strong> will be able to call into this function and this can be useful when you want to guard your code and working on premise or company.</li>
+</ol>
+
+<p>Lets select <strong>Anonymous</strong> for this demo. Notice our first <strong>Azure Functions</strong> is created.</p>
+
+<p><img src="https://i.imgur.com/hYMwkmM.png" alt="" /></p>
+
+<h3 id="azure-functions-code-walkthrough">Azure Functions Code Walkthrough</h3>
+
+<p>Notice our <strong>folder name</strong> is same as our <strong>function name</strong> <code class="language-plaintext highlighter-rouge">read-users</code>.</p>
+
+<h4 id="functionjson">function.json</h4>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"bindings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"authLevel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"anonymous"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"httpTrigger"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"direction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="err">👈</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"req"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"get"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"post"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"direction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"out"</span><span class="p">,</span><span class="err">👈</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"res"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"scriptFile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../dist/read-users/index.js"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div></div>
+
+<p><strong>function.json</strong> is a file where our function configuration is defined. Array of bindings you will see 2 bindings.</p>
+
+<ol>
+  <li><strong>First</strong> binding is for input. Where you say http trigger that you are ready for <strong>listening</strong> for <strong>incoming Http Requests</strong>.</li>
+  <li><strong>Second</strong> binding is for output. Where you tell <strong>azure functions</strong> runtime that you are returning an <strong>HTTP response</strong>.</li>
+</ol>
+
+<h4 id="indexts-file">index.ts File</h4>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">AzureFunction</span><span class="p">,</span> <span class="nx">Context</span><span class="p">,</span> <span class="nx">HttpRequest</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@azure/functions</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">httpTrigger</span><span class="p">:</span> <span class="nx">AzureFunction</span> <span class="o">=</span> <span class="k">async</span> <span class="kd">function</span> <span class="p">(</span>
+  <span class="nx">context</span><span class="p">:</span> <span class="nx">Context</span><span class="p">,</span>
+  <span class="nx">req</span><span class="p">:</span> <span class="nx">HttpRequest</span>
+<span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="nx">context</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">HTTP trigger function processed a request.</span><span class="dl">'</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">name</span> <span class="o">||</span> <span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">body</span> <span class="o">&amp;&amp;</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">responseMessage</span> <span class="o">=</span> <span class="nx">name</span>
+    <span class="p">?</span> <span class="dl">'</span><span class="s1">Hello, </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">. This HTTP triggered function executed successfully.</span><span class="dl">'</span>
+    <span class="p">:</span> <span class="dl">'</span><span class="s1">This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.</span><span class="dl">'</span><span class="p">;</span>
+
+  <span class="nx">context</span><span class="p">.</span><span class="nx">res</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1">// status: 200, /* Defaults to 200 */</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">responseMessage</span><span class="p">,</span>
+  <span class="p">};</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">httpTrigger</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>In the <strong>index.ts</strong> file has JavaScript function. <strong>Context</strong> object that enable us to communicate with the platform <strong>runtime</strong>. Next is the <strong>HttpRequest</strong> object.</p>
+
+<p>Use Context to log some message:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">context</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">HTTP trigger function processed a request.</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Finally, we return a string as our response body.</p>
+
+<h2 id="running-azure-functions-locally-in-visual-studio-code">Running Azure Functions Locally in Visual Studio Code</h2>
+
+<p>Next let’s run our azure functions and see our server side endpoint up and running.</p>
+
+<h3 id="installing-azure-functions-core-tools">Installing Azure Functions Core Tools</h3>
+
+<p>First you must install <a href="https://github.com/Azure/azure-functions-core-tools#installing">Azure Functions Core Tools</a> in Visual Studio Code Azure Functions Project. Run below to install it.</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm i -g azure-functions-core-tools@3 --unsafe-perm true</code></p>
+
+<h3 id="debugging--running-local-azure-functions">Debugging &amp; Running Local Azure Functions</h3>
+
+<p>Let’s now run our first azure function on visual studio code.</p>
+
+<p>CMD+SHIFT+P ( CTRL + SHIFT + P) and search for <strong>Debug:Start Debugging</strong></p>
+
+<p><img src="https://i.imgur.com/Vg72PYR.png" alt="" /></p>
+
+<p>This will build the project since it is in typescript. Next it will make the api up and running at <strong>port 7071</strong> http://localhost:7071/api/read-users</p>
+
+<p><img src="https://i.imgur.com/9x4aOAb.png" alt="" /></p>
+
+<h3 id="calling-azure-functions-api-get">Calling Azure Functions API GET</h3>
+
+<p>Just Navigate to URL http://localhost:7071/api/read-users and notice you see the response that we have sent from server.
+This is simulating our get call.</p>
+
+<p><img src="https://i.imgur.com/qxHWq7q.png" alt="" /></p>
+
+<p>If you pass <strong>query string</strong> you get that output.</p>
+
+<p>http://localhost:7071/api/read-users?name=Rupesh%20Tiwari</p>
+
+<p><img src="https://i.imgur.com/1XdHX7V.png" alt="" /></p>
+
+<h3 id="debugging-azure-functions">Debugging Azure Functions</h3>
+
+<p>Now you can add the debug point at any lines of code in your azure functions and the again visit the GET URL. Notice you can now debug the code and watch variables values.</p>
+
+<p><img src="https://i.imgur.com/NQ80IAD.png" alt="" /></p>
+
+<h2 id="deploying-function-summary">Deploying Function Summary</h2>
+
+<p>While deploying Azure Function to Azure You have to specify:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">Function Apps</code> associated to an App Service Plan.</li>
+  <li><code class="language-plaintext highlighter-rouge">Subscription</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Resource Group</code></li>
+  <li><code class="language-plaintext highlighter-rouge">App Service Plan</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Storage Account</code> (every Azure functions requires storage account)</li>
+</ol>
+
+<p>Once deployment is done then all the Functions within the Project get deploys to the Function App within the same App Service Plan.</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li><a href="https://www.youtube.com/watch?v=D2_ts6Y5UyE&amp;t=681s">Build Nodejs APIs using serverless on Azure - Simona Cotin</a></li>
+</ol>
+
+<p><em>If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. You can enroll to All-Access Monthly membership plans to get unlimited access to all of our video courses, slides, source code &amp; monthly video calls.</p>
+
+<ul>
+  <li>Please subscribe to <a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to <a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to get everything from PRO plan. Additionally, you will get access to monthly live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today <a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.</p>
+</blockquote>
+
+<p><strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master</a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">www.rupeshtiwari.com</a> | <a href="https://www.fullstackmaster.net">www.fullstackmaster.net</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#javascript" class="page__taxonomy-item" rel="tag">javascript</a><span class="sep">, </span>
+    
+      <a href="/tags/#serverless" class="page__taxonomy-item" rel="tag">serverless</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-04-05T20:00:00-04:00">April 5, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Azure+Functions+Basics%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fazure-functions-basics%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fazure-functions-basics%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fazure-functions-basics%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/azure-cosmos-db-basics/" class="pagination--pager" title="Azure Cosmos DB Basics
+">Previous</a>
+    
+    
+      <a href="/isolated-process-models-for-workers/" class="pagination--pager" title="Isolated Process Models for Workers
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-of-azure-data-center/" rel="permalink">Introduction of Azure Data Center
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-soft-skills-questions/" rel="permalink">Cloud Solution Architect Soft Skills Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you m...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/4EIcRWN.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-technical-interview-questions/" rel="permalink">Cloud Solution Architect Technical Interview Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          39 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/azure-functions-basics/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/azure-functions-basics"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
