@@ -1,0 +1,956 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Creating New App with Nx Console - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="learn creating new application using nx console in monorepo">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Creating New App with Nx Console">
+<meta property="og:url" content="https://www.rupeshtiwari.com/creating-new-app-with-nx-console/">
+
+
+  <meta property="og:description" content="learn creating new application using nx console in monorepo">
+
+
+
+  <meta property="og:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Creating New App with Nx Console">
+  <meta name="twitter:description" content="learn creating new application using nx console in monorepo">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/creating-new-app-with-nx-console/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-01-23T19:00:00-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/creating-new-app-with-nx-console/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author &amp; Trainer</span>
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Creating New App with Nx Console</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Creating New App with Nx Console">
+    <meta itemprop="description" content="  Do you want to create a new application on my nx monorepowork-space? Also do want to make sure that you should be able to build andtest your application using nx command line scripts? Then this articleis for you In this article, I will walk you through the steps please followalong with me.Installing Nx Console Visual Studio Code ExtensionInstall Nx Console from nrwl Vs Code extension. For VSCode users, you caninstall the Nx Console VSCode Plugin from Marketplace. Nx Console is an UI forNx. It will work for any schematic or any architect commands. Nx Console doesnot have a specific UI for, say, generating a component. Instead, Nx Consoledoes what the command-line version of Nx doesCreating New application using Nx ConsoleWe are going to create a new application lets call it asonlinestore-dashboard.Step 1: Go to apps folder and right click you will see Nx generate (ui)Step 2: Select @nrwl/angular Create An Angular application option Step 3: Add application name asonlinestore-dashboard. I will keep style css you can do scss if u want. Notice nx console is also running dry runand showing the files that it is going to create as you go. This is reallyhelpful.  Check routing option to generaterouting module for the application Check strict to do strict type checking andbuild optimization  Addscope:itops,type:app in the tag for enforcing dependency constraints andlinting. Next I am selecting karma as my test runner. Feel free to continueusing jest that is default test runner. Finally press the Run button. Nx Console will execute below script automatically.Executing task: ng generate @nrwl/angular:application --name=onlinestore-dashboard --routing --strict --tags=scope:itops,type:app --unitTestRunner=karmaIt will ask which style you want I will select css. Check inside your apps folder it createdonlinestore-dashboard and onlinestore-dashboard-e2e projects Folder structure of application created bynx console. Building Application using NxI will highly recommend using nx commands to build your project since it willusing caching strategy to minimize your build time. If you already build yourapp and did not change and again build it then it immediately output the buildresult from its previous cacheIn order to build your application run below scriptnx build onlinestore-dashboard  Inside thedist folder you will see the apps/onlinestore-dashboard is created.If you rebuild the same application without any change you can see nx consolewill immediately output the build result within 3 seconds.Serving Application in local dev serverRun this script to serve application nx serve onlinestore-dashboardNavigate to http://localhost:4200 and you should see project runningTesting application using nx command lineRun below script to run application using nx console. Again use nx commandsfor testing to get the benefit of output caching for test results.nx test onlinestore-dashboard --watchShould I use JEST or KARMA for Test Runner?If you are using Karma and in watch mode testing and if u do small changes theit takes time to retest and run. Therefore, I would recommend using JEST forbetter performance and speed testing in watch mode or offline mode.ConclusionIn this article you learn how to create an application using nx console. In mynext article I will explain you how to publish the application dist folder intonpm package so that you can install it as node package in some other node.jsproject. Stay tuned. Jest :+1: +100 Karma :-1: -100Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
+    <meta itemprop="datePublished" content="2021-01-23T19:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Creating New App with Nx Console
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#installing-nx-console-visual-studio-code-extension">Installing Nx Console Visual Studio Code Extension</a></li>
+<li><a href="#creating-new-application-using-nx-console">Creating New application using Nx Console</a></li>
+<li><a href="#building-application-using-nx">Building Application using Nx</a></li>
+<li><a href="#serving-application-in-local-dev-server">Serving Application in local dev server</a></li>
+<li><a href="#testing-application-using-nx-command-line">Testing application using nx command line</a></li>
+<li><a href="#should-i-use-jest-or-karma-for-test-runner">Should I use JEST or KARMA for Test Runner?</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Do you want to create a new application on my <a href="https://nx.dev/">nx monorepo</a>
+work-space? Also do want to make sure that you should be able to <strong>build</strong> and
+<strong>test</strong> your application using <strong>nx command line scripts</strong>? Then this article
+is for you In this article, I will walk you through the steps please follow
+along with me.</p>
+</blockquote>
+
+<h2 id="installing-nx-console-visual-studio-code-extension">Installing Nx Console Visual Studio Code Extension</h2>
+
+<p>Install Nx Console from nrwl Vs Code extension. For VSCode users, you can
+install the Nx Console VSCode Plugin from Marketplace. Nx Console is an UI for
+Nx. It will work for any schematic or any architect commands. Nx Console does
+not have a specific UI for, say, generating a component. Instead, Nx Console
+does what the command-line version of Nx does</p>
+
+<h2 id="creating-new-application-using-nx-console">Creating New application using Nx Console</h2>
+
+<p>We are going to create a new application lets call it as
+<code class="language-plaintext highlighter-rouge">onlinestore-dashboard</code>.</p>
+
+<p><strong>Step 1</strong>: Go to apps folder and right click you will see Nx generate (ui)
+<img src="https://i.imgur.com/oetweVY.png" alt=""></p>
+
+<p><strong>Step 2</strong>: Select @nrwl/angular Create An Angular application option
+<img src="https://i.imgur.com/duL1LwE.png" alt=""> <strong>Step 3</strong>: Add application name as
+<code class="language-plaintext highlighter-rouge">onlinestore-dashboard</code>. I will keep style <code class="language-plaintext highlighter-rouge">css</code> you can do <code class="language-plaintext highlighter-rouge">scss</code> if u want.
+<img src="https://i.imgur.com/TnRHUtu.png" alt=""> Notice nx console is also running dry run
+and showing the files that it is going to create as you go. This is really
+helpful. <img src="https://i.imgur.com/YuBEmBZ.png" alt=""> Check <code class="language-plaintext highlighter-rouge">routing</code> option to generate
+routing module for the application Check <code class="language-plaintext highlighter-rouge">strict</code> to do strict type checking and
+build optimization <img src="https://i.imgur.com/Jqsbx3Q.png" alt=""> Add
+<code class="language-plaintext highlighter-rouge">scope:itops,type:app</code> in the tag for enforcing dependency constraints and
+linting. Next I am selecting <code class="language-plaintext highlighter-rouge">karma</code> as my test runner. Feel free to continue
+using <code class="language-plaintext highlighter-rouge">jest</code> that is default test runner. <img src="https://i.imgur.com/Pgbrlvv.png" alt="">
+Finally press the <code class="language-plaintext highlighter-rouge">Run</code> button. <img src="https://i.imgur.com/6qkD0xS.png" alt=""></p>
+
+<pre><code class="language-shell=">Nx Console will execute below script automatically.
+Executing task: ng generate @nrwl/angular:application --name=onlinestore-dashboard --routing --strict --tags=scope:itops,type:app --unitTestRunner=karma
+</code></pre>
+
+<p>It will ask which style you want I will select <code class="language-plaintext highlighter-rouge">css</code>.
+<img src="https://i.imgur.com/oFdxsZ7.png" alt=""> Check inside your apps folder it created
+<code class="language-plaintext highlighter-rouge">onlinestore-dashboard</code> and <code class="language-plaintext highlighter-rouge">onlinestore-dashboard-e2e</code> projects
+<img src="https://i.imgur.com/a8lOI4x.png" alt=""> Folder structure of application created by
+nx console. <img src="https://i.imgur.com/1KMzB6n.png" alt=""></p>
+
+<h2 id="building-application-using-nx">Building Application using Nx</h2>
+
+<p>I will highly recommend using nx commands to build your project since it will
+using caching strategy to minimize your build time. If you already build your
+app and did not change and again build it then it immediately output the build
+result from its previous cache</p>
+
+<p>In order to build your application run below script
+<code class="language-plaintext highlighter-rouge">nx build onlinestore-dashboard</code> <img src="https://i.imgur.com/9d1eSz3.png" alt=""> Inside the
+<code class="language-plaintext highlighter-rouge">dist</code> folder you will see the apps/onlinestore-dashboard is created.
+<img src="https://i.imgur.com/xqTO2BZ.png" alt=""></p>
+
+<p>If you rebuild the same application without any change you can see nx console
+will immediately output the build result within 3 seconds.
+<img src="https://i.imgur.com/01WOXkW.png" alt=""></p>
+
+<h2 id="serving-application-in-local-dev-server">Serving Application in local dev server</h2>
+
+<p>Run this script to serve application <code class="language-plaintext highlighter-rouge">nx serve onlinestore-dashboard</code></p>
+
+<p><img src="https://i.imgur.com/66h4DrO.png" alt=""></p>
+
+<p>Navigate to http://localhost:4200 and you should see project running
+<img src="https://i.imgur.com/iTS5Wpg.png" alt=""></p>
+
+<h2 id="testing-application-using-nx-command-line">Testing application using nx command line</h2>
+
+<p>Run below script to run application using nx console. Again use <code class="language-plaintext highlighter-rouge">nx</code> commands
+for testing to get the benefit of output caching for test results.</p>
+
+<p><code class="language-plaintext highlighter-rouge">nx test onlinestore-dashboard --watch</code></p>
+
+<p><img src="https://i.imgur.com/TrFv1Cu.png" alt=""></p>
+
+<h2 id="should-i-use-jest-or-karma-for-test-runner">Should I use JEST or KARMA for Test Runner?</h2>
+
+<p>If you are using Karma and in watch mode testing and if u do small changes the
+it takes time to retest and run. Therefore, I would recommend using <code class="language-plaintext highlighter-rouge">JEST</code> for
+better performance and speed testing in watch mode or offline mode.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In this article you learn how to create an application using <code class="language-plaintext highlighter-rouge">nx console</code>. In my
+next article I will explain you how to publish the application dist folder into
+npm package so that you can install it as node package in some other node.js
+project. Stay tuned. Jest <img class="emoji" title=":+1:" alt=":+1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"> +100 Karma <img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"> -100</p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>If you want to become full stack developer and grow your carrier as new software
+developer or Lead Developer/Architect. Consider subscribing to our full stack
+development training programs. We have All-Access Monthly membership plans and
+you will get unlimited access to all of our video courses, slides, source code &amp;
+Monthly video calls.</p>
+
+<ul>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to
+access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to
+get everything from PRO plan. Additionally, you will get access to monthly
+live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more
+help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today
+<a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board
+on your dream software company as a Developer,Architect or Lead Engineer role.
+<strong>💖 Say 👋 to me!</strong></p>
+</blockquote>
+
+<div> 
+Rupesh Tiwari </div>
+<div>
+<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div>
+<div>
+✉️ <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> </div>
+<div>
+Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a>
+</div>
+<div>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#monorepo" class="page__taxonomy-item" rel="tag">monorepo</a><span class="sep">, </span>
+    
+      <a href="/tags/#nx" class="page__taxonomy-item" rel="tag">nx</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-23T19:00:00-05:00">January 23, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&amp;text=Creating+New+App+with+Nx+Console%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fcreating-new-app-with-nx-console%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fcreating-new-app-with-nx-console%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fcreating-new-app-with-nx-console%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/sharing-variables-within-tasks-in-azure-ci-pipeline/" class="pagination--pager" title="Sharing Variables within Tasks in Azure CI Pipeline
+">Previous</a>
+    
+    
+      <a href="/finding-affected-builds-nrwl-nx-monorepo/" class="pagination--pager" title="Finding Affected Builds in Nrwl Nx Monorepo
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-of-azure-data-center/" rel="permalink">Introduction of Azure Data Center
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-soft-skills-questions/" rel="permalink">Cloud Solution Architect Soft Skills Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you m...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/4EIcRWN.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-technical-interview-questions/" rel="permalink">Cloud Solution Architect Technical Interview Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          39 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id="tawk_5eff6dee223d045fcb7b449a"></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/creating-new-app-with-nx-console/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/creating-new-app-with-nx-console"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
