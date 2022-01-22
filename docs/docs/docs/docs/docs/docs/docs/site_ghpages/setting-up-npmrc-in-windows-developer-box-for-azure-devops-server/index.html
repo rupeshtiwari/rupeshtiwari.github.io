@@ -1,0 +1,1061 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Creating NPMRC in Windows Developer Box for Azure DevOps Server - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="setting npm authentication for dev box for restoring npm packages">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Creating NPMRC in Windows Developer Box for Azure DevOps Server">
+<meta property="og:url" content="https://www.rupeshtiwari.com/setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/">
+
+
+  <meta property="og:description" content="setting npm authentication for dev box for restoring npm packages">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/sgvjHr1.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Creating NPMRC in Windows Developer Box for Azure DevOps Server">
+  <meta name="twitter:description" content="setting npm authentication for dev box for restoring npm packages">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/sgvjHr1.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-02-13T19:00:00-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/q8sk7gJ.png" alt="Creating NPMRC in Windows Developer Box for Azure DevOps Server" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Creating NPMRC in Windows Developer Box for Azure DevOps Server</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Creating NPMRC in Windows Developer Box for Azure DevOps Server">
+    <meta itemprop="description" content="  Are you wondering how to create an .npmrc file and put anauthentication token from azure devOps for your team member’s developmentboxes? Do you have multiple scoped private npm registries in your on-premiseazure devOps artifacts feeds? This is a required tooling you must do when youare working on on-premise Azure DevOps server. Read this article to get youranswers.IntroductionIn this article, I will focus more on restoring scoped node packages from localartifacts feed. I have myorg as my company which creates some npm packageswhich are not public called as sopedpackages. They are goin in local azure artifacts feed.As a developer, I need to setup my npmrc file and it’s credential to installall of my scoped npm packages. Read to learn how to Set up npmauthentication on your dev box.Why do you need .npmrc?In order to publish or restore npm packages from either npmjs.com oryour local azure devOps npm registry you need authentication. Azure devOpsnpm registry uses .npmrc file where you define your registry names and yourauthentication token.Learn more about .npmrc configuration filesvsts-npm-authRemember vsts-npm-auth can automatically add authentication token to npmrc ifit has only one registry entry. In this article, I will explain you how to setupnpmrc authentication for multiple registry npmrc file.Learn more hereWhat is Upstream sources in Azure DevOps?If your project only depends on npm packages from npmjs.com. Then in that caseyou just create one upstream source in azure devOps server.Use packages from npmjs.com Learn moreIn our discussion, we are talking about theScoped npm packages. Created locally formy company and published to azure artifacts feed.Using NPM ScopesScopes are built into npm and are a wayof grouping packages together. You can publish and download scoped npmpackages to/from your azure Artifacts feeds. There are benefits of using scopedpackages and many company uses local scope and they publish their local npmpackages. We are doing the same.Defining our scoped projectsSuppose, I have a project that depends on 2 scoped packages which are in myazure artifacts feed. @myorg-branding/logging and @myorg-customers/editorand it also depends on some packages from npmjs.com like lodash , jquery.Now in order to install my packages from local artifacts feed what do I need todo? How will I put authentication token such that I can download both privateand public packages? Let’s see how can we setup our .npmrc file.Step 1: Creating .NPMRC file for scoped packages.I will use VSCode to create .npmrc file and edit.  Open VsCode from c:/users/&lt;USERNAME&gt;  Create a file .npmrcNext follow below instructions to get your authentication token and update.npmrc file.  Go to your company’s Azure Artifacts, select Connect to feed.  Select npm.  Select Other in the Project setup section. Copy the credential text fromstep Step 2: Generating Personal Access Token (PAT)Next, we need to createPATand encode Base64 and add to .npmrc file. We will create one  On the Connect to feed page click on Personal Access Token link. It will takeyou to page create new token and add new token.  I will give the name NPM-DEV  Keep the default collection  Expiration choose Custom defined and go for maximum ( which is 1 yearexpiry). Select 1 year time line.   Since this is for just development I will not check Build, Release, Test,Packaging etc. Select Custom defined, WorkItems Read write and manage, Codegive full acess and select Create button.  Copy the token created and notice expiry is set for next year.Note:💡 If you get authentication errors and can not install NPM packages withthis credential try to give Full Access to your PAT and try again. You canEdit your PAT anytimeto give full access.Step 3: Base64 encode the personal access token from Step 2Don’t go internet and use online base64 creator to convert in base64. Because,someone can hack and take your organization PAT and misuse. To create base64version of your PAT locally, run this command in PowerShell opened in adminmode. It will prompt PAT so enter the Authentication token that you get fromArtifacts step 2. And then it will give you the base64 text. Copy the text youwill need that in next step.node -e &quot;require(&#39;readline&#39;) .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question(&#39;PAT&gt; &#39;,p =&gt; { b64=Buffer.from(p.trim()).toString(&#39;base64&#39;);console.log(b64);process.exit(); })&quot;Step 4: Update npmrc file with Base64 PATReplace both [BASE64_ENCODED_PERSONAL_ACCESS_TOKEN] values in your user .npmrcfile with your personal access token from Step 3Final NPMRC fileThis is how your .npmrc file look like.@myorg-branding:registry=http://myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/@myorg-customers:registry=http://aicpa-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/always-auth=true; begin auth token//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:username=NPM-DEV//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:_password=bKrmcXhrNUFwdG50ZGcydGJqY2JkcmZlNnY2b3ozemtpbDdtMmxtY3Nya2FtNG5ybjVjYQ==//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:email=myorg@myorg.com//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:username=NPM-DEV//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:_password=axhmcXhrNXFwdG54ZGcydGJqY2JkcmZlNnY2b3ozemtpbDdtMmxtY3Nya2FtNG5ybjVjYQ==//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:email=myorg@myorg.com; end auth tokenInstalling Scoped packagesNow you can open your project where you have scoped packages as well as publicnpm packages.Then run npm install to install scoped packages and npmjs.com packages aswell.Should I create PAT and NPMRC for each member in my team?The answer to this question is relative. However, I will prefer to do one PATfor entire dev team. So that one person can be authorized to maintain this PATwhenever expired that person can update the PAT.Keep your NPMRC in your company’s shared folder so that all DEV team members cancopy from there and drop it to%USERPROFILE%/.npmrc location.Should I create new PAT and NPMRC for CI/CD?For BUILD and release CI/CD, I would prefer creating separate PAT to keep thingsseparate. Feel free to use same if you have given Full Access or you don’t wantto keep separate.Like I said the answer to these questions are relative. There is no right orwrong.How many .npmrc files I should have in my Team?I would say minimum 2:  One for developers (npm-user)  One for CI/CD (npm-cicd)How do I update the PAT after expiry?You can assign one person in the team who will put a calendar and remindhim/herself to update the PAT one month before it expires. S/he will Edit thePAT and extend the date for next year.  Go to PAT list pagehttp://myorg-tfs:8080/tfs/DefaultCollection/_usersSettings/tokens  Select NPM-USER,  Select Edit button   Change the date for next year to expire   Select Save ButtonReferences  Use npm scopes  Upstream sources  Set up authentication on your dev box  Then follow the step 3 to create base64 token and update npmrc file.Become full stack developer 💻I teach at Fullstack Master. If you want tobecome full stack developer and grow your carrier as new software developer orLead Developer/Architect. Consider subscribing to our full stack developmenttraining programs. You can enroll to All-Access Monthly membership plans to getunlimited access to all of our video courses, slides, source code &amp; monthlyvideo calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari www.rupeshtiwari.com ✉️ Email Rupesh Founderof  Fullstack Master">
+    <meta itemprop="datePublished" content="2021-02-13T19:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Creating NPMRC in Windows Developer Box for Azure DevOps Server
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#introduction">Introduction</a></li><li><a href="#why-do-you-need-npmrc">Why do you need .npmrc?</a></li><li><a href="#vsts-npm-auth">vsts-npm-auth</a></li><li><a href="#what-is-upstream-sources-in-azure-devops">What is Upstream sources in Azure DevOps?</a></li><li><a href="#using-npm-scopes">Using NPM Scopes</a></li><li><a href="#step-1-creating-npmrc-file-for-scoped-packages">Step 1: Creating .NPMRC file for scoped packages.</a></li><li><a href="#step-2-generating-personal-access-token-pat">Step 2: Generating Personal Access Token (PAT)</a></li><li><a href="#step-3-base64-encode-the-personal-access-token-from-step-2">Step 3: Base64 encode the personal access token from Step 2</a></li><li><a href="#step-4-update-npmrc-file-with-base64-pat">Step 4: Update npmrc file with Base64 PAT</a></li><li><a href="#final-npmrc-file">Final NPMRC file</a></li><li><a href="#installing-scoped-packages">Installing Scoped packages</a></li><li><a href="#should-i-create-pat-and-npmrc-for-each-member-in-my-team">Should I create PAT and NPMRC for each member in my team?</a></li><li><a href="#should-i-create-new-pat-and-npmrc-for-cicd">Should I create new PAT and NPMRC for CI/CD?</a></li><li><a href="#how-many-npmrc-files-i-should-have-in-my-team">How many .npmrc files I should have in my Team?</a></li><li><a href="#how-do-i-update-the-pat-after-expiry">How do I update the PAT after expiry?</a></li><li><a href="#references">References</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Are you wondering how to create an <code class="language-plaintext highlighter-rouge">.npmrc</code> file and put an
+<code class="language-plaintext highlighter-rouge">authentication token</code> from azure devOps for your team member’s development
+boxes? Do you have multiple scoped private <code class="language-plaintext highlighter-rouge">npm</code> registries in your on-premise
+azure devOps artifacts feeds? This is a required tooling you must do when you
+are working on on-premise Azure DevOps server. Read this article to get your
+answers.</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In this article, I will focus more on restoring scoped node packages from local
+artifacts feed. I have <code class="language-plaintext highlighter-rouge">myorg</code> as my company which creates some <code class="language-plaintext highlighter-rouge">npm</code> packages
+which are not public called as <a href="https://docs.npmjs.com/misc/scope">soped</a>
+packages. They are goin in local azure artifacts feed.</p>
+
+<p>As a developer, I need to setup my <code class="language-plaintext highlighter-rouge">npmrc</code> file and it’s credential to install
+all of my scoped <code class="language-plaintext highlighter-rouge">npm</code> packages. Read to learn how to Set up <code class="language-plaintext highlighter-rouge">npm</code>
+authentication on your dev box.</p>
+
+<h2 id="why-do-you-need-npmrc">Why do you need .npmrc?</h2>
+
+<p>In order to <strong>publish</strong> or <strong>restore</strong> npm packages from either npmjs.com or
+your local azure devOps <code class="language-plaintext highlighter-rouge">npm</code> registry you need authentication. Azure devOps
+<code class="language-plaintext highlighter-rouge">npm</code> registry uses <code class="language-plaintext highlighter-rouge">.npmrc</code> file where you define your registry names and your
+authentication token.
+<a href="https://docs.npmjs.com/files/npmrc">Learn more about .npmrc configuration files</a></p>
+
+<h2 id="vsts-npm-auth">vsts-npm-auth</h2>
+
+<p>Remember <code class="language-plaintext highlighter-rouge">vsts-npm-auth</code> can automatically add authentication token to npmrc if
+it has only one registry entry. In this article, I will explain you how to setup
+npmrc authentication for multiple registry <code class="language-plaintext highlighter-rouge">npmrc</code> file.
+<a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops&amp;tabs=windows#windows">Learn more here</a></p>
+
+<h2 id="what-is-upstream-sources-in-azure-devops">What is Upstream sources in Azure DevOps?</h2>
+
+<p>If your project only depends on <code class="language-plaintext highlighter-rouge">npm</code> packages from npmjs.com. Then in that case
+you just create one upstream source in azure devOps server.
+<a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/npm/upstream-sources?view=azure-devops">Use packages from npmjs.com Learn more</a></p>
+
+<p>In our discussion, we are talking about the
+<a href="https://docs.npmjs.com/misc/scope">Scoped</a> <code class="language-plaintext highlighter-rouge">npm</code> packages. Created locally for
+my company and published to azure artifacts feed.</p>
+
+<h2 id="using-npm-scopes">Using NPM Scopes</h2>
+
+<p><a href="https://docs.npmjs.com/misc/scope">Scopes</a> are built into <code class="language-plaintext highlighter-rouge">npm</code> and are a way
+of grouping packages together. You can publish and download scoped <code class="language-plaintext highlighter-rouge">npm</code>
+packages to/from your azure Artifacts feeds. There are benefits of using scoped
+packages and many company uses local scope and they publish their local <code class="language-plaintext highlighter-rouge">npm</code>
+packages. We are doing the same.</p>
+
+<p><strong>Defining our scoped projects</strong></p>
+
+<p>Suppose, I have a project that depends on 2 scoped packages which are in my
+azure artifacts feed. <code class="language-plaintext highlighter-rouge">@myorg-branding/logging</code> and <code class="language-plaintext highlighter-rouge">@myorg-customers/editor</code>
+and it also depends on some packages from npmjs.com like <code class="language-plaintext highlighter-rouge">lodash</code> , <code class="language-plaintext highlighter-rouge">jquery</code>.
+Now in order to install my packages from local artifacts feed what do I need to
+do? How will I put authentication token such that I can download both private
+and public packages? Let’s see how can we setup our <code class="language-plaintext highlighter-rouge">.npmrc</code> file.</p>
+
+<h2 id="step-1-creating-npmrc-file-for-scoped-packages">Step 1: Creating .NPMRC file for scoped packages.</h2>
+
+<p>I will use VSCode to create <code class="language-plaintext highlighter-rouge">.npmrc</code> file and edit.</p>
+
+<ol>
+  <li>Open VsCode from <code class="language-plaintext highlighter-rouge">c:/users/&lt;USERNAME&gt;</code></li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">.npmrc</code></li>
+</ol>
+
+<p>Next follow below instructions to get your authentication token and update
+<code class="language-plaintext highlighter-rouge">.npmrc</code> file.</p>
+
+<ol>
+  <li>Go to your company’s Azure Artifacts, select Connect to feed.</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">npm</code>.</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">Other</code> in the Project setup section. Copy the credential text from
+step <img src="https://i.imgur.com/YS5DtGv.png" alt="" /></li>
+</ol>
+
+<h2 id="step-2-generating-personal-access-token-pat">Step 2: Generating Personal Access Token (PAT)</h2>
+
+<p>Next, we need to create
+<a href="https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=preview-page">PAT</a>
+and encode Base64 and add to <code class="language-plaintext highlighter-rouge">.npmrc</code> file. We will create one</p>
+
+<ol>
+  <li>On the Connect to feed page click on Personal Access Token link. It will take
+you to page create new token and add new token.</li>
+  <li>I will give the name <code class="language-plaintext highlighter-rouge">NPM-DEV</code></li>
+  <li>Keep the default collection</li>
+  <li>Expiration choose <code class="language-plaintext highlighter-rouge">Custom defined</code> and go for maximum ( which is 1 year
+expiry). Select 1 year time line. <img src="https://i.imgur.com/dkzN2Hu.png" alt="" /></li>
+  <li>Since this is for just development I will not check Build, Release, Test,
+Packaging etc. Select Custom defined, WorkItems Read write and manage, Code
+give full acess and select Create button.
+<img src="https://i.imgur.com/mnXBvGO.png" alt="" /></li>
+  <li>Copy the token created and notice expiry is set for next year.
+<img src="https://i.imgur.com/qXlp4FB.png" alt="" /></li>
+</ol>
+
+<p>Note:💡 If you get authentication errors and can not install NPM packages with
+this credential try to give <strong>Full Access</strong> to your PAT and try again. You can
+<a href="https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=preview-page#modify-a-pat">Edit your PAT anytime</a>
+to give full access.</p>
+
+<h2 id="step-3-base64-encode-the-personal-access-token-from-step-2">Step 3: Base64 encode the personal access token from Step 2</h2>
+
+<p>Don’t go internet and use online base64 creator to convert in base64. Because,
+someone can hack and take your organization PAT and misuse. To create base64
+version of your PAT locally, run this command in PowerShell opened in admin
+mode. It will prompt PAT so enter the Authentication token that you get from
+Artifacts step 2. And then it will give you the base64 text. Copy the text you
+will need that in next step.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node <span class="nt">-e</span> <span class="s2">"require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT&gt; ',p =&gt; { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"</span>
+</code></pre></div></div>
+
+<p><img src="https://i.imgur.com/NSTsZpx.png" alt="" /></p>
+
+<h2 id="step-4-update-npmrc-file-with-base64-pat">Step 4: Update npmrc file with Base64 PAT</h2>
+
+<p>Replace both [BASE64_ENCODED_PERSONAL_ACCESS_TOKEN] values in your user <code class="language-plaintext highlighter-rouge">.npmrc</code>
+file with your personal access token from Step 3</p>
+
+<h2 id="final-npmrc-file">Final NPMRC file</h2>
+
+<p>This is how your <code class="language-plaintext highlighter-rouge">.npmrc</code> file look like.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@myorg-branding:registry<span class="o">=</span>http://myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/
+@myorg-customers:registry<span class="o">=</span>http://aicpa-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/
+always-auth<span class="o">=</span><span class="nb">true</span>
+
+<span class="p">;</span> begin auth token
+//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:username<span class="o">=</span>NPM-DEV
+//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:_password<span class="o">=</span><span class="nv">bKrmcXhrNUFwdG50ZGcydGJqY2JkcmZlNnY2b3ozemtpbDdtMmxtY3Nya2FtNG5ybjVjYQ</span><span class="o">==</span>
+//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:email<span class="o">=</span>myorg@myorg.com
+//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:username<span class="o">=</span>NPM-DEV
+//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:_password<span class="o">=</span><span class="nv">axhmcXhrNXFwdG54ZGcydGJqY2JkcmZlNnY2b3ozemtpbDdtMmxtY3Nya2FtNG5ybjVjYQ</span><span class="o">==</span>
+//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:email<span class="o">=</span>myorg@myorg.com
+<span class="p">;</span> end auth token
+</code></pre></div></div>
+
+<h2 id="installing-scoped-packages">Installing Scoped packages</h2>
+
+<p>Now you can open your project where you have scoped packages as well as public
+npm packages.</p>
+
+<p><img src="https://i.imgur.com/M0Mh3ev.png" alt="" /></p>
+
+<p>Then run <code class="language-plaintext highlighter-rouge">npm install</code> to install scoped packages and npmjs.com packages as
+well.</p>
+
+<p><img src="https://i.imgur.com/WVp0M65.png" alt="" /></p>
+
+<h2 id="should-i-create-pat-and-npmrc-for-each-member-in-my-team">Should I create PAT and NPMRC for each member in my team?</h2>
+
+<p>The answer to this question is relative. However, I will prefer to do one PAT
+for entire dev team. So that one person can be authorized to maintain this PAT
+whenever expired that person can update the PAT.</p>
+
+<p>Keep your NPMRC in your company’s shared folder so that all DEV team members can
+copy from there and drop it to<code class="language-plaintext highlighter-rouge">%USERPROFILE%/.npmrc</code> location.</p>
+
+<h2 id="should-i-create-new-pat-and-npmrc-for-cicd">Should I create new PAT and NPMRC for CI/CD?</h2>
+
+<p>For BUILD and release CI/CD, I would prefer creating separate PAT to keep things
+separate. Feel free to use same if you have given Full Access or you don’t want
+to keep separate.</p>
+
+<p>Like I said the answer to these questions are relative. There is no right or
+wrong.</p>
+
+<h2 id="how-many-npmrc-files-i-should-have-in-my-team">How many .npmrc files I should have in my Team?</h2>
+
+<p>I would say minimum 2:</p>
+
+<ol>
+  <li>One for developers (<code class="language-plaintext highlighter-rouge">npm-user</code>)</li>
+  <li>One for CI/CD (<code class="language-plaintext highlighter-rouge">npm-cicd</code>)</li>
+</ol>
+
+<h2 id="how-do-i-update-the-pat-after-expiry">How do I update the PAT after expiry?</h2>
+
+<p>You can assign one person in the team who will put a calendar and remind
+him/herself to update the PAT one month before it expires. S/he will Edit the
+PAT and extend the date for next year.</p>
+
+<ol>
+  <li>Go to PAT list page
+http://myorg-tfs:8080/tfs/DefaultCollection/_usersSettings/tokens
+<img src="https://i.imgur.com/jHw9tXZ.png" alt="" /></li>
+  <li>Select NPM-USER,</li>
+  <li>Select Edit button <img src="https://i.imgur.com/faFED4f.png" alt="" /></li>
+  <li>Change the date for next year to expire <img src="https://i.imgur.com/QxjQy15.png" alt="" /></li>
+  <li>Select Save Button</li>
+</ol>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li><a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/npm/scopes?view=azure-devops&amp;tabs=windows">Use npm scopes</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops">Upstream sources</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/npm/npmrc?view=azure-devops&amp;tabs=windows#set-up-authentication-on-your-dev-box">Set up authentication on your dev box</a></li>
+  <li>Then follow the step 3 to create base64 token and update npmrc file.</li>
+</ol>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to
+become full stack developer and grow your carrier as new software developer or
+Lead Developer/Architect. Consider subscribing to our full stack development
+training programs. You can enroll to All-Access Monthly membership plans to get
+unlimited access to all of our video courses, slides, source code &amp; monthly
+video calls.</p>
+
+<ul>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to
+access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to
+get everything from PRO plan. Additionally, you will get access to monthly
+live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more
+help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today
+<a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board
+on your dream software company as a Developer,Architect or Lead Engineer role.</p>
+</blockquote>
+
+<p><strong>💖 Say 👋 to me!</strong> Rupesh Tiwari <a href="https://www.rupeshtiwari.com">
+www.rupeshtiwari.com</a> ✉️
+<a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> Founder
+of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#devops" class="page__taxonomy-item" rel="tag">devops</a><span class="sep">, </span>
+    
+      <a href="/tags/#node" class="page__taxonomy-item" rel="tag">node</a><span class="sep">, </span>
+    
+      <a href="/tags/#npm" class="page__taxonomy-item" rel="tag">npm</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-13T19:00:00-05:00">February 13, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Creating+NPMRC+in+Windows+Developer+Box+for+Azure+DevOps+Server%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fsetting-up-npmrc-in-windows-developer-box-for-azure-devops-server%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fsetting-up-npmrc-in-windows-developer-box-for-azure-devops-server%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fsetting-up-npmrc-in-windows-developer-box-for-azure-devops-server%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/authenticating-git-on-development-box/" class="pagination--pager" title="Authenticating GIT on Development Box
+">Previous</a>
+    
+    
+      <a href="/adding-tag-to-git-branch-in-azure-ci-pipelines/" class="pagination--pager" title="Adding Tag to GIT Branch in Azure CI Pipelines
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-to-azure-infrastructure-architecture/" rel="permalink">Introduction to Azure Infrastructure Architecture
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/what-is-azure-virtual-machine-scale-sets/" rel="permalink">What is Azure Virtual Machine Scale Sets
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/create-update-and-delete-tags-on-azure-resource/" rel="permalink">Create Update and Delete Tags on Azure Resource
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.
+
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/setting-up-npmrc-in-windows-developer-box-for-azure-devops-server"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
