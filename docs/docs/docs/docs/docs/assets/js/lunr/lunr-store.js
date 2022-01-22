@@ -1372,4 +1372,10 @@ var store = [{
         "tags": ["azure","webdev","beginners","tutorial"],
         "url": "/introduction-of-azure-data-center/",
         "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "How to start preparing for coding interview",
+        "excerpt":"When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies like back tracking, dp, 2 pointer concept, etc. I was really upset and could not continue my journey to prepare coding and did give up my learning...","categories": [],
+        "tags": ["webdev","tutorial","beginners","interview"],
+        "url": "/how-to-start-preparing-for-coding-interview/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
       }]

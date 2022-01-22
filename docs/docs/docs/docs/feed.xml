@@ -1,4 +1,209 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-18T08:44:27-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">How to start preparing for coding interview</title><link href="https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview/" rel="alternate" type="text/html" title="How to start preparing for coding interview" /><published>2022-01-16T19:00:00-05:00</published><updated>2022-01-16T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview</id><content type="html" xml:base="https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-19T08:53:52-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Roadmap for mastering Coding &amp;amp; Competitive Programming interview</title><link href="https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners/" rel="alternate" type="text/html" title="Roadmap for mastering Coding &amp;amp; Competitive Programming interview" /><published>2022-01-18T19:00:00-05:00</published><updated>2022-01-18T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners</id><content type="html" xml:base="https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners/">&lt;blockquote&gt;
+  &lt;p&gt;Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in order to crack Big 4 (Google, Facebook, Amazon &amp;amp; Microsoft) companies coding-interviews?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nowadays, even consulting companies like Infosys, TCS etc., are asking some coding problems in their interview. Therefore, if you are not preparing for FAANGM ( facebook, apple, amazon, netflix, google, microsoft) still you must learn how to code and practice coding. Solve easy problems from each Data Structure and sharpen your Logic skills.&lt;/p&gt;
+
+&lt;p&gt;If you are a beginner like me, never start directly solving competitive programming problems. First solve Data Structure and Algorithm problems. &lt;a href=&quot;https://rupeshtiwari.com/how-to-start-preparing-for-coding-interview/&quot;&gt;Read this to know what is the difference between Data Structure and Algorithm problems and Competitive Programming problems&lt;/a&gt;. So basically, you have start learning coding from basic.&lt;/p&gt;
+
+&lt;p&gt;Start solving problems in below sequence to practice:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Solve Data Structure and Algorithm problems especially from &lt;a href=&quot;https://practice.geeksforgeeks.org/&quot;&gt;GeekOfGeeks site&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Solve Competitive Programming problems especially solve it from Leetcode. Here is the list of &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1ZXg8-VkK3UQxYxra7oYJeX1joHKSyz3U0WG7SUjrzy0/edit#gid=196839908&quot;&gt;problems from Leetcode&lt;/a&gt; that you must try solving them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I myself did very hard work and trying to solve problems given by Love Babbar 450 questions and from many other places.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can view my solutions in JavaScript &lt;a href=&quot;https://codepen.io/rupeshtiwari/collections/&quot;&gt;in this codepen link&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;I also solved couple of problems related to basic &lt;a href=&quot;https://github.com/rupeshtiwari/coding-examples-interview-coding-datastructure-algorithm-in-javascript&quot;&gt;data structure and algorithm here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can always fork &lt;a href=&quot;https://codepen.io/rupeshtiwari/collections/&quot;&gt;my codepen&lt;/a&gt; and do the changes. I have added Jasmine Test in my code pen so that you can write function and run your specs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SdGQz8M.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is one example how you can solve problems all related to binary search and run specs to proove that they all work.&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;html,result&quot; data-slug-hash=&quot;NWjGPxL&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/NWjGPxL&quot;&gt;
+  Finding first or last occurrence of a number&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;which-language-should-i-use-in-a-coding-interview&quot;&gt;Which Language should I use in a coding interview? &lt;/h2&gt;
+
+&lt;p&gt;Many companies don’t prefer Python in coding interviews. Because, it has an in-built library for stack or so on. If you are doing Python then learn one more language in backup ( C#, C, C++ or Java ). Python is mostly used in Data Science and Machine Learning since these topics are very complex and you must write less code to solve these big problems. I personally use &lt;strong&gt;JavaScript&lt;/strong&gt; language.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-should-i-practice-for-data-structure-and-algorithm-problems&quot;&gt;Where should I practice for Data Structure and Algorithm problems? &lt;/h2&gt;
+
+&lt;p&gt;Use geeksforgeeks.com to practice data structure and algorithm problems.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Solve Problems for DataStructure &amp;amp; Algorithms&lt;/li&gt;
+  &lt;li&gt;Read company interview experiences that will explain you how companies take interview what are their patterns.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Amazon, Meta (FaceBook), Google, Microsoft etc. they ask the questions from the Geek for Geeks sometime. So it is a good idea to solve them. Geeks For Geeks is the best site to start learning coding for any beginners.&lt;/p&gt;
+
+&lt;p&gt;Here is the steps to start coding practice.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Go to &lt;a href=&quot;https://practice.geeksforgeeks.org/&quot;&gt;https://practice.geeksforgeeks.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Select Data Structure like start from &lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&amp;amp;page=1&amp;amp;category%5B%5D=Arrays&quot;&gt;Array&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Select the difficulty level &lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&amp;amp;difficulty%5B%5D=0&amp;amp;page=1&amp;amp;category%5B%5D=Arrays&quot;&gt;easy&lt;/a&gt; ( if you are beginner I would say try &lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&amp;amp;difficulty%5B%5D=-2&amp;amp;page=1&amp;amp;category%5B%5D=Arrays&quot;&gt;School&lt;/a&gt; and &lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&amp;amp;difficulty%5B%5D=-1&amp;amp;page=1&amp;amp;category%5B%5D=Arrays&quot;&gt;Basic&lt;/a&gt; level first )&lt;/li&gt;
+  &lt;li&gt;Daily do minimum 2 questions one from &lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&amp;amp;difficulty%5B%5D=0&amp;amp;category%5B%5D=Arrays&quot;&gt;easy&lt;/a&gt; one from &lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&amp;amp;difficulty%5B%5D=1&amp;amp;page=1&amp;amp;category%5B%5D=Arrays&quot;&gt;medium level&lt;/a&gt; difficulty&lt;/li&gt;
+  &lt;li&gt;For each Data Structure target yourself to solve 50 questions&lt;/li&gt;
+  &lt;li&gt;Do more than 50 questions for Array and String related problems especially&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In Geek of Geeks you can filter difficulty level and you can also check which problem is asked in which company. Select Array then filter by Basic, Medium or Hard then work on them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/CFduree.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you want to dedicate more time on coding practice and finish early then every day you do &lt;strong&gt;2 easy, 2 medium and 1 hard&lt;/strong&gt; problems for each data structure.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;which-data-structure-problem-should-i-focus-and-solve&quot;&gt;Which Data Structure Problem Should I Focus and solve? &lt;/h2&gt;
+
+&lt;p&gt;Do 50 questions on below data structures. Do 70 questions on Array and Linked List. First solve the problems which are described in the &lt;a href=&quot;https://www.youtube.com/watch?v=t5JfBFfi2sU&amp;amp;list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&amp;amp;index=1&quot;&gt;data structure in hindi videos&lt;/a&gt;. Then solve others on your own. If you don’t watch videos and try to solve your own in Geek of Geeks you will solve 5 problems. However, if you watch videos and solve them then you should be able to solve 15 problems on your own. Do below Data Structures:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&amp;amp;page=1&amp;amp;category%5B%5D=Arrays&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Linked%20List&amp;amp;page=1&amp;amp;category%5B%5D=Linked%20List&quot;&gt;Linked List&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Stack&amp;amp;page=1&amp;amp;category%5B%5D=Stack&quot;&gt;Stack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Queue&amp;amp;page=1&amp;amp;category%5B%5D=Queue&quot;&gt;Queue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Tree&amp;amp;page=1&amp;amp;category%5B%5D=Tree&quot;&gt;Tree&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Graph&amp;amp;page=1&amp;amp;category%5B%5D=Graph&quot;&gt;Graph&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I have gone through &lt;a href=&quot;https://www.youtube.com/channel/UCnlgufTxMEoeSEubfxOPfMA&quot;&gt;Academic Booster&lt;/a&gt; channels &lt;a href=&quot;https://www.youtube.com/watch?v=t5JfBFfi2sU&amp;amp;list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&amp;amp;index=1&quot;&gt;videos from data structure in hindi videos&lt;/a&gt; and created my own &lt;a href=&quot;https://github.com/rupeshtiwari/coding-examples-datastructures&quot;&gt;GitHub repository&lt;/a&gt;. There I added his questions in JavaScript and put his solutions also. This will help you to get started. I have not finished all of his questions. If you are able to finish the playlist and want to contribute to this playlist then please create pull request. I will be happy to integrate.&lt;/p&gt;
+
+&lt;h2 id=&quot;which-algorithm-problem-should-i-do&quot;&gt;Which Algorithm Problem Should I Do? &lt;/h2&gt;
+
+&lt;p&gt;Most of the companies ask Dynamic Programming problems, they are very important.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Searching&amp;amp;page=1&amp;amp;category%5B%5D=Searching&quot;&gt;Searching&lt;/a&gt; - do 50 problems&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Sorting&amp;amp;page=1&amp;amp;category%5B%5D=Sorting&quot;&gt;Sorting&lt;/a&gt; - do 50 problems&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Greedy&amp;amp;page=1&amp;amp;category%5B%5D=Greedy&quot;&gt;Greedy&lt;/a&gt; - do 70 problems&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://practice.geeksforgeeks.org/explore/?category%5B%5D=Dynamic%20Programming&amp;amp;page=1&amp;amp;category%5B%5D=Dynamic%20Programming&quot;&gt;Dynamic Programming&lt;/a&gt; - do 70 problems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you finish Dynamic programming then whatever Data Structure concepts that you have first finished. There you can optimize your solution using Dynamic Programming.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-should-i-practice-competitive-programming-problems&quot;&gt;Where should I practice Competitive Programming Problems?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://leetcode.com/&quot;&gt;LeetCode.com&lt;/a&gt; is best for practicing for competitive programing.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.codechef.com/&quot;&gt;Codechef.com/&lt;/a&gt; is also good.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Participate in competitive problem competitions like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Long Challenge:  Within 10 days you have to solve problems&lt;/li&gt;
+  &lt;li&gt;Cook Off&lt;/li&gt;
+  &lt;li&gt;Lunch Time: Within 2-3 hours solve problems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;do-not-attempt-solving-hard-or-medium-problems-when-you-start&quot;&gt;Do not attempt solving Hard or Medium Problems when you start&lt;/h2&gt;
+
+&lt;p&gt;When you are a beginner do not start directly with hard or medium problems otherwise you will be disheartened and you may lose your interest to learn coding. Therefore, I would advise not to waste time solving hard problems or mediums. Rather start with easy problems to build some confidence.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-keep-forgetting-previous-solved-problems-when-i-do-more-problems-what-to-do&quot;&gt;I keep forgetting previous solved problems when I do more problems. What to do?&lt;/h2&gt;
+
+&lt;p&gt;When you will target yourself to  solve 50 Array questions and daily you are solving lets say 5 problems. Then you will encounter an issue that you will start forgetting 1st problem solution, when you are attempting 6th one. This is a normal issue and it happens with every student. So do not dis-hearten. I will give you my solution to what I did.&lt;/p&gt;
+
+&lt;p&gt;There are some rules that I used to follow to keep myself updated with the problems that I was working on. Let me explain that it may or may not work for you but give it a try since it worked for me.&lt;/p&gt;
+
+&lt;h3 id=&quot;before-solving-problem&quot;&gt;Before solving problem&lt;/h3&gt;
+
+&lt;p&gt;Create one Excel sheet or Google Sheet called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;“Coding Problems”&lt;/code&gt;. Add columns like Problem Statement, Logic, Algorithm Name, Need more practice, category and difficulty level.&lt;/p&gt;
+
+&lt;h4 id=&quot;coding-problem-cheat-sheet&quot;&gt;Coding Problem Cheat Sheet&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Problem Statement&lt;/th&gt;
+      &lt;th&gt;Logic&lt;/th&gt;
+      &lt;th&gt;Algorithm Name&lt;/th&gt;
+      &lt;th&gt;Need more practice?&lt;/th&gt;
+      &lt;th&gt;Category&lt;/th&gt;
+      &lt;th&gt;Difficulty Level&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Write  the problem clearly&lt;/td&gt;
+      &lt;td&gt;Explain the logic in brief &lt;/td&gt;
+      &lt;td&gt;Greedy&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;Array&lt;/td&gt;
+      &lt;td&gt;Easy&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;during-solving-problem&quot;&gt;During solving problem &lt;/h3&gt;
+
+&lt;p&gt;Read the question 2-3 times until you kind or memorize or internalize the question. Sometimes, if you write down the question on a paper or white board and read it out loud, that will help you to understand and remember the question. So the point I am making is to understand and remember the question, not the solution.&lt;/p&gt;
+
+&lt;p&gt;While solving problem try to correlate your logic with the question, by reading the question again and again since the question has hints for the solution.&lt;/p&gt;
+
+&lt;h3 id=&quot;after-solving-a-problem&quot;&gt;After solving a problem&lt;/h3&gt;
+
+&lt;p&gt;Once you have solved the problem. Open coding problems sheet  enter following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Problem statement: Write down the problem, remember the very important read each word carefully!&lt;/li&gt;
+  &lt;li&gt;Logic: Write solution logic in brief ( write as much as you need to remind yourself later time)&lt;/li&gt;
+  &lt;li&gt;Algorithm Name: Write any algorithm names you have used like Greedy, Binary Search etc.&lt;/li&gt;
+  &lt;li&gt;Need more practice: While reading this sheet you can mark this yes or no based on how much you can remember problem and its logic&lt;/li&gt;
+  &lt;li&gt;Category: Write  what Data Structure you are working or which Algorithm you are working&lt;/li&gt;
+  &lt;li&gt;Difficulty Level: Which level you are working on Easy, Medium or Hard&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;again-before-solving-a-problem&quot;&gt;Again before solving a problem&lt;/h3&gt;
+
+&lt;p&gt;Next time when you start coding then first open this sheet, hide the logic column and read the problems and try to recollect the logic of the solution. If you are not able to recollect logic then unhide the logic column and read it. Next Mark the column &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;needs more practice&lt;/code&gt; as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YES&lt;/code&gt;. Next continue reading the next problems and keep updating the need for more practice columns. Once you finish this sheet then only start solving new problems.&lt;/p&gt;
+
+&lt;p&gt;Once you do this entry then every time you start coding first read this excel and try to re-collect the problem and its logic on how to solve it. Also if you think you can not remember then solve the problem again, change the logic entry in the sheet such that you can recollect when you read it again. Ideally you should re-collect your solution after reading the entry from this sheet till then keep changing the entry of this sheet to make it very much helpful for you to remind you of your solution. This is your diary for your work.&lt;/p&gt;
+
+&lt;p&gt;This is what I used to do to remember the logic of each problem that I solve. You may ask how can I remember 400 questions? So do not worry once you start working on this sheet your brain will be trained such that you will be able to solve many problems without even remembering. However, you have to start doing these notes and read them every time when you start coding practice.&lt;/p&gt;
+
+&lt;h2 id=&quot;should-i-solve-all-array-problems-before-starting-linked-list-problems-what-is-my-strategy-for-coding-practice&quot;&gt;Should I solve all Array problems before starting Linked List problems? What is my strategy for coding practice?&lt;/h2&gt;
+
+&lt;p&gt;This is an interesting and very important question, comes in everyone mind. It depends where you are. If you are a beginner and you have a good amount of time if not working individually then 6 months and if you are working professional then you have 1 year time or so then you should do each problem from each Data Structure. I personally prefer working with all Data Structures at the same time rather finishing one Data Structure completely before starting another. Example when you start coding for the first time, do one easy problem from each Data Structure ( Array, Linked List, Stack, Queue, Tree, Graph). Next day you pick 2 easy, 2 medium and 2 hard from each Data Structure. Or you keep doing one easy question from each Data Structure. This way you should combine your Data Structure while practicing.&lt;/p&gt;
+
+&lt;p&gt;If you are an expert and you have already solved many problems and you want to just sharpen your skills with only one targeted Data Structure then pick that one and work on it. However, this one is only for the experts who had already done 50 problems from each Data Structure and they want to sharpen their skill on targeted one.&lt;/p&gt;
+
+&lt;p&gt;If you have any futher question please write in comment box.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=G5FP9YsBeZ8&quot;&gt;Coding Guide Line &amp;amp; Roadmap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb&quot;&gt;Learn DataStructure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLg6p_zdrEgHFwRhX3R8ZcXImGPUI9_lfX&quot;&gt;Learn Database Programming&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="coding" /><category term="tutorial" /><category term="beginners" /><category term="interview" /><summary type="html">Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in order to crack Big 4 (Google, Facebook, Amazon &amp;amp; Microsoft) companies coding-interviews?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to start preparing for coding interview</title><link href="https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview/" rel="alternate" type="text/html" title="How to start preparing for coding interview" /><published>2022-01-16T19:00:00-05:00</published><updated>2022-01-16T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview</id><content type="html" xml:base="https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview/">&lt;blockquote&gt;
   &lt;p&gt;When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies like back tracking, dp, 2 pointer concept, etc. I was really upset and could not continue my journey to prepare coding and did give up my learning process. Therefore, I think if  you are also in the same boat then read this article to know how you can start coding and what you should do when you become a competitive programmer.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -2155,46 +2360,4 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Site Recovery Strategy in Azure</title><link href="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/" rel="alternate" type="text/html" title="Site Recovery Strategy in Azure" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/site-recoverystrategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/site-recoverystrategy-in-azure/">&lt;blockquote&gt;
-  &lt;p&gt;Learn the failover and failback stages in Site Recovery on Azure. Learn &lt;strong&gt;Business Continuity and Disaster Recovery&lt;/strong&gt; (BCDR) strategy in Azure.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;failover-and-failback-in-site-recovery-has-four-stages&quot;&gt;Failover and failback in Site Recovery has four stages&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/TO8eYHW.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 1: Fail over from on-premises:&lt;/strong&gt; After setting up replication to Azure for on-premises machines, when your on-premises site goes down, you fail those machines over to Azure. After failover, Azure VMs are created from replicated data.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 2: Reprotect Azure VMs:&lt;/strong&gt; In Azure, you reprotect the Azure VMs so that they start replicating back to the on-premises site. The on-premises VM (if available) is turned off during reprotection, to help ensure data consistency.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 3: Fail over from Azure:&lt;/strong&gt; When your on-premises site is running as normal again, you run another failover, this time to fail back Azure VMs to your on-premises site. You can fail back to the original location from which you failed over, or to an alternate location.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Stage 4: Reprotect on-premises machines:&lt;/strong&gt; After failing back, again enable replication of the on-premises machines to Azure.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/Zuy3Ijz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/site-recovery/failover-failback-overview#recovery-stages&quot;&gt;BCDR strategy in Azure here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is waiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/7I0NoBe.png" /><media:content medium="image" url="https://i.imgur.com/7I0NoBe.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

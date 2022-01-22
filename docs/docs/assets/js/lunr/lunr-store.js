@@ -1384,4 +1384,10 @@ var store = [{
         "tags": ["coding","tutorial","beginners","interview"],
         "url": "/roadmap-for-mastering-competitive-programming-for-beginners/",
         "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Update Domain vs Fault Domain",
+        "excerpt":"Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure against Network breakdown or power interruptions. Read this article to learn what is Update and Fault Domains in Data-Center and how they protect against...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/azure-update-domain-vs-fault-domain/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
       }]
