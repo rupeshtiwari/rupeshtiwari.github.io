@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-16T12:38:51-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Introduction of Azure Data Center</title><link href="https://www.rupeshtiwari.com/introduction-of-azure-data-center/" rel="alternate" type="text/html" title="Introduction of Azure Data Center" /><published>2022-01-14T19:00:00-05:00</published><updated>2022-01-14T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/introduction-of-azure-data-center</id><content type="html" xml:base="https://www.rupeshtiwari.com/introduction-of-azure-data-center/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-18T08:44:27-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">How to start preparing for coding interview</title><link href="https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview/" rel="alternate" type="text/html" title="How to start preparing for coding interview" /><published>2022-01-16T19:00:00-05:00</published><updated>2022-01-16T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview</id><content type="html" xml:base="https://www.rupeshtiwari.com/how-to-start-preparing-for-coding-interview/">&lt;blockquote&gt;
+  &lt;p&gt;When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies like back tracking, dp, 2 pointer concept, etc. I was really upset and could not continue my journey to prepare coding and did give up my learning process. Therefore, I think if  you are also in the same boat then read this article to know how you can start coding and what you should do when you become a competitive programmer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There is a subtle difference between software development engineer vs web development engineer. If you are already in the company 3-4 years of experience and coding in angular, react, node.js or any front-end technology then remember you are just a web development side.&lt;/p&gt;
+
+&lt;p&gt;Most of the Big 4 FAANGM (Facebook, Amazon, Apple, Netflix, Google, Microsoft) companies look for Software Development Engineers and there they will ask you first Data Structure and Algorithms related competitive questions. They may  not ask you about angular reactions. So therefore, if you want to go for any product-based company like ( paypal, uber, linkedin, and FAANGM ) etc. You have to be an expert on competitive programming questions.&lt;/p&gt;
+
+&lt;p&gt;You need to practice 2 things below in order to crack your next coding interview that is for sure.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data Structure &amp;amp; Algorithms (DS &amp;amp; ALGO)&lt;/li&gt;
+  &lt;li&gt;Competitive Programming ( CP )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You must start learning coding from Data Structure and Algorithms and then solve competitive problems.&lt;/p&gt;
+
+&lt;h2 id=&quot;do-not-start-form-competitive-programming-cp&quot;&gt;Do Not start form Competitive Programming (CP)&lt;/h2&gt;
+
+&lt;p&gt;If you go directly to Competitive Programming (CP) you may be able to solve a couple of problems. You may find it difficult to solve further problems and will be disheartened and come back. Finally, you will drop the plan to learn coding and back out. So Do not start from CP.&lt;/p&gt;
+
+&lt;p&gt;Example: like in 5th grade students get word problems. Which finally boils down to do either sum, subtract or multiply. If you give the same word problems to 3rd grade students they can’t solve it. However, they can solve addition, subtraction and multiplication If you give them directly.&lt;/p&gt;
+
+&lt;p&gt;Lets learn what is the basic difference between Data Structure &amp;amp; Algorithms VS Competitive problems.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-data-structure--algorithms-programming&quot;&gt;What is Data Structure &amp;amp; Algorithms Programming?&lt;/h2&gt;
+
+&lt;p&gt;Data Structure (DS) is something where you learn the basics of programming and structuring your data in the correct fashion. Data structures are like ( Array, String, Hash Table, Linked List, Tree, Graph etc. ). Normally, in IIT Gate interview or in computer science semester questions are pure data structure and algorithm (DS &amp;amp; ALGO) questions like reverse link list, write quick sort algo, tree navigations, find loop in Linked List etc. So in Big 4 or product development companies they do not ask direct DS &amp;amp; ALGO questions they rather create some fancy questions which combines many DS, Algorithms and best-practices that will enforce you to think deep and identify the solution.&lt;/p&gt;
+
+&lt;p&gt;So therefore, DS &amp;amp; ALGO is foundation and first thing to start for your coding interview practice.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-competitive-programming&quot;&gt;What is Competitive Programming? &lt;/h2&gt;
+
+&lt;p&gt;Here you will get a paragraph of 10-15 lines of problems to read. You have to read that problem and think which DS and Algo you need to apply to solve the given problem.&lt;/p&gt;
+
+&lt;p&gt;Normally, In that problem statement, it asks you to solve the same DS Algo questions that you might have done earlier. However, you need to identify which one you need to apply to solve the given problem.&lt;/p&gt;
+
+&lt;p&gt;In Competitive Programming you may be applying below knowledges&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DS &amp;amp; Algo Concepts&lt;/li&gt;
+  &lt;li&gt;Mathematics Concepts&lt;/li&gt;
+  &lt;li&gt;Bit Mask Concepts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is the major difference between competitive programming and DS Algo. Therefore, you must always start your learning from Data Structure Programming then you should jump to Competitive Programming.&lt;/p&gt;
+
+&lt;p&gt;Competitive programming wants optimization from you.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-experience-with-facebook-coding-interview&quot;&gt;My Experience with Facebook coding interview&lt;/h2&gt;
+
+&lt;p&gt;In my Facebook coding interview, I have been asked to create an Iterator class which will have 2 methods one hasAny another method next.&lt;/p&gt;
+
+&lt;p&gt;Basically, if you read this question you just need to apply the find next in-order successor algorithm of Binary Tree data structure.&lt;/p&gt;
+
+&lt;p&gt;So data structure algorithm (DS ALGO) basic questions are wrapped in a fancy style and being asked to you in competitive programming. Therefore, you must be strong in DS &amp;amp; ALGO.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;I used to ask my-self question why should I read a book on algorithms and data structure? So the answer is you must read them if you enjoy reading books. Or watch videos if you prefer video lectures to learn DS and ALGO. Therefore, the underline statement is you must learn and solve data structure &amp;amp; algorithm problems and then solve competitive programming problems to become a competitive programmer.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;[https://www.youtube.com/watch?v=G5FP9YsBeZ8](https://www.youtube.com/watch?v=G5FP9YsBeZ8)&quot;&gt;Coding Guideline&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;[https://www.youtube.com/playlist?list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb](https://www.youtube.com/playlist?list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb)&quot;&gt;Learn Data Structure&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;[https://www.youtube.com/playlist?list=PLg6p_zdrEgHFwRhX3R8ZcXImGPUI9_lfX](https://www.youtube.com/playlist?list=PLg6p_zdrEgHFwRhX3R8ZcXImGPUI9_lfX)&quot;&gt;Learn Database Management&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLg6p_zdrEgHFhAz_-sAx9Rw44wbGcDz3l&quot;&gt;Learn Compiler&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="webdev" /><category term="tutorial" /><category term="beginners" /><category term="interview" /><summary type="html">When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies like back tracking, dp, 2 pointer concept, etc. I was really upset and could not continue my journey to prepare coding and did give up my learning process. Therefore, I think if  you are also in the same boat then read this article to know how you can start coding and what you should do when you become a competitive programmer.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introduction of Azure Data Center</title><link href="https://www.rupeshtiwari.com/introduction-of-azure-data-center/" rel="alternate" type="text/html" title="Introduction of Azure Data Center" /><published>2022-01-14T19:00:00-05:00</published><updated>2022-01-14T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/introduction-of-azure-data-center</id><content type="html" xml:base="https://www.rupeshtiwari.com/introduction-of-azure-data-center/">&lt;blockquote&gt;
   &lt;p&gt;Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -2108,586 +2197,4 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/7I0NoBe.png" /><media:content medium="image" url="https://i.imgur.com/7I0NoBe.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Where to Store Application Data in Azure</title><link href="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/" rel="alternate" type="text/html" title="Where to Store Application Data in Azure" /><published>2021-12-03T19:00:00-05:00</published><updated>2021-12-03T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/where-to-store-application-data-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/where-to-store-application-data-in-azure/">&lt;blockquote&gt;
-  &lt;p&gt;Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;storing-data-in-azure-options&quot;&gt;Storing Data in Azure options&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/CY4p62V.png&quot; alt=&quot;&quot; /&gt;Azure SQL Database&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/7NE8XB7.png&quot; alt=&quot;&quot; /&gt;Azure Databases for MySQL&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/0JerP9s.png&quot; alt=&quot;&quot; /&gt; Azure Databases for PostgresSQL&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/viVzgo7.png&quot; alt=&quot;&quot; /&gt; Azure Databases for MariaDB&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/xr0vqr0.png&quot; alt=&quot;&quot; /&gt; Azure Cosmos DB&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/TPnk15t.png&quot; alt=&quot;&quot; /&gt; Azure Storage
-    &lt;ol&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/0FWw8PM.png&quot; alt=&quot;&quot; /&gt; File Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/Wjk68MS.png&quot; alt=&quot;&quot; /&gt; Blog Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/MNutzpz.png&quot; alt=&quot;&quot; /&gt; Table Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/HsvZyX0.png&quot; alt=&quot;&quot; /&gt; Disk Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/iN7LQq0.png&quot; alt=&quot;&quot; /&gt; Queue Storage&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/4WSrhP8.png&quot; alt=&quot;&quot; /&gt; Azure Synapse Analytics&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/G5KauUF.png&quot; alt=&quot;&quot; /&gt; Azure Data Lake Store&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;azure-sql-database&quot;&gt;Azure SQL Database&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/CY4p62V.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure SQL Database&lt;/code&gt; can store &lt;strong&gt;Relational Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;SQL Server in the cloud&lt;/li&gt;
-  &lt;li&gt;Managed and Scalable by Azure&lt;/li&gt;
-  &lt;li&gt;Highly available 99.99%&lt;/li&gt;
-  &lt;li&gt;Redundant, data is replicated 3 times in the local data-center and 3 times to another data-center. Data is backed up every 5 minutes and every hour a full backup is made.&lt;/li&gt;
-  &lt;li&gt;Relational data can be used as table rows and columns.&lt;/li&gt;
-  &lt;li&gt;Use it with Microsoft tools
-    &lt;ul&gt;
-      &lt;li&gt;SSMS (SQL Server Management Studio), Azure Portal, Visual Studio&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Advanced capabilities
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Geo-replication&lt;/strong&gt; (single writable node): which actively replicate data to other geographical region. Other geo replicable databases are read-only.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Automatic tuning&lt;/strong&gt;: where Azure SQL analyzes which queries are slow and it will apply required indexes to improve speed.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Threat detection&lt;/strong&gt;: it can detect malicious behavior on the database and alert you to take action.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Dynamic Data Masking&lt;/strong&gt;: which can automatically mask sensitive data like password, credit card number etc. So un-authorized or un-wanted user can only see masked data only.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/sql-database/&quot;&gt;Azure SQL Database&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-databases-for-mysql&quot;&gt;Azure Databases for MySQL&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/7NE8XB7.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Databases for MySQL&lt;/code&gt; can store &lt;strong&gt;Relational Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;MySQL database over the cloud&lt;/li&gt;
-  &lt;li&gt;Managed and Scalable by Azure&lt;/li&gt;
-  &lt;li&gt;Highly available 99.99%&lt;/li&gt;
-  &lt;li&gt;Redundant, data is replicated 3 times in the local data-center and 3 times to another data-center. Data is backed up every 5 minutes and every hour a full backup is made.&lt;/li&gt;
-  &lt;li&gt;Relational data can be used as table rows and columns.&lt;/li&gt;
-  &lt;li&gt;Works well in the LAMP stack
-    &lt;ul&gt;
-      &lt;li&gt;Linux, Apache server, MySQL and PHP&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Use it with tools for MySQL because most of the Azure tools are not supported for MySQL database.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MySQL Workbench&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SQLyog&lt;/code&gt;, drivers for PHP, Java, Node.js and .NET.&lt;/li&gt;
-      &lt;li&gt;Can integrate with&lt;a href=&quot;https://www.rupeshtiwari.com/what-should-you-use-for-running-applications-in-azure/#azure-app-services-web-apps&quot;&gt; Azure App Service&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MySQL&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open-source&lt;/code&gt; database. Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/mysql/#features&quot;&gt;Azure Databases for MySQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-databases-for-postgresql&quot;&gt;Azure Databases for PostgreSQL&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/0JerP9s.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Databases for PostgreSQL&lt;/code&gt; can store &lt;strong&gt;Relational Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;PostgresSQL in the cloud&lt;/li&gt;
-  &lt;li&gt;Managed and Scalable by Azure&lt;/li&gt;
-  &lt;li&gt;Highly available 99.99%&lt;/li&gt;
-  &lt;li&gt;Redundant, data is replicated 3 times in the local data-center and 3 times to another data-center. Data is backed up every 5 minutes and every hour a full backup is made.&lt;/li&gt;
-  &lt;li&gt;Relational data can be used as table rows and columns.
-&lt;img src=&quot;https://imgur.com/EWnJywn.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Flexibility
-    &lt;ul&gt;
-      &lt;li&gt;Write functions in several languages (Ruby on Rails, Python with Django, Java with Spring Boot, and Node.js)&lt;/li&gt;
-      &lt;li&gt;Use PostgresSQL extensions (PLV8, and PostGIS)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Use it with tools for PostgreSQL
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pgAdmin&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hyperscale (Citus)&lt;/code&gt; extension to scale to hundreds of nodes with no application rewrites.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PostgreSQL&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open-source&lt;/code&gt; database. Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/postgresql&quot;&gt;Azure Databases for PostgreSQL&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-databases-for-mariadb&quot;&gt;Azure Databases for MariaDB&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/viVzgo7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Databases for PostgreSQL&lt;/code&gt; can store &lt;strong&gt;Relational Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;MariaDB in the cloud&lt;/li&gt;
-  &lt;li&gt;Managed and Scalable by Azure&lt;/li&gt;
-  &lt;li&gt;Highly available 99.99%&lt;/li&gt;
-  &lt;li&gt;Redundant, data is replicated 3 times in the local data-center and 3 times to another data-center. Data is backed up every 5 minutes and every hour a full backup is made.&lt;/li&gt;
-  &lt;li&gt;Relational data can be used as table rows and columns.&lt;/li&gt;
-  &lt;li&gt;Supports different storage engines that allows to store data in other format like
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Apache Cassandra, CSV, ColumnStore&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Use it with the tools for MariaDB
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Database Workbench&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SQLyog&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Did you know &lt;strong&gt;MariaDB&lt;/strong&gt; is forked out from &lt;strong&gt;MySQL&lt;/strong&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open source&lt;/code&gt;? Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/mariadb/#:~:text=Azure%20Database%20for%20MariaDB%20is,predictable%20performance%20and%20dynamic%20scalability.&quot;&gt;Azure Databases for MariaDB&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-cosmos-db&quot;&gt;Azure Cosmos DB&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/xr0vqr0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Cosmos DB&lt;/code&gt; can store &lt;strong&gt;Document Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Distributed, massive scale database&lt;/li&gt;
-  &lt;li&gt;Use it with several APIs to work with your data in many different ways and they abstract the way that Azure Cosmos DB stores and handles the data.
-    &lt;ul&gt;
-      &lt;li&gt;DocumentDB API&lt;/li&gt;
-      &lt;li&gt;MongoDB API&lt;/li&gt;
-      &lt;li&gt;Table API&lt;/li&gt;
-      &lt;li&gt;Graph API&lt;/li&gt;
-      &lt;li&gt;Apache Cassandra API&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Since it is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;noSQL&lt;/code&gt; you do not need to predefine the schema&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Automatic indexing&lt;/strong&gt;: Cosmos DB will automatically create and apply and manages indexes required on data. You can customize the indexing policy if you want.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Geo-replication&lt;/strong&gt; (single writable node): which actively replicate data to other geographical region. Other geo replicable databases are read-only.&lt;/li&gt;
-  &lt;li&gt;Unique SLA is offered by CosmosDB
-    &lt;ul&gt;
-      &lt;li&gt;SLA &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;99.99%&lt;/code&gt; availability&lt;/li&gt;
-      &lt;li&gt;SLA &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;99.99%&lt;/code&gt; availability for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read&lt;/code&gt; operation&lt;/li&gt;
-      &lt;li&gt;Latency on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt; 10ms&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;writes &amp;lt; 15ms&lt;/code&gt;
-This latency counts from the Cosmos DB to other Azure services.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Apache Cassandra &lt;/code&gt;is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;free&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open-source&lt;/code&gt;, distributed, wide-column store, NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/cosmos-db/&quot;&gt;Azure Cosmos DB&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-storage&quot;&gt;Azure Storage&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/TPnk15t.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Storage&lt;/code&gt; can store &lt;strong&gt;Unstructured/Document Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Massive scale, multiple-purpose storage.&lt;/li&gt;
-  &lt;li&gt;Multiple models in a storage account
-    &lt;ul&gt;
-      &lt;li&gt;File Storage&lt;/li&gt;
-      &lt;li&gt;Blob Storage&lt;/li&gt;
-      &lt;li&gt;Queue Storage&lt;/li&gt;
-      &lt;li&gt;Table Storage&lt;/li&gt;
-      &lt;li&gt;Disk Storage&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;All storage come with overall features and capabilities that Azure Storage provides like&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Shared Access Signatures&lt;/strong&gt;: provides temporary access to some operations on storage type like Blob storage. This is useful for implementing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valet key&lt;/code&gt; pattern.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Firewalls&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Virtual Network&lt;/code&gt; using this you can increase security to your Azure storage data.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data encryption&lt;/code&gt; at rest. Azure storage will encrypt and decrypt the data for you out of the box.&lt;/li&gt;
-  &lt;li&gt;Storage replication
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Locally-redundant&lt;/strong&gt; : 3 copies of the data stored in the local data-center&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Geo-redundant&lt;/strong&gt;: In addition to Locally-redundant, it will store 3 copies of data in the other geographical data-center&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Read-access-geo-redundant&lt;/strong&gt;: You can also create readable Geo-redundant also.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/storage/&quot;&gt;Azure Storage&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-file-storage&quot;&gt;Azure File Storage&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/0FWw8PM.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure File Storage&lt;/code&gt; can store &lt;strong&gt;Unstructured Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Really useful for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lift and Shift&lt;/code&gt; files to the cloud. Useful when you want to keep the file available across the applications.&lt;/li&gt;
-  &lt;li&gt;File storage based on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SMB&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NSF&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Mount an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure File&lt;/code&gt; share in
-    &lt;ul&gt;
-      &lt;li&gt;Windows&lt;/li&gt;
-      &lt;li&gt;MacOS&lt;/li&gt;
-      &lt;li&gt;Linux&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You get all Azure Storage features
-    &lt;ul&gt;
-      &lt;li&gt;Shared Access Signatures&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/storage/files/&quot;&gt;Azure File Storage&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-blob-storage&quot;&gt;Azure Blob Storage&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/Wjk68MS.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Blob Storage&lt;/code&gt; can store &lt;strong&gt;Unstructured Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Store &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unstructured&lt;/code&gt; data in the cloud like video, audio etc.&lt;/li&gt;
-  &lt;li&gt;Multiple types of blob can be stored
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Block&lt;/strong&gt;: blobs are optimized for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;efficient upload of large file&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Page&lt;/strong&gt;: blobs are optimized for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;random read and write access&lt;/code&gt; like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VHD&lt;/code&gt; files for virtual machine image.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Append&lt;/strong&gt;: these blobs can only be added onto existing blob and the blob can’t be changed. Like adding logs on log blog.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Multiple storage tiers&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Premium&lt;/strong&gt;: access blobs anytime with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;great SSD performance&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;very expensive&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Hot&lt;/strong&gt;: access blobs anytime with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;great performance&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expensive&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Cool&lt;/strong&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cheaper&lt;/code&gt; but take more time to fetch blob.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Archive&lt;/strong&gt;: store offline data, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cheaper storage&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;costly retrieval&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You get all Azure Storage features
-    &lt;ul&gt;
-      &lt;li&gt;Firewalls and Virtual Network&lt;/li&gt;
-      &lt;li&gt;Shared Access Signatures&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/storage/blobs/&quot;&gt;Azure Blob Storage&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-table-storage&quot;&gt;Azure Table Storage&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/MNutzpz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Table Storage&lt;/code&gt; can store &lt;strong&gt;Unstructured Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A &lt;strong&gt;NoSQL key-value store for rapid development using massive semi-structured datasets&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Flexible data schema&lt;/strong&gt;: the table schema is flexible means one row might have 5 the other can have 23 columns.&lt;/li&gt;
-  &lt;li&gt;You get all Azure Storage features
-    &lt;ul&gt;
-      &lt;li&gt;Firewalls and Virtual Network&lt;/li&gt;
-      &lt;li&gt;Shared Access Signatures&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/storage/tables/&quot;&gt;Azure Blob Storage&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-disk-storage&quot;&gt;Azure Disk Storage&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/HsvZyX0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Disk Storage&lt;/code&gt; can store &lt;strong&gt;Unstructured Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-transaction-processing-oltp-datastores&quot;&gt;&lt;strong&gt;OLTP (Online Transactional Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;High-performance&lt;/code&gt;, highly &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;durable&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;block storage for Azure Virtual Machines&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Part of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;premium&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pricing&lt;/code&gt; tier of Azure storage only.&lt;/li&gt;
-  &lt;li&gt;Perfect for use in Virtual Machines.&lt;/li&gt;
-  &lt;li&gt;You can use this to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lift and shift the existing applications&lt;/code&gt; like a Dynamic CRM server to a VM in the cloud. And you get availability and robustness of the cloud.&lt;/li&gt;
-  &lt;li&gt;You get all Azure Storage features
-    &lt;ul&gt;
-      &lt;li&gt;Firewalls and Virtual Network&lt;/li&gt;
-      &lt;li&gt;Shared Access Signatures&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/storage/disks/&quot;&gt;Azure Disk Storage&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-synapse-analytics&quot;&gt;Azure Synapse Analytics&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/4WSrhP8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Synapse Analytics&lt;/code&gt; can store &lt;strong&gt;Analytics Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-analytical-processing-olap-datastores&quot;&gt;&lt;strong&gt;OLAP (Online Analytical Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;For prepared, structured data for reporting&lt;/strong&gt;: Azure Synapse Analytics is perfect for when you want to store a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prepared&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;structured&lt;/code&gt; data specifically for reporting purposes in so-called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data marts&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Relational Data&lt;/strong&gt;: You only stored relational data which is cleaned and ready to be used for the users that use a reporting tool like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Power BI&lt;/code&gt;. It is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;similar&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure SQL database&lt;/code&gt; optimized for reporting purpose.&lt;/li&gt;
-  &lt;li&gt;Large amounts &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/ sql-data-warehouse-service-capacity-limits&quot;&gt;of data up to 1PB ~ 1 million GB&lt;/a&gt; can be stored in it.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Data encryption at rest&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Transparent Data encryption&lt;/code&gt; just like Azure SQL database.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/synapse-analytics/&quot;&gt;Azure Synapse Analytics&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;azure-data-lake-store&quot;&gt;Azure Data Lake Store&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/G5KauUF.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure Data Lake Store&lt;/code&gt; can store &lt;strong&gt;Analytics Data&lt;/strong&gt;. It is optimized for &lt;a href=&quot;#online-analytical-processing-olap-datastores&quot;&gt;&lt;strong&gt;OLAP (Online Analytical Processing)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;For structured and unstructured data for reporting&lt;/strong&gt;: in it’s native format.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Data in native format&lt;/strong&gt;: so you don’t need to clean and prepare before you put the data in Azure Data Lake Store&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;No Schema definition&lt;/strong&gt;: you don’t have to create a data schema up front, which you must do in Azure Synapse Analytics. You can use Azure Data Lake to just store the big data and further move them in to Azure Synapse by cleaning and preparing it.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Optimized for reporting purposes&lt;/strong&gt;: high performance reporting and analytics workloads are available.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;No File or Datastore size limits&lt;/strong&gt;: You can store large amount of unlimited data. The only limit is your 💵 budget :)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Data encryption at rest&lt;/strong&gt;: out of the box you get this.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://azure.microsoft.com/en-us/services/storage/data-lake-storage/&quot;&gt;Azure Data Lake Store&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;online-transaction-processing-oltp-datastores&quot;&gt;Online Transaction Processing (OLTP) DataStores&lt;/h2&gt;
-
-&lt;p&gt;Online Transactional Processing (PLTP) datastores are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;optimized&lt;/code&gt; for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transactional processing&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create, read, update and delete&lt;/code&gt; operations. These are typically used as data storage for live &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;applications like website&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mobile apps&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;List of Data Storage supporting OLTP&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/CY4p62V.png&quot; alt=&quot;&quot; /&gt;Azure SQL Database&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/7NE8XB7.png&quot; alt=&quot;&quot; /&gt;Azure Databases for MySQL&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/0JerP9s.png&quot; alt=&quot;&quot; /&gt; Azure Databases for PostgresSQL&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/viVzgo7.png&quot; alt=&quot;&quot; /&gt; Azure Databases for MariaDB&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/xr0vqr0.png&quot; alt=&quot;&quot; /&gt; Azure Cosmos DB&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/TPnk15t.png&quot; alt=&quot;&quot; /&gt; Azure Storage
-    &lt;ol&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/0FWw8PM.png&quot; alt=&quot;&quot; /&gt; File Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/Wjk68MS.png&quot; alt=&quot;&quot; /&gt; Blog Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/MNutzpz.png&quot; alt=&quot;&quot; /&gt; Table Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/HsvZyX0.png&quot; alt=&quot;&quot; /&gt; Disk Storage&lt;/li&gt;
-      &lt;li&gt;&lt;img src=&quot;https://imgur.com/iN7LQq0.png&quot; alt=&quot;&quot; /&gt; Queue Storage&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;online-analytical-processing-olap-datastores&quot;&gt;Online Analytical Processing (OLAP) DataStores&lt;/h2&gt;
-
-&lt;p&gt;Online Analytical Processing (OLAP) datastores are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;optimized&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;analytical processing&lt;/code&gt; like crunching of data for reporting purposes.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Below are the list of OLAP datastores&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/4WSrhP8.png&quot; alt=&quot;&quot; /&gt; Azure Synapse Analytics&lt;/li&gt;
-  &lt;li&gt;&lt;img src=&quot;https://imgur.com/G5KauUF.png&quot; alt=&quot;&quot; /&gt; Azure Data Lake Store&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;comparing-the-datastores&quot;&gt;Comparing the DataStores&lt;/h2&gt;
-
-&lt;p&gt;Let’s compare datastores as per OLAP and OLTP categories.&lt;/p&gt;
-
-&lt;h3 id=&quot;compare-data-stores-for-oltp&quot;&gt;Compare Data Stores for OLTP&lt;/h3&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-The main difference among &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure SQL, MySQL, PSQL and MariaDB&lt;/code&gt; is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ecosystem&lt;/code&gt; they are in and the skillset that you need for them. If you are comfortable on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LAMP&lt;/code&gt; stack and working with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MySQL&lt;/code&gt; then Azure Databases for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MySQL&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MariaDB&lt;/code&gt; is good for you. If you are comfortable working in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pgAdmin&lt;/code&gt; or similar tool and you are not using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T-SQL&lt;/code&gt; to manage database then use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Azure PostgreSQL&lt;/code&gt;.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Scenarios&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/CY4p62V.png&quot; alt=&quot;&quot; /&gt; SQL&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/7NE8XB7.png&quot; alt=&quot;&quot; /&gt; MySQL&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/0JerP9s.png&quot; alt=&quot;&quot; /&gt; PSQL&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/viVzgo7.png&quot; alt=&quot;&quot; /&gt; MariaDB&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/xr0vqr0.png&quot; alt=&quot;&quot; /&gt;Cosmos DB&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/TPnk15t.png&quot; alt=&quot;&quot; /&gt; Storage&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Relational data&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Semi- or non-relational data data&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Can use Microsoft tools to manage&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Advanced querying capabilities&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Use multiple APIs to access data&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;compare-azure-storage-type-services&quot;&gt;Compare Azure Storage Type Services&lt;/h3&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;strong&gt;All Azure storage&lt;/strong&gt; types have the same Azure Storage Features like &lt;strong&gt;Shared Access Signatures&lt;/strong&gt; and &lt;strong&gt;data encryption at rest&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Scenarios&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/0FWw8PM.png&quot; alt=&quot;&quot; /&gt; File&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/Wjk68MS.png&quot; alt=&quot;&quot; /&gt; Blob&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/MNutzpz.png&quot; alt=&quot;&quot; /&gt; Table&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/HsvZyX0.png&quot; alt=&quot;&quot; /&gt; Disk&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Lift and shift files to the cloud&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Lift and shift applications to the cloud&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Store (large) unstructured data&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Store (small) semi-structured data&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;compare-data-stores-for-olap&quot;&gt;Compare Data Stores for OLAP&lt;/h3&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;💁 &lt;strong&gt;Important&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-The &lt;strong&gt;Data Lake Store&lt;/strong&gt; stores the relational structured data in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text&lt;/code&gt; file or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hierarchical&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folders&lt;/code&gt;. You can also define the schema in Azure Data Lake store but this is not compulsory like Azure Synapse Analytics store.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Scenarios&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/4WSrhP8.png&quot; alt=&quot;&quot; /&gt; Azure Synapse Analytics&lt;/th&gt;
-      &lt;th&gt;&lt;img src=&quot;https://imgur.com/G5KauUF.png&quot; alt=&quot;&quot; /&gt; Azure Data Lake Store&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Relational data&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Non-relational data like documents&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Requires you need to define data schema&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;No file- or database size limits&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Use when you know which questions you want the data to answer&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;✔️&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/7I0NoBe.png" /><media:content medium="image" url="https://i.imgur.com/7I0NoBe.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

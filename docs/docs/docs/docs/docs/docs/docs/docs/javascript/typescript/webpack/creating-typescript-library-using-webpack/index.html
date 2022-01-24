@@ -1,0 +1,1000 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Creating Typescript Library using Webpack - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="In this article we will see how can you create your own typescript library that you can easily consume in your another `typescript` project. Also we will see how we can create typedefinition bundle file for our own library. Finally we will see which folder is required to publish to npm portal to have our own little library published and available for our friends.">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Creating Typescript Library using Webpack">
+<meta property="og:url" content="https://www.rupeshtiwari.com/javascript/typescript/webpack/creating-typescript-library-using-webpack/">
+
+
+  <meta property="og:description" content="In this article we will see how can you create your own typescript library that you can easily consume in your another `typescript` project. Also we will see how we can create typedefinition bundle file for our own library. Finally we will see which folder is required to publish to npm portal to have our own little library published and available for our friends.">
+
+
+
+  <meta property="og:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Creating Typescript Library using Webpack">
+  <meta name="twitter:description" content="In this article we will see how can you create your own typescript library that you can easily consume in your another `typescript` project. Also we will see how we can create typedefinition bundle file for our own library. Finally we will see which folder is required to publish to npm portal to have our own little library published and available for our friends.">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/javascript/typescript/webpack/creating-typescript-library-using-webpack/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2018-11-23T05:43:35-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/javascript/typescript/webpack/creating-typescript-library-using-webpack/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#javascript" itemprop="item"><span itemprop="name">Javascript</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#typescript" itemprop="item"><span itemprop="name">Typescript</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#webpack" itemprop="item"><span itemprop="name">Webpack</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Creating Typescript Library using Webpack</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Creating Typescript Library using Webpack">
+    <meta itemprop="description" content="Loading...In this article we will see how can you create your own typescript library&nbsp;that you can easily consume in your another typescript project. Also we will see how we can create type definition&nbsp;bundle file for our own library. Finally we will see which folder is required to publish to npm&nbsp;portal to have our own little library published and available for our friends.IntroductionIn you enterprise if you want to create shared JavaScript library then webpack and typescript comes first in mind. However, there is no sample project or example exist in google that demonstrates how to achieve it. In this sample project I tried to demonstrate how can you create a library project using typescript and webpack and then create your own npm packages both for JavaScript bundle and @types bundle. Also you will see how can you use them in your sample project. I hope you will enjoy this project and learn something!&nbsp;docs&nbsp;What are we going to solve ?This project is demonstrating how to create your own library using typescript and webpack. Then consume that library in another webpack project.create a library from typescriptcreate a bundle (.js) for JavaScriptcreate a bundle (.d.ts) for definition files for typescriptconsume library in client project by&nbsp;npm link script.We have created 2 projects one is&nbsp;lib-pj&nbsp;which is library project and the other is&nbsp;client-pj&nbsp;which is client project that is going to consume&nbsp;lib-pjWe are usingwebpack&nbsp;for building, bundling etc.ts-loader&nbsp;for compiling typescript anddeclaration-bundler-webpack-plugin&nbsp;for bundling type definition filesGetting Tool Sets ReadyWe are using:Webpack andTypescriptof-course, I am using my favorite&nbsp;&nbsp;VSCode editor , you can use yours favorite.SolutionCreate 2 projects at your root folder client-pj&nbsp;and lib-pj. Client Project is where we will consume the output from Library project.Creating Library ProjectLets work on library project where you want to create your sharable code. We have added our model classes and services in this folder and now In order to compile typescript code you need tsconfig.json&nbsp;. please copy below code and put in tsconfig.json&nbsp;inside lib-pjhttps://gist.github.com/rupeshtiwari/39a4c9adb875169e1210eff6390e63edLets create webpack.config.js&nbsp;file inside library project make sure you have ts-loader&nbsp;installed which is used to load typescript and compile them in JavaScriptHere is the final webpack.config.js&nbsp;filehttps://gist.github.com/rupeshtiwari/38498c95aa0d612bdafbc93500da4da1Above setup will be enough to create our index.js file. However, the major challenge is to how to create the typedefinition bundle file&nbsp;for our library. For that I have used declaration-bundler-webpack-plugin&nbsp;&nbsp;and with this plugin it was very easy to generate my own index.d.ts&nbsp;file. Have a look in below code how to use DeclarationBundlerPlugin plugin to get your index.d.ts&nbsp;file created. This is magic. I loved the&nbsp;DeclarationBundlerPlugin&nbsp;webpack plugin!plugins: [        new DeclarationBundlerPlugin({      moduleName: &#39;&quot;@mycomp/mylib&quot;&#39;,      out: &#39;../@types/index.d.ts&#39;,    }),       ],};Creating Client ProjectNow in client project we can easily consume index.js&nbsp;Create new webpack.config for your client-pj&nbsp;by pasting below code. Client project will refer to the Library project by leveraging tsconfig&nbsp;path&nbsp;feature. You need not build library project and consume in client project for local development because it will slow down your development speed. Therefore, the best practice is refer your client project via path&nbsp;feature of tsconfig.json. The same path configuration can be also put in webpack resolve property such that it compiles the typescript files from library project// tsconfig.json...{    path : {        &quot;@lib&quot; : [&quot;./lib-pj/src/index.ts&quot;]    }    ... }">
+    <meta itemprop="datePublished" content="2018-11-23T05:43:35-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Creating Typescript Library using Webpack
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#user-content-introduction">Introduction</a></li><li><a href="#user-content-goal">What are we going to solve ?</a></li><li><a href="#user-content-tools">Getting Tool Sets Ready</a></li><li><a href="#user-content-how-get-this-project-at-your-machine">Getting this Source Code</a></li><li><a href="#user-content-how-to-install-npm-packages">Installing node packages</a></li><li><a href="#user-content-questions">Should you have Questions</a></li><li><a href="#user-content-releases">Releases</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p><!-- wp:html --></p>
+<div class="gumroad-product-embed" data-gumroad-product-id="UJClm"><a href="https://gumroad.com/l/UJClm">Loading...</a></div>
+<p><!-- /wp:html --></p>
+<p>In this article we will see how can you create your own <code>typescript library</code>&nbsp;that you can easily consume in your another <code>typescript</code> project. Also we will see how we can create <code>type definition</code>&nbsp;bundle file for our own library. Finally we will see which folder is required to publish to <code>npm</code>&nbsp;portal to have our own little library published and available for our friends.</p>
+<h2><a id="user-content-introduction" class="anchor" href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/blob/master/README.md#introduction" aria-hidden="true"></a>Introduction</h2>
+<p>In you enterprise if you want to create shared JavaScript library then webpack and typescript comes first in mind. However, there is no sample project or example exist in google that demonstrates how to achieve it. In this sample project I tried to demonstrate how can you create a library project using typescript and webpack and then create your own <code>npm</code> packages both for JavaScript bundle and @types bundle. Also you will see how can you use them in your sample project. I hope you will enjoy this project and learn something!&nbsp;<a href="https://roopkt.github.io/webpack-typesript-library-consumption-sample/" rel="nofollow">docs</a></p>
+<h2>&nbsp;</h2>
+<h2><a id="user-content-goal" class="anchor" href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/blob/master/README.md#goal" aria-hidden="true"></a>What are we going to solve ?</h2>
+<p>This project is demonstrating how to create your own library using typescript and webpack. Then consume that library in another webpack project.</p>
+<ul>
+<li>create a library from typescript</li>
+<li>create a bundle (<code>.js</code>) for JavaScript</li>
+<li>create a bundle (<code>.d.ts</code>) for definition files for typescript</li>
+<li>consume library in client project by&nbsp;<code>npm link script</code>.</li>
+</ul>
+<p>We have created 2 projects one is&nbsp;<code>lib-pj</code>&nbsp;which is library project and the other is&nbsp;<code>client-pj</code>&nbsp;which is client project that is going to consume&nbsp;<code>lib-pj</code></p>
+<p>We are using</p>
+<ul>
+<li><code>webpack</code>&nbsp;for building, bundling etc.</li>
+<li><code>ts-loader</code>&nbsp;for compiling typescript and</li>
+<li><code>declaration-bundler-webpack-plugin</code>&nbsp;for bundling type definition files</li>
+</ul>
+<h2><a id="user-content-tools" class="anchor" href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/blob/master/README.md#tools" aria-hidden="true"></a>Getting Tool Sets Ready</h2>
+<p><img src="/assets/2018/11/grunge-hipster-wooden-desktop-with-computer-digital-tablet-picture-id490243118?b=1&amp;k=6&amp;m=490243118&amp;s=612x612&amp;w=0&amp;h=giJ7069v29T8RUgODfzt0KkFFyWtA-kv0YfBlUs2ZWA=" alt="Grunge hipster wooden desktop with computer, digital tablet" /></p>
+<p>We are using:</p>
+<ul>
+<li><strong>Webpack and</strong></li>
+<li><strong>Typescript</strong></li>
+</ul>
+<p>of-course, I am using my favorite&nbsp;&nbsp;<code>VSCode</code> editor , you can use yours favorite.</p>
+<h2>Solution</h2>
+<p>Create 2 projects at your root folder <code>client-pj</code>&nbsp;and <code>lib-pj</code>. Client Project is where we will consume the output from Library project.</p>
+<h3>Creating Library Project</h3>
+<p><img src="/assets/2018/11/library-books-1442528.jpg" alt="Library Books" /></p>
+<p>Lets work on library project where you want to create your sharable code. We have added our model classes and services in this folder and now In order to compile typescript code you need <code>tsconfig.json</code>&nbsp;. please copy below code and put in <code>tsconfig.json</code>&nbsp;inside <code>lib-pj</code></p>
+<p>https://gist.github.com/rupeshtiwari/39a4c9adb875169e1210eff6390e63ed</p>
+<p>Lets create <code>webpack.config.js</code>&nbsp;file inside library project make sure you have <code>ts-loader</code>&nbsp;installed which is used to load typescript and compile them in <code>JavaScript</code></p>
+<p>Here is the final <code>webpack.config.js</code>&nbsp;file</p>
+<p>https://gist.github.com/rupeshtiwari/38498c95aa0d612bdafbc93500da4da1</p>
+<p>Above setup will be enough to create our <code>index.js</code> file. However, the major challenge is to how to create the <code>typedefinition bundle file</code>&nbsp;for our library. For that I have used <a href="https://www.npmjs.com/package/declaration-bundler-webpack-plugin" target="_blank" rel="noopener noreferrer"><code>declaration-bundler-webpack-plugin</code>&nbsp;</a>&nbsp;and with this plugin it was very easy to generate my own <code>index.d.ts</code>&nbsp;file. Have a look in below code how to use <code>DeclarationBundlerPlugin</code> plugin to get your <code>index.d.ts</code>&nbsp;file created. This is magic. I loved the&nbsp;<a href="https://www.npmjs.com/package/declaration-bundler-webpack-plugin">DeclarationBundlerPlugin&nbsp;webpack plugin!</a></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="null">plugins: [
+    
+    new DeclarationBundlerPlugin({
+      moduleName: '"@mycomp/mylib"',
+      out: '../@types/index.d.ts',
+    }),
+     
+  ],
+};</pre>
+<h3>Creating Client Project</h3>
+<p>Now in client project we can easily consume <code>index.js&nbsp;</code>Create new <code>webpack.config</code> for your <code>client-pj</code>&nbsp;by pasting below code. Client project will refer to the Library project by leveraging tsconfig&nbsp;<code>path</code>&nbsp;feature. You need not build library project and consume in client project for local development because it will slow down your development speed. Therefore, the best practice is refer your client project via <code>path</code>&nbsp;feature of <code>tsconfig.json</code>. The same path configuration can be also put in webpack resolve property such that it compiles the typescript files from <code>library project</code></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="null">// tsconfig.json
+...{
+    path : {
+        "@lib" : ["./lib-pj/src/index.ts"]
+    }
+    ... 
+}
+
+// webpack.config.js ... { resolve :{ "@lib" :
+path.resolve("./lib-pj/src/index.ts") } }</pre>
+
+<p>Here is my final <code>webpack.config.json</code> file code:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="null">const webpack = require('webpack');
+const path = require('path');
+const ROOT = __dirname;
+const DESTINATION = path.join(ROOT, '/dist');
+/** wepback resolve */
+const RESOLVE = {
+  extensions: ['.tsx', '.ts', '.js', '.html'],
+};
+
+/\*_ webpack plugins _/ const PLUGINS = []; const MODULE = { rules: [ // Scripts
+{ test: /\.ts$/, exclude: [/node_modules/], loader: 'ts-loader', include:
+[ROOT], }, ], }; const OUTPUT = { filename: 'index.js', libraryTarget: 'umd',
+library: 'myclient', path: DESTINATION, };
+
+module.exports = { node: { fs: 'empty', }, entry: { app: ROOT + '/src/index.ts',
+}, context: ROOT, resolve: RESOLVE, mode: 'development', module: MODULE,
+plugins: PLUGINS, devtool: 'source-map', devServer: {}, output: OUTPUT, };</pre>
+
+<p>Then you are all set!</p>
+<h2>Running&nbsp; the Build</h2>
+<p>Now it's time to build our library project and share it. We will first build <code>lib-pj</code>&nbsp;so that we can create output from this project and share it to npm portal.</p>
+<pre><code> <code class="EnlighterJSRAW" data-enlighter-language="js"># go to lib-pj and run below scripts # 
+npm run build</code></code></pre>
+<pre><code></code></pre>
+<p>After running above build script in&nbsp;<code>lib-pj</code>&nbsp;you will see below 2 folders:</p>
+<ul>
+<li><strong>dist Folder</strong>
+<ul>
+<li>index.js</li>
+<li>index.js.map</li>
+<li>package.json</li>
+</ul>
+</li>
+<li><strong>@types Folder</strong>
+<ul>
+<li>index.d.ts</li>
+<li>package.json</li>
+</ul>
+</li>
+</ul>
+<pre><code></code></pre>
+<pre class="EnlighterJSRAW" data-enlighter-language="js"># go to client-pj and run below scripts #
+npm run build</pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<h2>Publishing to NPM</h2>
+<p>Now build&nbsp;<code>client-pj</code>&nbsp;by running build script, which will link to above 2 npm packages. You can now safely publish this <code>dist</code> folder in to npm library by running <code>npm publish</code> command and have fun :)</p>
+<p>some times you want to publish your type definition files in a separate npm package that also you can do by publishing <code>@types</code> folder separately to npm.</p>
+<h2><a id="user-content-how-get-this-project-at-your-machine" class="anchor" href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/blob/master/README.md#how-get-this-project-at-your-machine" aria-hidden="true"></a>Getting this Source Code</h2>
+<pre><code># in your machine open command prompt and run below script #
+git clone https://github.com/roopkt/webpack-typesript-library-consumption-sample.git
+</code></pre>
+<h2><a id="user-content-how-to-install-npm-packages" class="anchor" href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/blob/master/README.md#how-to-install-npm-packages" aria-hidden="true"></a>Installing node packages</h2>
+<p><img src="/assets/2018/11/windows-installation-workers-picture-id584858784?b=1&amp;k=6&amp;m=584858784&amp;s=612x612&amp;w=0&amp;h=wsn55eQu5Ls5ENJtf5maUG8jRTWusQfmv7gcbAwqWSk=" alt="windows installation workers" /></p>
+<p>We want to install npm packages to both&nbsp;<code>client-pj</code>&nbsp;and&nbsp;<code>lib-pj</code>&nbsp;project. Please follow below instruction:</p>
+<pre><code># run below scripts from lib-pj folder #
+npm i
+
+# run below scripts from client-pj folder
+
+npm i </code></pre>
+
+<h2>Should you have <a id="user-content-questions" class="anchor" href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/blob/master/README.md#questions" aria-hidden="true"></a>Questions</h2>
+<p>If you have any questions or issues or suggestions please feel free to communicate me or create issue in this git repository.</p>
+<h2><a id="user-content-releases" class="anchor" href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/blob/master/README.md#releases" aria-hidden="true"></a>Releases</h2>
+<p>I have created few releases in my Github repository&nbsp;<a href="https://github.com/roopkt/webpack-typesript-library-consumption-sample/releases/">See all of the releases here.</a></p>
+<p><!-- wp:heading --></p>
+<h2>message from rupesh tiwari</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:core-embed/youtube {"url":"https://www.youtube.com/watch?v=gzqDoHYO_xk","type":"video","providerNameSlug":"youtube","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} --></p>
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+<div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=gzqDoHYO_xk
+</div>
+</figure>
+<p><!-- /wp:core-embed/youtube --></p>
+<p><!-- wp:heading --></p>
+<h2>Enroll to full stack  master</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>❤️ Hey Viewers! show your support &amp; subscribe to full stack master school to watch full stack JavaScript HD course videos including node.js, angular, express, webpack and much more. Download source code, slides and step by step guide. Learn more at https://blog.rupeshtiwari.com/subscribe 💥 I am super excited to teach you at Full Stack Master!</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":3388,"sizeSlug":"large","linkDestination":"custom"} --></p>
+<figure class="wp-block-image size-large"><a href="https://blog.rupeshtiwari.com/subscribe"><img src="/assets/2018/11/plan-subscription-1.jpg?fit=605%2C1024&amp;ssl=1" alt="" class="wp-image-3388" /></a></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:html /--></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#npm" class="page__taxonomy-item" rel="tag">npm</a><span class="sep">, </span>
+    
+      <a href="/tags/#typescript" class="page__taxonomy-item" rel="tag">typescript</a><span class="sep">, </span>
+    
+      <a href="/tags/#webpack" class="page__taxonomy-item" rel="tag">webpack</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#javascript" class="page__taxonomy-item" rel="tag">javascript</a><span class="sep">, </span>
+    
+      <a href="/categories/#typescript" class="page__taxonomy-item" rel="tag">typescript</a><span class="sep">, </span>
+    
+      <a href="/categories/#webpack" class="page__taxonomy-item" rel="tag">Webpack</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-23T05:43:35-05:00">November 23, 2018</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Creating+Typescript+Library+using+Webpack%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fjavascript%2Ftypescript%2Fwebpack%2Fcreating-typescript-library-using-webpack%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fjavascript%2Ftypescript%2Fwebpack%2Fcreating-typescript-library-using-webpack%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fjavascript%2Ftypescript%2Fwebpack%2Fcreating-typescript-library-using-webpack%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/rxjs/rxjs-marble-diagrams/" class="pagination--pager" title="RxJS Marble Diagrams
+">Previous</a>
+    
+    
+      <a href="/typescript/decorators-in-typescript-and-angular/" class="pagination--pager" title="Decorators in Typescript and Angular
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-of-azure-data-center/" rel="permalink">Introduction of Azure Data Center
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-soft-skills-questions/" rel="permalink">Cloud Solution Architect Soft Skills Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you m...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/4EIcRWN.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-technical-interview-questions/" rel="permalink">Cloud Solution Architect Technical Interview Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          39 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/javascript/typescript/webpack/creating-typescript-library-using-webpack/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/javascript/typescript/webpack/creating-typescript-library-using-webpack"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

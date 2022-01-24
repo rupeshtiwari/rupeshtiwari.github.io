@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-20T09:23:55-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Roadmap for mastering Coding &amp;amp; Competitive Programming interview</title><link href="https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners/" rel="alternate" type="text/html" title="Roadmap for mastering Coding &amp;amp; Competitive Programming interview" /><published>2022-01-18T19:00:00-05:00</published><updated>2022-01-18T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners</id><content type="html" xml:base="https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-22T11:41:29-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Azure Update Domain vs Fault Domain</title><link href="https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain/" rel="alternate" type="text/html" title="Azure Update Domain vs Fault Domain" /><published>2022-01-21T19:00:00-05:00</published><updated>2022-01-21T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain/">&lt;blockquote&gt;
+  &lt;p&gt;Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure against Network breakdown or power interruptions. Read this article to learn what is Update and Fault Domains in Data-Center and how they protect against software and hardware disasters.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the Data Center the servers are divided into multiple physical and logical groups. The physical grouping is called &lt;a href=&quot;#why-do-we-separate-servers-in-different-racks&quot;&gt;Fault Domain&lt;/a&gt; and logical grouping is called &lt;a href=&quot;#why-group-servers-in-update-domains&quot;&gt;Update Domain&lt;/a&gt;. Each Rack of servers with its own power supply and network switch as one fault domain. If there are 10 Racks in the Data Center means you have 10 different Fault Domains.&lt;/p&gt;
+
+&lt;h2 id=&quot;update-domain&quot;&gt;Update Domain&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/go8fjZ9.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;An &lt;strong&gt;update domain&lt;/strong&gt; is a logical group of underlying hardware that can undergo maintenance or be rebooted at the same time. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these &lt;strong&gt;update domains&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Update domains comprises of groups of VMs and underlying physical hardware that can be &lt;strong&gt;rebooted at the same time&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Update domains are a logical part of each data center and are implemented with software and logic.&lt;/li&gt;
+  &lt;li&gt;The Update Domains tells us how it is going to be patched when Azure does update to those machines.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/FmgxQu5.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;With Respect to IaaS Services&lt;/strong&gt;
+Your VMs on Azure are called as Guest VMs. With IaaS Microsoft will not going to patch Guest VMs. So if you spin up an IaaS VM with Windows on it and you do not turn on automatic updates or any of those upgrade features. Microsoft Azure is not going to patch your Virtual Machine OS at any point. But Azure will be patching the Hyper Visor as planned maintenance work. The Virtual Machine is running through some Hypervisor in the Azure. And that HyperVisor must be patched regularly.&lt;/p&gt;
+
+&lt;p&gt;So if you think your virtual machine will never be updated and never be switched off. And you control your VM you know when it will be down. And you think you don’t need multiple VMs. Then your are in-correct. You do need to have multiple VMs because Microsoft Azure is going to patch that Rack or that Hypervisor and it is going to bring your single VM down (or Azure Fabric will move it to other VM to give SLA) So you need to make sure that you have 2 VMs to get the defined SLA.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;With Respect to PaaS Services&lt;/strong&gt;
+&lt;img src=&quot;https://imgur.com/IhbZ0o1.png&quot; alt=&quot;&quot; /&gt;
+Suppose you spin up an application in the PaaS services. So PaaS does patch the guest operating system (OS). When you bring the CS Package to do update. Then Azure will patch Update Domain 0 first then Update Domain 1 next Update Domain 2. So it will walk the stack to do the updates. That way client does not know and does not get the downtime.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/WSze6Do.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose you have a Web App running in Azure VM as PaaS, then Microsoft Azure will turn off the VM and when the next request comes from the client then Azure will send that request to other available VM to maintain the SLA.&lt;/p&gt;
+
+&lt;p&gt;You start with 5 update domains and you can take up to &lt;strong&gt;20&lt;/strong&gt; Update Domains. Suppose you had 7 instances, So it will distribute your instances in 5 update domains then once it hit those first 5 update domains. It will layer the other 2 instances.&lt;/p&gt;
+
+&lt;h2 id=&quot;fault-domain&quot;&gt;Fault Domain&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/8nolkCg.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is kind of clustering like windows cluster. Its their to protect the physical assets. The Fault Domain primary use case is If the Rack went down, something bad happened in that Rack in Azure. Because, of the hardware broke, something broke in switch or something bad happened in the server of that Rack. This Rack can be repaired. However, Azure Fabric will detect that Rack went down and it will move the workloads to some other Rack as long as you have another virtual machine in another fault domain. On the top across the Racks Azure has VIPs or those virtual IPs across the top of our availability set so that it will continue to let the client write or read the servers. The servers are identical.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/lSGq9iI.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can have maximum of &lt;strong&gt;3&lt;/strong&gt; Fault Domains&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It is a IaaS offering from the Azure&lt;/li&gt;
+  &lt;li&gt;A fault domain is essentially a rack of servers. It provides the physical separation of your workload across different power, cooling, and network hardware that support the physical servers in the data center server racks.&lt;/li&gt;
+  &lt;li&gt;The group of virtual machines that share common hardware are in the same fault domain.&lt;/li&gt;
+  &lt;li&gt;Set of hardware component that share the single point of failure.&lt;/li&gt;
+  &lt;li&gt;For fault tolerance, you need multiple Fault Domain&lt;/li&gt;
+  &lt;li&gt;fault Domain distributes the loads across the physical Racks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;Learn More About &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-machines/availability&quot;&gt;Fault and Update Domains&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure against Network breakdown or power interruptions. Read this article to learn what is Update and Fault Domains in Data-Center and how they protect against software and hardware disasters.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Roadmap for mastering Coding &amp;amp; Competitive Programming interview</title><link href="https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners/" rel="alternate" type="text/html" title="Roadmap for mastering Coding &amp;amp; Competitive Programming interview" /><published>2022-01-18T19:00:00-05:00</published><updated>2022-01-18T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners</id><content type="html" xml:base="https://www.rupeshtiwari.com/roadmap-for-mastering-competitive-programming-for-beginners/">&lt;blockquote&gt;
   &lt;p&gt;Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in order to crack Big 4 (Google, Facebook, Amazon &amp;amp; Microsoft) companies coding-interviews?&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -2213,151 +2291,4 @@ Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?lis
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">On-Premises Disaster Site Recovery Strategy with Azure VM</title><link href="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/" rel="alternate" type="text/html" title="On-Premises Disaster Site Recovery Strategy with Azure VM" /><published>2021-12-10T19:00:00-05:00</published><updated>2021-12-10T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/on-premises-disaster-site-recovery-strategy-in-azure/">&lt;blockquote&gt;
-  &lt;p&gt;Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn &lt;strong&gt;Business Continuity and Disaster Recovery&lt;/strong&gt; (BCDR) strategy in Azure.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;setup-on-premises-replication-to-azure-vm&quot;&gt;Setup On-Premises Replication to Azure VM&lt;/h2&gt;
-
-&lt;p&gt;Before even failover to Azure VM from on-premises machine make sure you have setup your replication to Azure VM.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/zU1glIxnPnM&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/CEHLtIe.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;stages-for-on-premises-disaster-recovery&quot;&gt;Stages for On-Premises Disaster Recovery&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/TO8eYHW.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After replication is setup to Azure VM follow this workflow to accomplish Site Recovery in 4 steps.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/rb7mRDol2hs&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;h2 id=&quot;on-premises-failover-and-failback-four-stages&quot;&gt;On-Premises Failover and failback four stages&lt;/h2&gt;
-
-&lt;p&gt;Let’s learn all the 4 steps required for site recovery.&lt;/p&gt;
-
-&lt;h3 id=&quot;stage-1-fail-over-from-on-premises&quot;&gt;Stage 1: Fail over from on-premises&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/AdzMjJk.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After setting up replication to Azure for on-premises machines, when your on-premises site goes down, you fail those machines over to Azure. After failover, Azure VMs are created from replicated data.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/Mf9nCXxzfG8&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p class=&quot;notice--danger&quot;&gt;🛎️ &lt;strong&gt;Important&lt;/strong&gt; action checklist table below to be followed &lt;strong&gt;before &amp;amp; after failover&lt;/strong&gt;. Read them carefully.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Target Failover OS&lt;/th&gt;
-      &lt;th&gt;Stage&lt;/th&gt;
-      &lt;th&gt;Location to perform Actions&lt;/th&gt;
-      &lt;th&gt;Actions&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;https://imgur.com/Odr4cGss.png&quot; alt=&quot;&quot; /&gt; &lt;strong&gt;Windows&lt;/strong&gt; Azure VM&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Before Failover&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;On the &lt;strong&gt;On-Premise Machine&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;For Internet Access&lt;/strong&gt;: make sure &lt;strong&gt;RDP is allowed&lt;/strong&gt; for &lt;strong&gt;All Profiles&lt;/strong&gt;, For &lt;strong&gt;site-to-site VPN access&lt;/strong&gt;: make sure &lt;strong&gt;RDP is allowed&lt;/strong&gt; for &lt;strong&gt;Domain and Private&lt;/strong&gt; network. Make sure &lt;strong&gt;SAN&lt;/strong&gt; &lt;a href=&quot;https://docs.microsoft.com/en-US/azure/migrate/prepare-for-migration#configure-san-policy&quot;&gt; ( Storage Area Network) &lt;/a&gt; policy is set to &lt;strong&gt;Online&lt;/strong&gt; and There is no windows update pending on the VM.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;https://imgur.com/Odr4cGss.png&quot; alt=&quot;&quot; /&gt; &lt;strong&gt;Windows&lt;/strong&gt; Azure VM&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;After Failover&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;On the &lt;strong&gt;Azure Virtual Machine&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Add a public IP&lt;/strong&gt; address, must allow incoming connections to the RDP port.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;https://imgur.com/XnSh8DPs.png&quot; alt=&quot;&quot; /&gt; &lt;strong&gt;Linux&lt;/strong&gt; Azure VM&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Before Failover&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;On the &lt;strong&gt;On-Premise Machine&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Ensure that the Secure Shell Service on the VM is set to start automatically on system boot. Check that firewall rules allow an SSH connection to it.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;https://imgur.com/XnSh8DPs.png&quot; alt=&quot;&quot; /&gt; &lt;strong&gt;Linux&lt;/strong&gt; Azure VM&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;After Failover&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;On the &lt;strong&gt;Azure Virtual Machine&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Add a public IP&lt;/strong&gt; address, Need to allow incoming connections to the SSH port.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;stage-2-reprotect-azure-vms&quot;&gt;Stage 2: Reprotect Azure VMs&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/gvHDxgL.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In Azure, you reprotect the Azure VMs so that they start replicating back to the on-premises site. The on-premises VM (if available) is turned off during reprotection, to help ensure data consistency.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/f8LLLYzv4pI&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;h3 id=&quot;stage-3-fail-over-from-azure&quot;&gt;Stage 3: Fail over from Azure&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/3jBsHvL.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When your on-premises site is running as normal again, you run another failover, this time to fail back Azure VMs to your on-premises site. You can fail back to the original location from which you failed over, or to an alternate location.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/4qG5b6pkXpQ&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;h3 id=&quot;stage-4-reprotect-on-premises-machines&quot;&gt;Stage 4: Reprotect on-premises machines&lt;/h3&gt;
-
-&lt;p&gt;After failing back, again enable replication of the on-premises machines to Azure.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/o3f83mayYKQ&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/XXAYraF.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;overall-replication-steps-model-diagram&quot;&gt;Overall Replication Steps Model Diagram&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/Zuy3Ijz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/site-recovery/failover-failback-overview#recovery-stages&quot;&gt;BCDR strategy in Azure here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
