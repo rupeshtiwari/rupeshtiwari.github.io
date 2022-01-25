@@ -1,0 +1,963 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Introduction to Azure Infrastructure Architecture - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Introduction to Azure Infrastructure Architecture">
+<meta property="og:url" content="https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/">
+
+
+  <meta property="og:description" content="Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/zZYQYQA.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Introduction to Azure Infrastructure Architecture">
+  <meta name="twitter:description" content="Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/zZYQYQA.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-12-31T19:00:00-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/3PR1wRa.png" alt="Introduction to Azure Infrastructure Architecture" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Introduction to Azure Infrastructure Architecture</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Introduction to Azure Infrastructure Architecture">
+    <meta itemprop="description" content="  Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.">
+    <meta itemprop="datePublished" content="2021-12-31T19:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Introduction to Azure Infrastructure Architecture
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#azure-infrastructure-architecture">Azure Infrastructure Architecture</a></li><li><a href="#azure-geography">Azure Geography</a></li><li><a href="#what-is-azure-regions">What is Azure Regions?</a></li><li><a href="#what-is-availability-zone-in-azure">What is Availability Zone in Azure?</a></li><li><a href="#what-is-the-azure-global-network">What is the Azure global network?</a></li><li><a href="#azure-data-center">Azure Data-Center</a></li><li><a href="#what-is-availability-set">What is Availability Set?</a></li><li><a href="#what-is-azure-fault-domain">What is azure fault domain?</a></li><li><a href="#what-is-update-domain-in-azure">What is update domain in Azure?</a></li><li><a href="#azure-sla">Azure SLA</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc.</p>
+</blockquote>
+
+<h2 id="azure-infrastructure-architecture">Azure Infrastructure Architecture</h2>
+
+<p><img src="https://imgur.com/TVclQ1g.png" alt="" class="full" /></p>
+
+<ul>
+  <li><a href="#azure-geography">Geography</a> consists of many regions</li>
+  <li>Each <a href="#azure-regions">Region</a> must have minimum 3 Availability Zones.</li>
+  <li>Each <a href="#availability-zone">Availability Zone</a> can have one or more Data Centers equipped with independent power, cooling, and networking.</li>
+  <li>No two zones can share a data center.</li>
+  <li>Each <a href="#azure-data-center">Data-Center</a> has Availability Sets</li>
+  <li>Each <a href="#what-is-availability-set">Availability Set</a> can have 3 Fault Domains &amp; up to 20 Update Domain</li>
+  <li><a href="#what-is-azure-fault-domain">Fault Domain</a> is grouping of virtual machines, independent network switch and power supply provides hardware fault tolerance.</li>
+  <li><a href="#what-is-update-domain-in-azure">Update Domain</a> is logical grouping of virtual machine and included hardware that can be updated and rebooted at one time.</li>
+</ul>
+
+<h2 id="azure-geography">Azure Geography</h2>
+
+<p><img src="https://imgur.com/GgiCKUh.png" alt="" class="full" /></p>
+
+<p><img src="https://i.imgur.com/IMF6Uxn.png" alt="" class="full" /></p>
+
+<p><a href="https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies">Azure Geography</a> contains most of the countries in the world.</p>
+
+<p>An Azure geography is a discrete market, typically containing at least one or more regions, that preserves data residency and compliance boundaries. Geographies allow customers with specific data-residency and compliance needs to keep their data and applications close. Geographies are fault-tolerant to withstand complete region failure through their connection to the dedicated high-capacity networking infrastructure of Azure.</p>
+
+<h2 id="what-is-azure-regions">What is Azure Regions?</h2>
+
+<p><img src="https://imgur.com/EP9XhI7.png" alt="" class="full" /></p>
+
+<p>Each Geography has multiple Regions. Example The United States has regions like Center US, East US, East US2, East US3, North Central US, South Central US, West Central US, West US, West US 2, West US 3.</p>
+
+<p>An Azure region is a set of datacenters, deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.</p>
+
+<h2 id="what-is-availability-zone-in-azure">What is Availability Zone in Azure?</h2>
+
+<p><img src="https://imgur.com/edLLp4S.png" alt="" class="full" /></p>
+
+<p>Azure Availability Zones are <strong>physically and logically separated datacenters</strong> with their own <strong>independent power source, network, and cooling</strong>. Connected with an extremely low-latency network, they become a building block to delivering high availability applications. Availability Zones ensure that if there’s an event impacting a datacenter site—for example, if someone cuts the power, or there are issues with cooling—your data will be protected.</p>
+
+<p>Running a VM with one or more replicated copies on different <strong>Availability Zones</strong>, providing resiliency against data center failure.</p>
+
+<p class="notice--success">🍹 <strong>Tip</strong> <br />
+Azure Availability Zones are unique physical locations within an Azure region and offer high availability to protect your applications and data from datacenter failures. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. The physical separation of availability zones within a region protects apps and data from facility-level issues. Zone-redundant services replicate your apps and data across Azure Availability Zones to protect from single points of failure.</p>
+
+<h2 id="what-is-the-azure-global-network">What is the Azure global network?</h2>
+
+<p>The Azure global network refers to all of the components in networking and is comprised of the Microsoft global wide-area network (WAN), points of presence (PoPs), fiber, and others.</p>
+
+<h2 id="azure-data-center">Azure Data-Center</h2>
+
+<p><img src="https://imgur.com/ZQGt48j.png" alt="" class="full" /></p>
+
+<p>In the Data Center the servers are divided into multiple physical and logical groups.</p>
+
+<h2 id="what-is-availability-set">What is Availability Set?</h2>
+
+<p><img src="https://imgur.com/FmgxQu5.png" alt="" class="full" /></p>
+
+<p>An <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview">availability set</a> is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability.</p>
+
+<h2 id="what-is-azure-fault-domain">What is azure fault domain?</h2>
+
+<p><img src="https://imgur.com/8nolkCg.png" alt="" class="full" /></p>
+
+<p>The physical grouping of servers (virtual machines) is called Fault Domain. It is Each server share a common power source and network switch within a Fault Domain. A fault domain is a set of hardware components that share a single point of failure.</p>
+
+<h2 id="what-is-update-domain-in-azure">What is update domain in Azure?</h2>
+
+<p><img src="https://imgur.com/go8fjZ9.png" alt="" class="full" /></p>
+
+<p><img src="https://imgur.com/IhbZ0o1.png" alt="" class="full" /></p>
+
+<p>An <strong>update domain</strong> is a logical group of underlying hardware that can undergo maintenance or be rebooted at the same time. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these <strong>update domains</strong>.</p>
+
+<h2 id="azure-sla">Azure SLA</h2>
+
+<p>Azure Availability Zone give maximum industry best 99.99% of availability.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">scenario</th>
+      <th style="text-align: left">Manage VMs manually</th>
+      <th style="text-align: right">Use VM Scale Set</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Adding extra VM</td>
+      <td style="text-align: left">Manually create, configure and ensure compliance</td>
+      <td style="text-align: right">Automatically create from central configuration</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Traffic Balancing &amp; distribution</td>
+      <td style="text-align: left">Manually</td>
+      <td style="text-align: right">Automatically create and integrate Azure load balancer or Application Gateway</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">High availability and redundancy</td>
+      <td style="text-align: left">Manually create Availability set or distribute and track VMs across Availability Zones</td>
+      <td style="text-align: right">Automatic distribution of VM instances across Availability Zones or Availability Sets</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Scaling of VMs</td>
+      <td style="text-align: left">Manual monitoring and Azure Automation</td>
+      <td style="text-align: right">Auto scale based on host metrics, in-guest metrics, Application Insights, or schedule</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><em>Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p class="notice--info">I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to become <strong>Software Developer</strong> and grow your carrier as new <strong>Software Engineer</strong> or <strong>Lead Developer/Architect</strong>. Consider subscribing to our full stack development training programs. You will learn <strong>Angular, RxJS, JavaScript, System Architecture</strong> and much more with lots of <strong>hands on coding</strong>. We have All-Access Monthly membership plans and you will get unlimited access to all of our <strong>video</strong> courses, <strong>slides</strong>, <strong>download source code</strong> &amp; <strong>Monthly video calls</strong>.</p>
+
+<ul>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a></strong> to access <em>current</em> and <em>future</em> <strong>angular, node.js</strong> and related courses.</li>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a></strong> to get everything from PRO plan. Additionally, you will get access to a monthly <strong>live Q&amp;A video call</strong> with <code class="language-plaintext highlighter-rouge">Rupesh</code> and you can ask <strong><em>doubts/questions</em></strong> and get more help, tips and tricks.</li>
+</ul>
+
+<p class="notice--warning">Your bright future is awaiting for you so visit today <a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board on your dream software company as a new <strong>Software Developer, Architect or Lead Engineer</strong> role.</p>
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+<p><img src="https://imgur.com/5fBatz9.png" alt="" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a><span class="sep">, </span>
+    
+      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-12-31T19:00:00-05:00">December 31, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Introduction+to+Azure+Infrastructure+Architecture%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-azure-infrastructure-architecture%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-azure-infrastructure-architecture%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-azure-infrastructure-architecture%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/what-is-azure-virtual-machine-scale-sets/" class="pagination--pager" title="What is Azure Virtual Machine Scale Sets
+">Previous</a>
+    
+    
+      <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" class="pagination--pager" title="Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/what-is-azure-virtual-machine-scale-sets/" rel="permalink">What is Azure Virtual Machine Scale Sets
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/create-update-and-delete-tags-on-azure-resource/" rel="permalink">Create Update and Delete Tags on Azure Resource
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/7I0NoBe.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/site-recoverystrategy-in-azure/" rel="permalink">Site Recovery Strategy in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure.
+
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/introduction-to-azure-infrastructure-architecture/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/introduction-to-azure-infrastructure-architecture"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
