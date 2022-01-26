@@ -1,0 +1,892 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Integrate GitHub-Pages in Angular 6 App - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Integrate GitHub-Pages in Angular 6 App">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Integrate GitHub-Pages in Angular 6 App">
+<meta property="og:url" content="https://www.rupeshtiwari.com/angular/javascript/npm/integrate-github-pages-in-angular-6-app/">
+
+
+  <meta property="og:description" content="Integrate GitHub-Pages in Angular 6 App">
+
+
+
+  <meta property="og:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Integrate GitHub-Pages in Angular 6 App">
+  <meta name="twitter:description" content="Integrate GitHub-Pages in Angular 6 App">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/angular/javascript/npm/integrate-github-pages-in-angular-6-app/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2018-11-01T23:31:50-04:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/angular/javascript/npm/integrate-github-pages-in-angular-6-app/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#angular" itemprop="item"><span itemprop="name">Angular</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#javascript" itemprop="item"><span itemprop="name">Javascript</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#npm" itemprop="item"><span itemprop="name">Npm</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Integrate GitHub-Pages in Angular 6 App</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Integrate GitHub-Pages in Angular 6 App">
+    <meta itemprop="description" content="What is GhPagesDo you want to save time to create post or article while writing software code ? Or do you want to see your angular app live running in the internet without deploying it separably on azure or AWS ? Then GhPages&nbsp;or Github Pages is the answer to that.I have one github project written in angular and I run my app live in github itself by using ghpages&nbsp;In this article, I will walk you through the process of publishing your app into ghpages. ​What GhPages Can DoGhPages host README.md file on github server and give you unique URL&nbsp;to view as website.&nbsp;When we create Angular project using Angular CLI, it creates project files along with the README.md file. We write description about the code and how to get the code from github, how to install node packages and how to run etc. All of this steps are well documented in README.md file. Sometimes I personally put some more examples about my shared directive or services. Github can host this README.md file in website with various themes and you can see your document live in website.GhPages can also host your Angular App and give you unique URL to view your live app running on github serverYes, you can see your angular app live running with the help of ghpages. Once you check-in your dist&nbsp;folder to your github repository then ghpages can host the entire dist folder and you can see your app running.How do I integrate in my Angular 6 appIn order to integrate in ghpages in your angular app please follow the below stepshttps://gist.github.com/roopkt/accf84d4c17703f1a5a09bb863f2c73aNow you can run your publish script (npm run publish&nbsp;) whenever you want to deploy your README.md file to github pages.build:prd will build the project in prod mode so that it will create a dist&nbsp;folder where the bundle files and README.md&nbsp;file will be placed.deploy:gh&nbsp;will deploy the dist folder into github pages.Example hosting Angular App on GithubPagesPlease visit my e-Store app on GitHub and see how my project is live working on github server. Also don&#39;t forget to add some item in your cart on my online website for e-store&nbsp;hosted on ghpages.https://github.com/roopkt/e-storeHere are the steps, to follow in order to host dist&nbsp;folder on ghpages.Go to github repositoy thenSelect settings scroll to GitHub Pages section andSelect `​gh-pages branch` from the drop down listExample hosting README.md on GithubPagesplease checkout my Webpack Typescript Library Consumption Sample&nbsp;In this repository I do not have any web application however I had my README.md&nbsp;file that I wanted to publish as website and you cant believe using ghpages themes it is just looking like a WordPress post. Please check out my online ghpage website for ​​&nbsp; &nbsp;`README.md`&nbsp; &nbsp;file.https://github.com/roopkt/webpack-typesript-library-consumption-sampleHere are the steps you will do in order to setup ghpages so that it will host your readme.md fileGo to github repositoy thenSelect settings scroll to GitHub Pages section andSelect `​master branch` from the drop down listAlso You can select your favorite them. (optional)[caption id=&quot;attachment_495&quot; align=&quot;alignnone&quot; width=&quot;1576&quot;] GitHub Pages Settings for hosting README.md file[/caption]">
+    <meta itemprop="datePublished" content="2018-11-01T23:31:50-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Integrate GitHub-Pages in Angular 6 App
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              
+
+            </nav>
+          </aside>
+        
+        <h2>What is GhPages</h2>
+<p>Do you want to save time to create post or article while writing software code ? Or do you want to see your angular app live running in the internet without deploying it separably on azure or AWS ? Then <a href="https://www.npmjs.com/package/ghpages" target="_blank" rel="noopener noreferrer">GhPages</a>&nbsp;or Github Pages is the answer to that.</p>
+<p>I have one github project written in angular and I run my app live in github itself by using <code>ghpages</code>&nbsp;In this article, I will walk you through the process of publishing your app into <code>ghpages.</code> ​</p>
+<h2>What GhPages Can Do</h2>
+<blockquote><p><em>GhPages host README.md file on github server and give you unique URL&nbsp;to view as website.&nbsp;</em></p></blockquote>
+<p>When we create Angular project using Angular CLI, it creates project files along with the README.md file. We write description about the code and how to get the code from github, how to install node packages and how to run etc. All of this steps are well documented in README.md file. Sometimes I personally put some more examples about my shared directive or services. Github can host this README.md file in website with various themes and you can see your document live in website.</p>
+<blockquote><p>GhPages can also host your Angular App and give you unique URL to view your live app running on github server</p></blockquote>
+<p>Yes, you can see your angular app live running with the help of ghpages. Once you check-in your <code>dist</code>&nbsp;folder to your github repository then ghpages can host the entire dist folder and you can see your app running.</p>
+<h2>How do I integrate in my Angular 6 app</h2>
+<p>In order to integrate in ghpages in your angular app please follow the below steps</p>
+<p>https://gist.github.com/roopkt/accf84d4c17703f1a5a09bb863f2c73a</p>
+<p>Now you can run your publish script (<code>npm run publish</code>&nbsp;) whenever you want to deploy your README.md file to github pages.</p>
+<p><code>build:prd</code> will build the project in prod mode so that it will create a <code>dist</code>&nbsp;folder where the bundle files and <code>README.md</code>&nbsp;file will be placed.</p>
+<p><code>deploy:gh</code>&nbsp;will deploy the dist folder into github pages.</p>
+<h2>Example hosting Angular App on GithubPages</h2>
+<p>Please visit my <a href="https://github.com/roopkt/e-store" target="_blank" rel="noopener noreferrer">e-Store app</a> on GitHub and see how my project is live working on github server. Also don't forget to add some item in your cart on <a href="https://roopkt.github.io/e-store/#/products" target="_blank" rel="noopener noreferrer">my online website for e-store&nbsp;</a>hosted on ghpages.</p>
+<p>https://github.com/roopkt/e-store</p>
+<p>Here are the steps, to follow in order to host <code>dist</code>&nbsp;folder on ghpages.</p>
+<ol>
+<li>Go to github repositoy then</li>
+<li>Select settings scroll to GitHub Pages section and</li>
+<li>Select `​gh-pages branch` from the drop down list</li>
+</ol>
+<p><img class="alignnone size-full wp-image-496" src="/assets/2018/11/ghpages-1-1.png" alt="GitHub Pages Settings to host dist folder" width="1448" height="604" /></p>
+<h2>Example hosting README.md on GithubPages</h2>
+<p>please checkout my <a href="https://github.com/roopkt/webpack-typesript-library-consumption-sample" target="_blank" rel="noopener noreferrer">Webpack Typescript Library Consumption Sample&nbsp;</a></p>
+<p>In this repository I do not have any web application however I had my <code>README.md</code>&nbsp;file that I wanted to publish as website and you cant believe using ghpages themes it is just looking like a WordPress post. Please <a href="https://roopkt.github.io/webpack-typesript-library-consumption-sample/" target="_blank" rel="noopener noreferrer">check out my online ghpage website </a>for ​​&nbsp; &nbsp;`README.md`&nbsp; &nbsp;file.</p>
+<p>https://github.com/roopkt/webpack-typesript-library-consumption-sample</p>
+<p>Here are the steps you will do in order to setup ghpages so that it will host your readme.md file</p>
+<ol>
+<li>Go to github repositoy then</li>
+<li>Select settings scroll to GitHub Pages section and</li>
+<li>Select `​master branch` from the drop down list</li>
+<li>Also You can select your favorite them. (optional)</li>
+</ol>
+<p>[caption id="attachment_495" align="alignnone" width="1576"]<img class="alignnone size-full wp-image-495" src="/assets/2018/11/ghpages-1.png" alt="GitHub Pages Settings For Master Branch" width="1576" height="655" /> GitHub Pages Settings for hosting README.md file[/caption]</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item" rel="tag">github</a><span class="sep">, </span>
+    
+      <a href="/tags/#javascript" class="page__taxonomy-item" rel="tag">javascript</a><span class="sep">, </span>
+    
+      <a href="/tags/#typescript" class="page__taxonomy-item" rel="tag">typescript</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/categories/#javascript" class="page__taxonomy-item" rel="tag">javascript</a><span class="sep">, </span>
+    
+      <a href="/categories/#npm" class="page__taxonomy-item" rel="tag">npm</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-01T23:31:50-04:00">November 1, 2018</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Integrate+GitHub-Pages+in+Angular+6+App%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fangular%2Fjavascript%2Fnpm%2Fintegrate-github-pages-in-angular-6-app%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fangular%2Fjavascript%2Fnpm%2Fintegrate-github-pages-in-angular-6-app%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fangular%2Fjavascript%2Fnpm%2Fintegrate-github-pages-in-angular-6-app%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/pluralsight/rxjs/unittesting-rxjs-marble-diagrams-problem-solver/" class="pagination--pager" title="UnitTesting-RxJS-Marble-Diagrams Problem Solver
+">Previous</a>
+    
+    
+      <a href="/javascript/how-to-show-logo-in-readme-md-file-or-in-npm-package-home-page/" class="pagination--pager" title="How to Show Logo in ReadMe.Md file or in npm Package Home Page
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-to-azure-infrastructure-architecture/" rel="permalink">Introduction to Azure Infrastructure Architecture
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/what-is-azure-virtual-machine-scale-sets/" rel="permalink">What is Azure Virtual Machine Scale Sets
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/create-update-and-delete-tags-on-azure-resource/" rel="permalink">Create Update and Delete Tags on Azure Resource
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.
+
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/angular/javascript/npm/integrate-github-pages-in-angular-6-app/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/angular/javascript/npm/integrate-github-pages-in-angular-6-app"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
