@@ -1,0 +1,1138 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Learn how to deploy angular apps to GitHub Pages by setup a ci/cd pipeline for angular application with GitHub Actions and workflow.">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action">
+<meta property="og:url" content="https://www.rupeshtiwari.com/setup-ci-cd-for-angular-app-with-github-action/">
+
+
+  <meta property="og:description" content="Learn how to deploy angular apps to GitHub Pages by setup a ci/cd pipeline for angular application with GitHub Actions and workflow.">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/cOq4pON.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action">
+  <meta name="twitter:description" content="Learn how to deploy angular apps to GitHub Pages by setup a ci/cd pipeline for angular application with GitHub Actions and workflow.">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/setup-ci-cd-for-angular-app-with-github-action/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/cOq4pON.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-06-25T20:00:00-04:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/setup-ci-cd-for-angular-app-with-github-action/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/5HhDisG.png" alt="How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action">
+    <meta itemprop="description" content="  Do you want to build your first Angular App and deploy over cloud using GitHub Actions? How to deploy/publish Angular App to GitHub Pages automatically? Did you use GitHub Actions to build and deploy Angular App over GitHub Pages? Stay tuned in this article I will show you step by step from creating angular app to building and deploying using GitHub Actions.">
+    <meta itemprop="datePublished" content="2021-06-25T20:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-are-we-building">What are we building</a></li><li><a href="#creating-an-angular-application">Creating an Angular Application</a><ul><li><a href="#install-npm-package">Install Npm package</a></li></ul></li><li><a href="#what-are-the-steps-on-build">What are the steps on Build</a></li><li><a href="#creating-github-actions">Creating GitHub Actions</a><ul><li><a href="#name-of-workflow">Name of Workflow</a></li><li><a href="#trigger-on-main-branch">Trigger on Main Branch</a></li><li><a href="#node-versions">Node Versions</a></li><li><a href="#checkout-source-code">Checkout source code</a></li><li><a href="#setup-node-environment">Setup Node Environment</a></li><li><a href="#use-github-cache">Use GitHub Cache</a></li><li><a href="#install-dependencies">Install Dependencies</a></li><li><a href="#building-project">Building Project</a></li><li><a href="#linting-project">Linting Project</a></li><li><a href="#testing-project">Testing Project</a></li><li><a href="#triggering-github-workflow">Triggering GitHub Workflow</a></li><li><a href="#complete-yaml-file">Complete YAML file</a></li></ul></li><li><a href="#deploying-angular-app-to-github-pages">Deploying Angular App to GitHub Pages</a><ul><li><a href="#github-pages">GitHub Pages</a></li><li><a href="#using-ng-deploy">Using Ng Deploy</a></li><li><a href="#deploying-to-github-pages-from-local-machine">Deploying to GitHub Pages From Local machine</a></li><li><a href="#your-app-is-live-on-githubpage">Your App is Live on GitHubPage</a></li></ul></li><li><a href="#update-github-actions-to-deploy-angular-app">Update GitHub Actions to Deploy Angular App</a><ul><li><a href="#creating-change-log">Creating Change Log</a></li><li><a href="#creating-github-release">Creating GitHub Release</a></li><li><a href="#deploy-to-github-pages">Deploy to GitHub Pages</a></li><li><a href="#complete-yaml-for-deploying-angular-app-to-github-pages">Complete YAML for deploying angular app to GitHub-Pages</a></li></ul></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Do you want to <strong>build</strong> your first <strong>Angular App</strong> and <strong>deploy</strong> over cloud using <strong>GitHub Actions</strong>? How to deploy/publish Angular App to GitHub Pages automatically? Did you use <strong>GitHub Actions</strong> to <strong>build</strong> and <strong>deploy</strong> <strong>Angular</strong> App over <strong>GitHub Pages</strong>? Stay tuned in this article I will show you step by step from creating angular app to building and deploying using <strong>GitHub Actions</strong>.</p>
+</blockquote>
+
+<p><img src="https://imgur.com/YpOnPp5.gif" alt="" /></p>
+
+<h2 id="what-are-we-building">What are we building</h2>
+
+<p>We will build an angular application &amp; deploy over <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+
+<h2 id="creating-an-angular-application">Creating an Angular Application</h2>
+
+<p>Run Below script to create new angular app.</p>
+
+<p><code class="language-plaintext highlighter-rouge">ng new sample-app</code></p>
+
+<p><img src="https://imgur.com/h9kicuF.png" alt="" /></p>
+
+<h3 id="install-npm-package">Install Npm package</h3>
+
+<p><code class="language-plaintext highlighter-rouge">ng add angular-cli-ghpages</code></p>
+
+<h2 id="what-are-the-steps-on-build">What are the steps on Build</h2>
+
+<ul>
+  <li>✔️ Build</li>
+  <li>✔️ Lint</li>
+  <li>✔️ Test</li>
+</ul>
+
+<h2 id="creating-github-actions">Creating GitHub Actions</h2>
+
+<p>Let’s create GitHub workflow with jobs. Note that now a days GitHub actions runner sets the <code class="language-plaintext highlighter-rouge">CI=true</code> by default. <a href="https://github.blog/changelog/2020-04-15-github-actions-sets-the-ci-environment-variable-to-true/">Learn more here</a>…</p>
+
+<h3 id="name-of-workflow">Name of Workflow</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Angular GitHub CI</span> <span class="c1"># 👈</span>
+</code></pre></div></div>
+
+<h3 id="trigger-on-main-branch">Trigger on Main Branch</h3>
+
+<p>Let’s trigger the job whenever <code class="language-plaintext highlighter-rouge">main</code> branch got new push.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">main</span> <span class="c1"># 👈</span>
+</code></pre></div></div>
+
+<h3 id="node-versions">Node Versions</h3>
+
+<p>Let’s run on multiple node versions on <code class="language-plaintext highlighter-rouge">ubuntu-latest</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">ci</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+
+    <span class="na">strategy</span><span class="pi">:</span>
+      <span class="na">matrix</span><span class="pi">:</span>
+        <span class="na">node-version</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">10.x</span><span class="pi">,</span> <span class="nv">12.x</span><span class="pi">]</span>
+        <span class="c1"># 👆</span>
+</code></pre></div></div>
+
+<p>Note we are using <code class="language-plaintext highlighter-rouge">node10</code> and <code class="language-plaintext highlighter-rouge">node12</code>/ Therefore, at a time there will be parallelly 2 jobs will run one for 10.x and one for <code class="language-plaintext highlighter-rouge">12.x</code></p>
+
+<p><img src="https://imgur.com/gHBzHqt.png" alt="" /></p>
+
+<h3 id="checkout-source-code">Checkout source code</h3>
+
+<p>Let’s checkout the code first.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">steps</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span>
+      <span class="s">actions/checkout@v2</span>
+      <span class="s"># 👆</span>
+</code></pre></div></div>
+
+<h3 id="setup-node-environment">Setup Node Environment</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Use Node.js $</span>
+<span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-node@v1</span>
+  <span class="na">with</span><span class="pi">:</span>
+    <span class="na">node-version</span><span class="pi">:</span>
+      <span class="s">$</span>
+      <span class="s"># 👆</span>
+</code></pre></div></div>
+
+<h3 id="use-github-cache">Use GitHub Cache</h3>
+
+<p>Let’s use GitHub Cache to save <code class="language-plaintext highlighter-rouge">node_modules</code>. Learn more about <a href="https://www.rupeshtiwari.com/caching-dependencies-on-github-workflows">Caching GitHub Workflow dependencies here</a>.</p>
+
+<script src="https://gist.github.com/81a8c36affe7ed445b78941a1070996d.js"> </script>
+
+<h3 id="install-dependencies">Install Dependencies</h3>
+
+<p>Next we must install node packages conditionally. <a href="https://www.rupeshtiwari.com/caching-dependencies-on-github-workflows">Learn more here</a>…</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install Dependencies</span>
+  <span class="na">if</span><span class="pi">:</span>
+    <span class="s">steps.cache-nodemodules.outputs.cache-hit != 'true'</span>
+    <span class="s"># 👆 if cache hits the skip this step.</span>
+  <span class="na">run</span><span class="pi">:</span> <span class="s">npm ci</span>
+</code></pre></div></div>
+
+<h3 id="building-project">Building Project</h3>
+
+<p>Let’s run build in <code class="language-plaintext highlighter-rouge">production mode</code> to compile our project. We need to pass <code class="language-plaintext highlighter-rouge">-- --prod</code> so that <code class="language-plaintext highlighter-rouge">ng build --prod</code> will be executed.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build</span>
+  <span class="na">run</span><span class="pi">:</span> <span class="s">npm run build -- --prod</span>
+</code></pre></div></div>
+
+<h3 id="linting-project">Linting Project</h3>
+
+<p>Let’s run linting.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Lint</span>
+  <span class="na">run</span><span class="pi">:</span> <span class="s">npm run lint</span>
+</code></pre></div></div>
+
+<h3 id="testing-project">Testing Project</h3>
+
+<p>Let’s run test in production mode. We need to make sure while running Test:</p>
+
+<ul>
+  <li>✔️ we are using <strong>chrome headless browser</strong> <code class="language-plaintext highlighter-rouge">"browsers": "ChromeHeadless"</code> and</li>
+  <li>✔️ Generating code coverage <code class="language-plaintext highlighter-rouge">"codeCoverage": true,</code></li>
+  <li>✔️ Ignoring Source Map <code class="language-plaintext highlighter-rouge">"sourceMap": false</code></li>
+  <li>👁️ Make sure not in watch mode ` “watch”: false`</li>
+</ul>
+
+<p>All of the above settings can be done in <code class="language-plaintext highlighter-rouge">angular.json</code> file.</p>
+
+<p>Navigate to <code class="language-plaintext highlighter-rouge">angular.json</code> file identify project name.</p>
+
+<ol>
+  <li>Go to test object. <code class="language-plaintext highlighter-rouge">projects.sample-app.architect.test</code></li>
+  <li>Add below code configuration for production.</li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"production"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"sourceMap"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"codeCoverage"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"browsers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ChromeHeadless"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"watch"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<p>It will look like this:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">       </span><span class="nl">"test"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"builder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@angular-devkit/build-angular:karma"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">👈</span><span class="w">
+            </span><span class="nl">"production"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"sourceMap"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"codeCoverage"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"browsers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ChromeHeadless"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"watch"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">},</span><span class="err">👈</span><span class="w">
+          </span><span class="nl">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"main"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/test.ts"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"polyfills"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/polyfills.ts"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"tsConfig"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tsconfig.spec.json"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"karmaConfig"</span><span class="p">:</span><span class="w"> </span><span class="s2">"karma.conf.js"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"assets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"src/favicon.ico"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"src/assets"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"src/styles.scss"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Lets add below script in the <code class="language-plaintext highlighter-rouge">main.yml</code> file. Which will use above production test configuration while running in build machine.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Test</span>
+  <span class="na">run</span><span class="pi">:</span> <span class="s">npm run test -- --prod</span>
+</code></pre></div></div>
+
+<h3 id="triggering-github-workflow">Triggering GitHub Workflow</h3>
+
+<p>Now is the time to see our workflow in action. Go ahead and push the changes to GitHub and check your actions tab on github.</p>
+
+<p><img src="https://imgur.com/O8K0LCG.png" alt="" /></p>
+
+<p>Notice both jobs are completed:</p>
+
+<p><img src="https://imgur.com/zp6CsLX.png" alt="" /></p>
+
+<h3 id="complete-yaml-file">Complete YAML file</h3>
+
+<script src="https://gist.github.com/c062101984b3dea4e953f5698ed09be2.js"> </script>
+
+<h2 id="deploying-angular-app-to-github-pages">Deploying Angular App to GitHub Pages</h2>
+
+<p>Next once you know your project is passing all these below steps under <code class="language-plaintext highlighter-rouge">CI</code> job.</p>
+
+<ul>
+  <li>✔️ Build</li>
+  <li>✔️ Lint</li>
+  <li>✔️ Test</li>
+</ul>
+
+<p>Next we must deploy the app to somewhere. In this example I will deploy our app to <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+
+<h3 id="github-pages">GitHub Pages</h3>
+
+<p><strong>GitHub Pages</strong> are free where you can host your static site. I am going explain you the steps to deploy your angular app there.</p>
+
+<h3 id="using-ng-deploy">Using Ng Deploy</h3>
+
+<p><code class="language-plaintext highlighter-rouge">ng deploy</code> is the <strong>Angular CLI command</strong> that automates the deployment of Angular App to <strong>GitHub Pages</strong>. When you run <code class="language-plaintext highlighter-rouge">ng deploy</code>, it executes a builder that performs the deployment for you.</p>
+
+<p>Install <a href="https://www.npmjs.com/package/angular-cli-ghpages"><code class="language-plaintext highlighter-rouge">angular-cli-ghpages</code></a> builder by Running script <code class="language-plaintext highlighter-rouge">ng add angular-cli-ghpages</code> on command line from root of your project.</p>
+
+<h3 id="deploying-to-github-pages-from-local-machine">Deploying to GitHub Pages From Local machine</h3>
+
+<p>In GitHub Page server we must give <code class="language-plaintext highlighter-rouge">base-href</code> to our <code class="language-plaintext highlighter-rouge">repository name</code> so that It can host our static files successfully. Since our GitHub repository name is <code class="language-plaintext highlighter-rouge">angular-ci-cd-with-github-actions</code> my deploy script would be: <code class="language-plaintext highlighter-rouge">ng deploy --base-href=/angular-ci-cd-with-github-actions/</code></p>
+
+<p>Add below script on <code class="language-plaintext highlighter-rouge">package.json</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="s2">"deploy"</span>: <span class="s2">"ng deploy --base-href=/angular-ci-cd-with-github-actions/"</span>
+</code></pre></div></div>
+
+<p>You can even run the deploy command from local machine to test <code class="language-plaintext highlighter-rouge">npm run deploy</code></p>
+
+<p><img src="https://imgur.com/wHjIBg7.png" alt="" /></p>
+
+<h3 id="your-app-is-live-on-githubpage">Your App is Live on GitHubPage</h3>
+
+<p>Go to the settings of your GitHub Repository and notice the Site is published. Wait for 2-5 mins and then browse your app.</p>
+
+<p><img src="https://imgur.com/QMizEsH.png" alt="" /></p>
+
+<p>Notice our site is up and running on GitHub Pages</p>
+
+<p><img src="https://imgur.com/lZ1Qij8.png" alt="" /></p>
+
+<h2 id="update-github-actions-to-deploy-angular-app">Update GitHub Actions to Deploy Angular App</h2>
+
+<p>Next let’s update the workflow to deploy our app over GitHub Pages. Below 2 steps we will run whenever previous steps are passing. Note that that <code class="language-plaintext highlighter-rouge">if: success()</code> is always implied unless you specify <code class="language-plaintext highlighter-rouge">if: always()</code> or <code class="language-plaintext highlighter-rouge">if: failure()</code> . Therefore, I am not adding if condition in my steps.</p>
+
+<h3 id="creating-change-log">Creating Change Log</h3>
+
+<p>Add secret called as <code class="language-plaintext highlighter-rouge">TOKEN_GITHUB_ACTION</code> to your repository.</p>
+
+<p><img src="https://imgur.com/tQNt59s.png" alt="" /></p>
+
+<p>Next we will use <a href="https://github.com/TriPSs/conventional-changelog-action">Conventional ChangeLog Action</a> to create our change log.</p>
+
+<script src="https://gist.github.com/ae8a69e9004fd19773e1cdfbf9dad768.js"> </script>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Conventional Changelog Action</span>
+  <span class="na">id</span><span class="pi">:</span> <span class="s">changelog</span>
+  <span class="na">uses</span><span class="pi">:</span> <span class="s">TriPSs/conventional-changelog-action@v3</span>
+  <span class="na">with</span><span class="pi">:</span>
+    <span class="na">github-token</span><span class="pi">:</span> <span class="s">$</span>
+    <span class="na">output-file</span><span class="pi">:</span> <span class="s1">'</span><span class="s">false'</span>
+</code></pre></div></div>
+
+<h3 id="creating-github-release">Creating GitHub Release</h3>
+
+<p>Next we will use <a href="https://github.com/TriPSs/conventional-changelog-action">Conventional ChangeLog Action</a> to tag our repo and create GitHub Release. Note: If you have no changes then this will <strong>not</strong> create a <strong>release</strong>.</p>
+
+<script src="https://gist.github.com/432995b8ead5171de82e2623f446b60f.js"> </script>
+
+<h3 id="deploy-to-github-pages">Deploy to GitHub Pages</h3>
+
+<p>Finally let’s deploy the app to GitHub Pages.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy</span>
+  <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+    <span class="s">npm run deploy</span>
+</code></pre></div></div>
+
+<h3 id="complete-yaml-for-deploying-angular-app-to-github-pages">Complete YAML for deploying angular app to GitHub-Pages</h3>
+
+<p>Here is my <a href="https://gist.github.com/rupeshtiwari/9f252dc665656c434c4d50a70519f9ac">final workflow</a>:
+<script src="https://gist.github.com/9f252dc665656c434c4d50a70519f9ac.js"> </script></p>
+
+<p><img src="https://imgur.com/YpOnPp5.gif" alt="" /></p>
+
+<p>Now if you push the changes workflow will trigger and CI/CD will succeed 🆒!</p>
+
+<p><img src="https://imgur.com/aflIgUO.png" alt="" /></p>
+
+<p>All done 🎉 enjoy your angular ci/cd all free! Here is my <a href="http://www.rupeshtiwari.com/angular-ci-cd-with-github-actions/">demo site live</a></p>
+
+<p><a href="http://www.rupeshtiwari.com/angular-ci-cd-with-github-actions/"><img src="https://i.imgur.com/lZ1Qij8.png" alt="" /></a></p>
+
+<hr />
+
+<p><em>Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to become <strong>Software Developer</strong> and grow your carrier as new <strong>Software Engineer</strong> or <strong>Lead Developer/Architect</strong>. Consider subscribing to our full stack development training programs. You will learn <strong>Angular, RxJS, JavaScript, System Architecture</strong> and much more with lots of <strong>hands on coding</strong>. We have All-Access Monthly membership plans and you will get unlimited access to all of our <strong>video</strong> courses, <strong>slides</strong>, <strong>download source code</strong> &amp; <strong>Monthly video calls</strong>.</p>
+
+<ul>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a></strong> to access <em>current</em> and <em>future</em> <strong>angular, node.js</strong> and related courses.</li>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a></strong> to get everything from PRO plan. Additionally, you will get access to a monthly <strong>live Q&amp;A video call</strong> with <code class="language-plaintext highlighter-rouge">Rupesh</code> and you can ask <strong><em>doubts/questions</em></strong> and get more help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today <a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board on your dream software company as a new <strong>Software Developer, Architect or Lead Engineer</strong> role.</p>
+</blockquote>
+
+<p><strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master</a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">www.rupeshtiwari.com</a> | <a href="https://www.fullstackmaster.net">www.fullstackmaster.net</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#devops" class="page__taxonomy-item" rel="tag">devops</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item" rel="tag">github</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-06-25T20:00:00-04:00">June 25, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=How+to+deploy+Angular+Apps+to+GitHub+Pages+%28gh-pages%29+-+Setup+CI%2FCD+for+Angular+App+with+GitHub+Action%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fsetup-ci-cd-for-angular-app-with-github-action%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fsetup-ci-cd-for-angular-app-with-github-action%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fsetup-ci-cd-for-angular-app-with-github-action%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/caching-dependencies-on-github-workflows/" class="pagination--pager" title="Caching Dependencies on GitHub Workflows
+">Previous</a>
+    
+    
+      <a href="/binary-search-concept/" class="pagination--pager" title="Binary Search Concept
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/introduction-of-azure-data-center/" rel="permalink">Introduction of Azure Data Center
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-soft-skills-questions/" rel="permalink">Cloud Solution Architect Soft Skills Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you m...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/4EIcRWN.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-solution-architect-technical-interview-questions/" rel="permalink">Cloud Solution Architect Technical Interview Questions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          39 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/" rel="permalink">Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/setup-ci-cd-for-angular-app-with-github-action/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/setup-ci-cd-for-angular-app-with-github-action"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

@@ -1378,4 +1378,10 @@ var store = [{
         "tags": ["webdev","tutorial","beginners","interview"],
         "url": "/how-to-start-preparing-for-coding-interview/",
         "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Roadmap for mastering Coding & Competitive Programming interview",
+        "excerpt":"Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junior developer to as full stack developer with angular and c# asp.net and various web development technologies. How should I plan to learn competitive programming in...","categories": [],
+        "tags": ["coding","tutorial","beginners","interview"],
+        "url": "/roadmap-for-mastering-competitive-programming-for-beginners/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
       }]
