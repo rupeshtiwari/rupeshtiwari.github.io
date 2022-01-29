@@ -52,8 +52,6 @@ jobs:
           secure: true
           # Optional plain body:
           body: Build job of ${{github.repository}} completed successfully!
-          # Optional HTML body read from file:
-          html_body: file://README.html
           # Optional carbon copy recipients:
           reply_to: roopkt@gmail.com
           priority: low
