@@ -8,9 +8,19 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0 # Not needed with a .ruby-version file
-      - name: Build the site # build site at docs folder
-        run: | 
+      - name: Build site at Docs dir # build site at docs folder
+        run: |
           rm -rf .bundle
           rm -rf Gemfile.lock
           bundle install --no-deployment
           bundle exec jekyll build -d  docs
+      - name: Commit files
+        run: |
+          git config --local user.email "RupeshTiwari+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add blogs" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: ${{ github.ref }}
