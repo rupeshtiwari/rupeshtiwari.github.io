@@ -7,4 +7,4 @@ jobs:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          ./myscript.ps1
+          ./ghpages.ps1
