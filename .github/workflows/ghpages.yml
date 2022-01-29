@@ -4,18 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true
+          ruby-version: 3.0.0 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build the site
         run: bundle exec jekyll build
-      - name: copy to docs folder
-        run: cp -a ./_site/. docs/
-      - name: Push docs
-        run: |
-          git config --global user.name 'Rupesh Tiwari'
-          git config --global user.email 'rupeshtiwari@users.noreply.github.com'
-          git commit -am "new blogs"
-          git push
