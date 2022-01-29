@@ -1,10 +1,10 @@
 name: Build & Deploy to Github Pages everyday
 on:
-  # push:
-  #   branches:
-  #     - "gh_pages"
-  schedule:
-    - cron: "30 13 * * *" # 1:30 PM (UTC)/8:30 AM (EST) [Note: 0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday]
+  push:
+    branches:
+      - "gh_pages"
+  # schedule:
+  #   - cron: "30 13 * * *" # 1:30 PM (UTC)/8:30 AM (EST) [Note: 0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday]
 jobs:
   build_every_day:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
           rm -rf Gemfile.lock
           bundle install --no-deployment
           bundle exec jekyll build -d  docs
-          cp ./cname ./docs # copy cname file 
+          cp ./cname ./docs # copy cname file
       - name: Commit files
         run: |
           git config --local user.email "RupeshTiwari+github-actions[bot]@users.noreply.github.com"
