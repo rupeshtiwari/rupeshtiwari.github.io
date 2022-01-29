@@ -12,4 +12,5 @@ jobs:
         run: |
           rm -rf .bundle
           rm -rf Gemfile.lock
+          bundle install --no-deployment
           bundle exec jekyll build -d  docs --retry 3
