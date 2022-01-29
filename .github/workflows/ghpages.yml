@@ -1,4 +1,4 @@
-name: Deploy to Github Pages
+name: Build & Deploy to Github Pages
 on: push
 jobs:
   build:
@@ -8,7 +8,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0 # Not needed with a .ruby-version file
-      - name: Build site at Docs dir # build site at docs folder
+      - name: Build site at Docs dir # build site at docs folder which is my ghpages site location
         run: |
           rm -rf .bundle
           rm -rf Gemfile.lock
