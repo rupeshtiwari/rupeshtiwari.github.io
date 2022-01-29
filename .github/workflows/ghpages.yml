@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6 # Not needed with a .ruby-version file
+          ruby-version: 3.0 # Not needed with a .ruby-version file
       - name: Build the site # build site at docs folder
         run: | 
           rm -rf .bundle
