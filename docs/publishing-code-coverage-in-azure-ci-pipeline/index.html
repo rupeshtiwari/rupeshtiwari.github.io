@@ -48,7 +48,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-03-06T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-03-07T00:00:00+00:00">
 
 
 
@@ -376,7 +376,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Publishing Code Coverage in Azure CI Pipeline">
     <meta itemprop="description" content="  Do you want to show Angular Code Coverage Report in Azure CI Pipeline thenread this article and follow the steps.IstanbulReporter in Karma.conf.jsGo to Karma.conf.js of your angular project and confirm you have coberturareporter. coverageIstanbulReporter: {      dir: require(&quot;path&quot;).join(        __dirname,        &quot;../../coverage/fsms-angular-pubsub&quot;      ),      reports: [&quot;html&quot;, &quot;lcovonly&quot;, &quot;text-summary&quot;, &quot;cobertura&quot; 👈 //required],      fixWebpackSourcePaths: true,    },Running Test with Code Coverage FlagWhile running test using angular cli make sure you pass --code-coverage=true.ng test --code-coverage=trueAdding Code coverage Task in Azure PipelinesNext use PublishCodeCoverageResults@1 task from azure DevOps to publish thecobertura report.- task: PublishCodeCoverageResults@1  enabled: true  displayName: Code Coverage  inputs:    codeCoverageTool: &#39;Cobertura&#39;    summaryFileLocation:      &#39;./coverage/fsms-angular-pubsub/cobertura-coverage.xml&#39;      # 👆  put your coverage file path  condition: |    succeeded()Showing Code coverage in Azure PipelineNow run you pipeline and notice you will see the code coverage report on thepipeline summary.Thanks and you are all set.Become full stack developer 💻I teach at Fullstack Master. If you want tobecome full stack developer and grow your carrier as new software developer orLead Developer/Architect. Consider subscribing to our full stack developmenttraining programs. You can enroll to All-Access Monthly membership plans to getunlimited access to all of our video courses, slides, source code &amp; monthlyvideo calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari www.rupeshtiwari.com ✉️ Email Rupesh Founderof  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-03-06T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-03-07T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -538,7 +538,7 @@ of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-03-06T19:00:00-05:00">March 6, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-03-07T00:00:00+00:00">March 7, 2021</time></p>
 
 
       </footer>

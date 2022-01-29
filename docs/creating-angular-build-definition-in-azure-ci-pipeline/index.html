@@ -48,7 +48,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-01-08T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-01-09T00:00:00+00:00">
 
 
 
@@ -376,7 +376,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Creating Angular Build Definition in Azure CI Pipeline">
     <meta itemprop="description" content="If you want to create Build definition for Angular project in Azure DevOps, thenthis article is for you. Login toDev Azure and go tothe pipelines and follow the instructions below:      Click on new pipeline         Use classic editor         Connect to repo         Tag your repository on success         Install npm packages         Build angular project         Copy Files to staging directory         Archive Files         Publish artifacts to Drop folder   pool:  name: Azure Pipelines  demands: npmsteps:  - task: Npm@1    displayName: &#39;npm install&#39;    inputs:      verbose: false  - task: Npm@1    displayName: &#39;npm build&#39;    inputs:      command: custom      verbose: false      customCommand: &#39;run build:apps&#39;  - task: CopyFiles@2    displayName: &#39;Copy Files to: $(Build.ArtifactStagingDirectory)&#39;    inputs:      SourceFolder: &#39;$(Build.SourcesDirectory)/dist&#39;      TargetFolder: &#39;$(Build.ArtifactStagingDirectory)&#39;  - task: ArchiveFiles@2    displayName: &#39;Archive $(Build.ArtifactStagingDirectory)&#39;    inputs:      rootFolderOrFile: &#39;$(Build.ArtifactStagingDirectory)&#39;      includeRootFolder: false  - task: PublishBuildArtifacts@1    displayName: &#39;Publish Artifact: drop&#39;Running Angular Build on Azure DevopsOnce you run angular build on azure devops. Then you will see it will create ajob and execute all task mentioned in build definition.Where Drop folder goes?Final archived folder will go at$(System.DefaultWorkingDirectory)/$(Build.BuildId) location.Drop folder will have buildid.zip file inside that you will have both apps andlibs folders.What drop folder has?Drop folder has both apps and libs folders.Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-01-08T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-01-09T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -577,7 +577,7 @@ Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-08T19:00:00-05:00">January 8, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-09T00:00:00+00:00">January 9, 2021</time></p>
 
 
       </footer>

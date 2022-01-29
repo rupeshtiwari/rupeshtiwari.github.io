@@ -13,10 +13,14 @@
 `bundle exec jekyll publish _drafts/my-new-draft.md --date 2014-01-24`
 
 ## Getting Started
+
 First time if you download the code in new machine then please install the dependencies by running command 
 `bundle install`.
 
 ## Serve in dev
+
+`bundle exec jekyll s`
+
 `bundle exec jekyll serve`
 
 `bundle exec jekyll serve --limit_posts=5`

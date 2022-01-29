@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-01-26T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-01-27T00:00:00+00:00">
 
 
 
@@ -360,7 +360,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Configuring Environment Variable in Azure CI Pipeline">
     <meta itemprop="description" content="  Do you want to create environment level variable for your Azure Build CIPipeline and access them in your azure pipeline task? Example: If you areusing nx monorepo and you want to skip the Nx Caching whilebuilding your project in Azure pipeline or your build machine then read thisarticle to understand it.New Variable FormFirst go to your pipeline definition and select variable.Submit New Variable FormAdd variable name with its default value and then submit.Access Environment Variable in YML filePrefix it with a dollar sign and enclose it in parentheses. For example:$(SKIP_NX_CACHE)Access Environment Variable in Scriptuse environment variable syntax. Replace . and space with _, capitalize theletters, and then use your platform’s syntax for referencing an environmentvariable. Examples:  Batch script: %SKIP_NX_CACHE%  PowerShell script: ${env:SKIP_NX_CACHE}  Bash script: $(SKIP_NX_CACHE)Example Accessing Environment Variable in You Nx Monorepo CI Pipelinepool:  vmImage: &#39;ubuntu-latest&#39;trigger:  - mainvariables:  CAN_SKIP_NX_CACHE: $[eq(variables[&#39;SKIP_NX_CACHE&#39;], &#39;True&#39;)] # Reading CAN_SKIP_NX_CACHE environment variable.steps:    - script: node ./build.js $(SKIP_NX_CACHE) # Calling your build script with environment variable value.While running new pipeline from azure portal. You can always select yourvariable and update its value to false or true that will be passed to your buildpipeline.Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-01-26T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-01-27T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -529,7 +529,7 @@ Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-26T19:00:00-05:00">January 26, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-27T00:00:00+00:00">January 27, 2021</time></p>
 
 
       </footer>

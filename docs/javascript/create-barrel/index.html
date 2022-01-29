@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2018-11-08T17:34:49-05:00">
+  <meta property="article:published_time" content="2018-11-08T22:34:49+00:00">
 
 
 
@@ -370,7 +370,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Create Barrel for Typescript Project">
     <meta itemprop="description" content="When you create your own Typescript  library then you need a barrel file where you put all of your files that you want to expose to the outside world kind of public API. Normally this is an index.ts file where you want to export all of your files which will become public API. The big question is how to automatically create this index file or barrel ? Especially if you are maintaining a huge project.&lt;/p&gt;What is BarrelIt is an index file where you export all of your files those you want to make them available publically.What Problem Barrel is solvingImagine you have a project where you got a Fruits Folder. you have apple.ts, orange.ts, banana.ts, etc. files in the fruit folder.Now imagine you have kitchen.ts file where you want to import all of your fruits then you end up writing below code. Where you want to import each fruit will become messy and you end up importing each file explicitly. If you have big numbers of fruits to import it will become lengthier.https://gist.github.com/rupeshtiwari/fd9bdfb1f1e4b427b747678f6682fdbbHow to Create a BarrelHowever if you have created a barrel file which is nothing but an index.ts file infruit folder. Which looks like below where you export your files that you want them to be available for other files from folder level.https://gist.github.com/rupeshtiwari/dac4d57f2b6600486145d1de8b50bea5your folder structure looks like below so now you have index.ts file inside your fruit folder which will help you to import any file just from fruit folder level.Then now in kitchen.ts file you code looks like below. Is&#39;t it looks pretty ?  :)https://gist.github.com/rupeshtiwari/3ea0193e8c87ca80d625bada8e468f0ehttps://gist.github.com/rupeshtiwari/ac17707d560cbc7c7f1d34382d8b82e2#file-kitchen-without-fruits-barrel-jshttps://gist.github.com/rupeshtiwari/ac17707d560cbc7c7f1d34382d8b82e2#file-kitchen-without-fruits-barrel-jshttps://gist.github.com/rupeshtiwari/ac17707d560cbc7c7f1d34382d8b82e2#file-kitchen-without-fruits-barrel-jsBarrelsbyI have a huge typescript AngularJS project. I am using webpack to bundle them up. Every-time I bundle my app, I want to create an index.ts file which contains all of the files that I want to export as a public api. This is a huge manual task to put all of the file names and put it in one index file. I found  barrelsby   npm package very helpful, It helped me to create the barrel within blink of eyes !How to use BarrelsbyIt is very easy to use barrelsby in your project. Go to package.json file and inside the script object add below script.https://gist.github.com/rupeshtiwari/ac17707d560cbc7c7f1d34382d8b82e2In the above code I am calling barrelsby and saying go to src/app directory and create my barrel file. While creating barrel file it will exclude any file ending with .spec.ts or .tests.ts by default it will create a barrel file with the name of index.ts and this name was good for my project.-e is used for exlcude, it takes the file names that you want to exclude.-d is used for giving the path / location for the directory where you want to create index file.-q is used to create your barrel file using single quotes. This feature is my favorite feature :)There are tons of configuration options that you can find them here .RestrictionsThrough out the entire app it just creates only one index file. It is a problem if you want to create multiple index files for multiple folders within a app. In order to solve this problem I create indipendent scripts for each folder.Let me know how if you have explored Barrelsby ? andwhat is your experience ?Do you want me to create an video on this in my YouTube Channel RupTech ">
-    <meta itemprop="datePublished" content="2018-11-08T17:34:49-05:00">
+    <meta itemprop="datePublished" content="2018-11-08T22:34:49+00:00">
     
 
     <div class="page__inner-wrap">
@@ -488,7 +488,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-08T17:34:49-05:00">November 8, 2018</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-08T22:34:49+00:00">November 8, 2018</time></p>
 
 
       </footer>

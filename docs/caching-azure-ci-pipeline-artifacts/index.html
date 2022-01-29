@@ -48,7 +48,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-01-14T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-01-15T00:00:00+00:00">
 
 
 
@@ -376,7 +376,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Caching Azure CI Pipeline Artifacts">
     <meta itemprop="description" content="If you are following agile then continuous integration is must. I have setupCI/CD in Azure DevOps and I personally found my Angular build is taking lotof time. The npm install step itself takes like around 3 minutes or so todownload all node_modules files. If you are usingnrwl.Nx monorepo then you will notice your npm install ornpm ci step will take around 8 to 10 minutes. Every-time you push the build itwill download all of the node packages from npm.org and will spend same amountof time even-though you have not changed their versions. That is waste of timeand resources.Fortunately, Azure DevOps now offers a new build task calledcache task(Pipeline Caching). In this article I will give you steps to create a BuildDefinition by using Cache Task. I will demonstrate how you can speedup yourbuild process more than 50% or so.Create Node.js ProjectAfter restoring from cache during build time. If I use the node package to runsome program it should work lets test it.add build script in package.json build: node index.jsindex.jsconst chalk = require(&#39;chalk&#39;);console.log(chalk.blue(&#39;Hello world!&#39;));How to know cache location in Azure DevOps.Check the log of npm install or npm ciIn my case it says D:\\a\\.npm which means it is $(Pipeline.Workspace)/.npmin azure devops machine.In this example it says cache location is C:\\npm\\cacheFirst Npm Ci 20sSecond Time Npm Ci &lt;1sAfter first time build if you do not change package-lock.json file and rebuildthen your build should be super fast even less than a second.Steps to create Azure Devops CI Build Definition with CacheCreate new pipeline and select classic editor and start adding task as mentionedbelow.step 1: Add Cache TaskPipeline caching can help reduce build time by allowing the outputs ordownloaded dependencies from one run to be reused in later runs, therebyreducing or avoiding the cost to recreate or re-download the same files again.name: Cache npm Dependencieskey: **/package-lock.json, !**/node_modules/**/package-lock.json, !**/.*/**/package-lock.jsonpath:$(Build.SourcesDirectory)/node_modulesstep 2: Add npm task for ciselect ciInside Control options:  set enabled  Run this task: Select Custom Condition  Add eq(variables[&#39;CacheRestored&#39;],False) in Custom Condition Text.step 3: Add npm task for buildAdd new npm task and call it npm build Add your build script from yourpackage.jsonBuild Definitionpool:  name: Azure Pipelines  demands: npmsteps:  - task: Cache@2    displayName: &#39;Cache npm Dependencies&#39;    inputs:      key: &#39;**/package-lock.json, !**/node_modules/**/package-lock.json,        !**/.*/**/package-lock.json&#39;      path: &#39;$(Build.SourcesDirectory)/node_modules&#39;      cacheHitVar: CacheRestored  - task: Npm@1    displayName: &#39;npm ci&#39;    inputs:      command: ci      verbose: false    condition: eq(variables[&#39;CacheRestored&#39;],False)  - task: Npm@1    displayName: &#39;npm build&#39;    inputs:      command: custom      verbose: false      customCommand: &#39;run build&#39;Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-01-14T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-01-15T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -608,7 +608,7 @@ Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-14T19:00:00-05:00">January 14, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-15T00:00:00+00:00">January 15, 2021</time></p>
 
 
       </footer>

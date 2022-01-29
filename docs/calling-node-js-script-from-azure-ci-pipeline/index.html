@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-01-30T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-01-31T00:00:00+00:00">
 
 
 
@@ -360,7 +360,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Calling Node.js Script from Azure CI Pipeline">
     <meta itemprop="description" content="  If you want to run node.js script from azure-pipelines.yml and get thevalue returned from node.js script and use it in your CI next task. Then readthis article. Example: I wanted to get new build number as per my package.jsonnext version by running node script and update my CI pipeline build number.IntroductionIn this article I will show:  How can you call build.js file to create new build number using package.jsonfile &amp; Azure CI pipeline build Id.  Then update Azure CI pipeline build number with the returned new build number.  Our new build number should be like **-** example:**123-main** or **123-feature1**Creating JavaScript to create new Build NumberCreate build.js file and here we will take buildId and branch-name asparameter passed from azure-pipelines.yml file.Then we will increase the build id by one and add branch name and use that asnew Build Number.const buildId = process.argv[2];const sourceBranchName = process.argv[3];const newVersion = `${+buildId + 1}-${sourceBranchName}`;console.log(newVersion); //Console Log will return the new version to Azure Pipelines.👉 Remember when you write value using console log in your node.js script.Then that value will be shared to the azure pipelines.yml file.Therefore, do not write console log in your script which you don’t want to passto azure pipeline.Creating Azure Pipelines fileNote: When you are creating a variable that is scoped within a single task. Then  use export to set a variable  And use $variable syntax to access variable value.In below example we create num variable and we use $num to read the value ofthe variable.trigger:  - mainsteps:  # calling node.js script  - script: |      export num=$(node ./build.js $(Build.BuildId) $(Build.SourceBranchName))      echo &quot;node.js returned $num&quot;    displayName: &#39;Executing Node.js script&#39;Running Azure CI PipelineReturning multiple value from Node.js to Azure pipelineIn order to return one value make sure just do single console.log and you willreturn exactly that value. Just like we did for build number above.In order to return multiple values to Azure pipeline from node.js script. Don’twrite multiple console.logs.For example if u want to return build and test command to azure pipeline thenuse below syntax in your node.js script file.console.log({build: &#39;npm run build&#39;,test: &#39;npm test&#39;})Updating the Build Number with new build number given by node.js scriptWe will use &quot;##vso[build.updatebuildnumber]$newNumber&quot; script to update buildnumber.Add script to update the build number in the Azure pipelines- script: |    echo &quot;old buildnumber ~&gt;$(Build.BuildNumber)&quot;    export num=$(node ./build.js $(Build.BuildId) $(Build.SourceBranchName))    echo &quot;node.js returned $num&quot;    echo &quot;##vso[build.updatebuildnumber]$num&quot;  displayName: &#39;Update Build Number&#39;Add another new script to show the build number.💡 Do not show the build number on the same previous task otherwise it willdisplay the old build only. You must create new script to show the updated buildnumber.- script: echo &quot;new buildnumber ~&gt;$(Build.BuildNumber)&quot;  displayName: &#39;Display New Build Number&#39;Updating build number  Displaying new buildnumber Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-01-30T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-01-31T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -583,7 +583,7 @@ Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-30T19:00:00-05:00">January 30, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-31T00:00:00+00:00">January 31, 2021</time></p>
 
 
       </footer>

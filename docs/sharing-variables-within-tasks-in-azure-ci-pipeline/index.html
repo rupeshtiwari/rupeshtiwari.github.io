@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-01-21T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-01-22T00:00:00+00:00">
 
 
 
@@ -368,7 +368,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Sharing Variables within Tasks in Azure CI Pipeline">
     <meta itemprop="description" content="Do you want to create one variable in task-1 and read the value of that variablein task-2 in your azure ci pipeline? If your answer is yes then read thisarticle.I will show you how to getnew build number from node.js. Thenwe will use the new build number in another task to update the azure pipelinebuild number.azure devops setvariable taskWe will write expression to run inbuilt task from azure pipeline to set newvariable. When we run script from azure pipeline then basically it is acommand line script you are running in windows command prompt.echo '##vso[task.setvariable variable=one]secondValue'- steps - script : |     echo &quot;##vso[task.setvariable variable=name]Rupesh&quot; - script : echo &quot;My Name is $(name)&quot;  # it will print RupeshNotice we are usingMacro Syntaxto access the variable name. :bulb: Notice I have read the variable name innext task. If I would read the variable on the first task it will print empty.So any task that assigns pipeline variables those are only accessible in nexttask onwards only.Creating Pipeline Variable in Azure pipeline TaskLets create newBuildNumber variable that we are getting from node.js script.:bulb: As we know when you create a pipeline level variable in a task thenwithin the same task you will not be able to access that pipeline variablewithin same task. Therefore, always when you create a pipeline variable then tryto always create new task to read that variable and do other task. Therefore, weare printing the value using task scoped variable $num on “Create NewVariable” task.In below example I am using build.js file to get new build number. Read“Calling Node.js Script from Azure Devops CI Pipeline”to know how am I returning build id from build.js file.Create below task and note we are using setvariable task to createnewBuildNumber variable.- script: |    echo &quot;old buildnumber ~&gt;$(Build.BuildNumber)&quot;    export num=$(node ./build.js $(Build.BuildId) $(Build.SourceBranchName))    echo &quot;##vso[task.setvariable variable=newBuildNumber]$num&quot;    echo &quot;Created new variable 'newBuildNumber' with value $num&quot;  displayName: 'Creating New Variable'  enabled: trueAccessing Pipeline Variable in Azure pipeline Task:bulb: Remember when you are accessing a pipeline variable that is shared acrosstask then you must useMacro Syntaxmeans $(newBuildNumber).In this example I am using $(newBuildNumber) to access/read pipeline scopednewBuildNumber variable created from previous task.We are updating the build number of the azure pipeline.- script: |    echo &quot;Accessing NewBuild Number Variable $(newBuildNumber) &amp; Updating Build Number of Pipeline&quot;    echo &quot;##vso[build.updatebuildnumber]$(newBuildNumber)&quot;  displayName: 'Update Build Number'  enabled: trueDisplaying new Build number of azure pipelineIn order to display updated build number I will use Build.BuildNumber- script:  echo &quot;new buildnumber ~&gt;$(Build.BuildNumber)&quot;  displayName: 'Display New Build Number'  enabled: trueBecome full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-01-21T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-01-22T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -577,7 +577,7 @@ Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-21T19:00:00-05:00">January 21, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-22T00:00:00+00:00">January 22, 2021</time></p>
 
 
       </footer>
