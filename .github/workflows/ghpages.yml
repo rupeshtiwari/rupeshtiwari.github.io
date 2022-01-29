@@ -1,10 +1,11 @@
-name: Powershell Script to deploy on GhPages 
+name: Powershell Script to deploy on GhPages
 on: push
 jobs:
   build:
     runs-on: windows-2019
     steps:
-      - name: Check out repo        
+      - name: Check out repo
         uses: actions/checkout@v2
-      - run: |
+        shell: pwsh
+        run: |
           ./ghpages.ps1
