@@ -4,7 +4,9 @@ jobs:
   build:
     runs-on: windows-2019
     steps:
-      - name: Check out repo
-        shell: pwsh
-        run: |
-          ./ghpages.ps1
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Build the site
+        run: bundle exec jekyll build
+      - name: copy to docs folder
+        run: cp -a ./_site/. docs/
