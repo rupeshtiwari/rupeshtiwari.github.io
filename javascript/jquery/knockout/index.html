@@ -1,0 +1,1068 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Knockout Getting Started - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Knockout Getting Started">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Knockout Getting Started">
+<meta property="og:url" content="https://www.rupeshtiwari.com/javascript/jquery/knockout/">
+
+
+  <meta property="og:description" content="Knockout Getting Started">
+
+
+
+  <meta property="og:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Knockout Getting Started">
+  <meta name="twitter:description" content="Knockout Getting Started">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/javascript/jquery/knockout/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2011-07-21T18:02:37+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/javascript/jquery/knockout/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#javascript" itemprop="item"><span itemprop="name">Javascript</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#jquery" itemprop="item"><span itemprop="name">Jquery</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Knockout Getting Started</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Knockout Getting Started">
+    <meta itemprop="description" content="I came through an open source JavaScript named as “Knockout.js”. After learning this javascript&nbsp;functionality and features. I found it very powerful, when it is used combined with jquery.js. and jquery.tmpl.js. It gives us a JavaScript object named as “ko” that has powerful methods and cool utility methods. I found that knockout helps us to write JavaScript code in MVVM&nbsp;pattern that is very neat and clean object oriented&nbsp;coding practices and pattern. By using ko, you can create your own ViewModel&nbsp;JavaScript object and bind that object with your DOM element. Changes into the DOM element value will dynamically reflect into the ViewModel&nbsp;object and it is vice versa. It is kind of one/ two way&nbsp;data&nbsp;bindings with the DOM element and ViewModel&nbsp;object. For linking with the value of the DOM element and ViewModel object you have given “data-bind” attribute from ko object. It’s data linking functionality is very similar to datalink.js. However, it is not just data binding things that you can achieve using knockout.js. Knockout goes little bit above to that. It has few more advantages like over data linking as:1) Automatic Dependency Tracking.2) Declarative Binding3) Integrated Templating4) Re-rendering the template. Instead of rendering all element it can re-rendered the only element which is being updated. I am going to write few methods and behavior of knockout.js.One Way&nbsp;Data Binding You can use observable() method to make certain DOM element to be observable. That means, if observable DOM value gets changed then the corresponding property of ViewModel&nbsp;object gets changed automatically. In below example I have Name Text Box and Read only label. If you change the name then the viewModel&nbsp;name property will gets&nbsp;changed and whatever DOM element linked with Name property of ViewModel will get changed automatically. Here we have one Span element that is linked with Name property ofthe View Model. Example:[sourcecode language=&quot;html&quot;]&nbsp;&nbsp;&nbsp; Enter Name: You Have Entered: [/sourcecode]&nbsp;[sourcecode language=&quot;javascript&quot;][/sourcecode]You can see I have used data-bind property in the DOM elements in order to link them all with the same ViewModel&nbsp;property. Similarly if you have array of objects on which the changes happens you want to track then you can use Ko.observableArray(). It is helpful in Result Grid while you show list of&nbsp;data and when you change any row. The ViewModel will get updated automatically with that row.Combining Multiple Observable Data [ Two way Data Binding&nbsp;]You can make another DOM element that will depend on 2 or more observable DOM elements. Let’s have one example. Say you have two Text Boxes like: First Name and Last Name. And now you want to show one read-only Text say Full name that is the concatenation of First Name and Last Name. The Full Name Text should automatically get changed when the user will change First Name and Last Name. If you want to achieve this requirement then you can use “dependentObservable” method. You can write “Ko.dependentObservable(callback, object)” See the below example:[sourcecode language=&quot;html&quot;]First Name:&lt;input type=&quot;text&quot; data-bind=&quot;value:Last Name:&lt;input type=&quot; text&quot;=&quot;&quot; text:fullname&quot;=&quot;&quot;&gt;&lt;/p&gt;[/sourcecode]&nbsp;[sourcecode language=&quot;javascript&quot;][/sourcecode]Updating DOM behaviorThere are properties those help on expressing the behavior of DOM Elements. They are many I am listing out few: Visible, Enable, disable, checked.[sourcecode language=&quot;html&quot;]myBooks().length&gt;0&quot;&gt;&lt;/span&gt;&nbsp;&nbsp;&nbsp; Show this div if &#39;myBooks&#39; has at least one Book.&lt;/div&gt;[/sourcecode]&nbsp;[sourcecode language=&quot;javascript&quot;][/sourcecode]Using jQuery Template with KOWe can use jquery&nbsp;template to show list of data like table records. However, if we update any row of the table then in jquery template while rendering the updated row it renders the entire table. In order to overcome this problem knockout came up with foreach helper method that will allow the browser to render those part out of the template modified. Please see the below example: I am adding a new book in my book list and for that I have created one template bookTemplate. On click of Add Book button it only appends the new row in the table using the jquery&nbsp;template. However , while appending the new row it is not rerendering the entire template that is the benefit and performance improvement part.[sourcecode language=&quot;html&quot;]&lt;tbody data-bind=&#39;template: {=&quot;&quot; name:=&quot;&quot; &quot;booktemplate&quot;,foreach:=&quot;&quot; books=&quot;&quot; }&#39;=&quot;&quot;&gt;&lt;/tbody data-bind=&#39;template:&gt;Author NameBook NameaddBook&quot;&gt;Add Book[/sourcecode]&nbsp;[sourcecode language=&quot;javascript&quot;][/sourcecode]&nbsp;[sourcecode language=&quot;javascript&quot;][/sourcecode]Updating ViewModel and DOM ElementSuppose you got some data from server layer using your Model present inside the server layer. And now you want to update the ViewModel&nbsp;and corresponding UI elements linked with the viewModel&nbsp;Properties. In order to update the ViewModel&nbsp;properties, you can use ViewModel&nbsp;properties as a method and pass the new value as an argument and get updated your ViewModel properties with new value. Suppose you want to search a person by name and display the same Name. Below is the steps for the same:Step 1. Pass UI search Criteria to Server. You can use ko.toJSON() method to convert your viewmodel&nbsp;object to a JSON object. You can also use JSON.stringify() however in IE 8 and above browser. In old browser you have to use json2.js file as a reference and can use the stringify method of JSON. However, in viewmodel&nbsp;object we do have extra javascript&nbsp;code so if we use JSON’s stringify method on ViewModelobject then it does not clean them out that’s why it is suggested to us ko.toJSON() method.Step 2. Get the JSON form&nbsp;server side&nbsp;which contains Name. You can use $.getJSON method or $.get or $.ajax to get the JSON object.Step 3. Bind the JSON with the ViewModel You can use viewModel.Name(jsonobject.Name)Step 4. Update the HTML DOM Element. ko will automatically update the DOM element the moment viewModel will get updated.[sourcecode language=&quot;html&quot;]Please Try with &quot;Rupesh&quot;, &quot;Ritesh&quot;, &quot;Rakesh&quot; names.Enter Name to Search:Get Age&nbsp; Age is:[/sourcecode]&nbsp;[sourcecode language=&quot;javascript&quot;][/sourcecode]&nbsp;[sourcecode language=&quot;csharp&quot;]public partial class json : System.Web.UI.Page{protected void Page_Load(object sender, EventArgs e){JavaScriptSerializer&nbsp;sr = new JavaScriptSerializer();string s = Request.Params[&quot;name&quot;];List ps = new List(){new ViewModel(){ Age =23, Name =&quot;Rupesh&quot;},new ViewModel(){ Age =24, Name =&quot;Ritesh&quot;},new ViewModel(){ Age =25, Name =&quot;Rakesh&quot;}};Response.ContentEncoding = Encoding.UTF8;Response.ContentType = &quot;application/json&quot;;var age = (from p in ps where p.Name == s select p.Age).ToArray();int ageStr = (age.Count() != 0) ? age[0] : 0;Response.Write(sr.Serialize(ageStr).ToString());Response.End();}}public class ViewModel{public string Name;public int Age;}[/sourcecode]Using Mapping PluginWe saw in our previous example that in order to update the viewModel&nbsp;after getting updated data from server. We have to call each property of the viewModel&nbsp;as a method and pass the new value. Like viewModel.property1(new value); viewModel.property2(new value)... and so on. However, if you want to update the entire viewModel in one chunk. Then you can do this by using knockout mapping.&nbsp;This&nbsp;plugin will convert the JavaScript object into an observable object. That means all of the properties of the object will become observable. If any of the property will modified then it will modify the corresponding linked DOM automatically. For downloading the ko.mapping.js&nbsp; plugin.Suppose you have below object:[sourcecode language=&quot;javascript&quot;]var&nbsp;store&nbsp; = {&nbsp;&nbsp;&nbsp;item : &quot;Shirt&quot;&nbsp;,&nbsp;size : [21,22,23,24]}[/sourcecode]Now if you want to convert the data into standard viewModel then you just have to write:[sourcecode language=&quot;javascript&quot;]var viewModel = ko.mapping.fromJS(store);[/sourcecode]Now, suppose you got new store value from server side&nbsp;as an JSON&nbsp;formate&nbsp;by making $.get or $.ajax call. And you want to update the each and every property of your viewModel then you can do it by writing one line of code only:[sourcecode language=&quot;javascript&quot;]ko.mapping.updateFromJS(viewModel, store);[/sourcecode]Above line of code will update the viewModel&nbsp;with the latest values of the store. And ko will automatically update the corresponding DOM elements if they are linked up with this viewModel.Completing the MVVM patternIn model MVVM&nbsp;design pattern, we have Model, View and ViewModel&nbsp;object. View is the UI layer, Model is the Server side object that saves or retrieves the data by dealing with the Data Access Layer or any other service or third party. View Model is an abstraction over view that gives the binding of data with the DOM elements. It comprises the presentation logic. So here ViewModel&nbsp;is in UI layer only. As you know that MVVM&nbsp;pattern is made for RIA&nbsp;applications like WPF&nbsp;and Silverlight application. To learn more about MVVM pattern please read Josh Smth&#39;s article&nbsp;.In RIA&nbsp;application, UI layer takes few responsibilities from the server layer and makes the server layer lighter. knowckout.js allows us to write the presentation logic in viewmodel and using ko object.ReferenceFor more details please visit knockoutjs. They have great online tutorial to learn knockout features, please visit this also.Downloads1) jquery 2) knockout.js 3) jquery template.js 4) json2.js">
+    <meta itemprop="datePublished" content="2011-07-21T18:02:37+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Knockout Getting Started
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              
+
+            </nav>
+          </aside>
+        
+        <p>I came through an open source JavaScript named as <a href="http://knockoutjs.com/">“Knockout.js”</a>. After learning this javascript&nbsp;functionality and features. I found it very powerful, when it is used combined with jquery.js. and jquery.tmpl.js. It gives us a JavaScript object named as “ko” that has powerful methods and cool utility methods. I found that knockout helps us to write JavaScript code in MVVM&nbsp;pattern that is very neat and clean object oriented&nbsp;coding practices and pattern. By using ko, you can create your own ViewModel&nbsp;JavaScript object and bind that object with your DOM element. Changes into the DOM element value will dynamically reflect into the ViewModel&nbsp;object and it is vice versa. It is kind of one/ two way&nbsp;data&nbsp;bindings with the DOM element and ViewModel&nbsp;object. For linking with the value of the DOM element and ViewModel object you have given “data-bind” attribute from ko object. It’s data linking functionality is very similar to <a href="https://github.com/jquery/jquery-datalink" target="_blank" rel="noopener noreferrer">datalink.js</a>. However, it is not just data binding things that you can achieve using knockout.js. Knockout goes little bit above to that. It has few more advantages like over data linking as:</p>
+<p>1) Automatic Dependency Tracking.</p>
+<p>2) Declarative Binding</p>
+<p>3) Integrated Templating</p>
+<p>4) Re-rendering the template. Instead of rendering all element it can re-rendered the only element which is being updated. I am going to write few methods and behavior of knockout.js.</p>
+<p><strong>One Way&nbsp;Data Binding </strong></p>
+<p>You can use observable() method to make certain DOM element to be observable. That means, if observable DOM value gets changed then the corresponding property of ViewModel&nbsp;object gets changed automatically. In below example I have Name Text Box and Read only label. If you change the name then the viewModel&nbsp;name property will gets&nbsp;changed and whatever DOM element linked with Name property of ViewModel will get changed automatically. Here we have one Span element that is linked with Name property of<br />
+the View Model. Example:</p>
+<p>[sourcecode language="html"]</p>
+<div>
+&nbsp;&nbsp;&nbsp; Enter Name: <input type="text" data-bind="value:Name" /><br />
+You Have Entered: <span data-bind="text: Name"></span></div>
+<p>[/sourcecode]</p>
+<p>&nbsp;</p>
+<p>[sourcecode language="javascript"]</p>
+<p><script type="text/javascript"><br />
+var viewModel = {<br />
+Name: ko.observable("Rupesh")<br />
+}<br />
+$(function() {<br />
+ko.applyBindings(viewModel);<br />
+});<br />
+</script></p>
+<p>[/sourcecode]</p>
+<p>You can see I have used data-bind property in the DOM elements in order to link them all with the same ViewModel&nbsp;property. Similarly if you have array of objects on which the changes happens you want to track then you can use Ko.observableArray(). It is helpful in Result Grid while you show list of&nbsp;data and when you change any row. The ViewModel will get updated automatically with that row.</p>
+<p><strong>Combining Multiple Observable Data [ Two way Data Binding&nbsp;]</strong></p>
+<p>You can make another DOM element that will depend on 2 or more observable DOM elements. Let’s have one example. Say you have two Text Boxes like: First Name and Last Name. And now you want to show one read-only Text say Full name that is the concatenation of First Name and Last Name. The Full Name Text should automatically get changed when the user will change First Name and Last Name. If you want to achieve this requirement then you can use “dependentObservable” method. You can write “Ko.dependentObservable(callback, object)” See the below example:</p>
+<p>[sourcecode language="html"]</p>
+<div>
+First Name:<br />
+&lt;input type="text" data-bind="value:<span><br />
+Last Name:<br />
+&lt;input type=" text"="" text:fullname"=""&gt;&lt;/p&gt;
+<p>[/sourcecode]</p>
+<p>&nbsp;</p>
+<p>[sourcecode language="javascript"]</p>
+<p><script type="text/javascript"><br />
+var viewModel = {<br />
+FirstName: ko.observable("Rupesh")<br />
+,LastName: ko.observable("Tiwari")<br />
+}<br />
+viewModel.FullName = ko.dependentObservable(function() {<br />
+return this.FirstName() + " " + this.LastName();<br />
+}, viewModel);</p>
+<p>$(function() {<br />
+ko.applyBindings(viewModel);<br />
+});</p>
+<p></script></p>
+<p>[/sourcecode]</p>
+<p><strong>Updating DOM behavior</strong></p>
+<p>There are properties those help on expressing the behavior of DOM Elements. They are many I am listing out few: Visible, Enable, disable, checked.</p>
+<p>[sourcecode language="html"]</p>
+<div data-bind="visible:&lt;span class=">myBooks().length&gt;0"&gt;</div>
+<p>&lt;/span&gt;
+<pre>
+</pre>
+<pre>&nbsp;&nbsp;&nbsp; Show this div if 'myBooks' has at least one Book.</pre>
+&lt;/div&gt;
+<p>[/sourcecode]</p>
+<p>&nbsp;</p>
+<p>[sourcecode language="javascript"]</p>
+<p><script type="text/javascript"><br />
+var viewModel = {</p>
+<p>    myBooks: ko.observableArray([]) // Initially empty, so div is hidden<br />
+ };<br />
+ viewModel.myBooks.push("jQuery In Action"); // Now visible</p>
+<p>$(function() {<br />
+ko.applyBindings(viewModel);<br />
+});<br />
+</script></p>
+<p>[/sourcecode]</p>
+<p><strong>Using jQuery Template with KO</strong></p>
+<p>We can use jquery&nbsp;template to show list of data like table records. However, if we update any row of the table then in jquery template while rendering the updated row it renders the entire table. In order to overcome this problem knockout came up with <strong>foreach </strong>helper method that will allow the browser to render those part out of the template modified. Please see the below example: I am adding a new book in my book list and for that I have created one template bookTemplate. On click of Add Book button it only appends the new row in the table using the jquery&nbsp;template. However , while appending the new row it is not rerendering the entire template that is the benefit and performance improvement part.</p>
+<p>[sourcecode language="html"]</p>
+<p dir="ltr">
+<div>
+&lt;tbody data-bind='template: {="" name:="" "booktemplate",foreach:="" books="" }'=""&gt;
+&lt;/tbody data-bind='template:&gt;
+<table>
+<thead>
+<tr>
+<th>
+Author Name</th>
+<th>
+Book Name</th>
+</tr>
+</thead>
+</table>
+<p><button data-bind="click: &lt;span class=">addBook"&gt;</button><br />
+Add Book</p>
+</div>
+<p>[/sourcecode]</p>
+<p>&nbsp;</p>
+<p>[sourcecode language="javascript"]</p>
+<p><script type="text/html" id="bookTemplate"></p>
+<tr>
+<input type="text" data-bind="value: <span class=" />AuthorName"/><br />
+<input type="text" data-bind="value: <span class=" />BookName" /><br />
+</tr>
+<p></script></p>
+<p>[/sourcecode]</p>
+<p>&nbsp;</p>
+<p>[sourcecode language="javascript"]</p>
+<p><script type="text/javascript"><br />
+var viewModel = {<br />
+books: ko.observableArray([<br />
+{ AuthorName: "Yehuda Katz", BookName: "jQuery In Action" },<br />
+{ AuthorName: "Cody Lindley ", BookName: "jQuery Cookbook" }<br />
+]),<br />
+addBook: function () {<br />
+this.books.push({AuthorName: "Dan Wellman", BookName: "jQuery UI" });<br />
+}<br />
+};<br />
+ko.applyBindings(viewModel);<br />
+</script></p>
+<p>[/sourcecode]</p>
+<p><strong>Updating ViewModel and DOM Element</strong></p>
+<p>Suppose you got some data from server layer using your Model present inside the server layer. And now you want to update the ViewModel&nbsp;and corresponding UI elements linked with the viewModel&nbsp;Properties. In order to update the ViewModel&nbsp;properties, you can use ViewModel&nbsp;properties as a method and pass the new value as an argument and get updated your ViewModel properties with new value. Suppose you want to search a person by name and display the same Name. Below is the steps for the same:</p>
+<p>Step 1. Pass UI search Criteria to Server. You can use ko.toJSON() method to convert your viewmodel&nbsp;object to a JSON object. You can also use JSON.stringify() however in IE 8 and above browser. In old browser you have to use json2.js file as a reference and can use the stringify method of JSON. However, in viewmodel&nbsp;object we do have extra javascript&nbsp;code so if we use JSON’s stringify method on ViewModel<br />
+object then it does not clean them out that’s why it is suggested to us ko.toJSON() method.</p>
+<p>Step 2. Get the JSON form&nbsp;server side&nbsp;which contains Name. You can use $.getJSON method or $.get or $.ajax to get the JSON object.</p>
+<p>Step 3. Bind the JSON with the ViewModel You can use viewModel.Name(jsonobject.Name)</p>
+<p>Step 4. Update the HTML DOM Element. ko will automatically update the DOM element the moment viewModel will get updated.</p>
+<p>[sourcecode language="html"]<br />
+<em>Please Try with "Rupesh", "Ritesh", "Rakesh" names.</em><br />
+Enter Name to Search:<br />
+<input type="text" data-bind="value:Name" /><br />
+<button id="btnSearch" data-bind="click:Search"><br />
+Get Age</button></p>
+<div data-bind="visible:Age">
+&nbsp; Age is:
+</div>
+<p>[/sourcecode]</p>
+<p>&nbsp;</p>
+<p>[sourcecode language="javascript"]</p>
+<p><script type="text/javascript"><br />
+var viewModel = {<br />
+    Name: ko.observable()<br />
+    ,Age:ko.observable()<br />
+    ,Search:function(){<br />
+        $.getJSON("json.aspx",{name: viewModel.Name()},function(data) {<br />
+          viewModel.Age(data); // updating the viewModel after getting data from server.<br />
+     });<br />
+    }<br />
+};<br />
+$(function() {<br />
+    ko.applyBindings(viewModel);<br />
+});<br />
+</script></p>
+<p>[/sourcecode]</p>
+<p>&nbsp;</p>
+<p>[sourcecode language="csharp"]</p>
+<p>public partial class json : System.Web.UI.Page<br />
+{<br />
+protected void Page_Load(object sender, EventArgs e)<br />
+{<br />
+JavaScriptSerializer&nbsp;sr = new JavaScriptSerializer();<br />
+string s = Request.Params["name"];<br />
+List<viewmodel> ps = new List<viewmodel>(){<br />
+new ViewModel(){ Age =23, Name ="Rupesh"}<br />
+,new ViewModel(){ Age =24, Name ="Ritesh"}<br />
+,new ViewModel(){ Age =25, Name ="Rakesh"}<br />
+};</viewmodel></viewmodel></p>
+<p>Response.ContentEncoding = Encoding.UTF8;<br />
+Response.ContentType = "application/json";<br />
+var age = (from p in ps where p.Name == s select p.Age).ToArray();<br />
+int ageStr = (age.Count() != 0) ? age[0] : 0;<br />
+Response.Write(sr.Serialize(ageStr).ToString());<br />
+Response.End();</p>
+<p>}<br />
+}<br />
+public class ViewModel<br />
+{<br />
+public string Name;<br />
+public int Age;<br />
+}</p>
+<p>[/sourcecode]</p>
+<p><strong>Using Mapping Plugin</strong></p>
+<p>We saw in our previous example that in order to update the viewModel&nbsp;after getting updated data from server. We have to call each property of the viewModel&nbsp;as a method and pass the new value. Like viewModel.property1(new value); viewModel.property2(new value)... and so on. However, if you want to update the entire viewModel in one chunk. Then you can do this by using knockout mapping.&nbsp;This&nbsp;plugin will convert the JavaScript object into an observable object. That means all of the properties of the object will become observable. If any of the property will modified then it will modify the corresponding linked DOM automatically. For downloading the <a title="Mapping Plugin" href="https://github.com/SteveSanderson/knockout.mapping/tree/master/build/output" target="_blank" rel="noopener noreferrer">ko.mapping.js&nbsp;</a> plugin.</p>
+<p>Suppose you have below object:</p>
+<p>[sourcecode language="javascript"]</p>
+<p>var&nbsp;store&nbsp; = {</p>
+<p>&nbsp;&nbsp;&nbsp;item : "Shirt"</p>
+<p>&nbsp;,&nbsp;size : [21,22,23,24]</p>
+<p>}</p>
+<p>[/sourcecode]</p>
+<p>Now if you want to convert the data into standard viewModel then you just have to write:</p>
+<p>[sourcecode language="javascript"]</p>
+<p>var viewModel = ko.mapping.fromJS(store);</p>
+<p>[/sourcecode]</p>
+<p>Now, suppose you got new store value from server side&nbsp;as an JSON&nbsp;formate&nbsp;by making $.get or $.ajax call. And you want to update the each and every property of your viewModel then you can do it by writing one line of code only:</p>
+<p>[sourcecode language="javascript"]</p>
+<p>ko.mapping.updateFromJS(viewModel, store);</p>
+<p>[/sourcecode]</p>
+<p>Above line of code will update the viewModel&nbsp;with the latest values of the store. And ko will automatically update the corresponding DOM elements if they are linked up with this viewModel.</p>
+<p><strong>Completing the MVVM pattern</strong></p>
+<p>In model MVVM&nbsp;design pattern, we have Model, View and ViewModel&nbsp;object. View is the UI layer, Model is the Server side object that saves or retrieves the data by dealing with the Data Access Layer or any other service or third party. View Model is an abstraction over view that gives the binding of data with the DOM elements. It comprises the presentation logic. So here ViewModel&nbsp;is in UI layer only. As you know that MVVM&nbsp;pattern is made for RIA&nbsp;applications like WPF&nbsp;and Silverlight application. To learn more about MVVM pattern please read <a href="http://msdn.microsoft.com/en-us/magazine/dd419663.aspx" target="_blank" rel="noopener noreferrer">Josh Smth's article</a>&nbsp;.</p>
+<p>In RIA&nbsp;application, UI layer takes few responsibilities from the server layer and makes the server layer lighter. knowckout.js allows us to write the presentation logic in viewmodel and using ko object.</p>
+<p><strong>Reference</strong></p>
+<p>For more details please visit <a href="http://knockoutjs.com/" target="_blank" rel="noopener noreferrer">knockoutjs</a>. They have great online <a href="http://learn.knockoutjs.com/" target="_blank" rel="noopener noreferrer">tutorial</a> to learn knockout features, please visit this also.</p>
+<p><strong>Downloads</strong></p>
+<p>1) <a href="http://jquery.com/" target="_blank" rel="noopener noreferrer">jquery</a> 2) <a href="http://knockoutjs.com/" target="_blank" rel="noopener noreferrer">knockout.js</a> 3) <a href="https://github.com/jquery/jquery-tmpl" target="_blank" rel="noopener noreferrer">jquery template.js</a> 4) <a href="http://www.json.org/json2.js" target="_blank" rel="noopener noreferrer">json2.js</a></p>
+</p></p></span></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#javascript" class="page__taxonomy-item" rel="tag">javascript</a><span class="sep">, </span>
+    
+      <a href="/tags/#jquery" class="page__taxonomy-item" rel="tag">jquery</a><span class="sep">, </span>
+    
+      <a href="/tags/#knockout" class="page__taxonomy-item" rel="tag">knockout</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#javascript" class="page__taxonomy-item" rel="tag">javascript</a><span class="sep">, </span>
+    
+      <a href="/categories/#jquery" class="page__taxonomy-item" rel="tag">jquery</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2011-07-21T18:02:37+00:00">July 21, 2011</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Knockout+Getting+Started%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fjavascript%2Fjquery%2Fknockout%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fjavascript%2Fjquery%2Fknockout%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fjavascript%2Fjquery%2Fknockout%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/jquery/jquery-part-2/" class="pagination--pager" title="Basics of jQuery
+">Previous</a>
+    
+    
+      <a href="/excel/how-to-use-vlookup/" class="pagination--pager" title="How to use VLOOKUP in Microsoft Excel
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-availability-set-vs-availability-zone/" rel="permalink">Azure Availability Set Vs Availability Zone
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-update-domain-vs-fault-domain/" rel="permalink">Azure Update Domain vs Fault Domain
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/roadmap-for-mastering-competitive-programming-for-beginners/" rel="permalink">Roadmap for mastering Coding &amp; Competitive Programming interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junio...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-start-preparing-for-coding-interview/" rel="permalink">How to start preparing for coding interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies lik...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128916623-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128916623-7', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/javascript/jquery/knockout/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/javascript/jquery/knockout"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

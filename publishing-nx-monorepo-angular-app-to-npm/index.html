@@ -1,0 +1,1038 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Publishing Nx Monorepo Angular App to NPM - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="learn how to publish angular app to npm from nx monorepo apps">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Publishing Nx Monorepo Angular App to NPM">
+<meta property="og:url" content="https://www.rupeshtiwari.com/publishing-nx-monorepo-angular-app-to-npm/">
+
+
+  <meta property="og:description" content="learn how to publish angular app to npm from nx monorepo apps">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/bgL1DCX.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Publishing Nx Monorepo Angular App to NPM">
+  <meta name="twitter:description" content="learn how to publish angular app to npm from nx monorepo apps">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/publishing-nx-monorepo-angular-app-to-npm/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/bgL1DCX.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-01-25T00:00:00+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/publishing-nx-monorepo-angular-app-to-npm/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/QETXvJI.png" alt="Publishing Nx Monorepo Angular App to NPM" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Publishing Nx Monorepo Angular App to NPM</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Publishing Nx Monorepo Angular App to NPM">
+    <meta itemprop="description" content="  Do you want to publish your nx monorepo app to npmjs.org? Inthis article, I will explain how can u publish your app to npmjs.org.IntroductionIn my monorepo, when I build my app then inside the dist folder I get myapplication dist/apps/onlinestore-dashboard. I will show you how to automatethings such that you can publish it into npm.org. Then anyone can install it asnode package and use it in .net project or any other server side project’s homepage.In Nx Monorepo Apps are not publishable by designBy default, Nrwl.Nx Monorepo Angular apps are not publishable. They don’t expectyou to put your apps in npm.org or your local microsoft npm repository.No package.json in App projectsNotice that in our application there is no package.json file. So by default itis not publishable to npm. If you build this application then you can noticeinside the dist folder you will not have package.json file.Lets see this in action go ahead in terminal and runnx build onlinestore-dashboard Check the dist folder you will see there is nopackage.json file. In order to make your application as npm package you need to have package.jsonfile.Lets fix it I will have to:  Add package.json to our application  Copy the package.json file to the dist folder after build is done.Adding new package.json file to appGo to onlinestore-dashboard project and add a package.json file.{  &quot;name&quot;: &quot;@fsms/onlinestore-dashboard&quot;,  &quot;version&quot;: &quot;0.0.1&quot;,  &quot;peerDependencies&quot;: {    &quot;@angular/common&quot;: &quot;^10.1.6&quot;,    &quot;@angular/core&quot;: &quot;^10.1.6&quot;  },  &quot;dependencies&quot;: {    &quot;tslib&quot;: &quot;^2.0.0&quot;  }}If you want to publish to your local Microsoft npm repository. Then you must add.npmrc file to your application.Copying Packag.json to Dist folderInstall copyfiles npm package as dev dependency.Run below scriptnpm i -D copyfilesNext lest create below script for copying package.json file in package.jsonfile.&quot;copy:dashboard:prd&quot;: &quot;copyfiles ./apps/onlinestore-dashboard/package.json ./dist&quot;If you want to publish to your local Microsoft npm repository. Then you mustcopy .npmrc file to dist folder.I am planning to publish this application over public npm.org. Therefore, I amnot adding any .npmrc file.Building applicationNow lets make a script which will build our application and then copypackage.json file.&quot;build:dashboard:prd&quot; :&quot;nx build onlinestore-dashboard &amp;&amp; npm run copy:dashboard:prd&quot;Lets run this above script.Verify the dist folder and notice package.json file is now present.Bumping the package.json versionIf you do not bump the version of the package.json file. Then you will endedduplicate versions and npm.org will throw error something like thisERR! You cannot publish over the previously published versions:So lets add below scripts to bump the version.&quot;publish:dashboard:patch&quot;:&quot;cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force&quot;,&quot;publish:dashboard:major&quot;:&quot;cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force&quot;,&quot;publish:dashboard:minor&quot;:&quot;cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force&quot;Now lets run:npm run publish:dashboard:patchNotice version in package.json in dist folder increased to 0.0.2{  &quot;name&quot;: &quot;@fsms/onlinestore-dashboard&quot;,  &quot;version&quot;: &quot;0.0.2&quot;,  &quot;peerDependencies&quot;: {    &quot;@angular/common&quot;: &quot;^10.1.6&quot;,    &quot;@angular/core&quot;: &quot;^10.1.6&quot;  },  &quot;dependencies&quot;: {    &quot;tslib&quot;: &quot;^2.0.0&quot;  }}Publishing app in npmLets update our script to publish to npm add npm publish --access public.&quot;publish:dashboard:patch&quot;:&quot;cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force &amp;&amp; npm publish --access public&quot;,&quot;publish:dashboard:major&quot;:&quot;cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force &amp;&amp; npm publish --access public&quot;,&quot;publish:dashboard:minor&quot;:&quot;cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force &amp;&amp; npm publish --access public&quot;Login to npm run npm login enter your username, password and email id.Verify app is publishedLogin to npm.org and go to your account and search for your package.https://www.npmjs.com/package/@fsms/onlinestore-dashboardConclusionYou learn how to publish a package to public organization. Still if you have anrwl.Nx monorepo. Then you need to write custom node.js code to identify whichapplication is changed then bump the version for that application only andpublish the same app to npm registry. In my next article I will explain that indetail.Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
+    <meta itemprop="datePublished" content="2021-01-25T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Publishing Nx Monorepo Angular App to NPM
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#introduction">Introduction</a></li><li><a href="#in-nx-monorepo-apps-are-not-publishable-by-design">In Nx Monorepo Apps are not publishable by design</a></li><li><a href="#no-packagejson-in-app-projects">No package.json in App projects</a></li><li><a href="#adding-new-packagejson-file-to-app">Adding new package.json file to app</a></li><li><a href="#copying-packagjson-to-dist-folder">Copying Packag.json to Dist folder</a></li><li><a href="#building-application">Building application</a></li><li><a href="#bumping-the-packagejson-version">Bumping the package.json version</a></li><li><a href="#publishing-app-in-npm">Publishing app in npm</a></li><li><a href="#verify-app-is-published">Verify app is published</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Do you want to publish your <a href="https://nx.dev">nx monorepo</a> app to npmjs.org? In
+this article, I will explain how can u publish your app to npmjs.org.</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In my monorepo, when I build my app then inside the dist folder I get my
+application <strong>dist/apps/onlinestore-dashboard</strong>. I will show you how to automate
+things such that you can publish it into npm.org. Then anyone can install it as
+node package and use it in .net project or any other server side project’s home
+page.</p>
+
+<h2 id="in-nx-monorepo-apps-are-not-publishable-by-design">In Nx Monorepo Apps are not publishable by design</h2>
+
+<p>By default, Nrwl.Nx Monorepo Angular apps are not publishable. They don’t expect
+you to put your apps in npm.org or your local microsoft npm repository.</p>
+
+<h2 id="no-packagejson-in-app-projects">No package.json in App projects</h2>
+
+<p>Notice that in our application there is no <code class="language-plaintext highlighter-rouge">package.json</code> file. So by default it
+is not publishable to npm. If you build this application then you can notice
+inside the dist folder you will not have package.json file.
+<img src="https://i.imgur.com/kCdTCxu.png" alt="" /></p>
+
+<p>Lets see this in action go ahead in terminal and run
+<code class="language-plaintext highlighter-rouge">nx build onlinestore-dashboard</code> Check the dist folder you will see there is no
+package.json file. <img src="https://i.imgur.com/sgqkBVO.png" alt="" /></p>
+
+<p>In order to make your application as npm package you need to have package.json
+file.</p>
+
+<p>Lets fix it I will have to:</p>
+
+<ul>
+  <li>Add package.json to our application</li>
+  <li>Copy the package.json file to the dist folder after build is done.</li>
+</ul>
+
+<h2 id="adding-new-packagejson-file-to-app">Adding new package.json file to app</h2>
+
+<p>Go to onlinestore-dashboard project and add a <code class="language-plaintext highlighter-rouge">package.json</code> file.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@fsms/onlinestore-dashboard"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"peerDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"@angular/common"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^10.1.6"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"@angular/core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^10.1.6"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"tslib"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^2.0.0"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>If you want to publish to your local Microsoft npm repository. Then you must add
+<code class="language-plaintext highlighter-rouge">.npmrc</code> file to your application.</p>
+
+<h2 id="copying-packagjson-to-dist-folder">Copying Packag.json to Dist folder</h2>
+
+<p>Install <code class="language-plaintext highlighter-rouge">copyfiles</code> npm package as dev dependency.</p>
+
+<p>Run below script</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm i -D copyfiles</code></p>
+
+<p>Next lest create below script for copying package.json file in package.json
+file.</p>
+
+<p><code class="language-plaintext highlighter-rouge">"copy:dashboard:prd": "copyfiles ./apps/onlinestore-dashboard/package.json ./dist"</code></p>
+
+<p>If you want to publish to your local Microsoft npm repository. Then you must
+copy <code class="language-plaintext highlighter-rouge">.npmrc</code> file to dist folder.</p>
+
+<p>I am planning to publish this application over public npm.org. Therefore, I am
+not adding any <code class="language-plaintext highlighter-rouge">.npmrc</code> file.</p>
+
+<h2 id="building-application">Building application</h2>
+
+<p>Now lets make a script which will build our application and then copy
+package.json file.</p>
+
+<p><code class="language-plaintext highlighter-rouge">"build:dashboard:prd" :"nx build onlinestore-dashboard &amp;&amp; npm run copy:dashboard:prd"</code></p>
+
+<p>Lets run this above script.</p>
+
+<p><img src="https://i.imgur.com/aALuog2.png" alt="" /></p>
+
+<p>Verify the <code class="language-plaintext highlighter-rouge">dist</code> folder and notice <code class="language-plaintext highlighter-rouge">package.json</code> file is now present.</p>
+
+<p><img src="https://i.imgur.com/oL4w0cM.png" alt="" /></p>
+
+<h2 id="bumping-the-packagejson-version">Bumping the package.json version</h2>
+
+<p>If you do not bump the version of the package.json file. Then you will ended
+duplicate versions and npm.org will throw error something like this</p>
+
+<pre><code class="language-error">ERR! You cannot publish over the previously published versions:
+</code></pre>
+
+<p>So lets add below scripts to bump the version.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"publish:dashboard:patch"</span><span class="p">:</span><span class="s2">"cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force"</span><span class="err">,</span><span class="w">
+</span><span class="nl">"publish:dashboard:major"</span><span class="p">:</span><span class="s2">"cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force"</span><span class="err">,</span><span class="w">
+</span><span class="nl">"publish:dashboard:minor"</span><span class="p">:</span><span class="s2">"cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Now lets run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm run publish:dashboard:patch</code></p>
+
+<p>Notice version in package.json in dist folder increased to <code class="language-plaintext highlighter-rouge">0.0.2</code></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@fsms/onlinestore-dashboard"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0.2"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"peerDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"@angular/common"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^10.1.6"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"@angular/core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^10.1.6"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"tslib"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^2.0.0"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="publishing-app-in-npm">Publishing app in npm</h2>
+
+<p>Lets update our script to publish to npm add <code class="language-plaintext highlighter-rouge">npm publish --access public</code>.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"publish:dashboard:patch"</span><span class="p">:</span><span class="s2">"cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force &amp;&amp; npm publish --access public"</span><span class="err">,</span><span class="w">
+</span><span class="nl">"publish:dashboard:major"</span><span class="p">:</span><span class="s2">"cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force &amp;&amp; npm publish --access public"</span><span class="err">,</span><span class="w">
+</span><span class="nl">"publish:dashboard:minor"</span><span class="p">:</span><span class="s2">"cd dist/apps/onlinestore-dashboard &amp;&amp; npm version patch --force &amp;&amp; npm publish --access public"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Login to npm run <code class="language-plaintext highlighter-rouge">npm login</code> enter your username, password and email id.</p>
+
+<p><img src="https://i.imgur.com/3SYfX88.png" alt="" /></p>
+
+<p><img src="https://i.imgur.com/ZlSMJYx.png" alt="" /></p>
+
+<h2 id="verify-app-is-published">Verify app is published</h2>
+
+<p>Login to npm.org and go to your account and search for your package.</p>
+
+<p><img src="https://i.imgur.com/g5sT0vr.png" alt="" /></p>
+
+<p>https://www.npmjs.com/package/@fsms/onlinestore-dashboard</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You learn how to publish a package to public organization. Still if you have a
+nrwl.Nx monorepo. Then you need to write custom node.js code to identify which
+application is changed then bump the version for that application only and
+publish the same app to npm registry. In my next article I will explain that in
+detail.</p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>If you want to become full stack developer and grow your carrier as new software
+developer or Lead Developer/Architect. Consider subscribing to our full stack
+development training programs. We have All-Access Monthly membership plans and
+you will get unlimited access to all of our video courses, slides, source code &amp;
+Monthly video calls.</p>
+
+<ul>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to
+access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to
+get everything from PRO plan. Additionally, you will get access to monthly
+live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more
+help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today
+<a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board
+on your dream software company as a Developer,Architect or Lead Engineer role.
+<strong>💖 Say 👋 to me!</strong></p>
+</blockquote>
+
+<div> 
+Rupesh Tiwari </div>
+<div>
+<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div>
+<div>
+✉️ <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> </div>
+<div>
+Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
+<div>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#npm" class="page__taxonomy-item" rel="tag">npm</a><span class="sep">, </span>
+    
+      <a href="/tags/#nx" class="page__taxonomy-item" rel="tag">nx</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-25T00:00:00+00:00">January 25, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Publishing+Nx+Monorepo+Angular+App+to+NPM%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fpublishing-nx-monorepo-angular-app-to-npm%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fpublishing-nx-monorepo-angular-app-to-npm%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fpublishing-nx-monorepo-angular-app-to-npm%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/enforcing-dependency-constraints-in-nx-monorepo-projects/" class="pagination--pager" title="Enforcing Dependency Constraints in Nx Monorepo Projects
+">Previous</a>
+    
+    
+      <a href="/enforcing-dependency-constraints-within-service-in-nx-monorepo-workspace/" class="pagination--pager" title="Enforcing Dependency Constraints Within Service in Nx Monorepo workspace
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-availability-set-vs-availability-zone/" rel="permalink">Azure Availability Set Vs Availability Zone
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-update-domain-vs-fault-domain/" rel="permalink">Azure Update Domain vs Fault Domain
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/roadmap-for-mastering-competitive-programming-for-beginners/" rel="permalink">Roadmap for mastering Coding &amp; Competitive Programming interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junio...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-start-preparing-for-coding-interview/" rel="permalink">How to start preparing for coding interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies lik...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128916623-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128916623-7', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/publishing-nx-monorepo-angular-app-to-npm/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/publishing-nx-monorepo-angular-app-to-npm"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

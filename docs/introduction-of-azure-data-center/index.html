@@ -1,0 +1,979 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Introduction of Azure Data Center - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Introduction of Azure Data Center">
+<meta property="og:url" content="https://www.rupeshtiwari.com/introduction-of-azure-data-center/">
+
+
+  <meta property="og:description" content="Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/zZYQYQA.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Introduction of Azure Data Center">
+  <meta name="twitter:description" content="Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/introduction-of-azure-data-center/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/zZYQYQA.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2022-01-14T19:00:00-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/introduction-of-azure-data-center/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/3PR1wRa.png" alt="Introduction of Azure Data Center" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Introduction of Azure Data Center</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Introduction of Azure Data Center">
+    <meta itemprop="description" content="  Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.">
+    <meta itemprop="datePublished" content="2022-01-14T19:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Introduction of Azure Data Center
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-is-azure-data-center">What is Azure Data Center?</a></li><li><a href="#what-is-planned-maintenance">What is Planned Maintenance?</a></li><li><a href="#what-is-unplanned-maintenance">What is Unplanned Maintenance?</a></li><li><a href="#why-do-we-separate-servers-in-different-racks">Why do we separate servers in different Racks?</a></li><li><a href="#why-group-servers-in-update-domains">Why group servers in Update Domains?</a></li><li><a href="#what-is-availability-set-in-data-center">What is Availability Set in Data-Center?</a></li><li><a href="#what-is-availability-zones">What is Availability Zones?</a></li><li><a href="#azure-availability-sla">Azure Availability SLA</a></li><li><a href="#reference">Reference</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Did you know how your servers are placed in Azure Data-Center? Do you understand how Azure Data Center protects your servers against software or hardware disasters? Read this article to understand Azure Data Center in-depth.</p>
+</blockquote>
+
+<h2 id="what-is-azure-data-center">What is Azure Data Center?</h2>
+
+<p><img src="https://i.imgur.com/VLOm3Gl.png" alt="" class="full" /></p>
+
+<p>Azure Data Center has <strong>Servers</strong>, Networks Switch, Power Supply &amp; Hardware’s. Servers are placed on a <strong>Server Rack</strong>. Each Server Rack with it’s own Power Supply and Network Switch is called as <a href="#why-do-we-separate-servers-in-different-racks"><strong>Fault Domain</strong></a>. Each Server Rack has multiple <a href="#why-group-servers-in-update-domains">Update Domains</a>. Data-center normally comprises of lots of Fault Domains.</p>
+
+<p><img src="https://imgur.com/m79b5dF.png" alt="" class="full" /></p>
+
+<p>In the Data Center the servers are divided into multiple physical and logical groups. The physical grouping is called <a href="#why-do-we-separate-servers-in-different-racks">Fault Domain</a> and logical grouping is called <a href="#why-group-servers-in-update-domains">Update Domain</a>. Each Rack of servers with its own power supply and network switch as one fault domain. If there are 10 Racks in the Data Center means you have 10 different Fault Domains.</p>
+
+<h2 id="what-is-planned-maintenance">What is Planned Maintenance?</h2>
+
+<p>A planned maintenance event is when the underlying Azure fabric that hosts VMs is updated by Microsoft.</p>
+
+<ul>
+  <li>Security Patch, Performance patch, add and update features are called as planed maintenance.</li>
+  <li>After planned maintenance you must reboot your VMs.</li>
+</ul>
+
+<h2 id="what-is-unplanned-maintenance">What is Unplanned Maintenance?</h2>
+
+<p>Unplanned maintenance events involve a hardware failure in the data center, such as:</p>
+
+<ul>
+  <li>power outage</li>
+  <li>disk failure</li>
+</ul>
+
+<h2 id="why-do-we-separate-servers-in-different-racks">Why do we separate servers in different Racks?</h2>
+
+<p>In order to provide single point of failures like you spread your money in different banks and mutual funds 😃.
+<img src="https://i.imgur.com/UOB76UE.png" alt="" class="full" /></p>
+
+<p>Example lets say you have 100 servers in data center and they are all connected by single power supply and network switch.</p>
+
+<p><img src="https://i.imgur.com/DTQaHad.png" alt="" class="full" /></p>
+
+<p>What if the single power supply or network will fail it will bring down to all of the servers in the data-center.</p>
+
+<p><img src="https://i.imgur.com/vmfzt7W.png" alt="" class="full" /></p>
+
+<p>Therefore, in a data-center we spread the servers in the different Racks with their own Power and Network Switch called as Fault Domain.</p>
+
+<p><img src="https://i.imgur.com/RPs6DUa.png" alt="" class="full" /></p>
+
+<p>So if one Rack with 10 servers are affected then rest of the other Racks means remaining 90 servers are still up and running.</p>
+
+<p>By grouping servers in multiple Racks or Fault domains we are eliminating single point of failure.</p>
+
+<h2 id="why-group-servers-in-update-domains">Why group servers in Update Domains?</h2>
+
+<p>Similar to Fault Domain your servers will be also grouped logically to an Update Domain. Very often planned maintenance requires server patches and software updates need to be applied on the Azure Hypervisor which is actually hosting your VMs. So your VM on that Azure Hypervisor can go down while patch is being applied. And we don’t all the servers to be rebooted at the same time.
+Therefore, all the servers within same update domain gets rebooted at one time and they take 30 minutes time to recover back. Meanwhile the machines which are in different update domain can serve the client requests. Therefore, update domain is a group of servers that can be updated and rebooted at the same time.</p>
+
+<h2 id="what-is-availability-set-in-data-center">What is Availability Set in Data-Center?</h2>
+
+<p><img src="https://i.imgur.com/DvS3Egk.png" alt="" class="full" /></p>
+
+<p>Availability Set is a concept within a data-center. The servers in a data center are divided into multiple physical groups called Fault Domains and logical groups called Update Domains.</p>
+
+<p><img src="https://i.imgur.com/WbB1nfl.png" alt="" class="full" /></p>
+
+<p><strong>Availability Set</strong> in data-center is made up of multiple Fault Domains and Update Domains.</p>
+
+<p><img src="https://i.imgur.com/6LXoZsL.png" alt="" class="full" /></p>
+
+<p>When you create an Availability Set you can decide how many Fault Domains and Update domains you want. A group of servers physically grouped are called Fault Domain and a logical group of server is called as Update Domain.</p>
+
+<h2 id="what-is-availability-zones">What is Availability Zones?</h2>
+
+<p><img src="https://i.imgur.com/nUp33NS.png" alt="" class="full" /></p>
+
+<p><strong>Availability Zones</strong> also has multiple Fault Domains and Update Domains. So in case Availability Zones, each Availability Zone is consider as a single Fault Domain and Update Domain.</p>
+
+<p><img src="https://i.imgur.com/HcY2l6z.png" alt="" class="full" /></p>
+
+<p>Availability Zone is a unique physical location within an Azure Region. Each Availability Zone has multiple data-centers with independent Power supply, Network switch and Cooling system. All Region has Availability Zone.</p>
+
+<p><img src="https://i.imgur.com/mCvNCTS.png" alt="" class="full" /></p>
+
+<p>Each Region has minimum 3 Availability Zones. At the Region level you can think of Availability Zone as 3 Fault Domains and 3 Update Domains.
+<img src="https://i.imgur.com/M9JL273.png" alt="" class="full" /></p>
+
+<p>Suppose if you keep 3 VMs in 3 different Availability Zones. Then if 1st Availability Zone is down then your 1st VM will be not working. However, your business will not be affected since other 2 Availability Zones are still up and running. Azure will route your client request to next available Availability Zone.</p>
+
+<h2 id="azure-availability-sla">Azure Availability SLA</h2>
+
+<p>With Availability Zone Microsoft offers industries best SLA 99.99% up time.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Single VM</th>
+      <th style="text-align: left">Availability Sets</th>
+      <th style="text-align: left">Availability Zones</th>
+      <th style="text-align: left">Region Pairs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>99.9% with Premium Storage only</td>
+      <td style="text-align: left">99.95% up time( 4:50 down time)</td>
+      <td style="text-align: left">99.99% up time (0:53 down time)</td>
+      <td style="text-align: left">-</td>
+    </tr>
+    <tr>
+      <td>Single VM easier for lift and shift scenario</td>
+      <td style="text-align: left">Protecting against hardware failures, network outages or power interruptions</td>
+      <td style="text-align: left">Protecting against Data Center Failure</td>
+      <td style="text-align: left">Protecting against region disaster</td>
+    </tr>
+    <tr>
+      <td>Single VM</td>
+      <td style="text-align: left">2 or More VMs</td>
+      <td style="text-align: left">2 or more VMs</td>
+      <td style="text-align: left">2 or more VMs</td>
+    </tr>
+    <tr>
+      <td><img src="https://imgur.com/vKlJkWt.png" alt="" /></td>
+      <td style="text-align: left"><img src="https://imgur.com/YS2YNDx.png" alt="" /></td>
+      <td style="text-align: left"><img src="https://imgur.com/qPsYLLC.png" alt="" /></td>
+      <td style="text-align: left"><img src="https://imgur.com/bJlTzJr.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+  <li>https://www.youtube.com/watch?v=On3cjV4VaKU</li>
+</ul>
+
+<hr />
+
+<p><em>Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p class="notice--info">I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to become <strong>Software Developer</strong> and grow your carrier as new <strong>Software Engineer</strong> or <strong>Lead Developer/Architect</strong>. Consider subscribing to our full stack development training programs. You will learn <strong>Angular, RxJS, JavaScript, System Architecture</strong> and much more with lots of <strong>hands on coding</strong>. We have All-Access Monthly membership plans and you will get unlimited access to all of our <strong>video</strong> courses, <strong>slides</strong>, <strong>download source code</strong> &amp; <strong>Monthly video calls</strong>.</p>
+
+<ul>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a></strong> to access <em>current</em> and <em>future</em> <strong>angular, node.js</strong> and related courses.</li>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a></strong> to get everything from PRO plan. Additionally, you will get access to a monthly <strong>live Q&amp;A video call</strong> with <code class="language-plaintext highlighter-rouge">Rupesh</code> and you can ask <strong><em>doubts/questions</em></strong> and get more help, tips and tricks.</li>
+</ul>
+
+<p class="notice--warning">Your bright future is awaiting for you so visit today <a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board on your dream software company as a new <strong>Software Developer, Architect or Lead Engineer</strong> role.</p>
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+<p><img src="https://imgur.com/5fBatz9.png" alt="" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a><span class="sep">, </span>
+    
+      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-01-14T19:00:00-05:00">January 14, 2022</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Introduction+of+Azure+Data+Center%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-of-azure-data-center%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-of-azure-data-center%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-of-azure-data-center%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/cloud-solution-architect-soft-skills-questions/" class="pagination--pager" title="Cloud Solution Architect Soft Skills Questions
+">Previous</a>
+    
+    
+      <a href="/how-to-start-preparing-for-coding-interview/" class="pagination--pager" title="How to start preparing for coding interview
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-availability-set-vs-availability-zone/" rel="permalink">Azure Availability Set Vs Availability Zone
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-update-domain-vs-fault-domain/" rel="permalink">Azure Update Domain vs Fault Domain
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/roadmap-for-mastering-competitive-programming-for-beginners/" rel="permalink">Roadmap for mastering Coding &amp; Competitive Programming interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junio...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-start-preparing-for-coding-interview/" rel="permalink">How to start preparing for coding interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies lik...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/introduction-of-azure-data-center/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/introduction-of-azure-data-center"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

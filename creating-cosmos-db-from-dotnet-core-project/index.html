@@ -1,0 +1,1072 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Creating Cosmos DB from DotNet Core Project - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Learn creating dotnet project connect to cosmos DB in visual studio code.">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Creating Cosmos DB from DotNet Core Project">
+<meta property="og:url" content="https://www.rupeshtiwari.com/creating-cosmos-db-from-dotnet-core-project/">
+
+
+  <meta property="og:description" content="Learn creating dotnet project connect to cosmos DB in visual studio code.">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/AK3dufr.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Creating Cosmos DB from DotNet Core Project">
+  <meta name="twitter:description" content="Learn creating dotnet project connect to cosmos DB in visual studio code.">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/creating-cosmos-db-from-dotnet-core-project/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/AK3dufr.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-04-24T00:00:00+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/creating-cosmos-db-from-dotnet-core-project/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/Z36ln8B.png" alt="Creating Cosmos DB from DotNet Core Project" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Creating Cosmos DB from DotNet Core Project</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Creating Cosmos DB from DotNet Core Project">
+    <meta itemprop="description" content="  Do you want to create Cosmos DB &amp; Collection from DotNet Core Project? Read this article to create your first .net core project. And write csharp code to create DB and Collections. You will learn how to connect Azure Cosmos DB endpoint from Dotnet Project and ensure your database and collection exist.">
+    <meta itemprop="datePublished" content="2021-04-24T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Creating Cosmos DB from DotNet Core Project
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#pre-requisites">Pre-requisites</a></li><li><a href="#creating-a-dotnet-console-app-in-visual-studio-code">Creating a Dotnet Console App in Visual Studio Code</a><ul><li><a href="#creating-new-console-app">Creating New Console App</a></li><li><a href="#running-dotnet-app-in-visual-studio-code">Running Dotnet app in Visual Studio Code</a></li></ul></li><li><a href="#connecting-to-azure-cosmos-db-from-dotnet-console-app">Connecting to Azure Cosmos DB from Dotnet Console App</a><ul><li><a href="#installing-required-nuget-packages">Installing required Nuget Packages</a></li><li><a href="#creating-appconfig-file">Creating App.Config File</a></li><li><a href="#getting-cosmos-db-connection-string">Getting Cosmos DB Connection String</a></li><li><a href="#run-dotnet-console-app">Run Dotnet Console App</a></li></ul></li><li><a href="#creating-database--collections-programmatically">Creating Database &amp; Collections Programmatically</a><ul><li><a href="#creating-client--db">Creating Client &amp; DB</a></li><li><a href="#calling-from-main-method">Calling from Main Method</a></li><li><a href="#final-programcs-code">Final Program.cs Code</a></li></ul></li><li><a href="#running-dotnet-app">Running Dotnet App</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Do you want to create <strong>Cosmos DB</strong> &amp; <strong>Collection</strong> from <strong>DotNet Core Project</strong>? Read this article to create your first .net core project. And write <strong>csharp</strong> code to create DB and Collections. You will learn how to connect <strong>Azure Cosmos DB endpoint</strong> from <strong>Dotnet</strong> Project and ensure your database and collection exist.</p>
+</blockquote>
+
+<p><img src="https://imgur.com/44Fxeih.gif" alt="" /></p>
+
+<h2 id="pre-requisites">Pre-requisites</h2>
+
+<ol>
+  <li>You must have <strong>Cosmos DB Account</strong>.</li>
+  <li>Valid <strong>active Azure Subscription</strong>. Check my blog where I have explained how can you get your <a href="http://rupeshtiwari.com/azure-sandbox-free-account-for-learning/">Free Sandbox Azure Account</a>.</li>
+</ol>
+
+<h2 id="creating-a-dotnet-console-app-in-visual-studio-code">Creating a Dotnet Console App in Visual Studio Code</h2>
+
+<p>I am a big fan of <strong>Visual Studio Code</strong> therefore, I will use Visual Studio Code editor to create my <strong>dotnet</strong> project.</p>
+
+<h3 id="creating-new-console-app">Creating New Console App</h3>
+
+<p>Open <strong>Visual Studio Code PowerShell</strong> Terminal and run below script to create your first <strong>dotnet</strong> app.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet new console
+</code></pre></div></div>
+
+<p><img src="https://i.imgur.com/d9oQbEQ.png" alt="" /></p>
+
+<p>Notice our first dotnet app is created.</p>
+
+<p><img src="https://imgur.com/soEgJyK.png" alt="" /></p>
+
+<p>Notice there is <strong>program.cs</strong> file in our project.</p>
+
+<p><img src="https://imgur.com/OcsgK0p.png" alt="" /></p>
+
+<h3 id="running-dotnet-app-in-visual-studio-code">Running Dotnet app in Visual Studio Code</h3>
+
+<p>Now let’s run our dotnet console app in <strong>Visual Studio Code PowerShell</strong> Terminal.</p>
+
+<p>Please run below script</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet run
+</code></pre></div></div>
+
+<p>Notice you just run your first <strong>dotnet</strong> console app right in vscode.</p>
+
+<p><img src="https://imgur.com/ExuAU62.png" alt="" /></p>
+
+<h2 id="connecting-to-azure-cosmos-db-from-dotnet-console-app">Connecting to Azure Cosmos DB from Dotnet Console App</h2>
+
+<p>Now we will write code to connect with our cosmos DB. Make sure you have active subscription.</p>
+
+<h3 id="installing-required-nuget-packages">Installing required Nuget Packages</h3>
+
+<p>Now we will install couple of NuGet packages to connect to <strong>Cosmos DB</strong>.</p>
+
+<p>Open PowerShell Terminal and run below scrips.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet add package System.Net.Http
+dotnet add package System.Configuration
+dotnet add package System.Configuration.ConfigurationManager
+dotnet add package Microsoft.Azure.DocumentDB.Core
+dotnet add package Newtonsoft.Json
+dotnet add package System.Threading.Tasks
+dotnet add package System.Linq
+dotnet restore
+</code></pre></div></div>
+
+<p>In your csproj file you will see packages name and versions.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;Project</span> <span class="na">Sdk=</span><span class="s">"Microsoft.NET.Sdk"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;PropertyGroup&gt;</span>
+    <span class="nt">&lt;OutputType&gt;</span>Exe<span class="nt">&lt;/OutputType&gt;</span>
+    <span class="nt">&lt;TargetFramework&gt;</span>netcoreapp3.1<span class="nt">&lt;/TargetFramework&gt;</span>
+    <span class="nt">&lt;RootNamespace&gt;</span>azure_cosmos_db_example<span class="nt">&lt;/RootNamespace&gt;</span>
+  <span class="nt">&lt;/PropertyGroup&gt;</span>
+
+  <span class="nt">&lt;ItemGroup&gt;</span>
+    <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"Microsoft.Azure.DocumentDB.Core"</span> <span class="na">Version=</span><span class="s">"2.13.1"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"Newtonsoft.Json"</span> <span class="na">Version=</span><span class="s">"12.0.3"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"System.Configuration"</span> <span class="na">Version=</span><span class="s">"2.0.5"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"System.Configuration.ConfigurationManager"</span> <span class="na">Version=</span><span class="s">"5.0.0"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"System.Linq"</span> <span class="na">Version=</span><span class="s">"4.3.0"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"System.Net.Http"</span> <span class="na">Version=</span><span class="s">"4.3.4"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"System.Threading.Tasks"</span> <span class="na">Version=</span><span class="s">"4.3.0"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/ItemGroup&gt;</span>
+
+<span class="nt">&lt;/Project&gt;</span>
+</code></pre></div></div>
+
+<h3 id="creating-appconfig-file">Creating App.Config File</h3>
+
+<p>Next in order for connecting dotnet app to cosmos db we need to place cosmos DB connection strings and <strong>accountkey</strong>. We will create <strong>App.Config</strong> file in the root of the project.</p>
+
+<p><strong>App.config file</strong></p>
+
+<p><img src="https://imgur.com/idr1Heu.png" alt="" /></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+    <span class="nt">&lt;configuration&gt;</span>
+      <span class="nt">&lt;appSettings&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">"accountEndpoint"</span> <span class="na">value=</span><span class="s">"&lt;replace with your Account Endpoint URL&gt;"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">"accountKey"</span> <span class="na">value=</span><span class="s">"&lt;replace with your Account Key&gt;"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/appSettings&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</code></pre></div></div>
+
+<h3 id="getting-cosmos-db-connection-string">Getting Cosmos DB Connection String</h3>
+
+<p>Copy your connection string by selecting the Azure icon on the left, expanding your <strong>Concierge Subscription</strong>, right-clicking your <strong>new Azure Cosmos DB account</strong>, and then selecting <strong>Copy Connection String</strong>.</p>
+
+<p><img src="https://imgur.com/xrIJHxz.png" alt="" /></p>
+
+<p>Azure Cosmos DB Connection String comprises of <strong>accountEndpoint</strong> and <strong>accountKey</strong></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">AccountEndpoint</span><span class="o">=</span>https://rupesh-first-db-sql-acc.documents.azure.com:443/<span class="p">;</span>
+<span class="nv">AccountKey</span><span class="o">=</span><span class="nv">gLqGg49XeCCFXRycZkez4bZ61PiISPXGSscPaeCq8xpm8XAcqVRjFEAOg0UXp6TokVzmu1T4u3ljeG7vLVtxHg</span><span class="o">==</span>
+</code></pre></div></div>
+
+<p>You must paste the values in app.config.xml file.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+    <span class="nt">&lt;configuration&gt;</span>
+      <span class="nt">&lt;appSettings&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">"accountEndpoint"</span> <span class="na">value=</span><span class="s">"https://my-account.documents.azure.com:443/"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">"accountKey"</span> <span class="na">value=</span><span class="s">"6e7sRxunccGEeO7IVlMdeFt5BdsllfSGLYc28KyjzkESiCu7tfWbTaZXAErt2v88gOcMbOYgwp1q4NYDifD7ew=="</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/appSettings&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</code></pre></div></div>
+
+<h3 id="run-dotnet-console-app">Run Dotnet Console App</h3>
+
+<p>Next let’s run our app again.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet run
+</code></pre></div></div>
+
+<h2 id="creating-database--collections-programmatically">Creating Database &amp; Collections Programmatically</h2>
+
+<p>Now we will write <strong>csharp</strong> code to create database and collection.</p>
+
+<p>We will create <strong>customers</strong> database and <strong>users</strong> collection.</p>
+
+<h3 id="creating-client--db">Creating Client &amp; DB</h3>
+
+<p>Add a new <strong>asynchronous task</strong> to create a new <strong>client</strong>, and check whether the <strong>customers</strong> database exists</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="n">DocumentClient</span> <span class="n">client</span><span class="p">;</span>
+
+<span class="k">private</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">InitializeDB</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">DocumentClient</span><span class="p">(</span><span class="k">new</span> <span class="nf">Uri</span><span class="p">(</span><span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">AppSettings</span><span class="p">[</span><span class="s">"accountEndpoint"</span><span class="p">]),</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">AppSettings</span><span class="p">[</span><span class="s">"accountKey"</span><span class="p">]);</span>
+
+    <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="nf">CreateDatabaseIfNotExistsAsync</span><span class="p">(</span><span class="k">new</span> <span class="n">Database</span> <span class="p">{</span> <span class="n">Id</span> <span class="p">=</span> <span class="s">"customers"</span> <span class="p">});</span>
+
+    <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="nf">CreateDocumentCollectionIfNotExistsAsync</span> <span class="p">(</span><span class="n">UriFactory</span><span class="p">.</span><span class="nf">CreateDatabaseUri</span> <span class="p">(</span><span class="s">"customers"</span><span class="p">),</span> <span class="k">new</span> <span class="n">DocumentCollection</span> <span class="p">{</span>
+                <span class="n">Id</span> <span class="p">=</span> <span class="s">"users"</span><span class="p">,</span> <span class="n">PartitionKey</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">PartitionKeyDefinition</span> <span class="p">()</span> <span class="p">{</span> <span class="n">Paths</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">ObjectModel</span><span class="p">.</span><span class="n">Collection</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="p">()</span> <span class="p">{</span> <span class="s">"/userId"</span> <span class="p">}</span> <span class="p">}</span>
+            <span class="p">});</span>
+
+    <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Database and collection creation/validation is complete"</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="calling-from-main-method">Calling from Main Method</h3>
+
+<p>Import below NuGet packages using statements in the <strong>program.cs</strong> file.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System.Configuration</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Azure.Documents</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.Azure.Documents.Client</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Newtonsoft.Json</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Next let’s update the <strong>main</strong> method to call <strong>InitializeDB</strong> method.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span> <span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">Program</span> <span class="n">p</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Program</span> <span class="p">();</span>
+                <span class="n">p</span><span class="p">.</span><span class="nf">InitializeDB</span> <span class="p">().</span><span class="nf">Wait</span> <span class="p">();</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">DocumentClientException</span> <span class="n">de</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Exception</span> <span class="n">baseException</span> <span class="p">=</span> <span class="n">de</span><span class="p">.</span><span class="nf">GetBaseException</span> <span class="p">();</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span> <span class="p">(</span><span class="s">"{0} error occurred: {1}, Message: {2}"</span><span class="p">,</span> <span class="n">de</span><span class="p">.</span><span class="n">StatusCode</span><span class="p">,</span> <span class="n">de</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span> <span class="n">baseException</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Exception</span> <span class="n">baseException</span> <span class="p">=</span> <span class="n">e</span><span class="p">.</span><span class="nf">GetBaseException</span> <span class="p">();</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span> <span class="p">(</span><span class="s">"Error: {0}, Message: {1}"</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">Message</span><span class="p">,</span> <span class="n">baseException</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span> <span class="p">(</span><span class="s">"End of demo, press any key to exit."</span><span class="p">);</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">ReadKey</span> <span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="final-programcs-code">Final Program.cs Code</h3>
+
+<h2 id="running-dotnet-app">Running Dotnet App</h2>
+
+<p>Now run <code class="language-plaintext highlighter-rouge">dotnet run</code> and see the magic your <strong>database</strong> and <strong>collection</strong> got created right in visual studio.</p>
+
+<p><img src="https://imgur.com/VvdL9uC.gif" alt="" /></p>
+
+<p>Congratulations! 🍰 you connected the Azure Cosmos DB from dotnet app and created your brand new database and collection! Enjoy Azure learning! 😄</p>
+
+<hr />
+
+<p><em>If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to become <strong>Software Developer</strong> and grow your carrier as new <strong>Software Engineer</strong> or <strong>Lead Developer/Architect</strong>. Consider subscribing to our full stack development training programs. You will learn <strong>Angular, RxJS, JavaScript, System Architecture</strong> and much more with lots of <strong>hands on coding</strong>. We have All-Access Monthly membership plans and you will get unlimited access to all of our <strong>video</strong> courses, <strong>slides</strong>, <strong>download source code</strong> &amp; <strong>Monthly video calls</strong>.</p>
+
+<ul>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a></strong> to access <em>current</em> and <em>future</em> <strong>angular, node.js</strong> and related courses.</li>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a></strong> to get everything from PRO plan. Additionally, you will get access to a monthly <strong>live Q&amp;A video call</strong> with <code class="language-plaintext highlighter-rouge">Rupesh</code> and you can ask <strong><em>doubts/questions</em></strong> and get more help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today <a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board on your dream software company as a new <strong>Software Developer, Architect or Lead Engineer</strong> role.</p>
+</blockquote>
+
+<p><strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master</a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">www.rupeshtiwari.com</a> | <a href="https://www.fullstackmaster.net">www.fullstackmaster.net</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#cosmos" class="page__taxonomy-item" rel="tag">cosmos</a><span class="sep">, </span>
+    
+      <a href="/tags/#dotnet" class="page__taxonomy-item" rel="tag">dotnet</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-04-24T00:00:00+00:00">April 24, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Creating+Cosmos+DB+from+DotNet+Core+Project%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fcreating-cosmos-db-from-dotnet-core-project%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fcreating-cosmos-db-from-dotnet-core-project%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fcreating-cosmos-db-from-dotnet-core-project%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/creating-azure-cosmos-db-resources/" class="pagination--pager" title="Creating New Azure Cosmos DB resources in Visual Studio Code
+">Previous</a>
+    
+    
+      <a href="/azure-sandbox-free-account-for-learning/" class="pagination--pager" title="Azure Sandbox Free Account for Learning
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-availability-set-vs-availability-zone/" rel="permalink">Azure Availability Set Vs Availability Zone
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-update-domain-vs-fault-domain/" rel="permalink">Azure Update Domain vs Fault Domain
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/roadmap-for-mastering-competitive-programming-for-beginners/" rel="permalink">Roadmap for mastering Coding &amp; Competitive Programming interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junio...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-start-preparing-for-coding-interview/" rel="permalink">How to start preparing for coding interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies lik...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128916623-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128916623-7', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/creating-cosmos-db-from-dotnet-core-project/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/creating-cosmos-db-from-dotnet-core-project"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,1121 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Restoring and Publishing NPM Packages from Azure CI Pipeline - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="restoring and publishing scoped npm packages from azure pipeline to azure artifacts">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Restoring and Publishing NPM Packages from Azure CI Pipeline">
+<meta property="og:url" content="https://www.rupeshtiwari.com/restoring-and-publishing-npm-from-azure-ci-pipeline/">
+
+
+  <meta property="og:description" content="restoring and publishing scoped npm packages from azure pipeline to azure artifacts">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/d12se9m.jpg">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Restoring and Publishing NPM Packages from Azure CI Pipeline">
+  <meta name="twitter:description" content="restoring and publishing scoped npm packages from azure pipeline to azure artifacts">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/restoring-and-publishing-npm-from-azure-ci-pipeline/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/d12se9m.jpg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-02-26T19:00:00-05:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/restoring-and-publishing-npm-from-azure-ci-pipeline/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/MR0eU4y.jpg" alt="Restoring and Publishing NPM Packages from Azure CI Pipeline" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Restoring and Publishing NPM Packages from Azure CI Pipeline</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Restoring and Publishing NPM Packages from Azure CI Pipeline">
+    <meta itemprop="description" content="  Do you want to restore and publish your scoped and public npm packages fromAzure CI Pipeline? Do you want to Configure CI/CD for Node application withAzure Pipelines? Are you Configuring a Node.js app? Then read this article. Iwill demonstrate the azure pipelines how to use .npmrc file and publish nodepackages to artifacts. And consume the same node package in your project byinstalling it locally.IntroductionI have one project, where I depend on 2 scoped npm libraries from my owncompany’s artifacts feed. And I want to create Azure Build CI pipeline whichwill do below on build machine:  Install node packages both private scoped and public npm packages.  Build project (optional)  publish the dist folder to my private azure artifacts npm registryIf you have not setup .npmrc file in your local box yet. Then please readSetting up NPMRC in Windows Developer Box for Azure DevOps Server.Creating a repo on Azure DevOps ServerCreate your repository in azure devOps server. This is my repo. You can createangular, vue.js or any project. I have created simple JavaScript project.Creating Personal Authentication Token for Azure CI/CD PipelineWe need one personal authentication token in order to run ci/cd in azurepipelines. Therefore, create a PAT called as npm-cicd in azure tokens andbase64 encode it.Learn more here.We will create new Azure CI/CD environment variable and use this base64encoded value.Creating NPM_TOKEN secret on the Azure CI/CD serverEdit your Azure pipeline and in variables create a new secret NPM_TOKEN, inyour CI/CD server. Set your Base64 encoded auth token as it’s value.Creating and Check-In a project-specific .npmrc fileLearn how to create .npmrc here.If you keep the .npmrc at root level then for local developer when they try toinstall npm packages they will get an error.Error: Failed to replace env in config: $(NPM_TOKEN)Therefore, consider moving .npmrc template file at npmrc/.npmrc location.Create .npmrc file at npmrc/.npmrc location. Make sure you put the .npmrcfile under some folder, I will put it in npmrc/.npmrc. You can use any namefor this folder.Next in .npmrc file make sure to use $(NPM_TOKEN) for password field in your.npmrc file. We will use Azure Pipeline Environment Variable to dynamicallyreplace the value of $(NPM_TOKEN) in our .npmrc file at Build time in AzureCI pipeline.@myorg-branding:registry=http://myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/@myorg-customers:registry=http://aicpa-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/always-auth=true; begin auth token//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:username=NPM-CICD//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:_password=$(NPM_TOKEN)//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:email=myorg@myorg.com//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:username=NPM-CICD//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:_password=$(NPM_TOKEN)//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:email=myorg@myorg.com; end auth tokenCreating Azure Pipeline For restoring Npm Packages during CI BuildCreate azure-pipelines.yml file.  First we have to copy .npmrc file to package.json location where we havedefined our project dependencies. So that npm will use the credentialsdefined in .npmrc file and install all scoped private node packages.- task: CopyFiles@2    displayName: copy npmrc file    inputs:      sourceFolder: &#39;npmrc&#39;      Contents: &#39;**&#39;      targetFolder: &#39;./&#39;  We need to install all npm packages. - task: Npm@1    displayName: &#39;NPM CI&#39;    inputs:      command: ci      verbose: false  Here is my final Azure-Pipelines.yamltrigger:  - masterpool:  name: &#39;Default&#39;steps:  - task: CopyFiles@2    displayName: copy npmrc file    inputs:      sourceFolder: &#39;npmrc&#39;      Contents: &#39;**&#39;      targetFolder: &#39;./&#39;  - task: Npm@1    displayName: &#39;NPM CI&#39;    inputs:      command: ci      verbose: falseRunning Azure Pipelines to restore scoped npm packages on CI buildWhile running CI build, it will dynamically use the NPM_TOKEN in my .npmrcfile and use that credential to restore scoped private npm packages from azureartifacts feed. Notice my build succeed and I could install all my local andpublic node packages..npmrc is Required During Publishing Npm PackageSo we could install scoped npm packages during CI build. Now we will addnpm publish script to publish our project into azure artifacts feed. However,notice in my project I want to publish my files which are under dist folder.You might know that in order to publish files to npm registry. You must add.npmrc file to the location where your package.json is present and from thelocation where you are running npm publish script.Therefore, we must copy .npmrc file to dist folder as well. I will do thiscopy process in my build script.Creating Build script to copy .npmrc file To dist folder      Install copyfiles in your projectdevdependencies. Run npm i copyfiles -D        Create build script add below code:    &quot;scripts&quot;: {    &quot;build&quot;: &quot;copyfiles -f npmrc/.npmrc dist&quot;  },Run Build npm run build Notice .npmrc file get copied to dist folder.If you are using Angular project then do below to get .npmrc file copiedautomatically on ng build command.      Go to angular.json or if you are using Nx monorepo then goto workspace.json and identify locationyourProjectName.targets.build.options.assets In this location just add your.npmrc file path and it will be copied to dist folder automatically.    &quot;YourAngularApp&quot;: {    &quot;targets&quot;: {        &quot;build&quot;: {            &quot;options&quot;: { ...                 &quot;assets&quot;: [                     ...,                     &quot;apps/cutepuppies-admin/src/.npmrc&quot;                    ],      Adding Build Script in Azure CI PipelinesNow we will add command line script azure pipelines to run npm run build. Addbelow script on azure-pipelines.yml- script: npm run build  displayName: BuildNotice build is success:Adding Publish script in Azure CI PipelinesNow we will run npm publish from dist folder. Add below script onazure-pipelines.yml- script: npm publish  displayName: Publish  workingDirectory: &#39;./dist&#39;Notice publish is success:Verify Azure Artifacts to See your Npm PackageNow I will go to on-premise azure artifacts and search for my npm package.Notice I find my package in my azure artifacts.Install your NPM package and use itNext I will install my published npm package in some project and try to useit.const { log } = require(&#39;@myorg-branding/testing-cicd&#39;);log(&#39;Working with my new package logger&#39;);See my package is working References  https://docs.npmjs.com/using-private-packages-in-a-ci-cd-workflowBecome full stack developer 💻I teach at Fullstack Master. If you want tobecome full stack developer and grow your carrier as new software developer orLead Developer/Architect. Consider subscribing to our full stack developmenttraining programs. You can enroll to All-Access Monthly membership plans to getunlimited access to all of our video courses, slides, source code &amp; monthlyvideo calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari www.rupeshtiwari.com ✉️ Email Rupesh Founderof  Fullstack Master">
+    <meta itemprop="datePublished" content="2021-02-26T19:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Restoring and Publishing NPM Packages from Azure CI Pipeline
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#introduction">Introduction</a></li><li><a href="#creating-a-repo-on-azure-devops-server">Creating a repo on Azure DevOps Server</a></li><li><a href="#creating-personal-authentication-token-for-azure-cicd-pipeline">Creating Personal Authentication Token for Azure CI/CD Pipeline</a></li><li><a href="#creating-npm_token-secret-on-the-azure-cicd-server">Creating NPM_TOKEN secret on the Azure CI/CD server</a></li><li><a href="#creating-and-check-in-a-project-specific-npmrc-file">Creating and Check-In a project-specific .npmrc file</a></li><li><a href="#creating-azure-pipeline-for-restoring-npm-packages-during-ci-build">Creating Azure Pipeline For restoring Npm Packages during CI Build</a></li><li><a href="#running-azure-pipelines-to-restore-scoped-npm-packages-on-ci-build">Running Azure Pipelines to restore scoped npm packages on CI build</a></li><li><a href="#npmrc-is-required-during-publishing-npm-package">.npmrc is Required During Publishing Npm Package</a></li><li><a href="#creating-build-script-to-copy-npmrc-file-to-dist-folder">Creating Build script to copy .npmrc file To dist folder</a></li><li><a href="#adding-build-script-in-azure-ci-pipelines">Adding Build Script in Azure CI Pipelines</a></li><li><a href="#adding-publish-script-in-azure-ci-pipelines">Adding Publish script in Azure CI Pipelines</a></li><li><a href="#verify-azure-artifacts-to-see-your-npm-package">Verify Azure Artifacts to See your Npm Package</a></li><li><a href="#install-your-npm-package-and-use-it">Install your NPM package and use it</a></li><li><a href="#references">References</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Do you want to restore and publish your scoped and public <code class="language-plaintext highlighter-rouge">npm</code> packages from
+<code class="language-plaintext highlighter-rouge">Azure CI Pipeline</code>? Do you want to Configure CI/CD for Node application with
+Azure Pipelines? Are you Configuring a Node.js app? Then read this article. I
+will demonstrate the azure pipelines how to use <code class="language-plaintext highlighter-rouge">.npmrc</code> file and publish node
+packages to artifacts. And consume the same node package in your project by
+installing it locally.</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I have one project, where I depend on 2 scoped <code class="language-plaintext highlighter-rouge">npm</code> libraries from my own
+company’s artifacts feed. And I want to create Azure Build CI pipeline which
+will do below on build machine:</p>
+
+<ol>
+  <li>Install node packages both <code class="language-plaintext highlighter-rouge">private scoped</code> and <code class="language-plaintext highlighter-rouge">public npm packages</code>.</li>
+</ol>
+
+<p><img src="https://i.imgur.com/1KG5YGF.png" alt="" /></p>
+
+<ol>
+  <li>Build project (optional)</li>
+  <li>publish the <code class="language-plaintext highlighter-rouge">dist</code> folder to my private azure artifacts <code class="language-plaintext highlighter-rouge">npm</code> registry</li>
+</ol>
+
+<p><img src="https://i.imgur.com/qlmAosT.png" alt="" /></p>
+
+<p>If you have not setup <code class="language-plaintext highlighter-rouge">.npmrc</code> file in your local box yet. Then please read
+<a href="https://rupeshtiwari.github.io/2021-02-13-setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/">Setting up NPMRC in Windows Developer Box for Azure DevOps Server</a>.</p>
+
+<h2 id="creating-a-repo-on-azure-devops-server">Creating a repo on Azure DevOps Server</h2>
+
+<p>Create your repository in azure devOps server. This is my repo. You can create
+<code class="language-plaintext highlighter-rouge">angular</code>, <code class="language-plaintext highlighter-rouge">vue.js</code> or any project. I have created simple JavaScript project.</p>
+
+<p><img src="https://i.imgur.com/pTjL09s.png" alt="" /></p>
+
+<p><img src="https://i.imgur.com/rlQJwr7.png" alt="" /></p>
+
+<h2 id="creating-personal-authentication-token-for-azure-cicd-pipeline">Creating Personal Authentication Token for Azure CI/CD Pipeline</h2>
+
+<p>We need one personal authentication token in order to run <code class="language-plaintext highlighter-rouge">ci/cd</code> in azure
+pipelines. Therefore, create a PAT called as <code class="language-plaintext highlighter-rouge">npm-cicd</code> in azure tokens and
+<code class="language-plaintext highlighter-rouge">base64</code> encode it.
+<a href="https://rupeshtiwari.github.io/2021-02-13-setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/">Learn more here</a>.</p>
+
+<p><img src="https://i.imgur.com/0PZ8S5Z.png" alt="" /></p>
+
+<p>We will create new Azure CI/CD environment variable and use this <code class="language-plaintext highlighter-rouge">base64</code>
+encoded value.</p>
+
+<h2 id="creating-npm_token-secret-on-the-azure-cicd-server">Creating NPM_TOKEN secret on the Azure CI/CD server</h2>
+
+<p>Edit your Azure pipeline and in variables create a new secret <code class="language-plaintext highlighter-rouge">NPM_TOKEN</code>, in
+your CI/CD server. Set your <code class="language-plaintext highlighter-rouge">Base64</code> encoded <code class="language-plaintext highlighter-rouge">auth token</code> as it’s value.</p>
+
+<p><img src="https://i.imgur.com/OlYwgfW.png" alt="" /></p>
+
+<h2 id="creating-and-check-in-a-project-specific-npmrc-file">Creating and Check-In a project-specific .npmrc file</h2>
+
+<p><a href="https://rupeshtiwari.github.io/2021-02-13-setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/">Learn how to create <code class="language-plaintext highlighter-rouge">.npmrc</code> here</a>.</p>
+
+<p>If you keep the <code class="language-plaintext highlighter-rouge">.npmrc</code> at root level then for local developer when they try to
+install <code class="language-plaintext highlighter-rouge">npm</code> packages they will get an error.</p>
+
+<pre><code class="language-error">Error: Failed to replace env in config: $(NPM_TOKEN)
+</code></pre>
+
+<p><img src="https://i.imgur.com/8t1QtY9.png" alt="" /></p>
+
+<p>Therefore, consider moving <code class="language-plaintext highlighter-rouge">.npmrc</code> template file at <code class="language-plaintext highlighter-rouge">npmrc/.npmrc</code> location.
+Create <code class="language-plaintext highlighter-rouge">.npmrc</code> file at <code class="language-plaintext highlighter-rouge">npmrc/.npmrc</code> location. Make sure you put the <code class="language-plaintext highlighter-rouge">.npmrc</code>
+file under some folder, I will put it in <code class="language-plaintext highlighter-rouge">npmrc/.npmrc</code>. You can use any name
+for this folder.</p>
+
+<p><img src="https://i.imgur.com/82T0P8G.png" alt="" /></p>
+
+<p>Next in <code class="language-plaintext highlighter-rouge">.npmrc</code> file make sure to use <code class="language-plaintext highlighter-rouge">$(NPM_TOKEN)</code> for password field in your
+<code class="language-plaintext highlighter-rouge">.npmrc</code> file. We will use Azure Pipeline Environment Variable to dynamically
+replace the value of <code class="language-plaintext highlighter-rouge">$(NPM_TOKEN)</code> in our <code class="language-plaintext highlighter-rouge">.npmrc</code> file at Build time in Azure
+CI pipeline.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">@</span><span class="s">myorg-branding:registry=http://myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/</span>
+<span class="err">@</span><span class="s">myorg-customers:registry=http://aicpa-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/</span>
+<span class="s">always-auth=true</span>
+
+<span class="s">; begin auth token</span>
+<span class="s">//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:username=NPM-CICD</span>
+<span class="s">//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:_password=$(NPM_TOKEN)</span>
+<span class="s">//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/registry/:email=myorg@myorg.com</span>
+<span class="s">//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:username=NPM-CICD</span>
+<span class="s">//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:_password=$(NPM_TOKEN)</span>
+<span class="s">//myorg-tfs:8080/tfs/DefaultCollection/_packaging/NpmFeed/npm/:email=myorg@myorg.com</span>
+<span class="s">; end auth token</span>
+</code></pre></div></div>
+
+<h2 id="creating-azure-pipeline-for-restoring-npm-packages-during-ci-build">Creating Azure Pipeline For restoring Npm Packages during CI Build</h2>
+
+<p>Create <code class="language-plaintext highlighter-rouge">azure-pipelines.yml</code> file.</p>
+
+<ol>
+  <li>First we have to copy .npmrc file to <code class="language-plaintext highlighter-rouge">package.json</code> location where we have
+defined our project <code class="language-plaintext highlighter-rouge">dependencies</code>. So that npm will use the credentials
+defined in <code class="language-plaintext highlighter-rouge">.npmrc</code> file and install all scoped private node packages.</li>
+</ol>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">task</span><span class="pi">:</span> <span class="s">CopyFiles@2</span>
+    <span class="s">displayName</span><span class="pi">:</span> <span class="s">copy npmrc file</span>
+    <span class="s">inputs</span><span class="pi">:</span>
+      <span class="na">sourceFolder</span><span class="pi">:</span> <span class="s1">'</span><span class="s">npmrc'</span>
+      <span class="na">Contents</span><span class="pi">:</span> <span class="s1">'</span><span class="s">**'</span>
+      <span class="na">targetFolder</span><span class="pi">:</span> <span class="s1">'</span><span class="s">./'</span>
+</code></pre></div></div>
+
+<ol>
+  <li>We need to install all <code class="language-plaintext highlighter-rouge">npm</code> packages.</li>
+</ol>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="pi">-</span> <span class="na">task</span><span class="pi">:</span> <span class="s">Npm@1</span>
+    <span class="s">displayName</span><span class="pi">:</span> <span class="s1">'</span><span class="s">NPM</span><span class="nv"> </span><span class="s">CI'</span>
+    <span class="na">inputs</span><span class="pi">:</span>
+      <span class="na">command</span><span class="pi">:</span> <span class="s">ci</span>
+      <span class="na">verbose</span><span class="pi">:</span> <span class="no">false</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Here is my final <code class="language-plaintext highlighter-rouge">Azure-Pipelines.yaml</code></li>
+</ol>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">trigger</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">master</span>
+
+<span class="na">pool</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Default'</span>
+
+<span class="na">steps</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">task</span><span class="pi">:</span> <span class="s">CopyFiles@2</span>
+    <span class="na">displayName</span><span class="pi">:</span> <span class="s">copy npmrc file</span>
+    <span class="na">inputs</span><span class="pi">:</span>
+      <span class="na">sourceFolder</span><span class="pi">:</span> <span class="s1">'</span><span class="s">npmrc'</span>
+      <span class="na">Contents</span><span class="pi">:</span> <span class="s1">'</span><span class="s">**'</span>
+      <span class="na">targetFolder</span><span class="pi">:</span> <span class="s1">'</span><span class="s">./'</span>
+  <span class="pi">-</span> <span class="na">task</span><span class="pi">:</span> <span class="s">Npm@1</span>
+    <span class="na">displayName</span><span class="pi">:</span> <span class="s1">'</span><span class="s">NPM</span><span class="nv"> </span><span class="s">CI'</span>
+    <span class="na">inputs</span><span class="pi">:</span>
+      <span class="na">command</span><span class="pi">:</span> <span class="s">ci</span>
+      <span class="na">verbose</span><span class="pi">:</span> <span class="no">false</span>
+</code></pre></div></div>
+
+<h2 id="running-azure-pipelines-to-restore-scoped-npm-packages-on-ci-build">Running Azure Pipelines to restore scoped <code class="language-plaintext highlighter-rouge">npm</code> packages on CI build</h2>
+
+<p>While running CI build, it will dynamically use the <code class="language-plaintext highlighter-rouge">NPM_TOKEN</code> in my <code class="language-plaintext highlighter-rouge">.npmrc</code>
+file and use that credential to restore scoped private <code class="language-plaintext highlighter-rouge">npm</code> packages from azure
+artifacts feed. Notice my build succeed and I could install all my local and
+public node packages.</p>
+
+<p><img src="https://i.imgur.com/Vs2hXXa.png" alt="" /></p>
+
+<h2 id="npmrc-is-required-during-publishing-npm-package"><code class="language-plaintext highlighter-rouge">.npmrc</code> is Required During Publishing <code class="language-plaintext highlighter-rouge">Npm</code> Package</h2>
+
+<p>So we could install scoped <code class="language-plaintext highlighter-rouge">npm</code> packages during CI build. Now we will add
+<code class="language-plaintext highlighter-rouge">npm publish</code> script to publish our project into azure artifacts feed. However,
+notice in my project I want to publish my files which are under <code class="language-plaintext highlighter-rouge">dist</code> folder.</p>
+
+<p><img src="https://i.imgur.com/qlmAosT.png" alt="" /></p>
+
+<p>You might know that in order to publish files to <code class="language-plaintext highlighter-rouge">npm</code> registry. You must add
+<code class="language-plaintext highlighter-rouge">.npmrc</code> file to the location where your <code class="language-plaintext highlighter-rouge">package.json</code> is present and from the
+location where you are running <code class="language-plaintext highlighter-rouge">npm publish</code> script.</p>
+
+<p>Therefore, we must copy <code class="language-plaintext highlighter-rouge">.npmrc</code> file to <code class="language-plaintext highlighter-rouge">dist</code> folder as well. I will do this
+copy process in my <code class="language-plaintext highlighter-rouge">build</code> script.</p>
+
+<h2 id="creating-build-script-to-copy-npmrc-file-to-dist-folder">Creating Build script to copy <code class="language-plaintext highlighter-rouge">.npmrc</code> file To <code class="language-plaintext highlighter-rouge">dist</code> folder</h2>
+
+<ol>
+  <li>
+    <p>Install <a href="https://www.npmjs.com/package/copyfiles">copyfiles</a> in your project
+devdependencies. Run <code class="language-plaintext highlighter-rouge">npm i copyfiles -D</code></p>
+  </li>
+  <li>
+    <p>Create <code class="language-plaintext highlighter-rouge">build</code> script add below code:</p>
+  </li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="s2">"scripts"</span>: <span class="o">{</span>
+    <span class="s2">"build"</span>: <span class="s2">"copyfiles -f npmrc/.npmrc dist"</span>
+  <span class="o">}</span>,
+</code></pre></div></div>
+
+<p>Run Build <code class="language-plaintext highlighter-rouge">npm run build</code> Notice <code class="language-plaintext highlighter-rouge">.npmrc</code> file get copied to <code class="language-plaintext highlighter-rouge">dist</code> folder.</p>
+
+<p><img src="https://i.imgur.com/AzC3Fgw.png" alt="" /></p>
+
+<p>If you are using <strong>Angular</strong> project then do below to get <code class="language-plaintext highlighter-rouge">.npmrc</code> file copied
+automatically on <code class="language-plaintext highlighter-rouge">ng build</code> command.</p>
+
+<ul>
+  <li>
+    <p>Go to <code class="language-plaintext highlighter-rouge">angular.json</code> or if you are using <a href="https://nx.dev">Nx monorepo</a> then go
+to <code class="language-plaintext highlighter-rouge">workspace.json</code> and identify location
+<code class="language-plaintext highlighter-rouge">yourProjectName.targets.build.options.assets</code> In this location just add your
+<code class="language-plaintext highlighter-rouge">.npmrc</code> file path and it will be copied to dist folder automatically.</p>
+
+    <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"YourAngularApp"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"targets"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"build"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">...</span><span class="w">
+                 </span><span class="nl">"assets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                     </span><span class="err">...</span><span class="p">,</span><span class="w">
+                     </span><span class="s2">"apps/cutepuppies-admin/src/.npmrc"</span><span class="w">
+                    </span><span class="p">],</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="adding-build-script-in-azure-ci-pipelines">Adding Build Script in Azure CI Pipelines</h2>
+
+<p>Now we will add command line script azure pipelines to run <code class="language-plaintext highlighter-rouge">npm run build</code>. Add
+below script on <code class="language-plaintext highlighter-rouge">azure-pipelines.yml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">script</span><span class="pi">:</span> <span class="s">npm run build</span>
+  <span class="na">displayName</span><span class="pi">:</span> <span class="s">Build</span>
+</code></pre></div></div>
+
+<p>Notice build is success:</p>
+
+<p><img src="https://i.imgur.com/AiBJ3NU.png" alt="" /></p>
+
+<h2 id="adding-publish-script-in-azure-ci-pipelines">Adding Publish script in Azure CI Pipelines</h2>
+
+<p>Now we will run <code class="language-plaintext highlighter-rouge">npm publish</code> from <code class="language-plaintext highlighter-rouge">dist</code> folder. Add below script on
+<code class="language-plaintext highlighter-rouge">azure-pipelines.yml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">script</span><span class="pi">:</span> <span class="s">npm publish</span>
+  <span class="na">displayName</span><span class="pi">:</span> <span class="s">Publish</span>
+  <span class="na">workingDirectory</span><span class="pi">:</span> <span class="s1">'</span><span class="s">./dist'</span>
+</code></pre></div></div>
+
+<p>Notice publish is success:</p>
+
+<p><img src="https://i.imgur.com/aklTf94.png" alt="" /></p>
+
+<h2 id="verify-azure-artifacts-to-see-your-npm-package">Verify Azure Artifacts to See your <code class="language-plaintext highlighter-rouge">Npm</code> Package</h2>
+
+<p>Now I will go to on-premise azure <code class="language-plaintext highlighter-rouge">artifacts</code> and search for my <code class="language-plaintext highlighter-rouge">npm</code> package.
+Notice I find my package in my azure artifacts.</p>
+
+<p><img src="https://i.imgur.com/c0jFAfi.png" alt="" /></p>
+
+<h2 id="install-your-npm-package-and-use-it">Install your NPM package and use it</h2>
+
+<p>Next I will install my published <code class="language-plaintext highlighter-rouge">npm</code> package in some project and try to use
+it.</p>
+
+<p><img src="https://i.imgur.com/JhzAAa8.png" alt="" /></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span> <span class="nx">log</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@myorg-branding/testing-cicd</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Working with my new package logger</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>See my package is working <img src="https://i.imgur.com/xmpUF7b.png" alt="" /></p>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>https://docs.npmjs.com/using-private-packages-in-a-ci-cd-workflow</li>
+</ol>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to
+become full stack developer and grow your carrier as new software developer or
+Lead Developer/Architect. Consider subscribing to our full stack development
+training programs. You can enroll to All-Access Monthly membership plans to get
+unlimited access to all of our video courses, slides, source code &amp; monthly
+video calls.</p>
+
+<ul>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to
+access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to
+get everything from PRO plan. Additionally, you will get access to monthly
+live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more
+help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today
+<a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board
+on your dream software company as a Developer,Architect or Lead Engineer role.</p>
+</blockquote>
+
+<p><strong>💖 Say 👋 to me!</strong> Rupesh Tiwari <a href="https://www.rupeshtiwari.com">
+www.rupeshtiwari.com</a> ✉️
+<a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> Founder
+of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#devops" class="page__taxonomy-item" rel="tag">devops</a><span class="sep">, </span>
+    
+      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-26T19:00:00-05:00">February 26, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Restoring+and+Publishing+NPM+Packages+from+Azure+CI+Pipeline%20https%3A%2F%2Fwww.rupeshtiwari.com%2Frestoring-and-publishing-npm-from-azure-ci-pipeline%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Frestoring-and-publishing-npm-from-azure-ci-pipeline%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Frestoring-and-publishing-npm-from-azure-ci-pipeline%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/devops/caching-pipeline-not-working-in-azure-devops-server-2020/" class="pagination--pager" title="Caching Pipeline Not Working in Azure DevOps Server 2020
+">Previous</a>
+    
+    
+      <a href="/scheduling-jekyll-post-on-github-pages/" class="pagination--pager" title="Scheduling Jekyll Post on GitHub Pages
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-availability-set-vs-availability-zone/" rel="permalink">Azure Availability Set Vs Availability Zone
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-update-domain-vs-fault-domain/" rel="permalink">Azure Update Domain vs Fault Domain
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/roadmap-for-mastering-competitive-programming-for-beginners/" rel="permalink">Roadmap for mastering Coding &amp; Competitive Programming interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junio...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-start-preparing-for-coding-interview/" rel="permalink">How to start preparing for coding interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies lik...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/restoring-and-publishing-npm-from-azure-ci-pipeline/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/restoring-and-publishing-npm-from-azure-ci-pipeline"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

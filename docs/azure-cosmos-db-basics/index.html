@@ -1,0 +1,1272 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Azure Cosmos DB Basics - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Use a fast NoSQL database known as Azure Cosmos DB to build applications with your Azure free account">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Azure Cosmos DB Basics">
+<meta property="og:url" content="https://www.rupeshtiwari.com/azure-cosmos-db-basics/">
+
+
+  <meta property="og:description" content="Use a fast NoSQL database known as Azure Cosmos DB to build applications with your Azure free account">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/mm7sM9M.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Azure Cosmos DB Basics">
+  <meta name="twitter:description" content="Use a fast NoSQL database known as Azure Cosmos DB to build applications with your Azure free account">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/azure-cosmos-db-basics/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/mm7sM9M.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-03-26T20:00:00-04:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/azure-cosmos-db-basics/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/Qz5wGYT.png" alt="Azure Cosmos DB Basics" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Azure Cosmos DB Basics</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Azure Cosmos DB Basics">
+    <meta itemprop="description" content="  Are you beginner on Azure Cosmos DB and want to know what exactly is Cosmos DB? Then read this article. Azure Cosmos DB is a fully managed NoSQL database service for modern app development. Get guaranteed single-digit millisecond response times and 99.999-percent availability, backed by SLAs, automatic and instant scalability, and open-source APIs for MongoDB and Cassandra.">
+    <meta itemprop="datePublished" content="2021-03-26T20:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Azure Cosmos DB Basics
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          12 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-is-cosmos-db">What is Cosmos DB?</a><ul><li><a href="#cosmos-db-overview">Cosmos DB Overview</a></li></ul></li><li><a href="#getting-started-with-cosmos-db">Getting Started with Cosmos DB</a><ul><li><a href="#creating-cosmos-db-account">Creating Cosmos Db Account</a></li><li><a href="#creating-cosmosdb-resource">Creating CosmosDB Resource</a></li><li><a href="#creating-database">Creating Database</a></li><li><a href="#creating-container">Creating Container</a></li><li><a href="#creating-documents">Creating Documents</a></li></ul></li><li><a href="#partition">Partition</a><ul><li><a href="#partition-in-azure-cosmos-db">Partition in Azure Cosmos Db</a></li><li><a href="#partition-key">Partition Key</a></li><li><a href="#container-with-same-partition-key">Container with same Partition Key</a></li></ul></li><li><a href="#searching-documents-in-container">Searching Documents in Container</a><ul><li><a href="#cross-partition-search">Cross Partition Search</a></li><li><a href="#single-partition-search">Single Partition Search</a></li><li><a href="#cross-partition-search-with-filter-methods">Cross Partition Search with Filter Methods</a></li><li><a href="#query-across-container">Query across Container</a></li></ul></li><li><a href="#replica-in-azure-cosmos-db">Replica in Azure Cosmos DB</a><ul><li><a href="#global-distributions-in-azure-cosmos-db">Global Distributions in Azure Cosmos DB</a></li></ul></li><li><a href="#cosmos-db-csharp-methods">Cosmos Db csharp Methods</a><ul><li><a href="#reference-to-a-database">Reference to a Database</a></li><li><a href="#query-for-databases">Query for Databases</a><ul><li><a href="#restricting-databases-query">Restricting Databases Query</a></li></ul></li><li><a href="#query-for-containers">Query for Containers</a></li><li><a href="#query-within-container">Query within Container</a><ul><li><a href="#get-the-container-by-its-container-id">Get the container by its container id.</a></li><li><a href="#read-the-item-within-container-asynchronously">Read the item within container asynchronously.</a></li><li><a href="#linq-query-for-items">LINQ query for items</a></li><li><a href="#creating-an-item">Creating an Item</a></li><li><a href="#replacing-an-item">Replacing an Item</a></li><li><a href="#deleting-an-item">Deleting an Item</a></li></ul></li></ul></li><li><a href="#concurrency-in-cosmos-db">Concurrency in Cosmos Db</a><ul><li><a href="#etag-in-item">ETag in Item</a></li><li><a href="#optimistic-concurrency">Optimistic Concurrency</a></li><li><a href="#last-one-wins">Last one Wins</a></li></ul></li><li><a href="#cosmos-db-development-tools">Cosmos DB Development Tools</a><ul><li><a href="#vs-code-extension">Vs Code Extension</a></li></ul></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Are you beginner on Azure Cosmos DB and want to know what exactly is <strong>Cosmos DB</strong>? Then read this article. <strong>Azure Cosmos DB</strong> is a fully <strong>managed NoSQL</strong> database service for modern app development. Get guaranteed single-digit millisecond response times and <strong>99.999-percent</strong> availability, backed by SLAs, automatic and <strong>instant scalability</strong>, and open-source APIs for <strong>MongoDB</strong> and <strong>Cassandra</strong>.</p>
+</blockquote>
+
+<h2 id="what-is-cosmos-db">What is Cosmos DB?</h2>
+
+<p><strong>Cosmos DB</strong> is NoSQL dB that supports NoSQL models. You can query <strong>Cosmos DB</strong> using <strong>MongoDb API’s</strong>, <strong>SQL Api</strong>, <strong>Graph API’s</strong> and much more. So suppose you have written a code in Mongo DB then still you will be able to use <strong>Cosmos DB</strong>.</p>
+
+<ol>
+  <li>Cosmos Db is <strong>Massively Scalable NoSQL</strong> database.</li>
+  <li>This is <strong>Platform as Service (PaaS)</strong> managed by Azure</li>
+  <li>It has <strong>99.999% SLAs</strong></li>
+  <li>It has <strong>automatic horizontal partitioning</strong>. So that you get <strong>Elastic Scaling</strong> both for <strong>storage</strong> and <strong>throughput</strong></li>
+  <li>Cosmos Db can be <strong>distributed globally</strong> with multiple write regions that is <strong>Multi-Master</strong> model.</li>
+  <li>Cosmos Db has <strong>Multiple API</strong> that supports <strong>Multiple Models</strong> like <strong>JSON</strong>, <strong>table</strong>, <strong>graph</strong> &amp; <strong>columnar</strong></li>
+</ol>
+
+<h3 id="cosmos-db-overview">Cosmos DB Overview</h3>
+
+<ul>
+  <li>Cosmos DB Account has subscription</li>
+  <li>Subscription has Cosmos DB Resource</li>
+  <li>Cosmos DB Database can have one or multiple Containers</li>
+  <li>Container has multiple items or documents</li>
+  <li>Container can have one or multiple partitions</li>
+  <li>Each partition has documents with same partition key.</li>
+</ul>
+
+<h2 id="getting-started-with-cosmos-db">Getting Started with Cosmos DB</h2>
+
+<ol>
+  <li>Create 30-day <a href="http://azure.microsoft.com/try/cosmosdb">Free Trial</a> http://azure.microsoft.com/try/cosmosdb using your <a href="https://signup.live.com">Microsoft Account</a>
+<img src="https://i.imgur.com/l3HEL4y.png" alt="" /></li>
+  <li>Create a <strong>Cosmos DB</strong> account &amp; create <strong>Azure Subscriptions</strong>. Every Azure Subscriptions has free tier Cosmos Db account. Which has limit of <strong>size (5GB)</strong> and <strong>throughput (400 RU/s)</strong></li>
+  <li>If you don’t have <strong>Azure Subscription</strong> and <strong>Azure Cosmos DB</strong> account then consider using <strong><a href="https://aka.ms/cosmosdb-emulator">Azure Cosmos Db Local Emulator</a></strong>. You do not even need internet to play with emulator.</li>
+</ol>
+
+<h3 id="creating-cosmos-db-account">Creating Cosmos Db Account</h3>
+
+<p><strong>Login/SignUp</strong> to Azure Account
+<img src="https://i.imgur.com/jnGLojy.png" alt="" /></p>
+
+<h3 id="creating-cosmosdb-resource">Creating CosmosDB Resource</h3>
+
+<ol>
+  <li>Click <strong>Create resource</strong> in your portal menu then search for <strong>Cosmos Db</strong> in account dashboard
+<img src="https://i.imgur.com/Jq4iq7w.png" alt="" /></li>
+  <li>Next you need to choose your <strong>subscription</strong>. Next you select <strong>Resource Group</strong> ( you can create new resource group they are use to group multiple resources you can think of them just like environments ). Next choose Account Name that no one has taken.
+<img src="https://i.imgur.com/xvsOWwn.png" alt="" /></li>
+  <li>Now you need to select <strong>API</strong> You have choice to select <code class="language-plaintext highlighter-rouge">apis</code> from below list. SQL API is general API which gives you <code class="language-plaintext highlighter-rouge">JSON</code> and you can query just like SQL which is excellent choice.
+<img src="https://i.imgur.com/fwaf5M7.png" alt="" /></li>
+  <li>Then Enable the <strong>Notebooks</strong> preview &amp; Select the location <strong>US East US</strong> where notebook is available.
+<img src="https://i.imgur.com/zzb2k49.png" alt="" /></li>
+  <li>Next go to <strong>networking</strong> page and you can restrict your account to local or public network.
+<img src="https://i.imgur.com/lTdfvoZ.png" alt="" /></li>
+  <li>Next Cosmos DB always <strong>encrypts</strong> the data at rest. You can always define your own encryption key.
+<img src="https://i.imgur.com/F9bukyC.png" alt="" /></li>
+  <li>Review your <strong>cosmos DB</strong> account &amp; click create and deployment is underway it takes 2-3 minutes then your <strong>cosmos DB</strong> account will be created.
+<img src="https://i.imgur.com/RMC3WgO.png" alt="" /></li>
+  <li>Click on resource and <strong>overview</strong> of account you can see your account. You can select Keys to see all of your keys. Your applications need <strong>primary key</strong> to connect to db. Combining your keys gives you connection strings check below screenshots.
+<img src="https://i.imgur.com/zw1h59v.png" alt="" /></li>
+  <li>There are <strong>read-only</strong> keys which provides only read access.
+<img src="https://i.imgur.com/OGHdoFz.png" alt="" /></li>
+</ol>
+
+<h3 id="creating-database">Creating Database</h3>
+
+<p>With standard (manual) provisioned throughput, you can have up to 25 <strong>containers</strong> with a minimum of 400 RU/s on the <strong>database</strong>. With auto-scale provisioned throughput, you can have up to 25 <strong>containers</strong> in a <strong>database</strong> with auto-scale max 4000 RU/s (scales between 400 - 4000 RU/s)</p>
+
+<p>While creating container we will provide new Database Id. Check next step.</p>
+
+<h3 id="creating-container">Creating Container</h3>
+
+<p>In Cosmos DB <strong>Container</strong> is just like a <strong>collection of documents</strong>. <strong>Container</strong> is a single logical resource composed of multiple physical partitions. It is just like a Template and has <strong>Partition Key</strong> and <strong>Throughput</strong>.</p>
+
+<p>Follow steps to create new container and database.</p>
+
+<ol>
+  <li>Go to <strong>Data Explorer</strong> in your Cosmos Db Account.
+<img src="https://i.imgur.com/vcq4muh.png" alt="" /></li>
+  <li>Then click New Container. You must provide new or existing <strong>database</strong> id and <strong>container</strong> id. Let’s say <strong>families</strong> to both database and container ids.
+<img src="https://i.imgur.com/Jl6N4HI.png" alt="" /></li>
+  <li>You may have only one container in the database. However, All the items in a container could be have different <strong>types</strong> and <strong>Schema</strong> so you may need more <strong>containers</strong>.</li>
+  <li><strong>Throughput</strong> is about the <strong>performance</strong> if lower number then lower performance with lower cost. Higher throughput number gives higher performance with highest cost.
+<img src="https://i.imgur.com/eG09P1j.png" alt="" /></li>
+  <li><strong>Partition Key</strong> is about how <strong>Cosmos DB</strong> <strong>stores the physical multiple documents together based on the partition key</strong> you define that is common property in all documents.
+<img src="https://i.imgur.com/4VEbUcl.png" alt="" /></li>
+  <li>Some data need <strong>less throughput</strong> or some data needs <strong>different partition key</strong> therefore you will create new containers for them. For rest of the data you can have one containers. 5GB is free.</li>
+  <li><strong>Analytical Store</strong> If you select this option <strong>Cosmos DB</strong> will automatically create a <strong>column store copy of your transactional data</strong> and keep it sync in real time. Then using the <strong>Azure Synapse</strong> link you can analytics for analytics workload against the columns stored in the container.
+<img src="https://i.imgur.com/rxeuft3.png" alt="" /></li>
+</ol>
+
+<h3 id="creating-documents">Creating Documents</h3>
+
+<p>We have created: <strong>Database</strong>: families, <strong>Container</strong>: families. Now lets create some documents in the container. <strong>Item</strong> is same as document just like in mongoDB you have <strong>document</strong> that is called item in cosmos db.</p>
+
+<ol>
+  <li>Expand the <strong>new container</strong> and click on <strong>items</strong> (which is nothing but documents)<img src="https://i.imgur.com/osxp03E.png" alt="" /></li>
+  <li>Click <strong>New item</strong> and add JSON for new document
+<img src="https://i.imgur.com/J1ZDJ5M.png" alt="" /></li>
+  <li>Add JSON with no id property and click on save
+<img src="https://i.imgur.com/vUeKnig.png" alt="" /></li>
+  <li>Then you will see system generated unique <strong>id</strong> and other <strong>system ids</strong>
+<img src="https://i.imgur.com/w3l2L4w.png" alt="" /></li>
+</ol>
+
+<h2 id="partition">Partition</h2>
+
+<p>You already know that container has lots of different types of documents. So in-order for grouping documents by their unique identifier Azure has concept called as <strong>Partition</strong>. <strong>Partition</strong> is a physical <strong>fixed-capacity</strong> <strong>data buckets</strong>. <strong>Partitioning</strong> is Massive scale-out within a <strong>container</strong>.</p>
+
+<h3 id="partition-in-azure-cosmos-db">Partition in Azure Cosmos Db</h3>
+
+<p>Partitions are logical boundary drawn by aggregate <strong>id</strong> or <strong>type</strong>. Try to manage <strong>80%</strong> of your queries go to the single partition and rest <strong>20%</strong> should go across partitions.</p>
+
+<p>Design your partitions based on below:</p>
+
+<ol>
+  <li><strong>/id</strong> (Single Document)</li>
+  <li><strong>/type</strong> (small lookup list)</li>
+  <li><strong>other</strong> (optimized for queries)</li>
+</ol>
+
+<h3 id="partition-key">Partition Key</h3>
+
+<p>Partition key divides aggregates/documents in your <strong>Cosmos DB</strong> container. In order to choose right partition key you must think of common usage of your aggregates or entities. If you have correct <strong>partition key</strong> then:</p>
+
+<ol>
+  <li>You will avoid <strong>performance</strong> bottlenecks and ensures uniform distribution of both storage and throughput.</li>
+  <li>You will get a <strong>Boundary for queries</strong> and transactions.</li>
+  <li>It <strong>minimizes cross-partition</strong> queries</li>
+  <li>Stored procedures with <strong>ACID</strong> can be achieved.</li>
+</ol>
+
+<p>You <strong>can not</strong> change the <strong>partition key</strong> for a <strong>container</strong>. You can’t change the partition key for the document also.</p>
+
+<h3 id="container-with-same-partition-key">Container with same Partition Key</h3>
+
+<p>All of the different types of aggregates/documents having same <strong>unique id</strong>/<strong>partition key</strong> can go in single container.</p>
+
+<p>Example You can put User and Address collection in the same container as far as they share the partition key here it is <strong>UserId</strong>.</p>
+
+<ol>
+  <li><strong>User</strong> Aggregate =&gt; userId ( partition key)</li>
+  <li><strong>Address</strong> Aggregate =&gt; userId ( partition key)</li>
+</ol>
+
+<p>However, if you add different type of collection in same container. Then while querying them you must typecast with specific class type if you are using csharp programming.</p>
+
+<h2 id="searching-documents-in-container">Searching Documents in Container</h2>
+
+<p>Suppose you have 2 documents and you want to search by their <strong>address</strong> &amp; <strong>city</strong> our <strong>partition key</strong> is <strong>zipcode</strong></p>
+
+<h3 id="cross-partition-search">Cross Partition Search</h3>
+
+<p>When you search collection by property which is <em>not</em> a partition key is called as <strong>cross-partition</strong> search. This kind of search is expensive.</p>
+
+<p>Example: Suppose we search collection by its city name. We get 2 documents with different zip codes. Since we have <strong>zipcode</strong> as <strong>partition key</strong>. These both documents were in different partitions. So we just did the <strong>cross partition search</strong>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">c</span> <span class="k">WHERE</span> <span class="k">c</span><span class="p">.</span><span class="n">address</span><span class="p">.</span><span class="n">city</span><span class="o">=</span><span class="s1">'Chicago'</span>
+</code></pre></div></div>
+
+<p><img src="https://i.imgur.com/vZtNcia.png" alt="" /></p>
+
+<h3 id="single-partition-search">Single Partition Search</h3>
+
+<p>If you search document by <strong>zipcode</strong> then it will only get the document from the single partition since we are filtering with partition key.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">c</span> <span class="k">WHERE</span> <span class="k">c</span><span class="p">.</span><span class="n">address</span><span class="p">.</span><span class="n">zipCode</span><span class="o">=</span><span class="s1">'60601'</span>
+</code></pre></div></div>
+
+<p><img src="https://i.imgur.com/ch9F8q9.png" alt="" /></p>
+
+<h3 id="cross-partition-search-with-filter-methods">Cross Partition Search with Filter Methods</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">c</span> <span class="k">WHERE</span> <span class="n">IS_DEFINED</span><span class="p">(</span><span class="k">c</span><span class="p">.</span><span class="n">pets</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">c</span> <span class="k">WHERE</span> <span class="n">ARRAY_LENGTH</span><span class="p">(</span><span class="k">c</span><span class="p">.</span><span class="n">kids</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">2</span>
+</code></pre></div></div>
+
+<h3 id="query-across-container">Query across Container</h3>
+
+<p>In <strong>Cosmos DB</strong> you are not allowed to write single SQL query to join across containers. You must fetch data from one container first and then use for other query for other container.</p>
+
+<h2 id="replica-in-azure-cosmos-db">Replica in Azure Cosmos DB</h2>
+
+<p><strong>Replication</strong> is multiple replicas within a region. It ensures high availability. Across the regions you can bring your data closer to the consumers.</p>
+
+<p><strong>Disaster Recovery</strong> if replica fail within a physical region then if you had other replica then <strong>cosmos DB</strong> will automatically bring the other saved replica online.</p>
+
+<h3 id="global-distributions-in-azure-cosmos-db">Global Distributions in Azure Cosmos DB</h3>
+
+<ol>
+  <li>It <strong>associates multiple regions</strong> with your Cosmos DB account. It has some limitations on geo-fencing policies.</li>
+  <li>Dynamically you can <strong>add or remove regions</strong></li>
+  <li>It enables write across all regions with automatic failover.</li>
+</ol>
+
+<p><img src="https://i.imgur.com/iPvXuBt.png" alt="" /></p>
+
+<h2 id="cosmos-db-csharp-methods">Cosmos Db csharp Methods</h2>
+
+<h3 id="reference-to-a-database">Reference to a Database</h3>
+
+<p><code class="language-plaintext highlighter-rouge">GetDatabase</code> method returns a proxy reference to a database.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Database</span> <span class="n">db</span> <span class="p">=</span> <span class="n">cosmosClient</span><span class="p">.</span><span class="nf">GetDatabase</span><span class="p">(</span><span class="s">"myDatabaseId"</span><span class="p">];</span>
+<span class="n">DatabaseResponse</span> <span class="n">response</span> <span class="p">=</span> <span class="k">await</span> <span class="n">db</span><span class="p">.</span><span class="nf">ReadAsync</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>👉 Notice: <code class="language-plaintext highlighter-rouge">ReadAsync</code> is recommended for <strong>single database</strong> look-up.</p>
+
+<h3 id="query-for-databases">Query for Databases</h3>
+
+<p><code class="language-plaintext highlighter-rouge">GetDatabaseQueryIterator</code> method creates a query for databases under an Cosmos DB Account using a SQL statement. You must have <strong>admin permission</strong> to iterate through all dbs. Read the Azure Cosmos DB <strong>endpointUrl</strong> and <strong>authorization keys</strong> from config.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="k">static</span> <span class="k">readonly</span> <span class="kt">string</span> <span class="n">endpointUrl</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">AppSettings</span><span class="p">[</span><span class="s">"EndPointUrl"</span><span class="p">];</span>
+<span class="k">private</span> <span class="k">static</span> <span class="k">readonly</span> <span class="kt">string</span> <span class="n">authorizationKey</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">AppSettings</span><span class="p">[</span><span class="s">"AuthorizationKey"</span><span class="p">];</span>
+
+<span class="n">CosmosClient</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">CosmosClient</span><span class="p">(</span><span class="n">endpointUrl</span><span class="p">,</span> <span class="n">authorizationKey</span><span class="p">);</span>
+
+<span class="k">using</span> <span class="p">(</span><span class="n">CosmosClient</span> <span class="n">readClient</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">CosmosClient</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">readContainerPermission</span><span class="p">.</span><span class="n">Token</span><span class="p">))</span>
+<span class="p">{</span>
+  <span class="k">using</span> <span class="p">(</span><span class="n">FeedIterator</span><span class="p">&lt;</span><span class="n">DatabaseProperties</span><span class="p">&gt;</span> <span class="n">feedIterator</span> <span class="p">=</span> <span class="n">readClient</span><span class="p">.</span><span class="n">GetDatabaseQueryIterator</span><span class="p">&lt;</span><span class="n">DatabaseProperties</span><span class="p">&gt;(</span><span class="n">queryDefinition</span><span class="p">))</span>
+  <span class="p">{</span>
+      <span class="k">while</span> <span class="p">(</span><span class="n">feedIterator</span><span class="p">.</span><span class="n">HasMoreResults</span><span class="p">)</span>
+      <span class="p">{</span>
+          <span class="n">FeedResponse</span><span class="p">&lt;</span><span class="n">DatabaseProperties</span><span class="p">&gt;</span> <span class="n">response</span> <span class="p">=</span> <span class="k">await</span> <span class="n">feedIterator</span><span class="p">.</span><span class="nf">ReadNextAsync</span><span class="p">();</span>
+          <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">database</span> <span class="k">in</span> <span class="n">response</span><span class="p">)</span>
+          <span class="p">{</span>
+              <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">database</span><span class="p">);</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="restricting-databases-query">Restricting Databases Query</h4>
+
+<p>Iterating through all databases should fail because the user has <strong>no Admin rights</strong>. but only read access to a single container. And Therefore cannot access anything outside of that container. You must provide <code class="language-plaintext highlighter-rouge">PermissionMode.All</code> to grant full access.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">QueryDefinition</span> <span class="n">queryDefinition</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">QueryDefinition</span><span class="p">(</span><span class="s">"SELECT * FROM c where c.status like @status"</span><span class="p">)</span>
+    <span class="p">.</span><span class="nf">WithParameter</span><span class="p">(</span><span class="s">"@status"</span><span class="p">,</span> <span class="s">"start%"</span><span class="p">);</span>
+
+<span class="n">PermissionProperties</span> <span class="n">readPermission</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">PermissionProperties</span><span class="p">(</span>
+                <span class="n">id</span><span class="p">:</span> <span class="s">"Read"</span><span class="p">,</span>
+                <span class="n">permissionMode</span><span class="p">:</span> <span class="n">PermissionMode</span><span class="p">.</span><span class="n">Read</span><span class="p">,</span> <span class="c1">// 👈 Read access only.</span>
+                <span class="n">container</span><span class="p">:</span> <span class="n">container</span><span class="p">);</span> <span class="c1">// 👈 Single Container permission.</span>
+
+<span class="n">PermissionProperties</span> <span class="n">readContainerPermission</span> <span class="p">=</span> <span class="k">await</span> <span class="n">user</span><span class="p">.</span><span class="nf">CreatePermissionAsync</span><span class="p">(</span><span class="n">readPermission</span><span class="p">);</span>
+
+<span class="k">using</span> <span class="p">(</span><span class="n">CosmosClient</span> <span class="n">readClient</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">CosmosClient</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">readContainerPermission</span><span class="p">.</span><span class="n">Token</span><span class="p">))</span>
+<span class="p">{</span>
+
+  <span class="k">try</span><span class="p">{</span>
+    <span class="k">using</span> <span class="p">(</span><span class="n">FeedIterator</span><span class="p">&lt;</span><span class="n">DatabaseProperties</span><span class="p">&gt;</span> <span class="n">feedIterator</span> <span class="p">=</span> <span class="n">readClient</span><span class="p">.</span><span class="n">GetDatabaseQueryIterator</span><span class="p">&lt;</span><span class="n">DatabaseProperties</span><span class="p">&gt;(</span><span class="n">queryDefinition</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">feedIterator</span><span class="p">.</span><span class="n">HasMoreResults</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">FeedResponse</span><span class="p">&lt;</span><span class="n">DatabaseProperties</span><span class="p">&gt;</span> <span class="n">response</span> <span class="p">=</span> <span class="k">await</span> <span class="n">feedIterator</span><span class="p">.</span><span class="nf">ReadNextAsync</span><span class="p">();</span>
+            <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">database</span> <span class="k">in</span> <span class="n">response</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">database</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">catch</span> <span class="p">(</span><span class="n">CosmosException</span> <span class="n">ce</span><span class="p">)</span> <span class="nf">when</span> <span class="p">(</span><span class="n">ce</span><span class="p">.</span><span class="n">StatusCode</span> <span class="p">==</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">HttpStatusCode</span><span class="p">.</span><span class="n">Forbidden</span><span class="p">)</span>
+  <span class="p">{</span>
+      <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Database query failed because user has no admin rights"</span><span class="p">);</span>
+      <span class="c1">// 👆 Notice: Exception will happen.</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="query-for-containers">Query for Containers</h3>
+
+<p><code class="language-plaintext highlighter-rouge">GetContainerQueryIterator</code> method creates a query for containers under an database using a SQL statement. Suppose you have created a container with container properties, and this <code class="language-plaintext highlighter-rouge">ContainerProperties</code> contains indexes. With below code and using <code class="language-plaintext highlighter-rouge">GetContainerQueryIterator</code> method you can get back the <code class="language-plaintext highlighter-rouge">ContainerProperties</code> from cosmos later.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">FeedIterator</span><span class="p">&lt;</span><span class="n">ContainerProperties</span><span class="p">&gt;</span> <span class="n">resultSet</span> <span class="p">=</span> <span class="n">cosmosDatabase</span><span class="p">.</span><span class="n">GetContainerQueryIterator</span><span class="p">&lt;</span><span class="n">ContainerProperties</span><span class="p">&gt;((</span><span class="s">$"select * from c where c.id = \"</span><span class="p">{</span><span class="n">ContainerId</span><span class="p">}</span><span class="s">\""</span><span class="p">));</span>
+<span class="n">FeedResponse</span><span class="p">&lt;</span><span class="n">ContainerProperties</span><span class="p">&gt;</span> <span class="n">queryProperties</span> <span class="p">=</span> <span class="n">resultSet</span><span class="p">.</span><span class="nf">ReadNextAsync</span><span class="p">().</span><span class="n">Result</span><span class="p">;</span>
+<span class="n">ContainerProperties</span> <span class="n">containerSettings</span> <span class="p">=</span> <span class="n">queryProperties</span><span class="p">.</span><span class="n">Resource</span><span class="p">.</span><span class="nf">ToList</span><span class="p">().</span><span class="nf">FirstOrDefault</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">containerSettings</span><span class="p">.</span><span class="n">IndexingPolicy</span><span class="p">.</span><span class="n">ExcludedPaths</span><span class="p">.</span><span class="nf">First</span><span class="p">().</span><span class="n">Path</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="query-within-container">Query within Container</h3>
+
+<h4 id="get-the-container-by-its-container-id">Get the container by its container id.</h4>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">container</span> <span class="p">=</span> <span class="nf">GetContainer</span><span class="p">(</span><span class="s">"containerId"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="read-the-item-within-container-asynchronously">Read the item within container asynchronously.</h4>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Order</span> <span class="n">order</span> <span class="p">=</span> <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="n">container</span><span class="p">.</span><span class="n">ReadItemAsync</span><span class="p">&lt;</span><span class="n">Order</span><span class="p">&gt;(</span><span class="s">"id"</span><span class="p">,</span> <span class="k">new</span> <span class="nf">PartitionKey</span><span class="p">(</span><span class="s">"orderId"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Iterating through multiple items within container using <code class="language-plaintext highlighter-rouge">GetItemQueryIterator</code> method.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Read Permission on container for the user</span>
+<span class="n">PermissionProperties</span> <span class="n">readPermission</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">PermissionProperties</span><span class="p">(</span>
+    <span class="n">id</span><span class="p">:</span> <span class="s">"Read"</span><span class="p">,</span>
+    <span class="n">permissionMode</span><span class="p">:</span> <span class="n">PermissionMode</span><span class="p">.</span><span class="n">Read</span><span class="p">,</span>
+    <span class="n">container</span><span class="p">:</span> <span class="n">container</span><span class="p">);</span>
+
+<span class="n">PermissionProperties</span> <span class="n">readContainerPermission</span> <span class="p">=</span> <span class="k">await</span> <span class="n">user</span><span class="p">.</span><span class="nf">CreatePermissionAsync</span><span class="p">(</span><span class="n">readPermission</span><span class="p">);</span>
+
+<span class="c1">// Create a new client with the generated token</span>
+<span class="k">using</span> <span class="p">(</span><span class="n">CosmosClient</span> <span class="n">readClient</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">CosmosClient</span><span class="p">(</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">readContainerPermission</span><span class="p">.</span><span class="n">Token</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">Container</span> <span class="n">readContainer</span> <span class="p">=</span> <span class="n">readClient</span><span class="p">.</span><span class="nf">GetContainer</span><span class="p">(</span><span class="n">databaseName</span><span class="p">,</span> <span class="n">container</span><span class="p">.</span><span class="n">Id</span><span class="p">);</span>
+
+    <span class="c1">// 👉 try read items should succeed because user1 was granted Read permission on container1</span>
+    <span class="k">using</span> <span class="p">(</span><span class="n">FeedIterator</span><span class="p">&lt;</span><span class="n">SalesOrder</span><span class="p">&gt;</span> <span class="n">feedIterator</span> <span class="p">=</span> <span class="n">readContainer</span><span class="p">.</span><span class="n">GetItemQueryIterator</span><span class="p">&lt;</span><span class="n">SalesOrder</span><span class="p">&gt;())</span>
+    <span class="p">{</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">feedIterator</span><span class="p">.</span><span class="n">HasMoreResults</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">FeedResponse</span><span class="p">&lt;</span><span class="n">SalesOrder</span><span class="p">&gt;</span> <span class="n">salesOrders</span> <span class="p">=</span> <span class="k">await</span> <span class="n">feedIterator</span><span class="p">.</span><span class="nf">ReadNextAsync</span><span class="p">();</span>
+            <span class="k">foreach</span> <span class="p">(</span><span class="n">SalesOrder</span> <span class="n">salesOrder</span> <span class="k">in</span> <span class="n">salesOrders</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">JsonConvert</span><span class="p">.</span><span class="nf">SerializeObject</span><span class="p">(</span><span class="n">salesOrder</span><span class="p">));</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="linq-query-for-items">LINQ query for items</h4>
+
+<p><code class="language-plaintext highlighter-rouge">GetItemLinkQueryable</code> method creates a LINQ query for items under a container in an Azure Cosmos DB service. Query book by its title property.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Query by the Title property</span>
+<span class="n">Book</span> <span class="n">book</span> <span class="p">=</span> <span class="n">container</span><span class="p">.</span><span class="n">GetItemLinqQueryable</span><span class="p">&lt;</span><span class="n">Book</span><span class="p">&gt;(</span><span class="k">true</span><span class="p">)</span>
+                     <span class="p">.</span><span class="nf">Where</span><span class="p">(</span><span class="n">b</span> <span class="p">=&gt;</span> <span class="n">b</span><span class="p">.</span><span class="n">Title</span> <span class="p">==</span> <span class="s">"War and Peace"</span><span class="p">)</span>
+                     <span class="p">.</span><span class="nf">AsEnumerable</span><span class="p">()</span>
+                     <span class="p">.</span><span class="nf">FirstOrDefault</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h4 id="creating-an-item">Creating an Item</h4>
+
+<p><code class="language-plaintext highlighter-rouge">CreateItemAsync</code> creates a item as an asynchronous operation in the Azure Cosmos service.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ItemResponse</span> <span class="n">item</span> <span class="p">=</span> <span class="k">await</span> <span class="k">this</span>
+                    <span class="p">.</span><span class="n">container</span>
+                    <span class="p">.</span><span class="n">CreateItemAsync</span><span class="p">&lt;</span><span class="n">Order</span><span class="p">&gt;(</span>
+                      <span class="n">newOrder</span><span class="p">,</span>
+                      <span class="k">new</span> <span class="nf">PartitionKey</span><span class="p">(</span><span class="n">newOrder</span><span class="p">.</span><span class="n">Id</span><span class="p">)</span>
+                    <span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="replacing-an-item">Replacing an Item</h4>
+
+<p><code class="language-plaintext highlighter-rouge">ReplaceItemAsync</code> replaces a item in the Azure Cosmos service as an asynchronous operation.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ItemResponse</span> <span class="n">item</span> <span class="p">=</span> <span class="k">await</span> <span class="k">this</span>
+                    <span class="p">.</span><span class="n">container</span>
+                    <span class="p">.</span><span class="n">ReplaceItemAsync</span><span class="p">&lt;</span><span class="n">Order</span><span class="p">&gt;(</span>
+                      <span class="n">existingOrder</span><span class="p">,</span> <span class="n">existingOrder</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span>
+                      <span class="k">new</span> <span class="nf">PartitionKey</span><span class="p">(</span><span class="n">existingOrder</span><span class="p">.</span><span class="n">Id</span><span class="p">)</span>
+                    <span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="deleting-an-item">Deleting an Item</h4>
+
+<p><code class="language-plaintext highlighter-rouge">DeleteItemAsync</code> delete a item from the Azure Cosmos service as an asynchronous operation.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ItemResponse</span> <span class="n">item</span> <span class="p">=</span> <span class="k">await</span> <span class="k">this</span>
+                    <span class="p">.</span><span class="n">container</span>
+                    <span class="p">.</span><span class="n">DeleteItemAsync</span><span class="p">&lt;</span><span class="n">Order</span><span class="p">&gt;(</span><span class="s">"partitionKey"</span><span class="p">,</span> <span class="s">"id"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="concurrency-in-cosmos-db">Concurrency in Cosmos Db</h2>
+
+<p>Let’s understand <strong>ETag</strong> concept before jumping to concurrency.</p>
+
+<h3 id="etag-in-item">ETag in Item</h3>
+
+<ol>
+  <li>All items in Cosmos Db have an <strong>_etag</strong> field. This gets set on the server <strong>every time a item is updated</strong>.</li>
+  <li>Use ETag to control if a replace should succeed, or not, based on whether the ETag on the request matches the current ETag value of the persisted Item.</li>
+</ol>
+
+<h3 id="optimistic-concurrency">Optimistic Concurrency</h3>
+
+<p>Suppose 2 users are reading the same document and <code class="language-plaintext highlighter-rouge">User-1</code> saved first (success) and <code class="language-plaintext highlighter-rouge">User-2</code> save will fail. In order to achieve optimistic concurrency. You must pass the ETag to your cosmos DB.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">IfMatchEtag</span> <span class="p">=</span> <span class="n">itemResponse</span><span class="p">.</span><span class="n">ETag</span><span class="err">👈</span>
+</code></pre></div></div>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">updatedDoc</span> <span class="p">=</span> <span class="k">await</span> <span class="n">container</span>
+            <span class="p">.</span><span class="n">ReplaceItemAsync</span><span class="p">&lt;</span><span class="n">SalesOrder</span><span class="p">&gt;(</span>
+                <span class="n">itemResponse</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span>
+                <span class="k">new</span> <span class="nf">PartitionKey</span><span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="n">AccountNumber</span><span class="p">),</span>
+                <span class="k">new</span> <span class="n">ItemRequestOptions</span> <span class="p">{</span>
+                  <span class="n">IfMatchEtag</span> <span class="p">=</span> <span class="n">itemResponse</span><span class="p">.</span><span class="n">ETag</span> <span class="c1">// 👈 Passing ETag to match</span>
+                <span class="p">});</span>
+</code></pre></div></div>
+
+<p>When doing a replace of a item you can opt-in to having the server only apply the Replace if the ETag on the request matches the ETag of the item on the server. If someone did an update to the same item since you read it, then the ETag on the server will not match and the Replace operation can be rejected. <code class="language-plaintext highlighter-rouge">User-2</code> will get error <code class="language-plaintext highlighter-rouge">Using optimistic concurrency when doing a ReplaceItemAsync</code></p>
+
+<h3 id="last-one-wins">Last one Wins</h3>
+
+<p>However, if you want to overwrite &amp; replace the item every time. That means if user-1 &amp; user-2 both are reading same item. And user-1 saved item first then if user-2 will try to save. Then <strong>Last one wins</strong> means user-2 item will be saved. For that reason you do not need to pass the <strong>eTag</strong> to cosmos Db.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//persist the change back to the server</span>
+<span class="n">ItemResponse</span><span class="p">&lt;</span><span class="n">SalesOrder</span><span class="p">&gt;</span> <span class="n">updatedDoc</span> <span class="p">=</span> <span class="k">await</span> <span class="n">container</span><span class="p">.</span><span class="n">ReplaceItemAsync</span><span class="p">&lt;</span><span class="n">SalesOrder</span><span class="p">&gt;(</span>
+    <span class="n">partitionKey</span><span class="p">:</span> <span class="k">new</span> <span class="nf">PartitionKey</span><span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="n">AccountNumber</span><span class="p">),</span>
+    <span class="n">id</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="n">Id</span><span class="p">,</span>
+    <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"ETag of item now that is has been updated - {0}"</span><span class="p">,</span> <span class="n">updatedDoc</span><span class="p">.</span><span class="n">ETag</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="cosmos-db-development-tools">Cosmos DB Development Tools</h2>
+
+<p>Azure team is very thoughtful on development tools especially creating nice useful extensions for visual studio code.</p>
+
+<h3 id="vs-code-extension">Vs Code Extension</h3>
+
+<p>You can install <strong><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb">Azure Databases</a></strong> Vs Code Extensions.</p>
+
+<p><img src="https://i.imgur.com/yiUJy8i.png" alt="" /></p>
+
+<p><img src="https://i.imgur.com/EYh2hfs.png" alt="" /></p>
+
+<p>Now you can browse through your Databases <strong>available</strong> in your subscriptions inside VSCode only. You can <strong>inspect</strong> them and more importantly you can even <strong>update</strong> the db from VS code.</p>
+
+<p><img src="https://i.imgur.com/QRoWzVh.png" alt="" /></p>
+
+<hr />
+
+<p><em>If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to become full stack developer and grow your carrier as new software developer or Lead Developer/Architect. Consider subscribing to our full stack development training programs. You can enroll to All-Access Monthly membership plans to get unlimited access to all of our video courses, slides, source code &amp; monthly video calls.</p>
+
+<ul>
+  <li>Please subscribe to <a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to <a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to get everything from PRO plan. Additionally, you will get access to monthly live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today <a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board on your dream software company as a Developer,Architect or Lead Engineer role.</p>
+</blockquote>
+
+<p><strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master</a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">www.rupeshtiwari.com</a> | <a href="https://www.fullstackmaster.net">www.fullstackmaster.net</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#cosmos" class="page__taxonomy-item" rel="tag">cosmos</a><span class="sep">, </span>
+    
+      <a href="/tags/#csharp" class="page__taxonomy-item" rel="tag">csharp</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-03-26T20:00:00-04:00">March 26, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Azure+Cosmos+DB+Basics%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fazure-cosmos-db-basics%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fazure-cosmos-db-basics%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fazure-cosmos-db-basics%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/soa/angular-service-as-message-handler/" class="pagination--pager" title="Angular Service as PubSub Message Handler
+">Previous</a>
+    
+    
+      <a href="/azure-functions-basics/" class="pagination--pager" title="Azure Functions Basics
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-availability-set-vs-availability-zone/" rel="permalink">Azure Availability Set Vs Availability Zone
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-update-domain-vs-fault-domain/" rel="permalink">Azure Update Domain vs Fault Domain
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/roadmap-for-mastering-competitive-programming-for-beginners/" rel="permalink">Roadmap for mastering Coding &amp; Competitive Programming interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junio...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-start-preparing-for-coding-interview/" rel="permalink">How to start preparing for coding interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies lik...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/azure-cosmos-db-basics/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/azure-cosmos-db-basics"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

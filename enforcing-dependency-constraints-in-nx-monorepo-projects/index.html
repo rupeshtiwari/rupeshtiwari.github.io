@@ -1,0 +1,1110 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Enforcing Dependency Constraints in Nx Monorepo Projects - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="learn configuration required to enforce dependency in your nx monorepo workspace">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Enforcing Dependency Constraints in Nx Monorepo Projects">
+<meta property="og:url" content="https://www.rupeshtiwari.com/enforcing-dependency-constraints-in-nx-monorepo-projects/">
+
+
+  <meta property="og:description" content="learn configuration required to enforce dependency in your nx monorepo workspace">
+
+
+
+  <meta property="og:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Enforcing Dependency Constraints in Nx Monorepo Projects">
+  <meta name="twitter:description" content="learn configuration required to enforce dependency in your nx monorepo workspace">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/enforcing-dependency-constraints-in-nx-monorepo-projects/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://www.rupeshtiwari.com/assets/images/bio-photo.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-01-25T00:00:00+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/enforcing-dependency-constraints-in-nx-monorepo-projects/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Enforcing Dependency Constraints in Nx Monorepo Projects</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Enforcing Dependency Constraints in Nx Monorepo Projects">
+    <meta itemprop="description" content="  Are you using NRWL/NX monorepo in your company? and you areworried how to configure dependencies so that you can better control yourprojects? I use nx dependency constraints to restrict which project candepend on whom just like you do in .net or java or any typed language.Read this article to understand how you can configure dependency constraintand visualize your monorepo workspace dependency graph.Why do you need dependency enforcement?In Nx Monorepo workspace we can have applications (apps) and libraries (libs).Apps will have projects that are hosted on the server. Libs should have theprojects which are supporting Apps. Inside the Libs folder you can have yourservice projects. Within the Libs we end up creating lots of projects and it isvery confusing when every project can depend on every other project.However, If you want to partition service code into well-defined cohesiveblocks. Especially if you are following Service Oriented ArchitectureAdvanced Distributed Systems Design by Udi Dahan.Then you might be aware that one service code should not depend on anotherservice code. Therefore, you want to impose constraints on how projects candepend on each other in JavaScript Projects. Then it is very difficult if youdon’t use any framework. I would highly recommend usingNx Monorepo tag and scope.Read this article till the end to learn more!Understanding Monorepo workspace projectsIn my monorepo you can notice I have 3 folders:  Branding folder that has 3 projects like logger, layout,angular material  Sales folder that has 2 projects like product-editor and products  Customers folder that has 2 projects like user-editor and usersDefining which project can depend on whomBelow are the dependency rules I want to enforce in my monorepo.  Sales projects:          Can depend on Branding projects      Can not depend on Customers projects        Customers projects:          Can depend on Branding projects      Can not depend on Sales projects        Branding projects:          Can not depend on Sales projects      Can not depend on Customers projects      Good news is you can do dependency enforcement free in Nx Monorepo usingconfiguration. So follow the steps below.Step 1: Adding Project’s Tags in Nx.jsonGo to nx.json and add projects tags.&quot;projects&quot;: {    &quot;sales-product-editor&quot;: {      &quot;tags&quot;: [        &quot;scope:sales&quot;      ]    },    &quot;sales-products&quot;: {      &quot;tags&quot;: [        &quot;scope:sales&quot;      ]    },    &quot;customers-user-editor&quot;: {      &quot;tags&quot;: [        &quot;scope:customers&quot;      ]    },    &quot;customers-users&quot;: {      &quot;tags&quot;: [        &quot;scope:customers&quot;      ]    },    &quot;shared-ng-material&quot;: {      &quot;tags&quot;: [        &quot;scope:branding&quot;      ]    },    &quot;shared-layout&quot;: {      &quot;tags&quot;: [        &quot;scope:branding&quot;      ]    },    &quot;shared-logger&quot;: {      &quot;tags&quot;: [        &quot;scope:branding&quot;      ]    },     &quot;onlinestore-client-e2e&quot;: {      &quot;tags&quot;: [],      &quot;implicitDependencies&quot;: [        &quot;onlinestore-client&quot;      ]    },    &quot;onlinestore-admin-e2e&quot;: {      &quot;tags&quot;: [],      &quot;implicitDependencies&quot;: [        &quot;onlinestore-admin&quot;      ]    },       &quot;onlinestore-client&quot;: {      &quot;tags&quot;: [        &quot;type:app&quot;,        &quot;scope:client&quot;      ]    },    &quot;onlinestore-admin&quot;: {      &quot;tags&quot;: [        &quot;type:app&quot;,        &quot;scope:admin&quot;      ]    },    &quot;onlinestore-client-e2e&quot;: {      &quot;tags&quot;: [],      &quot;implicitDependencies&quot;: [        &quot;onlinestore-client&quot;      ]    },    &quot;onlinestore-admin-e2e&quot;: {      &quot;tags&quot;: [],      &quot;implicitDependencies&quot;: [        &quot;onlinestore-admin&quot;      ]    }  }Step 2: Adding Dependency Enforcement in tslint.json fileAdd below nx-enforce-module-boundaries array in tslint.json file. &quot;nx-enforce-module-boundaries&quot;: [      true,      {        &quot;enforceBuildableLibDependency&quot;: true,        &quot;allow&quot;: [],        &quot;depConstraints&quot;: [          {            &quot;sourceTag&quot;: &quot;scope:sales&quot;,            &quot;onlyDependOnLibsWithTags&quot;: [              &quot;scope:sales&quot;,              &quot;scope:branding&quot;            ]          },          {            &quot;sourceTag&quot;: &quot;scope:customers&quot;,            &quot;onlyDependOnLibsWithTags&quot;: [              &quot;scope:customers&quot;,              &quot;scope:branding&quot;            ]          },          {            &quot;sourceTag&quot;: &quot;scope:branding&quot;,            &quot;onlyDependOnLibsWithTags&quot;: [              &quot;scope:branding&quot;            ]          }        ]      }    ],Testing the boundary constraintNow if you go to sales-products.module.ts and perform below imports.Remember the Rule for Sales Service: 👍  Sales projects          can depend on Branding projects      can depend on other Sales projects      can not depend on Customers projects      Testing Sales projects dependency rules live  Try to import SharedLoggerModule from branding scope and runnpm run affected:lint you will not see any error.// sales projectimport { SharedLoggerModule } from &#39;@myorg/shared/logger&#39;;  Try to import CustomersUserEditorModule from Customers scope and runnpm run affected:lint you will see any error.// Sales project can not depend on Customers projectimport { CustomersUserEditorModule } from &#39;@myorg/customers-user-editor&#39;;You will see below error:&gt; ng run sales-products:lintLinting &quot;sales-products&quot;...C:/Projects/GitHub/nx-repo/myorg/myorg/libs/sales/products/src/lib/sales-products.module.ts:9:1ERROR: 9:1  nx-enforce-module-boundaries  A project taggedwith &quot;scope:sales&quot; can only depend on libs tagged with &quot;scope:sales&quot;, &quot;scope:branding&quot;  Try to import SalesProductEditorModule Project from sales service only andand run npm run affected:lint you will not see any error.// Sales project can depend on other sales projectimport { SalesProductEditorModule } from &#39;@myorg/sales-product-editor&#39;;ConclusionSo I loved the way Nx Monorepo framework gives the boundary constraints out ofthe box.Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
+    <meta itemprop="datePublished" content="2021-01-25T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Enforcing Dependency Constraints in Nx Monorepo Projects
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#why-do-you-need-dependency-enforcement">Why do you need dependency enforcement?</a></li><li><a href="#understanding-monorepo-workspace-projects">Understanding Monorepo workspace projects</a></li><li><a href="#defining-which-project-can-depend-on-whom">Defining which project can depend on whom</a></li><li><a href="#step-1-adding-projects-tags-in-nxjson">Step 1: Adding Project’s Tags in Nx.json</a></li><li><a href="#step-2-adding-dependency-enforcement-in-tslintjson-file">Step 2: Adding Dependency Enforcement in tslint.json file</a></li><li><a href="#testing-the-boundary-constraint">Testing the boundary constraint</a><ul><li><a href="#testing-sales-projects-dependency-rules-live">Testing Sales projects dependency rules live</a></li></ul></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Are you using <a href="https://nx.dev/">NRWL/NX monorepo</a> in your company? and you are
+worried how to configure dependencies so that you can better control your
+projects? I use <code class="language-plaintext highlighter-rouge">nx dependency constraints</code> to restrict which project can
+depend on whom just like you do in <code class="language-plaintext highlighter-rouge">.net</code> or <code class="language-plaintext highlighter-rouge">java</code> or any typed language.
+Read this article to understand how you can configure dependency constraint
+and visualize your monorepo workspace dependency graph.</p>
+</blockquote>
+
+<h2 id="why-do-you-need-dependency-enforcement">Why do you need dependency enforcement?</h2>
+
+<p>In Nx Monorepo workspace we can have applications (apps) and libraries (libs).
+Apps will have projects that are hosted on the server. Libs should have the
+projects which are supporting Apps. Inside the Libs folder you can have your
+service projects. Within the Libs we end up creating lots of projects and it is
+very confusing when every project can depend on every other project.</p>
+
+<p>However, If you want to partition service code into well-defined cohesive
+blocks. Especially if you are following Service Oriented Architecture
+<a href="https://particular.net/adsd">Advanced Distributed Systems Design by Udi Dahan</a>.
+Then you might be aware that one service code should not depend on another
+service code. Therefore, you want to impose constraints on how projects can
+depend on each other in JavaScript Projects. Then it is very difficult if you
+don’t use any framework. I would highly recommend using
+<a href="https://nx.dev/">Nx Monorepo</a> <code class="language-plaintext highlighter-rouge">tag</code> and <code class="language-plaintext highlighter-rouge">scope</code>.</p>
+
+<p>Read this article till the end to learn more!</p>
+
+<h2 id="understanding-monorepo-workspace-projects">Understanding Monorepo workspace projects</h2>
+
+<p>In my monorepo you can notice I have 3 folders:</p>
+
+<ol>
+  <li><strong><code class="language-plaintext highlighter-rouge">Branding</code></strong> folder that has 3 projects like <code class="language-plaintext highlighter-rouge">logger</code>, <code class="language-plaintext highlighter-rouge">layout</code>,
+<code class="language-plaintext highlighter-rouge">angular material</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">Sales</code></strong> folder that has 2 projects like <code class="language-plaintext highlighter-rouge">product-editor</code> and <code class="language-plaintext highlighter-rouge">products</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">Customers</code></strong> folder that has 2 projects like <code class="language-plaintext highlighter-rouge">user-editor</code> and <code class="language-plaintext highlighter-rouge">users</code></li>
+</ol>
+
+<p><img src="https://i.imgur.com/i1YhcvR.png" alt="" /></p>
+
+<h2 id="defining-which-project-can-depend-on-whom">Defining which project can depend on whom</h2>
+
+<p>Below are the dependency rules I want to enforce in my monorepo.</p>
+
+<ul>
+  <li><strong>Sales</strong> projects:
+    <ul>
+      <li>Can depend on Branding projects</li>
+      <li>Can not depend on Customers projects</li>
+    </ul>
+  </li>
+  <li><strong>Customers</strong> projects:
+    <ul>
+      <li>Can depend on Branding projects</li>
+      <li>Can not depend on Sales projects</li>
+    </ul>
+  </li>
+  <li><strong>Branding</strong> projects:
+    <ul>
+      <li>Can not depend on Sales projects</li>
+      <li>Can not depend on Customers projects</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://i.imgur.com/XAnomcU.png" alt="" /></p>
+
+<p>Good news is you can do dependency enforcement free in Nx Monorepo using
+configuration. So follow the steps below.</p>
+
+<h2 id="step-1-adding-projects-tags-in-nxjson">Step 1: Adding Project’s Tags in Nx.json</h2>
+
+<p>Go to <code class="language-plaintext highlighter-rouge">nx.json</code> and add projects tags.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"projects"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"sales-product-editor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"scope:sales"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"sales-products"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"scope:sales"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"customers-user-editor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"scope:customers"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"customers-users"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"scope:customers"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"shared-ng-material"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"scope:branding"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"shared-layout"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"scope:branding"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"shared-logger"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"scope:branding"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+     </span><span class="nl">"onlinestore-client-e2e"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="nl">"implicitDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"onlinestore-client"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"onlinestore-admin-e2e"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="nl">"implicitDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"onlinestore-admin"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+       </span><span class="nl">"onlinestore-client"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"type:app"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"scope:client"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"onlinestore-admin"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"type:app"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"scope:admin"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"onlinestore-client-e2e"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="nl">"implicitDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"onlinestore-client"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"onlinestore-admin-e2e"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="nl">"implicitDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"onlinestore-admin"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="step-2-adding-dependency-enforcement-in-tslintjson-file">Step 2: Adding Dependency Enforcement in tslint.json file</h2>
+
+<p>Add below <code class="language-plaintext highlighter-rouge">nx-enforce-module-boundaries</code> array in <code class="language-plaintext highlighter-rouge">tslint.json</code> file.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="nl">"nx-enforce-module-boundaries"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"enforceBuildableLibDependency"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"allow"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="nl">"depConstraints"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"sourceTag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scope:sales"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"onlyDependOnLibsWithTags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"scope:sales"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"scope:branding"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"sourceTag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scope:customers"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"onlyDependOnLibsWithTags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"scope:customers"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"scope:branding"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"sourceTag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scope:branding"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"onlyDependOnLibsWithTags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"scope:branding"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="testing-the-boundary-constraint">Testing the boundary constraint</h2>
+
+<p>Now if you go to <code class="language-plaintext highlighter-rouge">sales-products.module.ts</code> and perform below imports.</p>
+
+<p>Remember the Rule for Sales Service: 👍</p>
+
+<ul>
+  <li><strong>Sales</strong> projects
+    <ul>
+      <li>can depend on <strong>Branding</strong> projects</li>
+      <li>can depend on other <strong>Sales</strong> projects</li>
+      <li>can not depend on <strong>Customers</strong> projects</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="testing-sales-projects-dependency-rules-live">Testing Sales projects dependency rules live</h3>
+
+<ol>
+  <li>Try to import <code class="language-plaintext highlighter-rouge">SharedLoggerModule</code> from branding scope and run
+<code class="language-plaintext highlighter-rouge">npm run affected:lint</code> you will <em>not</em> see any error.</li>
+</ol>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// sales project</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">SharedLoggerModule</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@myorg/shared/logger</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Try to import <code class="language-plaintext highlighter-rouge">CustomersUserEditorModule</code> from Customers scope and run
+<code class="language-plaintext highlighter-rouge">npm run affected:lint</code> you <em>will</em> see any error.</li>
+</ol>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Sales project can not depend on Customers project</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">CustomersUserEditorModule</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@myorg/customers-user-editor</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>You will see below error:</p>
+
+<pre><code class="language-error">&gt; ng run sales-products:lint
+Linting "sales-products"...
+C:/Projects/GitHub/nx-repo/myorg/myorg/libs/sales/products/src/lib/sales-products.module.ts:9:1
+ERROR: 9:1  nx-enforce-module-boundaries  A project tagged
+with "scope:sales" can only depend on libs tagged with "scope:sales", "scope:branding"
+</code></pre>
+
+<p><img src="https://i.imgur.com/ZhCEiaq.png" alt="" /></p>
+
+<ol>
+  <li>Try to import <code class="language-plaintext highlighter-rouge">SalesProductEditorModule</code> Project from sales service only and
+and run <code class="language-plaintext highlighter-rouge">npm run affected:lint</code> you will <em>not</em> see any error.</li>
+</ol>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Sales project can depend on other sales project</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">SalesProductEditorModule</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@myorg/sales-product-editor</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So I loved the way Nx Monorepo framework gives the boundary constraints out of
+the box.</p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p>If you want to become full stack developer and grow your carrier as new software
+developer or Lead Developer/Architect. Consider subscribing to our full stack
+development training programs. We have All-Access Monthly membership plans and
+you will get unlimited access to all of our video courses, slides, source code &amp;
+Monthly video calls.</p>
+
+<ul>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a> to
+access current and future angular, node.js and related courses.</li>
+  <li>Please subscribe to
+<a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a> to
+get everything from PRO plan. Additionally, you will get access to monthly
+live Q&amp;A video call with Rupesh and you can ask doubts/questions and get more
+help, tips and tricks.</li>
+</ul>
+
+<blockquote>
+  <p>Your bright future is awaiting for you so visit today
+<a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board
+on your dream software company as a Developer,Architect or Lead Engineer role.
+<strong>💖 Say 👋 to me!</strong></p>
+</blockquote>
+
+<div> 
+Rupesh Tiwari </div>
+<div>
+<a href="https://www.rupeshtiwari.com"> www.rupeshtiwari.com</a> </div>
+<div>
+✉️ <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi"> Email Rupesh</a> </div>
+<div>
+Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
+<div>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#angular" class="page__taxonomy-item" rel="tag">angular</a><span class="sep">, </span>
+    
+      <a href="/tags/#monorepo" class="page__taxonomy-item" rel="tag">monorepo</a><span class="sep">, </span>
+    
+      <a href="/tags/#nx" class="page__taxonomy-item" rel="tag">nx</a><span class="sep">, </span>
+    
+      <a href="/tags/#tooling" class="page__taxonomy-item" rel="tag">tooling</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-25T00:00:00+00:00">January 25, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Enforcing+Dependency+Constraints+in+Nx+Monorepo+Projects%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fenforcing-dependency-constraints-in-nx-monorepo-projects%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fenforcing-dependency-constraints-in-nx-monorepo-projects%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fenforcing-dependency-constraints-in-nx-monorepo-projects%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/finding-affected-builds-nrwl-nx-monorepo/" class="pagination--pager" title="Finding Affected Builds in Nrwl Nx Monorepo
+">Previous</a>
+    
+    
+      <a href="/publishing-nx-monorepo-angular-app-to-npm/" class="pagination--pager" title="Publishing Nx Monorepo Angular App to NPM
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-availability-set-vs-availability-zone/" rel="permalink">Azure Availability Set Vs Availability Zone
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/zZYQYQA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/azure-update-domain-vs-fault-domain/" rel="permalink">Azure Update Domain vs Fault Domain
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure a...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/roadmap-for-mastering-competitive-programming-for-beginners/" rel="permalink">Roadmap for mastering Coding &amp; Competitive Programming interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Are you non-computer background student? I am a Electronics Engineering student and have been in software company and worked more than 16 years from junio...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/qxXxmBa.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-start-preparing-for-coding-interview/" rel="permalink">How to start preparing for coding interview
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  When I started learning coding for a coding-interview for Facebook, Amazon or Google. I faced problems when I saw programmers were using terminologies lik...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128916623-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128916623-7', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/enforcing-dependency-constraints-in-nx-monorepo-projects/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/enforcing-dependency-constraints-in-nx-monorepo-projects"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
