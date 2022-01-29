@@ -1,4 +1,4 @@
-name: Powershell Script to deploy on GhPages
+name: Deploy to Github Pages
 on: push
 jobs:
   build:
