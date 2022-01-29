@@ -19,7 +19,7 @@ jobs:
           rm -rf Gemfile.lock
           bundle install --no-deployment
           bundle exec jekyll build -d  docs
-          cp ./cname ./docs # copy cname file
+          cp CNAME ./docs # copy cname file
       - name: Commit files
         run: |
           git config --local user.email "RupeshTiwari+github-actions[bot]@users.noreply.github.com"
