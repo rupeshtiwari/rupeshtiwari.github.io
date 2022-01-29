@@ -1,5 +1,8 @@
-name: Build & Deploy to Github Pages
-on: push
+name: Build & Deploy to Github Pages everyday
+on:
+  schedule:
+    - cron: "30 13 * * *" # 1:30 PM (UTC)/8:30 AM (EST)
+      #0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday
 jobs:
   build:
     runs-on: ubuntu-latest
