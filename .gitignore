@@ -6,4 +6,4 @@ _site
 *.sh
 .drawio-chrome
 !docs
- 
+docs/docs/* 
