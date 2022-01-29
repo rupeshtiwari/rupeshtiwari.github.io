@@ -1,4 +1,184 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-28T09:31:38-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Azure Update Domain vs Fault Domain</title><link href="https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain/" rel="alternate" type="text/html" title="Azure Update Domain vs Fault Domain" /><published>2022-01-21T19:00:00-05:00</published><updated>2022-01-21T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-01-29T14:17:58-05:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Azure Availability Set Vs Availability Zone</title><link href="https://www.rupeshtiwari.com/azure-availability-set-vs-availability-zone/" rel="alternate" type="text/html" title="Azure Availability Set Vs Availability Zone" /><published>2022-01-28T19:00:00-05:00</published><updated>2022-01-28T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/azure-availability-set-vs-availability-zone</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-availability-set-vs-availability-zone/">&lt;blockquote&gt;
+  &lt;p&gt;Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your services against data-center disasters? Azure guaranty to provide 99.99% SLA while using virtual machines within Availability Set and Zones. Read this article to understand the concept of Availability Set and Availability Zones. When you want to create VMs and manage them in Azure then you must know this concepts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;availability-set&quot;&gt;Availability Set&lt;/h2&gt;
+
+&lt;p&gt;An availability set is a logical grouping of 2 or more than 2 VMs that help keep your application available during planned or unplanned maintenance. You can not put only 1 VM in Availability Set. You must need 2 or more VMs. There is no cost for the Availability Set itself, you only pay for each VM instance that you create.
+&lt;img src=&quot;https://imgur.com/hnmcfGV.png&quot; alt=&quot;&quot; /&gt;
+Running a VM with one or more replicated copies on separate hardware within the same &lt;strong&gt;Availability Set&lt;/strong&gt;, providing resiliency against machine failure.
+&lt;img src=&quot;https://imgur.com/Xgq1UgZ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; No Infrastructure redundancy required means: If this machine fails then no other machine will serve user request.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating 1st VM&lt;/strong&gt;
+Lets create 1st VM and create new Availability Set.&lt;/p&gt;
+
+&lt;p&gt;Step 1: Create New Virtual Machine&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/yqGEUAC.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Step2: Select your Availability &amp;amp; Update domains.
+&lt;img src=&quot;https://imgur.com/3u1Qgbl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Create 2nd VM&lt;/strong&gt;
+Create 2nd VM in the same Resource Group &amp;amp; same Availability Set.
+&lt;img src=&quot;https://i.imgur.com/E9TtkWY.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Both virtual machines under same Availability Set. The first VM is in Fault Domain-0 &amp;amp; Update Domain-0. The 2nd VM is in Fault Domain-1 &amp;amp; Update Domain-1&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How VMs are spread&lt;/strong&gt;
+&lt;img src=&quot;https://i.imgur.com/x1heVqQ.png&quot; alt=&quot;&quot; /&gt;
+Notice our 2 VMs are in 2 different Fault domains and 2 different Update domains. Which gives Hardware fault tolerance.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/FmgxQu5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So when Planned update is going on Update Domain 0 all the request to application will be navigated to the Update domain 1 this way you get 99.95% SLA.&lt;/p&gt;
+
+&lt;p&gt;How many update domains are assigned to an availability set?&lt;/p&gt;
+
+&lt;p&gt;Each &lt;strong&gt;availability set&lt;/strong&gt; can be configured with up to three fault &lt;strong&gt;domains&lt;/strong&gt; and twenty &lt;strong&gt;update domains&lt;/strong&gt;. &lt;strong&gt;Update domains&lt;/strong&gt; indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Key Points to remember&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You need to create virtual machines in the same resource group as the availability set.&lt;/li&gt;
+  &lt;li&gt;One virtual machine can only be in one availability set.&lt;/li&gt;
+  &lt;li&gt;You can assign virtual machines to the availability set only during the creation of virtual machines.&lt;/li&gt;
+  &lt;li&gt;You should create Azure storage account per VM to get the diagnostic logs and Metrics per VM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-availability-zones&quot;&gt;What is Availability Zones?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nUp33NS.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Availability Zones&lt;/strong&gt; also has multiple Fault Domains and Update Domains. So in case Availability Zones, each Availability Zone is consider as a single Fault Domain and Update Domain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/HcY2l6z.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Availability Zone is a unique physical location within an Azure Region. Each Availability Zone has multiple data-centers with independent Power supply, Network switch and Cooling system. All Region has Availability Zone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mCvNCTS.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each Region has minimum 3 Availability Zones. At the Region level you can think of Availability Zone as 3 Fault Domains and 3 Update Domains.
+&lt;img src=&quot;https://i.imgur.com/M9JL273.png&quot; alt=&quot;&quot; /&gt;
+Suppose if you keep 3 VMs in 3 different Availability Zones. Then if 1st Availability Zone is down then your 1st VM will be not working. However, your business will not be affected since other 2 Availability Zones are still up and running. Azure will route your client request to next available Availability Zone.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-vms-in-availability-zone-steps&quot;&gt;Creating VMs in Availability Zone Steps&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Location plays major role for Availability Zone&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/d0xEETa.png&quot; alt=&quot;&quot; /&gt;
+Availability Zones are available on selected region only.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yV0V4wv.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Like for South India you don’t get any Availability Zone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Afc28fF.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But for East USA you get Availability Zone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/P2QDFHy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While creating 1st Virtual Machine You select Availability zone as 1. When you create 2nd VM then give 2 for availability zone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/ydfA67F.png&quot; alt=&quot;&quot; /&gt;
+Always click on create new IP in Networking tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/eUDNYd2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make your IP address &lt;strong&gt;Zone-redundant&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/rwkuRg5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For creating 2nd VM you must select same resource group, same region and give 2 as Availability Zone.&lt;/p&gt;
+
+&lt;p&gt;Availability Zone gives 99.99% SLA.&lt;/p&gt;
+
+&lt;p&gt;You get more than &amp;gt; 99.99% of SLA in below services:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Azure Container&lt;/li&gt;
+  &lt;li&gt;Service Fabrics&lt;/li&gt;
+  &lt;li&gt;Azure Web Apps&lt;/li&gt;
+  &lt;li&gt;Azure Batch&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;azure-availability-sla&quot;&gt;Azure Availability SLA&lt;/h2&gt;
+
+&lt;p&gt;{: .notice–danger} \&lt;/p&gt;
+
+&lt;p&gt;🔔 &lt;strong&gt;IMPORTANT&lt;/strong&gt;: The Availability set requires at least 2 running virtual machine instances to get the actual SLA.&lt;/p&gt;
+
+&lt;p&gt;If I create single VM you get 99.9% up time with premium storage.&lt;/p&gt;
+
+&lt;p&gt;If you create 2 machine with different Availability Set means they are in different Fault Domains then you get 99.95%. This provides resiliency against hardware failure within Data Center.&lt;/p&gt;
+
+&lt;p&gt;If you create 2 machine inside 2 different Availability Zones that is they are across different data centers inside different zones then you will get 99.99% up time. This protects from Data Center failure.&lt;/p&gt;
+
+&lt;p&gt;If you want to protect your Virtual Machines for disaster recovery across the region then place them in across different regions.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Single VM&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Availability Sets&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Availability Zones&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Region Pairs&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;99.9% with Premium Storage only&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;99.95% up time( 4:50 down time)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;99.99% up time (0:53 down time)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Single VM easier for lift and shift scenario&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Protecting against hardware failures, network outages or power interruptions&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Protecting against Data Center Failure&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Protecting against region disaster&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Single VM&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2 or More VMs&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2 or more VMs&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2 or more VMs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://imgur.com/vKlJkWt.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;img src=&quot;https://imgur.com/YS2YNDx.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;img src=&quot;https://imgur.com/qPsYLLC.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;img src=&quot;https://imgur.com/bJlTzJr.png&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
+  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your services against data-center disasters? Azure guaranty to provide 99.99% SLA while using virtual machines within Availability Set and Zones. Read this article to understand the concept of Availability Set and Availability Zones. When you want to create VMs and manage them in Azure then you must know this concepts.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Azure Update Domain vs Fault Domain</title><link href="https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain/" rel="alternate" type="text/html" title="Azure Update Domain vs Fault Domain" /><published>2022-01-21T19:00:00-05:00</published><updated>2022-01-21T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-update-domain-vs-fault-domain/">&lt;blockquote&gt;
   &lt;p&gt;Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure against Network breakdown or power interruptions. Read this article to learn what is Update and Fault Domains in Data-Center and how they protect against software and hardware disasters.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -2149,146 +2329,4 @@ Azure Availability Zones are unique physical locations within an Azure region an
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for load-balancing, scaling, make application highly available is super challenging on cloud. Azure Virtual Machine Scale sets is the great tool which does all of these automatically with no extra cost for you. Lets learn more about Scale sets in this article.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Create Update and Delete Tags on Azure Resource</title><link href="https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/" rel="alternate" type="text/html" title="Create Update and Delete Tags on Azure Resource" /><published>2021-12-17T19:00:00-05:00</published><updated>2021-12-17T19:00:00-05:00</updated><id>https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource</id><content type="html" xml:base="https://www.rupeshtiwari.com/create-update-and-delete-tags-on-azure-resource/">&lt;blockquote&gt;
-  &lt;p&gt;Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmdlet&lt;/code&gt; used to fetch tags from Azure resources.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;what-is-tag-in-azure-resources&quot;&gt;What is Tag in Azure Resources?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You apply tags to your &lt;strong&gt;Azure resources, resource groups, and subscriptions&lt;/strong&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;logically&lt;/code&gt; organize them into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;taxonomy&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Each tag consists of a &lt;strong&gt;name and a value pair&lt;/strong&gt;. For example, you can create tag and apply the name “Environment” and the value “Stage” to all the resources in stage. Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources&quot;&gt;Tagging ideas&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Tag names are case-insensitive&lt;/strong&gt;: Example: “Environment” or “environment” they are same tag names.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Tag values are case-sensitive&lt;/strong&gt;: Example: “Stage” or “stage” they are different tag values.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice-success&quot;&gt;Learn more about &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources&quot;&gt;how to use tags to organize your Azure resources and management hierarchy&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Get-AzResource&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# To fetch  all resources&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;apply-tags-to-azure-resource&quot;&gt;Apply tags to Azure Resource&lt;/h2&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/QTDDL8_0N3c&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New-AzTag&lt;/code&gt; to apply tag on resource in &lt;strong&gt;Azure&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Create Tag variable&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dept&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Finance&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Status&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Normal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Get the resource that you want to appply tag on.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get-AzResource&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Application Insights Smart Detection&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceGroup&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;AdmissionApplication&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Apply Tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;New-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;view-tag-on-azure-resource&quot;&gt;View Tag on Azure Resource&lt;/h2&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/QTDDL8_0N3c&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Get-AzTag&lt;/code&gt; cmdlet to view tag on Azure resource. You have to pass the resource Id though. You can also use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Get-AzResource&lt;/code&gt; cmdlet to view the tags directly under a particular resource.&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Get the resource that you want to view tag on.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get-AzResource&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Application Insights Smart Detection&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceGroup&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;AdmissionApplicationGet-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;   &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# View tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;   &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;delete-tag-on-a-azure-resource&quot;&gt;Delete Tag on a Azure Resource&lt;/h2&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/2211KACFlmw&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;To remove specific tags, use &lt;strong&gt;Update-AzTag&lt;/strong&gt; and set &lt;strong&gt;-Operation&lt;/strong&gt; to &lt;strong&gt;Delete&lt;/strong&gt;. Pass in the tags you want to delete.&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Get the resource that you want to view tag on.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get-AzResource&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Application Insights Smart Detection&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceGroup&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;AdmissionApplication&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# View tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Decide which tags to remove&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$removeTags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dept&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Finance&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Status&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Normal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Delete the tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Update-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$removeTags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Operation&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Delete&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Confirm Tags are deleted by fetching them again&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;delete-tag-on-a-azure-subscription&quot;&gt;Delete Tag on a Azure Subscription&lt;/h2&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/2211KACFlmw&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;To remove all tags from your Azure subscription, use the &lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/module/az.resources/remove-aztag&quot;&gt;Remove-AzTag&lt;/a&gt; command.&lt;/p&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Get subscription by it&apos;s name&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$subscription&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Get-AzSubscription&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-SubscriptionName&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;   &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Example Subscription&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Remove the tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Remove-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/subscriptions/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$subscription&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;merge-tag&quot;&gt;Merge Tag&lt;/h2&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/8vtnn1ZacNg&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Location&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Canada&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Merge Tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Update-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Operation&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Merge&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;replace-tag&quot;&gt;Replace Tag&lt;/h2&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/0GJ27K3CWXA&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dept&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Sales&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Status&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;High&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# Replace tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Update-AzTag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-ResourceId&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Tag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$tags&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Operation&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Replace&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;&lt;i class=&quot;fab fa-youtube&quot; color=&quot;primary&quot;&gt;&lt;/i&gt; &lt;br /&gt;
-Watch the entire videos on &lt;a href=&quot;https://www.youtube.com/playlist?list=PLZed_adPqIJrUamBBcr9rYC6GFqbWK1mG&quot;&gt;&lt;strong&gt;Full Stack Master YouTube Channel&lt;/strong&gt; related to Managing Tags in Azure Resources&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="tutorial" /><summary type="html">Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for load-balancing, scaling, make application highly available is super challenging on cloud. Azure Virtual Machine Scale sets is the great tool which does all of these automatically with no extra cost for you. Lets learn more about Scale sets in this article.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

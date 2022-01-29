@@ -1390,4 +1390,10 @@ var store = [{
         "tags": ["azure","webdev","beginners","tutorial"],
         "url": "/azure-update-domain-vs-fault-domain/",
         "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Azure Availability Set Vs Availability Zone",
+        "excerpt":"Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your services against data-center disasters? Azure guaranty to provide 99.99% SLA while using virtual machines within Availability Set and Zones. Read this article to understand...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/azure-availability-set-vs-availability-zone/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
       }]
