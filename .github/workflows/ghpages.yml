@@ -10,4 +10,4 @@ jobs:
           ruby-version: 3.0.0 # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build the site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build -d  docs
