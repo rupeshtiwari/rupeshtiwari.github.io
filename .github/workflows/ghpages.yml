@@ -23,3 +23,9 @@ jobs:
         run: bundle exec jekyll build
       - name: copy to docs folder
         run: cp -a ./_site/. docs/
+      - name: Push docs
+        run: |
+          git config --global user.name 'Rupesh Tiwari'
+          git config --global user.email 'rupeshtiwari@users.noreply.github.com'
+          git commit -am "new blogs"
+          git push
