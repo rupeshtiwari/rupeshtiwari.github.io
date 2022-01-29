@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2010-12-22T23:08:54-05:00">
+  <meta property="article:published_time" content="2010-12-23T04:08:54+00:00">
 
 
 
@@ -370,7 +370,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="ASP.Net MVC 3 introduces Razor a new view engine">
     <meta itemprop="description" content="I just read the great article Introducing &quot;Razor&quot; – a new view engine for ASP.NET by Scottgu. I found Razor more comfortable than the other view engines.It&#39;s very easy to write code with Razor View Engine, it substantiates the write less and do more concept. There are lots of good stuffs in Razor.  However, I liked below things in Razor.1) Instead of writing &lt;% = %&gt; for code block, we can just write @ and start our coding. Razor does not require you to explicitly close the code-block.2) RenderBody and RenderSection are much powerful, they enables the layout re-useablity.&lt;/p&gt;The sections can be made optional so that any page can have the layout without having those sections defined.Say we have one Base.cshtml page that has certain basic static html which can be used in multiple pages just like master page.Base.cshtml[sourcecode language=&quot;HTML&quot;]&lt;div class=&quot;ui-left-menu&quot;&gt;@RenderSection(&quot;menu&quot;, optional:true&amp;nbsp;)&lt;div class=&quot;ui-body&quot;&gt;@RenderBody()&lt;div class=&quot;ui-footer&quot;&gt;@RenderSection(&quot;footer&quot;, optional:true&amp;nbsp;)[/sourcecode]Now, say there is one page which wants to inherit from the base.cshtml page and then we can write bellow code for child.cshtml.child.cshtml[sourcecode language=&quot;HTML&quot;]@{LayutPage = &quot;base.cshtml&quot;;}@section menu {&lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;li&gt;Login&lt;/li&gt;&lt;/ul&gt;}@section footer {&lt;p&gt; Hey I am in footer now... :)&lt;/p&gt;}[/sourcecode]When we render child.cshtml as a view-template again, it will now combine the content from the base.cshtml and child.cshtml page, integrating the two new custom section overrides in it.&lt;/span&gt;&lt;/div&gt;3) Last but not lease powerful thing is Declarative HTML Helpers . However, in ASP.Net MVC 3 (preview 1) this feature is not yet included. HTML helpers are just like C# methods which we create once and call it from various places from our project. We can define reusable helpers using a @helper { } declarative syntax like below.&lt;/p&gt;[sourcecode language=&quot;html&quot;]@helper MethodName(arguments) {.....markup goes here....}[/sourcecode]You can create one Helpers directory inside the View Folder and can put one helper.cshtml file inside that you can create one helper function let’s say ShowAlert method like below.[sourcecode language=&quot;html&quot;]@helper ShowAlert(var msg, var status) {@if(status == &quot;error&quot;) {@msg} else {@msg}}[/sourcecode]After creating above helper method, you can call ShowAlert method from any page.[sourcecode language=&quot;html&quot;]&lt;html&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;head&gt;&lt;/head&gt;&lt;/span&gt;&lt;body&gt;&lt;p&gt;Below Error Found &lt;/p&gt;&lt;div&gt;@ShowAlert(Model.User.Message,&quot;error&quot;)&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;[/sourcecode] &lt;/span&gt;&lt;/div&gt; 		">
-    <meta itemprop="datePublished" content="2010-12-22T23:08:54-05:00">
+    <meta itemprop="datePublished" content="2010-12-23T04:08:54+00:00">
     
 
     <div class="page__inner-wrap">
@@ -523,7 +523,7 @@ It's very easy to write code with Razor View Engine, it substantiates the write 
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-12-22T23:08:54-05:00">December 22, 2010</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2010-12-23T04:08:54+00:00">December 23, 2010</time></p>
 
 
       </footer>

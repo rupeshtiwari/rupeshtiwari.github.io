@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-01-27T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-01-28T00:00:00+00:00">
 
 
 
@@ -360,7 +360,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Updating Azure CI Pipeline Build Number">
     <meta itemprop="description" content="  Did you have requirement to update your Angular CI build number as yournew Package.json version number and Branch name? Well this is a good practiceto do in your Azure Build CI pipeline for JavaScript Front-end Projectbuilds. Learn how to create and update Azure CI build Number in pattern likebuildId-master or 1234-master or if it is feature branch then itbecomes 1234-feature1.Job running in Unix platformPool: Azure PipelinesImage: Ubuntu16Agent: Hosted AgentStarted: Today at 3:33 PMDuration: 6sCreate New Build Number- script: |    export newNumber=123-$(Build.SourceBranchName)    echo &quot;##vso[task.setvariable variable=NEWBUILDNUMBER;]$newNumber&quot;  displayName: &#39;Get New Build Number&#39;Display New Build Number- script: |    echo new build number $(NEWBUILDNUMBER)  displayName: &#39;Display New Build Number&#39;Update build number with new Build Number- script: |    echo &quot;##vso[build.updatebuildnumber]$NEWBUILDNUMBER&quot;  displayName: &#39;Update Build Number&#39;Display updated build number- script: |    echo &quot;New Build Number is: $(Build.BuildNumber)&quot;  displayName: &#39;Display Updated Build Number&#39;Check Azure CI PipelineComplete azure-pipelines.yml filetrigger:  - mainsteps:  - script: |      export newNumber=123-$(Build.SourceBranchName)      echo &quot;===== creating new variable =====&quot;      echo &quot;##vso[task.setvariable variable=NEWBUILDNUMBER;]$newNumber&quot;      echo &quot;===== creating new variable =====&quot;    displayName: &#39;Get New Build Number&#39;  - script: |      echo new build number $(NEWBUILDNUMBER)    displayName: &#39;Display New Build Number&#39;  - script: |      echo &quot;===== updating buildnumber =====&quot;      echo &quot;##vso[build.updatebuildnumber]$NEWBUILDNUMBER&quot;      echo &quot;===== updating buildnumber =====&quot;    displayName: &#39;Update Build Number&#39;  - script: |      echo &quot;New Build Number is: $(Build.BuildNumber)&quot;    displayName: &#39;Display Updated Build Number&#39;Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-01-27T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-01-28T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -550,7 +550,7 @@ Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-27T19:00:00-05:00">January 27, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-28T00:00:00+00:00">January 28, 2021</time></p>
 
 
       </footer>

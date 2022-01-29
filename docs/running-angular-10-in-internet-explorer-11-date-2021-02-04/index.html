@@ -48,7 +48,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-02-03T19:00:00-05:00">
+  <meta property="article:published_time" content="2021-02-04T00:00:00+00:00">
 
 
 
@@ -376,7 +376,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Running Angular 10 in Internet Explorer 11">
     <meta itemprop="description" content="  Are you worried that new angular 10 project is not running in “IE11” eventhough you enable the given polyfills by angular team? Then please readthis article.Angular 10 default tsconfig target is es2015Since Angular 10 apps comes with target compiled version as es2015 intsconfig.json file.Enabling IE 11 Polyfills.jsGo to polyfills.js and un-comment below import for IE11.import &#39;classlist.js&#39;; // Run `npm install --save classlist.js`.Install node package:npm install --save classlist.jsImporting core-js in polyfills.jsSymbols, promise etc. will not work in IE11 unless you put core-js in thepolyfills. Therefore, please import core-js in polyfills.import &#39;core-js&#39;Then install core-jsInstall node packagenpm i core-jsOption-1: Converting compiler option to es5 in tsconfigIf your primary client is IE11. Then the simple option is to go totsconfig.json at the root of your project and change the target value toes5This option will always create bundle in IE compatible format that works bothOption-2: Maintaining es5 separate tsconfigIf you want to maintain both version es2015 and es5 then follow below:  Create new tsconfig-es5.app.json  Add target es5{  &quot;extends&quot;: &quot;./tsconfig.json&quot;,  &quot;compilerOptions&quot;: {    &quot;target&quot;: &quot;es5&quot;  }}  Go to angular.json underprojects:&lt;YourAppName&gt;:architect:build:configurations add &quot;es5&quot;: {            &quot;tsConfig&quot;: &quot;./tsconfig-es5.app.json&quot;        }  And projects:&lt;YourAppName&gt;:architect:serve:configurations add 👉 changeyourappname with your project name.  Add below scripts in package.json&quot;build:ie&quot;:&quot;ng build --configuration es5&quot;,&quot;build:ie:prod&quot;:&quot;ng build --configuration es5 --prod&quot;,&quot;start:ie&quot;:&quot;ng serve --configuration es5&quot;Now in order to open project in IE run npm run start:ieNow in order to build project in IE compatible run npm run build:ieNow in order to build project in IE compatible Prod Mode runnpm run build:ie:prodReferenceHow to run Angular 10 in IEBecome full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-02-03T19:00:00-05:00">
+    <meta itemprop="datePublished" content="2021-02-04T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -601,7 +601,7 @@ Founder of <a href="https://www.fullstackmaster.net"> Fullstack Master</a></div>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-03T19:00:00-05:00">February 3, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-04T00:00:00+00:00">February 4, 2021</time></p>
 
 
       </footer>

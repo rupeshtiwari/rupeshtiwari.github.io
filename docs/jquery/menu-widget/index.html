@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2011-02-06T17:42:47-05:00">
+  <meta property="article:published_time" content="2011-02-06T22:42:47+00:00">
 
 
 
@@ -370,7 +370,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Menu Widget">
     <meta itemprop="description" content="				I was trying to make my own menu widget using jQuery and  I came with this below Widget.[sourcecode language=&quot;javascript&quot;]//Menu Widget created by Rupesh(function ($) {    JDQMenu = {        options: {          items: { &quot;Reports&quot;:[{                      &quot;File&quot; : { &quot;Report1&quot;:&quot;#&quot;,&quot;Report2&quot;:&quot;#&quot;,&quot;Report3&quot;:&quot;#&quot; }                      ,&quot;Edit&quot; : { &quot;Report4&quot;:&quot;#&quot;,  &quot;Report5&quot;:&quot;#&quot; }                      ,&quot;Report&quot; : { &quot;Report6&quot;:&quot;#&quot;,  &quot;Report7&quot;:&quot;#&quot; }                      ,&quot;Help&quot; : {&quot;How to see Reports&quot;:&quot;#&quot;}                  }]                  ,&quot;Clients&quot; : [{                      &quot;Search&quot; : { &quot;Client1&quot;:&quot;#&quot;,&quot;Client2&quot;:&quot;#&quot;,&quot;v3&quot;:&quot;#&quot; }                      ,&quot;Edit&quot; : { &quot;Client4&quot;:&quot;#&quot;,  &quot;Client5&quot;:&quot;#&quot; }                      ,&quot;Help&quot; : {&quot;How to see Clients&quot;:&quot;#&quot;}                  }]                  ,&quot;Tools&quot; : [{                      &quot;View&quot;: { &quot;Tool1&quot;:&quot;#&quot;,&quot;Tool2&quot;:&quot;#&quot;,&quot;Tool3&quot;:&quot;#&quot;}                       ,&quot;Help&quot; : {&quot;How to find Tools&quot;:&quot;#&quot;}                  }]            }            ,selected_menu : &quot;Reports&quot;        }        ,_init : function ( ) {           this._create_menu( );        }        ,_create_menu : function ( ) {           var that= this,el = that.element,itms=that.options.items,sel=$.trim(that.options.selected_menu);           if( sel !=&quot;default&quot;) {           //save element in widget cache            var data = $(this).data(sel);                //refresh the menu                el.empty();                //take element from inner widget cache data                if(data) {                    el.append(data);                } else {                    if( itms[sel] ) {                        var menu_itms = itms[sel][0];                        $.each(menu_itms , function ( i,v ) {                            el.append( $(&quot;	&lt;li&gt;&quot;).append( $(&quot;&lt;a&gt;&quot;,{&quot;class&quot;:&quot;menu_trigger&quot;, &quot;href&quot;:&quot;#&quot;,&quot;text&quot;:i}) ).append(&quot;&quot;) );&lt;/a&gt;&lt;/li&gt;                            $.each(v,function(n,k){                                el.find(&quot;ul#&quot;+i+&quot;&quot;).append($(&quot;&lt;a&gt;&quot;,{&quot;href&quot;:k,&quot;text&quot;:n}));&lt;/a&gt;                            })                        })                       $(this).data(sel,el.find(&quot;li&quot;));                   }                }                //Show the menu by triggering it                $(&quot;a.menu_trigger&quot;).first().trigger(&quot;mousedown&quot;);           }        }        ,show_menu : function (el) {            el  = el.replace(&quot;#&quot;,&#39;&#39;);            this.options.selected_menu = el;            this._create_menu( );        }    };    $.widget(&quot;ui.JDQMenu&quot;, JDQMenu);    })( jQuery );[/sourcecode]Now for using this widget you just have to add one ul element and call our JDQMenu widget&#39;s.[sourcecode language=&quot;javascript&quot;]&lt;ul id=&quot;menu&quot;&gt;&lt;/ul&gt;&lt;script type=&quot;text/javascript?$(&quot;#menu&quot;).JDQMenu();&lt;/script&gt;[/sourcecode]		">
-    <meta itemprop="datePublished" content="2011-02-06T17:42:47-05:00">
+    <meta itemprop="datePublished" content="2011-02-06T22:42:47+00:00">
     
 
     <div class="page__inner-wrap">
@@ -530,7 +530,7 @@ $(&quot;#menu&quot;).JDQMenu();<br />
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2011-02-06T17:42:47-05:00">February 6, 2011</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2011-02-06T22:42:47+00:00">February 6, 2011</time></p>
 
 
       </footer>

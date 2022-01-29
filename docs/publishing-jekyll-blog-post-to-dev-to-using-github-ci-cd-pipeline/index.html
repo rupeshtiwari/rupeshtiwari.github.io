@@ -48,11 +48,11 @@
 
 
 
-  <meta property="article:published_time" content="2021-02-01T15:03:00-05:00">
+  <meta property="article:published_time" content="2021-02-01T20:03:00+00:00">
 
 
 
-  <meta property="article:modified_time" content="2021-02-01T15:03:00-05:00">
+  <meta property="article:modified_time" content="2021-02-01T20:03:00+00:00">
 
 
 
@@ -378,8 +378,8 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Publishing Jekyll Blog Post to DevTo using GitHub CI and CD Pipeline">
     <meta itemprop="description" content="If you have a blogging site using Jekyll and you want to publish your blogsto your Dev.To account? Then read this article.Jekyll ProjectI have my Jekyll project and I do have 1 post and I want this post to beautomatically published to my Dev.To account when I pushthis post to GitHub. Really excited about that so lets begin.Publish to dev.to ActionI will use pre-built action bysinedied/publish-devto to publishmy post to dev.to.Market Place Publish to dev.to Actiondev.to Front Matter GuidelinesMake sure you have below attributes in your blog post Front Matter.Custom variables set for each post, located between the triple-dashed lines inyour editor. Here is a list of possibilities:title: the title of your article published: boolean that determineswhether or not your article is published description: description area inTwitter cards and open graph cards tags: max of four tags, needs to becomma-separated canonical_url: link for the canonical version of the contentcover_image: cover image for post, accepts a URL. The best size is 1000x 420. series: post series name.✍ Markdown BasicsBelow are some examples of commonly used markdown syntax. If you want to divedeeper, check outthis cheat sheet.Creating API Keys in Dev.ToLogin to dev.to and then go to accounts and create new api key.Creating Github WorkflowLets create “.github/workflows/publish.yml” file.It will publish post to dev.to/roopkt whenever merge or push happens to masterbranch.name: publishon:  push:    branches:      - masterjobs:  publish:    runs-on: ubuntu-latest    if: &quot;! contains(toJSON(github.event.commits.*.message), &#39;[skip ci]&#39;)&quot;    steps:    - uses: actions/checkout@v2    - uses: actions/setup-node@v2      with:        node-version: 12    - name: Publish articles on dev.to      uses: &quot;sinedied/publish-devto@30728bf&quot;      with:        files: &#39;_posts/**/*.md&#39;        devto_key: $github_token: $conventional_commits: trueRun GitHub CI/CDLets update post and push the code to master branch.Confirm published article on dev.to accountNotice my post published in https://dev.to/roopktHere is my article published :“Enforcing Dependency Constraints in Nx Monorepo Projects”Skipping GitHub CISometime you are not updating your blog rather fixing your site or updatingabout me or something else. And you don’t want to trigger your CI so make sureyou add [skip ci] in your commit comments. So that your blogs will be notpublished because CI will not trigger.Notice we have check in our Job to not run if message has ‘[skip ci]’Become full stack developer 💻If you want to become full stack developer and grow your carrier as new softwaredeveloper or Lead Developer/Architect. Consider subscribing to our full stackdevelopment training programs. We have All-Access Monthly membership plans andyou will get unlimited access to all of our video courses, slides, source code &amp;Monthly video calls.  Please subscribe toAll-Access Membership PRO plan toaccess current and future angular, node.js and related courses.  Please subscribe toAll-Access Membership ELITE plan toget everything from PRO plan. Additionally, you will get access to monthlylive Q&amp;A video call with Rupesh and you can ask doubts/questions and get morehelp, tips and tricks.  Your bright future is awaiting for you so visit todayFullstackMaster and allow me to help you to boardon your dream software company as a Developer,Architect or Lead Engineer role.💖 Say 👋 to me! Rupesh Tiwari  www.rupeshtiwari.com ✉️  Email Rupesh Founder of  Fullstack Master">
-    <meta itemprop="datePublished" content="2021-02-01T15:03:00-05:00">
-    <meta itemprop="dateModified" content="2021-02-01T15:03:00-05:00">
+    <meta itemprop="datePublished" content="2021-02-01T20:03:00+00:00">
+    <meta itemprop="dateModified" content="2021-02-01T20:03:00+00:00">
 
     <div class="page__inner-wrap">
       

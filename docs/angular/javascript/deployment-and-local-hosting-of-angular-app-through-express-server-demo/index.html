@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-01-13T06:00:43-05:00">
+  <meta property="article:published_time" content="2020-01-13T11:00:43+00:00">
 
 
 
@@ -380,7 +380,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Deployment and local hosting of angular app through Express server - Demo">
     <meta itemprop="description" content="In our previous demo sessions we successfully created our Product Mart app. Now we are ready to deploy our code to so called production environment. For this we need to follow below steps and all these steps are also explained in our demo session Running Local Server | Express | Angular | Demo | 0009-14 in detail.First thing we need to do is to prepare production deployment strategy. It includes:Compiling our code in production environment. For this we need to create prod build script.Best practice here is to re-use existing command, so that if we change one, all of the dependencies automatically change. That’s the reason we have not written ng build command twice, we simply called existing ng build through npm run build command and then passed the prod (production) parameter.Next is putting all single HTML, assets and other artifacts in dist folder.Second, we need to create a server to host our project. Here in MEAN stack, we are going to use express as our production server. Will install express first.Now let’s create server folder and then index file. Inside this we will write code to use express as a server.In above step, important thing to notice is we are using env.PORT (environment property) instead of hard coding. This is to pull all environment variables from hosting server, so that we can deploy our code to any environment without any need of making code changes. This is one of the 12 best practices from Twelve-Factor theory.Next we will define destination path and other hosting related stuff in our js file of server folder.In order to run JavaScript written in index file, we need to write another script in json file.Finally we can see our Product-Mart app running on express server by writing npm run strat:server command in powershell.All this code is also checked-in into our GitHub repository. You can visit our code base https://github.com/rupeshtiwari/product-mart/tree/workshop-session-4-12 to get more insight of it anytime.In our upcoming demo sessions we will focus on:Login/RegistrationIntegrating app with Mongo DBDeploying prod code to cloud platform like Heroku﻿">
-    <meta itemprop="datePublished" content="2020-01-13T06:00:43-05:00">
+    <meta itemprop="datePublished" content="2020-01-13T11:00:43+00:00">
     
 
     <div class="page__inner-wrap">
@@ -494,7 +494,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-01-13T06:00:43-05:00">January 13, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-01-13T11:00:43+00:00">January 13, 2020</time></p>
 
 
       </footer>

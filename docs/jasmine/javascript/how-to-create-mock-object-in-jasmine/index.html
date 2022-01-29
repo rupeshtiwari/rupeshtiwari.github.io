@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-03-12T11:03:00-04:00">
+  <meta property="article:published_time" content="2020-03-12T15:03:00+00:00">
 
 
 
@@ -380,7 +380,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="how to create mock object in jasmine">
     <meta itemprop="description" content="While writing test in jasmine you will encounter a situation where you want to create a mock object &amp; also you want to spy it&#39;s property. Jasmine createSpyObj allows you to create an object only with methods. However suppose you object has some properties as well. Then how will you create a complete mocked object in jasmine such that both of it&#39;s properties and methods are spied ? Lets see below example You want to create a complete mock object of Person. function Person(name) {  this.name = name;  greet() {    return `Hello ${this.name}`;  }}In Jasmine there is nothing readymade for this. However here is the trick. First create an person object and copy all of its methods by using jasmin.createSpyObj next one by one you can create spy on it&#39;s property using createSpy method. const person = {  ...jasmine.createSpyObj(&#39;person&#39;, [      &#39;greet&#39;,    ]),  name :jasmine.createSpy();}">
-    <meta itemprop="datePublished" content="2020-03-12T11:03:00-04:00">
+    <meta itemprop="datePublished" content="2020-03-12T15:03:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -499,7 +499,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-12T11:03:00-04:00">March 12, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-03-12T15:03:00+00:00">March 12, 2020</time></p>
 
 
       </footer>

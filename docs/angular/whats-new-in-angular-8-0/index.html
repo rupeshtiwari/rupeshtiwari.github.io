@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-06-08T09:45:23-04:00">
+  <meta property="article:published_time" content="2019-06-08T13:45:23+00:00">
 
 
 
@@ -370,7 +370,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="What’s new in Angular 8.0?">
     <meta itemprop="description" content="Angular 8.0.0 is here!Is there any breaking changes in Angular 8?No, Angular 8 is released now! As Angular team had promised they have not introduced breaking changes. Should I update to Angular 8? YesIs there an easy way to Upgrade Angular 8?Yes, Just run below script and your project will be automatically upgraded to Angular 8.ng update @angular/cling update @angular/core&nbsp;What are the New Features of Angular 8?Differential Loading &amp; Performance ImprovementNow when you will build your Angular app using angular CLI then it will produce two builds for your application one is for es5 and for es2015. Since modern browsers has many E2015 features already implemented we no more need all of the polyfills that by default Angular build produces. You will get around 40kb of improvement on final productionize bundle size. Which is great performance improvement!You will be deploying both bundles in production and the browser will choose the right one at launch time.This means that for newer browsers, you get a smaller bundle size.Lazy Loading on ImportNow you can use import lazy loading and hence you can do all conditional loading and logic within your angular app. Its great! So you can change your loadChildren declarations in routing modules from:loadChildren: &#39;./products/product.module#ProductModule’to:loadChildren: () =&gt; import(&#39;./products/product.module&#39;).then(m =&gt; m.ProductModule)This has one great benefits on code refractory:Now you can rename your module names and use VsCode renaming tool to get replaced with your new module name everywhere. I used to forget to update the string names in loadChildren while renaming module name. Bazel Support Angular 8 has inbuilt support for Bazel! Bazel is a tool that can compile any language server side or client side. Google had developed Bazel and Google made Bazel an open source software. Angular Cli can help you to add Bazel configurations to your existing app or create new Bazel app. You can install Angular Bazel globally like this. npm i -g @angular/bazelLearn more about Bazel from Angular official guide. AngularJs Migration Made EasyYou will be glad to know that Angular Team has official Library in Angular called as NgUpgrade that has UpgradeModule which can help you to run both AngularJS legacy code and new Angular Code simultaneously in a same application. You will get below stuff running without any issues:Dependency InjectionComponents and the DOMChange DetectionHere is the detail information about how to use  ngUpgrade If you are using ngUpgrade then good news for you. Now you can access below things from PlatformLocation service: hostNameportprotocolhistory.state from getState method.Angular CLI Support for Creating Web WorkersOne more good news now angular schematic has been updated to create new web worker from angular cli. Now you can run below script to create web worker file in your project.ng generate web-worker picture/picture">
-    <meta itemprop="datePublished" content="2019-06-08T09:45:23-04:00">
+    <meta itemprop="datePublished" content="2019-06-08T13:45:23+00:00">
     
 
     <div class="page__inner-wrap">
@@ -507,7 +507,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-06-08T09:45:23-04:00">June 8, 2019</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-06-08T13:45:23+00:00">June 8, 2019</time></p>
 
 
       </footer>

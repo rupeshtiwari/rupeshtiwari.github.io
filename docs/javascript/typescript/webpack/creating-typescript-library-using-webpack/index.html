@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2018-11-23T05:43:35-05:00">
+  <meta property="article:published_time" content="2018-11-23T10:43:35+00:00">
 
 
 
@@ -390,7 +390,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Creating Typescript Library using Webpack">
     <meta itemprop="description" content="Loading...In this article we will see how can you create your own typescript library&nbsp;that you can easily consume in your another typescript project. Also we will see how we can create type definition&nbsp;bundle file for our own library. Finally we will see which folder is required to publish to npm&nbsp;portal to have our own little library published and available for our friends.IntroductionIn you enterprise if you want to create shared JavaScript library then webpack and typescript comes first in mind. However, there is no sample project or example exist in google that demonstrates how to achieve it. In this sample project I tried to demonstrate how can you create a library project using typescript and webpack and then create your own npm packages both for JavaScript bundle and @types bundle. Also you will see how can you use them in your sample project. I hope you will enjoy this project and learn something!&nbsp;docs&nbsp;What are we going to solve ?This project is demonstrating how to create your own library using typescript and webpack. Then consume that library in another webpack project.create a library from typescriptcreate a bundle (.js) for JavaScriptcreate a bundle (.d.ts) for definition files for typescriptconsume library in client project by&nbsp;npm link script.We have created 2 projects one is&nbsp;lib-pj&nbsp;which is library project and the other is&nbsp;client-pj&nbsp;which is client project that is going to consume&nbsp;lib-pjWe are usingwebpack&nbsp;for building, bundling etc.ts-loader&nbsp;for compiling typescript anddeclaration-bundler-webpack-plugin&nbsp;for bundling type definition filesGetting Tool Sets ReadyWe are using:Webpack andTypescriptof-course, I am using my favorite&nbsp;&nbsp;VSCode editor , you can use yours favorite.SolutionCreate 2 projects at your root folder client-pj&nbsp;and lib-pj. Client Project is where we will consume the output from Library project.Creating Library ProjectLets work on library project where you want to create your sharable code. We have added our model classes and services in this folder and now In order to compile typescript code you need tsconfig.json&nbsp;. please copy below code and put in tsconfig.json&nbsp;inside lib-pjhttps://gist.github.com/rupeshtiwari/39a4c9adb875169e1210eff6390e63edLets create webpack.config.js&nbsp;file inside library project make sure you have ts-loader&nbsp;installed which is used to load typescript and compile them in JavaScriptHere is the final webpack.config.js&nbsp;filehttps://gist.github.com/rupeshtiwari/38498c95aa0d612bdafbc93500da4da1Above setup will be enough to create our index.js file. However, the major challenge is to how to create the typedefinition bundle file&nbsp;for our library. For that I have used declaration-bundler-webpack-plugin&nbsp;&nbsp;and with this plugin it was very easy to generate my own index.d.ts&nbsp;file. Have a look in below code how to use DeclarationBundlerPlugin plugin to get your index.d.ts&nbsp;file created. This is magic. I loved the&nbsp;DeclarationBundlerPlugin&nbsp;webpack plugin!plugins: [        new DeclarationBundlerPlugin({      moduleName: &#39;&quot;@mycomp/mylib&quot;&#39;,      out: &#39;../@types/index.d.ts&#39;,    }),       ],};Creating Client ProjectNow in client project we can easily consume index.js&nbsp;Create new webpack.config for your client-pj&nbsp;by pasting below code. Client project will refer to the Library project by leveraging tsconfig&nbsp;path&nbsp;feature. You need not build library project and consume in client project for local development because it will slow down your development speed. Therefore, the best practice is refer your client project via path&nbsp;feature of tsconfig.json. The same path configuration can be also put in webpack resolve property such that it compiles the typescript files from library project// tsconfig.json...{    path : {        &quot;@lib&quot; : [&quot;./lib-pj/src/index.ts&quot;]    }    ... }">
-    <meta itemprop="datePublished" content="2018-11-23T05:43:35-05:00">
+    <meta itemprop="datePublished" content="2018-11-23T10:43:35+00:00">
     
 
     <div class="page__inner-wrap">
@@ -629,7 +629,7 @@ https://www.youtube.com/watch?v=gzqDoHYO_xk
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-23T05:43:35-05:00">November 23, 2018</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-11-23T10:43:35+00:00">November 23, 2018</time></p>
 
 
       </footer>
