@@ -19,12 +19,12 @@ jobs:
           rm -rf Gemfile.lock
           bundle install --no-deployment
           bundle exec jekyll build -d  docs
-          cp CNAME ./docs # copy cname file
+          cp CNAME docs # copy cname file
       - name: Commit files
         run: |
           git config --local user.email "RupeshTiwari+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "Add blogs" -a
+          git commit -am "Add blogs"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

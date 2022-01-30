@@ -1,5 +1,5 @@
-# Rupesh Home 
-[![Build every day](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/schedule-posts.yml/badge.svg?branch=main)](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/schedule-posts.yml)
+# Rupesh Home Website & Technical Blogs
+[![Build & Deploy to Github Pages everyday](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/ghpages.yml/badge.svg?branch=gh_pages&event=push)](https://github.com/rupeshtiwari/rupeshtiwari.github.io/actions/workflows/ghpages.yml)
 ## Writing New Blog command
 
 `bundle exec jekyll compose "Importing WordPress or Blogger Blogs to Jekyll Blog" --date 2021-03-20`
