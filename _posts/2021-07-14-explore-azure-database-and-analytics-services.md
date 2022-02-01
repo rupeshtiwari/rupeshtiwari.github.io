@@ -1,6 +1,6 @@
 ---
 title: Explore Azure Database and Analytics Services
-date: 2022-05-14 00:00 +0000
+date: 2021-07-14 00:00 +0000
 description:
 author_profile: true
 published: true

@@ -1,6 +1,6 @@
 ---
 title: Describe core Azure architecture components
-date: 2022-05-07 00:00 +0000
+date: 2021-07-07 00:00 +0000
 description: Can you explain concepts and terminology for the core Azure architecture components? Can you describe the benefits and usages of Azure subscriptions and management groups? Have you check the benefits of Azure resources, resource groups, and Azure Resource Manager(ARM)? Did you know how achieve high availability using Azure regions, region pairs, and availability zones? This is 3rd article on Azure Fundamentals part 1- Describe core Azure concepts.
 author_profile: true
 published: true

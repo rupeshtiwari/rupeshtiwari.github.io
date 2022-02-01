@@ -1,6 +1,6 @@
 ---
 title: Webhook for Beginners
-date: 2022-05-28 00:00 +0000
+date: 2021-07-28 00:00 +0000
 description: Webhooks fundamentals with javascript project.
 author_profile: true
 published: true
@@ -16,31 +16,30 @@ header:
   teaser: https://i.imgur.com/qxXxmBa.png
   og_image: https://i.imgur.com/qxXxmBa.png
 tags:
-- webdev
-- tutorial
-- beginners
-- javascript
+  - webdev
+  - tutorial
+  - beginners
+  - javascript
 ---
 
->Webbooks are basically user defined HTTP callbacks which are triggered by specific events. Whenever that trigger event occurs in the source site, the webhook receives the event, collects the data, and sends it to the URL specified by you in the form of an HTTP request. 
+> Webbooks are basically user defined HTTP callbacks which are triggered by specific events. Whenever that trigger event occurs in the source site, the webhook receives the event, collects the data, and sends it to the URL specified by you in the form of an HTTP request.
 
-Like in Pub/Sub architecture one handler subscribes an event. Once we publish the event the handler gets executed. Similarly in webhook, instead of publishing event we call webhook HTTP POST URL on certain event. 
+Like in Pub/Sub architecture one handler subscribes an event. Once we publish the event the handler gets executed. Similarly in webhook, instead of publishing event we call webhook HTTP POST URL on certain event.
 
-Example would be suppose, you have your Github Repo. Whenever someone star it you want to HTTP post a message to your Discord Server. In this example GitHub will call webhook URL by sending payload with HTTP POST method. You can implement a server to receive the HTTP POST call and send message to Discord. Or you can also use Discord webhook URL to directly use in GitHub and you do not need to write a code, automatically GitHub payload will be displayed in Discord server. 
-
+Example would be suppose, you have your Github Repo. Whenever someone star it you want to HTTP post a message to your Discord Server. In this example GitHub will call webhook URL by sending payload with HTTP POST method. You can implement a server to receive the HTTP POST call and send message to Discord. Or you can also use Discord webhook URL to directly use in GitHub and you do not need to write a code, automatically GitHub payload will be displayed in Discord server.
 
 ![](https://i.imgur.com/61FAXpr.gif)
 
-- Learn Mocking Webhook 
+- Learn Mocking Webhook
 - Creating local Webhook using express
 - Integrate local Webhook with GitHub
-- Integrate Twilio serverless function 
+- Integrate Twilio serverless function
 
-Visit this read me [here as well](http://www.rupeshtiwari.com/coding-examples-webhook-sample-app/) 
+Visit this read me [here as well](http://www.rupeshtiwari.com/coding-examples-webhook-sample-app/)
 
 ## Webhook mocking for testing
 
-Create mocked Webhook handler at here https://beeceptor.com/ for testing and playing around. Create Webhook in beeceptor. And use this newly created webhook in your GitHub repo to see how Webhooks are called. 
+Create mocked Webhook handler at here https://beeceptor.com/ for testing and playing around. Create Webhook in beeceptor. And use this newly created webhook in your GitHub repo to see how Webhooks are called.
 
 ## Create Webhook in Discord
 
@@ -94,65 +93,60 @@ Next I can visit my URL over internet
 
 ![](https://i.imgur.com/q0wF6aM.png)
 
+## Hooking up local server with GitHub
 
-## Hooking up local server with GitHub 
-
-Now in your github you can go and add the Webhook URL that you generated just now. Make sure to append `/github` on your URL. 
+Now in your github you can go and add the Webhook URL that you generated just now. Make sure to append `/github` on your URL.
 
 ![](https://i.imgur.com/C0A8KNI.png)
 
-
-Now if you start github repo you will receive the message to your discord channel. 
+Now if you start github repo you will receive the message to your discord channel.
 
 ![](https://i.imgur.com/61FAXpr.gif)
 
-You can visit the Webhook payloads at this address http://localhost:4040/inspect/http from `ngrok`. 
-
-
+You can visit the Webhook payloads at this address http://localhost:4040/inspect/http from `ngrok`.
 
 Here is the [code so far](https://github.com/rupeshtiwari/coding-examples-webhook-sample-app/commit/e81078d4a4bc5c64a2b4d59471d4d2a89eee168c)
 
 ## Next lets read the Avtar URL from Github payload
 
-When we star/un-star we can read the `avtar_url` of the user and show that in discord. 
+When we star/un-star we can read the `avtar_url` of the user and show that in discord.
 
+### How to start your local server in watch mode?
 
-### How to start your local server in watch mode? 
-
-- Install `npm i nodemon -g` 
-- Then run `nodemon start` to start your server in watch mode. 
+- Install `npm i nodemon -g`
+- Then run `nodemon start` to start your server in watch mode.
 
 ![](https://i.imgur.com/64T50Md.png)
 
-Now you can notice that we are able to post the avatar of the user from github to our discord channel. 
+Now you can notice that we are able to post the avatar of the user from github to our discord channel.
 
 ![](https://i.imgur.com/0e5qmWY.png)
 
 ```js
-const avatarUrl = req.body.sender.avatar_url;
+const avatarUrl = req.body.sender.avatar_url
 ```
 
 Here is the [source code so far](https://github.com/rupeshtiwari/coding-examples-webhook-sample-app/commit/a7ac2e96c3e1280cb0b77f4ebfa8beb007253cb1)
 
-## Twilio 
+## Twilio
 
-Twilio is a serverless solution that can respond to SMS coming to a virtual phone number. 
+Twilio is a serverless solution that can respond to SMS coming to a virtual phone number.
 
 Create a flow in Twilio to speak up when someone calls you.
 
 ![](https://i.imgur.com/IJ2u1lm.png)
 
-### Record voicemail and send to Webhook 
+### Record voicemail and send to Webhook
 
-You can record voicemail, convert voice to text 
+You can record voicemail, convert voice to text
 
 ![](https://i.imgur.com/SB8bWeq.png)
 
-And use Webhook URL to send the transcript. 
+And use Webhook URL to send the transcript.
 
 ![](https://i.imgur.com/hWXuQbe.png)
 
-You can install `Twilio-CLI` globally to send messages from your local development machine. 
+You can install `Twilio-CLI` globally to send messages from your local development machine.
 
 `npm i -g twilio-cli`
 
@@ -160,8 +154,7 @@ Next login to `twilio` by running `twilio login`
 
 ![](https://i.imgur.com/kSiPNqU.png)
 
-
-Run below script 
+Run below script
 
 ```
 twilio plugins:install @twilio-labs/plugin-serverless
@@ -169,7 +162,7 @@ twilio plugins:install @twilio-labs/plugin-serverless
 
 ## Creating Twilio project
 
-Create project 
+Create project
 
 ```
 twilio serverless:init ideacatcher --empty
@@ -183,16 +176,14 @@ twilio serverless:start
 
 Navigate to `http://localhost:3000/send-test`
 
-Your server is up and running. 
+Your server is up and running.
 
 ![](https://i.imgur.com/JFMfcgB.png)
 
-### Reference 
+### Reference
 
 - [Webbooks for Beginners - Full Course](https://www.youtube.com/watch?v=41NOoEz3Tzc&t=2584s)
 - [Complete Source code for this blog](https://github.com/rupeshtiwari/coding-examples-webhook-sample-app)
-
-
 
 ---
 

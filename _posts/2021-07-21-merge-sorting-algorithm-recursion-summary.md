@@ -1,6 +1,6 @@
 ---
 title: Merge Sorting Algorithm Recursion Summary
-date: 2022-05-21 00:00 +0000
+date: 2021-07-21 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -67,7 +67,7 @@ Resume 2nd recursion call with array `[2,4]` and call merge sort with right part
 
 ![](https://i.imgur.com/E4lHVoS.png){: .full}
 
-`3rd` recursion call with array `[4]` and previous function pauses at line `number -8`. 
+`3rd` recursion call with array `[4]` and previous function pauses at line `number -8`.
 
 ![](https://i.imgur.com/BPGqO9K.png){: .full}
 
@@ -91,7 +91,7 @@ Function resume at line `numnber-7` and execute line `number-8` call `mergeSort`
 
 ![](https://i.imgur.com/Et0NceF.png){: .full}
 
-Next `mergeSort` with `[6]` will exit because of base condition. Next function will resume at line `number-9` and `stitch` method will call that will re-order array `[1,6]`. 
+Next `mergeSort` with `[6]` will exit because of base condition. Next function will resume at line `number-9` and `stitch` method will call that will re-order array `[1,6]`.
 
 ![](https://i.imgur.com/IqzLMOY.png){: .full}
 
@@ -103,7 +103,7 @@ Next first it will make `mergeSort` with [8] and pause at line `number-7`.
 
 ![](https://i.imgur.com/tgRaKe4.png){: .full}
 
-Next It will pause the previous function at line `number-7`. And Resume at line `number-8` and call `mergeSort` recursively  with `[5]` and pause again at line `number-8`, which will exit. 
+Next It will pause the previous function at line `number-7`. And Resume at line `number-8` and call `mergeSort` recursively with `[5]` and pause again at line `number-8`, which will exit.
 
 ![](https://i.imgur.com/yF0Dmqm.png){: .full}
 
@@ -111,10 +111,9 @@ Therefore, function will resume at line `number-8` and execute `stitch` to sort 
 
 ![](https://i.imgur.com/kEnaF5C.png){: .full}
 
-Next, it will call `mergeSort` with `[3]` recursively then pause at line `number-7`. 
+Next, it will call `mergeSort` with `[3]` recursively then pause at line `number-7`.
 
 ![](https://i.imgur.com/6Bb8EZy.png){: .full}
-
 
 `mergeSort` with `[3]` will exit and then previous function will resume again at `number-7` and execute next line which will call `mergeSort` with `[7]` recursively then pauses at line `number-8`. `mergeSort` with `[7]` exit function.
 
@@ -122,13 +121,11 @@ Next, it will call `mergeSort` with `[3]` recursively then pause at line `number
 
 And then previous function will resume again at `number-8` and execute next line `stitch` function that will sort the array in ascending order to `[3,7]` and exit.
 
-
 ![](https://i.imgur.com/xyLPW86.png){: .full}
 
-Next `1st` iteration function will resume at line `number-9` and `stitch` the array `[5,8]`  and `[3,7]` and reorder the array `A` to `[3,5,7,8]`. 
+Next `1st` iteration function will resume at line `number-9` and `stitch` the array `[5,8]` and `[3,7]` and reorder the array `A` to `[3,5,7,8]`.
 
 ![](https://i.imgur.com/bZgzA0b.png){: .full}
-
 
 Finally, the `1st` function will resume at line `number-8` and call `stitch` method to re-order the array `[1,2,3,4,5,6,7,8]` and finally exit.
 This way you get the sorted array.
