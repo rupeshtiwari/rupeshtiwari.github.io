@@ -1,6 +1,6 @@
 ---
 title: Cloud Solution Architect Technical Interview Questions
-date: 2022-11-19 00:00 +0000
+date: 2021-11-19 00:00 +0000
 description: Cloud solution architect technical fundamental interview questions.
 author_profile: true
 published: true
@@ -469,9 +469,9 @@ Server less -> enable the threat detection -> SEIM , enable data encryption at r
 
 | #   | Plan                                                                                                                                                                                                                                                                                                    | Cost            | Speed                                                           |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------- |
-| 1   | Manual Backup and Restore, **Point in time backups into the DR region.**                                                                                                                                                                                                                                | **Cheap($)**    | **RPO = Hours, RTO = Days**. Long time to come back to service. |
-| 2   | **Pilot Light (RPO 1min RTO 1hr)**. VMs are created on the DR site and turned off. However the database in the DR site is in active mode and you write your data in DR site live. WEB and Business VMs will have applications and configuration will be copied to DR sites however they are turned off. | **$$**          | **RPO=Minutes, RTO=Hours**.                                     |
-| 3   | **WARM standby(RPO 1sec, RTO 1Min)**. Replicate your environment but use very small instances in the DR site but place them in an auto scaling group. When DR workloads are scaled up fully then it is called HOT standby. The more scale up the RTO you get in the DR site.                            | **$$$**         | **RPO = Seconds, RTO = Minutes**                                |
+| 1   | Manual Backup and Restore, **Point in time backups into the DR region.**                                                                                                                                                                                                                                | **Cheap(\$)**   | **RPO = Hours, RTO = Days**. Long time to come back to service. |
+| 2   | **Pilot Light (RPO 1min RTO 1hr)**. VMs are created on the DR site and turned off. However the database in the DR site is in active mode and you write your data in DR site live. WEB and Business VMs will have applications and configuration will be copied to DR sites however they are turned off. | **\$\$**        | **RPO=Minutes, RTO=Hours**.                                     |
+| 3   | **WARM standby(RPO 1sec, RTO 1Min)**. Replicate your environment but use very small instances in the DR site but place them in an auto scaling group. When DR workloads are scaled up fully then it is called HOT standby. The more scale up the RTO you get in the DR site.                            | **\$\$\$**      | **RPO = Seconds, RTO = Minutes**                                |
 | 4   | **Multi Region (Multi Site) Active-Active (RPO and RTO are zero)** Your workload is deployed to, and actively serving traffic from, multiple AWS Regions. This strategy requires you to synchronize data across Regions. Use DNS to route the traffic                                                   | **Most Costly** | **RPO=0, RTO=0**                                                |
 
 ## When VPN and Direct connection?
