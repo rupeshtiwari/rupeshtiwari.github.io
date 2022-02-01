@@ -1,6 +1,6 @@
 ---
-title: Azure Compute Resources
-date: 2022-02-05 00:00 +0000
+title: How to Codifying Infrastructure in Configuration
+date: 2021-04-12 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -22,44 +22,31 @@ tags:
   - tutorial
 ---
 
-> Do You want to start IT Business and you don't have equipments? Don't worry Azure is the solution for your business. By using Azure Compute Resources you can setup your business cloud needs. You can get high processor machine or high available app services to host your workers. Read this article to know the fundamentals of Azure compute Resources.
+> Did you know you can write a script and run from your machine to create and destroy multiple cloud infrastructures? Well yes I am not joking this is possible. Read this article to learn more about codifying cloud APIs into declarative configuration files.
 
-## What is Azure Compute Resources?
+## Write Plan and Apply Infrastructure.
 
-Suppose you want to edit videos and host your website to show your videos. However, you do not have equipments to do this. Well You can use Azure to do your business.
+![](https://imgur.com/d7uPRXv.gif){: .full}
 
-Azure compute is an on-demand computing service for running cloud-based applications. You can create Azure Compute resources, configure them to work together. You pay only for what resource you use.
+Suppose you have Google Cloud (GCS), Amazon Web Services (AWS) or Azure and you wan to write a configuration file to manage the workflow of each cloud infrastructure. It is possible via [HashiCorp Terraform](https://www.terraform.io/).
 
-### Infrastructure Compute Resources
+## HashiCorp Terraform
 
-You need to setup infrastructure then you can use Azure compute resources like:
+Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. Terraform codifies cloud APIs into declarative configuration files. It is an open-source tool for provisioning and managing cloud infrastructure that codifies infrastructure in configuration files that describe the topology of cloud resources
 
-1. Multi-core processor
-2. VM to make your supercomputers
-3. Containers to host your applications with dependencies.
+## You can Write Infrastructure Code
 
-### Serverless Compute Resources
+Write infrastructure as code using declarative configuration files. HashiCorp Configuration Language (HCL) allows for concise descriptions of resources using blocks, arguments, and expressions.
 
-You can also run your applications/jobs without creating any infrastructure over Azure and use server less computing resources like:
+## Plan before execution
 
-1. You can create serverless resources within seconds or minutes.
-2. Configure them
-3. Available on-demand
-4. Auto scalable
-5. Only pay for what you use and how long you use.
+Run terraform plan to check whether the execution plan for a configuration matches your expectations before provisioning or changing infrastructure.
 
-### How many techniques to perform computing in Azure?
+## Apply Multiple Cloud Services
 
-There are 4 techniques to perform computing in Azure:
+![](https://imgur.com/xLIYt4E.png){: .full}
 
-1. Virtual Machines
-2. Containers
-3. Azure App Services
-4. Serverless Computing
-
-## Save money 💰
-
-You only pay for the underlying compute resources such as the VM instances, load balancer, or Managed Disk storage.
+All major cloud services are supported like AWS, Google, Microsoft Azure etc.
 
 ---
 

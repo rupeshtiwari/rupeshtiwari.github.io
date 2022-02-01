@@ -1,6 +1,6 @@
 ---
 title: Random Flashcards for Microsoft Azure Architect Design
-date: 2022-02-19 00:00 +0000
+date: 2021-04-19 00:00 +0000
 description:
 author_profile: true
 published: true

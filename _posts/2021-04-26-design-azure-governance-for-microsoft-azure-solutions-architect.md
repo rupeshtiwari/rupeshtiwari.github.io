@@ -1,6 +1,6 @@
 ---
 title: Design Azure Governance for Microsoft Azure Solutions Architect
-date: 2022-02-26 00:00 +0000
+date: 2021-04-26 00:00 +0000
 description:
 author_profile: true
 published: true
