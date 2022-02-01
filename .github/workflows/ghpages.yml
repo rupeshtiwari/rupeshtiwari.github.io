@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --local user.email "RupeshTiwari+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -am "Add blogs"
+          git pull; git add .;git commit -m 'update blogs'; git push
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
