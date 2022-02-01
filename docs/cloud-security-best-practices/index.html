@@ -1,0 +1,1000 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Cloud Security Best Practices for application, servers and network - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Are you familiar with cloud layered security approach? Do you trust your on-premise users &amp; systems more than outside then you are still exposed to vulnerabilities and cyber attack’s. Let’s learn what can we do to protect our applications, servers and networks over cloud?">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Cloud Security Best Practices for application, servers and network">
+<meta property="og:url" content="https://www.rupeshtiwari.com/cloud-security-best-practices/">
+
+
+  <meta property="og:description" content="Are you familiar with cloud layered security approach? Do you trust your on-premise users &amp; systems more than outside then you are still exposed to vulnerabilities and cyber attack’s. Let’s learn what can we do to protect our applications, servers and networks over cloud?">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/nU9cLAy.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Cloud Security Best Practices for application, servers and network">
+  <meta name="twitter:description" content="Are you familiar with cloud layered security approach? Do you trust your on-premise users &amp; systems more than outside then you are still exposed to vulnerabilities and cyber attack’s. Let’s learn what can we do to protect our applications, servers and networks over cloud?">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/cloud-security-best-practices/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/nU9cLAy.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-11-22T00:00:00+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/cloud-security-best-practices/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/zipiW93.png" alt="Cloud Security Best Practices for application, servers and network" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Cloud Security Best Practices for application, servers and network</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Cloud Security Best Practices for application, servers and network">
+    <meta itemprop="description" content="  According to Statista.com As of 2021, around 50 percent of all corporate data is stored in the cloud. This share reached 30 percent in 2015 and has continued to grow as companies increasingly shift their resources into cloud environments in the hope of improving security and reliability next to advancing business agility. Therefore, securing your data center, your deployed workloads and your architecture in the cloud is now-a-days top priority for every company.">
+    <meta itemprop="datePublished" content="2021-11-22T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Cloud Security Best Practices for application, servers and network
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          12 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#application-security">Application Security</a><ul><li><a href="#single-sign-on-in-the-cloud">Single Sign-On in the cloud</a></li><li><a href="#application-integrity-check">Application Integrity Check</a></li><li><a href="#vulnerability-scans-in-applications">Vulnerability Scans in Applications</a></li><li><a href="#virtual-patching-for-legacy-code">Virtual Patching for Legacy Code</a></li><li><a href="#network-security-in-cloud">Network Security in Cloud</a></li><li><a href="#session-protection">Session Protection</a><ul><li><a href="#types-of-session-hijacking-attacks">Types of Session Hijacking Attacks:</a></li></ul></li><li><a href="#network-monitoring">Network Monitoring</a></li><li><a href="#network-traffic-encryption">Network Traffic Encryption</a></li><li><a href="#serverhost-security-in-cloud">Server/Host Security in cloud</a></li></ul></li><li><a href="#summary">Summary</a></li><li><a href="#references">References</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>According to <a href="https://www.statista.com/statistics/1062879/worldwide-cloud-storage-of-corporate-data/#:~:text=As%20of%202021%2C%20around%2050,next%20to%20advancing%20business%20agility">Statista.com</a> As of 2021, around 50 percent of all corporate data is stored in the cloud. This share reached 30 percent in 2015 and has continued to grow as companies increasingly shift their resources into cloud environments in the hope of improving security and reliability next to advancing business agility. Therefore, securing your data center, your deployed workloads and your architecture in the cloud is now-a-days top priority for every company.</p>
+</blockquote>
+
+<p>Most of the Cloud providers like Amazon AWS &amp; Microsoft Azure follow the shared security model where they take care of security of the cloud and you secure what is in the cloud. Therefore, you must educate yourself to start securing your workload and architecture in the cloud.</p>
+
+<p>You start securing your environment from network to server to application &amp; data layers. Let’s discuss all of these best practices in detail in this article. For cloud protection, I will refer to Azure cloud in this article. You can correlate <a href="https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services">Azure Services &amp; Infrastructures with AWS cloud</a> by referring to this article.</p>
+
+<h2 id="application-security">Application Security</h2>
+
+<p>Why is application security important in your on-premise or cloud? Did you know 75% of organizations worldwide have experienced some kind of phishing attack in 2021? Have you heard about a multi-layered approach to security? Cybercriminals know that web applications are the key to enter an organization’s technology enterprise and steal valuable information.</p>
+
+<p>You can secure your web applications in the following ways:</p>
+
+<ul>
+  <li>Single Sign-On</li>
+  <li>Application Integrity</li>
+  <li>Vulnerability Scanning and</li>
+  <li>Virtual Patching</li>
+</ul>
+
+<h3 id="single-sign-on-in-the-cloud">Single Sign-On in the cloud</h3>
+
+<p>You have your on-premise or cloud line of business (LOB) applications, and you want to secure them. Single Sign-On (SSO) is one of the crucial steps to securing your applications. You may ask what Single Sign-On will do in terms of security, right? I used to think SSO is something where you enter a password or login to your enterprise network once, and then you don’t need to log in for other applications. Then what exactly is it saving for security? Well, it can protect you from phishing attacks, for one. According to <a href="https://www.google.com/url?q=https://www.tessian.com/blog/phishing-statistics-2020/&amp;sa=D&amp;source=editors&amp;ust=1633966929713000&amp;usg=AOvVaw0rPv3CiTK4qpNOEfoxv_3d">Tessian Phishing Statistics 2020</a>, last year, 75% of organizations worldwide faced a phishing attack. Azure integrates your web applications with Azure active directory and provides single sign-on.</p>
+
+<p><img src="https://i.imgur.com/UOsaf4h.png" alt="" /></p>
+
+<p>Phishing attacks are emails that will ask you to log in to your application using your password. Examples of phishing emails include: Please Read subject or Payment is Urgent Credential needed for login to secure etc. Suppose you were using SSO and strong authentication in your organization, eliminating the need for employees to ever manually enter passwords to access systems, applications, or information. An email requesting credentials would stand out as a likely phishing attack.</p>
+
+<h3 id="application-integrity-check">Application Integrity Check</h3>
+
+<p>In 2020, the number of data breaches in the United <a href="https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/">States came in at a total of 1001 cases.</a></p>
+
+<p>Therefore, as an organization, you want to make sure your application data integrity is conserved. Application Integrity helps clients secure their organizations. There are many best practices and rules available in Azure policy that require compliance from your applications. Basic requirements like using Https for web APIs and certification validation for calling endpoints are very effective. Limiting access to your applications for only those clients that have a valid certificate will limit your exposure. By default, incoming client certificates are disabled for Azure App Service web applications.</p>
+
+<p>Azure has managed initiatives (collection of policies) for compliance domain and security control. Make sure you apply one of them to your app service plan and other resources in your workload.</p>
+
+<h3 id="vulnerability-scans-in-applications">Vulnerability Scans in Applications</h3>
+
+<p><a href="https://www.google.com/url?q=https://info.edgescan.com/vulnerability-stats-report-2021&amp;sa=D&amp;source=editors&amp;ust=1633966929715000&amp;usg=AOvVaw1-PJ5lIm1vsmfu9HDYW-8j">Edgescan’s 2021 Vulnerability Statistics Report</a> analyzed the severity of web application vulnerabilities. It found that 50 percent of internal application vulnerabilities are considered a high or critical risk. It also found that 32 percent of vulnerabilities in internet-facing applications are considered a high or critical risk. According to <a href="https://www.k2io.com/2021-verizon-data-breach-investigations-report-is-out/">the Verizon Data Breach Investigation Report</a> web applications remain the top vector used by hacking in breaches at over 90%.</p>
+
+<p><img src="https://i.imgur.com/WbwSU43.png" alt="" /></p>
+
+<p>Therefore, you must scan your web app for vulnerability risk. Azure Web apps provide built-in tools for diagnoses and solving vulnerability problems. Azure App Service Diagnostics will help identify and alert you to the security risks associated with your web application.</p>
+
+<p><img src="https://i.imgur.com/lqGz7hu.png" alt="" /></p>
+
+<h3 id="virtual-patching-for-legacy-code">Virtual Patching for Legacy Code</h3>
+
+<p>Virtual Patches are meant for protecting unitary vulnerabilities that the current WAF Security Policy does not already protect.</p>
+
+<p>Cybercriminals know web apps connect with backend, active directory to get valuable business and intellectual data. <a href="https://www.ibm.com/security/data-breach">According to IBM data breach report 2021</a>, data breach costs rose from USD 3.86 million to USD 4.24 million, a 17-year historic increase.</p>
+
+<p>Due to the large volume of cloud migration and web application development, many organizations create too many web apps with too many vulnerabilities. They are left exposed to potential data breaches through these applications. Some companies even take their windows applications and convert them into web applications without understanding how to secure them. Additionally, many applications are poorly written and have security loopholes. So how does an organization mitigate the risk of a breach through their web app portfolio?</p>
+
+<p>Use Microsoft’s PaaS (platform service) and leverage Azure vulnerability scans and patching services. Frequent scanning and patching ensure your protection is up-to-date and continuous. Need secure zero-day vulnerability on your web app? Review your case with Azure and get protection for your dedicated host.</p>
+
+<p>In summary, I recommend you follow a <a href="https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&amp;wa-lens-whitepapers.sort-order=desc">Well-Architected Framework</a> for security for web applications. Do code reviews and seek out any security violations in your code and remove them - similar to sanitizing your incoming text from client to server to make sure you avoid running scripts injected by malicious users.</p>
+
+<p>What about vulnerabilities in existing and potentially out-of-date applications? What if you have VMs hosting web apps in the cloud and you own the responsibility of patching servers? If you leave your VMs vulnerable, they will be the first choice for attackers. The answer is Virtual Patching. Virtual Patching is the technique leveraging WAS (web application scan) and WAF (Web application firewall) to install virtual patch software; use WAS to identify vulnerabilities, and then automatically create rules in <a href="https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview">WAF (Web Application Firewall)</a>. This way, you end up protecting your app from existing vulnerabilities attacks without changing your source code.</p>
+
+<h3 id="network-security-in-cloud">Network Security in Cloud</h3>
+
+<p>In cloud you can secure your network by doing the following things:</p>
+
+<ul>
+  <li>Network segmentation</li>
+  <li>Network Session Protection</li>
+  <li>Network Monitoring</li>
+  <li>Traffic Encryption</li>
+</ul>
+
+<p><strong>Network Segmentation</strong> inspired by <a href="https://en.wikipedia.org/wiki/Zero_trust_security_model">Zero Trust Model</a>.</p>
+
+<p>Network Segmentation can help control your company’s network traffic flow. Your IT team can regulate who has access to which segment of the network. Segmentation improves security and performance by dividing the entire network into parts. For example, as a bank, you want to restrict branch employees from your financial reporting systems. With Network segmentation, you can limit traffic flow in the financial system segment, improving performance for the financial analysts and limiting unnecessary system access from unauthorized systems and users. Additionally, you may limit the scope of an infection or attack to a single segment rather than the entire network. Finally, Network Segmentation is a crucial element of the <a href="https://en.wikipedia.org/wiki/Zero_trust_security_model">Zero Trust model</a>.</p>
+
+<p>Please see the <a href="https://securityscorecard.com/blog/network-segmentation-best-practices-to-maximize-cybersecurity">best practices of segmentation.</a></p>
+
+<p>On-premises you can use a legacy approach to create multiple DMZ (demilitarized zones) using internal firewalls and Access control Lists( ACLs); however, this approach is more costly and time-consuming. Nowadays, you can apply tags on selected routes and group them virtually by tagging. A tag will enforce segmentation policy directly on the network equipment.</p>
+
+<p>In Azure cloud, you can achieve network segmentation as well by properly organizing network infrastructures. You have an azure subscription, virtual network, network security group, application security group, and an azure firewall. These are great tools to create micro perimeters or segments.</p>
+
+<p>In Azure cloud, you can use subnets within a single virtual network and apply custom routes on each subnet to restrict traffic flow. Alternatively, you can use an application gateway to each subnet. However, this pattern where all workload is in one virtual network cannot span multiple regions since the scope of a virtual network is limited to only one region.</p>
+
+<p>When you use a virtual network (VNet), you get built-in segmentation because one VNet or VPC by default can not talk to others unless you set up peering. You can set up rules like, for example, virtual network X can’t talk with virtual network Y but can talk with virtual network Z, or no Internet for Virtual network X except for access to <em>.github.com</em>, and so on.</p>
+
+<p>You can use multiple Virtual networks and use virtual network peering to get segmentation free and use NSG or ASG to enforce policies. However, Virtual network peering is not transitive by nature so consider <strong>transitive gateway</strong> or <strong>Hub &amp; Spoke</strong> model.</p>
+
+<p><img src="https://i.imgur.com/dPSq0qG.png" alt="" /></p>
+
+<p>To fix transitive issues, I would recommend going to a Hub and Spoke topology where you create one dedicated VNet as your hub network and all traffic passes through the virtual hub network, and it can act as a gateway to other hubs in different regions. You can set up your security posture at the hubs, so they get to segment and govern the traffic between the virtual networks in a scalable way. Adding a new workload or new virtual network with the same security posture is a minimal effort. <a href="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation">Learn more about network segmentation in azure here.</a></p>
+
+<h3 id="session-protection">Session Protection</h3>
+
+<p>Your users might log in to the system to establish a session with the server and forget to close the browser, creating <a href="https://www.google.com/url?q=https://www.globalsign.com/en/blog/session-hijacking-and-how-to-prevent-it&amp;sa=D&amp;source=editors&amp;ust=1633966929727000&amp;usg=AOvVaw2rIMES5rLflGwVo0CM3CFM">Session Hijacking</a> opportunities. Any cybercriminal can take advantage of the open sessions and steal valuable information. According to the 2021 <a href="https://www.globalsign.com/en/blog/session-hijacking-and-how-to-prevent-it">Vulnerability Statistics Report</a>, 37% of XSS attacks targeted web applications. Those attacks could be prevented by Network session protection.</p>
+
+<p><img src="https://i.imgur.com/W7Ifi3s.png" alt="" /></p>
+
+<h4 id="types-of-session-hijacking-attacks">Types of Session Hijacking Attacks:</h4>
+
+<ul>
+  <li>Cross-Site Scripting (XSS): attackers exploit vulnerabilities within servers and inject scripts (JS, Active Directory, DOS) via web pages and retrieve information.</li>
+  <li>Session-Side Jacking: attackers can sniff through network packets to get the session key via session cookies and impersonate them to perform malicious actions. These attacks are even more likely when employees access company assets via public WIFI or an unsecured hotspot.</li>
+  <li>Session Fixation: Attackers supply their session key and spoof the user into accessing a vulnerable server.</li>
+</ul>
+
+<p>You can protect your network by using a web application firewall to protect any session established on your network from the outside world. Also, if you apply initiatives and policies to your resource groups, you will be forced to implement certification-based communication. That way, you verify the outside endpoints connecting to your server and mitigate session attacks. <a href="https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-bindings#add-a-certificate-for-custom-domain">In the Azure web app, you can also apply for SSL certificates</a>.</p>
+
+<p><img src="https://i.imgur.com/mt7RsG1.png" alt="" /></p>
+
+<h3 id="network-monitoring">Network Monitoring</h3>
+
+<p>Network security monitoring is helpful for detecting and analyzing potential threats. Network cybersecurity monitoring can help protect your enterprise data from malicious actors and hackers, from business stats to personal user information. In your on-premises solution, you can use the NMap tool to scan the network.</p>
+
+<p><img src="https://i.imgur.com/hCZwCBu.png" alt="" /></p>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/network-insights-overview">Azure cloud Network Insights</a> within the Azure Security Center can comprehensively view health and metrics for all deployed network resources. You can also see dependency flow, connectivity, and traffic flow, and more.</p>
+
+<h3 id="network-traffic-encryption">Network Traffic Encryption</h3>
+
+<p>Encrypting your data while it’s in transit is an essential step toward securing your applications. You can purchase certificates from a certificate authority and use them to encrypt the messages that pass in and out of your servers. Encryption prevents unauthorized users from intercepting and examining the information in these messages while in transit. Encryption also prevents <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">Man in the Middle Attacks</a>.</p>
+
+<p>Use Application Gateway or front door in Azure or the Web Application Firewall of AWS to protect your traffic and ensure they are encrypted. If you need end-to-end encryption, Application Gateway can use your private key to decrypt the traffic on the gateway and re-encrypt using the public key of the service running in the backend pool.</p>
+
+<p>Exposing your website or web application through Application Gateway means you don’t directly connect your servers to the web. You’re exposing only port 80 or port 443 on the application gateway. Your web servers aren’t directly accessible from the internet, reducing the attack surface of your infrastructure.</p>
+
+<p><img src="https://i.imgur.com/uTwY2Zx.png" alt="" /></p>
+
+<p>Application Gateway can implement an SSL connection with clients. Application Gateway can also implement an SSL connection with the servers running your application.</p>
+
+<h3 id="serverhost-security-in-cloud">Server/Host Security in cloud</h3>
+
+<p>In the cloud, you have to secure your virtual machines on your own. Cloud providers will take care of the cloud, but you have to take care of whatever is in the cloud, especially virtual machines. When you provision virtual machines, you are responsible for patching and installing anti-virus and otherwise caring for security.</p>
+
+<p>Azure Security center can scan the network and, based on security policy, alert you to any pending patches, including cloud and on-premise malware vulnerabilities found. Of course, you still have to take corrective actions.</p>
+
+<p><strong>Please consider below best practices to secure your EC2 instances or Virtual Machines in cloud:</strong></p>
+
+<ul>
+  <li>Installing Anti Malware &amp; Antivirus, you can purchase them from Microsoft or Symantec, etc.</li>
+  <li>Secure your encryption keys created in VMs in the Azure Key Vault or AWS key management service (KMS) in AWS cloud.</li>
+  <li>Protect your server by running frequent backups - try <a href="https://docs.microsoft.com/en-us/azure/backup/backup-overview">Azure Backup</a> which does not need any CaPeX to set up and provides complete protection of your application data.</li>
+  <li>Protect from unplanned outages by implementing Site Recovery to ensure your organization’s business continuity and disaster recovery objectives keeping your applications and servers running. <a href="https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-overview">Azure Site Recovery</a> helps to protect both on-premise and cloud workloads from disasters.</li>
+  <li>
+    <p>Secure SQL data using Transparent Data Encryption (TDE) and column level encryption (CLE).</p>
+  </li>
+  <li>Encrypt Virtual Machine disks - to encrypt your VMs disks try <a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/azure-disk-encryption-vms-vmss">Azure Disk Encryption</a> solution.</li>
+  <li>Consistently and frequently run Patch updates.</li>
+  <li>Prevent unauthorized access on your VMs by implementing SSO (Single Sign On) and using identity-based access controls.</li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Finally, in this article we learned that your cloud service provider will take care of the security of the cloud. However, You are responsible for securing workloads in the cloud.</p>
+
+<p>In order to secure your workload in the cloud you must follow both Defense in depth and Zero Trust Model. The objective of Defense in Depth is to protect information and prevent it from being stolen by those who aren’t authorized to access it. Zero Trust is a strategic initiative that helps prevent successful data breaches by eliminating the concept of trust from an organization’s network architecture. You trust nobody in your network, create a micro perimeter. This will help to Bring Your Device (BYOD) related security risk.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>https://www.comparitech.com/blog/information-security/cybersecurity-vulnerability-statistics/</li>
+  <li>https://blog.qualys.com/product-tech/2017/05/04/virtual-patching-a-lifesaver-for-web-app-security</li>
+  <li>https://success.qualys.com/discussions/s/article/000006325</li>
+  <li>https://www.microsoft.com/security/blog/2019/10/23/- perimeter-based-network-defense-transform-zero-trust-model/</li>
+  <li>https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/- network-level-segmentation</li>
+  <li>https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview</li>
+  <li>https://docs.microsoft.com/en-us/azure/azure-monitor/insights/network-insights-overview</li>
+</ul>
+
+<hr />
+
+<p><em>Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+<p><img src="https://imgur.com/5fBatz9.png" alt="" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#security" class="page__taxonomy-item" rel="tag">security</a><span class="sep">, </span>
+    
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-11-22T00:00:00+00:00">November 22, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Cloud+Security+Best+Practices+for+application%2C+servers+and+network%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fcloud-security-best-practices%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fcloud-security-best-practices%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fcloud-security-best-practices%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/azure-network-watcher-basics/" class="pagination--pager" title="Azure Network Watcher Basics
+">Previous</a>
+    
+    
+      <a href="/introduction-to-virtualization/" class="pagination--pager" title="Virtualization Basics with VMware
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/8axKkdp.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-improve-reliability-in-the-cloud/" rel="permalink">How to improve Reliability in the cloud?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you get a phone call from your customer saying they want to improve their application reliability while you move their workload to the cloud? If yes t...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/7tGRoEv.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cost-optimization-with-aws-spot-ec2-instances/" rel="permalink">Cost Optimization with Amazon EC2 Spot Instances
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          11 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Creating cost optimized highly scalable cloud architecture is challenging but it is possible! Using Spot Amazon Elastic Compute Cloud (Amazon EC2) instanc...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/WQWdzrb.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-security-defense-in-depth-azure-approach/" rel="permalink">Cloud Security Defense In-Depth Azure Approach
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          10 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  In a traditional data center you create one perimeter, secure them by installing firewall, WAF, SIEMS etc. and have 100% confidence that the data center i...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/aPeeiUM.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-maintain-well-architected-framework-on-cloud/" rel="permalink">How to Maintain Well-Architected-Framework on Cloud
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to make sure our workload in the cloud is secure, reliable. How to monitor the cost of your cloud resources consumption? Is there any automation you can ...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/cloud-security-best-practices/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/cloud-security-best-practices"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

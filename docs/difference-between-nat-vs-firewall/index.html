@@ -1,0 +1,913 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Difference between NAT vs Firewall for Software Developers - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers!">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Difference between NAT vs Firewall for Software Developers">
+<meta property="og:url" content="https://www.rupeshtiwari.com/difference-between-nat-vs-firewall/">
+
+
+  <meta property="og:description" content="What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers!">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/qxXxmBa.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Difference between NAT vs Firewall for Software Developers">
+  <meta name="twitter:description" content="What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers!">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/difference-between-nat-vs-firewall/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/qxXxmBa.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-10-13T00:00:00+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/difference-between-nat-vs-firewall/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/zipiW93.png" alt="Difference between NAT vs Firewall for Software Developers" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Difference between NAT vs Firewall for Software Developers</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Difference between NAT vs Firewall for Software Developers">
+    <meta itemprop="description" content="  What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers!">
+    <meta itemprop="datePublished" content="2021-10-13T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Difference between NAT vs Firewall for Software Developers
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#local-network-devices-communication">Local Network Devices Communication</a></li><li><a href="#basics-of-nat">Basics of NAT</a></li><li><a href="#what-is-the-role-of-firewall">What is the role of Firewall</a></li><li><a href="#nat-and-firewall">NAT and Firewall</a></li><li><a href="#snat">SNAT</a></li><li><a href="#dnat">DNAT</a></li><li><a href="#dns">DNS</a></li><li><a href="#reference">Reference</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers!</p>
+</blockquote>
+
+<p>While learning Azure the main hurdle is the terms that are used in Azure Concepts. Even though you have given the Azure Fundamental Exam you will find many terms that you are not aware of. And that is the big hurdle in learning Azure Cloud Concepts. Therefore, I would advise you must first concrete all these terms before or while you learn Azure.</p>
+
+<p>If you are software developer and want to become cloud architect. Then you must aware of networking terminologies. I am not expert on networking as well. However, I am trying to explain whatever I understood about these concepts. Feel free to correct me and write your comments in the comment box.</p>
+
+<h2 id="local-network-devices-communication">Local Network Devices Communication</h2>
+
+<p>If you want to connect to some device over the internet then you need a unique IP address assigned to your device as well as the device that you want to connect. In this world there are so many devices that it is almost impossible to put all devices on the internet with their unique IP addresses. It could be rupeshtiwari.com. You will use DNS to resolve the IP Address for your domain name.</p>
+
+<p>Therefore, in your company or your home when you take internet connection mostly you will be given one IP address (200.0.0.1) that is internet facing. However, you may have 10 laptops, 10 mobiles, and 5 desktops and they can have have unique internal IP addresses which are unique within your local network.</p>
+
+<p>So then question arrises how can a person having mobile phone with local unique IP Address (192.168.0.1) can browse google.com? Also how google will respond to your local IP Address? Since your local IP Address is not internet facing.</p>
+
+<p><img src="https://i.imgur.com/RVr1NVk.png" alt="" class="full" /></p>
+
+<p>In order to solve this problem you need a device that will translate the IP address of the mobile device (192.168.0.1) to the internet facing IP address (200.0.0.1) while you browse Google.com. Similarly when google will respond back then you again need to translate the IP address of the respond data to the local IP Address of your mobile phone (192.168.0.1). This is the solution. This way the devices within local network can easily communicate to the outer world. This is exactly <strong>NAT</strong> does.</p>
+
+<h2 id="basics-of-nat">Basics of NAT</h2>
+
+<p>NAT stands for Network Address Translation. In networking world there is NAT Device which is responsible for changing the IP address. It can either change destination or source address depending on how data has to flow.</p>
+
+<p><img src="https://i.imgur.com/sRmvRJ0.png" alt="" class="full" /></p>
+
+<p>In above example, we are using NAT to convert all traffic going towards internet or coming from internet. In above example NAT Device is changing change IP address to 200.0.0.1 for the data coming from local network. Similallary, NAT is used to convert all inbound traffic ( from internet to your local network ) to convert destination address to your local network’s common IP address which is 192.168.0.1 in above example.</p>
+
+<h2 id="what-is-the-role-of-firewall">What is the role of Firewall</h2>
+
+<p>When your device within your local network (company) wants to open a site that could be malicious for your company. How can you control that? Similarly from the outside world (internet) someone wants to connect to your company device and steal data or important private information. How would you control them?</p>
+
+<p><img src="https://i.imgur.com/pl8yP8t.png" alt="" class="full" /></p>
+
+<p>You can create a whitelist where you allow a few IP addresses to communicate with your local network. Similarly for outbound traffic you can create black list of websites that you are not allowed to visit. All of this work is done by FIREWALL. In your network you can install a single firewall that can guard all devices, subnets within your network.</p>
+
+<p>Think firewall as a security checkup for all traffic going out and into your local network.</p>
+
+<h2 id="nat-and-firewall">NAT and Firewall</h2>
+
+<p>As of now you understand that NAT has a separate role and Firewall has separate. They can not substitute each other. However, you need both of them if you want to communicate between 2 networks or the internet from a local network.</p>
+
+<p><img src="https://i.imgur.com/xSAkv7j.png" alt="" class="full" /></p>
+
+<p>Therefore, in the diagram below I drew Firewall and NAT together to give you a hint that at the door of your network you must put firewall and NAT together to manage outbound and inbound traffic.</p>
+
+<h2 id="snat">SNAT</h2>
+
+<p><img src="https://i.imgur.com/yUcQaSv.png" alt="" class="full" /></p>
+
+<p>Source Network Address Translation (SNAT) allows traffic from a private network to go out to the internet. Virtual machines launched on a private network can get to the internet by going through a gateway capable of performing SNAT. The device performing NAT changes the private IP address of the source host to public IP address.</p>
+
+<p><img src="https://i.imgur.com/DHXK4EI.png" alt="" class="full" /></p>
+
+<p>An employee sitting inside your company LAN and behind the firewall wants to browse google.com that time first routing decision will trigger once it is allowed to route to the internet then SNAT process will kick off.</p>
+
+<p><img src="https://i.imgur.com/4KHKRui.png" alt="" class="full" /></p>
+
+<p>During <strong>SNAT</strong> process only source address of the data packet is changed while passing through the <strong>NAT Device</strong>. SNAT can be done for the traffic going outside from your local network. SNAT is possible from many hosts within your local network to many hosts outside network.</p>
+
+<h2 id="dnat">DNAT</h2>
+
+<p>Destination Network Address Translation (DNAT) changes the destination address in the IP header of a packet coming towards your local network from the internet. DNAT is used when we need to redirect incoming packets with a destination of a public address/port to a private IP address/port inside your network.</p>
+
+<p><img src="https://i.imgur.com/ONg85Fu.png" alt="" class="full" /></p>
+
+<p>Your company’s website is hosted inside your local Data Center or in the Azure cloud behind the Firewall and needs to be accessible to users over the Internet. In this citation you will use <strong>DNAT</strong>.</p>
+
+<p>DNAT changes the <em>destination</em> address of packets passing through the Router. Therefore, before routing, the off destination address of data is changed to the local network IP Device Address.</p>
+
+<p><img src="https://i.imgur.com/YcAOpQ6.png" alt="" class="full" /></p>
+
+<p>DNAT can be done for the traffic coming from outside your local network. DNAT is possible from many hosts from outside network to only host within your local network.</p>
+
+<h2 id="dns">DNS</h2>
+
+<p>The Domain Name System (DNS) is the phonebook of the Internet. Each device connected to the Internet has a unique IP address which other machines use to find the device. DNS servers eliminate the need for humans to memorize IP addresses such as 192.168.1.1 (in IPv4), or more complex newer alphanumeric IP addresses such as 2400:cb00:2048:1::c629:d7a2 (in IPv6).</p>
+
+<h2 id="reference">Reference</h2>
+
+<p>https://ipwithease.com/snat-vs-dnat/</p>
+
+<hr />
+
+<p><em>Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+<p><img src="https://imgur.com/5fBatz9.png" alt="" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a><span class="sep">, </span>
+    
+      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-10-13T00:00:00+00:00">October 13, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Difference+between+NAT+vs+Firewall+for+Software+Developers%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fdifference-between-nat-vs-firewall%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fdifference-between-nat-vs-firewall%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fdifference-between-nat-vs-firewall%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/azure-storage-replications-basics/" class="pagination--pager" title="Azure Storage Replications Basics
+">Previous</a>
+    
+    
+      <a href="/differenct-between-nat-vs-firewall/" class="pagination--pager" title="Differenct between NAT vs Firewall for Software Developers
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/8axKkdp.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-improve-reliability-in-the-cloud/" rel="permalink">How to improve Reliability in the cloud?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you get a phone call from your customer saying they want to improve their application reliability while you move their workload to the cloud? If yes t...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/7tGRoEv.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cost-optimization-with-aws-spot-ec2-instances/" rel="permalink">Cost Optimization with Amazon EC2 Spot Instances
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          11 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Creating cost optimized highly scalable cloud architecture is challenging but it is possible! Using Spot Amazon Elastic Compute Cloud (Amazon EC2) instanc...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/WQWdzrb.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-security-defense-in-depth-azure-approach/" rel="permalink">Cloud Security Defense In-Depth Azure Approach
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          10 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  In a traditional data center you create one perimeter, secure them by installing firewall, WAF, SIEMS etc. and have 100% confidence that the data center i...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/aPeeiUM.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-maintain-well-architected-framework-on-cloud/" rel="permalink">How to Maintain Well-Architected-Framework on Cloud
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to make sure our workload in the cloud is secure, reliable. How to monitor the cost of your cloud resources consumption? Is there any automation you can ...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/difference-between-nat-vs-firewall/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/difference-between-nat-vs-firewall"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

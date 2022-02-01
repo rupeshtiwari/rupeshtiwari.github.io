@@ -1,0 +1,1107 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Virtualization Basics with VMware - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Hyper-V is a type-1, native hypervisor designed by Microsoft, which allows creating and managing multiple virtualized versions of a computer, called virtual machines (VMs). Are you using Virtual Machines and wanted to know how they are created?">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Virtualization Basics with VMware">
+<meta property="og:url" content="https://www.rupeshtiwari.com/introduction-to-virtualization/">
+
+
+  <meta property="og:description" content="Hyper-V is a type-1, native hypervisor designed by Microsoft, which allows creating and managing multiple virtualized versions of a computer, called virtual machines (VMs). Are you using Virtual Machines and wanted to know how they are created?">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/qxXxmBa.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Virtualization Basics with VMware">
+  <meta name="twitter:description" content="Hyper-V is a type-1, native hypervisor designed by Microsoft, which allows creating and managing multiple virtualized versions of a computer, called virtual machines (VMs). Are you using Virtual Machines and wanted to know how they are created?">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/introduction-to-virtualization/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/qxXxmBa.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-11-24T00:00:00+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/introduction-to-virtualization/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/zipiW93.png" alt="Virtualization Basics with VMware" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Virtualization Basics with VMware</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Virtualization Basics with VMware">
+    <meta itemprop="description" content="  Virtualization is the single concept that now-a-days cloud service providers are using at massive scale and delivering IT technologies such as storage, compute, networking, database, analysis and much more as a service via internet and on-demand basis as pay-as-you-go pricing model. Therefore, it is very important that you must understand what is virtualization.">
+    <meta itemprop="datePublished" content="2021-11-24T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Virtualization Basics with VMware
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-is-virtualization">What is Virtualization</a></li><li><a href="#what-is-a-host">What is a Host?</a></li><li><a href="#what-is-a-hypervisor">What is a Hypervisor?</a><ul><li><a href="#what-are-the-attributes-of-type-1-hypervisor">What are the attributes of Type-1 Hypervisor?  </a></li><li><a href="#what-are-the-attributes-of-type-2-hypervisor">What are the attributes of Type-2 Hypervisor?  </a></li></ul></li><li><a href="#what-is-vmware-vsphere">What is VMWare VSphere?</a><ul><li><a href="#vsphere-client">Vsphere Client</a></li><li><a href="#vcenter-server">Vcenter Server</a></li></ul></li><li><a href="#what-is-a-data-store-in-vmware-hypervisor">What is a data store in VMWare Hypervisor? </a></li><li><a href="#what-is-migration-and-their-types">What is Migration and their types?</a></li><li><a href="#what-are-the-states-of-a-virtual-machine">What are the states of a virtual machine?</a></li><li><a href="#what-is-cold-migration-technique">What is Cold Migration Technique?</a></li><li><a href="#what-is-suspended-migration-technique">What is Suspended Migration Technique?</a></li><li><a href="#what-is-vmotion">What is vMotion?</a></li><li><a href="#what-is-physical-to-virtual-p2v-migration">What is Physical to Virtual P2V Migration?</a></li><li><a href="#what-is-physical-to-virtual-v2v-migration">What is Physical to Virtual V2V Migration?</a></li><li><a href="#what-is-fault-tolerance-ft-how-ft-works-what-are-ft-benefits">What is Fault Tolerance (FT), How FT works, What are FT benefits?</a></li><li><a href="#what-is-high-availability">What is High Availability?</a></li><li><a href="#how-high-availability-ha-works-in-vmware">How High Availability (HA) works in VMWare? </a><ul><li><a href="#prerequisites-for-vmware-vsphere-ha">Prerequisites for VMWare Vsphere HA</a></li><li><a href="#what-is-vmware-high-availability-ha-cluster">What is VMWare High Availability (HA) Cluster?</a></li></ul></li><li><a href="#what-is-a-resource-check-in-vmware-ha">What is a Resource check in VMware HA? </a></li><li><a href="#what-is-ha-failover-time">What is HA Failover Time?</a></li><li><a href="#what-is-virtual-machine-template-in-vmware">What is Virtual Machine Template in VMWare?</a></li><li><a href="#summary">Summary</a></li><li><a href="#reference">Reference</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Virtualization is the single concept that now-a-days cloud service providers are using at massive scale and delivering IT technologies such as storage, compute, networking, database, analysis and much more as a service via internet and on-demand basis as pay-as-you-go pricing model. Therefore, it is very important that you must understand what is virtualization.</p>
+</blockquote>
+
+<h2 id="what-is-virtualization">What is Virtualization</h2>
+
+<p>Virtualization is a technology that lets you create a logical boundary around physical hardware and capabilities such as compute, storage and network.</p>
+
+<p>Suppose you got one bare machine that has 64 GB RAM, 2 TB storage and 32 Core CPU. Then using hypervisor or virtualization techniques you can create 10 virtual machines on this hypervisor each having 4 GB RAM, 100GB disk storage and 2 Core CPU. Each Virtual Machine is a literal isolated machine, they can not talk to each other unless you provision so it gives data center level infrastructure.</p>
+
+<p><img src="https://i.imgur.com/yClGm4N.png" alt="" /></p>
+
+<h2 id="what-is-a-host">What is a Host?</h2>
+
+<p>Host is a hardware where a hypervisor is installed. Guest is a virtual machine created on a hypervisor. Virtual Machine operating systems are also called Guest Operating Systems.</p>
+
+<h2 id="what-is-a-hypervisor">What is a Hypervisor?</h2>
+
+<p>Hypervisor is a software or firmware that creates and runs virtual machines. A hypervisor is also called as Virtual Machine Manager (VMM)</p>
+
+<p><img src="https://i.imgur.com/fSWfhNW.png" alt="" /></p>
+
+<p>There are 2 types of hypervisor:</p>
+
+<ol>
+  <li>Type-1</li>
+  <li>Type-2</li>
+</ol>
+
+<p><img src="https://i.imgur.com/581Jh8v.png" alt="" /></p>
+
+<h3 id="what-are-the-attributes-of-type-1-hypervisor">What are the attributes of Type-1 Hypervisor?  </h3>
+
+<ul>
+  <li>They come with bare metal machine on top of we install hypervisor firmware</li>
+  <li>Type-1 Hypervisor is used for enterprise data center</li>
+  <li>VMWare has ESXi software for hypervisor</li>
+  <li>Microsoft has Hyper-V</li>
+  <li>Citrix has Xenserver</li>
+</ul>
+
+<p><img src="https://i.imgur.com/NugWBgI.png" alt="" /></p>
+
+<h3 id="what-are-the-attributes-of-type-2-hypervisor">What are the attributes of Type-2 Hypervisor?  </h3>
+
+<ul>
+  <li>These types of hypervisors are softwares that you install on top of the Operating System of a computer. They are hosted hypervisors.</li>
+  <li>Type-2 Hypervisor is used for Testing, Learning purpose</li>
+  <li>VMWare has Workstation software for hypervisor</li>
+  <li>Microsoft has Virtual PC</li>
+  <li>Oracle has Virtual Box</li>
+</ul>
+
+<p><img src="https://i.imgur.com/kUsDd8n.png" alt="" /></p>
+
+<h2 id="what-is-vmware-vsphere">What is VMWare VSphere?</h2>
+
+<p>VMWare is an American cloud computing &amp; virtualization company. Vsphere is the brand name of vmware suite of virtualization products.</p>
+
+<p>VSphere has got:</p>
+
+<ol>
+  <li>Vmware ESXi (Hypervisor)</li>
+  <li>Vcenter Server</li>
+  <li>Vsphere client</li>
+  <li>Vsphere web client</li>
+</ol>
+
+<h3 id="vsphere-client">Vsphere Client</h3>
+
+<p>VSphere client is an User Interface to access &amp; configure ESXi Host.</p>
+
+<p><img src="https://i.imgur.com/lGU4gRX.png" alt="" /></p>
+
+<h3 id="vcenter-server">Vcenter Server</h3>
+
+<p>VCenter Server provides features like:</p>
+
+<ul>
+  <li>Distributed Resource scheduler (DRS)</li>
+  <li>High Availability (HA)</li>
+  <li>VMotion ( replication technique )</li>
+  <li>Fault Tolerance</li>
+  <li>VM Migrations</li>
+</ul>
+
+<p><img src="https://i.imgur.com/3pQBmuQ.png" alt="" /></p>
+
+<h2 id="what-is-a-data-store-in-vmware-hypervisor">What is a data store in VMWare Hypervisor? </h2>
+
+<p>All files related to a virtual machine like log file, virtual disk file, iso files, configuration files are stored in the Data Store only. It can have 2 types of filesystems like Virtual Machine File System (VMFS) and NFS (Network File System).</p>
+
+<p><img src="https://i.imgur.com/w0lx1WD.png" alt="" /></p>
+
+<h2 id="what-is-migration-and-their-types">What is Migration and their types?</h2>
+
+<p>Migration is the technique of moving a virtual machine from one host to another host or from one data store to another data store.</p>
+
+<p>There are <code class="language-plaintext highlighter-rouge">5 Migration</code> strategies:</p>
+
+<ol>
+  <li>Cold Migration</li>
+  <li>Suspended Migration</li>
+  <li>VMotion</li>
+  <li>P2V (Physical to Virtual)</li>
+  <li>V2V (Virtual to Virtual)</li>
+  <li>From Microsoft hyper-v to vmware</li>
+  <li>From vmware to xenserver etc.</li>
+</ol>
+
+<h2 id="what-are-the-states-of-a-virtual-machine">What are the states of a virtual machine?</h2>
+
+<ol>
+  <li><strong>Hot</strong> State means virtual machine is <strong>ON</strong></li>
+  <li><strong>Cold</strong> State means virtual machine is <strong>OFF</strong></li>
+  <li><strong>Suspended</strong> State means virtual machine is <strong>ON</strong> <em>and</em> <strong>PAUSED</strong></li>
+</ol>
+
+<h2 id="what-is-cold-migration-technique">What is Cold Migration Technique?</h2>
+
+<p>In the cold migration technique we transfer a VM while it is Cold State to another host. If 2 data centers are in the same Vcenter server instance then only cold migration is possible.</p>
+
+<h2 id="what-is-suspended-migration-technique">What is Suspended Migration Technique?</h2>
+
+<p>When you migrate your virtual machine (VM) in suspended state. Here power is on and running so it is a HOT migration category. Suspended state means your vm is in paused state and you resume from the same point at a later time. This migration is used to troubleshoot your virtual machine technical issues.</p>
+
+<h2 id="what-is-vmotion">What is vMotion?</h2>
+
+<p>vMotion is a live migration technique where you migrate your virtual machine at power on state or Hot State.</p>
+
+<p>2 types of vMotion</p>
+
+<ol>
+  <li>Host level: Where VM is migrated to another ESXi host</li>
+  <li>Data Store: Where VM is migrated from one datastore to another datastore.</li>
+</ol>
+
+<h2 id="what-is-physical-to-virtual-p2v-migration">What is Physical to Virtual P2V Migration?</h2>
+
+<p>P2V migration converts a physical computer to a virtual machine. You run vmware vcenter converter and copy the physical server to VM in ESXi host.</p>
+
+<p>In Microsoft Azure you use Azure Migration Service and agents to migrate your physical machine to the Azure cloud.</p>
+
+<p>In AWS you also use a migration service to migrate your physical machine to AWS cloud.</p>
+
+<h2 id="what-is-physical-to-virtual-v2v-migration">What is Physical to Virtual V2V Migration?</h2>
+
+<p>V2V migration is like P2V except the source machine is already a virtual machine. Different company Virtual machine migrated to another new company. Like Hyper-V migrated to ESXi and Xenserver migrated to Hyper-V.</p>
+
+<p>Microsoft Azure gives this facility to migrate Hyper-V or ESXi migration to the cloud. Most of the cloud service providers are giving this opportunity nowadays.</p>
+
+<h2 id="what-is-fault-tolerance-ft-how-ft-works-what-are-ft-benefits">What is Fault Tolerance (FT), How FT works, What are FT benefits?</h2>
+
+<p>Fault Tolerance is a Virtual Machine level concept where you protect your Virtual Machine from stop working. Suppose some operating system level corruption happened and your virtual machine is not working so you want to protect your VM from that and you create a redundant VM to make it more fault tolerant.</p>
+
+<p>In VMWare you can enable/disable FT at VM level. FT makes system high availability give 0% downtime since VM will always be in running mode &amp; no restart required in case of VM crash. Because you keep the VM in backup as a redundant VM. so billing will be for 2 VMs this is a costly solution.</p>
+
+<p>FT must be used for Mission critical applications and servers like</p>
+
+<ol>
+  <li>Auto Pilot system</li>
+  <li>Spacecraft mission</li>
+</ol>
+
+<p>The secondary VM is created by DRS ( Distributed Resource Scheduler ) in a different HOST than the primary VM host. VMware <a href="https://en.wikipedia.org/wiki/Lockstep_(computing)">lockstep technolog</a>y is used in FT where current state &amp; events on primary VM is replicated on secondary VM. When primary goes down the secondary VM takes over and continues operating.</p>
+
+<p><img src="https://i.imgur.com/6j97d3H.png" alt="" /></p>
+
+<p><img src="https://i.imgur.com/xDIjbIO.png" alt="" /></p>
+
+<p>FT avoids <a href="https://en.wikipedia.org/wiki/Split-brain">Split Brain</a> situation when primary fails then if 2 secondary VMs created and works is a problem called split brain. Primary and secondary continuously check each other’s heart-beat.</p>
+
+<p>In Azure cloud you get Fault Domain where if you have more than 1 Virtual Machine then Azure will put your VM in 2 different fault domains therefore, if one VM is out of order then another VM will automatically start responding. This gives you any kind of hardware protection such as network or power on rack etc.</p>
+
+<p>In Microsoft Azure cloud you also have a virtual machine scale set that gives you managed service internal it composed of load balancer, and more than 1 virtual machine. You can put them in different fault domains and update domains.</p>
+
+<p>In Amazon AWS you get an availability group that is this same as the Azure availability set.</p>
+
+<h2 id="what-is-high-availability">What is High Availability?</h2>
+
+<p>You want your Virtual Machine to keep running regardless of the situation occurring in your data center. If you bought a 3rd party service like fastcomet or any other provider then it’s their responsibility to take care of High Availability (HA).</p>
+
+<p>Therefore companies create Service Level Agreement (SLA) with customers to provide guaranteed service.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level of Agreement</th>
+      <th>Down Time Per Hours</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>99%</td>
+      <td>87 hours</td>
+    </tr>
+    <tr>
+      <td>99.9%</td>
+      <td>8.76 hours</td>
+    </tr>
+    <tr>
+      <td>99.99%</td>
+      <td>52 mins</td>
+    </tr>
+    <tr>
+      <td>99.999%</td>
+      <td>5 mins</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If SLA is not achieved then the company will give you compensation as per the level of agreement. Like Microsoft Azure will credit the money back to your monthly bill if they are not able to meet SLA.  Similarly Amazon AWS also will compensate if they could not meet committed SLA.</p>
+
+<h2 id="how-high-availability-ha-works-in-vmware">How High Availability (HA) works in VMWare? </h2>
+
+<p>If your hardware or ESXi host has any issues then all VMs will become down. It is just like your entire data center is down. HA works on HOST level and Fault Tolerance (FT) works on VM level.</p>
+
+<p>If you create a backup virtual machine then it is a very costly solution. In the past VM backup  used to be the only solution therefore, companies used to avoid going on virtualization.</p>
+
+<p>However, in VMWare High Availability meaning, if the host crashes or fails then all the VMs on that host get restarted from another new host and hence you get business continuity and high availability.</p>
+
+<p>HA is an automated process that does not need any admin/human interference. In HA you do not need any standby ESXi hosts or extra VMs as redundant. It can restart VM on any runnin ghosts. HA doesn ot use VMotion and can be enabled on cluster settings.</p>
+
+<p><img src="https://i.imgur.com/HOFLW0n.png" alt="" /></p>
+
+<p>For HA you need below things in your VMWare</p>
+
+<ol>
+  <li>Cluster</li>
+  <li>Shared Storage</li>
+  <li>VCenter Server configured for the environment.</li>
+</ol>
+
+<h3 id="prerequisites-for-vmware-vsphere-ha">Prerequisites for VMWare Vsphere HA</h3>
+
+<p>All hosts must be licensed and the same version. You need a minimum of 2 hosts. All hosts must have a static IP address after restart of VM IP should persist. VM must be located in shared data storage and they should not have their own local data storage. All hosts in VMware HA Cluster must have DNS configured. HA works on <a href="https://en.wikipedia.org/wiki/Primary/replica_architecture">Master and Slave Architecture.</a></p>
+
+<p><img src="https://i.imgur.com/zKqBVY0.png" alt="" /></p>
+
+<h3 id="what-is-vmware-high-availability-ha-cluster">What is VMWare High Availability (HA) Cluster?</h3>
+
+<p>When HA is enabled on the cluster then the election process occurs among all hosts. One host that has a maximum number of data stores mounted becomes master  &amp; rest become slaves.If Master host is down then again election will start.</p>
+
+<p><img src="https://i.imgur.com/luhBFUQ.png" alt="" /></p>
+
+<h2 id="what-is-a-resource-check-in-vmware-ha">What is a Resource check in VMware HA? </h2>
+
+<p>Resource check is a feature of HA which ensures that capacity is available to restart VMs in a crash scenario. Also it reserves some capacity that you can not use when HA is enabled. Suppose you have 64 GB ram and you have 5 VMs each 4 GB ram then it may reserve extra 20 GB ram for crash scenarios.</p>
+
+<h2 id="what-is-ha-failover-time">What is HA Failover Time?</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+HA Failover time = Vsphere web client started responding time - Vcenter server VM stopped responding time. 
+
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">64</code> hosts and <code class="language-plaintext highlighter-rouge">6000</code> VMs will take approximately <code class="language-plaintext highlighter-rouge">7 minutes</code> to failover.</p>
+
+<p><img src="https://i.imgur.com/9HFdcT3.png" alt="" /></p>
+
+<h2 id="what-is-virtual-machine-template-in-vmware">What is Virtual Machine Template in VMWare?</h2>
+
+<p>Convert fully configured custom personalized VM into VM Template. Use a VM template to deploy a large number of the same VMS.</p>
+
+<p>Nowadays every cloud service provider including (Azure, AWS) supports VM templates in various forms.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Make sure you learn more about all the points that I mentioned in this article. I may be incorrect so feel free to suggest your opinions. Share some of your experience if you have used VMware or Hypervisor-V etc in your day-to-day work.</p>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=-VxzIIsFXFY&amp;list=PLBGx66SQNZ8aiuWzEFavDMpQ1RRWsZLZV&amp;ab_channel=TechnicalGuftgu">VMWare Virtualization Tutorial</a></li>
+</ul>
+
+<hr />
+
+<p><em>Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+<p><img src="https://imgur.com/5fBatz9.png" alt="" class="full" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#beginners" class="page__taxonomy-item" rel="tag">beginners</a><span class="sep">, </span>
+    
+      <a href="/tags/#devops" class="page__taxonomy-item" rel="tag">devops</a><span class="sep">, </span>
+    
+      <a href="/tags/#networking" class="page__taxonomy-item" rel="tag">networking</a><span class="sep">, </span>
+    
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-11-24T00:00:00+00:00">November 24, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Virtualization+Basics+with+VMware%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-virtualization%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-virtualization%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-virtualization%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/cloud-security-best-practices/" class="pagination--pager" title="Cloud Security Best Practices for application, servers and network
+">Previous</a>
+    
+    
+      <a href="/what-is-hyper-v/" class="pagination--pager" title="What is Hyper-Visor?
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/8axKkdp.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-improve-reliability-in-the-cloud/" rel="permalink">How to improve Reliability in the cloud?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you get a phone call from your customer saying they want to improve their application reliability while you move their workload to the cloud? If yes t...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/7tGRoEv.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cost-optimization-with-aws-spot-ec2-instances/" rel="permalink">Cost Optimization with Amazon EC2 Spot Instances
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          11 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Creating cost optimized highly scalable cloud architecture is challenging but it is possible! Using Spot Amazon Elastic Compute Cloud (Amazon EC2) instanc...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/WQWdzrb.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-security-defense-in-depth-azure-approach/" rel="permalink">Cloud Security Defense In-Depth Azure Approach
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          10 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  In a traditional data center you create one perimeter, secure them by installing firewall, WAF, SIEMS etc. and have 100% confidence that the data center i...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/aPeeiUM.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-maintain-well-architected-framework-on-cloud/" rel="permalink">How to Maintain Well-Architected-Framework on Cloud
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to make sure our workload in the cloud is secure, reliable. How to monitor the cost of your cloud resources consumption? Is there any automation you can ...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/introduction-to-virtualization/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/introduction-to-virtualization"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

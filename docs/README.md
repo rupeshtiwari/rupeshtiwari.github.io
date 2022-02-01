@@ -35,5 +35,5 @@ To preview your site locally, you can --future option
 # Git script
 
 ```
-git pull; git commit -am 'update blogs'; git push
+git pull; git add .;git commit -m 'update blogs'; git push
 ```

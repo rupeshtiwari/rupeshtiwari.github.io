@@ -107,6 +107,12 @@ var store = [{
         "url": "/designpatterns/javascript/javascript-module-pattern/",
         "teaser": "/assets/images/teaser.png"
       },{
+        "title": "Introduction to Multi Cloud and Strategy",
+        "excerpt":"Cloud itself is complex so why are customers bothering about multi-cloud at all? Why not just take google cloud and deploy all of your workload and be happy? Well it’s just like you should not put all eggs in one basket.Let’s explore Multi-Cloud in this article. According to a VMWare...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/introduction-to-multi-cloud-and-strategy/",
+        "teaser": "https://i.imgur.com/2su9F0K.png"
+      },{
         "title": "My YouTube Channel",
         "excerpt":"Hi everyone,  I started my FullstackMaster YouTube channel where I want to put some technical learning stuffs. I started putting RxJS videos over there. I hope it will be helpful please leave your comments and suggestions.&nbsp;https://www.youtube.com/channel/UCfjBZHutgAYon-T8sqt1rwg  &nbsp;  [embed]https://www.youtube.com/watch?v=OQx9z1viWyc&amp;list=PLZed_adPqIJowj154vojDaR9zmtSh3m5z[/embed]  &nbsp;  ","categories": ["Authoring","rxjs","Youtube"],
         "tags": ["rxjs"],
@@ -1013,6 +1019,12 @@ var store = [{
         "url": "/scheduling-jekyll-post-on-github-pages/",
         "teaser": "https://i.imgur.com/RrLzSEP.jpg"
       },{
+        "title": "Introduction to Azure Infrastructure Architecture",
+        "excerpt":"Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc. Azure Infrastructure Architecture Geography consists of many regions...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/introduction-to-azure-infrastructure-architecture/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
         "title": "Fixing Nrwl Nx Monorepo Workspace Dependency Graph Error",
         "excerpt":"If you are working on nx monorepo workspace and if you have notice below error and want to fix it then read this article. “Error: A project without tags cannot depend on any libraries (nx-enforce-module-boundaries)” How dependency graph works in Nx Monorepo Workspace? Nx will create an inventory of project...","categories": [],
         "tags": ["nx","monorepo","webdev","beginners"],
@@ -1025,341 +1037,29 @@ var store = [{
         "url": "/publishing-code-coverage-in-azure-ci-pipeline/",
         "teaser": "https://i.imgur.com/lF87q1A.jpg"
       },{
-        "title": "Azure DevOps Server 2020 Do's & Don't",
-        "excerpt":"Did you know Azure DevOps Services and Azure DevOps Server are different entities? I have learned lessons while working on Azure DevOps Server 2020 on-premise pipelines. In this article, I would share all of them so that you don’t repeat the mistake and get benefited. Azure DevOps Vs Azure DevOps...","categories": ["devops"],
-        "tags": ["devops","azure","beginners","tutorial"],
-        "url": "/devops/azure-devops-server-2020-dos-dont/",
-        "teaser": "https://i.imgur.com/xhD5sAQ.png"
-      },{
-        "title": "Building Blog with Jekyll and GitHub Pages on Windows",
-        "excerpt":"Learn how can you can create &amp; host your own new Blog site for FREE. With high performance and SEO enabled using Jekyll and host them in GitHub Pages. I will use windows machine to demonstrate you please read this article till end. Installing Ruby with Devkit on Windows https://rubyinstaller.org/downloads/...","categories": ["writing"],
-        "tags": ["blog","jekyll","github","beginners"],
-        "url": "/writing/building-blog-with-jekyll-and-github-pages-on-windows/",
-        "teaser": "https://i.imgur.com/mYFTPtF.png"
-      },{
-        "title": "Importing WordPress or Blogger Blogs to Jekyll Blog",
-        "excerpt":"I have WordPress or Blogger blog and I decided to move away from WordPress and switch to Jekyll. I loved the way Jekyll is working. You can deploy Jekyll blog to GitHub pages for free. Only thing you need is domain. If you want otherwise custom domain is optional. In...","categories": ["writing"],
-        "tags": ["blog","jekyll","github","beginners"],
-        "url": "/writing/importing-wordpress-or-blogger-blogs-to-jekyll-blog/",
-        "teaser": "https://i.imgur.com/sUADwrL.png"
-      },{
-        "title": "Angular Service as PubSub Message Handler",
-        "excerpt":"Convert Angular service to a Message Handler. Do you want to organize your Angular code base as Service Oriented Architecture (SOA) way. And you want to create an Angular Service that can listen to a Message and react on them just like a N-ServiceBus Message Handlers? Read this article. What...","categories": ["soa"],
-        "tags": ["angular","soa","pubsub","beginners"],
-        "url": "/soa/angular-service-as-message-handler/",
-        "teaser": "https://i.imgur.com/9QQQAkB.png"
-      },{
-        "title": "Azure Cosmos DB Basics",
-        "excerpt":"Are you beginner on Azure Cosmos DB and want to know what exactly is Cosmos DB? Then read this article. Azure Cosmos DB is a fully managed NoSQL database service for modern app development. Get guaranteed single-digit millisecond response times and 99.999-percent availability, backed by SLAs, automatic and instant scalability,...","categories": [],
-        "tags": ["azure","cosmos","beginners","csharp"],
-        "url": "/azure-cosmos-db-basics/",
-        "teaser": "https://i.imgur.com/mm7sM9M.png"
-      },{
-        "title": "Azure Functions Basics",
-        "excerpt":"Are you beginner on Azure Functions and want to learn the basics of Azure Functions? Did you know you can create Azure Functions and publish to Azure using Typescript right from Visual Studio Code? In this article, I will walk you through the steps for creating and deploying Nodejs APIs...","categories": [],
-        "tags": ["serverless","azure","javascript","beginners"],
-        "url": "/azure-functions-basics/",
-        "teaser": "https://i.imgur.com/zxJrPff.png"
-      },{
-        "title": "Isolated Process Models for Workers",
-        "excerpt":".Net running on-process till .Net Core 3.1 &amp; .Net isolated workers are coming on .Net 6 onwards &amp; you can deploy Azure Function Apps in production. Isolated Models for Workers In future all Azure Functions will be running in Isolated Models only. New way of building .Net Application called as...","categories": [],
-        "tags": ["azure","functions","beginners","dotnet"],
-        "url": "/isolated-process-models-for-workers/",
-        "teaser": "https://i.imgur.com/LbmMBDv.png"
-      },{
-        "title": "Bulk Operations in Azure Cosmos DB using TransactionalBatch of .net SDK",
-        "excerpt":"Are you using repository pattern? And want to commit multiple repository operations as a single logical transaction in Azure Cosmos DB? Read this article to learn how can you combine all of your operations as single unit of work using TransactionalBatch .net class. What is Transaction? Transaction is the execution...","categories": [],
-        "tags": ["csharp","azure","cosmos","beginners"],
-        "url": "/transactionalbatch-in-azure-cosmos-db-sdk/",
-        "teaser": "https://i.imgur.com/krOyDg2.png"
-      },{
-        "title": "Creating New Azure Cosmos DB resources in Visual Studio Code",
-        "excerpt":"Do you want to create your new Cosmos DB account and first database and collections right from Visual Studio Code? Read this article to learn hands on coding to create database in azure and visualize in Visual Studio Code. You will learn how to setup your development environment in Visual...","categories": [],
-        "tags": ["azure","cosmos","devops","beginners"],
-        "url": "/creating-azure-cosmos-db-resources/",
-        "teaser": "https://i.imgur.com/4zWzi8s.png"
-      },{
-        "title": "Creating Cosmos DB from DotNet Core Project",
-        "excerpt":"Do you want to create Cosmos DB &amp; Collection from DotNet Core Project? Read this article to create your first .net core project. And write csharp code to create DB and Collections. You will learn how to connect Azure Cosmos DB endpoint from Dotnet Project and ensure your database and...","categories": [],
-        "tags": ["dotnet","azure","cosmos","beginners"],
-        "url": "/creating-cosmos-db-from-dotnet-core-project/",
-        "teaser": "https://i.imgur.com/AK3dufr.png"
-      },{
-        "title": "Azure Sandbox Free Account for Learning",
-        "excerpt":"Do you want to learn Azure and afraid of being charged your credit card or getting big bills? Learn this article where I will explain how you can get free sandbox account where you can learn Azure by using free Azure resources. Activating Azure Sandbox Account In order for learning...","categories": [],
-        "tags": ["azure","devops","beginners","tutorial"],
-        "url": "/azure-sandbox-free-account-for-learning/",
-        "teaser": "https://i.imgur.com/E06CqU1.png"
-      },{
-        "title": "Make Your PowerShell Posh & Colorful",
-        "excerpt":"Do you want to make your PowerShell prompt colorful? Please read this article to make your PowerShell Terminal colorful and Git supported. I will use oh-my-posh git prompt engine to make my PowerShell colorful. Follow me now! 🏃 🎉Installing Posh Git Run on admin PowerShell Install-Module posh-git -Scope CurrentUser If...","categories": [],
-        "tags": ["powershell","windows","productivity","beginners"],
-        "url": "/make-your-powershell-posh-colorful/",
-        "teaser": "https://i.imgur.com/9mEAJzs.png"
-      },{
-        "title": "CRUD with Cosmos DB using Dotnet Core SDK",
-        "excerpt":"Do you want to create dotnet csharp console app and write CRUD ( Create, Read, Update and Delete ) operations over Azure Cosmos DB noSQL data? Read this article to start from scratch and learn hands on coding on cosmos DB. Introduction If you have not yet setup your azure...","categories": [],
-        "tags": ["cosmos","azure","csharp","dotnet"],
-        "url": "/crud-with-cosmos-db-and-dotnet-core/",
-        "teaser": "https://i.imgur.com/rVvfIEV.png"
-      },{
-        "title": "Query Document using LINQ on Azure Cosmos DB",
-        "excerpt":"Do you prefer LINQ queries? I do because they provide a single consistent programming model across how they work with objects in application code and how they express query logic running in the database. In this article I will teach you how can you make LINQ queries as well as...","categories": [],
-        "tags": ["cosmos","azure","csharp","dotnet"],
-        "url": "/query-document-using-linq-on-azure-cosmos-db/",
-        "teaser": "https://i.imgur.com/D4GPKNE.png"
-      },{
-        "title": "Hosting N-Service Bus in Azure Functions",
-        "excerpt":"Have you tried to host NServiceBus within Azure Functions? In this article I will teach you how can you host your first NServiceBus project within Azure Functions. In this example, I will use .net core 3.1 Pre-requisite In order to follow this article and coding along with me you need...","categories": [],
-        "tags": ["nservicebus","azure","beginners","csharp"],
-        "url": "/using-nservicebus-in-azure-functions/",
-        "teaser": "https://i.imgur.com/BJxrBex.png"
-      },{
-        "title": "Azure Developer Associate Exam Basics",
-        "excerpt":"In order to become Azure Developer Associate you must pass AZ-204 exam. If you want to become Cloud Solution Architect then consider giving Microsoft AZ-204 certification exam. Prerequisites Candidates should have at least one to two years of professional experience in the development of cloud solutions and Microsoft Azure. Candidates...","categories": [],
-        "tags": ["azure","certification","beginners","exam"],
-        "url": "/azure-developer-associate-basics/",
-        "teaser": "https://i.imgur.com/HloBLCH.png"
-      },{
-        "title": "Publishing Test Results Using JEST in Angular",
-        "excerpt":"Are you wondering how to publish Test Results over Azure CI Build while using Angular and JEST? In this article I will demonstrate nx monorepo publishing test results using azure pipeline. If you are u are using Karma Test Runner then read my previous article Publishing Nx Monorepo Test Results...","categories": [],
-        "tags": ["angular","devops","azure","testing"],
-        "url": "/publishing-test-result-using-jest-in-angular/",
-        "teaser": "https://i.imgur.com/24fxIaG.png"
-      },{
-        "title": "Creating Your own Custom JavaScript GitHub Action",
-        "excerpt":"Do you want to create your own custom GitHub Action? It’s very simple &amp; really fun! In this article I will walk you through the steps to write, test, and deploy your own JavaScript GitHub Actions. Getting Started Let’s setup our Machine and Project first. Pre-requisites Since you want to...","categories": [],
-        "tags": ["github","devops","webdev","beginners"],
-        "url": "/creating-javascript-github-action/",
-        "teaser": "https://i.imgur.com/OcpRim0.png"
-      },{
-        "title": "Creating Azure Function in Csharp",
-        "excerpt":"Creating Azure Function in Csharp Let’s Create Azure Function that triggers on HTTP post payload. Run below script to start azure function. func start Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and...","categories": [],
-        "tags": ["azure","beginners","csharp","dotnet"],
-        "url": "/creating-azure-function-in-csharp/",
-        "teaser": "https://i.imgur.com/8TRxUs7.png"
-      },{
-        "title": "Caching Dependencies on GitHub Workflows",
-        "excerpt":"While building/compiling angular or node application on Local Build Machine or Azure Pipelines or GitHub Workflows or Netflix or Heroku. The main issue we face is npm install or npm ci which takes large amount of time to finish. Which slows-down the productivity of the team. With GitHub Workflows dependency...","categories": [],
-        "tags": ["github","angular","actions","beginners"],
-        "url": "/caching-dependencies-on-github-workflows/",
-        "teaser": "https://i.imgur.com/fucBPz6.gif"
-      },{
-        "title": "How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action",
-        "excerpt":"Do you want to build your first Angular App and deploy over cloud using GitHub Actions? How to deploy/publish Angular App to GitHub Pages automatically? Did you use GitHub Actions to build and deploy Angular App over GitHub Pages? Stay tuned in this article I will show you step by...","categories": [],
-        "tags": ["github","angular","devops","beginners"],
-        "url": "/setup-ci-cd-for-angular-app-with-github-action/",
-        "teaser": "https://i.imgur.com/cOq4pON.png"
-      },{
-        "title": "Binary Search Concept",
-        "excerpt":"Do you want to understand binary search? Read this article, I have discussed binary search problems in JavaScript. Binary Search Concept Please watch this YouTube video from Errichto. This is the best binary search video I have ever seen. Next solve all the problems as he is going in his...","categories": [],
-        "tags": ["binarysearch","algorithms","beginners","tutorial"],
-        "url": "/binary-search-concept/",
-        "teaser": "https://i.imgur.com/UQSsXt8.png"
-      },{
-        "title": "How to Install Scoop on windows",
-        "excerpt":"Do you love open-source? Do you want to make your PowerShell really powerful? Consider installing scoop and make your life simple! 😄 Learn how can scoop help you to make your Visual Studio Code terminal colorful. This was my dream on windows machine to achieve. Please read my article till...","categories": [],
-        "tags": ["scoop","powershell","productivity","vscode"],
-        "url": "/how-to-install-scoop-on-window-copy/",
-        "teaser": "https://i.imgur.com/hnKqdLc.png"
-      },{
-        "title": "How to Install Scoop on windows",
-        "excerpt":"Do you love open-source? Do you want to make your PowerShell really powerful? Consider installing scoop and make your life simple! 😄 Learn how can scoop help you to make your Visual Studio Code terminal colorful. This was my dream on windows machine to achieve. Please read my article till...","categories": [],
-        "tags": ["scoop","powershell","productivity","vscode"],
-        "url": "/how-to-install-scoop-on-window/",
-        "teaser": "https://i.imgur.com/hnKqdLc.png"
-      },{
-        "title": "Microsoft Azure Solution Architect Expert Certification Basics",
-        "excerpt":"In order to become Azure Solution Architect Expert You must give AZ-303 and AZ-304 certification exams. Introduction The Azure Solutions Architect Expert certification is one of the highest-level Microsoft Azure accreditations. You must clear both AZ-303 &amp; AZ-304 exams. Should you give this exam? If you want to become Azure...","categories": [],
-        "tags": ["azure","certification","beginners","career"],
-        "url": "/microsoft-azure-solution-architect-expert-certification-basics/",
-        "teaser": "https://i.imgur.com/Es14TmL.png"
-      },{
-        "title": "Microsoft Azure Architect Technologies AZ 303 Introduction",
-        "excerpt":"Microsoft Azure Solutions Architect Expert is a role-based certification with a 1 year expiry. Azure Role-Based Certifications Fundamental Associate Expert AZ-900 - AZ-303, AZ-304 AZ-900 AZ-104 AZ-400 AZ-900 AZ-204 AZ-400 😊 If you want to give exams at Expert level without giving fundamental and associate level exams then Yes you...","categories": [],
-        "tags": ["azure","certification","architect","tutorial"],
-        "url": "/microsoft-azure-architect-technologies-az-303-introduction/",
-        "teaser": "https://i.imgur.com/PdQmWrB.png"
-      },{
-        "title": "Topologies Azure Service Bus",
-        "excerpt":"Azure Service Bus is a transport layer comprises of messaging entities. Learn what is Topology in messaging world and how N-Service bus makes life easy by giving built-in configurations for creating topologies. Messaging Entities Queue Queues offer First In, First Out (FIFO) message delivery to one or more competing consumers....","categories": [],
-        "tags": ["csharp","beginners","azure","cloud"],
-        "url": "/topologies-azure-service-bus/",
-        "teaser": "https://i.imgur.com/P7C5SR6.png"
-      },{
-        "title": "Configuring Azure Diagnostics Log",
-        "excerpt":"​This article will teach you t​he how to configure and implement diagnostics log for Azure resources. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Introduction Implement and Monitor an Azure Infrastructure is 50-55% in Az-303. Under Implement cloud infrastructure monitoring we have below topics to...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/configuring-azure-diagnostics-log/",
-        "teaser": "https://i.imgur.com/nbHefDR.png"
-      },{
-        "title": "Azure Security Center Basics",
-        "excerpt":"Azure Security Center is the base infrastructure service to collect logs analyze them and generate tailored recommendations. Learn how can you review and fix general, cloud securities and manage security concerns of your resources in Azure. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Azure...","categories": [],
-        "tags": ["azure","beginners","certification","webdev"],
-        "url": "/azure-security-center-basics/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "How I cleared Azure Fundamental Certification Az 900",
-        "excerpt":"I am happy that I cleared my Microsoft Azure Fundamental Certification (Az 900) Exam. This is the start of my Azure journey. In this article, I will explain what I did? How to Motivate yourself? In order to go out of you comfort zone and do something is the most...","categories": [],
-        "tags": ["webdev","tutorial","beginners","Azure"],
-        "url": "/how-i-cleared-azure-fundamental-certification-az-900/",
-        "teaser": "https://i.imgur.com/qxXxmBa.png"
-      },{
-        "title": "Monitoring your Virtual Machines with Azure Monitor",
-        "excerpt":"You can monitor performance and health of Virtual Machines and Virtual Machines scale sets, running processors and other resources dependencies with Azure Monitoring. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Introduction Azure Monitoring is a product that helps you to: Deliver predictable performance and...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/monitoring-your-virtual-machines-with-azure-monitor/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Azure Advisor Basics",
-        "excerpt":"Azure Advisor collects recommendations from all of the services within your subscription and display them in a single page. Example you can see recommendation like Cost, Security, Performance etc. In this short article I will summaries Azure Advisor. Introduction 👨‍🏫 Azure Adviser is an Azure service. Helps you to follow...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/azure-advisor-basics/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Azure Cost Management & Billing Basics",
-        "excerpt":"For entire azure resources even across subscriptions if you want to know about your billing, invoice, budget, alerts, recommendations then you must go to Azure Cost Management and billing page in Azure portal. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Cost Reports and Budget...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/azure-cost-management-and-billing-basics/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Implementing Azure Application Insight in Asp.Net MVC Application",
-        "excerpt":"Did you know you can enable web application tracing, performance check, request response time trace and exception tracing all free using Azure Application Insight. Learn how to implement and configure app insight in your .net application. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Azure...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/implementing-azure-application-insight-in-asp-net-mvc-application/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Visualize Azure Monitor Logs and Metrics",
-        "excerpt":"Azure portal is great while visualizing Azure log and metrics. You can see the pie chart, graph for resources like VMs etc. You can also create your custom multiple dashboard views with these visualizations. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Visualize Azure Monitor...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/visualize-azure-monitor-logs-and-metrics/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Monitoring Containers with Azure Monitor",
-        "excerpt":"Did you know you can containerize your asp.net MVC with docker application and upload to Azure Container Registry and host them using Azure Kubernetes Cluster and start monitoring your container using Azure Monitor? In this article, I will explain all of this in this article. This article will help you...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/monitoring-containers-with-azure-monitor/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Azure Storage - The big picture",
-        "excerpt":"Azure Core Storage Services Blobs Files Queues Tables Disks Azure Blobs Storage It is an object storage solution Unstructured data can be stored 3 types of blobs: block,append and page files, documents, binary data like image, video, audio files, databases and disks can be stored in blob storage. Azure Files...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/the-big-picture-of-azure-storage/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Azure Blob Access Tiers and Lifecycle Management",
-        "excerpt":"Azure Storage has no upfront cost, no termination fees and pay only for what you use. In this article you will learn about Azure storage access tiers and their pricing. It will help you to decide which file type to put in which access tier. Access Tiers For block blobs...","categories": [],
-        "tags": ["azure","webdev","certification","beginners"],
-        "url": "/azure-blob-access-tiers-and-lifecycle-management/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Azure Storage Replications Basics",
-        "excerpt":"LRS (locally redundant storage) ZRS (zone redundant storage) GRS (geographically redundant storage) RA GRS (read-access geographically redundant storage) GZRS (geographically zone redundant storage) RA GZRS (read-access geographically zone redundant storage) Availability and Durability Disaster recovery Recovery time objectives (RTO) Maximum acceptable time that an application can be un-available after an...","categories": [],
-        "tags": ["azure","webdev","certification","beginners"],
-        "url": "/azure-storage-replications-basics/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Demo Initiating Azure Storage Account Failover",
-        "excerpt":" ","categories": [],
-        "tags": ["test"],
-        "url": "/demo-initiating-azure-storage-account-failover/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Microsoft Azure Fundamental Questions",
-        "excerpt":"What are the two reasons that you may see the message: “There are no offers available in your region or country at this time”? You might not be eligible for any offer switches. Some offers may not be available in all countries/regions. Why type of lock in Azure means authorized...","categories": [],
-        "tags": ["webdev","tutorial","beginners","cloud"],
-        "url": "/microsoft-azure-fundamental-questions/",
-        "teaser": "https://i.imgur.com/qxXxmBa.png"
-      },{
-        "title": "Creating Azure Storage Account",
-        "excerpt":"Azure Storage account is a resource in Azure. Storage Account will give your group of services like Blob Service, File Service, Table Service, Queue Service. In this article I will walk you through the steps of creating your first Azure storage account. Introduction Azure Storage Account provides a unique namespace...","categories": [],
-        "tags": ["azure","beginners","certification","webdev"],
-        "url": "/creating-azure-storage-account/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Configuring Azure Blob Storage",
-        "excerpt":"Blob Storage is helpful to upload images, videos, documents, pdfs etc. over the Azure cloud. In order to create new Azure Blob Storage. You must need to create Azure Storage Account. Azure Blob Storage is one of the core services of the Azure Storage Account. Prerequisite 👍 You must have...","categories": [],
-        "tags": ["azure","beginners","certification","webdev"],
-        "url": "/configuring-azure-blob-storage/",
-        "teaser": "https://i.imgur.com/h4QI62f.png"
-      },{
-        "title": "Monitoring Options for Applications in Azure",
-        "excerpt":"Learn how many types of monitoring services available in Azure to monitor your applications. Design a Logging and Monitoring Solution in Azure Below are the topics you should know: Determine levels and storage location for logs. Plan for integration with monitoring tools including Azure Monitoring tool and Azure Sentinel. Recommend...","categories": [],
-        "tags": ["azure","beginners","certification","webdev"],
-        "url": "/monitoring-options-for-applications-in-azure/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "Azure Monitor and Application Insights Introduction",
-        "excerpt":"What are Azure Monitor and Application Insights? How exactly Azure Monitor work? How can you visualize Application Map with Application Insights? Learn the log retentions and exports. Learn all of this in this article. Helpful article for AZ-304 Exam. Types of Data to consider Log: web application tracings and logs....","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/azure-monitor-and-application-insights-introduction/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "Getting Started with Monorepo with Nx Nrwl",
-        "excerpt":"Do you have a lot of JavaScript projects using GitHub repositories? How are you managing dependencies among those projects? Developers might be struggling to manage a large set of GitHub repositories and Business might be spending a lot of money to manage them. The potential solution to this problem is...","categories": [],
-        "tags": ["webdev","tutorial","beginners","javascript"],
-        "url": "/getting-started-with-monorepo-with-nx-nrwl/",
-        "teaser": "https://i.imgur.com/qxXxmBa.png"
-      },{
-        "title": "Azure Network Watcher Basics",
-        "excerpt":"Azure Network Watcher is a monitoring service with lots of other important services for network. Most network diagnostics issues can be detected and analyzed with Azure Network Watcher. Learn everything about Network Watcher in this article. What Network Watcher Does? You use Network Watcher to monitor and repair the network...","categories": [],
-        "tags": ["azure","webdev","beginners","certification"],
-        "url": "/azure-network-watcher-basics/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "What to use to Run applications in Azure",
-        "excerpt":"Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get free e-book on Design Distributed Systems. It is difficult to compare options available in Azure. The comparison with the features of...","categories": [],
-        "tags": ["azure","webdev","beginners","tutorial"],
-        "url": "/what-should-you-use-for-running-applications-in-azure/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "Where to Store Application Data in Azure",
-        "excerpt":"Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you. Storing Data in Azure options Azure SQL Database...","categories": [],
-        "tags": ["azure","webdev","beginners","tutorial"],
-        "url": "/where-to-store-application-data-in-azure/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "On-Premises Disaster Site Recovery Strategy with Azure VM",
-        "excerpt":"Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity...","categories": [],
-        "tags": ["azure","webdev","beginners","tutorial"],
-        "url": "/on-premises-disaster-site-recovery-strategy-in-azure/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "Site Recovery Strategy in Azure",
-        "excerpt":"Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure. Failover and failback in Site Recovery has four stages Stage 1: Fail over from on-premises: After setting up replication to Azure for on-premises machines, when your on-premises site goes...","categories": [],
-        "tags": ["azure","webdev","beginners","tutorial"],
-        "url": "/site-recoverystrategy-in-azure/",
-        "teaser": "https://i.imgur.com/7I0NoBe.png"
-      },{
-        "title": "Create Update and Delete Tags on Azure Resource",
-        "excerpt":"Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources. What is Tag in Azure Resources? You apply tags to your Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy....","categories": [],
-        "tags": ["azure","webdev","beginners","tutorial"],
-        "url": "/create-update-and-delete-tags-on-azure-resource/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "What is Azure Virtual Machine Scale Sets",
-        "excerpt":"Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for load-balancing, scaling, make application highly available is super challenging on cloud. Azure Virtual Machine Scale sets is the great tool which does...","categories": [],
-        "tags": ["azure","webdev","beginners","tutorial"],
-        "url": "/what-is-azure-virtual-machine-scale-sets/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
-        "title": "Introduction to Azure Infrastructure Architecture",
-        "excerpt":"Understanding Azure architecture gives you power to learn lots of higher level concepts on Azure like Virtual Machine scale sets etc. Therefore, in this article you will learn what is Azure overall architecture and its individual components like region, zones, data-centers etc. Azure Infrastructure Architecture Geography consists of many regions...","categories": [],
-        "tags": ["azure","webdev","beginners","tutorial"],
-        "url": "/introduction-to-azure-infrastructure-architecture/",
-        "teaser": "https://i.imgur.com/zZYQYQA.png"
-      },{
         "title": "Server Deployment Strategies and Storage Spaces Direct Fault Tolerance in Azure",
         "excerpt":"Learn how Storage Spaces Direct provides you a Data fault tolerance at verity of levels. You don’t loose data at any stage. You get Data resiliency out of the box in Azure.to You can deploy servers in below types: Node Chassis for Blade Servers Rack Server What is Planned Maintenance?...","categories": [],
         "tags": ["azure","webdev","beginners","tutorial"],
         "url": "/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/",
         "teaser": "https://i.imgur.com/zZYQYQA.png"
       },{
+        "title": "Azure DevOps Server 2020 Do's & Don't",
+        "excerpt":"Did you know Azure DevOps Services and Azure DevOps Server are different entities? I have learned lessons while working on Azure DevOps Server 2020 on-premise pipelines. In this article, I would share all of them so that you don’t repeat the mistake and get benefited. Azure DevOps Vs Azure DevOps...","categories": ["devops"],
+        "tags": ["devops","azure","beginners","tutorial"],
+        "url": "/devops/azure-devops-server-2020-dos-dont/",
+        "teaser": "https://i.imgur.com/xhD5sAQ.png"
+      },{
         "title": "Cloud Solution Architect Technical Interview Questions",
         "excerpt":"Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution architect interview. My answers would not be perfect so feel free to search for better answers. Important part from this article is what...","categories": [],
         "tags": ["webdev","tutorial","beginners","cloud"],
         "url": "/cloud-solution-architect-technical-interview-questions/",
         "teaser": "https://i.imgur.com/4EIcRWN.png"
+      },{
+        "title": "Building Blog with Jekyll and GitHub Pages on Windows",
+        "excerpt":"Learn how can you can create &amp; host your own new Blog site for FREE. With high performance and SEO enabled using Jekyll and host them in GitHub Pages. I will use windows machine to demonstrate you please read this article till end. Installing Ruby with Devkit on Windows https://rubyinstaller.org/downloads/...","categories": ["writing"],
+        "tags": ["blog","jekyll","github","beginners"],
+        "url": "/writing/building-blog-with-jekyll-and-github-pages-on-windows/",
+        "teaser": "https://i.imgur.com/mYFTPtF.png"
       },{
         "title": "Cloud Solution Architect Soft Skills Questions",
         "excerpt":"Are you preparing for cloud solution architect interview then you must aware of soft skill questions. In this article I will give you questions that you must prepare for your next up coming interview. This is part 2 of my cloud solution architect interview questions series. Read the part 1...","categories": [],
@@ -1385,15 +1085,699 @@ var store = [{
         "url": "/roadmap-for-mastering-competitive-programming-for-beginners/",
         "teaser": "https://i.imgur.com/qxXxmBa.png"
       },{
+        "title": "Importing WordPress or Blogger Blogs to Jekyll Blog",
+        "excerpt":"I have WordPress or Blogger blog and I decided to move away from WordPress and switch to Jekyll. I loved the way Jekyll is working. You can deploy Jekyll blog to GitHub pages for free. Only thing you need is domain. If you want otherwise custom domain is optional. In...","categories": ["writing"],
+        "tags": ["blog","jekyll","github","beginners"],
+        "url": "/writing/importing-wordpress-or-blogger-blogs-to-jekyll-blog/",
+        "teaser": "https://i.imgur.com/sUADwrL.png"
+      },{
+        "title": "Angular Service as PubSub Message Handler",
+        "excerpt":"Convert Angular service to a Message Handler. Do you want to organize your Angular code base as Service Oriented Architecture (SOA) way. And you want to create an Angular Service that can listen to a Message and react on them just like a N-ServiceBus Message Handlers? Read this article. What...","categories": ["soa"],
+        "tags": ["angular","soa","pubsub","beginners"],
+        "url": "/soa/angular-service-as-message-handler/",
+        "teaser": "https://i.imgur.com/9QQQAkB.png"
+      },{
         "title": "Azure Update Domain vs Fault Domain",
         "excerpt":"Do you know in Azure Data Center you can protect your server against regular server software maintenance outages? You can also protect your VMs on Azure against Network breakdown or power interruptions. Read this article to learn what is Update and Fault Domains in Data-Center and how they protect against...","categories": [],
         "tags": ["azure","webdev","beginners","tutorial"],
         "url": "/azure-update-domain-vs-fault-domain/",
         "teaser": "https://i.imgur.com/zZYQYQA.png"
       },{
+        "title": "Azure Cosmos DB Basics",
+        "excerpt":"Are you beginner on Azure Cosmos DB and want to know what exactly is Cosmos DB? Then read this article. Azure Cosmos DB is a fully managed NoSQL database service for modern app development. Get guaranteed single-digit millisecond response times and 99.999-percent availability, backed by SLAs, automatic and instant scalability,...","categories": [],
+        "tags": ["azure","cosmos","beginners","csharp"],
+        "url": "/azure-cosmos-db-basics/",
+        "teaser": "https://i.imgur.com/mm7sM9M.png"
+      },{
         "title": "Azure Availability Set Vs Availability Zone",
         "excerpt":"Did you know how can you protect your business against software or hardware disaster within Azure data-center? Did you also know how can you protect your services against data-center disasters? Azure guaranty to provide 99.99% SLA while using virtual machines within Availability Set and Zones. Read this article to understand...","categories": [],
         "tags": ["azure","webdev","beginners","tutorial"],
         "url": "/azure-availability-set-vs-availability-zone/",
         "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Azure Compute Resources",
+        "excerpt":"Do You want to start IT Business and you don’t have equipments? Don’t worry Azure is the solution for your business. By using Azure Compute Resources you can setup your business cloud needs. You can get high processor machine or high available app services to host your workers. Read this...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/azure-compute-resources/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Azure Functions Basics",
+        "excerpt":"Are you beginner on Azure Functions and want to learn the basics of Azure Functions? Did you know you can create Azure Functions and publish to Azure using Typescript right from Visual Studio Code? In this article, I will walk you through the steps for creating and deploying Nodejs APIs...","categories": [],
+        "tags": ["serverless","azure","javascript","beginners"],
+        "url": "/azure-functions-basics/",
+        "teaser": "https://i.imgur.com/zxJrPff.png"
+      },{
+        "title": "Isolated Process Models for Workers",
+        "excerpt":".Net running on-process till .Net Core 3.1 &amp; .Net isolated workers are coming on .Net 6 onwards &amp; you can deploy Azure Function Apps in production. Isolated Models for Workers In future all Azure Functions will be running in Isolated Models only. New way of building .Net Application called as...","categories": [],
+        "tags": ["azure","functions","beginners","dotnet"],
+        "url": "/isolated-process-models-for-workers/",
+        "teaser": "https://i.imgur.com/LbmMBDv.png"
+      },{
+        "title": "Bulk Operations in Azure Cosmos DB using TransactionalBatch of .net SDK",
+        "excerpt":"Are you using repository pattern? And want to commit multiple repository operations as a single logical transaction in Azure Cosmos DB? Read this article to learn how can you combine all of your operations as single unit of work using TransactionalBatch .net class. What is Transaction? Transaction is the execution...","categories": [],
+        "tags": ["csharp","azure","cosmos","beginners"],
+        "url": "/transactionalbatch-in-azure-cosmos-db-sdk/",
+        "teaser": "https://i.imgur.com/krOyDg2.png"
+      },{
+        "title": "How to Codifying Infrastructure in Configuration",
+        "excerpt":"Did you know you can write a script and run from your machine to create and destroy multiple cloud infrastructures? Well yes I am not joking this is possible. Read this article to learn more about codifying cloud APIs into declarative configuration files. Write Plan and Apply Infrastructure. Suppose you...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/how-to-codifying-infrastructure-in-configuration/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Creating New Azure Cosmos DB resources in Visual Studio Code",
+        "excerpt":"Do you want to create your new Cosmos DB account and first database and collections right from Visual Studio Code? Read this article to learn hands on coding to create database in azure and visualize in Visual Studio Code. You will learn how to setup your development environment in Visual...","categories": [],
+        "tags": ["azure","cosmos","devops","beginners"],
+        "url": "/creating-azure-cosmos-db-resources/",
+        "teaser": "https://i.imgur.com/4zWzi8s.png"
+      },{
+        "title": "Random Flashcards for Microsoft Azure Architect Design",
+        "excerpt":"Do you want to refresh AZ 304 Microsoft Azure Architect Design related random questions? This article will give you great random flashcards to remember Azure concepts. Which tool is an open-source tool for provisioning and managing cloud infrastructure that codifies infrastructure in configuration files that describe the topology of cloud...","categories": [],
+        "tags": ["azure","webdev","beginners","az304"],
+        "url": "/microsoft-azure-architect-design-random-question-flashcards/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Creating Cosmos DB from DotNet Core Project",
+        "excerpt":"Do you want to create Cosmos DB &amp; Collection from DotNet Core Project? Read this article to create your first .net core project. And write csharp code to create DB and Collections. You will learn how to connect Azure Cosmos DB endpoint from Dotnet Project and ensure your database and...","categories": [],
+        "tags": ["dotnet","azure","cosmos","beginners"],
+        "url": "/creating-cosmos-db-from-dotnet-core-project/",
+        "teaser": "https://i.imgur.com/AK3dufr.png"
+      },{
+        "title": "Design Azure Governance for Microsoft Azure Solutions Architect",
+        "excerpt":"Are you wondering how to enforce business compliance to the deployed resources over Azure? Did you know you can write configuration file to deploy resources and enforce the policies in your organization? Read this article to learn about the core Azure Governance with Azure Policy Microsoft Documentation that enables all...","categories": [],
+        "tags": ["azure","webdev","beginners","az304"],
+        "url": "/design-azure-governance-for-microsoft-azure-solutions-architect/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Azure Sandbox Free Account for Learning",
+        "excerpt":"Do you want to learn Azure and afraid of being charged your credit card or getting big bills? Learn this article where I will explain how you can get free sandbox account where you can learn Azure by using free Azure resources. Activating Azure Sandbox Account In order for learning...","categories": [],
+        "tags": ["azure","devops","beginners","tutorial"],
+        "url": "/azure-sandbox-free-account-for-learning/",
+        "teaser": "https://i.imgur.com/E06CqU1.png"
+      },{
+        "title": "What is Azure Resource Manager or ARM?",
+        "excerpt":"Did you know you can create and deploy Azure resources using JSON template? Did you also know that you can enforce business compliances on your resources? All of this can be done using Azure Resource Manager (ARM). Read this article to learn everything important about ARM. You can write code...","categories": [],
+        "tags": ["azure","webdev","beginners","az304"],
+        "url": "/what-is-azure-resource-manager-or-arm/",
+        "teaser": "https://i.imgur.com/rFW3EiY.png"
+      },{
+        "title": "Make Your PowerShell Posh & Colorful",
+        "excerpt":"Do you want to make your PowerShell prompt colorful? Please read this article to make your PowerShell Terminal colorful and Git supported. I will use oh-my-posh git prompt engine to make my PowerShell colorful. Follow me now! 🏃 🎉Installing Posh Git Run on admin PowerShell Install-Module posh-git -Scope CurrentUser If...","categories": [],
+        "tags": ["powershell","windows","productivity","beginners"],
+        "url": "/make-your-powershell-posh-colorful/",
+        "teaser": "https://i.imgur.com/9mEAJzs.png"
+      },{
+        "title": "What is Azure Resource Manager or ARM?",
+        "excerpt":"Did you know you can create and deploy Azure resources using JSON template? Did you also know that you can enforce business compliances on your resources? All of this can be done using Azure Resource Manager (ARM). Read this article to learn everything important about ARM. You can write code...","categories": [],
+        "tags": ["azure","webdev","beginners","az304"],
+        "url": "/what-is-azure-resource-manager-or-arm/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "CRUD with Cosmos DB using Dotnet Core SDK",
+        "excerpt":"Do you want to create dotnet csharp console app and write CRUD ( Create, Read, Update and Delete ) operations over Azure Cosmos DB noSQL data? Read this article to start from scratch and learn hands on coding on cosmos DB. Introduction If you have not yet setup your azure...","categories": [],
+        "tags": ["cosmos","azure","csharp","dotnet"],
+        "url": "/crud-with-cosmos-db-and-dotnet-core/",
+        "teaser": "https://i.imgur.com/rVvfIEV.png"
+      },{
+        "title": "Design Security for Application for Microsoft Azure Solutions Architect",
+        "excerpt":"Are you wondering how your function app authenticate &amp; authorize to read or write to Azure SQL table? Do you think how your web application will get programmatically permission to write to storage queue? How would you mange the secrets and credentials used by resourced in your Azure cloud? Are...","categories": [],
+        "tags": ["azure","webdev","beginners","az304"],
+        "url": "/design-security-for-application-for-microsoft-azure-solutions-architect/",
+        "teaser": "https://i.imgur.com/rFW3EiY.png"
+      },{
+        "title": "Design Security for Application for Microsoft Azure Solutions Architect",
+        "excerpt":"Are you wondering how your function app authenticate &amp; authorize to read or write to Azure SQL table? Do you think how your web application will get programmatically permission to write to storage queue? How would you mange the secrets and credentials used by resourced in your Azure cloud? Are...","categories": [],
+        "tags": ["azure","webdev","beginners","az304"],
+        "url": "/design-security-for-application-for-microsoft-azure-solutions-architect/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Query Document using LINQ on Azure Cosmos DB",
+        "excerpt":"Do you prefer LINQ queries? I do because they provide a single consistent programming model across how they work with objects in application code and how they express query logic running in the database. In this article I will teach you how can you make LINQ queries as well as...","categories": [],
+        "tags": ["cosmos","azure","csharp","dotnet"],
+        "url": "/query-document-using-linq-on-azure-cosmos-db/",
+        "teaser": "https://i.imgur.com/D4GPKNE.png"
+      },{
+        "title": "What is Subnet and Why Subnet is Required?",
+        "excerpt":"When I was learning Azure Infrastructure, I had big question in my mind what is subnet and why do I need Subnet in my network? If you share my question then here is the article for you! Everything you must know about subnet as a beginner. What is Subnetting? Sub...","categories": [],
+        "tags": ["webdev","azure","tutorial","beginners"],
+        "url": "/what-is-subnet-and-why-subnet-is-required/",
+        "teaser": "https://i.imgur.com/k9KdVXu.png"
+      },{
+        "title": "What is Subnet and Why Subnet is Required?",
+        "excerpt":"When I was learning Azure Infrastructure, I had big question in my mind what is subnet and why do I need Subnet in my network? If you share my question then here is the article for you! Everything you must know about subnet as a beginner. What is Subnetting? Sub...","categories": [],
+        "tags": ["webdev","azure","tutorial","beginners"],
+        "url": "/what-is-subnet-and-why-subnet-is-required/",
+        "teaser": "https://i.imgur.com/k9KdVXu.png"
+      },{
+        "title": "Hosting N-Service Bus in Azure Functions",
+        "excerpt":"Have you tried to host NServiceBus within Azure Functions? In this article I will teach you how can you host your first NServiceBus project within Azure Functions. In this example, I will use .net core 3.1 Pre-requisite In order to follow this article and coding along with me you need...","categories": [],
+        "tags": ["nservicebus","azure","beginners","csharp"],
+        "url": "/using-nservicebus-in-azure-functions/",
+        "teaser": "https://i.imgur.com/BJxrBex.png"
+      },{
+        "title": "Microsoft Azure Services and Concepts",
+        "excerpt":"Learn everything you should know about Azure Services and their concepts as a beginner. Azure Infrastructure and Management Azure Data Center Azure Regions and Availability Zones Azure Resource Group Azure Resource Manager (ARM) Infrastructure as Code Using ARM Templates Azure Service Health &amp; Azure Monitor Azure Mobile App Azure Advisory...","categories": [],
+        "tags": ["webdev","azure","tutorial","az900"],
+        "url": "/microsoft-azure-services-and-concepts/",
+        "teaser": "https://i.imgur.com/t9bDcJf.png"
+      },{
+        "title": "PowerShell Random Notes for You!",
+        "excerpt":"Learn some important built-in very helpful methods in Powershell. It could be a quick note for you so don’t forget to bookmark this article! 🥇 Try Catch in PowerShell Using built-in exceptions. try { $wc = new-object System.Net.WebClient $wc.DownloadFile(\"http://www.contoso.com/MyDoc.doc\",\"c:\\temp\\MyDoc.doc\") } catch [System.Net.WebException],[System.IO.IOException] { \"Unable to download MyDoc.doc from http://www.contoso.com.\" }...","categories": [],
+        "tags": ["webdev","tutorial","beginners","powershell"],
+        "url": "/powershell-random-notes/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Introduction to Azure Fundamentals",
+        "excerpt":"Can you describe basic concepts of cloud computing? Is Azure right solution for your business needs? How can you create your Azure subscription today? I will explain all in this article. This is the 1st article on “Azure Fundamentals part 1: Describe core Azure concepts”. Introduction What is Azure? Azure...","categories": [],
+        "tags": ["webdev","azure","tutorial","az-900"],
+        "url": "/introduction-to-azure-fundamentals/",
+        "teaser": "https://i.imgur.com/OTHb1vM.png"
+      },{
+        "title": "Azure Developer Associate Exam Basics",
+        "excerpt":"In order to become Azure Developer Associate you must pass AZ-204 exam. If you want to become Cloud Solution Architect then consider giving Microsoft AZ-204 certification exam. Prerequisites Candidates should have at least one to two years of professional experience in the development of cloud solutions and Microsoft Azure. Candidates...","categories": [],
+        "tags": ["azure","certification","beginners","exam"],
+        "url": "/azure-developer-associate-basics/",
+        "teaser": "https://i.imgur.com/HloBLCH.png"
+      },{
+        "title": "Azure Information Protection Strategy",
+        "excerpt":"Azure Information Protection (AIP) is a cloud-based solution that enables organizations to classify and protect documents and emails by applying labels. How labels apply classification with AIP Labeling your content with AIP includes: Classification that can be detected regardless of where the data is stored or with whom it’s shared....","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-information-protection-strategy/",
+        "teaser": "https://i.imgur.com/zztiaiA.png"
+      },{
+        "title": "Publishing Test Results Using JEST in Angular",
+        "excerpt":"Are you wondering how to publish Test Results over Azure CI Build while using Angular and JEST? In this article I will demonstrate nx monorepo publishing test results using azure pipeline. If you are u are using Karma Test Runner then read my previous article Publishing Nx Monorepo Test Results...","categories": [],
+        "tags": ["angular","devops","azure","testing"],
+        "url": "/publishing-test-result-using-jest-in-angular/",
+        "teaser": "https://i.imgur.com/24fxIaG.png"
+      },{
+        "title": "Azure Load Balancer Basics",
+        "excerpt":"Azure Load Balancer evenly distributes incoming network traffic load among backend resources or servers. It works at layer 4 (Transport Layer) of OSI (Open Systems Interconnection) Model. Inbound load flows from frontend to backend instances of load balancer. Load Balancer Types There are Basic and Standard Azure Load Balancers. Scope...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-load-balancer-basics/",
+        "teaser": "https://i.imgur.com/jOGk4Bn.png"
+      },{
+        "title": "Creating Your own Custom JavaScript GitHub Action",
+        "excerpt":"Do you want to create your own custom GitHub Action? It’s very simple &amp; really fun! In this article I will walk you through the steps to write, test, and deploy your own JavaScript GitHub Actions. Getting Started Let’s setup our Machine and Project first. Pre-requisites Since you want to...","categories": [],
+        "tags": ["github","devops","webdev","beginners"],
+        "url": "/creating-javascript-github-action/",
+        "teaser": "https://i.imgur.com/OcpRim0.png"
+      },{
+        "title": "Creating Azure Function in Csharp",
+        "excerpt":"Creating Azure Function in Csharp Let’s Create Azure Function that triggers on HTTP post payload. Run below script to start azure function. func start Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and...","categories": [],
+        "tags": ["azure","beginners","csharp","dotnet"],
+        "url": "/creating-azure-function-in-csharp/",
+        "teaser": "https://i.imgur.com/8TRxUs7.png"
+      },{
+        "title": "Azure Information Protection Strategy",
+        "excerpt":"Azure Information Protection (AIP) is a cloud-based solution that enables organizations to classify and protect documents and emails by applying labels. How labels apply classification with AIP Labeling your content with AIP includes: Classification that can be detected regardless of where the data is stored or with whom it’s shared....","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-information-protection-strategy/",
+        "teaser": "https://i.imgur.com/zztiaiA.png"
+      },{
+        "title": "Microsoft Azure Support Plans Basics",
+        "excerpt":"Microsoft offers 6 kinds of support plans. In this article lets quickly check them out. Basic Developer Standard Professional Direct Premier Unified Support tickets can be created from the Azure portal. You can create 3 types of tickets: Severity A (Critical business impact) Severity B (Medium priority) Severity C (Low...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/microsoft-azure-support-plans-basics/",
+        "teaser": "https://i.imgur.com/LK8Z6B5.png"
+      },{
+        "title": "Caching Dependencies on GitHub Workflows",
+        "excerpt":"While building/compiling angular or node application on Local Build Machine or Azure Pipelines or GitHub Workflows or Netflix or Heroku. The main issue we face is npm install or npm ci which takes large amount of time to finish. Which slows-down the productivity of the team. With GitHub Workflows dependency...","categories": [],
+        "tags": ["github","angular","actions","beginners"],
+        "url": "/caching-dependencies-on-github-workflows/",
+        "teaser": "https://i.imgur.com/fucBPz6.gif"
+      },{
+        "title": "Microsoft Azure Support Plans Basics",
+        "excerpt":"Microsoft offers 6 kinds of support plans. In this article lets quickly check them out. Basic Developer Standard Professional Direct Premier Unified Support tickets can be created from the Azure portal. You can create 3 types of tickets: Severity A (Critical business impact) Severity B (Medium priority) Severity C (Low...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/microsoft-azure-support-plans-basics/",
+        "teaser": "https://i.imgur.com/LK8Z6B5.png"
+      },{
+        "title": "How to deploy Angular Apps to GitHub Pages (gh-pages) - Setup CI/CD for Angular App with GitHub Action",
+        "excerpt":"Do you want to build your first Angular App and deploy over cloud using GitHub Actions? How to deploy/publish Angular App to GitHub Pages automatically? Did you use GitHub Actions to build and deploy Angular App over GitHub Pages? Stay tuned in this article I will show you step by...","categories": [],
+        "tags": ["github","angular","devops","beginners"],
+        "url": "/setup-ci-cd-for-angular-app-with-github-action/",
+        "teaser": "https://i.imgur.com/cOq4pON.png"
+      },{
+        "title": "Discuss Azure Fundamental Concepts",
+        "excerpt":"Did you know your company can take advantage of using many Azure cloud computing which will help your company to reduce its overall computing costs? Did you know the benefits(availability, scalability, and geographic distribution) of cloud computing? Did you know what are the categories(IaaS, PaaS, SaaS) of cloud computing? And,...","categories": [],
+        "tags": ["webdev","azure","tutorial","az-900"],
+        "url": "/discuss-azure-fundamental-concepts/",
+        "teaser": "https://i.imgur.com/OTHb1vM.png"
+      },{
+        "title": "Binary Search Concept",
+        "excerpt":"Do you want to understand binary search? Read this article, I have discussed binary search problems in JavaScript. Binary Search Concept Please watch this YouTube video from Errichto. This is the best binary search video I have ever seen. Next solve all the problems as he is going in his...","categories": [],
+        "tags": ["binarysearch","algorithms","beginners","tutorial"],
+        "url": "/binary-search-concept/",
+        "teaser": "https://i.imgur.com/UQSsXt8.png"
+      },{
+        "title": "How to Install Scoop on windows",
+        "excerpt":"Do you love open-source? Do you want to make your PowerShell really powerful? Consider installing scoop and make your life simple! 😄 Learn how can scoop help you to make your Visual Studio Code terminal colorful. This was my dream on windows machine to achieve. Please read my article till...","categories": [],
+        "tags": ["scoop","powershell","productivity","vscode"],
+        "url": "/how-to-install-scoop-on-window-copy/",
+        "teaser": "https://i.imgur.com/hnKqdLc.png"
+      },{
+        "title": "How to Install Scoop on windows",
+        "excerpt":"Do you love open-source? Do you want to make your PowerShell really powerful? Consider installing scoop and make your life simple! 😄 Learn how can scoop help you to make your Visual Studio Code terminal colorful. This was my dream on windows machine to achieve. Please read my article till...","categories": [],
+        "tags": ["scoop","powershell","productivity","vscode"],
+        "url": "/how-to-install-scoop-on-window/",
+        "teaser": "https://i.imgur.com/hnKqdLc.png"
+      },{
+        "title": "Describe core Azure architecture components",
+        "excerpt":"Can you explain concepts and terminology for the core Azure architecture components? Can you describe the benefits and usages of Azure subscriptions and management groups? Have you check the benefits of Azure resources, resource groups, and Azure Resource Manager(ARM)? Did you know how achieve high availability using Azure regions, region...","categories": [],
+        "tags": ["webdev","azure","tutorial","az-900"],
+        "url": "/describe-core-azure-architecture-components/",
+        "teaser": "https://i.imgur.com/OTHb1vM.png"
+      },{
+        "title": "Microsoft Azure Solution Architect Expert Certification Basics",
+        "excerpt":"In order to become Azure Solution Architect Expert You must give AZ-303 and AZ-304 certification exams. Introduction The Azure Solutions Architect Expert certification is one of the highest-level Microsoft Azure accreditations. You must clear both AZ-303 &amp; AZ-304 exams. Should you give this exam? If you want to become Azure...","categories": [],
+        "tags": ["azure","certification","beginners","career"],
+        "url": "/microsoft-azure-solution-architect-expert-certification-basics/",
+        "teaser": "https://i.imgur.com/Es14TmL.png"
+      },{
+        "title": "Explore Azure Database and Analytics Services",
+        "excerpt":"Learn how to help your company to migrate its database workload to Microsoft Azure. How can you use Azure Cosmos DB to migrate your data to cloud and retain or enhance your developers’ skillsets. Lear how you can use big data and analysis services like Azure Synapse Analytics, Azure HDInsight,...","categories": [],
+        "tags": ["webdev","azure","tutorial","az-900"],
+        "url": "/explore-azure-database-and-analytics-services/",
+        "teaser": "https://i.imgur.com/OTHb1vM.png"
+      },{
+        "title": "Microsoft Azure Architect Technologies AZ 303 Introduction",
+        "excerpt":"Microsoft Azure Solutions Architect Expert is a role-based certification with a 1 year expiry. Azure Role-Based Certifications Fundamental Associate Expert AZ-900 - AZ-303, AZ-304 AZ-900 AZ-104 AZ-400 AZ-900 AZ-204 AZ-400 😊 If you want to give exams at Expert level without giving fundamental and associate level exams then Yes you...","categories": [],
+        "tags": ["azure","certification","architect","tutorial"],
+        "url": "/microsoft-azure-architect-technologies-az-303-introduction/",
+        "teaser": "https://i.imgur.com/PdQmWrB.png"
+      },{
+        "title": "Merge Sorting Algorithm Recursion Summary",
+        "excerpt":"Learn Merge Sorting algorithm in recursion function. In this article I will show you the execution of the recursion function for Merge Sorting. Merge sort Merge sort is one of the most powerful sorting algorithm. Mozilla, Firefox, Chrome and many browser by default most of the time uses Merge Sort...","categories": [],
+        "tags": ["algorithm","tutorial","beginners","sorting"],
+        "url": "/merge-sorting-algorithm-recursion-summary/",
+        "teaser": "https://i.imgur.com/1ugcAKm.png"
+      },{
+        "title": "Topologies Azure Service Bus",
+        "excerpt":"Azure Service Bus is a transport layer comprises of messaging entities. Learn what is Topology in messaging world and how N-Service bus makes life easy by giving built-in configurations for creating topologies. Messaging Entities Queue Queues offer First In, First Out (FIFO) message delivery to one or more competing consumers....","categories": [],
+        "tags": ["csharp","beginners","azure","cloud"],
+        "url": "/topologies-azure-service-bus/",
+        "teaser": "https://i.imgur.com/P7C5SR6.png"
+      },{
+        "title": "Webhook for Beginners",
+        "excerpt":"Webbooks are basically user defined HTTP callbacks which are triggered by specific events. Whenever that trigger event occurs in the source site, the webhook receives the event, collects the data, and sends it to the URL specified by you in the form of an HTTP request. Like in Pub/Sub architecture...","categories": [],
+        "tags": ["webdev","tutorial","beginners","javascript"],
+        "url": "/webhook-for-beginners/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Configuring Azure Diagnostics Log",
+        "excerpt":"​This article will teach you t​he how to configure and implement diagnostics log for Azure resources. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Introduction Implement and Monitor an Azure Infrastructure is 50-55% in Az-303. Under Implement cloud infrastructure monitoring we have below topics to...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/configuring-azure-diagnostics-log/",
+        "teaser": "https://i.imgur.com/nbHefDR.png"
+      },{
+        "title": "Testing Node.js Project with Jasmine & Karma",
+        "excerpt":"Do you have node.js project that you want to write specs using Jasmine? Are you wondering how to write specs and run all specs in your node.js project? Lets answer all of this in this article so stay tuned! Setting up Jasmine in node.js In order to write specs for...","categories": [],
+        "tags": ["javascript","tutorial","beginners","github"],
+        "url": "/testing-node-js-application-using-jasmine-karma/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Security Center Basics",
+        "excerpt":"Azure Security Center is the base infrastructure service to collect logs analyze them and generate tailored recommendations. Learn how can you review and fix general, cloud securities and manage security concerns of your resources in Azure. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Azure...","categories": [],
+        "tags": ["azure","beginners","certification","webdev"],
+        "url": "/azure-security-center-basics/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "How I cleared Azure Fundamental Certification Az 900",
+        "excerpt":"I am happy that I cleared my Microsoft Azure Fundamental Certification (Az 900) Exam. This is the start of my Azure journey. In this article, I will explain what I did? How to Motivate yourself? In order to go out of you comfort zone and do something is the most...","categories": [],
+        "tags": ["webdev","tutorial","beginners","Azure"],
+        "url": "/how-i-cleared-azure-fundamental-certification-az-900/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Building and Testing Node.js Application using GitHub Actions",
+        "excerpt":"Do you have node.js project that has specs and you want to make sure these specs run when you push your code to GitHub repo? Well you must setup CI in your project to avoid failing specs to be pushed to remote origin. Read this article to learn how can...","categories": [],
+        "tags": ["github","tutorial","beginners","javascript"],
+        "url": "/building-and-testing-node-js-application-using-github-actions/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Monitoring your Virtual Machines with Azure Monitor",
+        "excerpt":"You can monitor performance and health of Virtual Machines and Virtual Machines scale sets, running processors and other resources dependencies with Azure Monitoring. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Introduction Azure Monitoring is a product that helps you to: Deliver predictable performance and...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/monitoring-your-virtual-machines-with-azure-monitor/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Guideline to Become Responsible Senior Developer",
+        "excerpt":"Have you realized writing code that is not production ready is not good practice? Have you seen code which violates the DRY principle? Did you notice specs/unit-test in your code base which is missing important specs and has tests for the things which are not important with respect to a...","categories": [],
+        "tags": ["webdev","tutorial","beginners","productivity"],
+        "url": "/guideline-to-become-senior-developer/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Advisor Basics",
+        "excerpt":"Azure Advisor collects recommendations from all of the services within your subscription and display them in a single page. Example you can see recommendation like Cost, Security, Performance etc. In this short article I will summaries Azure Advisor. Introduction 👨‍🏫 Azure Adviser is an Azure service. Helps you to follow...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/azure-advisor-basics/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Securing and Connecting Azure Resources from On-Premise Machines",
+        "excerpt":"You want to connect your Azure resources from your on-premise office machine or home laptop right? So how would you do that? Read this article. In order to connect machine/servers residing over your on-premise office from home you need internet. You know anything over internet is not secure. So how...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/connect-azure-resources-from-on-premise-machines/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Cost Management & Billing Basics",
+        "excerpt":"For entire azure resources even across subscriptions if you want to know about your billing, invoice, budget, alerts, recommendations then you must go to Azure Cost Management and billing page in Azure portal. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Cost Reports and Budget...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/azure-cost-management-and-billing-basics/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Creating ngShow directive in Angular 11",
+        "excerpt":"Are you wondering how to use ng-show in Angular 11? There is a way to achieve it by using [hidden]= “false”. However, if you are migrating large angularjs projects into angular 11 then it is really tedious and error prone work to convert them into [hidden]=\"\" expression format. Also you...","categories": [],
+        "tags": ["webdev","tutorial","beginners","angular"],
+        "url": "/creating-ngshow-directive-in-angular-11/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Implementing Azure Application Insight in Asp.Net MVC Application",
+        "excerpt":"Did you know you can enable web application tracing, performance check, request response time trace and exception tracing all free using Azure Application Insight. Learn how to implement and configure app insight in your .net application. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Azure...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/implementing-azure-application-insight-in-asp-net-mvc-application/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Uploading file to the server using Node and HTML5",
+        "excerpt":"In this article you will learn how you can upload a file to the server using node.js and HTML5. Client side file upload On the client side we need to use a file type &lt;input&gt; html element that can hold the file content from the client machine/device. Remember file type...","categories": [],
+        "tags": ["webdev","tutorial","beginners","nodejs"],
+        "url": "/uploading-file-to-server-using-nodejs/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Visualize Azure Monitor Logs and Metrics",
+        "excerpt":"Azure portal is great while visualizing Azure log and metrics. You can see the pie chart, graph for resources like VMs etc. You can also create your custom multiple dashboard views with these visualizations. This article will help you to prepare for az-303: Microsoft Azure Architect Technologies. Visualize Azure Monitor...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/visualize-azure-monitor-logs-and-metrics/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "TCP vs Http difference",
+        "excerpt":"TCP: is a transport-layer protocol, and HTTP is an application-layer protocol that runs over TCP. To understand the difference between TCP and HTTP you need to understand the idea of a layered networking model. Essentially, there are different protocols that let a computer talk at different distances and different layers...","categories": [],
+        "tags": ["webdev","tutorial","beginners","devops"],
+        "url": "/tcp-vs-http-difference/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Understanding Azure Core Services Questions Flash Cards",
+        "excerpt":"   Understanding Core Azure Services   ","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/understanding-azure-core-services-questions-flash-cards/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Monitoring Containers with Azure Monitor",
+        "excerpt":"Did you know you can containerize your asp.net MVC with docker application and upload to Azure Container Registry and host them using Azure Kubernetes Cluster and start monitoring your container using Azure Monitor? In this article, I will explain all of this in this article. This article will help you...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/monitoring-containers-with-azure-monitor/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "How to manage DEV, QA and PROD in Azure Cloud",
+        "excerpt":"How to manage DEV, QA and PROD environments in Azure Cloud? You end-up creating many resources and now how would you organize them for QA, DEV, UAT environments? Let’s talk about the same in this article. In Azure we create resource like web app, azure functions. Then we group them...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/how-to-manage-dev-and-qa-environments-in-azure-cloud/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Storage - The big picture",
+        "excerpt":"Azure Core Storage Services Blobs Files Queues Tables Disks Azure Blobs Storage It is an object storage solution Unstructured data can be stored 3 types of blobs: block,append and page files, documents, binary data like image, video, audio files, databases and disks can be stored in blob storage. Azure Files...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/the-big-picture-of-azure-storage/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "You don't Know How to Use Azure Tags Effectively",
+        "excerpt":"Are you wondering how can you separately track the billing of your resources allocated in same subscription? Did you think you could save money by turning off your DEV Virtual Machines over weekends, holidays or everyday evening? In this article I will discuss with you how can you achieve all...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/you-dont-know-how-to-use-azure-tags-effectively/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Blob Access Tiers and Lifecycle Management",
+        "excerpt":"Azure Storage has no upfront cost, no termination fees and pay only for what you use. In this article you will learn about Azure storage access tiers and their pricing. It will help you to decide which file type to put in which access tier. Access Tiers For block blobs...","categories": [],
+        "tags": ["azure","webdev","certification","beginners"],
+        "url": "/azure-blob-access-tiers-and-lifecycle-management/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Azure VPN Gateway for Site to Site Connection",
+        "excerpt":"A virtual private network (VPN) is a type of private interconnected network. VPNs use an encrypted tunnel within another network. I will explain what is VPN Gateway and how to deploy in Azure. Azure VPN gateways Virtual Network Gateway is of 2 types: VPN Gateway ExpressRoute ExpressRoute is another gateway...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-vpn-gateway-for-site-to-site-connection/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Storage Replications Basics",
+        "excerpt":"LRS (locally redundant storage) ZRS (zone redundant storage) GRS (geographically redundant storage) RA GRS (read-access geographically redundant storage) GZRS (geographically zone redundant storage) RA GZRS (read-access geographically zone redundant storage) Availability and Durability Disaster recovery Recovery time objectives (RTO) Maximum acceptable time that an application can be un-available after an...","categories": [],
+        "tags": ["azure","webdev","certification","beginners"],
+        "url": "/azure-storage-replications-basics/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Difference between NAT vs Firewall for Software Developers",
+        "excerpt":"What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers! While learning Azure...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/difference-between-nat-vs-firewall/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Differenct between NAT vs Firewall for Software Developers",
+        "excerpt":"What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers! While learning Azure...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/differenct-between-nat-vs-firewall/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Demo Initiating Azure Storage Account Failover",
+        "excerpt":" ","categories": [],
+        "tags": ["test"],
+        "url": "/demo-initiating-azure-storage-account-failover/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Azure VNet Basics",
+        "excerpt":"Azure VNet is the fundamental unit of networking in Azure Cloud. You must know the basics of VNet. In this article we will explore Azure VNet. What is Azure Virtual Network Azure Virtual Network (VNet) is the fundamental building block for your private network in Azure. VNet enables many types...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-vnet-basics/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Microsoft Azure Fundamental Questions",
+        "excerpt":"What are the two reasons that you may see the message: “There are no offers available in your region or country at this time”? You might not be eligible for any offer switches. Some offers may not be available in all countries/regions. Why type of lock in Azure means authorized...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/microsoft-azure-fundamental-questions/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Creating Azure Storage Account",
+        "excerpt":"Azure Storage account is a resource in Azure. Storage Account will give your group of services like Blob Service, File Service, Table Service, Queue Service. In this article I will walk you through the steps of creating your first Azure storage account. Introduction Azure Storage Account provides a unique namespace...","categories": [],
+        "tags": ["azure","beginners","certification","webdev"],
+        "url": "/creating-azure-storage-account/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Azure Routing and Peering Basics",
+        "excerpt":"Azure architects must aware of fundamentals of routing and peering. In this article we will see fundamentals as well as we will see some examples of routing and peering of networks in Azure. Well before directly jumping in peering you must have your routing components fundamental cleared. Lets talk the...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-routing-and-peering-basics/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Configuring Azure Blob Storage",
+        "excerpt":"Blob Storage is helpful to upload images, videos, documents, pdfs etc. over the Azure cloud. In order to create new Azure Blob Storage. You must need to create Azure Storage Account. Azure Blob Storage is one of the core services of the Azure Storage Account. Prerequisite 👍 You must have...","categories": [],
+        "tags": ["azure","beginners","certification","webdev"],
+        "url": "/configuring-azure-blob-storage/",
+        "teaser": "https://i.imgur.com/h4QI62f.png"
+      },{
+        "title": "Definitions that you should know",
+        "excerpt":"When I started learning Azure being a webdev and software architect background. I came across many IT lingo, jargons, abbrebiations that I did know about them. In this post I am putting all those in one place. I hope this will help you as well on your Azure Solution Architect...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/definitions-that-you-should-know/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Essential Technical Definitions for Solution Architects",
+        "excerpt":"When I started learning Cloud being a webdev and software architect background. I came across many IT lingo, jargons, abbreviations that I did know about them. In this post, I am writing all those in one place. I hope this will help you as well on your cloud Azure/AWS/GCP Solution...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/essential-definitions-for-solution-architects/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Monitoring Basics",
+        "excerpt":"Azure Monitor is the central service that can help you to improve performance of your application and dependencies. In this article I will go through the basic knowledge about Azure Monitor. Azure Monitor Overview Azure Monitor Is a service in the cloud and has features like Application Insights. It helps...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-monitoring-basics/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Monitoring Options for Applications in Azure",
+        "excerpt":"Learn how many types of monitoring services available in Azure to monitor your applications. Design a Logging and Monitoring Solution in Azure Below are the topics you should know: Determine levels and storage location for logs. Plan for integration with monitoring tools including Azure Monitoring tool and Azure Sentinel. Recommend...","categories": [],
+        "tags": ["azure","beginners","certification","webdev"],
+        "url": "/monitoring-options-for-applications-in-azure/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Security Threats and Vulnerabilities",
+        "excerpt":"Learn about malware, attacks to the network, social engineering attacks from scratch. Malware Malware can be very problematic that can lock access of files and demand money to pay. It happened to many police office. They had to pay Money to the malware software created to get back the access...","categories": [],
+        "tags": ["security","tutorial","beginners","azure"],
+        "url": "/security-threats-and-vulnerabilities/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Storage Account Basics",
+        "excerpt":"When you want to move your business to cloud the major thing to consider is storage. What kind of data you can store? What is the pricing? How can you optimize cost and performance? As a cloud architect its your responsibility to get this answers and propose a design. I...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-storage-account-basics/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Monitor and Application Insights Introduction",
+        "excerpt":"What are Azure Monitor and Application Insights? How exactly Azure Monitor work? How can you visualize Application Map with Application Insights? Learn the log retentions and exports. Learn all of this in this article. Helpful article for AZ-304 Exam. Types of Data to consider Log: web application tracings and logs....","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/azure-monitor-and-application-insights-introduction/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Learn how to secure your Network",
+        "excerpt":"If you want to become Cloud Security Architect you must have basics of Networking. This article will discuss all fundamental concepts of networking. Learn about 6 security domains, understand the security is multi-pronged approach. Security+ Domains Network Security Compliance and Operational Security Threats and Vulnerabilities Application and Data and Host...","categories": [],
+        "tags": ["security","tutorial","beginners","azure"],
+        "url": "/network-security/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Service Endpoint Overview and Configuration",
+        "excerpt":"Did you know By default azure storage accounts are accessible by the public internet. How can u restrict all public traffic in to your azure storage account and only allow your VNet resources to connect it. Lets learn the same in this article. How to access blob storage from VM...","categories": [],
+        "tags": ["webdev","tutorial","beginners","azure"],
+        "url": "/azure-service-endpoint-and-private-endpoint-overview-and-configuration/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Cloud Solution Architect Technical Interview Questions",
+        "excerpt":"Are you willing to become cloud solution architect? I am going to add a few important technical questions that you must know for your next cloud solution architect interview. My answers would not be perfect so feel free to search for better answers. Important part from this article is what...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/cloud-solution-architect-technical-interview-questions/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Getting Started with Monorepo with Nx Nrwl",
+        "excerpt":"Do you have a lot of JavaScript projects using GitHub repositories? How are you managing dependencies among those projects? Developers might be struggling to manage a large set of GitHub repositories and Business might be spending a lot of money to manage them. The potential solution to this problem is...","categories": [],
+        "tags": ["webdev","tutorial","beginners","javascript"],
+        "url": "/getting-started-with-monorepo-with-nx-nrwl/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Symmetric and Asymmetric Encryption Basics",
+        "excerpt":"Why do you care about encryption strategies? Well if you are planning to become system administrator or solution architect then you must know how you would secure your applications deployed on-premise or cloud.  Also remember this question is asked in most of the solution architect interviews. Why do you need...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/symmetric-and-asymmetric-encryption-basics/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Azure Network Watcher Basics",
+        "excerpt":"Azure Network Watcher is a monitoring service with lots of other important services for network. Most network diagnostics issues can be detected and analyzed with Azure Network Watcher. Learn everything about Network Watcher in this article. What Network Watcher Does? You use Network Watcher to monitor and repair the network...","categories": [],
+        "tags": ["azure","webdev","beginners","certification"],
+        "url": "/azure-network-watcher-basics/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Cloud Security Best Practices for application, servers and network",
+        "excerpt":"According to Statista.com As of 2021, around 50 percent of all corporate data is stored in the cloud. This share reached 30 percent in 2015 and has continued to grow as companies increasingly shift their resources into cloud environments in the hope of improving security and reliability next to advancing business...","categories": [],
+        "tags": ["azure","tutorial","beginners","security"],
+        "url": "/cloud-security-best-practices/",
+        "teaser": "https://i.imgur.com/nU9cLAy.png"
+      },{
+        "title": "Virtualization Basics with VMware",
+        "excerpt":"Virtualization is the single concept that now-a-days cloud service providers are using at massive scale and delivering IT technologies such as storage, compute, networking, database, analysis and much more as a service via internet and on-demand basis as pay-as-you-go pricing model. Therefore, it is very important that you must understand...","categories": [],
+        "tags": ["networking","tutorial","beginners","devops"],
+        "url": "/introduction-to-virtualization/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "What is Hyper-Visor?",
+        "excerpt":" ","categories": [],
+        "tags": ["networking","tutorial","beginners","devops"],
+        "url": "/what-is-hyper-v/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "What to use to Run applications in Azure",
+        "excerpt":"Learn what service from Azure you should use while creating your application in Azure. This article has quick short answer for when to use what in Azure service? Get free e-book on Design Distributed Systems. It is difficult to compare options available in Azure. The comparison with the features of...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/what-should-you-use-for-running-applications-in-azure/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Azure solution for big-data transfer",
+        "excerpt":"Are you planning to migrate your on-premise data to the cloud using Azure data transfer solutions? At a high level there are only 2 solutions to transfer your on-premise data to the cloud. Offline Data Transfer Online Data Transfer Offline data transfer Cloud providers will ship you a secure specialized...","categories": [],
+        "tags": ["azure","tutorial","beginners","cloud"],
+        "url": "/azure-solution-for-big-data-transfer/",
+        "teaser": "https://i.imgur.com/f3yYgxg.png"
+      },{
+        "title": "Where to Store Application Data in Azure",
+        "excerpt":"Data is very essential and now a days data is everything. So you have application in cloud and want to explore which type of data where to store in Azure. Read this article to learn which Azure store is best for you. Storing Data in Azure options Azure SQL Database...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/where-to-store-application-data-in-azure/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Azure Active Directory Basics",
+        "excerpt":"Securing your workload and datacenter over the cloud is very challenging. You want your resources to be protected by both machines and users. Azure Active directory helps you to achieve single sign on and provides you centralize identity and access management across your subscriptions. Let’s learn more basic concepts about...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/azure-active-directory-basics/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "On-Premises Disaster Site Recovery Strategy with Azure VM",
+        "excerpt":"Site Recovery is very critical now a days. In your own Data-center or Server disasters can happen and you must secure your site to recover from them. Use Microsoft Azure to secure you on-premises machine today. Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/on-premises-disaster-site-recovery-strategy-in-azure/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Site Recovery Strategy in Azure",
+        "excerpt":"Learn the failover and failback stages in Site Recovery on Azure. Learn Business Continuity and Disaster Recovery (BCDR) strategy in Azure. Failover and failback in Site Recovery has four stages Stage 1: Fail over from on-premises: After setting up replication to Azure for on-premises machines, when your on-premises site goes...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/site-recoverystrategy-in-azure/",
+        "teaser": "https://i.imgur.com/7I0NoBe.png"
+      },{
+        "title": "Introduction to MSAL",
+        "excerpt":"If you have any project that you want to integrate with Azure Active Directory and secure your app. Then you must try using Microsoft Authentication Library (MSAL). Yes, in this article I will introduce you to MSAL 🔥. What is MSAL? Microsoft Authentication Library (MSAL) gives secure access to acquire...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/what-is-msal/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Create Update and Delete Tags on Azure Resource",
+        "excerpt":"Learn more about how to use tags to organize your Azure resources and management hierarchy. Also learn the cmdlet used to fetch tags from Azure resources. What is Tag in Azure Resources? You apply tags to your Azure resources, resource groups, and subscriptions to logically organize them into a taxonomy....","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/create-update-and-delete-tags-on-azure-resource/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Azure Active Directory Authentication Basics",
+        "excerpt":"Azure Active Directory (AD) verifies the credentials that are username and password. It belongs to the Azure Identity Platform. What is Authentication? Authentication (AuthN) is the process to prove that you are who you say you are. Microsoft identity platform uses open Id connect protocol for handling authentication. What is...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/azure-active-directory-authentication/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Introduction of Managed Identities",
+        "excerpt":"Do you have situations where a process is trying to use your virtual machine in the cloud and you want to protect and control the access? Do you want to use cosmos db using your server layer deployed over azure cloud without managing your own identity and passwords? Use Microsoft...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/introduction-of-managed-identities/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "What is Azure Virtual Machine Scale Sets",
+        "excerpt":"Now a days distributed architecture is common. We deploy our services into many different servers to scale them up and meet our demand. However, managing all servers for load-balancing, scaling, make application highly available is super challenging on cloud. Azure Virtual Machine Scale sets is the great tool which does...","categories": [],
+        "tags": ["azure","webdev","beginners","tutorial"],
+        "url": "/what-is-azure-virtual-machine-scale-sets/",
+        "teaser": "https://i.imgur.com/zZYQYQA.png"
+      },{
+        "title": "Introduction to CAP Theorem",
+        "excerpt":"Are you planning to design your next advanced distributed architecture? Make sure you are aware of the concepts such as high availability, consistency and partition tolerance. The CAP theorem states that a distributed system cannot simultaneously be consistent, available, and partition tolerant. CAP Theorem is very important in the Distributed...","categories": [],
+        "tags": ["architecture","tutorial","beginners","cloud"],
+        "url": "/introduction-to-cap-theorem/",
+        "teaser": "https://i.imgur.com/ZsKhnfj.png"
+      },{
+        "title": "Introduction to Point of Presence and Network Access Point",
+        "excerpt":"Point of presence is a fundamental block of the telecommunication domain. You must be aware of this concept. If you want to system design for video content delivery like YouTube, Netflix or Hotstar.com then you must learn what is PoP and how this helps to propagate massive amounts of content...","categories": [],
+        "tags": ["telecom","tutorial","beginners","cloud"],
+        "url": "/introduction-to-point-of-presence-and-network-access-point/",
+        "teaser": "https://i.imgur.com/YWhcyP7.png"
+      },{
+        "title": "Mandatory JavaScript Knowledge for Coding Interview",
+        "excerpt":"Are you attempting coding interview challenges in Javascript? Then make sure you learn below mandatory JavaScriipt apis and utilities. Math Library Math.floor Math.round Used in Binary Search algorithm Math.abs Array related Array Slice Used in Merge sort algorithm. Array Sort Initialize 2D array Map JavaScript Map Difference between i++ and...","categories": [],
+        "tags": ["webdev","tutorial","beginners","javascript"],
+        "url": "/mandatory-javascript-knowledge-for-coding-interview/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "What is EBIT and EBITDA in Finance?",
+        "excerpt":"EBITDA and EBIT is a very fundamental financial term that is nowadays mostly considered during the cloud adoption phase for IT companies. If your company is planning to migrate to cloud and you are going to present a finance key performance index to your CFO then make sure you learn...","categories": [],
+        "tags": ["finance","tutorial","beginners","cloud"],
+        "url": "/what-is-ebit-and-ebitda/",
+        "teaser": "https://i.imgur.com/fi40PUP.png"
+      },{
+        "title": "How to Maintain Well-Architected-Framework on Cloud",
+        "excerpt":"How to make sure our workload in the cloud is secure, reliable. How to monitor the cost of your cloud resources consumption? Is there any automation you can do to remind you of your cloud budget expenses, future expected cost? Is there any on-click quick fix to terminate underutilized virtual...","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/how-to-maintain-well-architected-framework-on-cloud/",
+        "teaser": "https://i.imgur.com/aPeeiUM.png"
+      },{
+        "title": "Cloud Security Defense In-Depth Azure Approach",
+        "excerpt":"In a traditional data center you create one perimeter, secure them by installing firewall, WAF, SIEMS etc. and have 100% confidence that the data center is secure. However, when you migrate to cloud then your VPC or Virtual Network is not 100% secure you have to not only secure your...","categories": [],
+        "tags": ["azure","tutorial","beginners","cloud"],
+        "url": "/cloud-security-defense-in-depth-azure-approach/",
+        "teaser": "https://i.imgur.com/WQWdzrb.png"
+      },{
+        "title": "Cost Optimization with Amazon EC2 Spot Instances",
+        "excerpt":"Creating cost optimized highly scalable cloud architecture is challenging but it is possible! Using Spot Amazon Elastic Compute Cloud (Amazon EC2) instances you can save up to 90% of on-demand pricing. In this article you will learn what spot instances and what should be your strategy to use spot instances....","categories": [],
+        "tags": ["aws","tutorial","beginners","cloud"],
+        "url": "/cost-optimization-with-aws-spot-ec2-instances/",
+        "teaser": "https://i.imgur.com/7tGRoEv.png"
+      },{
+        "title": "How to improve Reliability in the cloud?",
+        "excerpt":"Did you get a phone call from your customer saying they want to improve their application reliability while you move their workload to the cloud? If yes then continue reading this article. I will use Microsoft Azure to explain the Reliability concept and its improvement steps. You can certainly do...","categories": [],
+        "tags": ["cloud","tutorial","beginners","azure"],
+        "url": "/how-to-improve-reliability-in-the-cloud/",
+        "teaser": "https://i.imgur.com/8axKkdp.png"
       }]

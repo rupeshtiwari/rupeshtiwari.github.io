@@ -1,0 +1,1367 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Introduction to Azure Fundamentals - Rupesh Tiwari - Founder of Fullstack Master</title>
+<meta name="description" content="Learn everything you should know about Azure Services and concepts as a beginner">
+
+
+  <meta name="author" content="Rupesh Tiwari">
+  
+  <meta property="article:author" content="Rupesh Tiwari">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rupesh Tiwari - Founder of Fullstack Master">
+<meta property="og:title" content="Introduction to Azure Fundamentals">
+<meta property="og:url" content="https://www.rupeshtiwari.com/introduction-to-azure-fundamentals/">
+
+
+  <meta property="og:description" content="Learn everything you should know about Azure Services and concepts as a beginner">
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/OTHb1vM.png">
+
+
+
+  <meta name="twitter:site" content="@rupeshtiwari_co">
+  <meta name="twitter:title" content="Introduction to Azure Fundamentals">
+  <meta name="twitter:description" content="Learn everything you should know about Azure Services and concepts as a beginner">
+  <meta name="twitter:url" content="https://www.rupeshtiwari.com/introduction-to-azure-fundamentals/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/OTHb1vM.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-05-26T00:00:00+00:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/fullstackmaster1">
+  
+
+  
+    <meta property="fb:app_id" content="421181512329379">
+  
+
+
+<link rel="canonical" href="https://www.rupeshtiwari.com/introduction-to-azure-fundamentals/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.rupeshtiwari.com/"
+    
+  }
+</script>
+
+
+
+  <meta name="msvalidate.01" content="8BC08291167B3E15CC4FCC21C5895052">
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rupesh Tiwari - Founder of Fullstack Master Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rupesh Tiwari
+          <span class="site-subtitle">Sr. Software Architect, Author & Trainer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/posts/">blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">about</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://youtube.com/fullstackmaster">youtube</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/consulting/">consulting</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://www.fullstackmaster.net/pro">angular training</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://fullstackmaster.net/login">sign in</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="https://i.imgur.com/XMFI6bl.png" alt="Introduction to Azure Fundamentals" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://www.rupeshtiwari.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Introduction to Azure Fundamentals</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rupesh Tiwari" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rupesh Tiwari</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I help students and professionals to become Full Stack Software Developer in less than a year!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="rupesh.tiwari.info@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/posts/" rel="nofollow noopener noreferrer"><i class="fa fa-th-large" aria-hidden="true"></i><span class="label">Blogs</span></a></li>
+          
+        
+          
+            <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i><span class="label">Medium</span></a></li>
+          
+        
+          
+            <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i><span class="label">Dev.to</span></a></li>
+          
+        
+          
+            <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="http://twitter.com/rupeshtiwari_co" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="label">Angular Training</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Introduction to Azure Fundamentals">
+    <meta itemprop="description" content="  Can you describe basic concepts of cloud computing? Is Azure right solution for your business needs? How can you create your Azure subscription today? I will explain all in this article. This is the 1st article on “Azure Fundamentals part 1: Describe core Azure concepts”.">
+    <meta itemprop="datePublished" content="2021-05-26T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Introduction to Azure Fundamentals
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          12 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#introduction">Introduction</a><ul><li><a href="#what-is-azure">What is Azure?</a></li><li><a href="#what-is-azure-fundamentals">What is Azure fundamentals?</a></li><li><a href="#why-should-i-take-azure-fundamentals">Why should I take Azure fundamentals?</a><ul><li><a href="#exam-az-900">Exam AZ-900</a></li></ul></li></ul></li><li><a href="#what-is-cloud-computing">What is cloud computing?</a><ul><li><a href="#why-is-cloud-computing-typically-cheaper-to-use">Why is cloud computing typically cheaper to use?</a></li><li><a href="#why-should-you-move-to-the-cloud">Why should You move to the cloud?</a></li><li><a href="#what-are-some-cloud-computing-advantages">What are some cloud computing advantages?</a></li><li><a href="#what-are-cloud-service-models">What are cloud service models?</a></li><li><a href="#what-is-serverless-computing">What is serverless computing?</a></li><li><a href="#what-are-public-private-and-hybrid-clouds">What are public, private, and hybrid clouds?</a></li></ul></li><li><a href="#how-azure-works">How Azure Works?</a></li><li><a href="#azure-portal">Azure Portal</a></li><li><a href="#what-is-azure-marketplace">What is Azure Marketplace?</a></li><li><a href="#azure-services">Azure Services</a><ul><li><a href="#databases">Databases</a></li><li><a href="#internet-of-thing-iot">Internet of Thing (IoT)</a></li><li><a href="#storage">Storage</a></li><li><a href="#big-data">Big Data</a></li><li><a href="#artificial-intelligence">Artificial Intelligence</a></li><li><a href="#networking">Networking</a></li><li><a href="#devops">DevOps</a></li><li><a href="#compute-services">Compute Services</a></li><li><a href="#web">Web</a></li><li><a href="#mobile">Mobile</a></li></ul></li><li><a href="#get-started-with-azure-accounts">Get started with Azure accounts</a><ul><li><a href="#what-is-the-azure-account">What is the Azure account?</a></li><li><a href="#what-is-the-azure-free-account">What is the Azure free account?</a></li><li><a href="#what-is-the-learn-sandbox">What is the Learn sandbox?</a></li></ul></li><li><a href="#azure-fundamentals-facts">Azure fundamentals facts</a></li><li><a href="#references">References</a></li><li><a href="#become-full-stack-developer-">Become full stack developer 💻</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>Can you describe <strong>basic concepts</strong> of cloud computing? Is Azure <strong>right solution</strong> for your business needs? How can you create your Azure <strong>subscription</strong> today? I will explain all in this article. This is the 1st article on “<strong>Azure Fundamentals part 1: Describe core Azure concepts</strong>”.</p>
+</blockquote>
+
+<p><img src="https://i.imgur.com/bJhy0o9.png" alt="" /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><img src="https://i.imgur.com/8j3pV71.png" alt="" /></p>
+
+<h3 id="what-is-azure">What is Azure?</h3>
+
+<p>Azure is a continually expanding set of cloud services that help your organization meet your current and future business challenges. <a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure">Learn More about What is Microsoft Azure here…</a></p>
+
+<h3 id="what-is-azure-fundamentals">What is Azure fundamentals?</h3>
+
+<p>Azure fundamentals is a series of <a href="#exam-az-900"><strong>six learning paths</strong></a> or six knowledge domain areas.</p>
+
+<h3 id="why-should-i-take-azure-fundamentals">Why should I take Azure fundamentals?</h3>
+
+<p>You boss or manager wants to use Azure in your company. So you must be prepare for it. Now a days there are many jobs available which requires Azure certifications.</p>
+
+<p>Take Azure fundamentals if you:</p>
+
+<ul>
+  <li>Have general interest in Azure or in the cloud.</li>
+  <li>Want to earn official certification from Microsoft.</li>
+</ul>
+
+<h4 id="exam-az-900">Exam AZ-900</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">AZ-900 Domain Area</th>
+      <th style="text-align: left">Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Describe cloud concepts</td>
+      <td style="text-align: left">20-25%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Describe core Azure services</td>
+      <td style="text-align: left">15-20%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Describe core solutions and management tools on Azure</td>
+      <td style="text-align: left">10-15%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Describe general security and network security features</td>
+      <td style="text-align: left">10-15%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Describe identity, governance, privacy, and compliance features</td>
+      <td style="text-align: left">20-25%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Describe Azure cost management and Service Level Agreements</td>
+      <td style="text-align: left">10-15%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="what-is-cloud-computing">What is cloud computing?</h2>
+
+<p>It’s the <strong>delivery of computing services over the internet</strong>, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Save your company money 💰 “You’ll only need to pay for <strong>the resources and computing time that you use</strong>”.</p>
+
+<h3 id="why-is-cloud-computing-typically-cheaper-to-use">Why is cloud computing typically cheaper to use?</h3>
+
+<p>Cloud computing is the delivery of computing services over the internet by using a <strong>pay-as-you-go</strong> pricing model.</p>
+
+<p>To put it another way, cloud computing is a way to <strong>rent compute power and storage</strong> from someone else’s datacenter. You can treat cloud resources like you would your resources in your own datacenter. When you’re done using them, you give them back. You’re billed only for what you use.</p>
+
+<p>Instead of maintaining CPUs and storage in your datacenter, you rent them for the time that you need them. The <code class="language-plaintext highlighter-rouge">cloud provider</code> takes care of <strong>maintaining the underlying infrastructure</strong> for you. The cloud enables you to quickly solve your toughest business challenges, and bring cutting-edge solutions to your users.</p>
+
+<h3 id="why-should-you-move-to-the-cloud">Why should You move to the cloud?</h3>
+
+<p>In our ever-changing digital world, two trends emerge:</p>
+
+<ul>
+  <li>Teams <code class="language-plaintext highlighter-rouge">deliver</code> new features to their users at <code class="language-plaintext highlighter-rouge">record speeds</code>.</li>
+  <li>Users expect an increasingly <code class="language-plaintext highlighter-rouge">rich and immersive experience</code> with their devices and with software.</li>
+</ul>
+
+<p>The cloud provides on-demand access to:</p>
+
+<ul>
+  <li>A nearly limitless pool of raw compute, storage, and networking components.</li>
+  <li>Speech recognition and other cognitive services that help make your application stand out from the crowd.</li>
+  <li>Analytics services that deliver telemetry data from your software and devices.</li>
+</ul>
+
+<h3 id="what-are-some-cloud-computing-advantages">What are some cloud computing advantages?</h3>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember the sentence <a href="https://dictionary.cambridge.org/us/dictionary/english/gashed"><strong>GASHED</strong></a>.
+<strong>G</strong> = <strong>G</strong>eo-distribution
+<strong>A</strong> = <strong>A</strong>gility
+<strong>S</strong> = <strong>S</strong>calability
+<strong>H</strong> = <strong>H</strong>igh availability
+<strong>E</strong> = <strong>E</strong>lasticity
+<strong>D</strong> = <strong>D</strong>isaster recovery</p>
+
+<p>👇 Below are also called as cloud concepts:</p>
+
+<ul>
+  <li>
+    <p><strong>Geo-distribution</strong>: You can deploy apps and data to regional datacenters around the globe, thereby ensuring that your customers always have the best performance in their region.</p>
+  </li>
+  <li>
+    <p><strong>Agility</strong>: Deploy and configure cloud-based resources quickly as your app requirements change.</p>
+  </li>
+  <li>
+    <p><strong>Scalability</strong>: Apps in the cloud can scale <em>vertically</em> and <em>horizontally</em>:</p>
+
+    <ul>
+      <li>Scale vertically to increase compute capacity by adding RAM or CPUs to a virtual machine.</li>
+      <li>Scaling horizontally increases compute capacity by adding instances of resources, such as adding VMs to the configuration.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>High availability</strong>: Depending on the service-level agreement (SLA) that you choose, your cloud-based apps can provide a continuous user experience with no apparent downtime, even when things go wrong. This is also called as <strong>Reliability</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Elasticity</strong>: You can configure cloud-based apps to take advantage of autoscaling, so your apps always have the resources they need. It can decrease resource if they are underused or increase if demand is high.</p>
+  </li>
+  <li>
+    <p><strong>Disaster recovery</strong>: By taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your apps with the confidence that comes from knowing that your data is safe in the event of disaster.</p>
+  </li>
+</ul>
+
+<h3 id="what-are-cloud-service-models">What are cloud service models?</h3>
+
+<p>There are 3 Cloud Service Models:</p>
+
+<ul>
+  <li>
+    <p><strong>Infrastructure-as-a-Service (IaaS)</strong> the cloud provider will keep the hardware up-to-date, but operating system maintenance and network configuration is up to you as the cloud tenant.</p>
+  </li>
+  <li>
+    <p><strong>Platform-as-a-Service (PaaS)</strong> the cloud provider manages the virtual machines and networking resources, and the cloud tenant deploys their applications into the managed hosting environment.</p>
+  </li>
+  <li>
+    <p><strong>Software-as-a-Service(SaaS)</strong> the cloud provider manages all aspects of the application environment, such as virtual machines, networking resources, data storage, and applications. The cloud tenant only needs to provide their data to the application managed by the cloud provider.</p>
+  </li>
+</ul>
+
+<p>The following illustration demonstrates the services that might run in each of the cloud service models.</p>
+
+<p><img src="https://imgur.com/Ia6D7IM.png" alt="" class="full" /></p>
+
+<p>The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenant.</p>
+
+<p><img src="https://imgur.com/tCJ0p7V.png" alt="" class="full" /></p>
+
+<h3 id="what-is-serverless-computing">What is serverless computing?</h3>
+
+<p>It is a PaaS model. Normally used by developers to build applications faster. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code. Serverless architectures are highly scalable and event-driven, only using resources when a specific function or trigger occurs.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+The “serverless” name comes from the fact that the tasks associated with infrastructure provisioning and management are invisible to the developer. This approach enables developers to increase their focus on the business logic, and deliver more value to the core of the business.</p>
+
+<h3 id="what-are-public-private-and-hybrid-clouds">What are public, private, and hybrid clouds?</h3>
+
+<p>There are three deployment models:</p>
+
+<ul>
+  <li>
+    <p><strong>Public cloud</strong> is cloud resources, such as servers and storage, are <code class="language-plaintext highlighter-rouge">owned and operated by a third-party cloud service provider</code>, and delivered over the internet.</p>
+  </li>
+  <li>
+    <p><strong>Private cloud</strong> consists of computing resources used exclusively by <code class="language-plaintext highlighter-rouge">users from one business or organization</code>. A private cloud can be physically located at your organization’s on-site (on-premises) datacenter, or it can be hosted by a third-party service provider.</p>
+  </li>
+  <li>
+    <p><strong>Hybrid cloud</strong> is a computing environment that combines a <code class="language-plaintext highlighter-rouge">public cloud and a private cloud</code> by allowing data and applications to be shared between them.</p>
+  </li>
+</ul>
+
+<p><img src="https://imgur.com/6DirYOj.png" alt="" class="full" /></p>
+
+<h2 id="how-azure-works">How Azure Works?</h2>
+
+<p><img src="https://i.imgur.com/S2EB0iV.png" alt="" class="full" /></p>
+
+<p>Azure works with technology called <strong>Virtualization</strong>. Means separates the tight coupling between Hardware and its operating system.</p>
+
+<p><img src="https://i.imgur.com/n2HRQdJ.png" alt="" class="full" /></p>
+
+<p>It uses <strong>Hypervisor</strong> to abstract away the coupling between hardware &amp; software using Virtualization technique.</p>
+
+<p><img src="https://i.imgur.com/xS7cXdH.png" alt="" class="full" /></p>
+
+<p>Azure has lots of Data Centers in many regions spread around the world. Azure uses virtualization in massive scale in all of its data-centers.</p>
+
+<p><strong>Data-center</strong> has <strong>Rack</strong> and Rack has servers. Each server includes Hypervisor.</p>
+
+<p>There is <strong>Network Switch</strong> which allows connectivity to all of the servers.</p>
+
+<p><img src="https://i.imgur.com/2urDTsz.png" alt="" class="full" /></p>
+
+<p><strong>One server</strong> in the rack runs special software called as <strong>Fabric Controller</strong>.</p>
+
+<p><img src="https://i.imgur.com/Y32nDX0.png" alt="" class="full" /></p>
+
+<p>Azure Fabric Controller is connected to <strong>ORCHESTRATOR</strong> software. An Orchestrator responds to user requests.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+In-fact <strong>Azure Orchestrator</strong> manages everything that happens in Azure. Like it can package the Virtual Machine request coming from user and send to Azure Fabric Controller to create it.</p>
+
+<p><img src="https://i.imgur.com/TfOkyJV.png" alt="" class="full" /></p>
+
+<p>The users can make requests using the <strong>Orchestrators Web API</strong>.</p>
+
+<p><img src="https://i.imgur.com/o3Ol9NR.png" alt="" class="full" /></p>
+
+<p>The <strong>Web API</strong> can be called using <strong>Azure Portal</strong> and many tools.</p>
+
+<p><img src="https://i.imgur.com/tDjFTKJ.png" alt="" class="full" /></p>
+
+<p><strong>For example</strong>, when a user makes a request to create a Virtual Machine (VM) from Azure portal. The Orchestrator packages everything needed and chooses the best server Rack. And then sends the package and request to the Fabric Controller. Once the Fabric Controller has created the Virtual Machine, the user can connect to it.</p>
+
+<p><img src="https://i.imgur.com/E80cISJ.gif" alt="" class="full" /></p>
+
+<h2 id="azure-portal">Azure Portal</h2>
+
+<p>The Azure portal is a web-based, unified console that provides an alternative to command-line tools.</p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure">Learn More …</a></p>
+
+<p><img src="https://i.imgur.com/pd9pVmS.png" alt="" class="full" /></p>
+
+<h2 id="what-is-azure-marketplace">What is Azure Marketplace?</h2>
+
+<p><a href="https://azuremarketplace.microsoft.com/">Azure Marketplace</a> helps connect users with Microsoft partners, independent software vendors, and startups that are offering their solutions and services, which are optimized to run on Azure.</p>
+
+<p><img src="https://i.imgur.com/3Vabs2f.png" alt="" class="full" /></p>
+
+<p>Azure Marketplace is an online store that hosts applications that are certified and optimized to run in Azure. Many types of applications are available, ranging from AI and machine learning to web applications.</p>
+
+<h2 id="azure-services">Azure Services</h2>
+
+<p>Let’s take a quick tour of the high-level services Azure offers.</p>
+
+<p><img src="https://i.imgur.com/YsSaBXj.png" alt="" class="full" /></p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember this sentence “<em>I can</em> <strong>DISBAND <a href="https://wordunscrambler.me/dictionary/cwm">CWM</a></strong>”
+<strong>D</strong> = <strong>D</strong>atabases
+<strong>I</strong> = <strong>I</strong>nternet of Thing
+<strong>S</strong> = <strong>S</strong>torage
+<strong>B</strong> = <strong>B</strong>ig Data
+<strong>A</strong> = <strong>A</strong>rtificial Intelligence
+<strong>N</strong> = <strong>N</strong>etworking
+<strong>D</strong> = <strong>D</strong>evOps
+<strong>C</strong> = <strong>C</strong>ompute
+<strong>W</strong> = <strong>W</strong>eb
+<strong>M</strong> = <strong>M</strong>obile</p>
+
+<p><img src="https://imgur.com/cq2wt45" alt="" class="full" /></p>
+
+<h3 id="databases">Databases</h3>
+
+<p>Azure provides multiple database services to store a wide variety of data types and volumes.</p>
+
+<ul>
+  <li>Cosmos DB</li>
+  <li>MySQL</li>
+  <li>MariaDB</li>
+  <li>PostgreSQL</li>
+  <li>SQL Database</li>
+  <li>SQL Server on Azure Virtual Machines</li>
+  <li>Redis (Azure Cache for Redis)</li>
+  <li>Database Migration Service</li>
+  <li>Synapse Analytics</li>
+</ul>
+
+<p><img src="https://i.imgur.com/8FUIKST.png" alt="" class="full" /></p>
+
+<p><img src="https://i.imgur.com/MpyM48M.png" alt="" class="full" /></p>
+
+<p><img src="https://i.imgur.com/JGCCorr.png" alt="" class="full" /></p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services">Learn Azure Databases Services Definitions from Microsoft Document…</a></p>
+
+<h3 id="internet-of-thing-iot">Internet of Thing (IoT)</h3>
+
+<p>Connect to large set of your IOT assets to monitor and manage. Analyze their data as well when it arrives from sensors.</p>
+
+<ul>
+  <li>IoT <strong>Central</strong> ( SaaS to connect, monitor and manage)</li>
+  <li>Azure IoT <strong>Hub</strong> ( to connect and communication )</li>
+  <li>IoT <strong>Edge</strong> ( built-in models to be pushed to IoT devices )</li>
+</ul>
+
+<p><img src="https://i.imgur.com/SOyLVnr.png" alt="" /></p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services">Learn IoT options definitions from Microsoft Document…</a></p>
+
+<h3 id="storage">Storage</h3>
+
+<p>Azure provides four main types of storage services.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember this sentence “<strong>B</strong>ig <strong>Q</strong>uality <strong>T</strong>ask <strong>F</strong>orce”.
+<strong>B</strong> = <strong>B</strong>lob storage
+<strong>Q</strong> = <strong>Q</strong>ueue storage
+<strong>T</strong> = <strong>T</strong>able storage
+<strong>F</strong> = <strong>F</strong>ile storage</p>
+
+<p><img src="https://i.imgur.com/8PMKffl.png" alt="" class="full" /></p>
+
+<p><img src="https://i.imgur.com/Of6L8Up.png" alt="" class="full" /></p>
+
+<p class="notice--info">🏆 <strong>Pro Tip</strong> <br />
+<br />
+<strong>Cosmos DB vs Table Storage</strong> <br />
+<strong>Cosmos DB</strong> has 99.999% SLA, supports <strong>many NoSQL APIs</strong>, variations of <strong>NoSQL storage</strong> – Document, Graph, Key-Value and Tabular. However, <strong>Table Storage</strong> is just for NoSQL documents and cheaper than Cosmos DB.</p>
+
+<p>Azure Storage Benefits are:</p>
+
+<ul>
+  <li><strong>D</strong> = <strong>D</strong>urable</li>
+  <li><strong>M</strong> = <strong>M</strong>anaged</li>
+  <li><strong>A</strong> = <strong>A</strong>ccessible</li>
+  <li><strong>S</strong> = <strong>S</strong>ecure</li>
+  <li><strong>S</strong> = <strong>S</strong>calable</li>
+</ul>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember this sentence “<strong>D</strong>ouble <strong>MASS</strong>”.</p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services">Learn Azure Storage Services Definitions from Microsoft Document…</a></p>
+
+<h3 id="big-data">Big Data</h3>
+
+<p><img src="https://i.imgur.com/bHD4dG7.png" alt="" class="full" /></p>
+
+<p>Run analytics on massive scale for Large volume of data using open source clusters. And make decision based on the complex queries.</p>
+
+<p><img src="https://i.imgur.com/NFOx4zv.png" alt="" class="full" /></p>
+
+<ul>
+  <li><strong>Synapse</strong> Analytics (Azure Synapse Analytics)</li>
+  <li><strong>HDInsight</strong> (Azure HDInsight )</li>
+  <li><strong>Databricks</strong> (Azure Databricks)</li>
+</ul>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+3 <strong>V</strong>’s of Big data is <strong>variety, velocity, and volume</strong>.</p>
+
+<h3 id="artificial-intelligence">Artificial Intelligence</h3>
+
+<p><img src="https://i.imgur.com/ORIQHIA.png" alt="" class="full" /></p>
+
+<p>Use existing data to focus future behaviors using AI. Use Machine learning to build train and deploy model to cloud.</p>
+
+<p>Artificial Intelligence <strong>(AI)</strong> 🅰️ <br />
+For example, when you shop online, machine learning helps recommend other products you might like based on what you’ve purchased. Or when your credit card is swiped, machine learning compares the transaction to a database of transactions and helps detect fraud. And when your robot vacuum cleaner vacuums a room, machine learning helps it decide whether the job is done.</p>
+
+<ul>
+  <li>Machine Learning <strong>Service</strong></li>
+  <li>Machine Learning <strong>Studio</strong></li>
+  <li><strong>Cognitive</strong> Services
+    <ul>
+      <li>Vision</li>
+      <li>Speech</li>
+      <li>Knowledge mapping</li>
+      <li>Bing Search</li>
+      <li>Natural Language processing</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="networking">Networking</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Linking</code> compute resources and providing <code class="language-plaintext highlighter-rouge">access</code> to applications is the key function of Azure networking.</p>
+
+<p>Here are some examples of networking services in Azure.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember this sentence “3 <strong>V</strong>irus <strong>LANDED</strong> <strong>C</strong>apture <strong>T</strong>he <strong>F</strong>lag”.
+<strong>V</strong> = <strong>V</strong>irtual Network
+<strong>V</strong> = <strong>V</strong>PN Gateway
+<strong>V</strong> = <strong>V</strong>irtual WAN
+<strong>L</strong> = <strong>L</strong>oad Balancer
+<strong>A</strong> = <strong>A</strong>pplication Gateway
+<strong>N</strong> = <strong>N</strong>etwork Watcher
+<strong>D</strong> = <strong>D</strong>DoS Protection
+<strong>E</strong> = <strong>E</strong>xpressRoute
+<strong>D</strong> = <strong>D</strong>NS
+<strong>C</strong> = <strong>C</strong>ontent Delivery Network (CDN)
+<strong>T</strong> = <strong>T</strong>raffic Manager
+<strong>F</strong> = <strong>F</strong>irewall</p>
+
+<p><img src="https://i.imgur.com/SUWVl2i.png" alt="" class="full" /></p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services">Learn Azure Networking Services Definitions from Microsoft Document…</a></p>
+
+<h3 id="devops">DevOps</h3>
+
+<p>Create build and release pipe line for CI/CD</p>
+
+<ul>
+  <li>DevOps</li>
+  <li>DevTest Labs</li>
+</ul>
+
+<p><img src="https://i.imgur.com/I5oneaj.png" alt="" class="full" /></p>
+
+<h3 id="compute-services">Compute Services</h3>
+
+<p>Here are some examples of compute services in Azure.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember this sentence “<strong>V</strong>ery <strong>S</strong>pecial <strong>K</strong>ids <strong>C</strong>an join <strong>B</strong>order <strong>S</strong>ecurity <strong>F</strong>orce”.
+<strong>V</strong> = <strong>V</strong>irtual Machine
+<strong>S</strong> = <strong>S</strong>cale Sets ( Virtual Machine Scale Sets)
+<strong>K</strong> = <strong>K</strong>ubernetes Service
+<strong>C</strong> = <strong>C</strong>ontainer Instances
+<strong>B</strong> = <strong>B</strong>atch
+<strong>S</strong> = <strong>S</strong>ervice Fabric
+<strong>F</strong> = <strong>F</strong>unctions</p>
+
+<p><img src="https://i.imgur.com/fqNKbfg.png" alt="" class="full" /></p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services">Learn Azure Compute Services Definitions from Microsoft Document…</a></p>
+
+<h3 id="web">Web</h3>
+
+<p>Azure includes <code class="language-plaintext highlighter-rouge">first-class</code> support to build and host <code class="language-plaintext highlighter-rouge">web apps</code> and HTTP-based <code class="language-plaintext highlighter-rouge">web services</code>. The following Azure services are focused on web hosting.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember this sentence “<strong>C</strong>alm <strong>ASANA</strong>”.
+<strong>C</strong> = <strong>C</strong>ognitive Search
+<strong>A</strong> = <strong>A</strong>pp Service
+<strong>S</strong> = <strong>S</strong>ignalR Service
+<strong>A</strong> = <strong>A</strong>pps feature of Azure App Service
+<strong>N</strong> = <strong>N</strong>otification Hubs
+<strong>A</strong> = <strong>A</strong>PI Management</p>
+
+<p><img src="https://i.imgur.com/RNcyNzi.png" alt="" class="full" /></p>
+
+<p><img src="https://i.imgur.com/EE22HsT.png" alt="" class="full" /></p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services">Learn Azure Web hosting options definitions from Microsoft Document…</a></p>
+
+<h3 id="mobile">Mobile</h3>
+
+<p>With Azure, developers can create mobile back-end services for iOS, Android, and Windows apps quickly and easily.</p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+Remember this sentence:
+<strong>ABCO</strong> “<strong>A</strong>ssociation of <strong>B</strong>usiness <strong>C</strong>onsulting <strong>O</strong>rganizations”.
+<strong>A</strong> = <strong>A</strong>utoscaling to match business needs
+<strong>B</strong> = <strong>B</strong>roadcasting push notifications.
+<strong>C</strong> = <strong>C</strong>onnectivity to on-premises data.
+<strong>O</strong> = <strong>O</strong>ffline data synchronization.</p>
+
+<p><img src="https://i.imgur.com/a1MNofY.png" alt="" class="full" /></p>
+
+<p><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services">Learn Azure Mobile Services Definitions from Microsoft Document…</a></p>
+
+<h2 id="get-started-with-azure-accounts">Get started with Azure accounts</h2>
+
+<h3 id="what-is-the-azure-account">What is the Azure account?</h3>
+
+<p>To create and use Azure services, you need an Azure subscription. When you create an <strong>Azure account</strong> then Azure subscription will be created automatically for you. You’re free to create additional subscriptions. Next, you can start creating Azure resources within each subscription.</p>
+
+<p><img src="https://imgur.com/H2tQko7.png" alt="" class="full" /></p>
+
+<p><img src="https://imgur.com/jEoLDBr.png" alt="" class="full" /></p>
+
+<p class="notice--success">🏆 <strong>Pro Tip</strong> <br />
+<br />
+You <strong>don’t need to purchase an Azure account</strong> before you can use any Azure resources. Because, You can use a free Azure account or a Microsoft Learn sandbox to create resources.</p>
+
+<p><img src="https://imgur.com/fV0lcsb.png" alt="" class="full" /></p>
+
+<h3 id="what-is-the-azure-free-account">What is the Azure free account?</h3>
+
+<p>The Azure free account includes:</p>
+
+<ul>
+  <li>Free access to popular Azure <code class="language-plaintext highlighter-rouge">products</code> for <code class="language-plaintext highlighter-rouge">12 months</code>.</li>
+  <li>A <code class="language-plaintext highlighter-rouge">credit</code> to spend for the <code class="language-plaintext highlighter-rouge">first 30 days</code>.</li>
+  <li>Access to more than <code class="language-plaintext highlighter-rouge">25 products</code> that are <code class="language-plaintext highlighter-rouge">always free</code>.</li>
+</ul>
+
+<h3 id="what-is-the-learn-sandbox">What is the Learn sandbox?</h3>
+
+<p>Maximum <strong>Learn</strong> exercises use a technology called the <strong>sandbox</strong>, which creates a <code class="language-plaintext highlighter-rouge">temporary subscription</code> that’s added to your Azure account. Learn automatically cleans up the temporary resources for you after you’ve completed the module. The sandbox is the preferred method to use though, because it allows you to create and test Azure resources at no cost to you.</p>
+
+<h2 id="azure-fundamentals-facts">Azure fundamentals facts</h2>
+
+<ul>
+  <li>Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud.</li>
+  <li>Cloud computing typically decreases your operating expenses.</li>
+  <li>IaaS, PaaS, and SaaS are examples of cloud computing service models.</li>
+  <li>Cloud computing resources are <strong>NOT</strong> usually limited to specific geographic regions.</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/">Introduction to azure fundamentals by Microsoft online free training</a></li>
+</ul>
+
+<hr />
+
+<p><em>Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.</em></p>
+
+<h2 id="become-full-stack-developer-">Become full stack developer 💻</h2>
+
+<p class="notice--info">I teach at <a href="https://www.fullstackmaster.net">Fullstack Master</a>. If you want to become <strong>Software Developer</strong> and grow your carrier as new <strong>Software Engineer</strong> or <strong>Lead Developer/Architect</strong>. Consider subscribing to our full stack development training programs. You will learn <strong>Angular, RxJS, JavaScript, System Architecture</strong> and much more with lots of <strong>hands on coding</strong>. We have All-Access Monthly membership plans and you will get unlimited access to all of our <strong>video</strong> courses, <strong>slides</strong>, <strong>download source code</strong> &amp; <strong>Monthly video calls</strong>.</p>
+
+<ul>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/pro">All-Access Membership PRO plan</a></strong> to access <em>current</em> and <em>future</em> <strong>angular, node.js</strong> and related courses.</li>
+  <li>Please subscribe to <strong><a href="https://www.fullstackmaster.net/elite">All-Access Membership ELITE plan</a></strong> to get everything from PRO plan. Additionally, you will get access to a monthly <strong>live Q&amp;A video call</strong> with <code class="language-plaintext highlighter-rouge">Rupesh</code> and you can ask <strong><em>doubts/questions</em></strong> and get more help, tips and tricks.</li>
+</ul>
+
+<p class="notice--warning">Your bright future is awaiting for you so visit today <a href="www.fullstackmaster.net">FullstackMaster</a> and allow me to help you to board on your dream software company as a new <strong>Software Developer, Architect or Lead Engineer</strong> role.</p>
+
+<div class="notice--success">
+<strong>💖 Say 👋 to me!</strong>
+<br />Rupesh Tiwari
+<br />Founder of <a href="https://www.fullstackmaster.net">Fullstack Master </a>
+<br />Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
+<br />Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
+</div>
+<p><img src="https://imgur.com/5fBatz9.png" alt="" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#az-900" class="page__taxonomy-item" rel="tag">az-900</a><span class="sep">, </span>
+    
+      <a href="/tags/#azure" class="page__taxonomy-item" rel="tag">azure</a><span class="sep">, </span>
+    
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">tutorial</a><span class="sep">, </span>
+    
+      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-05-26T00:00:00+00:00">May 26, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=rupeshtiwari_co&text=Introduction+to+Azure+Fundamentals%20https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-azure-fundamentals%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-azure-fundamentals%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.rupeshtiwari.com%2Fintroduction-to-azure-fundamentals%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/powershell-random-notes/" class="pagination--pager" title="PowerShell Random Notes for You!
+">Previous</a>
+    
+    
+      <a href="/azure-developer-associate-basics/" class="pagination--pager" title="Azure Developer Associate Exam Basics
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/8axKkdp.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-improve-reliability-in-the-cloud/" rel="permalink">How to improve Reliability in the cloud?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Did you get a phone call from your customer saying they want to improve their application reliability while you move their workload to the cloud? If yes t...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/7tGRoEv.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cost-optimization-with-aws-spot-ec2-instances/" rel="permalink">Cost Optimization with Amazon EC2 Spot Instances
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          11 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  Creating cost optimized highly scalable cloud architecture is challenging but it is possible! Using Spot Amazon Elastic Compute Cloud (Amazon EC2) instanc...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/WQWdzrb.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/cloud-security-defense-in-depth-azure-approach/" rel="permalink">Cloud Security Defense In-Depth Azure Approach
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          10 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  In a traditional data center you create one perimeter, secure them by installing firewall, WAF, SIEMS etc. and have 100% confidence that the data center i...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://i.imgur.com/aPeeiUM.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/how-to-maintain-well-architected-framework-on-cloud/" rel="permalink">How to Maintain Well-Architected-Framework on Cloud
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to make sure our workload in the cloud is secure, reliable. How to monitor the cost of your cloud resources consumption? Is there any automation you can ...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <script data-ad-client="ca-pub-1700383344966810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Disable Inspection Function -->
+<script type="text/javascript">
+  
+</script>
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+</script>
+<div id='tawk_5eff6dee223d045fcb7b449a'></div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+<link rel="stylesheet" href="/assets/css/blog.css">
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://www.rupeshtiwari.com/posts" rel="nofollow noopener noreferrer"><i class="fas fa-registered" aria-hidden="true"></i> Blogs for Developers</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/fullstackmaster1" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/rupesh-tiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://fullstackmaster.net/course/3/mastering-meanjs" rel="nofollow noopener noreferrer"><i class="fab fa-angular" aria-hidden="true"></i> Learn Angular</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rupeshtiwari#javascript-for-beginners-client-side" rel="nofollow noopener noreferrer"><i class="fas fa-crown" aria-hidden="true"></i> Become Software Developer Free</a></li>
+        
+      
+        
+          <li><a href="http://github.com/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://rupesh-tiwari.medium.com/" rel="nofollow noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://dev.to/rupeshtiwari" rel="nofollow noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i> Dev.to</a></li>
+        
+      
+        
+          <li><a href="https://www.fullstackmaster.net" rel="nofollow noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Fullstack Master</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Rupesh Tiwari - Founder of Fullstack Master. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.rupeshtiwari.com/introduction-to-azure-fundamentals/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/introduction-to-azure-fundamentals"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://https-rupeshtiwari-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
