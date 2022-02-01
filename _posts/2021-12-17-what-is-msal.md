@@ -1,6 +1,6 @@
 ---
 title: Introduction to MSAL
-date: 2022-12-17 00:00 +0000
+date: 2021-12-17 00:00 +0000
 description: Azure Active Directory helps your resources to provide identity and access management. MSAL is the additional library that helps you to integrate Azure AD features programmatically.
 author_profile: true
 published: true

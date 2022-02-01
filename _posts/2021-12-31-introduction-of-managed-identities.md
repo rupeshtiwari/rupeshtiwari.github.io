@@ -1,6 +1,6 @@
 ---
 title: Introduction of Managed Identities
-date: 2022-12-31 00:00 +0000
+date: 2021-12-31 00:00 +0000
 description: Do you have situations where a process is trying to use your virtual machine in the cloud and you want to protect and control the access? Do you want to use cosmos db using your server layer deployed over azure cloud without managing your own identity and passwords? Use Microsoft Managed Identity. In this article I will describe Managed Identities concepts.
 author_profile: true
 published: true
@@ -106,4 +106,4 @@ _Thanks for reading my article till end. I hope you learned something special to
 <br>Email: <a href="mailto:rupesh.tiwari.info@gmail.com?subject=Hi">rupesh.tiwari.info@gmail.com</a>
 <br>Website: <a href="https://www.rupeshtiwari.com">RupeshTiwari.com </a>
 </div>
-![](https://imgur.com/5fBatz9.png){: .full} 
+![](https://imgur.com/5fBatz9.png){: .full}

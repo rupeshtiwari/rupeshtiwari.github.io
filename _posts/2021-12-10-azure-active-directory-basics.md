@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory Basics
-date: 2022-12-10 00:00 +0000
+date: 2021-12-10 00:00 +0000
 description: Azure Active Directory helps you to secure your cloud by providing identity and access management and single sign on.
 author_profile: true
 published: true
@@ -72,7 +72,6 @@ So basically every subscription trust on azure active directory. The users and g
 
 ![](https://i.imgur.com/BzP0hcx.png){: .full}
 
-
 ## What is Azure AD Tenant?
 
 A tenant represents an organization. A tenant is used by an organization. Example: the tenant used by the Adatum organization who developed HR application.
@@ -89,7 +88,6 @@ Based on the users your application is authenticating you can create 2 types of 
 
 1.  Work and school or Personal ( outlook.com, live.com )
 2.  Social  & local (Azure AD B2C )
-
 
 ## References
 
