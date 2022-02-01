@@ -1,6 +1,6 @@
 ---
 title: TCP vs Http difference
-date: 2022-07-16 00:00 +0000
+date: 2021-09-16 00:00 +0000
 description: TCP is a transport-layer protocol, and HTTP is an application-layer protocol that runs over TCP
 author_profile: true
 published: true

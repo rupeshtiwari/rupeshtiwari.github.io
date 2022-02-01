@@ -1,6 +1,6 @@
 ---
 title: Guideline to Become Responsible Senior Developer
-date: 2022-06-18 00:00 +0000
+date: 2021-08-18 00:00 +0000
 description: Senior Developer Coding Guideline
 author_profile: true
 published: true
@@ -204,21 +204,21 @@ If your model is use property with date time type. Then never-ever use `new Date
 Create a `SystemDateTimeProvider` class and use this class in your service to create model with date time.
 
 ```ts
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
 
 export abstract class DateTimeProvider {
-  abstract now(): number;
-  abstract new(): Date;
+  abstract now(): number
+  abstract new(): Date
 }
 
 @Injectable()
 export class SystemDateTimeProvider extends DateTimeProvider {
   now(): number {
-    return Date.now();
+    return Date.now()
   }
 
   new(): Date {
-    return new Date();
+    return new Date()
   }
 }
 ```
@@ -285,7 +285,6 @@ Create Classification Definition as a presentation component.
 - Get the data to display
 - Add template form in `html` with validations
 - Output create when the user wants to create a new definition
-
 
 ## Conclusion
 

@@ -1,6 +1,6 @@
 ---
 title: Uploading file to the server using Node and HTML5
-date: 2022-07-09 00:00 +0000
+date: 2021-09-09 00:00 +0000
 description: In this article you will learn how you can upload a file to the server using node.js and HTML5.
 author_profile: true
 published: true
@@ -29,7 +29,8 @@ tags:
 On the client side we need to use a `file` type `<input>` html element that can hold the file content from the client machine/device. Remember file type input element will parse the data and put it in the form.
 
 ```html
-<input type="file" name="filetoupload" /><br />
+<input type="file" name="filetoupload" />
+<br />
 ```
 
 The input element with `type=”file”` allows us to choose one or more files from your device (mobile or machine). That chosen file can be uploaded to the server using form submission.
@@ -49,7 +50,8 @@ Example:
 
 ```html
 <form action="fileupload" method="post" enctype="multipart/form-data">
-  <input type="file" name="filetoupload" /><br />
+  <input type="file" name="filetoupload" />
+  <br />
   <input type="submit" />
 </form>
 ```
@@ -66,18 +68,18 @@ In the server file let’s create an upload method.
 
 ```ts
 app.post('/fileupload', (req, res) => {
-  const form = formidable.IncomingForm();
+  const form = formidable.IncomingForm()
   form.parse(req, (err, fields, files) => {
-    const newpath = 'C:/Users/Rupesh/' + files.filetoupload.name;
-    var oldpath = files.filetoupload.path;
+    const newpath = 'C:/Users/Rupesh/' + files.filetoupload.name
+    var oldpath = files.filetoupload.path
 
     fs.rename(oldpath, newpath, function (err) {
-      if (err) throw err;
-      res.write(`${files.filetoupload.name} File uploaded and moved!`);
-      res.end();
-    });
-  });
-});
+      if (err) throw err
+      res.write(`${files.filetoupload.name} File uploaded and moved!`)
+      res.end()
+    })
+  })
+})
 ```
 
 ## Testing file upload

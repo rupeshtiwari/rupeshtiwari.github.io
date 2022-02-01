@@ -1,6 +1,6 @@
 ---
 title: Testing Node.js Project with Jasmine & Karma
-date: 2022-06-04 00:00 +0000
+date: 2021-08-04 00:00 +0000
 description: Testing Node.js Project with Jasmine & Karma
 author_profile: true
 published: true
@@ -38,24 +38,24 @@ Now you can write your node.js with some specs over there just like below:
 
 ```js
 function reverseWord(word) {
-  const length = word.length;
-  let reversed = '';
+  const length = word.length
+  let reversed = ''
   for (let idx = length - 1; idx >= 0; idx--) {
-    reversed += word[idx];
+    reversed += word[idx]
   }
 
-  return reversed;
+  return reversed
 }
 
 // This is the spec written in Jasmin BDD style
 describe('reverseWord', () => {
   it('test #1', () => {
-    expect(reverseWord('Geeks')).toBe('skeeG');
-  });
+    expect(reverseWord('Geeks')).toBe('skeeG')
+  })
   it('test #1', () => {
-    expect(reverseWord('for')).toBe('rof');
-  });
-});
+    expect(reverseWord('for')).toBe('rof')
+  })
+})
 ```
 
 ## How to run the Jasmine specs in Node.js project?
@@ -180,10 +180,9 @@ We did it our project is setup and enjoy writing specs.
 [Here is my node.js project](https://github.com/rupeshtiwari/coding-examples-final-450-by-love-babbar) that has jasmine and karma setup.
 If you enjoy this project please press the star button.
 
+Next step is how to run these specs in GitHub when we push the code? This I will explore in my next blog so stay tuned!
 
-Next step is how to run these specs in GitHub when we push the code? This I will explore in my next blog so stay tuned! 
-
-Happy coding and be happy! 
+Happy coding and be happy!
 
 ---
 

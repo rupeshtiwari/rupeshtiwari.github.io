@@ -1,7 +1,7 @@
 ---
-title: Difference between NAT vs Firewall for Software Developers
-date: 2022-08-13 00:00 +0000
-description: What is NAT, SNAT, DNAT etc. Why do we need them? What is the role of firewall in a Network and how firewall works with NAT, DNAT? Are you also seeking answers for these type of questions like I did? Read the article to get your answers!
+title: Differenct between NAT vs Firewall for Software Developers
+date: 2021-10-13 00:00 +0000
+description:
 author_profile: true
 published: true
 read_time: true

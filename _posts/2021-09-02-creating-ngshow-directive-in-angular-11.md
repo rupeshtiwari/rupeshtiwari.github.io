@@ -1,6 +1,6 @@
 ---
 title: Creating ngShow directive in Angular 11
-date: 2022-07-02 00:00 +0000
+date: 2021-09-02 00:00 +0000
 description: Are you wondering how to use ng-show in Angular 11? There is a way to achieve it by using [hidden]= “false”. However, if you are migrating large angularjs projects into angular 11 then it is really tedious and error prone work to convert them into [hidden]="" expression format. Also you have to negate all existing logic to show the element while using hidden. In this article I will explain how you can create your own ngShow directive in Angular 11.
 author_profile: true
 published: true
@@ -49,7 +49,7 @@ Let’s create one shared module in angular and create a `ng-show.directive.ts` 
 Add below code in `ng-show.directive.ts`
 
 ````ts
-import { Directive, ElementRef, Input } from '@angular/core';
+import { Directive, ElementRef, Input } from '@angular/core'
 
 /**
  * ## Example
@@ -70,11 +70,11 @@ export class NgShowDirective {
 
   @Input()
   set ngShow(condition: boolean) {
-    this.show(condition);
+    this.show(condition)
   }
 
   private show(value: boolean): void {
-    this.ngEl.nativeElement.style.display = value ? '' : 'none';
+    this.ngEl.nativeElement.style.display = value ? '' : 'none'
   }
 }
 ````
@@ -104,14 +104,14 @@ export class AppModule {}
 ```
 
 ```ts
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  show = true;
+  show = true
 }
 ```
 

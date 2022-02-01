@@ -1,6 +1,6 @@
 ---
 title: Understanding Azure Core Services Questions Flash Cards
-date: 2022-07-16 00:00 +0000
+date: 2021-09-16 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -16,10 +16,10 @@ header:
   teaser: https://i.imgur.com/qxXxmBa.png
   og_image: https://i.imgur.com/qxXxmBa.png
 tags:
-- webdev
-- tutorial
-- beginners
-- azure
+  - webdev
+  - tutorial
+  - beginners
+  - azure
 ---
 
-> Understanding Core Azure Services 
+> Understanding Core Azure Services

@@ -1,6 +1,6 @@
 ---
 title: Securing and Connecting Azure Resources from On-Premise Machines
-date: 2022-06-25 00:00 +0000
+date: 2021-08-25 00:00 +0000
 description: How to connect Azure resources from on-premise machines
 author_profile: true
 published: true
