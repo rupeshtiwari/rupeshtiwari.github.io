@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory Authentication Basics
-date: 2021-12-24 00:00 +0000
+date: 2021-12-07 00:00 +0000
 description:
 author_profile: true
 published: true

@@ -1,6 +1,6 @@
 ---
 title: Introduction to CAP Theorem
-date: 2023-02-11 00:00 +0000
+date: 2021-12-09 00:00 +0000
 description: The CAP theorem states that a distributed system cannot simultaneously be consistent, available, and partition tolerant. CAP Theorem is very important in the Distributed systems, Microservices architecture, Big Data world, especially when we need to make trade offs between the three, based on our unique customer’s use case.
 author_profile: true
 published: true

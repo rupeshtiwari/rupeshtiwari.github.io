@@ -1,6 +1,6 @@
 ---
 title: Introduction to Multi Cloud and Strategy
-date: 2023-02-18 00:00 +0000
+date: 2012-12-10 00:00 +0000
 description: Cloud itself is complex so why are customers bothering about multi-cloud at all? Why not just take google cloud and deploy all of your workload and be happy? Well it's just like you should not put all eggs in one basket.Let's explore Multi-Cloud in this article. According to a VMWare Customer survey 2 out of 3 customers are using multi-cloud so it is very important for you to be aware of the challenges and strategies of multi-cloud.
 author_profile: true
 published: true

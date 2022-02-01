@@ -1,6 +1,6 @@
 ---
 title: Cost Optimization with Amazon EC2 Spot Instances
-date: 2023-03-11 00:00 +0000
+date: 2021-12-11 00:00 +0000
 description: Creating cost optimized highly scalable cloud architecture is challenging but it is possible! Using Spot Amazon Elastic Compute Cloud (Amazon EC2) instances you can save up to 90% of on-demand pricing. In this article you will learn what spot instances and what should be your strategy to use spot instances. Additionally, I will give you scenarios where most of the customers are using spot instances.
 author_profile: true
 published: true

@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory Basics
-date: 2021-12-10 00:00 +0000
+date: 2021-12-2 00:00 +0000
 description: Azure Active Directory helps you to secure your cloud by providing identity and access management and single sign on.
 author_profile: true
 published: true

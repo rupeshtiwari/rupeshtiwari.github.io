@@ -1,6 +1,6 @@
 ---
 title: Site Recovery Strategy in Azure
-date: 2021-12-11 00:00 +0000
+date: 2021-12-04 00:00 +0000
 description: Learn the failover and failback stages in Site Recovery on Azure
 author_profile: true
 published: true

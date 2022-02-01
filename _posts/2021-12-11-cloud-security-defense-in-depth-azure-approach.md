@@ -1,6 +1,6 @@
 ---
 title: Cloud Security Defense In-Depth Azure Approach
-date: 2023-03-04 00:00 +0000
+date: 2021-12-11 00:00 +0000
 description:
 author_profile: true
 published: true

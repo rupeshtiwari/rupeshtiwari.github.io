@@ -1,6 +1,6 @@
 ---
 title: Where to Store Application Data in Azure
-date: 2021-12-04 00:00 +0000
+date: 2021-12-01 00:00 +0000
 description:
 author_profile: true
 published: true

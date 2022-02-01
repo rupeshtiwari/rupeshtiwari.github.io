@@ -1,6 +1,6 @@
 ---
 title: On-Premises Disaster Site Recovery Strategy with Azure VM
-date: 2021-12-11 00:00 +0000
+date: 2021-12-03 00:00 +0000
 description: Learn the failover and failback stages in Site Recovery on Azure to on-premises machines.
 author_profile: true
 published: true

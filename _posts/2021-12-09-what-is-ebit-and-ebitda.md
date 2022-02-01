@@ -1,6 +1,6 @@
 ---
 title: What is EBIT and EBITDA in Finance?
-date: 2023-02-04 00:00 +0000
+date: 2021-12-09 00:00 +0000
 description: EBITDA and EBIT is a very fundamental business term that is nowadays mostly considered during the cloud adoption phase. If your company is planning to migrate to cloud and you are going to present a finance key performance index to your CFO then make sure you learn these concepts.
 author_profile: true
 published: true

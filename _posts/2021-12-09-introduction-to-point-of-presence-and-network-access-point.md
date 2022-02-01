@@ -1,6 +1,6 @@
 ---
 title: Introduction to Point of Presence and Network Access Point
-date: 2023-01-28 00:00 +0000
+date: 2021-12-09 00:00 +0000
 description: Learn about Point of Presence and Network Access Point used in cloud and Telecommunication industries
 author_profile: true
 published: true

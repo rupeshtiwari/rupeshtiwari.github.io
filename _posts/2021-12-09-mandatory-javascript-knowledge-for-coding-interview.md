@@ -1,6 +1,6 @@
 ---
 title: Mandatory JavaScript Knowledge for Coding Interview
-date: 2023-01-21 00:00 +0000
+date: 2021-12-09 00:00 +0000
 description: JavaScript basics that you should keep handy to write coding problems in Javascript.
 author_profile: true
 published: true

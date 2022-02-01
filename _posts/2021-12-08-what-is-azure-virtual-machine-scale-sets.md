@@ -1,6 +1,6 @@
 ---
 title: What is Azure Virtual Machine Scale Sets
-date: 2021-12-25 00:00 +0000
+date: 2021-12-08 00:00 +0000
 description:
 author_profile: true
 published: true
