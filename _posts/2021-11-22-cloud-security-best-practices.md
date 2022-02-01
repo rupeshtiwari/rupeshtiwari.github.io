@@ -1,6 +1,6 @@
 ---
 title: Cloud Security Best Practices for application, servers and network
-date: 2022-10-22 00:00 +0000
+date: 2021-11-22 00:00 +0000
 description: Are you familiar with cloud layered security approach? Do you trust your on-premise users & systems more than outside then you are still exposed to vulnerabilities and cyber attack's. Let's learn what can we do to protect our applications, servers and networks over cloud?
 author_profile: true
 published: true

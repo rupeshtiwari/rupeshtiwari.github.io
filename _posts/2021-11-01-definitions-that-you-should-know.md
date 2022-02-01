@@ -1,6 +1,6 @@
 ---
 title: Definitions that you should know
-date: 2022-10-01 00:00 +0000
+date: 2021-11-01 00:00 +0000
 author_profile: true
 published: true
 read_time: true
@@ -216,6 +216,7 @@ FedRAMP+ is the concept of leveraging the work done as part of the FedRAMP asses
 adding specific security controls and requirements necessary to meet and assure DoD’s critical
 mission requirements. A CSP’s CSO can be assessed in accordance with the criteria outlined in
 this SRG, with the results used as the basis for awarding a DoD provisional authorization.
+
 ## DoD
 
 The Department of Defense (DoD) is responsible for providing the military forces needed to deter war and protect the security of our country. The major elements of these forces are the Army, Navy, Marine Corps, and Air Force, consisting of about 1.3 million men and women on active duty.

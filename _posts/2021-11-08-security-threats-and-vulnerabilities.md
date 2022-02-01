@@ -1,6 +1,6 @@
 ---
 title: Security Threats and Vulnerabilities
-date: 2022-10-08 00:00 +0000
+date: 2021-11-08 00:00 +0000
 description: Learn about malware, attacks to the network, social engineering attacks.
 author_profile: true
 published: true
@@ -22,7 +22,7 @@ tags:
   - azure
 ---
 
-> Learn about malware, attacks to the network, social engineering attacks from scratch. 
+> Learn about malware, attacks to the network, social engineering attacks from scratch.
 
 ## Malware
 
@@ -269,7 +269,7 @@ Therefore, sanitize the input value coming from client in webserver before execu
 
 - XML injection
 
-Inject xml query to alter the path or query of resource. Make a $harmless query in the .ini file present in the server.
+Inject xml query to alter the path or query of resource. Make a \$harmless query in the .ini file present in the server.
 
 ![](https://i.imgur.com/24d94JB.png){: .full}
 

@@ -1,6 +1,6 @@
 ---
 title: Essential Technical Definitions for Solution Architects
-date: 2022-10-01 00:00 +0000
+date: 2021-11-01 00:00 +0000
 description: When I started learning Cloud being a webdev and software architect background. I came across many IT lingo, jargons, abbreviations that I did know about them. In this post, I am writing all those in one place. I hope this will help you as well on your cloud Azure/AWS/GCP Solution Architect journey!
 author_profile: true
 published: true

@@ -1,6 +1,6 @@
 ---
 title: Azure Storage Account Basics
-date: 2022-09-10 00:00 +0000
+date: 2021-11-10 00:00 +0000
 description: When you want to move your business to cloud the major thing to consider is storage. What kind of data you can store? What is the pricing? How can you optimize cost and performance? As a cloud architect its your responsibility to get this answers and propose a design. I will try to help to get the basics of Azure storage account in this article.
 author_profile: true
 published: true
