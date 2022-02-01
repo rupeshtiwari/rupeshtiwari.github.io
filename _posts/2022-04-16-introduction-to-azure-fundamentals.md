@@ -1,6 +1,6 @@
 ---
 title: Introduction to Azure Fundamentals
-date: 2022-03-26 00:00 +0000
+date: 2021-05-26 00:00 +0000
 description: Learn everything you should know about Azure Services and concepts as a beginner
 author_profile: true
 published: true

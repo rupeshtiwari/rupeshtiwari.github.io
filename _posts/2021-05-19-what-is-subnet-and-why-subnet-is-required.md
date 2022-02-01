@@ -1,6 +1,6 @@
 ---
 title: What is Subnet and Why Subnet is Required?
-date: 2022-03-17 00:00 +0000
+date: 2021-05-19 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -62,7 +62,7 @@ How do we connect multiple subnets to each other? Answer is via [router](#router
 
 ![](https://imgur.com/EkPubq2.png){: .full}
 
-A router is a network device that connects different networks together. Each network is signified by it's network id or area code. You can use router to connect your subnets as well.<mark> Each subnet want to communicate to other subnet must go through the Router. </mark>. Router acts as a gateway and it has default gateway number for each subnet. So each [host](#host) within the subnet must send packet to the default gateway in order to communicate to other subnet or the internet. 
+A router is a network device that connects different networks together. Each network is signified by it's network id or area code. You can use router to connect your subnets as well.<mark> Each subnet want to communicate to other subnet must go through the Router. </mark>. Router acts as a gateway and it has default gateway number for each subnet. So each [host](#host) within the subnet must send packet to the default gateway in order to communicate to other subnet or the internet.
 
 You can enforce policies and rules to restrict some subnet to communicate to other subnet in Router. For example, suppose you want Infrastructure Team subnet to restrict to communicate to Human Resource subnet you can do in your Router. So Router is a Single point of administration.
 
@@ -80,10 +80,59 @@ ISP (Internet Service Provider) or Data Center has big router with lots of cable
 
 Host is a device with specified IP address within the network. It could be your smart phone with IP (192.0.2.104). Or your family member's iPad or laptop with unique IP address.
 
+## Subnet Mask
+
+Every device has an IP address with two pieces: the client or host address and the server or network address. IP addresses are either configured by a DHCP server or manually configured (static IP addresses). The subnet mask splits the IP address into the host and network addresses, thereby defining which part of the IP address belongs to the device and which part belongs to the network.
+
+### IP Address and Subnet Mask
+
+A 32-bit IP address uniquely identifies a single device on an IP network. The 32 binary bits are divided into the host and network sections by the subnet mask but they are also broken into four 8-bit octets.
+
+### IP Address Classes and Subnet Mask
+
+Class A, B, and C networks have natural masks, or default subnet masks:
+
+- Class A: 255.0.0.0
+- Class B: 255.255.0.0
+- Class C: 255.255.255.0
+
+You can determine the number and type of IP addresses any given local network requires based on its default subnet mask.
+
+### What is IP Mask?
+
+You might use “IP/Mask” as a shorthand to define both the IP address and sub mask at once. In this situation, the IP address is followed by the number of bits in the mask.
+
+For example,
+
+- **10.0.1.1/24** equivalent to IP address: 10.0.1.1 with subnet mask of 255.255.255.0.
+- **216.202.192.66/22** equivalent to IP address: 216.202.196.66 with a subnet mask of 255.255.252.0
+
+### Subnet Mask Cheat Sheet
+
+|      | Addresses | Hosts | Netmask         | Amount of a Class C |
+| ---- | :-------- | :---- | :-------------- | :------------------ |
+| / 30 | 4         | 2     | 255.255.255.252 | 1 / 64              |
+| / 29 | 8         | 6     | 255.255.255.248 | 1 / 32              |
+| / 28 | 16        | 14    | 255.255.255.240 | 1 / 16              |
+| / 27 | 32        | 30    | 255.255.255.224 | 1 / 8               |
+| / 26 | 64        | 62    | 255.255.255.192 | 1 / 4               |
+| / 25 | 128       | 126   | 255.255.255.128 | 1 / 2               |
+| / 24 | 256       | 254   | 255.255.255.0   | 1                   |
+| / 23 | 512       | 510   | 255.255.254.0   | 2                   |
+| / 22 | 1024      | 1022  | 255.255.252.0   | 4                   |
+| / 21 | 2048      | 2046  | 255.255.248.0   | 8                   |
+| / 20 | 4096      | 4094  | 255.255.240.0   | 16                  |
+| / 19 | 8192      | 8190  | 255.255.224.0   | 32                  |
+| / 18 | 16384     | 16382 | 255.255.192.0   | 64                  |
+| / 17 | 32768     | 32766 | 255.255.128.0   | 128                 |
+| / 16 | 65536     | 65534 | 255.255.0.0     | 256                 |
+
 ## References
 
-1. https://www.youtube.com/watch?v=-yz3FV8WliU
-2. https://www.youtube.com/watch?v=JOomC1wFrbU
+- [Subnet Video](https://www.youtube.com/watch?v=-yz3FV8WliU){: .btn .btn--info}
+- [Routers and Default Gateways Video](https://www.youtube.com/watch?v=JOomC1wFrbU){: .btn .btn--info}
+- [Subnet Article](https://dnsmadeeasy.com/support/subnet/){: .btn .btn--info}
+- [Subnet Mask Article](https://avinetworks.com/glossary/subnet-mask/){: .btn .btn--info}
 
 ---
 
@@ -95,10 +144,10 @@ _Thanks for reading my article till end. I hope you learned something special to
 I teach at [Fullstack Master](https://www.fullstackmaster.net). If you want to become **Software Developer** and grow your carrier as new **Software Engineer** or **Lead Developer/Architect**. Consider subscribing to our full stack development training programs. You will learn **Angular, RxJS, JavaScript, System Architecture** and much more with lots of **hands on coding**. We have All-Access Monthly membership plans and you will get unlimited access to all of our **video** courses, **slides**, **download source code** & **Monthly video calls**.
 
 - Please subscribe to **[All-Access Membership PRO plan](https://www.fullstackmaster.net/pro)** to access _current_ and _future_ **angular, node.js** and related courses.
-- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
+- Please subscribe to **[All-Access Membership ELITE plan](https://www.fullstackmaster.net/elite)** to get everything from PRO plan. Additionally, you will get access to a monthly **live Q&A video call** with `Rupesh` and you can ask **_doubts/questions_** and get more help, tips and tricks.
 
 {: .notice--warning}
-Your bright future is waiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
+Your bright future is awaiting for you so visit today [FullstackMaster](www.fullstackmaster.net) and allow me to help you to board on your dream software company as a new **Software Developer, Architect or Lead Engineer** role.
 
 <div class="notice--success">
 <strong>💖 Say 👋 to me!</strong>
