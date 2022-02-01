@@ -205,6 +205,6 @@ jekyll_compose:
         - tutorial
         - beginners
 feed:
-  post_limit: 100
+  posts_limit: 100
 
 
