@@ -1,6 +1,6 @@
 ---
 title: Azure Load Balancer Basics
-date: 2022-04-09 00:00 +0000
+date: 2021-06-09 00:00 +0000
 description:
 author_profile: true
 published: true

@@ -1,6 +1,6 @@
 ---
 title: Azure Information Protection Strategy
-date: 2022-04-02 00:00 +0000
+date: 2021-06-16 00:00 +0000
 description:
 author_profile: true
 published: true
@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 image: https://i.imgur.com/zztiaiA.png
 header:
-  image: https://i.imgur.com/TDnKShl.png
+  image: https://i.imgur.com/KjGKP8X.png
   teaser: https://i.imgur.com/zztiaiA.png
   og_image: https://i.imgur.com/zztiaiA.png
 tags:
@@ -61,7 +61,7 @@ Use one of the following methods to classify and protect existing content:
 - **Cloud data storage**: Use [Microsoft Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/azip-integration) to apply your labels to documents in Box, SharePoint, and OneDrive.
 
 {: .notice--success}
-🏆 **Pro Tip** \
+🏆 **ProTip** \
 \
 **What are the default labels for classification in Azure Information Protection?**
 Personal, Public, General, Confidential, and Highly Confidential

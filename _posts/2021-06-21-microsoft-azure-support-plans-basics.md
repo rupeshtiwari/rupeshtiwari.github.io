@@ -1,6 +1,6 @@
 ---
 title: Microsoft Azure Support Plans Basics
-date: 2022-04-16 00:00 +0000
+date: 2021-06-21 00:00 +0000
 description:
 author_profile: true
 published: true

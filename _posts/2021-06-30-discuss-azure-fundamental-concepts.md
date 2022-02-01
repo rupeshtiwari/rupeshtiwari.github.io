@@ -1,6 +1,6 @@
 ---
 title: Discuss Azure Fundamental Concepts
-date: 2022-04-30 00:00 +0000
+date: 2021-06-30 00:00 +0000
 description: Did you know your company can take advantage of using many Azure cloud computing which will help your company to reduce its overall computing costs? Did you know the benefits(availability, scalability, and geographic distribution) of cloud computing? Did you know what are the categories(IaaS, PaaS, SaaS) of cloud computing? And, can you differences between types(public, private, and hybrid) of cloud computing? In this article we will summaries all of these!
 author_profile: true
 published: true
