@@ -181,7 +181,7 @@ facebook:
 
 breadcrumbs: true
 
-## Personal Configs
+## Custom props Personal Configs
 jekyll_compose:
   auto_open: true
   default_front_matter:
@@ -204,5 +204,7 @@ jekyll_compose:
         - webdev
         - tutorial
         - beginners
+feed:
+  post_limit: 100
 
 
