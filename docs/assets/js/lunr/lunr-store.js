@@ -1780,4 +1780,16 @@ var store = [{
         "tags": ["cloud","tutorial","beginners","azure"],
         "url": "/how-to-improve-reliability-in-the-cloud/",
         "teaser": "https://i.imgur.com/8axKkdp.png"
+      },{
+        "title": "Application and Service Principal Objects in Azure",
+        "excerpt":"Application and Service Principal Objects in Azure In azure cloud in order to protect your resources  like web applications you must register them in Azure Active Directory. After registering an application you get service principal. All of your users registered in Azure AD have user principal as security key. ....","categories": [],
+        "tags": ["webdev","tutorial","beginners","cloud"],
+        "url": "/application-and-service-principal-objects-in-azure/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
+      },{
+        "title": "Mandatory Algorithms for Coding Interview",
+        "excerpt":"Basic algorithms that you must know if you want to crack your coding interview. In case you are starting to prepare for coding practice then make sure you learn all of these important algorightms. Get the source code for basic algorithms in JavaScript here Binary Search in Sorted Array **O(log(n)...","categories": [],
+        "tags": ["webdev","tutorial","beginners","coding"],
+        "url": "/mandatory-algorithms-for-coding-interview/",
+        "teaser": "https://i.imgur.com/qxXxmBa.png"
       }]

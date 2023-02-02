@@ -1,4 +1,419 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2022-12-24T13:36:11+00:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">How to improve Reliability in the cloud?</title><link href="https://www.rupeshtiwari.com/how-to-improve-reliability-in-the-cloud/" rel="alternate" type="text/html" title="How to improve Reliability in the cloud?" /><published>2021-12-12T00:00:00+00:00</published><updated>2021-12-12T00:00:00+00:00</updated><id>https://www.rupeshtiwari.com/how-to-improve-reliability-in-the-cloud</id><content type="html" xml:base="https://www.rupeshtiwari.com/how-to-improve-reliability-in-the-cloud/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://www.rupeshtiwari.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.rupeshtiwari.com/" rel="alternate" type="text/html" /><updated>2023-02-02T13:41:27+00:00</updated><id>https://www.rupeshtiwari.com/feed.xml</id><title type="html">Rupesh Tiwari - Founder of Fullstack Master</title><subtitle>Rupesh is a world renowned Senior Software Architect &amp; Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design &amp; Web Development. Make your next project a success or save a late project.</subtitle><author><name>Rupesh Tiwari</name></author><entry><title type="html">Mandatory Algorithms for Coding Interview</title><link href="https://www.rupeshtiwari.com/mandatory-algorithms-for-coding-interview/" rel="alternate" type="text/html" title="Mandatory Algorithms for Coding Interview" /><published>2023-01-14T00:00:00+00:00</published><updated>2023-01-14T00:00:00+00:00</updated><id>https://www.rupeshtiwari.com/mandatory-algorithms-for-coding-interview</id><content type="html" xml:base="https://www.rupeshtiwari.com/mandatory-algorithms-for-coding-interview/">&lt;blockquote&gt;
+  &lt;p&gt;Basic algorithms that you must know if you want to crack your coding interview. In case you are starting to prepare for coding practice then make sure you learn all of these important algorightms. Get the &lt;a href=&quot;https://codepen.io/collection/BNaddx&quot;&gt;source code for basic algorithms in JavaScript here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;binary-search-in-sorted-array&quot;&gt;Binary Search in Sorted Array&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(log(n) time&lt;/td&gt;
+      &lt;td&gt;O(1) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/vGpwSKt.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;rNmBqWQ&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/rNmBqWQ&quot;&gt;
+  Binary Search Tree Implementation&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;kadanes-algorithm&quot;&gt;Kadane’s Algorithm&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/i1sGon1.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;bGrBbZr&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/bGrBbZr&quot;&gt;
+  Kadane&apos;s Algorithm&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;moores-voting-algorithm&quot;&gt;Moore’s Voting Algorithm&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/JT3TvCV.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;YzVLbjK&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/YzVLbjK&quot;&gt;
+  Moore&apos;s Voting Algorithm | Majority Sum | Array&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;reverse-linked-list&quot;&gt;Reverse Linked List&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(n) time&lt;/td&gt;
+      &lt;td&gt;O(1) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/MbFK2KZ.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sTbk2kj.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;jOmNvRw&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/jOmNvRw&quot;&gt;
+  Reverse Linked List Algorithm&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;flyods-cycle-detection-algorithm&quot;&gt;Flyod’s Cycle Detection Algorithm&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SzgerO1.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/fMuMGAp.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;xxLRxzV&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/xxLRxzV&quot;&gt;
+  Untitled&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;sorting-algorithms&quot;&gt;Sorting Algorithms&lt;/h2&gt;
+
+&lt;h3 id=&quot;merge-sort&quot;&gt;Merge sort&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In Merge sort since I need 2 Aux arrays. And it requires more space to solve merge sorting problem. Therefore, I will prefer &lt;strong&gt;Linked List&lt;/strong&gt; datastructure. Because, in linkedlist to store values, I do not need contigous memory slots. Hence optimizing memory usage.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(n log (n)) time&lt;/td&gt;
+      &lt;td&gt;O(1) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/wozvfAe.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js&quot; data-slug-hash=&quot;WNjegBp&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/WNjegBp&quot;&gt;
+  Merge Sort Algorithm&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;quick-sort&quot;&gt;Quick Sort&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(n log (n)) time&lt;/td&gt;
+      &lt;td&gt;O( log (n) ) and wrost case O(n) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Quicksort is best fit for sorting &lt;strong&gt;Arrays&lt;/strong&gt; since it is completely in-place sorting. No auxilary arrays are requried. So no need to store contigous memory slots on computer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/f3zTZNq.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;OJpBYKz&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/OJpBYKz&quot;&gt;
+  Quick Sort In-place Implementation: Answer&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;partition-logic&quot;&gt;Partition Logic&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;All the element lesser than pivot are pushed to the left of the partition index (use swap)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/XrO2FKz.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/iI22dTH.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tree-traversal&quot;&gt;Tree Traversal&lt;/h2&gt;
+
+&lt;h3 id=&quot;breadth-first-traversalbft&quot;&gt;Breadth-First Traversal(BFT)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Whenever tree is Sparse use BFT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(n) time&lt;/td&gt;
+      &lt;td&gt;O(n) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yW3E6Ph.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;XWRroaz&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/XWRroaz&quot;&gt;
+  Breadth First Traversal | Binary Tree&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;depth-first-traversal-dft&quot;&gt;Depth-First Traversal (DFT)&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(n) time&lt;/td&gt;
+      &lt;td&gt;O(n) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mbFltXf.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;ExmYGze&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/ExmYGze&quot;&gt;
+  Depth-First Traversal | Binary Tree&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;binary-search-tree-bst&quot;&gt;Binary Search Tree (BST)&lt;/h2&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;rNmBqWQ&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/rNmBqWQ&quot;&gt;
+  Binary Search Tree Implementation&lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;insert-in-binary-search-tree-bst&quot;&gt;Insert in Binary Search Tree (BST)&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(Log(n)) time&lt;/td&gt;
+      &lt;td&gt;Space O(1)**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;For 1 insert operation, avg case is O(lgn) and worst case is O(n)
+For n insert operations, avg case is O(nlgn) and worst case is O(n^2)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/bcBZn35.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;remove-node-from-bst&quot;&gt;Remove Node from BST&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(log n) time&lt;/td&gt;
+      &lt;td&gt;space O(1)**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/KCKZohE.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;search-in-bst&quot;&gt;Search in BST&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;O(log(n)) time | O(1)&lt;/strong&gt;
+&lt;img src=&quot;https://i.imgur.com/rb6qlIB.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;min-max-and-height-in-bst&quot;&gt;Min Max and Height in BST&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3VEHOE1.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;heap-implementation&quot;&gt;Heap implementation&lt;/h2&gt;
+
+&lt;p&gt;In the interview no one will ask you to implement heap. This excercise is for your coding skills imporvement. In the interview, you can use array instead of heap and explain the concept.&lt;/p&gt;
+
+&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;js,result&quot; data-slug-hash=&quot;OJmVjgB&quot; data-user=&quot;rupeshtiwari&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/rupeshtiwari/pen/OJmVjgB&quot;&gt;
+  Heaps: Implement Heap &lt;/a&gt; by Rupesh Tiwari (&lt;a href=&quot;https://codepen.io/rupeshtiwari&quot;&gt;@rupeshtiwari&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;h3 id=&quot;insert-node-in-the-heap&quot;&gt;Insert node in the Heap&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(log(n) time&lt;/td&gt;
+      &lt;td&gt;O(1) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/H1Hm4Pe.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;revove-root-node-from-the-heap&quot;&gt;Revove root node from the Heap&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**O(log(n) time&lt;/td&gt;
+      &lt;td&gt;O(1) space**&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5gmtiBx.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/mycodeschool&quot;&gt;My Code School Youtube channel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codepen.io/collection/BNaddx&quot;&gt;Source code of mandatory algorithms in JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="webdev" /><category term="tutorial" /><category term="beginners" /><category term="coding" /><summary type="html">Basic algorithms that you must know if you want to crack your coding interview. In case you are starting to prepare for coding practice then make sure you learn all of these important algorightms. Get the source code for basic algorithms in JavaScript here</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Application and Service Principal Objects in Azure</title><link href="https://www.rupeshtiwari.com/application-and-service-principal-objects-in-azure/" rel="alternate" type="text/html" title="Application and Service Principal Objects in Azure" /><published>2023-01-07T00:00:00+00:00</published><updated>2023-01-07T00:00:00+00:00</updated><id>https://www.rupeshtiwari.com/application-and-service-principal-objects-in-azure</id><content type="html" xml:base="https://www.rupeshtiwari.com/application-and-service-principal-objects-in-azure/">&lt;p&gt;Application and Service Principal Objects in Azure&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In azure cloud in order to protect your resources  like web applications you must register them in Azure Active Directory. After registering an application you get service principal. All of your users registered in Azure AD have user principal as security key. .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;application-registration-in-azure-active-directory&quot;&gt;Application Registration in Azure Active Directory&lt;/h2&gt;
+
+&lt;p&gt;You register your application in Azure AD tenant to manage identity &amp;amp; access by creating identity configuration of your application. While registration you must specify:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;URL of your application&lt;/li&gt;
+  &lt;li&gt;URL to redirect after authentication&lt;/li&gt;
+  &lt;li&gt;URI to identify your application&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The Azure AD tenant where you register your application is called HOME TENANT. You can choose to give access to either single or multiple tenants for your application. You can register multiple apps with the same name however they will must have unique application id. 
+&lt;img src=&quot;https://i.imgur.com/zPk3Sth.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/gfqUETE.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-an-application-object&quot;&gt;What is an Application Object?&lt;/h2&gt;
+
+&lt;p&gt;After you register an application in Azure AD Home Tenant. It creates a globally unique instance of the application known as Application object. You get globally unique Id (application or client Id ) for your registered application. After registering application you also get service principal auto created (object Id)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/YtniiGk.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can add secrets or certificates &amp;amp; scope to your application. You can use an application object to create multiple service principal objects for your application. Service Principal objects are the same as application instances.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/ZeblZYd.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you use your application in multiple tenants then a new service principal is created in that tenant. However application objects remain single in its home tenant as global identity. 
+&lt;img src=&quot;https://i.imgur.com/qMvFl9P.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are some static properties in application objects that is always common to all application instances or service principals.&lt;/p&gt;
+
+&lt;p&gt;Application object describes 3 different aspects of an application as following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;How the service can issue tokens in order to access application&lt;/li&gt;
+  &lt;li&gt;Resources that application might access&lt;/li&gt;
+  &lt;li&gt;The actions that the application can take&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Application Entity defines the schema for an application object’s properties.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-a-service-principal-object&quot;&gt;What is a Service Principal Object?&lt;/h2&gt;
+
+&lt;p&gt;To access resources that are secured by an Azure AD tenant, the entity that requires access must be represented by a security principal. This requirement is true for both users (user principal) and applications (service principal). The security principal defines the access policy and permissions for the user/application in the Azure AD tenant. This enables core features such as authentication of the user/application during sign-in, and authorization during resource access.&lt;/p&gt;
+
+&lt;p&gt;There are three types of service principal: application, managed identity, and legacy.&lt;/p&gt;
+
+&lt;p&gt;The first type of service principal is the local representation, or application instance, of a global application object in a single tenant or directory.  A service principal is created in each tenant where the application is used and references the globally unique app object. The service principal object defines what the app can actually do in the specific tenant, who can access the app, and what resources the app can access.&lt;/p&gt;
+
+&lt;p&gt;When an application is given permission to access resources in a tenant (upon registration or &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/developer-glossary#consent&quot;&gt;consent&lt;/a&gt;), a service principal object is created.  When using the portal, a service principal is created automatically when you register an application.&lt;/p&gt;
+
+&lt;p&gt;The second type of service principal is used to represent a &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview&quot;&gt;managed identity&lt;/a&gt;. Managed identities eliminate the need for developers to manage credentials. Managed identities provide an identity for applications to use when connecting to resources that support Azure AD authentication. When a managed identity is enabled, a service principal representing that managed identity is created in your tenant. Service principals representing managed identities can be granted access and permissions, but cannot be updated or modified directly.&lt;/p&gt;
+
+&lt;p&gt;The third type of service principal represents a legacy app (an app created before app registrations were introduced or created through legacy experiences). A legacy service principal can have credentials, service principal names, reply URLs, and other properties which are editable by an authorized user, but does not have an associated app registration. The service principal can only be used in the tenant where it was created.&lt;/p&gt;
+
+&lt;p&gt;The Enterprise applications blade in the portal is used to list and manage the service principals in a tenant.&lt;/p&gt;
+
+&lt;h2 id=&quot;relationship-between-application-objects-and-service-principals&quot;&gt;Relationship between application objects and service principals&lt;/h2&gt;
+
+&lt;p&gt;The application object is the global representation of your application for use across all tenants, and the service principal is the local representation for use in a specific tenant.&lt;/p&gt;
+
+&lt;p&gt;The application object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects. An application object therefore has a 1:1 relationship with the software application, and a 1:many relationship with its corresponding service principal object(s).&lt;/p&gt;
+
+&lt;p&gt;A service principal must be created in each tenant where the application is used, enabling it to establish an identity for sign-in and/or access to resources being secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration. A multi-tenant application also has a service principal created in each tenant where a user from that tenant has consented to its use.&lt;/p&gt;
+
+&lt;h2 id=&quot;consequences-of-modifying-and-deleting-applications&quot;&gt;Consequences of modifying and deleting applications&lt;/h2&gt;
+
+&lt;p&gt;Any changes that you make to your application object are also reflected in its service principal object in the application’s home tenant only (the tenant where it was registered). This means that deleting an application object will also delete its home tenant service principal object. However, restoring that application object will not restore its corresponding service principal. For multi-tenant applications, changes to the application object are not reflected in any consumer tenants’ service principal objects, until the access is removed through the &lt;a href=&quot;https://myapps.microsoft.com/&quot;&gt;Application Access Panel&lt;/a&gt; and granted again.&lt;/p&gt;
+
+&lt;h2 id=&quot;example-of-service-principal-and-application-object&quot;&gt;Example of Service principal and Application object&lt;/h2&gt;
+
+&lt;p&gt;The following diagram illustrates the relationship between an application’s application object and corresponding service principal objects, in the context of a sample multi-tenant application called HR app. There are three Azure AD tenants in this example scenario:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adatum - The tenant used by the company that developed the HR app&lt;/li&gt;
+  &lt;li&gt;Contoso - The tenant used by the Contoso organization, which is a consumer of the HR app&lt;/li&gt;
+  &lt;li&gt;Fabrikam - The tenant used by the Fabrikam organization, which also consumes the HR app&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/zpgHTR8.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-create-a-service-principal&quot;&gt;How to create a Service Principal?&lt;/h2&gt;
+
+&lt;p&gt;You can not create service principal from Azure portal as of November, 2021. Check Microsoft document for latest update.&lt;/p&gt;
+
+&lt;p&gt;Service principal is an identity created for use in application, hosted service and automated tools to access Azure resources. You should always use service principal for automated tools rather than login with user identity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/7uSpO0r.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you create service principal it gives you credentials that you need while in use of service principal. If you don’t want to manage credentials try creating managed identity. If you don’t have a password for the service principal then you can use the reset service principal credential option.&lt;/p&gt;
+
+&lt;p&gt;By default when we create a service principal it assigns a contributor role on subscription scope. You can use `New-AzADServicePrincipal` powershell cmdlet to create a new service principal.&lt;/p&gt;
+
+&lt;h2 id=&quot;service-principal-authentication-types&quot;&gt;Service Principal Authentication Types&lt;/h2&gt;
+
+&lt;p&gt;There are 2 types of authentications for service principal:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Password-based (application secret)&lt;/li&gt;
+  &lt;li&gt;Certificate-based (Recommended)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;password-based-authentication&quot;&gt;Password-Based Authentication&lt;/h3&gt;
+
+&lt;p&gt;When you create a service principal for password-based. It will return an auto generated password. You need that password to authenticate. By default service principal gets read and write access at subscription scope. For sign In using service principal you need tenant Id. Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New-AZADServicePrincipal -DisplayName Web&lt;/code&gt; to create a new one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/iJ8nGgm.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;certificate-based-authentication&quot;&gt;Certificate-based Authentication&lt;/h3&gt;
+
+&lt;p&gt;In order to create a certificate-based service principal you need to pass a base-64 encoded ASCII string of public certificates. Once it is created it will return Id and displayname.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-objec&quot;&gt;https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-object&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0&quot;&gt;https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0#manage-service-principal-roles&quot;&gt;https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-5.9.0#manage-service-principal-roles&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;notice--success&quot;&gt;
+&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
+&lt;br /&gt;Rupesh Tiwari
+&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
+&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
+&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="webdev" /><category term="tutorial" /><category term="beginners" /><category term="cloud" /><summary type="html">Application and Service Principal Objects in Azure</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to improve Reliability in the cloud?</title><link href="https://www.rupeshtiwari.com/how-to-improve-reliability-in-the-cloud/" rel="alternate" type="text/html" title="How to improve Reliability in the cloud?" /><published>2021-12-12T00:00:00+00:00</published><updated>2021-12-12T00:00:00+00:00</updated><id>https://www.rupeshtiwari.com/how-to-improve-reliability-in-the-cloud</id><content type="html" xml:base="https://www.rupeshtiwari.com/how-to-improve-reliability-in-the-cloud/">&lt;blockquote&gt;
   &lt;p&gt;Did you get a phone call from your customer saying they want to improve their application reliability while you move their workload to the cloud? If yes then continue reading this article. I will use Microsoft Azure to explain the Reliability concept and its improvement steps. You can certainly do the same in Google Cloud or Amazon AWS.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -6967,420 +7382,4 @@ Even though we assign public IP to VM and communicate to blob storage. All the t
 &lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
 &lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="security" /><category term="tutorial" /><category term="beginners" /><category term="azure" /><summary type="html">If you want to become Cloud Security Architect you must have basics of Networking. This article will discuss all fundamental concepts of networking. Learn about 6 security domains, understand the security is multi-pronged approach.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Azure Monitor and Application Insights Introduction</title><link href="https://www.rupeshtiwari.com/azure-monitor-and-application-insights-introduction/" rel="alternate" type="text/html" title="Azure Monitor and Application Insights Introduction" /><published>2021-11-13T00:00:00+00:00</published><updated>2021-11-13T00:00:00+00:00</updated><id>https://www.rupeshtiwari.com/azure-monitor-and-application-insights-introduction</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-monitor-and-application-insights-introduction/">&lt;blockquote&gt;
-  &lt;p&gt;What are &lt;strong&gt;Azure Monitor&lt;/strong&gt; and &lt;strong&gt;Application Insights&lt;/strong&gt;? How exactly Azure Monitor work? How can you visualize Application Map with Application Insights? Learn the log retentions and exports. Learn all of this in this article. Helpful article for &lt;strong&gt;AZ-304&lt;/strong&gt; Exam.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;types-of-data-to-consider&quot;&gt;Types of Data to consider&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Log&lt;/strong&gt;: web application tracings and logs.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;time-series&lt;/strong&gt;: data sensitive to time like performance counter.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;raw data&lt;/strong&gt;: un-transformed data which is in raw format received from sources&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Aggregated data&lt;/strong&gt;: which has a lot less detail and consists counts, averages and other statistical data that you see in Metric Explorer.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Debug Snapshots&lt;/strong&gt;: which contains debugging data&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;azure-monitor&quot;&gt;Azure Monitor&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/Qej8BE6.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Azure Monitor provides an overview of all the monitoring data available.&lt;/li&gt;
-  &lt;li&gt;It is a center monitoring hub for all of the services.&lt;/li&gt;
-  &lt;li&gt;You can monitor blow things:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Activity Logs&lt;/strong&gt;: who created the service&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Metrics&lt;/strong&gt;: CPU usages of VMs&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Azure Services&lt;/strong&gt;: which queries executed on &lt;strong&gt;Cosmos DB&lt;/strong&gt; or how many users visited to &lt;strong&gt;App Service web app&lt;/strong&gt;.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;You can drill down the specific data:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You can search data using SQL like query called &lt;strong&gt;Kusto Query Language (KQL)&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Workbooks&lt;/strong&gt; templates to visualize data as reports or create custom &lt;strong&gt;Workbooks&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Insights&lt;/strong&gt; to trace web apps
-&lt;strong&gt;Automate alert responses&lt;/strong&gt;: react on a specific data with an alert and take some actions. Example: if 10 HTTP exceptions occurs on web app then create a bug automatically.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;application-insights&quot;&gt;Application Insights&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/z6Hsa09.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use it to monitor web and desktop application&lt;/li&gt;
-  &lt;li&gt;Monitor and alerts on below things:
-    &lt;ul&gt;
-      &lt;li&gt;Availability&lt;/li&gt;
-      &lt;li&gt;Performance&lt;/li&gt;
-      &lt;li&gt;Failures&lt;/li&gt;
-      &lt;li&gt;Usages: By whom application is used and how it is used.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Ping and multi-step test&lt;/strong&gt;: ping your website from multiple locations and test if your application is available to all locations. It alerts if your app is offline.&lt;/li&gt;
-  &lt;li&gt;It sends data to Log Analytics Workspace which is a Data Lake that Azure Monitor uses.&lt;/li&gt;
-  &lt;li&gt;Export Azure Application Insight data to storage account in JSON format to keep for long time. For compliance requirement u can keep it.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Application Insights provides your Application Map. It also provides the performance, errors and availability of each components of your application map. You can use this to know which component of your application is un-healthy.&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://imgur.com/GzTbKy7.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;how-azure-monitor-works&quot;&gt;How Azure Monitor Works&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/13aJy9q.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Logs are created by below things:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Azure Resources&lt;/li&gt;
-  &lt;li&gt;Applications&lt;/li&gt;
-  &lt;li&gt;Virtual Machines Agents&lt;/li&gt;
-  &lt;li&gt;Data Collector APIs&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;storing-log-data&quot;&gt;Storing Log data&lt;/h3&gt;
-
-&lt;p&gt;Above data is stored in one or more datastores. Example: In &lt;strong&gt;Log Analytics Workspace&lt;/strong&gt;, this is a &lt;strong&gt;data lake&lt;/strong&gt; that stores data in raw format and translate it into table-like structure that you can query using &lt;strong&gt;Kusto Query Language&lt;/strong&gt; (KQL).&lt;/p&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;The data in the Log Analytics Workspace is called &lt;strong&gt;Azure Monitor Logs&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The other data store is &lt;strong&gt;time series&lt;/strong&gt; datastore. This is optimized to store time based data like &lt;strong&gt;performance counter&lt;/strong&gt; and other metrics that comes in granularity of every second, minute or other granularities.&lt;/p&gt;
-
-&lt;h3 id=&quot;analyzing-log-data&quot;&gt;Analyzing Log data&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Log Analytics&lt;/strong&gt; is a &lt;strong&gt;feature&lt;/strong&gt; of Azure Monitor. Logs can be queried by &lt;strong&gt;Log Analytics&lt;/strong&gt; where Azure Monitor can analyze log data with the Kusto Query Language.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Metrics Explorer&lt;/strong&gt; is a different &lt;strong&gt;feature&lt;/strong&gt; of Azure Monitor. Azure Monitor analyzes metrics with the &lt;strong&gt;Metrics Analyzer&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Workbooks&lt;/strong&gt; allows you to:
-    &lt;ul&gt;
-      &lt;li&gt;Combine data from various Azure data sources and data types.&lt;/li&gt;
-      &lt;li&gt;Enable at-scale views across multiple resources&lt;/li&gt;
-      &lt;li&gt;Visualize related data in a single interactive report.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The data can be analyzed and used by &lt;strong&gt;Dashboards, Insights, Alerts&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;data-retention&quot;&gt;Data Retention&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy#how-long-is-the-data-kept&quot;&gt;How long is the data kept&lt;/a&gt;? Data kept longer than 90 days will &lt;a href=&quot;https://azure.microsoft.com/pricing/details/monitor/&quot;&gt;incur addition charges&lt;/a&gt;. Data retention for &lt;strong&gt;0 days&lt;/strong&gt; means you want to save the data &lt;strong&gt;forever&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;application-insights-data-retention&quot;&gt;Application Insights Data Retention&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/z6Hsa09.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Application Insights send its data to &lt;strong&gt;Log Analytics Workspace&lt;/strong&gt; which Azure Monitor can use.&lt;/li&gt;
-  &lt;li&gt;Application Insights can store its &lt;strong&gt;raw data&lt;/strong&gt; for up to &lt;strong&gt;730 days (2 Years)&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;You can use &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-monitor/app/export-telemetry&quot;&gt;Continuous Export (deprecated)&lt;/a&gt; or &lt;strong&gt;Diagnostics Settings&lt;/strong&gt; (current) to store log data in Azure Storage, Event Hub as soon as data arrives. You can export data to Azure storage account with vNet, firewalls and private links.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Aggregated data&lt;/strong&gt; is retained at a granularity of &lt;strong&gt;1 minute for 90 days&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Debug Snapshots&lt;/strong&gt; are kept for &lt;strong&gt;15 days&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;azure-monitor-logs-retention&quot;&gt;Azure Monitor Logs Retention&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/ZVAHwXf.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The data which is present in the &lt;strong&gt;Azure Analytics Workspace&lt;/strong&gt; can stay up to 730 days. You can choose lower days also.&lt;/li&gt;
-  &lt;li&gt;You can &lt;strong&gt;export&lt;/strong&gt; this data to Azure &lt;strong&gt;Storage&lt;/strong&gt; or Azure &lt;strong&gt;Event Hubs&lt;/strong&gt; to be processed by another system.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;azure-monitor-metrics-retention&quot;&gt;Azure Monitor Metrics Retention&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/LwjC4Kj.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Metrics&lt;/strong&gt; can be stored for max &lt;strong&gt;93 days&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Performance counters&lt;/strong&gt; collected by &lt;strong&gt;Log Analytics Agents&lt;/strong&gt; which further can be sent to &lt;strong&gt;Log Analytics Workspace&lt;/strong&gt; and because of that it can be stored for &lt;strong&gt;31 days by default to 730 days&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;azure-monitor-agents&quot;&gt;Azure Monitor Agents&lt;/h2&gt;
-
-&lt;p&gt;Virtual machines and other compute resources require an agent to collect monitoring data required to measure the performance and availability of their guest operating system and workloads.&lt;/p&gt;
-
-&lt;h3 id=&quot;windows-agents&quot;&gt;Windows Agents&lt;/h3&gt;
-
-&lt;p&gt;Check the latest Windows agents updates &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview#windows-agents&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/2jUXY9q.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview#windows-agents&quot;&gt;Windows Agents&lt;/a&gt; are small application that collects data and sends to Azure Log Analytics workspace or Metrics Datastore. If you run windows based machine or VM you can install an Azure Monitor agent.&lt;/p&gt;
-
-&lt;h3 id=&quot;linux-agents&quot;&gt;Linux Agents&lt;/h3&gt;
-
-&lt;p&gt;Check the latest Linux agents updates &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview#linux-agents&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/XGMHugW.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;become-full-stack-developer-&quot;&gt;Become full stack developer 💻&lt;/h2&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;I teach at &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master&lt;/a&gt;. If you want to become &lt;strong&gt;Software Developer&lt;/strong&gt; and grow your carrier as new &lt;strong&gt;Software Engineer&lt;/strong&gt; or &lt;strong&gt;Lead Developer/Architect&lt;/strong&gt;. Consider subscribing to our full stack development training programs. You will learn &lt;strong&gt;Angular, RxJS, JavaScript, System Architecture&lt;/strong&gt; and much more with lots of &lt;strong&gt;hands on coding&lt;/strong&gt;. We have All-Access Monthly membership plans and you will get unlimited access to all of our &lt;strong&gt;video&lt;/strong&gt; courses, &lt;strong&gt;slides&lt;/strong&gt;, &lt;strong&gt;download source code&lt;/strong&gt; &amp;amp; &lt;strong&gt;Monthly video calls&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/pro&quot;&gt;All-Access Membership PRO plan&lt;/a&gt;&lt;/strong&gt; to access &lt;em&gt;current&lt;/em&gt; and &lt;em&gt;future&lt;/em&gt; &lt;strong&gt;angular, node.js&lt;/strong&gt; and related courses.&lt;/li&gt;
-  &lt;li&gt;Please subscribe to &lt;strong&gt;&lt;a href=&quot;https://www.fullstackmaster.net/elite&quot;&gt;All-Access Membership ELITE plan&lt;/a&gt;&lt;/strong&gt; to get everything from PRO plan. Additionally, you will get access to a monthly &lt;strong&gt;live Q&amp;amp;A video call&lt;/strong&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rupesh&lt;/code&gt; and you can ask &lt;strong&gt;&lt;em&gt;doubts/questions&lt;/em&gt;&lt;/strong&gt; and get more help, tips and tricks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--warning&quot;&gt;Your bright future is awaiting for you so visit today &lt;a href=&quot;www.fullstackmaster.net&quot;&gt;FullstackMaster&lt;/a&gt; and allow me to help you to board on your dream software company as a new &lt;strong&gt;Software Developer, Architect or Lead Engineer&lt;/strong&gt; role.&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="azure" /><category term="webdev" /><category term="beginners" /><category term="certification" /><summary type="html">What are Azure Monitor and Application Insights? How exactly Azure Monitor work? How can you visualize Application Map with Application Insights? Learn the log retentions and exports. Learn all of this in this article. Helpful article for AZ-304 Exam.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/zZYQYQA.png" /><media:content medium="image" url="https://i.imgur.com/zZYQYQA.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Azure Storage Account Basics</title><link href="https://www.rupeshtiwari.com/azure-storage-account-basics/" rel="alternate" type="text/html" title="Azure Storage Account Basics" /><published>2021-11-10T00:00:00+00:00</published><updated>2021-11-10T00:00:00+00:00</updated><id>https://www.rupeshtiwari.com/azure-storage-account-basics</id><content type="html" xml:base="https://www.rupeshtiwari.com/azure-storage-account-basics/">&lt;blockquote&gt;
-  &lt;p&gt;When you want to move your business to cloud the major thing to consider is storage. What kind of data you can store? What is the pricing? How can you optimize cost and performance? As a cloud architect its your responsibility to get this answers and propose a design. I will try to help to get the basics of Azure storage account in this article.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;what-kind-of-data-you-want-to-store-in-cloud&quot;&gt;What kind of data you want to store in Cloud?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Images, Videos, Text Files, binary data&lt;/li&gt;
-  &lt;li&gt;Tables&lt;/li&gt;
-  &lt;li&gt;Files&lt;/li&gt;
-  &lt;li&gt;Queue&lt;/li&gt;
-  &lt;li&gt;Do you need Hard Disk in cloud to mount for your VM ? Disk storage you need.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To store above kind of data in Azure you need to &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal&quot;&gt;create Azure Storage account&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;custom-domain-for-azure-storage-account&quot;&gt;Custom Domain for Azure Storage Account&lt;/h2&gt;
-
-&lt;p&gt;Normally Azure storage account creates default endpoint given to you by Azure like: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pricing.blob.core.windows.net&lt;/code&gt;. Azure Storage account is unique per domain. If you have 2 custom domains then you need 2 storage accounts.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: If you want to create sales.storage.com, pricing.storage.com then for each host name you need 2 new storage accounts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PlTif5w.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;how-many-types-of-azure-storage-accounts-are-there&quot;&gt;How many types of Azure Storage Accounts are there?&lt;/h2&gt;
-
-&lt;p&gt;There are 2 types of Azure storage accounts: &lt;strong&gt;Standard&lt;/strong&gt; and &lt;strong&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/blog/introducing-premium-storage-high-performance-storage-for-azure-virtual-machine-workloads/&quot;&gt;Premium&lt;/a&gt;&lt;/strong&gt; based on the performance requirement.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/dNZFT12.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Notice: while creating storage account you have to choose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;standard or premium&lt;/code&gt; as per your performance need. Premium accounts are highly performance account with SSD disk and super fast accessible but costly option though.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/D6lDVaH.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;standard-storage-account&quot;&gt;Standard Storage Account&lt;/h2&gt;
-
-&lt;p&gt;This is the recommended azure storage account. Azure Standard Account in old days used to be of 3 types (this is legacy now a days)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;General Purpose V1&lt;/li&gt;
-  &lt;li&gt;General Purpose V2 and&lt;/li&gt;
-  &lt;li&gt;Blob account&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/jzlsAH1.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now a days,in Standard Storage Account we have only one type &lt;strong&gt;General Purpose V2&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/QJnAGdy.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;general-purpose-v2-gpv2-storage-account&quot;&gt;General Purpose v2 (GPv2) Storage Account&lt;/h3&gt;
-
-&lt;p&gt;This is the newest storage account. This supports all of the storage services: &lt;strong&gt;Blob, Azure Files, Queue, Page Blob and Disk, and Table&lt;/strong&gt;. It also supports blob tiering. You can select a default hot or cool tier. It supports all kind of redundancy.&lt;/p&gt;
-
-&lt;h2 id=&quot;premium-storage-account&quot;&gt;Premium Storage Account&lt;/h2&gt;
-
-&lt;p&gt;Premium accounts are meant for very high performance use case. It has SSD disk and fast random access to file, data etc. Data in premium account can not be automatically transferred to standard account. You have to write backup and upload task to transfer data to other account.&lt;/p&gt;
-
-&lt;p&gt;Premium account are of &lt;strong&gt;3&lt;/strong&gt; types: &lt;strong&gt;Block Blobs, File Shares and Page Blobs&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/XzwSANB.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Premium account data has 2 types of redundancy strategies: &lt;strong&gt;LRS and &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage&quot;&gt;ZRS&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/rQJtqCn.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--danger&quot;&gt;🛎️ &lt;strong&gt;Important&lt;/strong&gt;
-&lt;br /&gt;
-Azure Storage Premium account for &lt;strong&gt;Page blobs&lt;/strong&gt; only supports &lt;strong&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#locally-redundant-storage&quot;&gt;LRS&lt;/a&gt;&lt;/strong&gt; Redundancy as on now.&lt;/p&gt;
-
-&lt;p&gt;This is all about storage accounts. Next lets learn how data is stored in these storage accounts.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-data-is-stored-in-azure-storage&quot;&gt;How data is stored in Azure Storage?&lt;/h2&gt;
-
-&lt;p&gt;Most of the data is stored as blobs only.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AkpEFeB.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;SQL Data stored in Azure SQL Service&lt;/li&gt;
-  &lt;li&gt;Azure Virtual Disk ( vhd files )&lt;/li&gt;
-  &lt;li&gt;Image, video, media files&lt;/li&gt;
-  &lt;li&gt;log, metrics data&lt;/li&gt;
-  &lt;li&gt;Documents, pdf, text file&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;any unstructured data or binary data&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SSkSAc4.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;They all are stored in Azure as blob only. Therefore, we must understand what is blob and how can we create categories of blobs to optimize for certain use cases.&lt;/p&gt;
-
-&lt;h2 id=&quot;types-of-blobs&quot;&gt;Types of Blobs&lt;/h2&gt;
-
-&lt;p&gt;Broadly there are 2 types of blobs:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Block Blobs and&lt;/li&gt;
-  &lt;li&gt;Page Blobs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/zG2dD8m.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;notice--success&quot;&gt;🏆 &lt;strong&gt;Pro Tip&lt;/strong&gt; &lt;br /&gt;
-&lt;br /&gt;
-&lt;strong&gt;Append Blobs&lt;/strong&gt; are basically block blobs optimized for append operations are heavily used for storing Log data.&lt;/p&gt;
-
-&lt;h2 id=&quot;block-blobs&quot;&gt;Block Blobs&lt;/h2&gt;
-
-&lt;p&gt;Image, Video file, Text file, binary data any kind of unstructured data is good for block blobs. Log data must be stored as append blobs only.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ideal for storing Text and Binary Data.&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/gIebE45.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;A single block blob can contain up to &lt;strong&gt;50,000&lt;/strong&gt; blocks of up to &lt;strong&gt;100 MB&lt;/strong&gt; each, for a total size of &lt;strong&gt;4.75 TB&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/zg0lrp4.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Append blobs are optimized for append operations (e.g. &lt;strong&gt;logging&lt;/strong&gt;)&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pCax9mp.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;page-blobs&quot;&gt;Page Blobs&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Efficient for read/write operations&lt;/li&gt;
-  &lt;li&gt;Used by Azure VMs&lt;/li&gt;
-  &lt;li&gt;Up to &lt;strong&gt;8 TB&lt;/strong&gt; in size&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/7XPMHwi.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;where-azure-page-blobs-are-used-in-real-world&quot;&gt;Where Azure Page Blobs are used in real world?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview&quot;&gt;Azure Disks Storage&lt;/a&gt;&lt;/strong&gt; are persisted in Hyper-V VHD format and stored as a &lt;strong&gt;page blob&lt;/strong&gt; in Azure Storage.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Azure SQL DB service&lt;/strong&gt; which currently uses page blobs for storing SQL data, enabling fast random read-write operations for the database.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;PaaS service&lt;/strong&gt; for shared media access for collaborative video editing applications, page blobs enable fast access to random locations in the media.&lt;/li&gt;
-  &lt;li&gt;Microsoft services like &lt;strong&gt;Azure Site Recovery, Azure Backup&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5swhULh.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;storage-access-tiers&quot;&gt;Storage Access Tiers&lt;/h2&gt;
-
-&lt;p&gt;In order to access data you have to pay money. In order to store data also you have to pay money. So if you want to not use some data and just keep for longer time then you must store them as archive in azure storage account. So lets learn what are the access tiers of storage account.&lt;/p&gt;
-
-&lt;p&gt;There are 3 tiers that you can store your data in storage account.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Hot&lt;/li&gt;
-  &lt;li&gt;cold&lt;/li&gt;
-  &lt;li&gt;Archive&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;notice--danger&quot;&gt;&lt;br /&gt;
-🛎️ &lt;strong&gt;Important&lt;/strong&gt;
-&lt;br /&gt;
-Azure premium account doesn’t have access tiers.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/joqRVMs.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;hot-tier&quot;&gt;Hot Tier&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Higher storage costs&lt;/li&gt;
-  &lt;li&gt;Lower access costs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;cold-tier&quot;&gt;Cold Tier&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Lower storage costs&lt;/li&gt;
-  &lt;li&gt;Higher access costs&lt;/li&gt;
-  &lt;li&gt;Intended for data that will remain cool for 30 days or more&lt;/li&gt;
-  &lt;li&gt;If you try to access data earlier than 30 days you will have to pay the charges for that.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;archive-tier&quot;&gt;Archive Tier&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Lowest storage costs&lt;/li&gt;
-  &lt;li&gt;Highest retrieval costs&lt;/li&gt;
-  &lt;li&gt;When a blob is in archive storage it is offline and cannot be read&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;when-to-use-blob-files-and-disk-storage&quot;&gt;When to use Blob, Files and Disk Storage?&lt;/h2&gt;
-
-&lt;p&gt;Now we have many choice let me help you to understand when to use disk, files or blob storage account.&lt;/p&gt;
-
-&lt;h3 id=&quot;when-to-use-blobs-storage-account&quot;&gt;When to use Blobs Storage Account?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;When your application wants to access data from anywhere.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Large amount of objects, images, videos etc.&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/uE6eFPd.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;when-to-use-files-storage-account&quot;&gt;When to use Files Storage Account?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;When you want to access files from multiple instances of VMs.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Jumpbox for shared development scenarios.&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DeaflLN.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;when-to-use-disk-storage-account&quot;&gt;When to use Disk Storage Account?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Do not need to access outside of VMs.&lt;/li&gt;
-  &lt;li&gt;Lift-and-shift of machines from &lt;strong&gt;on-premises&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Disk expansions for application installations.&lt;/p&gt;
-
-    &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5swhULh.png&quot; alt=&quot;&quot; class=&quot;full&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Thanks for reading my article till end. I hope you learned something special today. If you enjoyed this article then please share to your friends and if you have suggestions or thoughts to share with me then please write in the comment box.&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;notice--success&quot;&gt;
-&lt;strong&gt;💖 Say 👋 to me!&lt;/strong&gt;
-&lt;br /&gt;Rupesh Tiwari
-&lt;br /&gt;Founder of &lt;a href=&quot;https://www.fullstackmaster.net&quot;&gt;Fullstack Master &lt;/a&gt;
-&lt;br /&gt;Email: &lt;a href=&quot;mailto:rupesh.tiwari.info@gmail.com?subject=Hi&quot;&gt;rupesh.tiwari.info@gmail.com&lt;/a&gt;
-&lt;br /&gt;Website: &lt;a href=&quot;https://www.rupeshtiwari.com&quot;&gt;RupeshTiwari.com &lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="webdev" /><category term="tutorial" /><category term="beginners" /><category term="azure" /><summary type="html">When you want to move your business to cloud the major thing to consider is storage. What kind of data you can store? What is the pricing? How can you optimize cost and performance? As a cloud architect its your responsibility to get this answers and propose a design. I will try to help to get the basics of Azure storage account in this article.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://imgur.com/5fBatz9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Rupesh Tiwari</name></author><category term="security" /><category term="tutorial" /><category term="beginners" /><category term="azure" /><summary type="html">If you want to become Cloud Security Architect you must have basics of Networking. This article will discuss all fundamental concepts of networking. Learn about 6 security domains, understand the security is multi-pronged approach.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.imgur.com/qxXxmBa.png" /><media:content medium="image" url="https://i.imgur.com/qxXxmBa.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
