@@ -121,7 +121,8 @@ header:
           </div>
         </div>
       </div>
-    </section><!-- End Counts Section -->
+    </section>
+    <!-- End Counts Section -->
     
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
@@ -151,7 +152,8 @@ header:
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
+    </section>
+    <!-- End Clients Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
