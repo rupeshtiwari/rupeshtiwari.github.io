@@ -16,4 +16,4 @@ header:
   and it’s only one phone call away.
 </p>
 
-<a href="mailto: info@rupeshtiwari.com" class="btn btn--success">Schedule a call now</a>
+<a href="mailto:roopkt@gmail.com" class="btn btn--success">Schedule a call now</a>

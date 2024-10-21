@@ -79,7 +79,7 @@ cd rupeshtiwari.github.io
 After cloning, run the following to install all the required gems:
 
 ```bash
-bundle install
+sudo bundle install
 ```
 
 ---

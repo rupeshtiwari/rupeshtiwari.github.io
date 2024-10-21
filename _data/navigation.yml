@@ -9,9 +9,3 @@ main:
     url: /tags/
   - title: "consulting"
     url: /consulting/
-  - title: "angular training"
-    url: https://www.fullstackmaster.net/pro
-  - title: "sign in"
-    url: https://fullstackmaster.net/login
-
-
