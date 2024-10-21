@@ -1,8 +1,8 @@
 main:
   - title: "blog"
     url: /posts/
-  - title: "about"
-    url: /about/
+  - title: "fullstackmaster"
+    url: https://fullstackmaster.net
   - title: "youtube"
     url: https://youtube.com/fullstackmaster
   - title: "tags"

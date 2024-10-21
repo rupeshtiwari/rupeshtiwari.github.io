@@ -1,58 +1,33 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-future: false 
 title: Rupesh Tiwari - Founder of Fullstack Master
 email: rupesh.tiwari.info@gmail.com
 url: https://www.rupeshtiwari.com
 description: >-
-  Rupesh is a world renowned Senior Software Architect & Trainer. Expert on Service-Oriented Architecture and Domain-Driven Design & Web Development. Make your next project a success or save a late project.
+  Rupesh is a world-renowned Senior Software Architect & Trainer. Expert on Service-Oriented Architecture, Domain-Driven Design & Web Development. Make your next project a success or save a late project.
 twitter_username: rupeshtiwari_co
 github_username: rupeshtiwari
 minimal_mistakes_skin: default
 masthead_title: 'Rupesh Tiwari'
-subtitle: 'Sr. Solutions Architect, Author & Trainer'
+subtitle: 'Senior Solutions Architect, Author & Trainer'
 baseurl: ''
 og_image: '/assets/images/bio-photo.jpg'
 search: true
 repository: 'rupeshtiwari/rupeshtiwari.github.io'
+
 # Build settings
 markdown: kramdown
 remote_theme: 'mmistakes/minimal-mistakes@4.22.0'
 
-# Outputting
+# Outputting posts
 permalink: /:categories/:title/
-paginate: # amount of posts to show
+paginate: 10  # Shows 10 posts per page
 paginate_path: /page:num/
-#timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+future: false
 
 include:
   - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
@@ -63,6 +38,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# Author settings
 author:
   name: 'Rupesh Tiwari'
   avatar: '/assets/images/bio-photo.jpg'
@@ -70,7 +46,7 @@ author:
   links:
     - label: 'Email'
       icon: 'fas fa-fw fa-envelope-square'
-      url: 'rupesh.tiwari.info@gmail.com'
+      url: 'mailto:rupesh.tiwari.info@gmail.com'
     - label: 'Blogs'
       icon: 'fa fa-th-large'
       url: '/posts/'
@@ -96,6 +72,7 @@ author:
       icon: 'fas fa-graduation-cap'
       url: 'https://www.fullstackmaster.net'
 
+# Footer settings
 footer:
   links:
     - label: 'Blogs for Developers'
@@ -126,14 +103,14 @@ footer:
       icon: 'fas fa-graduation-cap'
       url: 'https://www.fullstackmaster.net'
 
-
+# Default settings for posts and pages
 defaults:
-  # _posts
+  # For posts
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
-      layout: single
+      layout: home  # Use the "home" layout to show posts on the homepage
       author_profile: true
       read_time: true
       comments: true
@@ -141,14 +118,15 @@ defaults:
       related: true
       toc: true
       toc_sticky: true
-  # _pages
+  # For pages
   - scope:
-      path: '_pages'
+      path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
 
+# Archive settings for categories and tags
 category_archive:
   type: liquid
   path: /categories/
@@ -156,13 +134,16 @@ tag_archive:
   type: liquid
   path: /tags/
 
+# Teaser and images
 teaser: '/assets/images/teaser.png'
 
+# Comments settings
 comments:
   provider: 'disqus'
   disqus:
     shortname: 'https-rupeshtiwari-github-io-1'
 
+# Analytics settings
 analytics:
   provider: 'google-gtag'
   google:
@@ -179,6 +160,7 @@ facebook:
   app_id: 421181512329379
   publisher: https://www.facebook.com/fullstackmaster1
 
+# Enable breadcrumbs
 breadcrumbs: true
 
 ## Custom props Personal Configs
@@ -206,5 +188,3 @@ jekyll_compose:
         - beginners
 feed:
   posts_limit: 30
-
-
