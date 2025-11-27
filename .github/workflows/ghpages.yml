@@ -1,31 +1,39 @@
 name: Build & Deploy Github Pages Everyday
+
 on:
-  #push:
-  #branches:
-  #- "gh_pages"
-  #schedule:
-    #- cron: "30 13 * * *" # 1:30 PM (UTC)/8:30 AM (EST) [Note: 0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday]
+  workflow_dispatch:
+  schedule:
+    - cron: "30 13 * * *"  # runs once daily
+
 jobs:
   build_every_day:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0 # Not needed with a .ruby-version file
-      - name: Build site at Docs dir # build site at docs folder which is my ghpages site location
+          ruby-version: 3.0
+
+      - name: Build site at Docs dir
         run: |
           rm -rf .bundle
           rm -rf Gemfile.lock
           bundle install --no-deployment
-          bundle exec jekyll build -d  docs
+          bundle exec jekyll build -d docs
+
       - name: copy cname
         run: cp CNAME docs
+
       - name: Commit files
         run: |
           git config --local user.email "RupeshTiwari+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git pull; git add .;git commit -m 'update blogs'; git push
+          git pull
+          git add .
+          git commit -m 'update blogs' || echo "No changes"
+          git push
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
@@ -35,24 +43,14 @@ jobs:
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
-          # Required mail server address:
           server_address: smtp.gmail.com
-          # Required mail server port:
           server_port: 465
-          # mail server username:
-          username: ${{secrets.MAIL_USERNAME}}
-          # Gmail Application device password: https://support.google.com/accounts/answer/185833?hl=en
-          password: ${{secrets.MAIL_PASSWORD}}
-          # Required mail subject:
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
           subject: Github Actions job result
-          # Required recipients' addresses:
           to: roopkt@gmail.com
-          # Required sender full name (address can be skipped):
-          from: Rupesh+GitHubActions@rupesh.com # <user@example.com>
-          # Optional whether this connection use TLS (default is true if server_port is 465)
+          from: Rupesh+GitHubActions@rupesh.com
           secure: true
-          # Optional plain body:
-          body: Build job of ${{github.repository}} completed successfully!
-          # Optional carbon copy recipients:
+          body: Build job of ${{ github.repository }} completed successfully!
           reply_to: roopkt@gmail.com
           priority: low
