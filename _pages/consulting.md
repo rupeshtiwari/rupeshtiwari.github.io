@@ -8,7 +8,6 @@ related: true
 header:
   image: "https://i.imgur.com/0wB35D8.png"
 ---
-
 <p>
   When you need an answer right away.
   When you can’t wait for someone to fly in.
@@ -16,20 +15,19 @@ header:
   and it’s only one phone call away.
 </p>
 
-<!-- Google Calendar Appointment Scheduling begin -->
+<div id="gcal-booking"></div>
+
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js"></script>
+
 <script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
+window.addEventListener('load', function() {
     calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
+        url: "https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true",
+        color: "#039BE5",
+        label: "Book an Appointment",
+        target: document.getElementById("gcal-booking")
     });
-  });
-})();
+});
 </script>
-<!-- end Google Calendar Appointment Scheduling -->
