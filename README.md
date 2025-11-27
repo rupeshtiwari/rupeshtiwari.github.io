@@ -143,6 +143,7 @@ To preview the site locally or during development, use the following commands:
 Use this simple Git script to pull the latest changes, commit your work, and push it back to the repository:
 
 ```bash
+bundle exec jekyll build
 git pull; git add .; git commit -m 'update blogs'; git push
 ```
 
