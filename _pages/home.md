@@ -39,7 +39,8 @@ header:
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>Rupesh Tiwari</h1>
-          <h2>I help students and professionals to become Full Stack Software Developer in less than a year.</h2>
+          <h2>I coach engineers, architects, and tech leaders in system design, cloud architecture, and FAANG interview mastery.
+</h2>
         </div>
       </div>
       <div class="text-center">
