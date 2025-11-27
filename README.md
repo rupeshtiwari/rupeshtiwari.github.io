@@ -23,6 +23,7 @@ This repository hosts my personal website and blog built using Jekyll and GitHub
     - [Writing a Draft](#writing-a-draft)
     - [Publishing a Draft](#publishing-a-draft)
   - [Local Development](#local-development)
+  - [Updating site](#updating-site)
   - [Git Workflow](#git-workflow)
   - [Platform-Specific Notes](#platform-specific-notes)
   - [Troubleshooting](#troubleshooting)
@@ -137,6 +138,10 @@ To preview the site locally or during development, use the following commands:
   ```
 
 ---
+
+## Updating site 
+
+1- If you update _config.yml then run `bundle exec jekyll build`
 
 ## Git Workflow
 

@@ -1,16 +1,16 @@
 # Welcome to Jekyll!
 
 # Site settings
-title: Rupesh Tiwari - Founder of Fullstack Master
+title: Rupesh Tiwari - Founder of FullStack Master
 email: rupesh.tiwari.info@gmail.com
 url: https://www.rupeshtiwari.com
 description: >-
-  Rupesh is a world-renowned Senior Software Architect & Trainer. Expert on Service-Oriented Architecture, Domain-Driven Design & Web Development. Make your next project a success or save a late project.
+  Rupesh is an architecture coach and the Founder of Fullstack Master. With 15+ years building distributed systems and leading cloud transformations, he helps engineers and leaders crack FAANG interviews in system design, architecture, and Amazon LP mastery.
 twitter_username: rupeshtiwari_co
 github_username: rupeshtiwari
 minimal_mistakes_skin: default
 masthead_title: 'Rupesh Tiwari'
-subtitle: 'Senior Solutions Architect, Author & Trainer'
+subtitle: 'Founder of Fullstack Master | Interview Coach'
 baseurl: ''
 og_image: '/assets/images/bio-photo.jpg'
 search: true
