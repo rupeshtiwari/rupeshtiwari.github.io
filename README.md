@@ -117,7 +117,8 @@ bundle exec jekyll publish _drafts/your-draft-title.md --date 2023-10-20
 ## Local Development
 
 To preview the site locally or during development, use the following commands:
-
+ http://127.0.0.1:4000
+ 
 - Serve the site locally:
   ```bash
   bundle exec jekyll serve
