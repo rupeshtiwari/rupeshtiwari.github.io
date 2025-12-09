@@ -31,10 +31,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/">
-          <a className="text-xl font-bold font-display tracking-tighter hover:opacity-80 transition-opacity">
-            rupesh<span className="text-primary">tiwari</span>
-          </a>
+        <Link href="/" className="text-xl font-bold font-display tracking-tighter hover:opacity-80 transition-opacity">
+          rupesh<span className="text-primary">tiwari</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -51,11 +49,11 @@ export default function Navbar() {
                 {link.name}
               </a>
             ) : (
-              <a href={link.href} className={`text-sm font-medium transition-colors ${
+              <Link key={link.name} href={link.href} className={`text-sm font-medium transition-colors ${
                   location === link.href ? "text-primary font-semibold" : "text-muted-foreground hover:text-primary"
                 }`}>
                   {link.name}
-              </a>
+              </Link>
             )
           ))}
           <Button variant="default" size="sm" asChild>
@@ -98,12 +96,12 @@ export default function Navbar() {
                     {link.name}
                   </a>
                 ) : (
-                  <a href={link.href}
+                  <Link key={link.name} href={link.href}
                       className="text-lg font-medium"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
-                  </a>
+                  </Link>
                 )
               ))}
               <Button className="w-full" asChild>

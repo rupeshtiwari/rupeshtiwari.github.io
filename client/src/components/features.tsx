@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import awsCert from "@assets/stock_images/aws_certified_soluti_c0bb2c85.jpg";
-import msCert from "@assets/stock_images/microsoft_certified__b19e0041.jpg";
-import isbCert from "@assets/stock_images/isb_institute_logo_c31af089.jpg";
+import awsCert from "@/assets/stock_images/aws_certified_soluti_c0bb2c85.jpg";
+import msCert from "@/assets/stock_images/microsoft_certified__b19e0041.jpg";
+import isbCert from "@/assets/stock_images/isb_institute_logo_c31af089.jpg";
 
 const skills = [
   { category: "Executive Leadership", items: ["Strategic Planning", "Digital Transformation", "Team Leadership", "Cloud Strategy", "Stakeholder Management"] },

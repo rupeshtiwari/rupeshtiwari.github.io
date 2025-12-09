@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
-import heroBg from "@assets/generated_images/abstract_blue_tech_data_wave_background.png";
-import rupeshImage from "@assets/rupesh-standing-suit_1765301333696.png";
+import heroBg from "@/assets/generated_images/abstract_blue_tech_data_wave_background.png";
+import rupeshImage from "@/assets/rupesh-standing-suit_1765301333696.png";
 
 export default function Hero() {
   return (

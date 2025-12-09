@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import awsLogo from "@assets/stock_images/aws_logo_b5cc0ad1.jpg";
-import googleLogo from "@assets/stock_images/google_logo_598fc73a.jpg";
-import metaLogo from "@assets/stock_images/meta_logo_e7f9c5e8.jpg";
-import appleLogo from "@assets/stock_images/apple_logo_af108140.jpg";
-import netflixLogo from "@assets/stock_images/netflix_logo_59996cca.jpg";
-import microsoftLogo from "@assets/stock_images/microsoft_logo_7b40bfd3.jpg";
+import awsLogo from "@/assets/stock_images/aws_logo_b5cc0ad1.jpg";
+import googleLogo from "@/assets/stock_images/google_logo_598fc73a.jpg";
+import metaLogo from "@/assets/stock_images/meta_logo_e7f9c5e8.jpg";
+import appleLogo from "@/assets/stock_images/apple_logo_af108140.jpg";
+import netflixLogo from "@/assets/stock_images/netflix_logo_59996cca.jpg";
+import microsoftLogo from "@/assets/stock_images/microsoft_logo_7b40bfd3.jpg";
 
 export default function TrustedCompanies() {
   return (
