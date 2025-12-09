@@ -18,11 +18,20 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { name: "About", href: "/#about", external: false },
-    { name: "Skills", href: "/#skills", external: false },
-    { name: "Blog", href: "/blog", external: false },
-    { name: "Courses", href: "https://www.fullstackmaster.net", external: true },
+    { name: "About", href: "#about", isHash: true },
+    { name: "Skills", href: "#skills", isHash: true },
+    { name: "Blog", href: "/blog", isHash: false },
+    { name: "Courses", href: "https://www.fullstackmaster.net", isHash: false, external: true },
   ];
+
+  const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <nav
@@ -45,6 +54,15 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                {link.name}
+              </a>
+            ) : link.isHash ? (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) => handleHashClick(e, link.href)}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
               >
                 {link.name}
               </a>
@@ -92,6 +110,15 @@ export default function Navbar() {
                     rel="noopener noreferrer"
                     className="text-lg font-medium"
                     onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ) : link.isHash ? (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={(e) => handleHashClick(e, link.href)}
+                    className="text-lg font-medium cursor-pointer"
                   >
                     {link.name}
                   </a>
