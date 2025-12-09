@@ -27,13 +27,12 @@ export default function Hero() {
             href="https://www.fullstackmaster.net"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/10 to-primary/10 border border-primary/20 hover:border-primary/40 text-primary text-sm font-medium mb-8 cursor-pointer transition-all hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]"
+            className="group inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/10 to-primary/10 border border-primary/20 hover:border-primary/40 text-primary text-sm font-medium mb-8 cursor-pointer transition-all hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]"
             whileHover={{ scale: 1.02 }}
           >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </span>
+            <div className="bg-white rounded-full p-1 shadow-sm">
+              <img src="/fsm-logo.ico" alt="FSM" className="w-4 h-4 object-contain" />
+            </div>
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent font-bold">
               Founder of FullstackMaster.net
             </span>

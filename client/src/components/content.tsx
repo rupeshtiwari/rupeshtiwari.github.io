@@ -4,23 +4,23 @@ import { Button } from "@/components/ui/button";
 
 const content = [
   {
-    type: "Course",
-    icon: Video,
-    title: "RxJS Unit Testing",
-    desc: "Master marble diagrams and unit testing strategies for reactive applications on Pluralsight.",
-    link: "https://www.pluralsight.com/authors/rupesh-tiwari"
-  },
-  {
-    type: "Community",
+    type: "Platform",
     icon: BookOpen,
     title: "Fullstack Master",
-    desc: "Comprehensive training platform helping developers become full-stack experts.",
+    desc: "Comprehensive training platform helping developers become full-stack experts and leaders.",
+    link: "https://www.fullstackmaster.net"
+  },
+  {
+    type: "Course",
+    icon: Video,
+    title: "System Design",
+    desc: "Master system design interviews and architectural patterns for scalable applications.",
     link: "https://www.fullstackmaster.net"
   },
   {
     type: "Blog",
     icon: ExternalLink,
-    title: "Medium Blog",
+    title: "Technical Insights",
     desc: "In-depth articles on Angular, Architecture, and Cloud patterns.",
     link: "https://medium.com/rupesh-tiwari"
   },
