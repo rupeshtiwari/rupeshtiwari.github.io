@@ -51,13 +51,11 @@ export default function Navbar() {
                 {link.name}
               </a>
             ) : (
-              <Link key={link.name} href={link.href}>
-                <a className={`text-sm font-medium transition-colors ${
+              <a href={link.href} className={`text-sm font-medium transition-colors ${
                   location === link.href ? "text-primary font-semibold" : "text-muted-foreground hover:text-primary"
                 }`}>
                   {link.name}
-                </a>
-              </Link>
+              </a>
             )
           ))}
           <Button variant="default" size="sm" asChild>
@@ -100,14 +98,12 @@ export default function Navbar() {
                     {link.name}
                   </a>
                 ) : (
-                  <Link key={link.name} href={link.href}>
-                    <a 
+                  <a href={link.href}
                       className="text-lg font-medium"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
-                    </a>
-                  </Link>
+                  </a>
                 )
               ))}
               <Button className="w-full" asChild>

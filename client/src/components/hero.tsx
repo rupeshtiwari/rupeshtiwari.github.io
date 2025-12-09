@@ -24,7 +24,7 @@ export default function Hero() {
         >
           {/* Enhanced Founder Badge */}
           <motion.a
-            href="https://replit.com/t/fullstack-master/repls/StudentCoachingHub"
+            href="https://www.fullstackmaster.net"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/10 to-primary/10 border border-primary/20 hover:border-primary/40 text-primary text-sm font-medium mb-8 cursor-pointer transition-all hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]"
