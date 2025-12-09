@@ -5,6 +5,8 @@ import Skills from "@/components/features";
 import Content from "@/components/content";
 import Footer from "@/components/footer";
 import PinnedProject from "@/components/pinned-project";
+import TrustedCompanies from "@/components/trusted-companies";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -12,8 +14,10 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <TrustedCompanies />
         <About />
         <Skills />
+        <Testimonials />
         <Content />
       </main>
       <Footer />
