@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
-import heroBg from "@/assets/generated_images/abstract_blue_tech_data_wave_background.png";
-import rupeshImage from "@/assets/rupesh-standing-suit_1765301333696.png";
 
 export default function Hero() {
+  const heroBg = "/assets/generated_images/abstract_blue_tech_data_wave_background.png";
+  const rupeshImage = "/assets/rupesh-standing-suit_1765301333696.png";
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background with overlay */}

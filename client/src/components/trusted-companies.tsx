@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
-import awsLogo from "@/assets/stock_images/aws_logo_b5cc0ad1.jpg";
-import googleLogo from "@/assets/stock_images/google_logo_598fc73a.jpg";
-import metaLogo from "@/assets/stock_images/meta_logo_e7f9c5e8.jpg";
-import appleLogo from "@/assets/stock_images/apple_logo_af108140.jpg";
-import netflixLogo from "@/assets/stock_images/netflix_logo_59996cca.jpg";
-import microsoftLogo from "@/assets/stock_images/microsoft_logo_7b40bfd3.jpg";
 
 export default function TrustedCompanies() {
+  const awsLogo = "/assets/stock_images/aws_logo_b5cc0ad1.jpg";
+  const googleLogo = "/assets/stock_images/google_logo_598fc73a.jpg";
+  const metaLogo = "/assets/stock_images/meta_logo_e7f9c5e8.jpg";
+  const appleLogo = "/assets/stock_images/apple_logo_af108140.jpg";
+  const netflixLogo = "/assets/stock_images/netflix_logo_59996cca.jpg";
+  const microsoftLogo = "/assets/stock_images/microsoft_logo_7b40bfd3.jpg";
+
   return (
     <section className="py-12 bg-background border-b border-border/40">
       <div className="container mx-auto px-6">
