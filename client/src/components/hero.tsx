@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import heroBg from "@assets/generated_images/abstract_blue_tech_data_wave_background.png";
-import rupeshImage from "@assets/rupesh_on_desk_1765301135195.png";
+import rupeshImage from "@assets/rupesh-standing-suit_1765301333696.png";
 
 export default function Hero() {
   return (
@@ -71,12 +71,14 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative hidden lg:block group perspective-1000"
         >
-          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 rotate-3 group-hover:rotate-0 transition-transform duration-700 ease-out">
-             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10 pointer-events-none" />
+          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 rotate-3 group-hover:rotate-0 transition-transform duration-700 ease-out bg-gradient-to-b from-gray-100 to-white">
+             {/* Subtle overlay to integrate B&W image with blue theme */}
+             <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 pointer-events-none" />
+             
              <img 
               src={rupeshImage} 
               alt="Rupesh Tiwari - Tech Strategy Leader" 
-              className="w-full h-auto object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700" 
+              className="w-full h-auto object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 grayscale contrast-110" 
              />
           </div>
           
