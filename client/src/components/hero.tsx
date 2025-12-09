@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cloud, Server, Code, GraduationCap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroBg from "@assets/generated_images/abstract_blue_tech_data_wave_background.png";
+import rupeshImage from "@assets/rupesh_on_desk_1765301135195.png";
 
 export default function Hero() {
   return (
@@ -60,34 +61,21 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative hidden lg:block"
         >
-          <div className="relative z-10 grid grid-cols-2 gap-4">
-            <Card icon={Cloud} title="Cloud Native" desc="AWS & Azure Expert" delay={0.3} />
-            <Card icon={Server} title="Microservices" desc="Scalable Systems" delay={0.4} className="mt-12" />
-            <Card icon={Code} title="Full Stack" desc="Angular & Node.js" delay={0.5} />
-            <Card icon={GraduationCap} title="Training" desc="Fullstack Master" delay={0.6} className="mt-12" />
+          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 rotate-3 hover:rotate-0 transition-transform duration-500">
+             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10" />
+             <img 
+              src={rupeshImage} 
+              alt="Rupesh Tiwari - Senior Solution Architect" 
+              className="w-full h-auto object-cover" 
+             />
           </div>
           
           {/* Decorative elements */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -z-10" />
+          <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary/10 rounded-full blur-xl z-0" />
+          <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-500/10 rounded-full blur-xl z-0" />
         </motion.div>
       </div>
     </section>
-  );
-}
-
-function Card({ icon: Icon, title, desc, delay, className = "" }: any) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
-      className={`p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 ${className}`}
-    >
-      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 text-primary">
-        <Icon className="w-6 h-6" />
-      </div>
-      <h3 className="text-lg font-bold mb-1">{title}</h3>
-      <p className="text-sm text-muted-foreground">{desc}</p>
-    </motion.div>
   );
 }
