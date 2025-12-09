@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
-import { Menu, X, Github, Linkedin, Youtube, ExternalLink } from "lucide-react";
+import { Link, useLocation } from "wouter";
+import { Menu, X, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,10 +18,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Content", href: "#content" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/#about", external: false },
+    { name: "Skills", href: "/#skills", external: false },
+    { name: "Blog", href: "/blog", external: false },
+    { name: "Courses", href: "https://www.fullstackmaster.net", external: true },
   ];
 
   return (
@@ -39,13 +40,25 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              {link.name}
-            </a>
+            link.external ? (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link key={link.name} href={link.href}>
+                <a className={`text-sm font-medium transition-colors ${
+                  location === link.href ? "text-primary font-semibold" : "text-muted-foreground hover:text-primary"
+                }`}>
+                  {link.name}
+                </a>
+              </Link>
+            )
           ))}
           <Button variant="default" size="sm" asChild>
             <a href="https://github.com/rupeshtiwari" target="_blank" rel="noopener noreferrer">
@@ -75,14 +88,27 @@ export default function Navbar() {
           >
             <div className="flex flex-col p-6 gap-4">
               {links.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-lg font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </a>
+                link.external ? (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <Link key={link.name} href={link.href}>
+                    <a 
+                      className="text-lg font-medium"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.name}
+                    </a>
+                  </Link>
+                )
               ))}
               <Button className="w-full" asChild>
                 <a href="https://github.com/rupeshtiwari" target="_blank" rel="noopener noreferrer">

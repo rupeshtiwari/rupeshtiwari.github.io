@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cloud, Server, Code } from "lucide-react";
+import { ArrowRight, Cloud, Server, Code, GraduationCap } from "lucide-react";
 import heroBg from "@assets/generated_images/abstract_blue_tech_data_wave_background.png";
 
 export default function Hero() {
@@ -26,30 +26,29 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Available for Consulting
+            Founder of FullstackMaster.net
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tight leading-[1.1] mb-6 text-foreground">
-            Architecting the <br />
+            Microsoft Certified <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
-              Cloud Future
+              Solution Architect
             </span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-            Helping enterprises build scalable, secure, and resilient cloud solutions. 
-            Specializing in AWS, Azure, and Full Stack Architecture.
+            AWS Global Senior Solution Architect & Professional Trainer. I help developers master Cloud, Angular, and Node.js through in-depth courses and content.
           </p>
           
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="h-12 px-8 text-base" asChild>
-              <a href="#contact">
-                Get in Touch <ArrowRight className="ml-2 w-4 h-4" />
+              <a href="https://www.fullstackmaster.net" target="_blank" rel="noopener noreferrer">
+                View Courses <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
             <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
-              <a href="#about">
-                View Portfolio
+              <a href="/blog">
+                Read Blog
               </a>
             </Button>
           </div>
@@ -62,10 +61,10 @@ export default function Hero() {
           className="relative hidden lg:block"
         >
           <div className="relative z-10 grid grid-cols-2 gap-4">
-            <Card icon={Cloud} title="Cloud Native" desc="AWS & Azure Architect" delay={0.3} />
+            <Card icon={Cloud} title="Cloud Native" desc="AWS & Azure Expert" delay={0.3} />
             <Card icon={Server} title="Microservices" desc="Scalable Systems" delay={0.4} className="mt-12" />
-            <Card icon={Code} title="Full Stack" desc="Angular, React, Node" delay={0.5} />
-            <Card icon={ArrowRight} title="Leadership" desc="Mentoring & Training" delay={0.6} className="mt-12" />
+            <Card icon={Code} title="Full Stack" desc="Angular & Node.js" delay={0.5} />
+            <Card icon={GraduationCap} title="Training" desc="Fullstack Master" delay={0.6} className="mt-12" />
           </div>
           
           {/* Decorative elements */}
