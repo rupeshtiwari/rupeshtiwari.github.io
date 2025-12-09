@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 
 export default function TrustedCompanies() {
-  const awsLogo = "/assets/stock_images/aws_logo_b5cc0ad1.jpg";
-  const googleLogo = "/assets/stock_images/google_logo_598fc73a.jpg";
-  const metaLogo = "/assets/stock_images/meta_logo_e7f9c5e8.jpg";
-  const appleLogo = "/assets/stock_images/apple_logo_af108140.jpg";
-  const netflixLogo = "/assets/stock_images/netflix_logo_59996cca.jpg";
-  const microsoftLogo = "/assets/stock_images/microsoft_logo_7b40bfd3.jpg";
+  const awsLogo = "/assets/aws-logo.png";
+  const googleLogo = "/assets/google-logo.png";
+  const metaLogo = "/assets/meta-logo.png";
+  const appleLogo = "/assets/apple-logo.png";
+  const netflixLogo = "/assets/netflix-logo.png";
+  const microsoftLogo = "/assets/microsoft-logo.png";
+  const amazonLogo = "/assets/amazon-logo.png";
 
   return (
     <section className="py-12 bg-background border-b border-border/40">
@@ -40,7 +41,7 @@ export default function TrustedCompanies() {
               { name: "Meta", logo: metaLogo },
               { name: "Apple", logo: appleLogo },
               { name: "Netflix", logo: netflixLogo },
-              { name: "Amazon", logo: awsLogo }, // Reusing AWS logo for Amazon
+              { name: "Amazon", logo: amazonLogo },
               { name: "Microsoft", logo: microsoftLogo }
             ].map((company, idx) => (
               <motion.div
