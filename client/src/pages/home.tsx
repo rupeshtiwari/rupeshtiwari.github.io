@@ -4,6 +4,7 @@ import About from "@/components/about";
 import Skills from "@/components/features";
 import Content from "@/components/content";
 import Footer from "@/components/footer";
+import PinnedProject from "@/components/pinned-project";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Content />
       </main>
       <Footer />
+      <PinnedProject />
     </div>
   );
 }

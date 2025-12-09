@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import heroBg from "@assets/generated_images/abstract_blue_tech_data_wave_background.png";
 import rupeshImage from "@assets/rupesh_on_desk_1765301135195.png";
 
@@ -22,32 +22,42 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+          {/* Enhanced Founder Badge */}
+          <motion.a
+            href="https://replit.com/t/fullstack-master/repls/StudentCoachingHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/10 to-primary/10 border border-primary/20 hover:border-primary/40 text-primary text-sm font-medium mb-8 cursor-pointer transition-all hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]"
+            whileHover={{ scale: 1.02 }}
+          >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Tech Strategy Leader @ AWS
-          </div>
+            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent font-bold">
+              Founder of FullstackMaster.net
+            </span>
+            <ExternalLink className="w-3 h-3 text-primary opacity-50 group-hover:opacity-100 transition-opacity" />
+          </motion.a>
           
           <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tight leading-[1.1] mb-6 text-foreground">
             Architecting the <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600 animate-gradient-x">
               Future of Tech
             </span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-            ISB CTO Scholar & Global Senior Solution Architect. I bridge the gap between strategic business goals and technical execution.
+            Tech Strategy Leader @ AWS & ISB CTO Scholar. Bridging the gap between strategic business goals and technical execution.
           </p>
           
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="h-12 px-8 text-base" asChild>
+            <Button size="lg" className="h-12 px-8 text-base shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow" asChild>
               <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer">
                 Connect on LinkedIn <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
+            <Button size="lg" variant="outline" className="h-12 px-8 text-base backdrop-blur-sm hover:bg-background/50" asChild>
               <a href="/blog">
                 Read Insights
               </a>
@@ -59,19 +69,19 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative hidden lg:block"
+          className="relative hidden lg:block group perspective-1000"
         >
-          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 rotate-3 hover:rotate-0 transition-transform duration-500">
-             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10" />
+          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 rotate-3 group-hover:rotate-0 transition-transform duration-700 ease-out">
+             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10 pointer-events-none" />
              <img 
               src={rupeshImage} 
               alt="Rupesh Tiwari - Tech Strategy Leader" 
-              className="w-full h-auto object-cover" 
+              className="w-full h-auto object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700" 
              />
           </div>
           
           {/* Decorative elements */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -z-10" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse" />
           <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary/10 rounded-full blur-xl z-0" />
           <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-500/10 rounded-full blur-xl z-0" />
         </motion.div>

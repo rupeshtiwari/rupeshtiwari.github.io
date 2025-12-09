@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import PinnedProject from "@/components/pinned-project";
 import { Calendar, User, ArrowRight } from "lucide-react";
-import { Link } from "wouter";
 
 const posts = [
   {
@@ -139,6 +139,7 @@ export default function Blog() {
       </main>
 
       <Footer />
+      <PinnedProject />
     </div>
   );
 }
