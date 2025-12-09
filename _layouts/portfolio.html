@@ -19,6 +19,7 @@
 </head>
 <body>
   
+  {% include portfolio-navbar.html %}
   {% include portfolio-hero.html %}
   {% include portfolio-trusted.html %}
   {% include portfolio-about.html %}
@@ -26,7 +27,9 @@
   {% include portfolio-content.html %}
   {% include portfolio-footer.html %}
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   <script>
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -35,6 +38,47 @@
           target.scrollIntoView({ behavior: 'smooth' });
         }
       });
+    });
+    
+    // Counter animation
+    function animateCounter(element) {
+      const target = parseInt(element.getAttribute('data-target')) || 0;
+      let current = 0;
+      const increment = target / 30;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        element.textContent = current.toFixed(0);
+      }, 30);
+    }
+    
+    // Intersection observer for animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in-up');
+          
+          // Animate counters
+          const counters = entry.target.querySelectorAll('[data-target]');
+          counters.forEach(counter => {
+            if (!counter.classList.contains('animated')) {
+              animateCounter(counter);
+              counter.classList.add('animated');
+            }
+          });
+          
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
     });
   </script>
   
