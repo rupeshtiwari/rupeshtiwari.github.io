@@ -27,29 +27,29 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Founder of FullstackMaster.net
+            Tech Strategy Leader @ AWS
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tight leading-[1.1] mb-6 text-foreground">
-            Microsoft Certified <br />
+            Architecting the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
-              Solution Architect
+              Future of Tech
             </span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-            AWS Global Senior Solution Architect & Professional Trainer. I help developers master Cloud, Angular, and Node.js through in-depth courses and content.
+            ISB CTO Scholar & Global Senior Solution Architect. I bridge the gap between strategic business goals and technical execution.
           </p>
           
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="h-12 px-8 text-base" asChild>
-              <a href="https://www.fullstackmaster.net" target="_blank" rel="noopener noreferrer">
-                View Courses <ArrowRight className="ml-2 w-4 h-4" />
+              <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer">
+                Connect on LinkedIn <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
             <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
               <a href="/blog">
-                Read Blog
+                Read Insights
               </a>
             </Button>
           </div>
@@ -65,7 +65,7 @@ export default function Hero() {
              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10" />
              <img 
               src={rupeshImage} 
-              alt="Rupesh Tiwari - Senior Solution Architect" 
+              alt="Rupesh Tiwari - Tech Strategy Leader" 
               className="w-full h-auto object-cover" 
              />
           </div>

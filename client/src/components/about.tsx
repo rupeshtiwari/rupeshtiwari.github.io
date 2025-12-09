@@ -12,18 +12,18 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">
-              Empowering Developers & <br />
-              <span className="text-primary">Transforming Enterprises</span>
+              Tech Strategy Leader & <br />
+              <span className="text-primary">Cloud Innovator</span>
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I am a <strong>Microsoft Certified Senior Software Architect</strong> and <strong>AWS Global Senior Solution Architect</strong> with over 17 years of industry experience.
+                I am a <strong>Tech Strategy Leader at AWS</strong> and an <strong>ISB CTO Scholar</strong>, driven by a passion for innovation and long-term architectural impact.
               </p>
               <p>
-                My passion lies in solving complex architectural challenges and making technology accessible to everyone. As the founder of <strong>FullstackMaster.net</strong>, I've helped thousands of developers bridge the gap between frontend and backend technologies.
+                With over 17 years of experience, I focus on thoughtful design and strategic business alignment rather than quick fixes. I have driven innovation in internal processes, system design approaches, and the adoption of cutting-edge frameworks.
               </p>
               <p>
-                I specialize in designing scalable, resilient systems for the financial services sector, leveraging the power of cloud-native technologies.
+                Beyond corporate leadership, I am deeply committed to mentoring. As the founder of <strong>FullstackMaster.net</strong>, I empower developers to bridge the gap between code and architecture.
               </p>
             </div>
           </motion.div>
@@ -35,14 +35,15 @@ export default function About() {
             className="space-y-6"
           >
             <div className="p-6 bg-card rounded-xl border border-border shadow-sm">
-              <h3 className="text-xl font-bold mb-4">Career Highlights</h3>
+              <h3 className="text-xl font-bold mb-4">Professional Milestones</h3>
               <ul className="space-y-3">
                 {[
-                  "AWS Global Senior Solution Architect",
+                  "Tech Strategy Leader @ AWS",
+                  "ISB CTO Scholar",
                   "Microsoft Certified Solution Architect",
-                  "Pluralsight Author & Technical Trainer",
+                  "Former Lead at Strasz Assessment Systems",
                   "Founder of FullstackMaster.net",
-                  "17+ Years of IT Experience"
+                  "Mentor & Pluralsight Author"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary mt-1 shrink-0" />
