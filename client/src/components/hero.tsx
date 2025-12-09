@@ -31,8 +31,8 @@ export default function Hero() {
             className="group inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/10 to-primary/10 border border-primary/20 hover:border-primary/40 text-primary text-sm font-medium mb-8 cursor-pointer transition-all hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="bg-white rounded-full p-1 shadow-sm">
-              <img src="/fsm-logo.ico" alt="FSM" className="w-4 h-4 object-contain" />
+            <div className="bg-white rounded-full p-1 shadow-sm overflow-hidden">
+              <img src="/assets/fsm-logo-square.jpeg" alt="FSM" className="w-4 h-4 object-cover" />
             </div>
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent font-bold">
               Founder of FullstackMaster.net
