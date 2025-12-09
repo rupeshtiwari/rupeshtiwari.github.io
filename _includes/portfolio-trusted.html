@@ -1,21 +1,17 @@
 <section class="portfolio-trusted">
   <div class="portfolio-container">
-    <div class="trusted-leadership">
-      <p class="section-label">Tech Strategy Leadership Experience</p>
-      <div class="aws-logo">
-        <img src="https://logo.clearbit.com/aws.amazon.com" alt="AWS">
-      </div>
+    <div class="section-header">
+      <span class="section-label">TRUSTED BY</span>
+      <h2 class="section-title">Coaching Leaders From Top Tech Giants</h2>
     </div>
-    
-    <div class="trusted-coaching">
-      <p class="section-label">Coaching Leaders From Top Tech Giants</p>
-      <div class="company-logos">
-        {% for company in site.data.portfolio.trusted_companies %}
-        <div class="company-logo">
-          <img src="{{ company.logo }}" alt="{{ company.name }}">
-        </div>
-        {% endfor %}
+
+    <div class="trusted-grid">
+      {% for company in site.data.portfolio.trusted_companies %}
+      <div class="company-item" style="animation-delay: {{ forloop.index0 | times: 0.08 }}s;">
+        <img src="{{ company.logo }}" alt="{{ company.name }}" loading="lazy" onerror="this.textContent='{{ company.name }}';" style="max-height: 50px;">
+        <div class="company-name">{{ company.name }}</div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
