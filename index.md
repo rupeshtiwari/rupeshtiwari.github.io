@@ -1,0 +1,5 @@
+---
+layout: portfolio
+title: Rupesh Tiwari - Tech Strategy Leader @ AWS
+description: Tech Strategy Leader @ AWS, ISB CTO Scholar, and Founder of FullstackMaster.net. Bridging strategic business goals with technical execution.
+---

@@ -1,0 +1,33 @@
+<section id="skills" class="portfolio-skills">
+  <div class="portfolio-container">
+    <div class="section-header">
+      <h2 class="section-title">{{ site.data.portfolio.skills.title }}</h2>
+      <p class="section-subtitle">{{ site.data.portfolio.skills.subtitle }}</p>
+    </div>
+    
+    <div class="skills-grid">
+      {% for category in site.data.portfolio.skills.categories %}
+      <div class="skill-card">
+        <h3 class="skill-category">{{ category.name }}</h3>
+        <div class="skill-badges">
+          {% for item in category.items %}
+          <span class="skill-badge">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="certifications-section">
+      <h3 class="cert-title">Global Certifications & Recognitions</h3>
+      <div class="cert-logos">
+        {% for cert in site.data.portfolio.skills.certifications %}
+        <div class="cert-item">
+          <img src="{{ cert.image }}" alt="{{ cert.name }}">
+          <span>{{ cert.name }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
