@@ -63,14 +63,11 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative hidden lg:block group perspective-1000"
         >
-          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 rotate-3 group-hover:rotate-0 transition-transform duration-700 ease-out bg-gradient-to-b from-gray-100 to-white">
-             {/* Subtle overlay to integrate B&W image with blue theme */}
-             <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 pointer-events-none" />
-             
+          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 group-hover:shadow-primary/20 transition-all duration-700 ease-out">
              <img 
               src={rupeshImage} 
               alt="Rupesh Tiwari - Tech Strategy Leader" 
-              className="w-full h-auto object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 grayscale contrast-110" 
+              className="w-full h-auto object-cover" 
              />
           </div>
           
