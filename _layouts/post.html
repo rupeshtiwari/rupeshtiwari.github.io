@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="blog-post">
+  <div class="portfolio-container">
+    <div class="post-header">
+      <a href="{{ '/blog/' | relative_url }}" class="back-link">← Back to Blog</a>
+      <div class="post-meta-top">
+        {% if page.categories %}
+        <span class="post-category">{{ page.categories | first }}</span>
+        {% endif %}
+        <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.excerpt %}
+      <p class="post-excerpt">{{ page.excerpt | strip_html }}</p>
+      {% endif %}
+    </div>
+    
+    <div class="post-content">
+      {{ content }}
+    </div>
+    
+    <div class="post-footer">
+      <div class="author-card">
+        <div class="author-avatar">RT</div>
+        <div class="author-info">
+          <h4>Rupesh Tiwari</h4>
+          <p>Tech Strategy Leader @ AWS | ISB CTO Scholar | Founder of FullstackMaster.net</p>
+        </div>
+      </div>
+      
+      <div class="post-share">
+        <span>Share this article:</span>
+        <div class="share-links">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="related-posts">
+      <h3>More Articles</h3>
+      <div class="related-grid">
+        {% assign related = site.posts | where_exp: "post", "post.url != page.url" | limit: 3 %}
+        {% for post in related %}
+        <a href="{{ post.url | relative_url }}" class="related-card">
+          <span class="related-category">{{ post.categories | first | default: "Tech" }}</span>
+          <h4>{{ post.title }}</h4>
+          <span class="related-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</article>

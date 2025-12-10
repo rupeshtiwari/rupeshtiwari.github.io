@@ -1,0 +1,87 @@
+---
+layout: default
+title: "Blog - Rupesh Tiwari"
+description: "300+ articles on system design, cloud architecture, and full-stack development"
+permalink: /blog/
+---
+
+<section class="blog-hero">
+  <div class="portfolio-container">
+    <span class="section-badge">Blog</span>
+    <h1>Technical <span class="gradient-text">Articles</span></h1>
+    <p>Explore 300+ articles on system design, cloud architecture, FAANG interview prep, and full-stack development</p>
+  </div>
+</section>
+
+<section class="blog-list">
+  <div class="portfolio-container">
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="all">All Posts</button>
+      <button class="filter-btn" data-filter="system-design">System Design</button>
+      <button class="filter-btn" data-filter="aws">AWS</button>
+      <button class="filter-btn" data-filter="angular">Angular</button>
+      <button class="filter-btn" data-filter="interview">Interview Prep</button>
+    </div>
+    
+    <div class="posts-grid">
+      {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}" class="post-card" data-category="{{ post.categories | first | downcase | default: 'tech' }}">
+        <div class="post-card-header">
+          <span class="post-category">{{ post.categories | first | default: "Tech" }}</span>
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        </div>
+        <h3 class="post-title">{{ post.title }}</h3>
+        {% if post.excerpt %}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        {% endif %}
+        <span class="post-link">Read Article →</span>
+      </a>
+      {% endfor %}
+    </div>
+    
+    {% if site.posts.size == 0 %}
+    <div class="no-posts">
+      <p>Blog posts coming soon! Check back later for 300+ articles on system design and architecture.</p>
+    </div>
+    {% endif %}
+    
+    <div class="blog-external">
+      <h3>More Content</h3>
+      <p>Find additional articles on these platforms:</p>
+      <div class="external-links">
+        <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="external-card">
+          <span class="external-icon">📝</span>
+          <span>Medium Stories</span>
+          <span class="external-arrow">→</span>
+        </a>
+        <a href="https://dev.to/rupeshtiwari" target="_blank" class="external-card">
+          <span class="external-icon">💻</span>
+          <span>Dev.to Articles</span>
+          <span class="external-arrow">→</span>
+        </a>
+        <a href="https://www.youtube.com/c/rupeshtiwari" target="_blank" class="external-card">
+          <span class="external-icon">🎬</span>
+          <span>YouTube Videos</span>
+          <span class="external-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const filter = this.dataset.filter;
+    document.querySelectorAll('.post-card').forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>

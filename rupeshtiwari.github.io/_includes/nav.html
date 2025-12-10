@@ -1,0 +1,33 @@
+<nav class="main-nav">
+  <div class="portfolio-container nav-container">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <span class="logo-icon">RT</span>
+      <span class="logo-text">Rupesh Tiwari</span>
+    </a>
+    <div class="nav-links">
+      <a href="{{ '/' | relative_url }}#about">About</a>
+      <a href="{{ '/' | relative_url }}#skills">Skills</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/' | relative_url }}#resources">Resources</a>
+      <a href="https://www.fullstackmaster.net" target="_blank" class="nav-cta">Start Learning</a>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="{{ '/' | relative_url }}#about">About</a>
+  <a href="{{ '/' | relative_url }}#skills">Skills</a>
+  <a href="{{ '/blog/' | relative_url }}">Blog</a>
+  <a href="{{ '/' | relative_url }}#resources">Resources</a>
+  <a href="https://www.fullstackmaster.net" target="_blank">Start Learning</a>
+</div>
+<script>
+function toggleMobileMenu() {
+  document.querySelector('.mobile-menu').classList.toggle('active');
+  document.querySelector('.mobile-menu-btn').classList.toggle('active');
+}
+</script>

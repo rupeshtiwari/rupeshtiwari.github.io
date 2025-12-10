@@ -1,0 +1,28 @@
+title: "Rupesh Tiwari"
+description: "Tech Strategy Leader at AWS | Founder of FullstackMaster.net"
+url: "https://www.rupeshtiwari.com"
+baseurl: ""
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: "portfolio"
+
+exclude:
+  - .github
+  - node_modules
+  - PUSH_NOW.sh
+  - PUSH_SCRIPT.sh
+  - .DS_Store
+  - "*.sh"
