@@ -575,6 +575,7 @@ body {
 
 .aws-badge { background: linear-gradient(135deg, #FF9900, #FF7300); color: white; }
 .azure-badge { background: linear-gradient(135deg, #0078D4, #00BCF2); color: white; }
+.gcp-badge { background: linear-gradient(135deg, #4285F4, #34A853); color: white; }
 .isb-badge { background: linear-gradient(135deg, #003366, #0066CC); color: white; }
 
 .cert-card h4 {
