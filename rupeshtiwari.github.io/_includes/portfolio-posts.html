@@ -1,0 +1,62 @@
+<section id="posts" class="portfolio-posts">
+  <div class="portfolio-container">
+    <div class="content-header">
+      <h2>Latest Blog Posts</h2>
+      <p class="section-subtitle">300+ articles on system design, full-stack development, and engineering leadership</p>
+    </div>
+    
+    <div class="posts-carousel">
+      <div class="carousel-track">
+        {% assign sorted_posts = site.posts | sort: 'date' | reverse | slice: 0, 12 %}
+        {% for post in sorted_posts %}
+        <article class="post-card">
+          <div class="post-date">
+            {% if post.date %}
+              <time datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%b %d, %Y" }}
+              </time>
+            {% endif %}
+          </div>
+          <h3 class="post-title">{{ post.title }}</h3>
+          {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+          {% else %}
+            <p class="post-excerpt">Read this article to learn more about this topic</p>
+          {% endif %}
+          <div class="post-meta">
+            {% if post.categories %}
+              <span class="post-category">{{ post.categories | first }}</span>
+            {% endif %}
+          </div>
+          <a href="{{ post.url | relative_url }}" class="post-link">
+            Read Article
+            <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+      
+      <div class="carousel-nav">
+        <button class="carousel-btn prev" onclick="scrollCarousel(-1)" title="Previous posts">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="carousel-btn next" onclick="scrollCarousel(1)" title="Next posts">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="posts-cta">
+      <a href="/posts/" class="btn btn-primary">View All 300+ Posts</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function scrollCarousel(direction) {
+  const track = document.querySelector('.carousel-track');
+  if (!track) return;
+  const scrollAmount = 340;
+  track.scrollBy({left: direction * scrollAmount, behavior: 'smooth'});
+}
+</script>

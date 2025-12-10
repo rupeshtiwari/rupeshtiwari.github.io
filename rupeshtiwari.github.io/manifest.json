@@ -1,0 +1,17 @@
+{
+  "name": "Rupesh Tiwari - Tech Strategy Leader & Interview Coach",
+  "short_name": "Rupesh Tiwari",
+  "description": "Tech Strategy Leader @ AWS, ISB CTO Scholar, Founder of FullStack Master.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0B0F1A",
+  "theme_color": "#8B5CF6",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
