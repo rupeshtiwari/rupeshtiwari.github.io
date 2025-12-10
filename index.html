@@ -1,184 +1,857 @@
----
-layout: default
-title: "Rupesh Tiwari - Tech Strategy Leader @ AWS"
-description: "Tech Strategy Leader at AWS | Founder of FullstackMaster.net | 300+ Technical Articles"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupesh Tiwari - Sr. Customer Solutions Manager @ AWS</title>
+  <meta name="description" content="CTO-in-the-Making | Tech Strategy Leader @ AWS | ISB CTO Scholar">
+  
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --primary: #1a1a2e;
+      --secondary: #16213e;
+      --accent: #0f3460;
+      --highlight: #e94560;
+      --text: #333;
+      --text-light: #666;
+      --bg: #fff;
+      --bg-light: #f8f9fa;
+      --border: #e9ecef;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--bg);
+    }
+    
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover { color: var(--primary); }
+    
+    .nav-cta {
+      background: var(--primary) !important;
+      color: #fff !important;
+      padding: 0.6rem 1.5rem !important;
+      border-radius: 6px;
+    }
+    
+    .nav-cta:hover { background: var(--secondary) !important; }
+    
+    /* Hero */
+    .hero {
+      padding: 10rem 2rem 6rem;
+      background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+    }
+    
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    
+    .hero-badge {
+      display: inline-block;
+      background: #e8f4f8;
+      color: #0369a1;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero h1 span { color: var(--highlight); }
+    
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s;
+    }
+    
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    
+    .btn-primary:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(26,26,46,0.2);
+    }
+    
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+    }
+    
+    .stat h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    
+    .stat p {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    
+    /* Profile Card */
+    .profile-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 3rem;
+      text-align: center;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+    }
+    
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 4px solid var(--bg-light);
+    }
+    
+    .profile-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .profile-card .title {
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+    
+    .badges {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .badge {
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    
+    .badge-aws { background: #fff3e0; color: #e65100; }
+    .badge-gcp { background: #e3f2fd; color: #1565c0; }
+    .badge-isb { background: #fce4ec; color: #c2185b; }
+    
+    /* Section Styles */
+    section {
+      padding: 5rem 2rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .section-header p {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* About */
+    .about {
+      background: var(--bg-light);
+    }
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    
+    .about-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    .about-content p {
+      color: var(--text-light);
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+    
+    .about-content strong { color: var(--primary); }
+    
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    
+    .highlight-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+    
+    .highlight-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+    
+    .highlight-card .icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .highlight-card h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      color: var(--primary);
+    }
+    
+    .highlight-card p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+    
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    
+    .skill-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+    
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      border-color: var(--primary);
+    }
+    
+    .skill-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .skill-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    
+    .tag {
+      background: var(--bg-light);
+      color: var(--text-light);
+      padding: 0.35rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+    }
+    
+    /* Certifications */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .cert-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+    
+    .cert-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+    
+    .cert-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+    
+    .cert-icon.aws { background: linear-gradient(135deg, #ff9900, #ff7300); }
+    .cert-icon.gcp { background: linear-gradient(135deg, #4285f4, #34a853); }
+    .cert-icon.azure { background: linear-gradient(135deg, #0078d4, #00bcf2); }
+    .cert-icon.isb { background: linear-gradient(135deg, #1a1a2e, #16213e); }
+    
+    .cert-card h4 {
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+      color: var(--primary);
+    }
+    
+    .cert-card p {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+    
+    /* Resources */
+    .resources {
+      background: var(--bg-light);
+    }
+    
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .resource-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.3s;
+    }
+    
+    .resource-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      border-color: var(--primary);
+    }
+    
+    .resource-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .resource-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    
+    .resource-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+    
+    .resource-card .link {
+      color: var(--highlight);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: #fff;
+      padding: 4rem 2rem 2rem;
+    }
+    
+    .footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    
+    .footer-brand h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-brand p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    
+    .social-links a:hover { background: rgba(255,255,255,0.2); }
+    
+    .footer-section h4 {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-section ul {
+      list-style: none;
+    }
+    
+    .footer-section li {
+      margin-bottom: 0.75rem;
+    }
+    
+    .footer-section a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    
+    .footer-section a:hover { color: #fff; }
+    
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .skills-grid, .resources-grid { grid-template-columns: repeat(2, 1fr); }
+      .certs-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero-container, .about-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-stats { flex-wrap: wrap; gap: 2rem; }
+      .skills-grid, .resources-grid { grid-template-columns: 1fr; }
+      .certs-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .profile-card { display: none; }
+    }
+  </style>
+</head>
+<body>
 
-<section class="portfolio-hero">
-  <div class="portfolio-container">
+<nav>
+  <div class="nav-container">
+    <a href="#" class="logo">Rupesh Tiwari</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#resources">Resources</a>
+      <a href="https://www.linkedin.com/in/rupesh-tiwari" target="_blank">LinkedIn</a>
+      <a href="https://www.fullstackmaster.net" target="_blank" class="nav-cta">Start Learning</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-container">
     <div class="hero-content">
-      <span class="hero-badge">🚀 CTO-in-the-Making</span>
-      <h1 class="hero-title">
-        <span class="gradient-text">Sr. Customer Solutions Manager</span>
-        <br>AWS Industries
-      </h1>
+      <span class="hero-badge">CTO-in-the-Making</span>
+      <h1>Sr. Customer Solutions Manager <span>@ AWS Industries</span></h1>
       <p class="hero-subtitle">ISB CTO Scholar | Ex-SDE, Ex-SA | Driving $100M+ cloud transformations for Fortune 500 clients like Salesforce & Intuit</p>
+      
       <div class="hero-buttons">
-        <a href="https://www.fullstackmaster.net" target="_blank" rel="noopener" class="btn btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          Start Learning
-        </a>
-        <a href="https://www.linkedin.com/in/rupesh-tiwari" target="_blank" rel="noopener" class="btn btn-outline">Connect on LinkedIn</a>
+        <a href="https://www.fullstackmaster.net" target="_blank" class="btn btn-primary">Start Learning</a>
+        <a href="https://www.linkedin.com/in/rupesh-tiwari" target="_blank" class="btn btn-outline">Connect on LinkedIn</a>
       </div>
+      
       <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="hero-stat-number">20+</span>
-          <span class="hero-stat-label">Years Experience</span>
+        <div class="stat">
+          <h3>20+</h3>
+          <p>Years Experience</p>
         </div>
-        <div class="hero-stat">
-          <span class="hero-stat-number">$100M+</span>
-          <span class="hero-stat-label">Business Impact</span>
+        <div class="stat">
+          <h3>$100M+</h3>
+          <p>Business Impact</p>
         </div>
-        <div class="hero-stat">
-          <span class="hero-stat-number">300+</span>
-          <span class="hero-stat-label">Blog Articles</span>
+        <div class="stat">
+          <h3>300+</h3>
+          <p>Blog Articles</p>
         </div>
       </div>
     </div>
     
-    <div class="hero-image">
-      <div class="profile-card">
-        <div class="profile-avatar">
-          <img src="{{ '/assets/images/rupesh-headshot.png' | relative_url }}" alt="Rupesh Tiwari" class="avatar-photo">
-        </div>
-        <h3>Rupesh Tiwari</h3>
-        <p>Sr. CSM @ AWS Industries</p>
-        <div class="profile-badges">
-          <span class="profile-badge aws">AWS ML Specialty</span>
-          <span class="profile-badge azure">GCP Architect</span>
-          <span class="profile-badge isb">ISB CTO</span>
-        </div>
+    <div class="profile-card">
+      <img src="assets/images/rupesh-headshot.png" alt="Rupesh Tiwari" class="profile-img">
+      <h3>Rupesh Tiwari</h3>
+      <p class="title">Sr. CSM @ AWS Industries</p>
+      <div class="badges">
+        <span class="badge badge-aws">AWS ML Specialty</span>
+        <span class="badge badge-gcp">GCP Architect</span>
+        <span class="badge badge-isb">ISB CTO</span>
       </div>
-      <div class="hero-glow"></div>
     </div>
   </div>
 </section>
 
-<section class="portfolio-trusted">
-  <div class="portfolio-container">
-    <div class="trusted-header">
-      <p>Trusted by Tech Leaders From Global Companies</p>
-    </div>
-    <div class="company-logos">
-      <div class="logo-item"><svg viewBox="0 0 100 60" width="100" height="60"><text x="50" y="40" text-anchor="middle" fill="#FF9900" font-size="16" font-weight="bold" font-family="Arial">amazon</text><text x="50" y="55" text-anchor="middle" fill="#FF9900" font-size="10" font-family="Arial">web services</text></svg></div>
-      <div class="logo-item"><svg viewBox="0 0 100 60" width="100" height="60"><text x="50" y="40" text-anchor="middle" fill="#00A4EF" font-size="20" font-weight="bold" font-family="Arial">Microsoft</text></svg></div>
-      <div class="logo-item"><svg viewBox="0 0 100 60" width="100" height="60"><text x="50" y="40" text-anchor="middle" fill="#4285F4" font-size="20" font-weight="bold" font-family="Arial">Google</text></svg></div>
-      <div class="logo-item"><svg viewBox="0 0 100 60" width="100" height="60"><text x="50" y="40" text-anchor="middle" fill="#003366" font-size="20" font-weight="bold" font-family="Arial">ISB</text></svg></div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="portfolio-about">
-  <div class="portfolio-container">
+<section id="about" class="about">
+  <div class="container">
     <div class="about-grid">
-      <div class="about-text">
-        <span class="section-badge">About Me</span>
-        <h2>From SDE to SA to <span class="gradient-text">Tech Strategy Leader</span></h2>
+      <div class="about-content">
+        <h2>From SDE to SA to Tech Strategy Leader</h2>
         <p>From building products as a Software Engineer to designing solutions as a Solutions Architect to now driving cloud strategy as a Sr. Customer Solutions Leader — I've walked the full tech-business path.</p>
-        <p>At <strong>AWS</strong>, I lead digital transformation for Fortune 500 customers like <strong>Salesforce</strong> and <strong>Intuit</strong>, aligning AI, cloud, and platform strategy with $100M+ business outcomes. I work closely with CxOs to modernize their technology stack and accelerate innovation at scale.</p>
+        <p>At <strong>AWS</strong>, I lead digital transformation for Fortune 500 customers like <strong>Salesforce</strong> and <strong>Intuit</strong>, aligning AI, cloud, and platform strategy with $100M+ business outcomes.</p>
         <p>Currently enrolled in <strong>ISB's Chief Technology Officer (CTO) program</strong> to deepen executive leadership, org design, and P&L ownership. As the Founder of <strong>FullstackMaster.net</strong>, I help engineers master system design and crack FAANG interviews.</p>
-        <div class="about-cta">
-          <a href="https://www.fullstackmaster.net" class="btn btn-primary">Explore Courses</a>
-          <a href="{{ '/blog/' | relative_url }}" class="btn btn-outline">Read My Blog</a>
+        
+        <div class="hero-buttons" style="margin-top: 2rem;">
+          <a href="https://www.fullstackmaster.net" target="_blank" class="btn btn-primary">Explore Courses</a>
+          <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="btn btn-outline">Read Blog</a>
         </div>
       </div>
-      <div class="about-highlights">
-        <div class="highlight-card"><div class="highlight-icon">🏢</div><h4>Fortune 500 Clients</h4><p>Salesforce, Intuit & more</p></div>
-        <div class="highlight-card"><div class="highlight-icon">🎓</div><h4>ISB CTO Scholar</h4><p>Executive leadership program</p></div>
-        <div class="highlight-card"><div class="highlight-icon">☁️</div><h4>Multi-Cloud Expert</h4><p>AWS, GCP, Azure certified</p></div>
-        <div class="highlight-card"><div class="highlight-icon">🚀</div><h4>20+ Years</h4><p>Architecture & cloud systems</p></div>
+      
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="icon">🏢</div>
+          <h4>Fortune 500 Clients</h4>
+          <p>Salesforce, Intuit & more</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">🎓</div>
+          <h4>ISB CTO Scholar</h4>
+          <p>Executive leadership program</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">☁️</div>
+          <h4>Multi-Cloud Expert</h4>
+          <p>AWS, GCP, Azure certified</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">🚀</div>
+          <h4>20+ Years</h4>
+          <p>Architecture & cloud systems</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="portfolio-skills">
-  <div class="portfolio-container">
+<section id="skills">
+  <div class="container">
     <div class="section-header">
-      <span class="section-badge">Expertise</span>
-      <h2>Technical <span class="gradient-text">Skills</span></h2>
+      <h2>Technical Expertise</h2>
       <p>Proficient in modern cloud architecture, microservices, and full-stack development</p>
     </div>
     
     <div class="skills-grid">
-      <div class="skill-category"><div class="skill-icon">☁️</div><h3>Cloud Platforms</h3><div class="skill-tags"><span class="skill-tag">AWS</span><span class="skill-tag">Azure</span><span class="skill-tag">GCP</span><span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span></div></div>
-      <div class="skill-category"><div class="skill-icon">⚙️</div><h3>Backend</h3><div class="skill-tags"><span class="skill-tag">Java</span><span class="skill-tag">Node.js</span><span class="skill-tag">Python</span><span class="skill-tag">Go</span><span class="skill-tag">C#</span></div></div>
-      <div class="skill-category"><div class="skill-icon">🎨</div><h3>Frontend</h3><div class="skill-tags"><span class="skill-tag">Angular</span><span class="skill-tag">React</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Vue.js</span><span class="skill-tag">JavaScript</span></div></div>
-      <div class="skill-category"><div class="skill-icon">🏗️</div><h3>Architecture</h3><div class="skill-tags"><span class="skill-tag">Microservices</span><span class="skill-tag">System Design</span><span class="skill-tag">API Design</span><span class="skill-tag">DevOps</span></div></div>
+      <div class="skill-card">
+        <div class="icon">☁️</div>
+        <h3>Cloud Platforms</h3>
+        <div class="tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+          <span class="tag">GCP</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="icon">⚙️</div>
+        <h3>Backend</h3>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Python</span>
+          <span class="tag">Go</span>
+          <span class="tag">C#</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="icon">🎨</div>
+        <h3>Frontend</h3>
+        <div class="tags">
+          <span class="tag">Angular</span>
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Vue.js</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="icon">🏗️</div>
+        <h3>Architecture</h3>
+        <div class="tags">
+          <span class="tag">Microservices</span>
+          <span class="tag">System Design</span>
+          <span class="tag">DevOps</span>
+        </div>
+      </div>
     </div>
     
-    <div class="certifications-section">
-      <h3>Professional Certifications</h3>
-      <div class="certifications-grid">
-        <div class="cert-card"><div class="cert-badge aws-badge"><span>AWS</span></div><h4>Machine Learning</h4><p>Specialty</p></div>
-        <div class="cert-card"><div class="cert-badge aws-badge"><span>AWS</span></div><h4>Data Analytics</h4><p>Specialty</p></div>
-        <div class="cert-card"><div class="cert-badge gcp-badge"><span>GCP</span></div><h4>Cloud Architect</h4><p>Professional</p></div>
-        <div class="cert-card"><div class="cert-badge azure-badge"><span>Azure</span></div><h4>Fundamentals</h4><p>Certified</p></div>
-        <div class="cert-card"><div class="cert-badge isb-badge"><span>ISB</span></div><h4>CTO Program</h4><p>Executive</p></div>
+    <div class="section-header">
+      <h2>Professional Certifications</h2>
+    </div>
+    
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-icon aws">AWS</div>
+        <h4>Machine Learning</h4>
+        <p>Specialty</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon aws">AWS</div>
+        <h4>Data Analytics</h4>
+        <p>Specialty</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon gcp">GCP</div>
+        <h4>Cloud Architect</h4>
+        <p>Professional</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon azure">Azure</div>
+        <h4>Fundamentals</h4>
+        <p>Certified</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon isb">ISB</div>
+        <h4>CTO Program</h4>
+        <p>Executive</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="blog" class="portfolio-blog">
-  <div class="portfolio-container">
+<section id="resources" class="resources">
+  <div class="container">
     <div class="section-header">
-      <span class="section-badge">Blog</span>
-      <h2>Latest <span class="gradient-text">Articles</span></h2>
-      <p>Explore 300+ articles on system design, cloud architecture, and full-stack development</p>
+      <h2>Learning Resources</h2>
+      <p>Explore my courses, articles, and videos</p>
     </div>
     
-    <div class="blog-grid">
-      {% assign recent_posts = site.posts | limit: 4 %}
-      {% for post in recent_posts %}
-      <a href="{{ post.url | relative_url }}" class="blog-card {% if forloop.first %}featured{% endif %}">
-        <div class="blog-category">{{ post.categories | first | default: "Tech" }}</div>
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-        <div class="blog-meta"><span>📖 {{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span><span>→</span></div>
+    <div class="resources-grid">
+      <a href="https://www.fullstackmaster.net" target="_blank" class="resource-card">
+        <div class="icon">🎓</div>
+        <h3>FullStack Master</h3>
+        <p>Master Angular, MEAN stack, and full-stack development</p>
+        <span class="link">Start Learning →</span>
       </a>
-      {% endfor %}
-      
-      {% if site.posts.size == 0 %}
-      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card featured">
-        <div class="blog-category">System Design</div>
-        <h3>Mastering Distributed Systems: A Complete Guide</h3>
-        <p>Learn the fundamental concepts of distributed systems, including CAP theorem, consistency models, and architectural patterns.</p>
-        <div class="blog-meta"><span>📖 15 min read</span><span>→ Read on Medium</span></div>
+      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="resource-card">
+        <div class="icon">📝</div>
+        <h3>Medium Stories</h3>
+        <p>In-depth articles on system design and architecture</p>
+        <span class="link">Read Articles →</span>
       </a>
-      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card">
-        <div class="blog-category">AWS</div>
-        <h3>AWS Architecture Best Practices</h3>
-        <p>Build scalable, cost-effective infrastructure on AWS.</p>
-        <div class="blog-meta"><span>📖 10 min read</span><span>→</span></div>
+      <a href="https://www.youtube.com/c/rupeshtiwari" target="_blank" class="resource-card">
+        <div class="icon">🎬</div>
+        <h3>YouTube Channel</h3>
+        <p>Video tutorials on cloud architecture and interviews</p>
+        <span class="link">Watch Videos →</span>
       </a>
-      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card">
-        <div class="blog-category">Interview</div>
-        <h3>FAANG System Design Questions</h3>
-        <p>Top system design questions asked at top tech companies.</p>
-        <div class="blog-meta"><span>📖 12 min read</span><span>→</span></div>
+      <a href="https://github.com/rupeshtiwari" target="_blank" class="resource-card">
+        <div class="icon">💻</div>
+        <h3>GitHub Projects</h3>
+        <p>Open source projects and code samples</p>
+        <span class="link">View Projects →</span>
       </a>
-      {% endif %}
-    </div>
-    
-    <div class="blog-cta">
-      <a href="{{ '/blog/' | relative_url }}" class="btn btn-primary">View All Articles</a>
     </div>
   </div>
 </section>
 
-<section id="resources" class="portfolio-content">
-  <div class="portfolio-container">
-    <div class="section-header">
-      <span class="section-badge">Resources</span>
-      <h2>Learning <span class="gradient-text">Platforms</span></h2>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Rupesh Tiwari</h3>
+      <p>Sr. Customer Solutions Manager @ AWS Industries. ISB CTO Scholar. Founder of FullstackMaster.net. Helping engineers master system design and crack FAANG interviews.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/rupesh-tiwari" target="_blank" title="LinkedIn">in</a>
+        <a href="https://github.com/rupeshtiwari" target="_blank" title="GitHub">gh</a>
+        <a href="https://twitter.com/rupeshtiwari_co" target="_blank" title="Twitter">X</a>
+        <a href="https://www.youtube.com/c/rupeshtiwari" target="_blank" title="YouTube">yt</a>
+      </div>
     </div>
     
-    <div class="content-grid">
-      <a href="https://www.fullstackmaster.net" target="_blank" class="content-card"><div class="card-icon">🎓</div><h3>FullStack Master</h3><p>Master Angular, MEAN stack, and full-stack development with hands-on training courses</p><span class="card-link">Start Learning →</span></a>
-      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="content-card"><div class="card-icon">📝</div><h3>Medium Stories</h3><p>In-depth articles on system design, architecture, and software engineering</p><span class="card-link">Read Articles →</span></a>
-      <a href="https://www.youtube.com/c/rupeshtiwari" target="_blank" class="content-card"><div class="card-icon">🎬</div><h3>YouTube Channel</h3><p>Video tutorials on web development, cloud architecture, and interview prep</p><span class="card-link">Watch Videos →</span></a>
-      <a href="https://github.com/rupeshtiwari" target="_blank" class="content-card"><div class="card-icon">💻</div><h3>GitHub Projects</h3><p>Open source projects, code samples, and learning resources</p><span class="card-link">View Projects →</span></a>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Learning</h4>
+      <ul>
+        <li><a href="https://www.fullstackmaster.net" target="_blank">FullStack Master</a></li>
+        <li><a href="https://rupesh-tiwari.medium.com/" target="_blank">Medium</a></li>
+        <li><a href="https://www.youtube.com/c/rupeshtiwari" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:rupesh.tiwari.info@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com/in/rupesh-tiwari" target="_blank">LinkedIn</a></li>
+        <li><a href="https://twitter.com/rupeshtiwari_co" target="_blank">Twitter</a></li>
+      </ul>
     </div>
   </div>
-</section>
+  
+  <div class="footer-bottom">
+    <p>© 2024 Rupesh Tiwari. All rights reserved.</p>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5eff6dee223d045fcb7b449a/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+
+</body>
+</html>
