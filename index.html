@@ -66,7 +66,7 @@
     
     .nav-links {
       display: flex;
-      gap: 2.5rem;
+      gap: 2rem;
       align-items: center;
     }
     
@@ -87,7 +87,20 @@
       border-radius: 6px;
     }
     
-    .nav-cta:hover { background: var(--secondary) !important; }
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .mobile-menu-btn span {
+      width: 25px;
+      height: 2px;
+      background: var(--primary);
+    }
     
     /* Hero */
     .hero {
@@ -237,18 +250,12 @@
     .badge-isb { background: #fce4ec; color: #c2185b; }
     
     /* Section Styles */
-    section {
-      padding: 5rem 2rem;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    section { padding: 5rem 2rem; }
+    .container { max-width: 1200px; margin: 0 auto; }
     
     .section-header {
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
     
     .section-header h2 {
@@ -266,9 +273,7 @@
     }
     
     /* About */
-    .about {
-      background: var(--bg-light);
-    }
+    .about { background: var(--bg-light); }
     
     .about-grid {
       display: grid;
@@ -313,21 +318,9 @@
       box-shadow: 0 15px 40px rgba(0,0,0,0.08);
     }
     
-    .highlight-card .icon {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
-    }
-    
-    .highlight-card h4 {
-      font-size: 1rem;
-      margin-bottom: 0.25rem;
-      color: var(--primary);
-    }
-    
-    .highlight-card p {
-      font-size: 0.85rem;
-      color: var(--text-light);
-    }
+    .highlight-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .highlight-card h4 { font-size: 1rem; margin-bottom: 0.25rem; color: var(--primary); }
+    .highlight-card p { font-size: 0.85rem; color: var(--text-light); }
     
     /* Skills */
     .skills-grid {
@@ -352,31 +345,11 @@
       border-color: var(--primary);
     }
     
-    .skill-card .icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
+    .skill-card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .skill-card h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--primary); }
     
-    .skill-card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-      color: var(--primary);
-    }
-    
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-    }
-    
-    .tag {
-      background: var(--bg-light);
-      color: var(--text-light);
-      padding: 0.35rem 0.75rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-    }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .tag { background: var(--bg-light); color: var(--text-light); padding: 0.35rem 0.75rem; border-radius: 50px; font-size: 0.8rem; }
     
     /* Certifications */
     .certs-grid {
@@ -417,22 +390,86 @@
     .cert-icon.azure { background: linear-gradient(135deg, #0078d4, #00bcf2); }
     .cert-icon.isb { background: linear-gradient(135deg, #1a1a2e, #16213e); }
     
-    .cert-card h4 {
-      font-size: 0.9rem;
-      margin-bottom: 0.25rem;
-      color: var(--primary);
+    .cert-card h4 { font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--primary); }
+    .cert-card p { font-size: 0.8rem; color: var(--text-light); }
+    
+    /* Blog Section */
+    .blog { background: var(--bg-light); }
+    
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
     
-    .cert-card p {
-      font-size: 0.8rem;
-      color: var(--text-light);
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+      text-decoration: none;
+      color: inherit;
     }
+    
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+    
+    .blog-card.featured {
+      grid-column: span 2;
+    }
+    
+    .blog-card-content {
+      padding: 2rem;
+    }
+    
+    .blog-category {
+      display: inline-block;
+      background: #e8f4f8;
+      color: #0369a1;
+      padding: 0.3rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+    
+    .blog-card.featured h3 { font-size: 1.6rem; }
+    
+    .blog-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-light);
+      font-size: 0.85rem;
+    }
+    
+    .blog-link {
+      color: var(--highlight);
+      font-weight: 600;
+    }
+    
+    .blog-cta { text-align: center; margin-top: 2rem; }
     
     /* Resources */
-    .resources {
-      background: var(--bg-light);
-    }
-    
     .resources-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -455,28 +492,10 @@
       border-color: var(--primary);
     }
     
-    .resource-card .icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .resource-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: var(--primary);
-    }
-    
-    .resource-card p {
-      font-size: 0.9rem;
-      color: var(--text-light);
-      margin-bottom: 1rem;
-    }
-    
-    .resource-card .link {
-      color: var(--highlight);
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
+    .resource-card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .resource-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--primary); }
+    .resource-card p { font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem; }
+    .resource-card .link { color: var(--highlight); font-weight: 600; font-size: 0.9rem; }
     
     /* Footer */
     footer {
@@ -507,10 +526,7 @@
       margin-bottom: 1.5rem;
     }
     
-    .social-links {
-      display: flex;
-      gap: 1rem;
-    }
+    .social-links { display: flex; gap: 1rem; }
     
     .social-links a {
       width: 40px;
@@ -522,31 +538,17 @@
       justify-content: center;
       color: #fff;
       text-decoration: none;
+      font-weight: 600;
+      font-size: 0.8rem;
       transition: background 0.3s;
     }
     
     .social-links a:hover { background: rgba(255,255,255,0.2); }
     
-    .footer-section h4 {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .footer-section ul {
-      list-style: none;
-    }
-    
-    .footer-section li {
-      margin-bottom: 0.75rem;
-    }
-    
-    .footer-section a {
-      color: rgba(255,255,255,0.7);
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.3s;
-    }
-    
+    .footer-section h4 { font-size: 1rem; margin-bottom: 1.5rem; }
+    .footer-section ul { list-style: none; }
+    .footer-section li { margin-bottom: 0.75rem; }
+    .footer-section a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
     .footer-section a:hover { color: #fff; }
     
     .footer-bottom {
@@ -563,10 +565,13 @@
     @media (max-width: 1024px) {
       .skills-grid, .resources-grid { grid-template-columns: repeat(2, 1fr); }
       .certs-grid { grid-template-columns: repeat(3, 1fr); }
+      .blog-grid { grid-template-columns: 1fr; }
+      .blog-card.featured { grid-column: span 1; }
     }
     
     @media (max-width: 768px) {
       .nav-links { display: none; }
+      .mobile-menu-btn { display: flex; }
       .hero-container, .about-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.5rem; }
       .hero-stats { flex-wrap: wrap; gap: 2rem; }
@@ -585,10 +590,14 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#blog">Blog</a>
       <a href="#resources">Resources</a>
       <a href="https://www.linkedin.com/in/rupesh-tiwari" target="_blank">LinkedIn</a>
       <a href="https://www.fullstackmaster.net" target="_blank" class="nav-cta">Start Learning</a>
     </div>
+    <button class="mobile-menu-btn">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -605,18 +614,9 @@
       </div>
       
       <div class="hero-stats">
-        <div class="stat">
-          <h3>20+</h3>
-          <p>Years Experience</p>
-        </div>
-        <div class="stat">
-          <h3>$100M+</h3>
-          <p>Business Impact</p>
-        </div>
-        <div class="stat">
-          <h3>300+</h3>
-          <p>Blog Articles</p>
-        </div>
+        <div class="stat"><h3>20+</h3><p>Years Experience</p></div>
+        <div class="stat"><h3>$100M+</h3><p>Business Impact</p></div>
+        <div class="stat"><h3>300+</h3><p>Blog Articles</p></div>
       </div>
     </div>
     
@@ -640,35 +640,19 @@
         <h2>From SDE to SA to Tech Strategy Leader</h2>
         <p>From building products as a Software Engineer to designing solutions as a Solutions Architect to now driving cloud strategy as a Sr. Customer Solutions Leader — I've walked the full tech-business path.</p>
         <p>At <strong>AWS</strong>, I lead digital transformation for Fortune 500 customers like <strong>Salesforce</strong> and <strong>Intuit</strong>, aligning AI, cloud, and platform strategy with $100M+ business outcomes.</p>
-        <p>Currently enrolled in <strong>ISB's Chief Technology Officer (CTO) program</strong> to deepen executive leadership, org design, and P&L ownership. As the Founder of <strong>FullstackMaster.net</strong>, I help engineers master system design and crack FAANG interviews.</p>
+        <p>Currently enrolled in <strong>ISB's Chief Technology Officer (CTO) program</strong>. As the Founder of <strong>FullstackMaster.net</strong>, I help engineers master system design and crack FAANG interviews.</p>
         
         <div class="hero-buttons" style="margin-top: 2rem;">
           <a href="https://www.fullstackmaster.net" target="_blank" class="btn btn-primary">Explore Courses</a>
-          <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="btn btn-outline">Read Blog</a>
+          <a href="#blog" class="btn btn-outline">Read Blog</a>
         </div>
       </div>
       
       <div class="highlights-grid">
-        <div class="highlight-card">
-          <div class="icon">🏢</div>
-          <h4>Fortune 500 Clients</h4>
-          <p>Salesforce, Intuit & more</p>
-        </div>
-        <div class="highlight-card">
-          <div class="icon">🎓</div>
-          <h4>ISB CTO Scholar</h4>
-          <p>Executive leadership program</p>
-        </div>
-        <div class="highlight-card">
-          <div class="icon">☁️</div>
-          <h4>Multi-Cloud Expert</h4>
-          <p>AWS, GCP, Azure certified</p>
-        </div>
-        <div class="highlight-card">
-          <div class="icon">🚀</div>
-          <h4>20+ Years</h4>
-          <p>Architecture & cloud systems</p>
-        </div>
+        <div class="highlight-card"><div class="icon">🏢</div><h4>Fortune 500 Clients</h4><p>Salesforce, Intuit & more</p></div>
+        <div class="highlight-card"><div class="icon">🎓</div><h4>ISB CTO Scholar</h4><p>Executive leadership program</p></div>
+        <div class="highlight-card"><div class="icon">☁️</div><h4>Multi-Cloud Expert</h4><p>AWS, GCP, Azure certified</p></div>
+        <div class="highlight-card"><div class="icon">🚀</div><h4>20+ Years</h4><p>Architecture & cloud systems</p></div>
       </div>
     </div>
   </div>
@@ -682,84 +666,85 @@
     </div>
     
     <div class="skills-grid">
-      <div class="skill-card">
-        <div class="icon">☁️</div>
-        <h3>Cloud Platforms</h3>
-        <div class="tags">
-          <span class="tag">AWS</span>
-          <span class="tag">Azure</span>
-          <span class="tag">GCP</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Kubernetes</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="icon">⚙️</div>
-        <h3>Backend</h3>
-        <div class="tags">
-          <span class="tag">Java</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Python</span>
-          <span class="tag">Go</span>
-          <span class="tag">C#</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="icon">🎨</div>
-        <h3>Frontend</h3>
-        <div class="tags">
-          <span class="tag">Angular</span>
-          <span class="tag">React</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Vue.js</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="icon">🏗️</div>
-        <h3>Architecture</h3>
-        <div class="tags">
-          <span class="tag">Microservices</span>
-          <span class="tag">System Design</span>
-          <span class="tag">DevOps</span>
-        </div>
-      </div>
+      <div class="skill-card"><div class="icon">☁️</div><h3>Cloud Platforms</h3><div class="tags"><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">GCP</span><span class="tag">Docker</span><span class="tag">Kubernetes</span></div></div>
+      <div class="skill-card"><div class="icon">⚙️</div><h3>Backend</h3><div class="tags"><span class="tag">Java</span><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">Go</span><span class="tag">C#</span></div></div>
+      <div class="skill-card"><div class="icon">🎨</div><h3>Frontend</h3><div class="tags"><span class="tag">Angular</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vue.js</span></div></div>
+      <div class="skill-card"><div class="icon">🏗️</div><h3>Architecture</h3><div class="tags"><span class="tag">Microservices</span><span class="tag">System Design</span><span class="tag">DevOps</span></div></div>
     </div>
     
-    <div class="section-header">
-      <h2>Professional Certifications</h2>
-    </div>
+    <div class="section-header"><h2>Professional Certifications</h2></div>
     
     <div class="certs-grid">
-      <div class="cert-card">
-        <div class="cert-icon aws">AWS</div>
-        <h4>Machine Learning</h4>
-        <p>Specialty</p>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon aws">AWS</div>
-        <h4>Data Analytics</h4>
-        <p>Specialty</p>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon gcp">GCP</div>
-        <h4>Cloud Architect</h4>
-        <p>Professional</p>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon azure">Azure</div>
-        <h4>Fundamentals</h4>
-        <p>Certified</p>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon isb">ISB</div>
-        <h4>CTO Program</h4>
-        <p>Executive</p>
-      </div>
+      <div class="cert-card"><div class="cert-icon aws">AWS</div><h4>Machine Learning</h4><p>Specialty</p></div>
+      <div class="cert-card"><div class="cert-icon aws">AWS</div><h4>Data Analytics</h4><p>Specialty</p></div>
+      <div class="cert-card"><div class="cert-icon gcp">GCP</div><h4>Cloud Architect</h4><p>Professional</p></div>
+      <div class="cert-card"><div class="cert-icon azure">Azure</div><h4>Fundamentals</h4><p>Certified</p></div>
+      <div class="cert-card"><div class="cert-icon isb">ISB</div><h4>CTO Program</h4><p>Executive</p></div>
     </div>
   </div>
 </section>
 
-<section id="resources" class="resources">
+<section id="blog" class="blog">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Articles</h2>
+      <p>Explore 300+ articles on system design, cloud architecture, and full-stack development</p>
+    </div>
+    
+    <div class="blog-grid">
+      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card featured">
+        <div class="blog-card-content">
+          <span class="blog-category">System Design</span>
+          <h3>Mastering Distributed Systems: A Complete Guide</h3>
+          <p>Learn the fundamental concepts of distributed systems, including CAP theorem, consistency models, and architectural patterns used at scale by companies like Google, Amazon, and Netflix.</p>
+          <div class="blog-meta"><span>📖 15 min read</span><span class="blog-link">Read on Medium →</span></div>
+        </div>
+      </a>
+      
+      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card">
+        <div class="blog-card-content">
+          <span class="blog-category">AWS</span>
+          <h3>AWS Architecture Best Practices for 2024</h3>
+          <p>Build scalable, cost-effective, and resilient infrastructure on AWS with these proven architectural patterns.</p>
+          <div class="blog-meta"><span>📖 10 min read</span><span class="blog-link">Read →</span></div>
+        </div>
+      </a>
+      
+      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card">
+        <div class="blog-card-content">
+          <span class="blog-category">Interview</span>
+          <h3>Top 10 FAANG System Design Questions</h3>
+          <p>Master these commonly asked system design questions to crack interviews at Google, Amazon, Meta, Apple, and Netflix.</p>
+          <div class="blog-meta"><span>📖 12 min read</span><span class="blog-link">Read →</span></div>
+        </div>
+      </a>
+      
+      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card">
+        <div class="blog-card-content">
+          <span class="blog-category">Angular</span>
+          <h3>Angular Best Practices for Enterprise Apps</h3>
+          <p>Build maintainable, scalable Angular applications with these battle-tested best practices.</p>
+          <div class="blog-meta"><span>📖 8 min read</span><span class="blog-link">Read →</span></div>
+        </div>
+      </a>
+      
+      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="blog-card">
+        <div class="blog-card-content">
+          <span class="blog-category">Cloud</span>
+          <h3>Multi-Cloud Strategy: AWS vs Azure vs GCP</h3>
+          <p>A comprehensive comparison to help you choose the right cloud platform for your needs.</p>
+          <div class="blog-meta"><span>📖 14 min read</span><span class="blog-link">Read →</span></div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="blog-cta">
+      <a href="https://rupesh-tiwari.medium.com/" target="_blank" class="btn btn-primary">View All 300+ Articles</a>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
   <div class="container">
     <div class="section-header">
       <h2>Learning Resources</h2>
@@ -801,10 +786,10 @@
       <h3>Rupesh Tiwari</h3>
       <p>Sr. Customer Solutions Manager @ AWS Industries. ISB CTO Scholar. Founder of FullstackMaster.net. Helping engineers master system design and crack FAANG interviews.</p>
       <div class="social-links">
-        <a href="https://linkedin.com/in/rupesh-tiwari" target="_blank" title="LinkedIn">in</a>
-        <a href="https://github.com/rupeshtiwari" target="_blank" title="GitHub">gh</a>
-        <a href="https://twitter.com/rupeshtiwari_co" target="_blank" title="Twitter">X</a>
-        <a href="https://www.youtube.com/c/rupeshtiwari" target="_blank" title="YouTube">yt</a>
+        <a href="https://linkedin.com/in/rupesh-tiwari" target="_blank">in</a>
+        <a href="https://github.com/rupeshtiwari" target="_blank">gh</a>
+        <a href="https://twitter.com/rupeshtiwari_co" target="_blank">X</a>
+        <a href="https://www.youtube.com/c/rupeshtiwari" target="_blank">yt</a>
       </div>
     </div>
     
@@ -813,6 +798,7 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#blog">Blog</a></li>
         <li><a href="#resources">Resources</a></li>
       </ul>
     </div>
