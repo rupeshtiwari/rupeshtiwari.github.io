@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 export default function Hero() {
-  const rupeshImage = "/rupesh-headshot.png";
+  const rupeshImage = "/rupesh-hero.png";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">

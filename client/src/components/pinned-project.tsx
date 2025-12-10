@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function PinnedProject() {
@@ -12,8 +12,8 @@ export default function PinnedProject() {
     >
       <div className="bg-background/80 backdrop-blur-md border border-primary/20 rounded-xl p-4 shadow-2xl max-w-xs hover:border-primary/40 transition-colors group">
         <div className="flex items-start justify-between gap-3 mb-2">
-          <div className="bg-white p-2 rounded-lg border border-border shadow-sm">
-            <img src="/assets/fsm-logo-square.jpeg" alt="Fullstack Master" className="w-5 h-5 object-contain" />
+          <div className="bg-primary p-2 rounded-lg border border-primary/50 shadow-sm">
+            <BookOpen className="w-5 h-5 text-white" />
           </div>
           <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground bg-secondary px-2 py-1 rounded-full">
             Featured Platform

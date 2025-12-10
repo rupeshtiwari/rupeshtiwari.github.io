@@ -49,6 +49,9 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
+            <div className="rounded-xl overflow-hidden shadow-lg border border-border">
+              <img src="/rupesh-about.png" alt="Rupesh Tiwari at work" className="w-full h-auto object-cover" />
+            </div>
             <div className="p-8 bg-card rounded-xl border border-border shadow-lg">
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                  <Award className="w-5 h-5 text-primary" /> 
