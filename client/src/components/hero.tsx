@@ -3,17 +3,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 export default function Hero() {
-  const heroBg = "/assets/generated_images/abstract_blue_tech_data_wave_background.png";
-  const rupeshImage = "/assets/rupesh-standing-suit_1765301333696.png";
+  const rupeshImage = "/rupesh-headshot.png";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        />
         <div className="absolute inset-0 bg-background/90 backdrop-blur-[2px] bg-gradient-to-b from-background/80 via-background/50 to-background" />
       </div>
 
@@ -31,9 +26,6 @@ export default function Hero() {
             className="group inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/10 to-primary/10 border border-primary/20 hover:border-primary/40 text-primary text-sm font-medium mb-8 cursor-pointer transition-all hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="bg-white rounded-full p-1 shadow-sm overflow-hidden">
-              <img src="/assets/fsm-logo-square.jpeg" alt="FSM" className="w-4 h-4 object-cover" />
-            </div>
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent font-bold">
               Founder of FullstackMaster.net
             </span>
