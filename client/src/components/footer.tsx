@@ -1,7 +1,9 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, MessageCircle, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
+  const whatsappLink = "https://wa.me/16094424081";
+  
   return (
     <footer id="contact" className="bg-foreground text-background py-16">
       <div className="container mx-auto px-6">
@@ -14,9 +16,9 @@ export default function Footer() {
           </div>
           <div className="flex flex-wrap gap-4 md:justify-end">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="mailto:rupesh.tiwari.info@gmail.com">
-                <Mail className="w-4 h-4 mr-2" />
-                Email Me
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" />
+                WhatsApp
               </a>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-background/20 text-background hover:bg-background/10 hover:text-white" asChild>

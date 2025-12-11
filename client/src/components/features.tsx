@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { Cloud, Building2, Award } from "lucide-react";
 
 const skills = [
   { category: "Executive Leadership", items: ["Strategic Planning", "Digital Transformation", "Team Leadership", "Cloud Strategy", "Stakeholder Management"] },
@@ -8,9 +9,6 @@ const skills = [
 ];
 
 export default function Skills() {
-  const awsCert = "/assets/stock_images/aws_certified_soluti_c0bb2c85.jpg";
-  const msCert = "/assets/stock_images/microsoft_certified__b19e0041.jpg";
-  const isbCert = "/assets/stock_images/isb_institute_logo_c31af089.jpg";
 
   return (
     <section id="skills" className="py-24 bg-secondary/30">
@@ -54,19 +52,39 @@ export default function Skills() {
            <div className="text-center mb-8">
               <h3 className="text-2xl font-bold font-display">Global Certifications & Recognitions</h3>
            </div>
-           <div className="flex flex-wrap justify-center items-center gap-12">
-              <div className="flex flex-col items-center gap-4">
-                 <img src={awsCert} alt="AWS Certified Solutions Architect" className="h-24 w-auto mix-blend-multiply" />
-                 <span className="text-sm font-semibold text-muted-foreground">Solutions Architect Professional</span>
-              </div>
-              <div className="flex flex-col items-center gap-4">
-                 <img src={msCert} alt="Microsoft Certified" className="h-24 w-auto mix-blend-multiply" />
-                 <span className="text-sm font-semibold text-muted-foreground">Azure Solutions Architect Expert</span>
-              </div>
-              <div className="flex flex-col items-center gap-4">
-                 <img src={isbCert} alt="ISB CTO Scholar" className="h-24 w-auto mix-blend-multiply" />
-                 <span className="text-sm font-semibold text-muted-foreground">ISB CTO Scholar</span>
-              </div>
+           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <motion.div 
+                 initial={{ opacity: 0, scale: 0.9 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 viewport={{ once: true }}
+                 className="flex flex-col items-center gap-4">
+                 <div className="w-20 h-20 md:w-24 md:h-24 bg-orange-500/10 rounded-lg flex items-center justify-center">
+                    <Cloud className="w-10 h-10 md:w-12 md:h-12 text-orange-600" />
+                 </div>
+                 <span className="text-sm font-semibold text-muted-foreground text-center">AWS Solutions Architect Professional</span>
+              </motion.div>
+              <motion.div 
+                 initial={{ opacity: 0, scale: 0.9 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 viewport={{ once: true }}
+                 transition={{ delay: 0.1 }}
+                 className="flex flex-col items-center gap-4">
+                 <div className="w-20 h-20 md:w-24 md:h-24 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                    <Building2 className="w-10 h-10 md:w-12 md:h-12 text-blue-600" />
+                 </div>
+                 <span className="text-sm font-semibold text-muted-foreground text-center">Azure Solutions Architect Expert</span>
+              </motion.div>
+              <motion.div 
+                 initial={{ opacity: 0, scale: 0.9 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 viewport={{ once: true }}
+                 transition={{ delay: 0.2 }}
+                 className="flex flex-col items-center gap-4">
+                 <div className="w-20 h-20 md:w-24 md:h-24 bg-purple-500/10 rounded-lg flex items-center justify-center">
+                    <Award className="w-10 h-10 md:w-12 md:h-12 text-purple-600" />
+                 </div>
+                 <span className="text-sm font-semibold text-muted-foreground text-center">ISB CTO Scholar</span>
+              </motion.div>
            </div>
         </div>
       </div>
