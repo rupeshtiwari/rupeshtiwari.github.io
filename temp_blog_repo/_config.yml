@@ -1,0 +1,190 @@
+# Welcome to Jekyll!
+
+# Site settings
+title: Rupesh Tiwari - Founder of FullStack Master
+email: rupesh.tiwari.info@gmail.com
+url: https://www.rupeshtiwari.com
+description: >-
+  Rupesh is an architecture coach and the Founder of Fullstack Master. With 15+ years building distributed systems and leading cloud transformations, he helps engineers and leaders crack FAANG interviews in system design, architecture, and Amazon LP mastery.
+twitter_username: rupeshtiwari_co
+github_username: rupeshtiwari
+minimal_mistakes_skin: default
+masthead_title: 'Rupesh Tiwari'
+subtitle: 'Founder of Fullstack Master | Interview Coach'
+baseurl: ''
+og_image: '/assets/images/bio-photo.jpg'
+search: true
+repository: 'rupeshtiwari/rupeshtiwari.github.io'
+
+# Build settings
+markdown: kramdown
+# remote_theme removed to enable local layouts
+
+# Outputting posts
+permalink: /:categories/:title/
+paginate: 10  # Shows 10 posts per page
+paginate_path: /page:num/
+future: false
+
+include:
+  - _pages
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# Author settings
+author:
+  name: 'Rupesh Tiwari'
+  avatar: '/assets/images/bio-photo.jpg'
+  bio: 'I help students and professionals to become Full Stack Software Developer in less than a year!'
+  links:
+    - label: 'Email'
+      icon: 'fas fa-fw fa-envelope-square'
+      url: 'mailto:rupesh.tiwari.info@gmail.com'
+    - label: 'Blogs'
+      icon: 'fa fa-th-large'
+      url: '/posts/'
+    - label: 'Medium'
+      icon: 'fab fa-medium'
+      url: 'https://rupesh-tiwari.medium.com/'
+    - label: 'Dev.to'
+      icon: 'fab fa-dev'
+      url: 'https://dev.to/rupeshtiwari'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'http://github.com/rupeshtiwari'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/rupesh-tiwari'
+    - label: 'Twitter'
+      icon: 'fab fa-fw fa-twitter-square'
+      url: 'http://twitter.com/rupeshtiwari_co'
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
+      url: 'https://www.facebook.com/fullstackmaster1'
+    - label: 'Angular Training'
+      icon: 'fas fa-graduation-cap'
+      url: 'https://www.fullstackmaster.net'
+
+# Footer settings
+footer:
+  links:
+    - label: 'Blogs for Developers'
+      icon: 'fas fa-registered'
+      url: 'https://www.rupeshtiwari.com/posts'
+    - label: 'Facebook'
+      icon: 'fab fa-fw fa-facebook-square'
+      url: 'https://www.facebook.com/fullstackmaster1'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/rupesh-tiwari'
+    - label: 'Learn Angular'
+      icon: 'fab fa-angular'
+      url: 'https://fullstackmaster.net/course/3/mastering-meanjs'
+    - label: 'Become Software Developer Free'
+      icon: 'fas fa-crown'
+      url: 'https://github.com/rupeshtiwari#javascript-for-beginners-client-side'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'http://github.com/rupeshtiwari'
+    - label: 'Medium'
+      icon: 'fab fa-medium'
+      url: 'https://rupesh-tiwari.medium.com/'
+    - label: 'Dev.to'
+      icon: 'fab fa-dev'
+      url: 'https://dev.to/rupeshtiwari'
+    - label: 'Fullstack Master'
+      icon: 'fas fa-graduation-cap'
+      url: 'https://www.fullstackmaster.net'
+
+# Default settings for posts and pages
+defaults:
+  # For posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: home  # Use the "home" layout to show posts on the homepage
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+  # For pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Archive settings for categories and tags
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Teaser and images
+teaser: '/assets/images/teaser.png'
+
+# Comments settings
+comments:
+  provider: 'disqus'
+  disqus:
+    shortname: 'https-rupeshtiwari-github-io-1'
+
+# Analytics settings
+analytics:
+  provider: 'google-gtag'
+  google:
+    tracking_id: 'UA-128916623-7'
+    anonymize_ip: false # default
+
+bing_site_verification: 8BC08291167B3E15CC4FCC21C5895052
+
+# Social Sharing
+twitter:
+  username: rupeshtiwari_co
+
+facebook:
+  app_id: 421181512329379
+  publisher: https://www.facebook.com/fullstackmaster1
+
+# Enable breadcrumbs
+breadcrumbs: true
+
+## Custom props Personal Configs
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    posts:
+      description:
+      author_profile: true
+      published: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      image: 'https://i.imgur.com/qxXxmBa.png'
+      header:
+        image: 'https://i.imgur.com/zipiW93.png'
+        teaser: 'https://i.imgur.com/qxXxmBa.png'
+        og_image: 'https://i.imgur.com/qxXxmBa.png'
+      tags:
+        - webdev
+        - tutorial
+        - beginners
+feed:
+  posts_limit: 30

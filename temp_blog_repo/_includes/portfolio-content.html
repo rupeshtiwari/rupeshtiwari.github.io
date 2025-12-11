@@ -1,0 +1,33 @@
+<section id="content" class="portfolio-content">
+  <div class="portfolio-container">
+    <div class="section-header">
+      <h2 class="section-title">Latest Content</h2>
+      <p class="section-subtitle">Sharing knowledge through courses, articles, and videos.</p>
+    </div>
+    
+    <div class="content-grid">
+      {% for item in site.data.portfolio.content %}
+      <a href="{{ item.link }}" target="_blank" rel="noopener" class="content-card">
+        <div class="content-icon">
+          {% if item.icon == 'book' %}
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          {% elsif item.icon == 'video' %}
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="m22 8-6 4 6 4V8ZM2 6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"/></svg>
+          {% elsif item.icon == 'youtube' %}
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33Z"/><path fill="#fff" d="m9.75 15.02 5.75-3.27-5.75-3.27v6.54Z"/></svg>
+          {% else %}
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+          {% endif %}
+        </div>
+        <span class="content-type">{{ item.type }}</span>
+        <h3 class="content-title">{{ item.title }}</h3>
+        <p class="content-desc">{{ item.desc }}</p>
+        <span class="content-link">
+          Learn More
+          <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

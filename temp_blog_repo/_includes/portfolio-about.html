@@ -1,0 +1,44 @@
+<section id="about" class="portfolio-about">
+  <div class="portfolio-container">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2 class="section-title">
+          {{ site.data.portfolio.about.title | split: '&' | first }}<br>
+          <span class="text-primary">Cloud Innovator</span>
+        </h2>
+        
+        <div class="about-text">
+          {% for paragraph in site.data.portfolio.about.paragraphs %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+        
+        <div class="about-stats">
+          {% for stat in site.data.portfolio.about.stats %}
+          <div class="stat-item">
+            <div class="stat-value">{{ stat.value }}</div>
+            <div class="stat-label">{{ stat.label }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div class="about-milestones">
+        <div class="milestones-card">
+          <h3 class="milestones-title">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path fill="currentColor" d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+            Professional Milestones
+          </h3>
+          <ul class="milestones-list">
+            {% for milestone in site.data.portfolio.about.milestones %}
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path fill="currentColor" d="m9 11 3 3L22 4"/></svg>
+              <span>{{ milestone }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

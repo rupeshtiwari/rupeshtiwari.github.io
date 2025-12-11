@@ -1,0 +1,98 @@
+hero:
+  title: "Architecting the Future of Tech"
+  subtitle: "Tech Strategy Leader @ AWS & ISB CTO Scholar. Bridging the gap between strategic business goals and technical execution."
+  founder_badge: "Founder of FullstackMaster.net"
+  founder_url: "https://www.fullstackmaster.net"
+  linkedin_url: "https://www.linkedin.com/in/rupesh-tiwari/"
+  image: "/assets/images/rupesh-standing-suit.png"
+
+about:
+  title: "Multi-Cloud Architect & Tech Strategy Leader"
+  paragraphs:
+    - "I am a <strong>Tech Strategy Leader at AWS</strong> and an <strong>ISB CTO Scholar</strong>, with expertise across AWS, Google Cloud, and Microsoft Azure. I drive strategic business alignment with cutting-edge cloud architecture."
+    - "With over 17 years of experience designing and scaling distributed systems, I specialize in multi-cloud strategies, serverless architectures, and digital transformation. I've helped enterprises modernize infrastructure and optimize cloud costs across major cloud providers."
+    - "Beyond corporate leadership, I am deeply committed to mentoring. As the founder of <strong>FullstackMaster.net</strong>, I coach developers and architects on system design, cloud architecture, and career growth at top tech companies."
+  stats:
+    - value: "50+"
+      label: "Leaders Coached"
+    - value: "92%"
+      label: "Offer Rate"
+    - value: "$285k"
+      label: "Avg. Comp Increase"
+  milestones:
+    - "Tech Strategy Leader @ AWS (Cloud Services)"
+    - "Google Cloud Certified Professional Cloud Architect"
+    - "Azure Solutions Architect Expert"
+    - "ISB CTO Scholar"
+    - "Founder of FullstackMaster.net"
+    - "Mentor & Pluralsight Author"
+
+skills:
+  title: "Core Competencies"
+  subtitle: "Multi-cloud expertise spanning AWS, Google Cloud, and Microsoft Azure with focus on scalable architecture and digital transformation."
+  categories:
+    - name: "Cloud Architecture & Strategy"
+      items: ["AWS Solutions Architecture", "Google Cloud Platform", "Azure Cloud Services", "Multi-Cloud Strategy", "Cost Optimization", "Well-Architected Framework"]
+    - name: "Distributed Systems & Infrastructure"
+      items: ["Microservices Design", "Serverless Computing", "Kubernetes & Container Orchestration", "Event-Driven Architecture", "CI/CD & DevOps", "Domain-Driven Design (DDD)"]
+    - name: "Executive Leadership & Transformation"
+      items: ["Digital Transformation", "Strategic Planning", "Technical Team Leadership", "Cloud Migration", "Stakeholder Management", "Enterprise Architecture"]
+    - name: "Modern Tech Stack"
+      items: ["Node.js", "Angular", "React", "TypeScript", "System Design", "Interview Coaching"]
+  certifications:
+    - name: "AWS Certified Solutions Architect Professional"
+      image: "https://logo.clearbit.com/amazon.com"
+    - name: "Google Cloud Professional Cloud Architect"
+      image: "https://logo.clearbit.com/google.com"
+    - name: "Azure Solutions Architect Expert"
+      image: "https://logo.clearbit.com/microsoft.com"
+
+trusted_companies:
+  - name: "Google"
+    logo: "https://logo.clearbit.com/google.com"
+  - name: "Amazon"
+    logo: "https://logo.clearbit.com/amazon.com"
+  - name: "Microsoft"
+    logo: "https://logo.clearbit.com/microsoft.com"
+  - name: "Meta"
+    logo: "https://logo.clearbit.com/meta.com"
+  - name: "Apple"
+    logo: "https://logo.clearbit.com/apple.com"
+  - name: "Netflix"
+    logo: "https://logo.clearbit.com/netflix.com"
+
+testimonials:
+  - name: "Tech Leader at FAANG"
+    role: "Principal Architect"
+    quote: "Rupesh's multi-cloud expertise transformed our infrastructure. His architectural guidance helped us reduce costs by 40% while improving reliability."
+  - name: "Engineering Manager"
+    role: "Tech Manager"
+    quote: "Outstanding mentor for system design and cloud architecture. His coaching helped my team crack interviews at top tech companies."
+
+content:
+  - type: "Platform"
+    icon: "book"
+    title: "Fullstack Master"
+    desc: "Complete training on system design, cloud architecture, and FAANG interview preparation for engineers and architects."
+    link: "https://www.fullstackmaster.net"
+  - type: "Course"
+    icon: "video"
+    title: "System Design & Architecture"
+    desc: "Master distributed systems design, microservices architecture, and multi-cloud strategies."
+    link: "https://www.fullstackmaster.net"
+  - type: "Blog"
+    icon: "link"
+    title: "Technical Insights"
+    desc: "In-depth articles on AWS, Google Cloud, Azure patterns, system design, and architecture best practices."
+    link: "https://medium.com/rupesh-tiwari"
+  - type: "Video"
+    icon: "youtube"
+    title: "YouTube Channel"
+    desc: "Free tutorials on cloud architecture, system design, and career guidance for tech professionals."
+    link: "https://www.youtube.com/c/RupeshTiwari"
+
+social:
+  github: "https://github.com/rupeshtiwari"
+  linkedin: "https://www.linkedin.com/in/rupesh-tiwari/"
+  youtube: "https://www.youtube.com/c/RupeshTiwari"
+  fullstackmaster: "https://www.fullstackmaster.net"

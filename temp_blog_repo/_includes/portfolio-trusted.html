@@ -1,0 +1,21 @@
+<section class="portfolio-trusted">
+  <div class="portfolio-container">
+    <div class="trusted-leadership">
+      <p class="section-label">Tech Strategy Leadership Experience</p>
+      <div class="aws-logo">
+        <img src="https://logo.clearbit.com/aws.amazon.com" alt="AWS">
+      </div>
+    </div>
+    
+    <div class="trusted-coaching">
+      <p class="section-label">Coaching Leaders From Top Tech Giants</p>
+      <div class="company-logos">
+        {% for company in site.data.portfolio.trusted_companies %}
+        <div class="company-logo">
+          <img src="{{ company.logo }}" alt="{{ company.name }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

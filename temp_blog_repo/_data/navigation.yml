@@ -1,0 +1,11 @@
+main:
+  - title: "blog"
+    url: /posts/
+  - title: "fullstackmaster"
+    url: https://fullstackmaster.net
+  - title: "youtube"
+    url: https://youtube.com/fullstackmaster
+  - title: "tags"
+    url: /tags/
+  - title: "consulting"
+    url: /consulting/

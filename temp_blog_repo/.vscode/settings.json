@@ -1,0 +1,7 @@
+{
+    "restructuredtext.languageServer.disabled": true,
+    "jupyter.jupyterServerType": "local",
+    "spellchecker.ignoreWordsList": [
+        "Blogs"
+    ]
+}
