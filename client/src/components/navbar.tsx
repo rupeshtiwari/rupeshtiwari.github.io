@@ -20,7 +20,7 @@ export default function Navbar() {
   const links = [
     { name: "About", href: "#about", isHash: true },
     { name: "Skills", href: "#skills", isHash: true },
-    { name: "Blog", href: "/blog", isHash: false },
+    { name: "Blog", href: "https://blog.rupeshtiwari.com", isHash: false, external: true },
     { name: "Courses", href: "https://www.fullstackmaster.net", isHash: false, external: true },
   ];
 

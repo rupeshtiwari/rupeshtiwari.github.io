@@ -50,7 +50,7 @@ export default function Hero() {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="h-12 px-8 text-base backdrop-blur-sm hover:bg-background/50" asChild>
-              <a href="/blog">
+              <a href="https://blog.rupeshtiwari.com" target="_blank" rel="noopener noreferrer">
                 Read Insights
               </a>
             </Button>
