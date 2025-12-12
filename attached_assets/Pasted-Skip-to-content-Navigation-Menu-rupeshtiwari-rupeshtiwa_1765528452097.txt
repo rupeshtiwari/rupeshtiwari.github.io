@@ -1,0 +1,101 @@
+Skip to content
+Navigation Menu
+rupeshtiwari
+rupeshtiwari-blog
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Build and Deploy
+updated #3
+Jobs
+Run details
+Annotations
+1 error and 1 warning
+build
+failed 1 minute ago in 29s
+Search logs
+2s
+3s
+0s
+9s
+12s
+Run bundle exec jekyll b -d "_site"
+  bundle exec jekyll b -d "_site"
+  shell: /usr/bin/bash -e {0}
+  env:
+    GITHUB_PAGES: true
+    JEKYLL_ENV: production
+Configuration file: /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/_config.yml
+            Source: /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog
+       Destination: /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+  Liquid Exception: Liquid syntax error (line 64): Unknown tag 'gist' in /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/_posts/2021-03-20-importing-wordpress-or-blogger-blogs-to-jekyll-blog.md
+                    ------------------------------------------------
+      Jekyll 4.4.1   Please append `--trace` to the `build` command 
+                     for any additional information or backtrace. 
+                    ------------------------------------------------
+/home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/document.rb:23:in `unknown_tag': Liquid syntax error (line 64): Unknown tag 'gist' (Liquid::SyntaxError)
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/document.rb:11:in `block in parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/block_body.rb:32:in `parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/document.rb:10:in `parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/document.rb:5:in `parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:130:in `parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/liquid-4.0.4/lib/liquid/template.rb:114:in `parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:13:in `block in parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:70:in `measure_time'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/liquid_renderer/file.rb:12:in `parse'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:124:in `render_liquid'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:80:in `render_document'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:63:in `run'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:572:in `render_regenerated'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:557:in `block (2 levels) in render_docs'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:556:in `each'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:556:in `block in render_docs'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:555:in `each_value'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:555:in `render_docs'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:210:in `render'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:80:in `process'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in `process_site'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in `build'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in `process'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `load'
+	from /home/runner/work/rupeshtiwari-blog/rupeshtiwari-blog/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `<top (required)>'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `load'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `kernel_load'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/cli/exec.rb:23:in `run'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/cli.rb:455:in `exec'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/cli.rb:35:in `dispatch'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/cli.rb:29:in `start'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/gems/3.3.0/gems/bundler-2.5.22/exe/bundle:28:in `block in <top (required)>'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/3.3.0/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/lib/ruby/gems/3.3.0/gems/bundler-2.5.22/exe/bundle:20:in `<top (required)>'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/bin/bundle:25:in `load'
+	from /opt/hostedtoolcache/Ruby/3.3.10/x64/bin/bundle:25:in `<main>'
+Error: Process completed with exit code 1.
+0s
+0s
+0s
+0s
