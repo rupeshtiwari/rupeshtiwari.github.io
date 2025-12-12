@@ -1,0 +1,1204 @@
+Run bundle exec htmlproofer _site \
+Running 3 checks (Images, Links, Scripts) in ["_site"] on *.html files ...
+
+
+Checking 2800 internal links
+Checking internal link hashes in 155 files
+Ran on 470 files!
+
+
+For the Images check, the following failures were found:
+
+* At _site/posts/angular-folder-structure-for-large-scale-enterprise-application/index.html:1:
+
+  internal image /assets/2020/01/plan-subscription-2.jpg?fit=605%2C1024&ssl=1 does not exist
+
+* At _site/posts/assembly-binding-log-viewer/index.html:1:
+
+  internal image /assets/2011/06/fuslogvw.png does not exist
+
+* At _site/posts/build-javascript-web-application-from-scratch/index.html:1:
+
+  internal image /assets/2020/02/image.png?fit=661%2C1024&ssl=1 does not exist
+
+* At _site/posts/creating-typescript-library-using-webpack/index.html:1:
+
+  internal image /assets/2018/11/grunge-hipster-wooden-desktop-with-computer-digital-tablet-picture-id490243118?b=1&k=6&m=490243118&s=612x612&w=0&h=giJ7069v29T8RUgODfzt0KkFFyWtA-kv0YfBlUs2ZWA= does not exist
+
+* At _site/posts/creating-typescript-library-using-webpack/index.html:38:
+
+  internal image /assets/2018/11/windows-installation-workers-picture-id584858784?b=1&k=6&m=584858784&s=612x612&w=0&h=wsn55eQu5Ls5ENJtf5maUG8jRTWusQfmv7gcbAwqWSk= does not exist
+
+* At _site/posts/creating-typescript-library-using-webpack/index.html:43:
+
+  internal image /assets/2018/11/plan-subscription-1.jpg?fit=605%2C1024&ssl=1 does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:1:
+
+  internal image /assets/2018/12/decorator-in-typescript-and-Angular.jpg does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:1:
+
+  internal image /assets/2018/12/photo-1458419948946-19fb2cc296af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:1:
+
+  internal image /assets/2018/12/photo-1512373374262-e0f6da31389f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:4:
+
+  internal image /assets/2018/12/logmethod-decorator-typescript-and-angular.png does not exist
+
+* At _site/posts/dependency-injection-in-react/index.html:1:
+
+  internal image /assets/2018/12/IOC-concept.png does not exist
+
+* At _site/posts/dependency-injection-in-react/index.html:1:
+
+  internal image /assets/2018/12/react-updater-DI.png does not exist
+
+* At _site/posts/dependency-injection-in-react/index.html:1:
+
+  internal image /assets/2018/12/react-DI-for-renderer_.png does not exist
+
+* At _site/posts/domain-driven-design-philosophy/index.html:1:
+
+  internal image /assets/2018/11/img_20181104_210041__01__017529256551958029955.jpg does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internal image /assets/2018/11/businessman-builds-a-tower-picture-id515604620?b=1&k=6&m=515604620&s=612x612&w=0&h=Of_0R4rBqzl6mOUwql3ehJGqNB81l0cVyjXOikPvTE0= does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internal image /assets/2018/11/screenshot_20181115-105315__012460127057064369218.jpg does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  image /assets/2018/11/screenshot_20181115-105315__012460127057064369218.jpg does not have an alt attribute
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internal image /assets/2018/11/evil-clown-in-a-dark-forest-in-a-white-veil-picture-id523041536?b=1&k=6&m=523041536&s=612x612&w=0&h=P1OG8UC3paTDBFdAmB6Mww3hVpz8ziJcjjmZNwYaRDo= does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internal image /assets/2018/11/positive-mind-vibes-and-life-picture-id477265518?b=1&k=6&m=477265518&s=612x612&w=0&h=l-2tXsVjH7b-ogVM5-PbC4HC5lxm-Nb9WHUChioU96c= does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internal image /assets/2018/11/clear-vision-through-glasses-picture-id618066156?s=612x612 does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internal image /assets/2018/11/young-man-success-celebration-at-office-picture-id888751614?b=1&k=6&m=888751614&s=612x612&w=0&h=eDkZ82lTTYqTTzEerSrRNUAsfpkTKVgGUGipW36pvQ8= does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internal image /assets/2018/11/whiskey-distillation-picture-id157532646?b=1&k=6&m=157532646&s=612x612&w=0&h=rwoFDkNVgx3rDxLGsN5QM0IFtE_iwyVObBXSMC7THk0= does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internal image /assets/2019/07/image.png?fit=1024%2C322&ssl=1 does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internal image /assets/2019/07/image-3.png?fit=1024%2C469&ssl=1 does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internal image /assets/2019/07/image-4.png?fit=1024%2C482&ssl=1 does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internal image /assets/2019/07/image-6.png?fit=1024%2C519&ssl=1 does not exist
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  internal image /assets/2011/08/1.png does not exist
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  internal image /assets/2011/08/2.png does not exist
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  internal image /assets/2011/08/3.jpg?w=300 does not exist
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  internal image /assets/2011/08/4.jpg?w=300 does not exist
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  internal image /assets/2011/08/5.jpg does not exist
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  internal image /assets/2011/08/6.jpg does not exist
+
+* At _site/posts/integrate-github-pages-in-angular-6-app/index.html:1:
+
+  internal image /assets/2018/11/ghpages-1-1.png does not exist
+
+* At _site/posts/integrate-github-pages-in-angular-6-app/index.html:1:
+
+  internal image /assets/2018/11/ghpages-1.png does not exist
+
+* At _site/posts/integrating-ckeditor-in-nx-monorepo/index.html:1113:
+
+  image https://i.imgur.com/9OCLciM.png does not have an alt attribute
+
+* At _site/posts/javascript-prototype-inheritance/index.html:34:
+
+  internal image /assets/2010/09/lens-14274696621702000794186467.jpg does not exist
+
+* At _site/posts/javascript-prototype-inheritance/index.html:34:
+
+  image /assets/2010/09/lens-14274696621702000794186467.jpg does not have an alt attribute
+
+* At _site/posts/javascript-prototype-inheritance/index.html:34:
+
+  internal image /assets/2010/09/after-init.jpg?w=300 does not exist
+
+* At _site/posts/model-in-domain-driven-design/index.html:1:
+
+  image /assets/2019/02/open-gift-box-blank-white-260nw-339299915.jpg does not have an alt attribute
+
+* At _site/posts/model-in-domain-driven-design/index.html:1:
+
+  internal image /assets/2019/02/what-is-domain.png does not exist
+
+* At _site/posts/model-in-domain-driven-design/index.html:1:
+
+  internal image /assets/2019/02/pexels-photo-356147.jpeg?auto=compress&cs=tinysrgb&h=350 does not exist
+
+* At _site/posts/model-in-domain-driven-design/index.html:1:
+
+  internal image /assets/2019/02/core-values-picture-id685774898?b=1&k=6&m=685774898&s=612x612&w=0&h=znynvt8gN8wQ4_E14M3Ca6Aac4EZRA0wuaDzTZI9GTo= does not exist
+
+* At _site/posts/module-pattern-with-example-essential-javascript-concepts/index.html:1:
+
+  internal image /assets/2019/09/plan-subscription.jpg?fit=605%2C1024&ssl=1 does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/pexels-photo-1670045.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/10-values-marble-diagrams-interval-1.png does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/10-values-marble-diagrams-interval-1.png does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/marbles-with-errors.png does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/abstract-blur-background-english-multiple-choice-test-picture-id499509690?b=1&k=6&m=499509690&s=612x612&w=0&h=FqCpCmewz0zWaZ9VUWfl1ep6ziwBd8yKA-dNOODRDqs= does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/operator-behavior-marble-diagrms.png does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/merge.png does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/make-a-difference-picture-id693322828?b=1&k=6&m=693322828&s=612x612&w=0&h=n_wKObBdXdyHCIOwPOYGk0KGc9cl5brJLpufq7NCpug= does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/little-boy-climbs-up-the-ladder-on-the-playground-picture-id535466066?b=1&k=6&m=535466066&s=612x612&w=0&h=8iol5yE8iLF_7gelayJL3UVyrgVMdj6vPVLZlrhMR24= does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internal image /assets/2018/11/live-marble-diagrams-drawn.gif does not exist
+
+* At _site/posts/simple-pub-sub-with-rxjs/index.html:9:
+
+  internal image /assets/2019/03/background-beverage-career-1855233.jpg?fit=840%2C628&ssl=1 does not exist
+
+* At _site/posts/simple-pub-sub-with-rxjs/index.html:31:
+
+  internal image /assets/2019/03/subscribing-init.png does not exist
+
+* At _site/posts/simple-pub-sub-with-rxjs/index.html:38:
+
+  internal image /assets/2019/03/subscribing-add-user.png does not exist
+
+* At _site/posts/simple-pub-sub-with-rxjs/index.html:38:
+
+  internal image /assets/2019/03/plan-subscription-3.jpg?fit=605%2C1024&ssl=1 does not exist
+
+* At _site/posts/travis-ci-vs-team-foundation-server-vs-azure-devops/index.html:1:
+
+  image https://i.imgur.com/6jql0uD.png does not have an alt attribute
+
+* At _site/posts/understanding-javascript-scope/index.html:1:
+
+  internal image /assets/2018/11/lcoalscope.png does not exist
+
+* At _site/posts/use-case-vs-user-story/index.html:1:
+
+  internal image /assets/2020/06/68747470733a2f2f63646e2d696d616765732e76697375616c2d706172616469676d2e636f6d2f67756964652f6167696c652f757365722d73746f72792d76732d7573652d636173652f30322d757365722d73746f72792d6578616d706c652e706e67 does not exist
+
+* At _site/posts/use-case-vs-user-story/index.html:1:
+
+  internal image /assets/2020/06/68747470733a2f2f63646e2d696d616765732e76697375616c2d706172616469676d2e636f6d2f67756964652f6167696c652f757365722d73746f72792d76732d7573652d636173652f30342d757365722d73746f72792d636f6e6669726d6174696f6e2e706e67 does not exist
+
+* At _site/posts/use-case-vs-user-story/index.html:1:
+
+  internal image /assets/2020/06/68747470733a2f2f63646e2d696d616765732e76697375616c2d706172616469676d2e636f6d2f67756964652f6167696c652f757365722d73746f72792d76732d7573652d636173652f30352d73696d706c652d7573652d636173652d6469616772616d2e706e67 does not exist
+
+For the Links check, the following failures were found:
+
+* At _site/posts/9-basic-javascript-concepts-you-should-know/index.html:1:
+
+  http://rupeshtiwari.com/javascript-prototype-inheritance/ is not an HTTPS link
+
+* At _site/posts/9-basic-javascript-concepts-you-should-know/index.html:1:
+
+  http://rupeshtiwari.com/javascript-module-pattern/ is not an HTTPS link
+
+* At _site/posts/assembly-binding-log-viewer/index.html:1:
+
+  http://msdn.microsoft.com/en-us/library/e74a18c4(v=vs.80).aspx is not an HTTPS link
+
+* At _site/posts/assembly-binding-log-viewer/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/06/fuslogvw.png is not an HTTPS link
+
+* At _site/posts/assembly-binding-log-viewer/index.html:1:
+
+  http://blogs.msdn.com/b/suzcook/archive/2003/05/29/57120.aspx is not an HTTPS link
+
+* At _site/posts/azure-cosmos-db-basics/index.html:1:
+
+  http://azure.microsoft.com/try/cosmosdb is not an HTTPS link
+
+* At _site/posts/cloud-solution-architect-technical-interview-questions/index.html:1:
+
+  http://searchnetworking.techtarget.com/definition/variable-length-subnet-mask is not an HTTPS link
+
+* At _site/posts/creating-cosmos-db-from-dotnet-core-project/index.html:1:
+
+  http://rupeshtiwari.com/azure-sandbox-free-account-for-learning/ is not an HTTPS link
+
+* At _site/posts/creating-custom-jquery-widget/index.html:1:
+
+  http://bililite.com/blog/understanding-jquery-ui-widgets-a-tutorial/ is not an HTTPS link
+
+* At _site/posts/crud-with-cosmos-db-and-dotnet-core/index.html:1:
+
+  http://www.rupeshtiwari.com/azure-sandbox-free-account-for-learning/ is not an HTTPS link
+
+* At _site/posts/crud-with-cosmos-db-and-dotnet-core/index.html:1:
+
+  http://www.rupeshtiwari.com/creating-cosmos-db-from-dotnet-core-project/ is not an HTTPS link
+
+* At _site/posts/enforcing-dependency-constraints-within-service-in-nx-monorepo-workspace/index.html:1:
+
+  http://udidahan.com/ is not an HTTPS link
+
+* At _site/posts/expand-your-skills-become-full-stack-developer-in-90-days/index.html:1:
+
+  http://rupeshtiwari.com/subscribe is not an HTTPS link
+
+* At _site/posts/explore-azure-database-and-analytics-services/index.html:1:
+
+  "https://github.com/rupeshtiwari/coding-examples-angular-monorepo-with-nx/blob/0cdc9a042b4d8cfc1604d39d43b5c5ca39d5f032/enterprise-angular-mono-repo-patterns.pdf" is an invalid URL
+
+* At _site/posts/how-to-manage-dev-and-qa-environments-in-azure-cloud/index.html:1:
+
+  http://blog.hametbenoit.info/2018/08/01/azure-azure-management-groups-is-now-available/ is not an HTTPS link
+
+* At _site/posts/how-to-start-preparing-for-coding-interview/index.html:1:
+
+  [https://www.youtube.com/watch?v=G5FP9YsBeZ8](https://www.youtube.com/watch?v=G5FP9YsBeZ8) is an invalid URL
+
+* At _site/posts/how-to-start-preparing-for-coding-interview/index.html:1:
+
+  [https://www.youtube.com/playlist?list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb](https://www.youtube.com/playlist?list=PLg6p_zdrEgHEqaRQbZADU6suNgh28JiKb) is an invalid URL
+
+* At _site/posts/how-to-start-preparing-for-coding-interview/index.html:1:
+
+  [https://www.youtube.com/playlist?list=PLg6p_zdrEgHFwRhX3R8ZcXImGPUI9_lfX](https://www.youtube.com/playlist?list=PLg6p_zdrEgHFwRhX3R8ZcXImGPUI9_lfX) is an invalid URL
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/08/1.png is not an HTTPS link
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/08/2.png is not an HTTPS link
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/08/3.jpg is not an HTTPS link
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/08/4.jpg is not an HTTPS link
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/08/5.jpg is not an HTTPS link
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/08/6.jpg is not an HTTPS link
+
+* At _site/posts/how-to-use-vlookup/index.html:1:
+
+  http://rupeshtiwari.com/wp-content/uploads/2011/08/vlookup.xlsx is not an HTTPS link
+
+* At _site/posts/internet-explorer-8-new-features/index.html:1:
+
+  http://msdn.microsoft.com/en-us/magazine/dd458804.aspx is not an HTTPS link
+
+* At _site/posts/introduction-to-point-of-presence-and-network-access-point/index.html:1:
+
+  http://www.skynews.com is not an HTTPS link
+
+* At _site/posts/javascript-module-pattern/index.html:1:
+
+  http://www.codeproject.com/KB/scripting/ModulePattern.aspx is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:1:
+
+  http://javascript.crockford.com/prototypal.html is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:34:
+
+  http://rupeshtiwari.com/wp-content/uploads/2010/09/after-init.jpg is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://www.i-programmer.info/programming/javascript/1029-javascript-jems-a-new-take-on-objects.html is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://code.google.com/p/digg/wiki/Class is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://www.cliki.net/ParenscriptClassicOO is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://javascriptweblog.wordpress.com/2010/06/07/understanding-javascript-prototypes/ is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://www.i-programmer.info/programming/javascript/1284-javascript-jems-object-factories-constructors-and-clones.html is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://www.nczonline.net/blog/2010/07/27/determining-if-an-object-property-exists/ is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://elegantcode.com/2010/08/11/book-review-object-oriented-javascript/ is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://blogs.msdn.com/b/jscript/archive/2007/10/31/classes-in-jscript-part-iii-class-hierarchy-and-data-encapsulation.aspx is not an HTTPS link
+
+* At _site/posts/javascript-prototype-inheritance/index.html:57:
+
+  http://stackoverflow.com/questions/879061/advantages-of-prototype-based-oo-over-class-based is not an HTTPS link
+
+* At _site/posts/jquery-part-2/index.html:1:
+
+  http://www.codeproject.com/KB/scripting/LearnJQueryByLab.aspx is not an HTTPS link
+
+* At _site/posts/knockout/index.html:1:
+
+  http://knockoutjs.com/ is not an HTTPS link
+
+* At _site/posts/knockout/index.html:2:
+
+  http://msdn.microsoft.com/en-us/magazine/dd419663.aspx is not an HTTPS link
+
+* At _site/posts/knockout/index.html:2:
+
+  http://knockoutjs.com/ is not an HTTPS link
+
+* At _site/posts/knockout/index.html:2:
+
+  http://learn.knockoutjs.com/ is not an HTTPS link
+
+* At _site/posts/knockout/index.html:2:
+
+  http://jquery.com/ is not an HTTPS link
+
+* At _site/posts/knockout/index.html:2:
+
+  http://knockoutjs.com/ is not an HTTPS link
+
+* At _site/posts/knockout/index.html:2:
+
+  http://www.json.org/json2.js is not an HTTPS link
+
+* At _site/posts/mastering-meanjs-the-ultimate-full-stack-course/index.html:1:
+
+  http://rupeshtiwari.com/meanjs-demo is not an HTTPS link
+
+* At _site/posts/microsoft-contributions-to-jquery-plugins/index.html:1:
+
+  http://weblogs.asp.net/scottgu/archive/2008/09/28/jquery-and-microsoft.aspx is not an HTTPS link
+
+* At _site/posts/microsoft-contributions-to-jquery-plugins/index.html:1:
+
+  http://stephenwalther.com/blog/archive/2010/10/04/microsoft-templates-included-in-jquery-1-5.aspx is not an HTTPS link
+
+* At _site/posts/microsoft-contributions-to-jquery-plugins/index.html:1:
+
+  http://blog.jquery.com/2011/01/31/jquery-15-released/ is not an HTTPS link
+
+* At _site/posts/microsoft-contributions-to-jquery-plugins/index.html:1:
+
+  http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js is not an HTTPS link
+
+* At _site/posts/microsoft-contributions-to-jquery-plugins/index.html:1:
+
+  http://api.jquery.com/category/plugins/templates/ is not an HTTPS link
+
+* At _site/posts/microsoft-contributions-to-jquery-plugins/index.html:1:
+
+  http://api.jquery.com/category/plugins/templates/ is not an HTTPS link
+
+* At _site/posts/my-pluralsight-course/index.html:1:
+
+  http://pluralsight.com is not an HTTPS link
+
+* At _site/posts/openclosed-principle-is-never-100-closed/index.html:1:
+
+  http://en.wikipedia.org/wiki/Open/closed_principle is not an HTTPS link
+
+* At _site/posts/openclosed-principle-is-never-100-closed/index.html:1:
+
+  http://en.wikipedia.org/wiki/Object-oriented_programming is not an HTTPS link
+
+* At _site/posts/openclosed-principle-is-never-100-closed/index.html:1:
+
+  http://en.wikipedia.org/wiki/Factory_method_pattern is not an HTTPS link
+
+* At _site/posts/openclosed-principle-is-never-100-closed/index.html:1:
+
+  http://en.wikipedia.org/wiki/Abstract_class is not an HTTPS link
+
+* At _site/posts/openclosed-principle-is-never-100-closed/index.html:1:
+
+  http://en.wikipedia.org/wiki/Interfaces is not an HTTPS link
+
+* At _site/posts/openclosed-principle-is-never-100-closed/index.html:1:
+
+  http://en.wikipedia.org/wiki/Template_method_pattern is not an HTTPS link
+
+* At _site/posts/openclosed-principle-is-never-100-closed/index.html:1:
+
+  http://en.wikipedia.org/wiki/Loose_coupling is not an HTTPS link
+
+* At _site/posts/push-based-architecture-with-rxjs/index.html:46:
+
+  http://youtube.com/fullstackmaster is not an HTTPS link
+
+* At _site/posts/push-based-architecture-with-rxjs/index.html:46:
+
+  http://github.com/rupeshtiwari is not an HTTPS link
+
+* At _site/posts/push-based-architecture-with-rxjs/index.html:46:
+
+  http://twitter.com/rupeshtiwari_co is not an HTTPS link
+
+* At _site/posts/query-document-using-linq-on-azure-cosmos-db/index.html:1:
+
+  http://www.rupeshtiwari.com/azure-sandbox-free-account-for-learning/ is not an HTTPS link
+
+* At _site/posts/query-document-using-linq-on-azure-cosmos-db/index.html:1:
+
+  http://www.rupeshtiwari.com/creating-cosmos-db-from-dotnet-core-project/ is not an HTTPS link
+
+* At _site/posts/query-document-using-linq-on-azure-cosmos-db/index.html:1:
+
+  http://www.rupeshtiwari.com/crud-with-cosmos-db-and-dotnet-core/ is not an HTTPS link
+
+* At _site/posts/razor-view-engine-for-asp-net/index.html:1:
+
+  http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx is not an HTTPS link
+
+* At _site/posts/razor-view-engine-for-asp-net/index.html:1:
+
+  http://weblogs.asp.net/scottgu is not an HTTPS link
+
+* At _site/posts/razor-view-engine-for-asp-net/index.html:1:
+
+  http://weblogs.asp.net/scottgu/archive/2010/07/27/introducing-asp-net-mvc-3-preview-1.aspx is not an HTTPS link
+
+* At _site/posts/razor-view-engine-for-asp-net/index.html:1:
+
+  http://msdn.microsoft.com/en-us/vcsharp/aa336809 is not an HTTPS link
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  http://rxmarbles.com/ is not an HTTPS link
+
+* At _site/posts/setup-ci-cd-for-angular-app-with-github-action/index.html:155:
+
+  http://www.rupeshtiwari.com/angular-ci-cd-with-github-actions/ is not an HTTPS link
+
+* At _site/posts/setup-ci-cd-for-angular-app-with-github-action/index.html:155:
+
+  http://www.rupeshtiwari.com/angular-ci-cd-with-github-actions/ is not an HTTPS link
+
+* At _site/posts/testing-node-js-application-using-jasmine-karma/index.html:42:
+
+  http://karma-runner.github.io/6.3/intro/installation.html is not an HTTPS link
+
+* At _site/posts/testing-node-js-application-using-jasmine-karma/index.html:50:
+
+  http://karma-runner.github.io/6.3/intro/configuration.html is not an HTTPS link
+
+* At _site/posts/understanding-rxjs-behaviorsubject-replaysubject-and-asyncsubject/index.html:125:
+
+  http://youtube.com/fullstackmaster is not an HTTPS link
+
+* At _site/posts/webhook-for-beginners/index.html:1:
+
+  http://www.rupeshtiwari.com/coding-examples-webhook-sample-app/ is not an HTTPS link
+
+For the Links > Internal check, the following failures were found:
+
+* At _site/posts/2021-01-17-creating-subscription-in-azure-ci-cd-pipeline/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/adding-tag-to-git-branch-in-azure-ci-pipelines/index.html:11:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/angular-service-as-message-handler/index.html:107:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/authenticating-git-on-development-box/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-advisor-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-availability-set-vs-availability-zone/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-compute-resources/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-cosmos-db-basics/index.html:251:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-cost-management-and-billing-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-developer-associate-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-devops-server-2020-dos-dont/index.html:26:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-functions-basics/index.html:135:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-information-protection-strategy/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-load-balancer-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-monitor-and-application-insights-introduction/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-network-watcher-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-sandbox-free-account-for-learning/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-security-center-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-update-domain-vs-fault-domain/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/azure-update-domain-vs-fault-domain/index.html:1:
+
+  internally linking to #why-do-we-separate-servers-in-different-racks; the file exists, but the hash 'why-do-we-separate-servers-in-different-racks' does not
+
+* At _site/posts/azure-update-domain-vs-fault-domain/index.html:1:
+
+  internally linking to #why-group-servers-in-update-domains; the file exists, but the hash 'why-group-servers-in-update-domains' does not
+
+* At _site/posts/binary-search-concept/index.html:311:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/branch-protection-in-azure-devops/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/build-javascript-web-application-from-scratch/index.html:1:
+
+  internally linking to /assets/2020/02/image.png?fit=661%2C1024&ssl=1, which does not exist
+
+* At _site/posts/building-and-testing-node-js-application-using-github-actions/index.html:49:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/building-blog-with-jekyll-and-github-pages-on-windows/index.html:16:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/caching-azure-ci-pipeline-artifacts/index.html:62:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/caching-dependencies-on-github-workflows/index.html:13:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/caching-pipeline-not-working-in-azure-devops-server-2020/index.html:3:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/calling-node-js-script-from-azure-ci-pipeline/index.html:49:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/configuring-azure-blob-storage/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/configuring-azure-diagnostics-log/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/configuring-environment-variable-in-azure-ci-pipeline/index.html:12:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/conventional-git-commit-messages-and-linting/index.html:83:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/create-update-and-delete-tags-on-azure-resource/index.html:65:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-angular-build-definition-in-azure-ci-pipeline/index.html:63:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-azure-cosmos-db-resources/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-azure-function-in-csharp/index.html:3:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-azure-storage-account/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-cosmos-db-from-dotnet-core-project/index.html:167:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-javascript-github-action/index.html:181:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-new-app-with-nx-console/index.html:82:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/creating-typescript-library-using-webpack/index.html:1:
+
+  internally linking to /assets/2018/11/grunge-hipster-wooden-desktop-with-computer-digital-tablet-picture-id490243118?b=1&k=6&m=490243118&s=612x612&w=0&h=giJ7069v29T8RUgODfzt0KkFFyWtA-kv0YfBlUs2ZWA=, which does not exist
+
+* At _site/posts/creating-typescript-library-using-webpack/index.html:38:
+
+  internally linking to /assets/2018/11/windows-installation-workers-picture-id584858784?b=1&k=6&m=584858784&s=612x612&w=0&h=wsn55eQu5Ls5ENJtf5maUG8jRTWusQfmv7gcbAwqWSk=, which does not exist
+
+* At _site/posts/crud-with-cosmos-db-and-dotnet-core/index.html:563:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:1:
+
+  internally linking to /assets/2018/12/decorator-in-typescript-and-Angular.jpg, which does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:1:
+
+  internally linking to /assets/2018/12/photo-1458419948946-19fb2cc296af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb, which does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:1:
+
+  internally linking to /assets/2018/12/photo-1512373374262-e0f6da31389f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb, which does not exist
+
+* At _site/posts/decorators-in-typescript-and-angular/index.html:4:
+
+  internally linking to /assets/2018/12/logmethod-decorator-typescript-and-angular.png, which does not exist
+
+* At _site/posts/dependency-injection-in-react/index.html:1:
+
+  internally linking to /assets/2018/12/IOC-concept.png, which does not exist
+
+* At _site/posts/dependency-injection-in-react/index.html:1:
+
+  internally linking to /assets/2018/12/react-updater-DI.png, which does not exist
+
+* At _site/posts/dependency-injection-in-react/index.html:1:
+
+  internally linking to /assets/2018/12/react-DI-for-renderer_.png, which does not exist
+
+* At _site/posts/describe-core-azure-architecture-components/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/design-azure-governance-for-microsoft-azure-solutions-architect/index.html:17:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/design-security-for-application-for-microsoft-azure-solutions-architect/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/discuss-azure-fundamental-concepts/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/domain-driven-design-philosophy/index.html:1:
+
+  internally linking to /assets/2018/11/img_20181104_210041__01__017529256551958029955.jpg, which does not exist
+
+* At _site/posts/enforcing-dependency-constraints-in-nx-monorepo-projects/index.html:222:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/enforcing-dependency-constraints-within-service-in-nx-monorepo-workspace/index.html:370:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internally linking to /assets/2018/11/businessman-builds-a-tower-picture-id515604620?b=1&k=6&m=515604620&s=612x612&w=0&h=Of_0R4rBqzl6mOUwql3ehJGqNB81l0cVyjXOikPvTE0=, which does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internally linking to /assets/2018/11/screenshot_20181115-105315__012460127057064369218.jpg, which does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internally linking to /assets/2018/11/evil-clown-in-a-dark-forest-in-a-white-veil-picture-id523041536?b=1&k=6&m=523041536&s=612x612&w=0&h=P1OG8UC3paTDBFdAmB6Mww3hVpz8ziJcjjmZNwYaRDo=, which does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internally linking to /assets/2018/11/positive-mind-vibes-and-life-picture-id477265518?b=1&k=6&m=477265518&s=612x612&w=0&h=l-2tXsVjH7b-ogVM5-PbC4HC5lxm-Nb9WHUChioU96c=, which does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internally linking to /assets/2018/11/clear-vision-through-glasses-picture-id618066156?s=612x612, which does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internally linking to /assets/2018/11/young-man-success-celebration-at-office-picture-id888751614?b=1&k=6&m=888751614&s=612x612&w=0&h=eDkZ82lTTYqTTzEerSrRNUAsfpkTKVgGUGipW36pvQ8=, which does not exist
+
+* At _site/posts/establishing-goals/index.html:1:
+
+  internally linking to /assets/2018/11/whiskey-distillation-picture-id157532646?b=1&k=6&m=157532646&s=612x612&w=0&h=rwoFDkNVgx3rDxLGsN5QM0IFtE_iwyVObBXSMC7THk0=, which does not exist
+
+* At _site/posts/explore-azure-database-and-analytics-services/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/finding-affected-builds-nrwl-nx-monorepo/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internally linking to /assets/2019/07/image.png?fit=1024%2C322&ssl=1, which does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internally linking to /assets/2019/07/image-3.png?fit=1024%2C469&ssl=1, which does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internally linking to /assets/2019/07/image-4.png?fit=1024%2C482&ssl=1, which does not exist
+
+* At _site/posts/finding-js-memory-leaks-with-chrome-development-tools/index.html:1:
+
+  internally linking to /assets/2019/07/image-6.png?fit=1024%2C519&ssl=1, which does not exist
+
+* At _site/posts/fixing-nrwl-nx-monorepo-dependency-graph-error/index.html:183:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/full-stack-master-school/index.html:1:
+
+  internally linking to www.fullstackmaster.net/pro, which does not exist
+
+* At _site/posts/full-stack-master-school/index.html:1:
+
+  internally linking to www.fullstackmaster.net/elite, which does not exist
+
+* At _site/posts/how-to-codifying-infrastructure-in-configuration/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/how-to-install-scoop-on-window-copy/index.html:7:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/how-to-install-scoop-on-window/index.html:7:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/implementing-azure-application-insight-in-asp-net-mvc-application/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/importing-wordpress-or-blogger-blogs-to-jekyll-blog/index.html:31:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/integrate-github-pages-in-angular-6-app/index.html:1:
+
+  internally linking to /assets/2018/11/ghpages-1-1.png, which does not exist
+
+* At _site/posts/integrate-github-pages-in-angular-6-app/index.html:1:
+
+  internally linking to /assets/2018/11/ghpages-1.png, which does not exist
+
+* At _site/posts/integrating-ckeditor-in-nx-monorepo/index.html:1113:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/introduction-of-azure-data-center/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/introduction-to-azure-fundamentals/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/introduction-to-azure-infrastructure-architecture/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/introduction-to-azure-infrastructure-architecture/index.html:1:
+
+  internally linking to #azure-regions; the file exists, but the hash 'azure-regions' does not
+
+* At _site/posts/introduction-to-azure-infrastructure-architecture/index.html:1:
+
+  internally linking to #availability-zone; the file exists, but the hash 'availability-zone' does not
+
+* At _site/posts/introduction-to-yaml/index.html:117:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/javascript-prototype-inheritance/index.html:34:
+
+  internally linking to /assets/2010/09/lens-14274696621702000794186467.jpg, which does not exist
+
+* At _site/posts/make-your-powershell-posh-colorful/index.html:57:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/managing-css-in-angular-app-for-cross-browsers-and-os/index.html:215:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/merge-and-publish-code-coverage-for-nx-workspace-in-azure-ci-pipeline/index.html:179:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/merge-sorting-algorithm-recursion-summary/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/microsoft-azure-architect-design-random-question-flashcards/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/microsoft-azure-architect-technologies-az-303-introduction/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/microsoft-azure-solution-architect-expert-certification-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/microsoft-azure-support-plans-basics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/model-in-domain-driven-design/index.html:1:
+
+  internally linking to /assets/2019/02/what-is-domain.png, which does not exist
+
+* At _site/posts/model-in-domain-driven-design/index.html:1:
+
+  internally linking to /assets/2019/02/pexels-photo-356147.jpeg?auto=compress&cs=tinysrgb&h=350, which does not exist
+
+* At _site/posts/model-in-domain-driven-design/index.html:1:
+
+  internally linking to /assets/2019/02/core-values-picture-id685774898?b=1&k=6&m=685774898&s=612x612&w=0&h=znynvt8gN8wQ4_E14M3Ca6Aac4EZRA0wuaDzTZI9GTo=, which does not exist
+
+* At _site/posts/monitoring-containers-with-azure-monitor/index.html:57:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/monitoring-options-for-applications-in-azure/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/monitoring-your-virtual-machines-with-azure-monitor/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/monitoring-your-virtual-machines-with-azure-monitor/index.html:1:
+
+  internally linking to #creating-log-analytics-workspace; the file exists, but the hash 'creating-log-analytics-workspace' does not
+
+* At _site/posts/on-premises-disaster-site-recovery-strategy-in-azure/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/powershell-random-notes/index.html:153:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/publishing-code-coverage-in-azure-ci-pipeline/index.html:39:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/publishing-code-coverage-in-azure-ci-pipelines/index.html:59:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/publishing-jekyll-blog-post-to-dev-to-using-github-ci-cd-pipeline/index.html:25:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/publishing-nx-monorepo-angular-app-to-npm/index.html:58:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/publishing-nx-monorepo-test-results-in-azure-ci-pipeline/index.html:45:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/publishing-test-result-using-jest-in-angular/index.html:51:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/query-document-using-linq-on-azure-cosmos-db/index.html:201:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/restoring-and-publishing-npm-from-azure-ci-pipeline/index.html:122:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/running-angular-10-in-internet-explorer-11-date-2021-02-04/index.html:33:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/pexels-photo-1670045.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/10-values-marble-diagrams-interval-1.png, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/10-values-marble-diagrams-interval-1.png, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/marbles-with-errors.png, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/abstract-blur-background-english-multiple-choice-test-picture-id499509690?b=1&k=6&m=499509690&s=612x612&w=0&h=FqCpCmewz0zWaZ9VUWfl1ep6ziwBd8yKA-dNOODRDqs=, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/operator-behavior-marble-diagrms.png, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/merge.png, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/make-a-difference-picture-id693322828?b=1&k=6&m=693322828&s=612x612&w=0&h=n_wKObBdXdyHCIOwPOYGk0KGc9cl5brJLpufq7NCpug=, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/little-boy-climbs-up-the-ladder-on-the-playground-picture-id535466066?b=1&k=6&m=535466066&s=612x612&w=0&h=8iol5yE8iLF_7gelayJL3UVyrgVMdj6vPVLZlrhMR24=, which does not exist
+
+* At _site/posts/rxjs-marble-diagrams/index.html:1:
+
+  internally linking to /assets/2018/11/live-marble-diagrams-drawn.gif, which does not exist
+
+* At _site/posts/scheduling-jekyll-post-on-github-pages/index.html:57:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/server-deployment-strategies-and-storage-spaces-direct-fault-tolerence-in-azure/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/setting-up-npmrc-in-windows-developer-box-for-azure-devops-server/index.html:27:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/setup-ci-cd-for-angular-app-with-github-action/index.html:155:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/sharing-variables-within-tasks-in-azure-ci-pipeline/index.html:93:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/simple-pub-sub-with-rxjs/index.html:9:
+
+  internally linking to /assets/2019/03/background-beverage-career-1855233.jpg?fit=840%2C628&ssl=1, which does not exist
+
+* At _site/posts/simple-pub-sub-with-rxjs/index.html:31:
+
+  internally linking to /assets/2019/03/subscribing-init.png, which does not exist
+
+* At _site/posts/simple-pub-sub-with-rxjs/index.html:38:
+
+  internally linking to /assets/2019/03/subscribing-add-user.png, which does not exist
+
+* At _site/posts/site-recoverystrategy-in-azure/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/testing-node-js-application-using-jasmine-karma/index.html:89:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/testing-nrwl-nx-angular-monorepo-projects-using-jest/index.html:43:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/the-big-picture-of-azure-storage/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/topologies-azure-service-bus/index.html:26:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/transactionalbatch-in-azure-cosmos-db-sdk/index.html:307:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/travis-ci-vs-team-foundation-server-vs-azure-devops/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/understanding-javascript-scope/index.html:1:
+
+  internally linking to /assets/2018/11/lcoalscope.png, which does not exist
+
+* At _site/posts/updating-azure-ci-pipeline-build-number/index.html:85:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/using-nservicebus-in-azure-functions/index.html:19:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/visualize-azure-monitor-logs-and-metrics/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/webhook-for-beginners/index.html:1:
+
+  internally linking to express-discorder/package.json, which does not exist
+
+* At _site/posts/webhook-for-beginners/index.html:11:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/what-is-azure-resource-manager-or-arm/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/what-is-azure-virtual-machine-scale-sets/index.html:1:
+
+  internally linking to #metrics; the file exists, but the hash 'metrics' does not
+
+* At _site/posts/what-is-azure-virtual-machine-scale-sets/index.html:5:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/what-is-subnet-and-why-subnet-is-required/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/what-should-you-use-for-running-applications-in-azure/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+* At _site/posts/where-to-store-application-data-in-azure/index.html:1:
+
+  internally linking to www.fullstackmaster.net, which does not exist
+
+For the Scripts check, the following failures were found:
+
+* At _site/posts/how-i-cleared-azure-fundamental-certification-az-900/index.html:1:
+
+  script link //cdn.credly.com/assets/utilities/embed.js is a protocol-relative URL, use explicit https:// instead
+
+* At _site/posts/how-i-cleared-azure-fundamental-certification-az-900/index.html:1:
+
+  script link //cdn.credly.com/assets/utilities/embed.js is a protocol-relative URL, use explicit https:// instead
+
+
+HTML-Proofer found 296 failures!
+Error: Process completed with exit code 1.
