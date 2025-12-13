@@ -1,48 +1,9 @@
 import { motion } from "framer-motion";
-import { Download, Mail, CheckCircle, BookOpen, Sparkles } from "lucide-react";
+import { Download, CheckCircle, BookOpen, Sparkles, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 export default function LeadMagnet() {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "lead_magnet" }),
-      });
-      
-      if (!response.ok) {
-        throw new Error("Failed to submit");
-      }
-      
-      setIsSubmitted(true);
-      toast({
-        title: "Check your inbox!",
-        description: "Your free guide is on the way.",
-      });
-    } catch (error) {
-      toast({
-        title: "Something went wrong",
-        description: "Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  const gumroadUrl = "https://rupeshtiwari.gumroad.com/l/rupesh-kit";
 
   const benefits = [
     "The exact framework I used to crack Google, Microsoft, and AWS",
@@ -59,7 +20,6 @@ export default function LeadMagnet() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Content */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -92,7 +52,6 @@ export default function LeadMagnet() {
               </ul>
             </motion.div>
 
-            {/* Right side - Form */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -104,63 +63,37 @@ export default function LeadMagnet() {
                     <BookOpen className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">FREE PDF Guide</h3>
-                    <p className="text-slate-400">42 pages of actionable insights</p>
+                    <h3 className="text-xl font-bold text-white">FREE Interview Kit</h3>
+                    <p className="text-slate-400">Everything you need to crack FAANG</p>
                   </div>
                 </div>
 
-                {!isSubmitted ? (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
-                        Where should I send it?
-                      </label>
-                      <div className="relative">
-                        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500" />
-                        <Input
-                          id="email"
-                          type="email"
-                          placeholder="your@email.com"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          className="pl-10 h-12 bg-[#0F2341] border-[#1E3A5F] text-white placeholder:text-slate-500 focus:border-[#C9A227]"
-                          required
-                          data-testid="input-lead-magnet-email"
-                        />
-                      </div>
-                    </div>
-                    
-                    <Button 
-                      type="submit"
-                      className="w-full h-12 bg-gradient-to-r from-[#C9A227] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#E5C158] text-[#0A1628] font-bold text-base"
-                      disabled={isSubmitting}
-                      data-testid="button-download-guide"
-                    >
-                      {isSubmitting ? (
-                        "Sending..."
-                      ) : (
-                        <>
-                          <Download className="w-5 h-5 mr-2" />
-                          Get My Free Guide
-                        </>
-                      )}
-                    </Button>
-                    
-                    <p className="text-xs text-slate-500 text-center">
-                      No spam, ever. Unsubscribe anytime.
-                    </p>
-                  </form>
-                ) : (
-                  <div className="text-center py-6">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-500/10 flex items-center justify-center">
-                      <CheckCircle className="w-8 h-8 text-green-500" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-2">Check Your Inbox!</h3>
-                    <p className="text-slate-400">
-                      Your guide is on its way. Check your spam folder if you don't see it.
-                    </p>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-center gap-3 text-slate-300">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>PDF Guide with frameworks</span>
                   </div>
-                )}
+                  <div className="flex items-center gap-3 text-slate-300">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>System design templates</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-slate-300">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Behavioral question cheatsheet</span>
+                  </div>
+                </div>
+
+                <Button 
+                  className="w-full h-14 bg-gradient-to-r from-[#C9A227] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#E5C158] text-[#0A1628] font-bold text-base"
+                  asChild
+                  data-testid="button-download-guide"
+                >
+                  <a href={gumroadUrl} target="_blank" rel="noopener noreferrer">
+                    <Download className="w-5 h-5 mr-2" />
+                    Get Free Kit on Gumroad
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
 
                 <div className="mt-6 pt-6 border-t border-[#1E3A5F]">
                   <div className="flex items-center justify-center gap-6 text-sm text-slate-400">
