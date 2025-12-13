@@ -12,6 +12,10 @@ import FloatingButtons from "@/components/floating-buttons";
 import Resources from "@/components/resources";
 import MyJourney from "@/components/my-journey";
 import FamilySection from "@/components/family-section";
+import LeadMagnet from "@/components/lead-magnet";
+import ClientResults from "@/components/client-results";
+import YouTubeSection from "@/components/youtube-section";
+import Newsletter from "@/components/newsletter";
 
 export default function Home() {
   return (
@@ -21,13 +25,17 @@ export default function Home() {
         <Hero />
         <TrustedCompanies />
         <MyJourney />
+        <ClientResults />
         <Programs />
+        <LeadMagnet />
         <Methodology />
+        <YouTubeSection />
         <Resources />
         <About />
         <FamilySection />
         <Skills />
         <Testimonials />
+        <Newsletter />
         <Content />
       </main>
       <Footer />

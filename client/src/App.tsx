@@ -7,6 +7,7 @@ import FullStackMasterBanner from "@/components/fullstackmaster-banner";
 import Home from "@/pages/home";
 import Blog from "@/pages/blog";
 import Privacy from "@/pages/privacy";
+import Pricing from "@/pages/pricing";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/pricing" component={Pricing} />
       <Route component={NotFound} />
     </Switch>
   );
