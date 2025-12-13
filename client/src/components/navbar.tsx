@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Github } from "lucide-react";
+import { Menu, X, Calendar, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -19,7 +19,7 @@ export default function Navbar() {
 
   const links = [
     { name: "About", href: "#about", isHash: true },
-    { name: "Skills", href: "#skills", isHash: true },
+    { name: "Testimonials", href: "#testimonials", isHash: true },
     { name: "Blog", href: "https://blog.rupeshtiwari.com", isHash: false, external: true },
     { name: "Courses", href: "https://www.fullstackmaster.net", isHash: false, external: true },
   ];
@@ -36,16 +36,15 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-md shadow-sm border-b" : "bg-transparent"
+        scrolled ? "bg-slate-950/90 backdrop-blur-md border-b border-slate-800/50" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold font-display tracking-tighter hover:opacity-80 transition-opacity">
-          rupesh<span className="text-primary">tiwari</span>
+          <span className="text-white">rupesh</span><span className="text-cyan-400">tiwari</span>
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {links.map((link) => (
             link.external ? (
               <a
@@ -53,7 +52,7 @@ export default function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-slate-400 hover:text-white transition-colors"
               >
                 {link.name}
               </a>
@@ -62,43 +61,49 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleHashClick(e, link.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                className="text-sm font-medium text-slate-400 hover:text-white transition-colors cursor-pointer"
               >
                 {link.name}
               </a>
             ) : (
               <Link key={link.name} href={link.href} className={`text-sm font-medium transition-colors ${
-                  location === link.href ? "text-primary font-semibold" : "text-muted-foreground hover:text-primary"
+                  location === link.href ? "text-cyan-400 font-semibold" : "text-slate-400 hover:text-white"
                 }`}>
                   {link.name}
               </Link>
             )
           ))}
-          <Button variant="default" size="sm" asChild>
-            <a href="https://github.com/rupeshtiwari" target="_blank" rel="noopener noreferrer">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
-            </a>
-          </Button>
+          <div className="flex items-center gap-2 ml-2">
+            <Button size="sm" variant="outline" className="border-green-500/30 text-green-400 hover:bg-green-500/10 hover:text-green-300" asChild>
+              <a href="https://wa.me/16094424081" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-1.5" />
+                Chat
+              </a>
+            </Button>
+            <Button size="sm" className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 border-0" asChild>
+              <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
+                <Calendar className="w-4 h-4 mr-1.5" />
+                Book 1:1
+              </a>
+            </Button>
+          </div>
         </div>
 
-        {/* Mobile Toggle */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
         </button>
       </div>
 
-      {/* Mobile Nav */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background border-b"
+            className="md:hidden bg-slate-950 border-b border-slate-800"
           >
             <div className="flex flex-col p-6 gap-4">
               {links.map((link) => (
@@ -108,7 +113,7 @@ export default function Navbar() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium"
+                    className="text-lg font-medium text-white"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
@@ -118,25 +123,33 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleHashClick(e, link.href)}
-                    className="text-lg font-medium cursor-pointer"
+                    className="text-lg font-medium text-white cursor-pointer"
                   >
                     {link.name}
                   </a>
                 ) : (
                   <Link key={link.name} href={link.href}
-                      className="text-lg font-medium"
+                      className="text-lg font-medium text-white"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
                   </Link>
                 )
               ))}
-              <Button className="w-full" asChild>
-                <a href="https://github.com/rupeshtiwari" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-4 h-4 mr-2" />
-                  GitHub Profile
-                </a>
-              </Button>
+              <div className="flex flex-col gap-3 mt-4">
+                <Button className="w-full bg-green-500 hover:bg-green-600" asChild>
+                  <a href="https://wa.me/16094424081" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    WhatsApp Me
+                  </a>
+                </Button>
+                <Button className="w-full bg-gradient-to-r from-blue-500 to-cyan-500" asChild>
+                  <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    Book 1:1 Coaching
+                  </a>
+                </Button>
+              </div>
             </div>
           </motion.div>
         )}
