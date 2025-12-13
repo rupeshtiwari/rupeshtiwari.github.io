@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The FAANG Interview Blueprint - Rupesh Tiwari</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; line-height: 1.8; color: #1a1a1a; background: #fff; }
+    .page { max-width: 800px; margin: 0 auto; padding: 60px 40px; }
+    .cover { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 100%); color: white; }
+    .cover h1 { font-size: 48px; margin-bottom: 20px; color: #D4AF37; }
+    .cover .subtitle { font-size: 24px; margin-bottom: 40px; opacity: 0.9; }
+    .cover .author { font-size: 18px; margin-top: 60px; }
+    .cover .credentials { font-size: 14px; opacity: 0.7; margin-top: 10px; }
+    h2 { font-size: 28px; color: #0A1628; margin: 40px 0 20px; border-bottom: 3px solid #D4AF37; padding-bottom: 10px; }
+    h3 { font-size: 22px; color: #1E3A5F; margin: 30px 0 15px; }
+    p { margin-bottom: 16px; }
+    ul, ol { margin: 20px 0 20px 30px; }
+    li { margin-bottom: 10px; }
+    .highlight { background: #FFF8E7; padding: 20px; border-left: 4px solid #D4AF37; margin: 20px 0; }
+    .tip { background: #E8F4FD; padding: 20px; border-left: 4px solid #1E40AF; margin: 20px 0; }
+    .framework { background: #f5f5f5; padding: 25px; border-radius: 8px; margin: 20px 0; }
+    .framework h4 { color: #D4AF37; margin-bottom: 15px; }
+    .question { font-weight: bold; color: #1E3A5F; }
+    .toc { background: #f9f9f9; padding: 30px; margin: 30px 0; }
+    .toc h3 { margin-top: 0; }
+    .toc ul { list-style: none; margin-left: 0; }
+    .toc li { padding: 8px 0; border-bottom: 1px solid #eee; }
+    .footer { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid #eee; color: #666; }
+    @media print { .page { padding: 40px; } .cover { page-break-after: always; } h2 { page-break-before: always; } }
+  </style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>The FAANG Interview Blueprint</h1>
+  <div class="subtitle">5 Secrets That Helped a Tier-3 College Kid<br>Crack Google, Microsoft & AWS</div>
+  <div class="author">By Rupesh Tiwari</div>
+  <div class="credentials">AWS Senior CSM | ISB CTO Scholar | 20+ Years in Tech<br>Executive Interview Coach | 92% Client Success Rate</div>
+</div>
+
+<div class="page">
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li>1. Introduction: My Journey</li>
+      <li>2. Secret #1: The Leadership Narrative Framework</li>
+      <li>3. Secret #2: System Design for Senior Roles</li>
+      <li>4. Secret #3: The 5 Behavioral Questions Everyone Asks</li>
+      <li>5. Secret #4: The 12-Week Preparation Timeline</li>
+      <li>6. Secret #5: Salary Negotiation Scripts</li>
+      <li>7. Action Plan: Your Next Steps</li>
+    </ul>
+  </div>
+
+  <h2>Introduction: My Journey</h2>
+  <p>I grew up in a small town in India with no money for education. I sold eggs and bread door-to-door to pay my school fees. I worked as a waiter through college. Everything was stacked against me.</p>
+  <p>But here's what happened: I became the school topper. I taught myself programming. I got my first job as a JavaScript developer. And then I kept climbing.</p>
+  <p><strong>Today, I'm a Senior Customer Solutions Manager at AWS.</strong> I've passed interviews at Google, Microsoft, and AWS. And I've coached 50+ Directors, VPs, and Principal Engineers to land FAANG offers with an average $285K compensation increase.</p>
+  <p>This guide contains the exact frameworks I used and teach. No fluff. No generic advice. Just what works.</p>
+
+  <h2>Secret #1: The Leadership Narrative Framework</h2>
+  <p>The #1 mistake senior engineers make is treating interviews like coding tests. At the Director+ level, you're being evaluated on something completely different: <strong>can you lead?</strong></p>
+  
+  <h3>The SPIRE Framework</h3>
+  <div class="framework">
+    <h4>S - Situation</h4>
+    <p>Set the context in 2-3 sentences. What was the business challenge? What was at stake?</p>
+    
+    <h4>P - Problem</h4>
+    <p>What specific problem did YOU identify? Show strategic thinking here.</p>
+    
+    <h4>I - Initiative</h4>
+    <p>What did YOU do? Focus on YOUR leadership actions, not what the team did.</p>
+    
+    <h4>R - Results</h4>
+    <p>Quantify the impact. Revenue, cost savings, efficiency gains, team growth.</p>
+    
+    <h4>E - Evolution</h4>
+    <p>What did you learn? How did this shape your leadership philosophy?</p>
+  </div>
+
+  <div class="tip">
+    <strong>Pro Tip:</strong> Prepare 8-10 SPIRE stories covering different leadership dimensions: hiring, firing, conflict resolution, technical decisions, failure, ambiguity, cross-team collaboration, and innovation.
+  </div>
+
+  <h2>Secret #2: System Design for Senior Roles</h2>
+  <p>Senior-level system design is NOT about drawing boxes and arrows. It's about demonstrating you can make trade-offs and justify decisions.</p>
+  
+  <h3>The 4-Step Framework</h3>
+  <div class="framework">
+    <h4>Step 1: Clarify Requirements (5 minutes)</h4>
+    <ul>
+      <li>Functional requirements: What must the system do?</li>
+      <li>Non-functional requirements: Scale, latency, availability</li>
+      <li>Constraints: Budget, timeline, existing systems</li>
+    </ul>
+    
+    <h4>Step 2: High-Level Design (10 minutes)</h4>
+    <ul>
+      <li>Draw the major components</li>
+      <li>Explain data flow</li>
+      <li>Identify APIs</li>
+    </ul>
+    
+    <h4>Step 3: Deep Dive (15 minutes)</h4>
+    <ul>
+      <li>Pick 2-3 components to detail</li>
+      <li>Discuss trade-offs explicitly</li>
+      <li>Address scale challenges</li>
+    </ul>
+    
+    <h4>Step 4: Wrap-Up (5 minutes)</h4>
+    <ul>
+      <li>Summarize key decisions</li>
+      <li>Mention what you'd do with more time</li>
+      <li>Discuss monitoring and operations</li>
+    </ul>
+  </div>
+
+  <h2>Secret #3: The 5 Behavioral Questions Everyone Asks</h2>
+  <p>These 5 questions appear in 90% of senior interviews. Have a strong SPIRE story ready for each.</p>
+
+  <div class="framework">
+    <p class="question">1. Tell me about yourself.</p>
+    <p>This is NOT a resume walkthrough. Use the Present-Past-Future formula: Where you are now → 2-3 career highlights → Why you're excited about this role.</p>
+    
+    <p class="question">2. Tell me about a time you failed.</p>
+    <p>Pick a real failure. Show self-awareness. Focus 80% on what you learned and how you improved.</p>
+    
+    <p class="question">3. Tell me about a conflict with a colleague.</p>
+    <p>Never badmouth anyone. Show how you sought to understand their perspective first.</p>
+    
+    <p class="question">4. Describe a time you made a decision without complete information.</p>
+    <p>This tests your ability to handle ambiguity. Show your decision-making framework.</p>
+    
+    <p class="question">5. Why do you want to work here?</p>
+    <p>Research the company's challenges. Connect your experience to their needs specifically.</p>
+  </div>
+
+  <h2>Secret #4: The 12-Week Preparation Timeline</h2>
+  
+  <h3>Weeks 1-2: Foundation</h3>
+  <ul>
+    <li>Update resume with quantified achievements</li>
+    <li>Optimize LinkedIn profile</li>
+    <li>Identify 8-10 SPIRE stories from your career</li>
+    <li>List target companies and roles</li>
+  </ul>
+
+  <h3>Weeks 3-4: Behavioral Prep</h3>
+  <ul>
+    <li>Practice SPIRE stories out loud</li>
+    <li>Record yourself answering questions</li>
+    <li>Do 2-3 mock interviews with friends</li>
+  </ul>
+
+  <h3>Weeks 5-8: Technical Prep</h3>
+  <ul>
+    <li>Review system design fundamentals</li>
+    <li>Practice 15-20 system design problems</li>
+    <li>Study company-specific architectures</li>
+  </ul>
+
+  <h3>Weeks 9-10: Mock Interviews</h3>
+  <ul>
+    <li>Do 4-6 full mock interview loops</li>
+    <li>Get feedback from experienced interviewers</li>
+    <li>Refine weak areas</li>
+  </ul>
+
+  <h3>Weeks 11-12: Final Polish</h3>
+  <ul>
+    <li>Research interviewers on LinkedIn</li>
+    <li>Prepare thoughtful questions</li>
+    <li>Rest and mental preparation</li>
+  </ul>
+
+  <h2>Secret #5: Salary Negotiation Scripts</h2>
+  <p>My clients have added $50K-$150K to their offers using these exact scripts.</p>
+
+  <div class="highlight">
+    <h4>Script 1: When They Give First Offer</h4>
+    <p>"Thank you for the offer. I'm very excited about this opportunity. Based on my research and the value I'll bring, I was expecting something closer to [X]. Is there flexibility in the base salary?"</p>
+  </div>
+
+  <div class="highlight">
+    <h4>Script 2: Competing Offers</h4>
+    <p>"I have another offer at [X] total comp. [Your company] is my first choice, but I need the numbers to work. Can you match or come closer to that package?"</p>
+  </div>
+
+  <div class="highlight">
+    <h4>Script 3: Signing Bonus</h4>
+    <p>"I understand there may be constraints on base salary. Would a signing bonus be possible to bridge the gap?"</p>
+  </div>
+
+  <div class="tip">
+    <strong>Golden Rule:</strong> Never accept on the spot. Always say "Thank you, I need a few days to review this with my family."
+  </div>
+
+  <h2>Your Next Steps</h2>
+  <ol>
+    <li><strong>This Week:</strong> Write out 3 SPIRE stories from your career</li>
+    <li><strong>Next Week:</strong> Practice telling them out loud (record yourself)</li>
+    <li><strong>Book a Call:</strong> Get personalized feedback on your preparation</li>
+  </ol>
+
+  <div class="highlight">
+    <h3>Ready for Personalized Coaching?</h3>
+    <p>I offer 1:1 coaching for Directors, VPs, and Principal Engineers targeting FAANG companies. My clients achieve a 92% offer rate with an average $285K compensation increase.</p>
+    <p><strong>Book a free discovery call:</strong> <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true">calendar.rupeshtiwari.com</a></p>
+  </div>
+
+  <div class="footer">
+    <p><strong>Rupesh Tiwari</strong></p>
+    <p>AWS Senior CSM | ISB CTO Scholar | Executive Interview Coach</p>
+    <p>www.rupeshtiwari.com | rupesh@fullstackmaster.net</p>
+    <p style="margin-top: 20px; font-size: 12px;">© 2024 Rupesh Tiwari. All rights reserved.</p>
+  </div>
+</div>
+
+</body>
+</html>
