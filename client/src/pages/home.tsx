@@ -23,6 +23,7 @@ import ExitPopup from "@/components/exit-popup";
 import ComparisonSection from "@/components/comparison-section";
 import LinkedInRecommendations from "@/components/linkedin-recommendations";
 import LiveChatWidget from "@/components/live-chat-widget";
+import PWAInstallPrompt from "@/components/pwa-install-prompt";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
       <Footer />
       <FloatingButtons />
       <LiveChatWidget />
+      <PWAInstallPrompt />
       <ExitPopup />
     </div>
   );
