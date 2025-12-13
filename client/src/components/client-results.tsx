@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TrendingUp, Building2, DollarSign, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCounterAnimation } from "@/hooks/use-counter-animation";
 
 const clientResults = [
   {
@@ -62,6 +63,45 @@ const companyLogos = [
   { name: "Netflix", bg: "bg-[#E50914]" },
 ];
 
+function AnimatedStat({ end, suffix, prefix, label, Icon }: { 
+  end: number; 
+  suffix?: string; 
+  prefix?: string; 
+  label: string;
+  Icon: React.ComponentType<{ className?: string }>;
+}) {
+  const { ref, displayValue } = useCounterAnimation({
+    end,
+    duration: 2000,
+    prefix: prefix || "",
+    suffix: suffix || "",
+  });
+
+  return (
+    <div ref={ref} className="p-6 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 text-center">
+      <Icon className="w-6 h-6 text-green-400 mx-auto mb-2" />
+      <div className="text-2xl md:text-3xl font-bold text-white">{displayValue}</div>
+      <div className="text-sm text-slate-400">{label}</div>
+    </div>
+  );
+}
+
+function AnimatedStatsBar() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+    >
+      <AnimatedStat end={20} suffix="+" label="Years in Tech" Icon={TrendingUp} />
+      <AnimatedStat end={285} prefix="$" suffix="K+" label="Average Salary Increase" Icon={DollarSign} />
+      <AnimatedStat end={92} suffix="%" label="Success Rate" Icon={TrendingUp} />
+      <AnimatedStat end={50} suffix="+" label="Clients Coached" Icon={Building2} />
+    </motion.div>
+  );
+}
+
 export default function ClientResults() {
   return (
     <section id="results" className="py-24 bg-[#0A1628] relative overflow-hidden">
@@ -84,26 +124,8 @@ export default function ClientResults() {
           </p>
         </motion.div>
 
-        {/* Stats Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
-        >
-          {[
-            { label: "Years in Tech", value: "20+", icon: TrendingUp },
-            { label: "Average Salary Increase", value: "$285K+", icon: DollarSign },
-            { label: "Success Rate", value: "92%", icon: TrendingUp },
-            { label: "Clients Coached", value: "50+", icon: Building2 },
-          ].map((stat, idx) => (
-            <div key={idx} className="p-6 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 text-center">
-              <stat.icon className="w-6 h-6 text-green-400 mx-auto mb-2" />
-              <div className="text-2xl md:text-3xl font-bold text-white">{stat.value}</div>
-              <div className="text-sm text-slate-400">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div>
+        {/* Stats Bar with Animated Counters */}
+        <AnimatedStatsBar />
 
         {/* Company Logos */}
         <motion.div

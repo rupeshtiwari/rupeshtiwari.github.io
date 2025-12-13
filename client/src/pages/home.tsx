@@ -20,6 +20,9 @@ import FAQ from "@/components/faq";
 import BlogPreview from "@/components/blog-preview";
 import UrgencyBanner from "@/components/urgency-banner";
 import ExitPopup from "@/components/exit-popup";
+import ComparisonSection from "@/components/comparison-section";
+import LinkedInRecommendations from "@/components/linkedin-recommendations";
+import LiveChatWidget from "@/components/live-chat-widget";
 
 export default function Home() {
   return (
@@ -31,10 +34,12 @@ export default function Home() {
         <TrustedCompanies />
         <MyJourney />
         <ClientResults />
+        <ComparisonSection />
         <Programs />
         <LeadMagnet />
         <Methodology />
         <YouTubeSection />
+        <LinkedInRecommendations />
         <BlogPreview />
         <ResourcesSection />
         <About />
@@ -47,6 +52,7 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingButtons />
+      <LiveChatWidget />
       <ExitPopup />
     </div>
   );

@@ -9,6 +9,8 @@ import Blog from "@/pages/blog";
 import Privacy from "@/pages/privacy";
 import Pricing from "@/pages/pricing";
 import Resources from "@/pages/resources";
+import CaseStudies from "@/pages/case-studies";
+import About from "@/pages/about";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +21,8 @@ function Router() {
       <Route path="/privacy" component={Privacy} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/resources" component={Resources} />
+      <Route path="/case-studies" component={CaseStudies} />
+      <Route path="/about" component={About} />
       <Route component={NotFound} />
     </Switch>
   );
