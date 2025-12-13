@@ -92,7 +92,7 @@ export default function About() {
                 I'm <span className="text-white font-semibold">Rupesh Tiwari</span>, currently serving as a <span className="text-amber-400 font-semibold">Senior Customer Solutions Manager at AWS</span>. My journey spans from writing code as a Software Engineer to architecting enterprise solutions and now leading strategic initiatives for AWS customers.
               </p>
               <p>
-                As an <span className="text-amber-400 font-semibold">ISB CTO Scholar</span>, I bring a unique blend of deep technical expertise and executive business acumen. I've passed interviews at <span className="text-white font-semibold">Microsoft, Google, and AWS</span> — giving me insider knowledge of what top tech companies look for at senior levels.
+                As an <span className="text-amber-400 font-semibold">ISB CTO Scholar</span>, I bring a unique blend of deep technical expertise and executive business acumen. I've passed interviews at <span className="text-white font-semibold">Microsoft, Google, and AWS</span>, giving me insider knowledge of what top tech companies look for at senior levels.
               </p>
               <p>
                 Through <span className="text-white font-semibold">FullstackMaster.net</span>, I've coached <span className="text-amber-400 font-semibold">50+ Directors, VPs, and Principal Engineers</span> to land offers at FAANG companies with an average <span className="text-green-400 font-semibold">$285K compensation increase</span>.

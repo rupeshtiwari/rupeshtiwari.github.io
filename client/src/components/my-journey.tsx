@@ -9,35 +9,35 @@ export default function MyJourney() {
       year: "Childhood",
       title: "Where It All Began",
       color: "from-red-500 to-pink-500",
-      story: "I grew up in a small town in India with no money for education. My father was sick for over 10 years since I was in 5th grade. Local heroes stepped in — the petrol pump owner, school teachers, neighbors — they all contributed to my tuition fees. Their belief in me changed everything."
+      story: "I grew up in a small town in India with no money for education. My father was sick for over 10 years since I was in 5th grade. Local heroes stepped in: the petrol pump owner, school teachers, neighbors. They all contributed to my tuition fees. Their belief in me changed everything."
     },
     {
       icon: GraduationCap,
       year: "School Days",
       title: "Selling Eggs to Pay Fees",
       color: "from-blue-500 to-cyan-500",
-      story: "In 11th grade, I sold eggs and bread door-to-door in our society to pay my school fees. Every morning before school, I'd carry my basket through the neighborhood. I became the school topper in 10th grade — proving that circumstances don't define your future."
+      story: "In 11th grade, I sold eggs and bread door-to-door in our society to pay my school fees. Every morning before school, I'd carry my basket through the neighborhood. I became the school topper in 10th grade, proving that circumstances don't define your future."
     },
     {
       icon: Briefcase,
       year: "College Years",
       title: "Waiter by Night, Student by Day",
       color: "from-purple-500 to-violet-500",
-      story: "College was expensive. I worked as a waiter in restaurants, sold vegetables, and took any job I could find. Vernacular school background, tier-3 city, tier-3 college — everything was against me. But I kept going. I taught myself programming and got my first job as a JavaScript developer."
+      story: "College was expensive. I worked as a waiter in restaurants, sold vegetables, and took any job I could find. Vernacular school background, tier-3 city, tier-3 college. Everything was against me. But I kept going. I taught myself programming and got my first job as a JavaScript developer."
     },
     {
       icon: Trophy,
       year: "Career Growth",
       title: "From Developer to Executive",
       color: "from-amber-500 to-yellow-500",
-      story: "JavaScript Developer → Solution Architect → Customer Success Manager → AWS Senior CSM. I cracked interviews at Google, Microsoft, and AWS — the same companies that once seemed like impossible dreams. Each rejection taught me something. Each failure made me stronger."
+      story: "JavaScript Developer → Solution Architect → Customer Success Manager → AWS Senior CSM. I cracked interviews at Google, Microsoft, and AWS, the same companies that once seemed like impossible dreams. Each rejection taught me something. Each failure made me stronger."
     },
     {
       icon: Users,
       year: "Today",
       title: "Family Man & Coach",
       color: "from-green-500 to-emerald-500",
-      story: "Today I'm blessed with a beautiful family — my wife who believed in me through everything, and our 3 children (2 daughters and 1 son). Now I coach others to crack their FAANG dreams because I know what it feels like to come from nothing and achieve everything."
+      story: "Today I'm blessed with a beautiful family: my wife who believed in me through everything, and our 3 children (2 daughters and 1 son). Now I coach others to crack their FAANG dreams because I know what it feels like to come from nothing and achieve everything."
     }
   ];
 
@@ -57,7 +57,7 @@ export default function MyJourney() {
             From Selling Eggs to <span className="text-[#D4AF37]">AWS Executive</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-            If a boy from a vernacular school in a tier-3 city can crack Google, Microsoft, and AWS — <span className="text-white font-semibold">so can you</span>. Here's my journey.
+            If a boy from a vernacular school in a tier-3 city can crack Google, Microsoft, and AWS, <span className="text-white font-semibold">so can you</span>. Here's my journey.
           </p>
         </motion.div>
 
@@ -107,9 +107,9 @@ export default function MyJourney() {
         >
           <div className="max-w-2xl mx-auto p-8 rounded-2xl bg-gradient-to-r from-[#1E3A5F]/50 to-[#0F2341]/50 border border-[#D4AF37]/20">
             <p className="text-xl text-white font-medium mb-4 italic">
-              "Every person who helped me — the petrol pump owner, my teachers, my neighbors — they didn't just pay my fees. They taught me that success is never alone. Now it's my turn to help others."
+              "Every person who helped me, the petrol pump owner, my teachers, my neighbors, they didn't just pay my fees. They taught me that success is never alone. Now it's my turn to help others."
             </p>
-            <p className="text-[#D4AF37] font-semibold">— Rupesh Tiwari</p>
+            <p className="text-[#D4AF37] font-semibold">- Rupesh Tiwari</p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">

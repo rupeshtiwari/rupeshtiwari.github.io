@@ -79,9 +79,9 @@ export default function FamilySection() {
               <div className="p-6 rounded-2xl bg-gradient-to-r from-[#1E3A5F]/30 to-[#0F2341]/30 border border-[#1E3A5F]/50">
                 <Quote className="w-8 h-8 text-[#D4AF37] mb-4" />
                 <p className="text-lg text-slate-300 leading-relaxed mb-4">
-                  "My wife believed in me when I was selling vegetables to pay bills. She saw the engineer in me before I did. Every late night studying, every rejection, every failure — she was there."
+                  "My wife believed in me when I was selling vegetables to pay bills. She saw the engineer in me before I did. Every late night studying, every rejection, every failure, she was there."
                 </p>
-                <p className="text-[#D4AF37] font-semibold">— Rupesh Tiwari</p>
+                <p className="text-[#D4AF37] font-semibold">- Rupesh Tiwari</p>
               </div>
 
               <div className="grid grid-cols-3 gap-4">
@@ -100,7 +100,7 @@ export default function FamilySection() {
               </div>
 
               <p className="text-slate-400 text-center">
-                <span className="text-white font-semibold">Career success means nothing without family.</span> I coach because I want others to achieve both — without sacrificing one for the other.
+                <span className="text-white font-semibold">Career success means nothing without family.</span> I coach because I want others to achieve both, without sacrificing one for the other.
               </p>
             </motion.div>
           </div>

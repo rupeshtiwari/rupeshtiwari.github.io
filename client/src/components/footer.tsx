@@ -90,9 +90,14 @@ export default function Footer() {
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} Rupesh Tiwari. All rights reserved. | 100% Confidential - NDA Available
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-slate-500 text-sm">
+            <p>© {new Date().getFullYear()} Rupesh Tiwari. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+              <a href="/privacy" className="hover:text-[#D4AF37] transition-colors" data-testid="link-privacy">Privacy Policy</a>
+              <span className="hidden sm:inline">|</span>
+              <span>100% Confidential - NDA Available</span>
+            </div>
+          </div>
           <div className="flex gap-4">
             <a href="https://github.com/rupeshtiwari" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors">
               <Github className="w-5 h-5" />

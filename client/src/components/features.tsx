@@ -11,7 +11,7 @@ const services = [
   {
     icon: Zap,
     title: "System Design",
-    description: "Executive-level system design focusing on business trade-offs, org impact, and multi-year roadmaps—not just technical diagrams.",
+    description: "Executive-level system design focusing on business trade-offs, org impact, and multi-year roadmaps, not just technical diagrams.",
     color: "from-purple-500 to-pink-500"
   },
   {
@@ -117,7 +117,7 @@ export default function Skills() {
         <div className="rounded-2xl bg-gradient-to-r from-slate-800 to-slate-800/80 border border-slate-700 p-8">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold font-display text-white">My Credentials</h3>
-            <p className="text-slate-400 mt-2">I don't just teach interviews—I've passed them at the highest levels.</p>
+            <p className="text-slate-400 mt-2">I don't just teach interviews. I've passed them at the highest levels.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <motion.div 
