@@ -22,10 +22,10 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-blue-600/10 via-transparent to-transparent" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-500/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1628] via-[#0F2341] to-[#0A1628]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/8 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#C9A227]/5 via-transparent to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A227]/30 to-transparent" />
       </div>
 
       <div className="container relative z-10 px-6 mx-auto">
@@ -40,7 +40,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A227]/10 border border-[#C9A227]/20 text-[#D4AF37] text-sm font-medium mb-6"
               data-testid="badge-exclusive"
             >
               <span className="relative flex h-2 w-2">
@@ -52,13 +52,13 @@ export default function Hero() {
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-tight leading-[1.1] mb-6">
               <span className="text-white">Become the Director</span>{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#C9A227]">
                 FAANG Trusts.
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-300 mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Senior engineers leave <span className="text-white font-semibold">$200K+</span> on the table because they interview like ICs. I've coached <span className="text-white font-semibold">50+ leaders</span> to Director & VP offers with <span className="text-amber-400 font-semibold">$285K avg comp increases</span>.
+              Senior engineers leave <span className="text-white font-semibold">$200K+</span> on the table because they interview like ICs. I've coached <span className="text-white font-semibold">50+ leaders</span> to Director & VP offers with <span className="text-[#D4AF37] font-semibold">$285K avg comp increases</span>.
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-8 max-w-lg mx-auto lg:mx-0">
@@ -79,7 +79,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
               <Button 
                 size="lg" 
-                className="h-14 px-8 text-base bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-semibold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all border-0" 
+                className="h-14 px-8 text-base bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#2563EB] text-white font-semibold shadow-lg shadow-blue-700/30 hover:shadow-blue-600/40 transition-all border-0" 
                 asChild
                 data-testid="button-book"
               >
@@ -92,7 +92,7 @@ export default function Hero() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="h-14 px-8 text-base border-slate-600 bg-slate-800/50 hover:bg-slate-700/50 text-white" 
+                className="h-14 px-8 text-base border-[#C9A227]/40 bg-[#0F2341]/50 hover:bg-[#1A3A5C]/50 text-white hover:border-[#D4AF37]/60" 
                 asChild
                 data-testid="button-whatsapp"
               >
@@ -110,10 +110,10 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + i * 0.1 }}
-                  className="text-center p-4 rounded-xl bg-slate-800/40 border border-slate-700/40"
+                  className="text-center p-4 rounded-xl bg-[#0F2341]/60 border border-[#1E3A5F]/60"
                   data-testid={`stat-${i}`}
                 >
-                  <div className="text-2xl md:text-3xl font-bold text-amber-400 mb-1">{stat.value}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-[#D4AF37] mb-1">{stat.value}</div>
                   <div className="text-xs text-slate-400 uppercase tracking-wider">{stat.label}</div>
                 </motion.div>
               ))}
@@ -127,18 +127,18 @@ export default function Hero() {
             className="relative hidden lg:block"
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 rounded-3xl blur-2xl" />
-              <div className="relative rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#1E40AF]/20 to-[#C9A227]/15 rounded-3xl blur-2xl" />
+              <div className="relative rounded-2xl overflow-hidden border border-[#1E3A5F]/50 shadow-2xl">
                 <img 
                   src={rupeshImage} 
                   alt="Rupesh Tiwari - AWS Senior CSM & Executive Coach" 
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900 via-slate-900/90 to-transparent p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/90 to-transparent p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="flex items-center gap-1">
                       {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                        <svg key={i} className="w-4 h-4 text-[#D4AF37]" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
@@ -156,7 +156,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8 }}
-              className="absolute -right-4 top-1/4 bg-slate-800/95 backdrop-blur-sm border border-amber-500/20 rounded-xl p-4 shadow-xl"
+              className="absolute -right-4 top-1/4 bg-[#0F2341]/95 backdrop-blur-sm border border-[#C9A227]/20 rounded-xl p-4 shadow-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
@@ -173,7 +173,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1 }}
-              className="absolute -left-4 bottom-1/4 bg-slate-800/95 backdrop-blur-sm border border-amber-500/20 rounded-xl p-4 shadow-xl"
+              className="absolute -left-4 bottom-1/4 bg-[#0F2341]/95 backdrop-blur-sm border border-[#C9A227]/20 rounded-xl p-4 shadow-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
@@ -198,7 +198,7 @@ export default function Hero() {
           <div className="flex items-center gap-8">
             <span className="text-white font-semibold">Microsoft</span>
             <span className="text-white font-semibold">Google</span>
-            <span className="text-amber-400 font-bold">AWS <span className="text-xs text-slate-400">(Current)</span></span>
+            <span className="text-[#D4AF37] font-bold">AWS <span className="text-xs text-slate-400">(Current)</span></span>
           </div>
         </motion.div>
       </div>

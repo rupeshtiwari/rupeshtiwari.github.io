@@ -13,7 +13,7 @@ import Resources from "@/components/resources";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100">
+    <div className="min-h-screen bg-[#0A1628] text-slate-100">
       <Navbar />
       <main>
         <Hero />

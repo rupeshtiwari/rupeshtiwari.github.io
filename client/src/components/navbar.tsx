@@ -36,12 +36,12 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-slate-900/95 backdrop-blur-md border-b border-slate-800/50" : "bg-transparent"
+        scrolled ? "bg-[#0A1628]/95 backdrop-blur-md border-b border-[#1E3A5F]/50" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold font-display tracking-tighter hover:opacity-80 transition-opacity">
-          <span className="text-white">rupesh</span><span className="text-amber-400">tiwari</span>
+          <span className="text-white">rupesh</span><span className="text-[#D4AF37]">tiwari</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">
@@ -67,20 +67,20 @@ export default function Navbar() {
               </a>
             ) : (
               <Link key={link.name} href={link.href} className={`text-sm font-medium transition-colors ${
-                  location === link.href ? "text-amber-400 font-semibold" : "text-slate-400 hover:text-white"
+                  location === link.href ? "text-[#D4AF37] font-semibold" : "text-slate-400 hover:text-white"
                 }`}>
                   {link.name}
               </Link>
             )
           ))}
           <div className="flex items-center gap-2 ml-2">
-            <Button size="sm" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white" asChild>
+            <Button size="sm" variant="outline" className="border-[#1E3A5F] text-slate-300 hover:bg-[#0F2341] hover:text-white" asChild>
               <a href="https://wa.me/919951622992" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-1.5" />
                 Chat
               </a>
             </Button>
-            <Button size="sm" className="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900 font-semibold border-0" asChild>
+            <Button size="sm" className="bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#2563EB] text-white font-semibold border-0" asChild>
               <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-1.5" />
                 Book Call
@@ -103,7 +103,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-slate-900 border-b border-slate-800"
+            className="md:hidden bg-[#0A1628] border-b border-[#1E3A5F]"
           >
             <div className="flex flex-col p-6 gap-4">
               {links.map((link) => (
@@ -143,7 +143,7 @@ export default function Navbar() {
                     WhatsApp Me
                   </a>
                 </Button>
-                <Button className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-900 font-semibold" asChild>
+                <Button className="w-full bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] text-white font-semibold" asChild>
                   <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
                     <Calendar className="w-4 h-4 mr-2" />
                     Book Discovery Call
