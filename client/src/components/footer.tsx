@@ -1,10 +1,14 @@
-import { Github, Linkedin, MessageCircle, Twitter, Calendar, Youtube, ExternalLink } from "lucide-react";
+import { Github, Linkedin, MessageCircle, Twitter, Calendar, Youtube, ExternalLink, Shield, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Footer() {
-  const whatsappLink = "https://wa.me/16094424081?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20my%20FAANG%20interview%20preparation.";
   const bookingLink = "https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true";
+  
+  const getObfuscatedEmail = () => {
+    const parts = ['rupesh', 'fullstackmaster', 'net'];
+    return `${parts[0]}@${parts[1]}.${parts[2]}`;
+  };
   
   return (
     <footer id="contact" className="bg-[#0A1628] border-t border-[#1E3A5F] py-20">
@@ -26,22 +30,23 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="h-14 px-8 text-base bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg shadow-green-500/25" 
-              asChild
-            >
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Me
-              </a>
-            </Button>
-            <Button 
-              size="lg" 
               className="h-14 px-8 text-base bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#2563EB] shadow-lg shadow-[#1E40AF]/25" 
               asChild
             >
               <a href={bookingLink} target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-5 h-5 mr-2" />
-                Book 1:1 Coaching
+                Book Free Discovery Call
+              </a>
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="h-14 px-8 text-base border-slate-600 hover:bg-slate-800" 
+              asChild
+            >
+              <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-5 h-5 mr-2" />
+                Connect on LinkedIn
               </a>
             </Button>
           </div>
@@ -82,8 +87,19 @@ export default function Footer() {
                 <span className="text-lg">🇺🇸</span> New Jersey, USA
               </li>
               <li className="text-slate-400">Eastern Time (EST/EDT)</li>
-              <li><a href="mailto:rupesh@fullstackmaster.net" className="text-slate-400 hover:text-[#D4AF37] transition-colors">rupesh@fullstackmaster.net</a></li>
-              <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Message on WhatsApp</a></li>
+              <li>
+                <a 
+                  href={`mailto:${getObfuscatedEmail()}`} 
+                  className="text-slate-400 hover:text-[#D4AF37] transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = `mailto:${getObfuscatedEmail()}`;
+                  }}
+                >
+                  {getObfuscatedEmail()}
+                </a>
+              </li>
+              <li><a href={bookingLink} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Book a Call</a></li>
               <li className="text-slate-500 text-xs mt-2">500+ US professionals coached</li>
             </ul>
           </div>
