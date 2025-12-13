@@ -9,13 +9,17 @@ import Footer from "@/components/footer";
 import TrustedCompanies from "@/components/trusted-companies";
 import Testimonials from "@/components/testimonials";
 import FloatingButtons from "@/components/floating-buttons";
-import Resources from "@/components/resources";
+import ResourcesSection from "@/components/resources";
 import MyJourney from "@/components/my-journey";
 import FamilySection from "@/components/family-section";
 import LeadMagnet from "@/components/lead-magnet";
 import ClientResults from "@/components/client-results";
 import YouTubeSection from "@/components/youtube-section";
 import Newsletter from "@/components/newsletter";
+import FAQ from "@/components/faq";
+import BlogPreview from "@/components/blog-preview";
+import UrgencyBanner from "@/components/urgency-banner";
+import ExitPopup from "@/components/exit-popup";
 
 export default function Home() {
   return (
@@ -23,6 +27,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <UrgencyBanner />
         <TrustedCompanies />
         <MyJourney />
         <ClientResults />
@@ -30,16 +35,19 @@ export default function Home() {
         <LeadMagnet />
         <Methodology />
         <YouTubeSection />
-        <Resources />
+        <BlogPreview />
+        <ResourcesSection />
         <About />
         <FamilySection />
         <Skills />
         <Testimonials />
+        <FAQ />
         <Newsletter />
         <Content />
       </main>
       <Footer />
       <FloatingButtons />
+      <ExitPopup />
     </div>
   );
 }

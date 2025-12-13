@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import Blog from "@/pages/blog";
 import Privacy from "@/pages/privacy";
 import Pricing from "@/pages/pricing";
+import Resources from "@/pages/resources";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/pricing" component={Pricing} />
+      <Route path="/resources" component={Resources} />
       <Route component={NotFound} />
     </Switch>
   );
