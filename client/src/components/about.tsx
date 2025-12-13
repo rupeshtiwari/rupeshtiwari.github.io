@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <section id="about" className="py-24 bg-slate-950 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -32,7 +32,7 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-cyan-400 text-sm font-semibold uppercase tracking-wider">About Me</span>
+          <span className="text-amber-400 text-sm font-semibold uppercase tracking-wider">About Me</span>
           <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 text-white">
             From Engineer to Executive Coach
           </h2>
@@ -45,7 +45,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <div className="relative mb-8">
-              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-3xl blur-xl" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 rounded-3xl blur-xl" />
               <div className="relative rounded-2xl overflow-hidden border border-slate-800">
                 <img 
                   src="/rupesh-about.png" 
@@ -73,7 +73,7 @@ export default function About() {
               ))}
             </div>
 
-            <Button className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 h-12" asChild>
+            <Button className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900 font-semibold h-12" asChild>
               <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5 mr-2" />
                 Connect on LinkedIn
@@ -89,19 +89,19 @@ export default function About() {
           >
             <div className="space-y-4 text-lg text-slate-400 leading-relaxed">
               <p>
-                I'm <span className="text-white font-semibold">Rupesh Tiwari</span>, currently serving as a <span className="text-cyan-400 font-semibold">Senior Customer Solutions Manager at AWS</span>. My journey spans from writing code as a Software Engineer to architecting enterprise solutions and now leading strategic initiatives for AWS customers.
+                I'm <span className="text-white font-semibold">Rupesh Tiwari</span>, currently serving as a <span className="text-amber-400 font-semibold">Senior Customer Solutions Manager at AWS</span>. My journey spans from writing code as a Software Engineer to architecting enterprise solutions and now leading strategic initiatives for AWS customers.
               </p>
               <p>
-                As an <span className="text-cyan-400 font-semibold">ISB CTO Scholar</span>, I bring a unique blend of deep technical expertise and executive business acumen. I've passed interviews at <span className="text-white font-semibold">Microsoft, Google, and AWS</span> — giving me insider knowledge of what top tech companies look for at senior levels.
+                As an <span className="text-amber-400 font-semibold">ISB CTO Scholar</span>, I bring a unique blend of deep technical expertise and executive business acumen. I've passed interviews at <span className="text-white font-semibold">Microsoft, Google, and AWS</span> — giving me insider knowledge of what top tech companies look for at senior levels.
               </p>
               <p>
-                Through <span className="text-white font-semibold">FullstackMaster.net</span>, I've coached <span className="text-cyan-400 font-semibold">50+ Directors, VPs, and Principal Engineers</span> to land offers at FAANG companies with an average <span className="text-green-400 font-semibold">$285K compensation increase</span>.
+                Through <span className="text-white font-semibold">FullstackMaster.net</span>, I've coached <span className="text-amber-400 font-semibold">50+ Directors, VPs, and Principal Engineers</span> to land offers at FAANG companies with an average <span className="text-green-400 font-semibold">$285K compensation increase</span>.
               </p>
             </div>
 
             <div className="p-6 bg-slate-900/50 rounded-xl border border-slate-800">
               <h3 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
-                <Award className="w-5 h-5 text-cyan-400" />
+                <Award className="w-5 h-5 text-amber-400" />
                 Professional Journey
               </h3>
               <ul className="space-y-3">

@@ -1,31 +1,31 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Calendar, Linkedin, ExternalLink, CheckCircle2 } from "lucide-react";
+import { MessageCircle, Calendar, CheckCircle2, ArrowRight, Play } from "lucide-react";
 
 export default function Hero() {
   const rupeshImage = "/rupesh-hero.png";
   
   const stats = [
-    { value: "50+", label: "Directors & VPs Coached" },
+    { value: "50+", label: "Leaders Coached" },
     { value: "$285K", label: "Avg Comp Increase" },
-    { value: "92%", label: "Offer Rate (L6+)" },
-    { value: "5.0", label: "Rating (51+ Reviews)" },
+    { value: "92%", label: "Offer Rate" },
+    { value: "5.0", label: "Coach Rating" },
   ];
 
-  const credentials = [
-    "AWS Senior CSM",
-    "ISB CTO Scholar",
-    "Microsoft Certified",
-    "Google Cloud Certified",
+  const outcomes = [
+    "Behavioral & Leadership Interviews",
+    "Executive System Design",
+    "Communication & Presence",
+    "Resume & LinkedIn Optimization",
   ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/20 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-blue-600/10 via-transparent to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-500/30 to-transparent" />
       </div>
 
       <div className="container relative z-10 px-6 mx-auto">
@@ -40,63 +40,65 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-medium mb-6"
               data-testid="badge-exclusive"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
-              Coaching Leaders Globally | Directors, VPs & Principal Engineers
+              Coaching Leaders Globally | AWS Senior CSM
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-tight leading-[1.1] mb-6">
-              <span className="text-white">Stop Interviewing Like a</span>{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">
-                Senior IC.
+              <span className="text-white">Become the Director</span>{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500">
+                FAANG Trusts.
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-400 mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Directors and VPs leave <span className="text-white font-semibold">$200K+</span> on the table because they interview like engineers. I've coached <span className="text-white font-semibold">50+ senior leaders</span> to FAANG offers with <span className="text-cyan-400 font-semibold">$285K avg comp increases</span>.
+            <p className="text-lg md:text-xl text-slate-300 mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Senior engineers leave <span className="text-white font-semibold">$200K+</span> on the table because they interview like ICs. I've coached <span className="text-white font-semibold">50+ leaders</span> to Director & VP offers with <span className="text-amber-400 font-semibold">$285K avg comp increases</span>.
             </p>
 
-            <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-8">
-              {credentials.map((cred, i) => (
-                <motion.span
-                  key={cred}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
+            <div className="grid grid-cols-2 gap-3 mb-8 max-w-lg mx-auto lg:mx-0">
+              {outcomes.map((outcome, i) => (
+                <motion.div
+                  key={outcome}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3 + i * 0.1 }}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/50 border border-slate-700/50 text-slate-300 text-xs font-medium"
+                  className="flex items-center gap-2 text-sm text-slate-300"
                 >
-                  <CheckCircle2 className="w-3 h-3 text-green-500" />
-                  {cred}
-                </motion.span>
+                  <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" />
+                  <span>{outcome}</span>
+                </motion.div>
               ))}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
               <Button 
                 size="lg" 
-                className="h-14 px-8 text-base bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg shadow-green-500/25 hover:shadow-green-500/40 transition-all border-0" 
-                asChild
-                data-testid="button-whatsapp"
-              >
-                <a href="https://wa.me/16094424081?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20my%20FAANG%20interview%20preparation." target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  WhatsApp Me
-                </a>
-              </Button>
-              <Button 
-                size="lg" 
-                className="h-14 px-8 text-base bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all border-0" 
+                className="h-14 px-8 text-base bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-semibold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all border-0" 
                 asChild
                 data-testid="button-book"
               >
                 <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5 mr-2" />
-                  Book 1:1 Coaching
+                  Book Free Discovery Call
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="h-14 px-8 text-base border-slate-600 bg-slate-800/50 hover:bg-slate-700/50 text-white" 
+                asChild
+                data-testid="button-whatsapp"
+              >
+                <a href="https://wa.me/919951622992?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20executive%20interview%20coaching." target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp Me
                 </a>
               </Button>
             </div>
@@ -108,11 +110,11 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + i * 0.1 }}
-                  className="text-center p-4 rounded-xl bg-slate-800/30 border border-slate-700/30"
+                  className="text-center p-4 rounded-xl bg-slate-800/40 border border-slate-700/40"
                   data-testid={`stat-${i}`}
                 >
-                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-xs text-slate-500 uppercase tracking-wider">{stat.label}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-amber-400 mb-1">{stat.value}</div>
+                  <div className="text-xs text-slate-400 uppercase tracking-wider">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -125,18 +127,18 @@ export default function Hero() {
             className="relative hidden lg:block"
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-2xl" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 rounded-3xl blur-2xl" />
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl">
                 <img 
                   src={rupeshImage} 
                   alt="Rupesh Tiwari - AWS Senior CSM & Executive Coach" 
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900 via-slate-900/90 to-transparent p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="flex items-center gap-1">
                       {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <svg key={i} className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
@@ -154,15 +156,15 @@ export default function Hero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8 }}
-              className="absolute -right-4 top-1/4 bg-slate-800/90 backdrop-blur-sm border border-slate-700/50 rounded-xl p-4 shadow-xl"
+              className="absolute -right-4 top-1/4 bg-slate-800/95 backdrop-blur-sm border border-amber-500/20 rounded-xl p-4 shadow-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
                   <span className="text-white text-lg font-bold">A</span>
                 </div>
                 <div>
-                  <div className="text-white text-sm font-medium">Got Offer at Amazon</div>
-                  <div className="text-green-400 text-xs">+$320K Comp Increase</div>
+                  <div className="text-white text-sm font-medium">Director at Amazon</div>
+                  <div className="text-green-400 text-xs font-semibold">+$320K Comp Increase</div>
                 </div>
               </div>
             </motion.div>
@@ -171,15 +173,15 @@ export default function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1 }}
-              className="absolute -left-4 bottom-1/4 bg-slate-800/90 backdrop-blur-sm border border-slate-700/50 rounded-xl p-4 shadow-xl"
+              className="absolute -left-4 bottom-1/4 bg-slate-800/95 backdrop-blur-sm border border-amber-500/20 rounded-xl p-4 shadow-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
                   <span className="text-white text-lg font-bold">G</span>
                 </div>
                 <div>
-                  <div className="text-white text-sm font-medium">Got Offer at Google</div>
-                  <div className="text-green-400 text-xs">+$280K Comp Increase</div>
+                  <div className="text-white text-sm font-medium">VP at Google</div>
+                  <div className="text-green-400 text-xs font-semibold">+$450K Comp Increase</div>
                 </div>
               </div>
             </motion.div>
@@ -190,13 +192,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2 }}
-          className="mt-16 flex flex-wrap items-center justify-center gap-8 text-slate-500"
+          className="mt-16 flex flex-wrap items-center justify-center gap-8 text-slate-400"
         >
-          <span className="text-xs uppercase tracking-wider">I Passed Interviews At</span>
+          <span className="text-xs uppercase tracking-wider">I've Passed Interviews At</span>
           <div className="flex items-center gap-8">
             <span className="text-white font-semibold">Microsoft</span>
             <span className="text-white font-semibold">Google</span>
-            <span className="text-cyan-400 font-bold">AWS <span className="text-xs text-slate-400">(Joined)</span></span>
+            <span className="text-amber-400 font-bold">AWS <span className="text-xs text-slate-400">(Current)</span></span>
           </div>
         </motion.div>
       </div>

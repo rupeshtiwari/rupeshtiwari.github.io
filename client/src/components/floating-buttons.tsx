@@ -13,15 +13,15 @@ export default function FloatingButtons() {
         transition={{ delay: 1.5, type: "spring" }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="flex items-center justify-center w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-shadow"
+        className="flex items-center justify-center w-14 h-14 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-900 rounded-full shadow-lg shadow-amber-500/30 hover:shadow-amber-500/50 transition-shadow"
         data-testid="floating-book"
-        title="Book 1:1 Coaching"
+        title="Book Discovery Call"
       >
         <Calendar className="w-6 h-6" />
       </motion.a>
       
       <motion.a
-        href="https://wa.me/16094424081?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20my%20FAANG%20interview%20preparation."
+        href="https://wa.me/919951622992?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20executive%20interview%20coaching."
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0, y: 20 }}
