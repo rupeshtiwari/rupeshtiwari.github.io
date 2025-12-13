@@ -122,7 +122,7 @@ export default function Navbar() {
               <Search className="w-4 h-4" />
             </button>
             <Button size="sm" variant="outline" className="border-[#1E3A5F] text-slate-300 hover:bg-[#0F2341] hover:text-white" asChild>
-              <a href="https://wa.me/919951622992" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-1.5" />
                 Chat
               </a>
@@ -208,7 +208,7 @@ export default function Navbar() {
               ))}
               <div className="flex flex-col gap-3 mt-4">
                 <Button className="w-full bg-green-500 hover:bg-green-600" asChild>
-                  <a href="https://wa.me/919951622992" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     WhatsApp Me
                   </a>

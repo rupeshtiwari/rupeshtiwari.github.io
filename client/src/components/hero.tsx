@@ -123,11 +123,11 @@ export default function Hero() {
                 variant="outline"
                 className="h-14 px-8 text-base border-[#C9A227]/40 bg-[#0F2341]/50 hover:bg-[#1A3A5C]/50 text-white hover:border-[#D4AF37]/60" 
                 asChild
-                data-testid="button-whatsapp"
+                data-testid="button-linkedin"
               >
-                <a href="https://wa.me/919951622992?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20executive%20interview%20coaching." target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  WhatsApp Me
+                  Connect on LinkedIn
                 </a>
               </Button>
             </div>

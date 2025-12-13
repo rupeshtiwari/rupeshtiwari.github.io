@@ -53,7 +53,7 @@ export default function FloatingButtons() {
       </motion.a>
       
       <motion.a
-        href="https://wa.me/919951622992?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20executive%20interview%20coaching."
+        href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0, y: 20 }}

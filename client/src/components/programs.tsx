@@ -169,10 +169,10 @@ export default function Programs() {
           <p className="text-slate-400">
             Not sure which program is right for you?{" "}
             <a 
-              href="https://wa.me/919951622992?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20which%20coaching%20program%20is%20right%20for%20me." 
+              href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" 
               className="text-[#D4AF37] hover:text-[#E5C158] underline"
             >
-              Let's chat on WhatsApp
+              Book a free call
             </a>
           </p>
         </motion.div>
