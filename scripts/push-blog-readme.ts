@@ -39,7 +39,7 @@ async function getAccessToken() {
 
 async function pushReadme() {
   const owner = 'rupeshtiwari';
-  const repo = 'rupeshtiwari-blog';
+  const repo = 'blogs';
   const branch = 'master';
   const filePath = 'REPLIT-WORKFLOW.md';
   

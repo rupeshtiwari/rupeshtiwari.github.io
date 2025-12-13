@@ -39,7 +39,7 @@ async function getAccessToken() {
 
 async function pushVerificationFile() {
   const owner = 'rupeshtiwari';
-  const repo = 'rupeshtiwari-blog';
+  const repo = 'blogs';
   const branch = 'master';
   const filePath = 'google5e9eb0a8e9d3c441.html';
   

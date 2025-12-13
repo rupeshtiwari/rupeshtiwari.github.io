@@ -84,10 +84,10 @@ async function pushFile(octokit: Octokit, owner: string, repo: string, branch: s
 
 async function pushBlogUpdates() {
   const owner = 'rupeshtiwari';
-  const repo = 'rupeshtiwari-blog';
+  const repo = 'blogs';
   const branch = 'master';
   
-  console.log('📤 Pushing blog updates to rupeshtiwari-blog...\n');
+  console.log('📤 Pushing blog updates to blogs...\n');
   
   const accessToken = await getAccessToken();
   const octokit = new Octokit({ auth: accessToken });

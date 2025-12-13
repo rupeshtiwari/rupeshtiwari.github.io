@@ -78,7 +78,7 @@ async function pushFile(octokit: Octokit, owner: string, repo: string, branch: s
 
 async function pushPromoFiles() {
   const owner = 'rupeshtiwari';
-  const repo = 'rupeshtiwari-blog';
+  const repo = 'blogs';
   const branch = 'master';
   
   console.log('📤 Pushing promotional content to blog...\n');
@@ -139,7 +139,7 @@ pushPromoFiles().catch(console.error);
 // Push related posts include
 async function pushRelatedPosts() {
   const owner = 'rupeshtiwari';
-  const repo = 'rupeshtiwari-blog';
+  const repo = 'blogs';
   const branch = 'master';
   
   console.log('📤 Pushing related posts include...\n');
