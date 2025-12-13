@@ -29,9 +29,9 @@ async function sendWelcomeEmail(email: string, source: string) {
       </ul>
       
       <p style="margin: 30px 0;">
-        <a href="https://www.rupeshtiwari.com/faang-interview-blueprint.pdf" 
+        <a href="https://www.rupeshtiwari.com/faang-interview-blueprint.html" 
            style="background: linear-gradient(to right, #C9A227, #D4AF37); color: #0A1628; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">
-          Download Your Free Guide
+          Read Your Free Guide
         </a>
       </p>
       
