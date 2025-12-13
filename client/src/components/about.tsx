@@ -11,13 +11,13 @@ export default function About() {
   ];
 
   const milestones = [
+    "20+ Years IT Experience (Since 2005)",
     "AWS Senior Customer Solutions Manager",
     "ISB Executive CTO Program Scholar",
     "Microsoft Certified Solutions Architect",
     "Google Cloud Professional Architect",
     "Founder of FullstackMaster.net",
     "Pluralsight Author & Udemy Instructor",
-    "15+ Years Enterprise Cloud Experience",
     "Verified Coach on IGotAnOffer (5.0 Rating)",
   ];
 

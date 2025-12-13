@@ -6,10 +6,10 @@ export default function Hero() {
   const rupeshImage = "/rupesh-hero.png";
   
   const stats = [
+    { value: "20+", label: "Years in Tech" },
     { value: "50+", label: "Leaders Coached" },
     { value: "$285K", label: "Avg Comp Increase" },
     { value: "92%", label: "Offer Rate" },
-    { value: "5.0", label: "Coach Rating" },
   ];
 
   const outcomes = [

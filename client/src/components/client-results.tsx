@@ -92,10 +92,10 @@ export default function ClientResults() {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
         >
           {[
+            { label: "Years in Tech", value: "20+", icon: TrendingUp },
             { label: "Average Salary Increase", value: "$285K+", icon: DollarSign },
             { label: "Success Rate", value: "92%", icon: TrendingUp },
             { label: "Clients Coached", value: "50+", icon: Building2 },
-            { label: "Total Value Generated", value: "$14M+", icon: DollarSign },
           ].map((stat, idx) => (
             <div key={idx} className="p-6 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 text-center">
               <stat.icon className="w-6 h-6 text-green-400 mx-auto mb-2" />
