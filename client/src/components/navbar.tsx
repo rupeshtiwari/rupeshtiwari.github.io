@@ -33,7 +33,7 @@ export default function Navbar() {
     { name: "Programs", href: "#programs", isHash: true },
     { name: "About", href: "#about", isHash: true },
     { name: "Testimonials", href: "#testimonials", isHash: true },
-    { name: "Courses", href: "https://www.fullstackmaster.net", isHash: false, external: true },
+    { name: "Crack FAANG Interview", href: "https://www.fullstackmaster.net", isHash: false, external: true, highlight: true },
     { name: "Blog", href: "https://blog.rupeshtiwari.com", isHash: false, external: true },
   ];
 
@@ -65,7 +65,11 @@ export default function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  (link as any).highlight 
+                    ? "text-[#D4AF37] font-semibold hover:text-[#E5C158]" 
+                    : "text-slate-400 hover:text-white"
+                }`}
               >
                 {link.name}
               </a>
