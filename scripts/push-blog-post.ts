@@ -71,8 +71,8 @@ function getAllFiles(dir: string, baseDir: string = dir): {path: string, content
 
 async function pushToBlogRepo() {
   const owner = 'rupeshtiwari';
-  const repo = 'rupeshtiwari.github.io'; // Change this to your blog repo name
-  const branch = 'main';
+  const repo = 'rupeshtiwari-blog';
+  const branch = 'master';
   
   console.log('📤 Pushing blog content to GitHub...\n');
   
