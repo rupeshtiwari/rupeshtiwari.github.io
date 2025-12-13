@@ -9,6 +9,7 @@ import Footer from "@/components/footer";
 import TrustedCompanies from "@/components/trusted-companies";
 import Testimonials from "@/components/testimonials";
 import FloatingButtons from "@/components/floating-buttons";
+import Resources from "@/components/resources";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <TrustedCompanies />
         <Programs />
         <Methodology />
+        <Resources />
         <About />
         <Skills />
         <Testimonials />
