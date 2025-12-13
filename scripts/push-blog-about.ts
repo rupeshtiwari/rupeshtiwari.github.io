@@ -39,8 +39,8 @@ async function getAccessToken() {
 
 async function pushAboutPage() {
   const owner = 'rupeshtiwari';
-  const repo = 'blog.rupeshtiwari.com'; // Blog repo name
-  const branch = 'main';
+  const repo = 'rupeshtiwari-blog'; // Blog repo name
+  const branch = 'master';
   const filePath = '_tabs/about.md';
   
   console.log('📤 Pushing About page to blog repo...\n');
