@@ -1,0 +1,87 @@
+# GitHub Action for Scheduled Blog Publishing
+# Add this file to your blog repo at: .github/workflows/scheduled-publish.yml
+
+name: Scheduled Post Publisher
+
+on:
+  schedule:
+    # Runs every hour at minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  publish-scheduled:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check and publish scheduled posts
+        run: |
+          # Get current date in YYYY-MM-DD format (UTC)
+          CURRENT_DATE=$(date -u +"%Y-%m-%d")
+          CURRENT_DATETIME=$(date -u +"%Y-%m-%d %H:%M")
+          
+          echo "Current UTC datetime: $CURRENT_DATETIME"
+          
+          # Check if _scheduled directory exists
+          if [ ! -d "_scheduled" ]; then
+            echo "No _scheduled directory found. Nothing to publish."
+            exit 0
+          fi
+          
+          # Find all markdown files in _scheduled
+          PUBLISHED=0
+          for file in _scheduled/*.md _scheduled/*.markdown; do
+            [ -e "$file" ] || continue
+            
+            # Extract the date from frontmatter
+            POST_DATE=$(grep -m1 "^date:" "$file" | sed 's/date: *//' | cut -d' ' -f1 | tr -d '"' | tr -d "'")
+            
+            if [ -z "$POST_DATE" ]; then
+              echo "Skipping $file - no date found in frontmatter"
+              continue
+            fi
+            
+            echo "Checking $file with date $POST_DATE"
+            
+            # Compare dates
+            if [[ "$POST_DATE" <= "$CURRENT_DATE" ]]; then
+              # Extract filename
+              FILENAME=$(basename "$file")
+              
+              # Move to _posts
+              echo "Publishing: $file -> _posts/$FILENAME"
+              mv "$file" "_posts/$FILENAME"
+              PUBLISHED=$((PUBLISHED + 1))
+            else
+              echo "Scheduled for future: $file (publishes on $POST_DATE)"
+            fi
+          done
+          
+          echo "Published $PUBLISHED post(s)"
+          
+          # If we published anything, commit and push
+          if [ $PUBLISHED -gt 0 ]; then
+            git config user.name "GitHub Actions Bot"
+            git config user.email "actions@github.com"
+            git add -A
+            git commit -m "Auto-publish $PUBLISHED scheduled post(s) - $CURRENT_DATETIME"
+            git push
+            echo "Changes pushed successfully!"
+          fi
+
+      - name: Trigger Jekyll rebuild
+        if: success()
+        run: |
+          echo "Jekyll will automatically rebuild on push"
