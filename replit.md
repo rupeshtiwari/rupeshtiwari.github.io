@@ -77,3 +77,29 @@ shared/           # Shared code between client/server
 ### Session Management
 - **connect-pg-simple**: PostgreSQL session store (available but not currently active)
 - **express-session**: Session middleware (available in dependencies)
+
+## Recent Changes (Dec 13, 2025)
+
+### New Lead Generation Features
+- **Lead Magnet Section**: Free PDF download ("FAANG Interview Blueprint") with email capture
+- **Newsletter Signup**: Weekly interview tips email subscription
+- **Client Results Section**: Before/after salary comparisons with real numbers ($145K → $420K etc.)
+- **YouTube Section**: Embedded videos from FullStackMaster channel
+- **Pricing Page**: Clear USD pricing with 3 tiers ($199, $699, $1299)
+
+### API Endpoints
+- `POST /api/leads` - Captures email leads (source: lead_magnet or newsletter)
+- `GET /api/leads` - Retrieves all captured leads
+
+### Database Schema
+- `leads` table: id, email, source, createdAt
+
+### Pages
+- `/` - Home page with all sections
+- `/pricing` - Dedicated pricing page
+- `/blog` - Blog redirect
+- `/privacy` - Privacy policy
+
+### Deployment
+- Deployed to GitHub Pages: www.rupeshtiwari.com
+- Deployment script: `npx tsx scripts/deploy-to-github.ts`
