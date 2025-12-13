@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, Award, Linkedin, ExternalLink } from "lucide-react";
+import { CheckCircle2, Award, Linkedin, ExternalLink, Shield, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function About() {
   const certifications = [
-    { name: "AWS Certified", color: "from-orange-500 to-yellow-500" },
-    { name: "GCP Certified", color: "from-blue-500 to-cyan-500" },
-    { name: "Microsoft Azure", color: "from-blue-600 to-indigo-600" },
-    { name: "ISB CTO Scholar", color: "from-purple-500 to-pink-500" },
+    { name: "AWS Certified", color: "from-orange-500 to-yellow-500", link: "https://www.credly.com/users/rupesh-tiwari" },
+    { name: "GCP Certified", color: "from-blue-500 to-cyan-500", link: "https://www.credential.net/profile/rupeshtiwari" },
+    { name: "Microsoft Azure", color: "from-blue-600 to-indigo-600", link: "https://learn.microsoft.com/en-us/users/rupeshtiwari/" },
+    { name: "ISB CTO Scholar", color: "from-purple-500 to-pink-500", link: "https://www.isb.edu" },
   ];
 
   const milestones = [
@@ -57,19 +57,25 @@ export default function About() {
 
             <div className="grid grid-cols-2 gap-4 mb-8">
               {certifications.map((cert, i) => (
-                <motion.div
+                <motion.a
                   key={cert.name}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="p-4 rounded-xl bg-slate-900/50 border border-slate-800 text-center"
+                  className="p-4 rounded-xl bg-slate-900/50 border border-slate-800 text-center hover:border-amber-500/50 transition-colors group"
                 >
                   <div className={`w-10 h-10 mx-auto mb-2 rounded-lg bg-gradient-to-br ${cert.color} flex items-center justify-center`}>
-                    <Award className="w-5 h-5 text-white" />
+                    <BadgeCheck className="w-5 h-5 text-white" />
                   </div>
-                  <div className="text-white text-sm font-medium">{cert.name}</div>
-                </motion.div>
+                  <div className="text-white text-sm font-medium flex items-center justify-center gap-1">
+                    {cert.name}
+                    <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                </motion.a>
               ))}
             </div>
 
