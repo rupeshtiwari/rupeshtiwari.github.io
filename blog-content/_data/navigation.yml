@@ -7,6 +7,8 @@ main:
   - title: "Book 1:1 Call"
     url: https://topmate.io/nicetss
     highlight: true
+  - title: "Portfolio"
+    url: https://rupeshtiwari.com
   - title: "YouTube"
     url: https://youtube.com/fullstackmaster
   - title: "Tags"
