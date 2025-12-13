@@ -130,3 +130,21 @@ async function pushPromoFiles() {
 }
 
 pushPromoFiles().catch(console.error);
+
+// Push related posts include
+async function pushRelatedPosts() {
+  const owner = 'rupeshtiwari';
+  const repo = 'rupeshtiwari-blog';
+  const branch = 'master';
+  
+  console.log('📤 Pushing related posts include...\n');
+  
+  const accessToken = await getAccessToken();
+  const octokit = new Octokit({ auth: accessToken });
+  
+  await pushFile(octokit, owner, repo, branch, '_includes/related-posts.html', './blog-content/_includes/related-posts.html', 'Add related posts section for blog footer');
+  
+  console.log('\n✅ Related posts component pushed!');
+}
+
+pushRelatedPosts().catch(console.error);
