@@ -176,23 +176,30 @@ export default function Navbar() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium text-white"
+                    className={`text-lg font-medium py-3 px-2 -mx-2 block rounded-lg active:bg-[#1E3A5F]/50 ${
+                      (link as any).highlight 
+                        ? "text-[#D4AF37] font-bold" 
+                        : "text-white"
+                    }`}
                     onClick={() => setIsOpen(false)}
+                    data-testid={`mobile-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                   >
                     {link.name}
+                    {(link as any).highlight && <span className="ml-2">→</span>}
                   </a>
                 ) : link.isHash ? (
                   <a
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleHashClick(e, link.href)}
-                    className="text-lg font-medium text-white cursor-pointer"
+                    className="text-lg font-medium text-white py-3 px-2 -mx-2 block rounded-lg active:bg-[#1E3A5F]/50 cursor-pointer"
+                    data-testid={`mobile-link-${link.name.toLowerCase()}`}
                   >
                     {link.name}
                   </a>
                 ) : (
                   <Link key={link.name} href={link.href}
-                      className="text-lg font-medium text-white"
+                      className="text-lg font-medium text-white py-3 px-2 -mx-2 block rounded-lg active:bg-[#1E3A5F]/50"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
