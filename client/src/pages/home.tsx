@@ -10,6 +10,8 @@ import TrustedCompanies from "@/components/trusted-companies";
 import Testimonials from "@/components/testimonials";
 import FloatingButtons from "@/components/floating-buttons";
 import Resources from "@/components/resources";
+import MyJourney from "@/components/my-journey";
+import FamilySection from "@/components/family-section";
 
 export default function Home() {
   return (
@@ -18,10 +20,12 @@ export default function Home() {
       <main>
         <Hero />
         <TrustedCompanies />
+        <MyJourney />
         <Programs />
         <Methodology />
         <Resources />
         <About />
+        <FamilySection />
         <Skills />
         <Testimonials />
         <Content />
