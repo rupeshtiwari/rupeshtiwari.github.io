@@ -76,12 +76,15 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <h4 className="text-white font-semibold mb-4">Contact (USA)</h4>
             <ul className="space-y-2 text-sm">
-              <li className="text-slate-400">New Jersey, USA</li>
+              <li className="text-slate-400 flex items-center gap-2">
+                <span className="text-lg">🇺🇸</span> New Jersey, USA
+              </li>
               <li className="text-slate-400">Eastern Time (EST/EDT)</li>
-              <li><a href="tel:+16094424081" className="text-slate-400 hover:text-cyan-400 transition-colors">+1-609-442-4081</a></li>
+              <li><a href="tel:+16094424081" className="text-slate-400 hover:text-cyan-400 transition-colors">+1 (609) 442-4081</a></li>
               <li><a href="mailto:rupesh@fullstackmaster.net" className="text-slate-400 hover:text-cyan-400 transition-colors">rupesh@fullstackmaster.net</a></li>
+              <li className="text-slate-500 text-xs mt-2">500+ US professionals coached</li>
             </ul>
           </div>
         </div>
