@@ -1,0 +1,116 @@
+<!-- Mobile responsiveness fixes for Chirpy theme -->
+<style>
+/* Mobile viewport fixes */
+@media screen and (max-width: 768px) {
+  /* Fix sidebar/navigation on mobile */
+  #sidebar {
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease-in-out !important;
+  }
+  
+  #sidebar.show {
+    transform: translateX(0) !important;
+  }
+  
+  /* Fix main content width */
+  .container, .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Fix post content */
+  .post-content, .content {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+  
+  /* Fix code blocks overflow */
+  pre, code {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+  }
+  
+  .highlight pre {
+    padding: 10px !important;
+    font-size: 13px !important;
+  }
+  
+  /* Fix images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Fix navigation links */
+  .nav-link, #topbar-title {
+    font-size: 14px !important;
+  }
+  
+  /* Fix post header */
+  .post h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Fix tables */
+  table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+  }
+  
+  /* Fix embedded content */
+  iframe, embed, object, video {
+    max-width: 100% !important;
+  }
+  
+  /* Fix footer */
+  footer {
+    padding: 15px !important;
+  }
+  
+  /* Fix topbar banner */
+  #fsm-banner > div {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 8px 12px !important;
+    text-align: center !important;
+  }
+  
+  #fsm-banner a {
+    padding: 6px 14px !important;
+    font-size: 0.85em !important;
+  }
+  
+  #fsm-banner button {
+    position: static !important;
+    transform: none !important;
+    margin-top: 4px !important;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+  .post h1 {
+    font-size: 1.3rem !important;
+  }
+  
+  .highlight pre {
+    font-size: 11px !important;
+  }
+  
+  body {
+    font-size: 15px !important;
+  }
+}
+
+/* Prevent horizontal scroll globally */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+</style>
