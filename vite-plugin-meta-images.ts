@@ -10,6 +10,12 @@ export function metaImagesPlugin(): Plugin {
   return {
     name: 'vite-plugin-meta-images',
     transformIndexHtml(html) {
+      // Skip for GitHub Pages deployments - use hardcoded production URLs
+      if (process.env.GITHUB_DEPLOY === 'true') {
+        log('[meta-images] GitHub deploy mode, preserving production URLs');
+        return html;
+      }
+      
       const baseUrl = getDeploymentUrl();
       if (!baseUrl) {
         log('[meta-images] no Replit deployment domain found, skipping meta tag updates');
