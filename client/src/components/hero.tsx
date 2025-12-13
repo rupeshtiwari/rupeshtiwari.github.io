@@ -76,7 +76,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
               <Button 
                 size="lg" 
                 className="h-14 px-8 text-base bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#2563EB] text-white font-semibold shadow-lg shadow-blue-700/30 hover:shadow-blue-600/40 transition-all border-0" 
@@ -99,6 +99,33 @@ export default function Hero() {
                 <a href="https://wa.me/919951622992?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20executive%20interview%20coaching." target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   WhatsApp Me
+                </a>
+              </Button>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10">
+              <Button 
+                size="lg" 
+                className="h-12 px-6 text-base bg-gradient-to-r from-[#C9A227] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#E5C158] text-[#0A1628] font-semibold shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30 transition-all border-0" 
+                asChild
+                data-testid="button-courses"
+              >
+                <a href="https://www.fullstackmaster.net" target="_blank" rel="noopener noreferrer">
+                  <Play className="w-4 h-4 mr-2" />
+                  Explore Courses
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="h-12 px-6 text-base border-[#1E3A5F] bg-[#0F2341]/50 hover:bg-[#1A3A5C]/50 text-slate-300 hover:text-white hover:border-[#2E5A8F]" 
+                asChild
+                data-testid="button-blog"
+              >
+                <a href="https://blog.rupeshtiwari.com" target="_blank" rel="noopener noreferrer">
+                  Read Free Articles
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
               </Button>
             </div>

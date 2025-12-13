@@ -21,6 +21,7 @@ export default function Navbar() {
     { name: "Programs", href: "#programs", isHash: true },
     { name: "About", href: "#about", isHash: true },
     { name: "Testimonials", href: "#testimonials", isHash: true },
+    { name: "Courses", href: "https://www.fullstackmaster.net", isHash: false, external: true },
     { name: "Blog", href: "https://blog.rupeshtiwari.com", isHash: false, external: true },
   ];
 
