@@ -103,6 +103,11 @@ async function pushPromoFiles() {
       msg: 'Add footer CTA section'
     },
     { 
+      remote: '_includes/sticky-banner.html', 
+      local: './blog-content/_includes/sticky-banner.html',
+      msg: 'Add FullStackMaster sticky banner'
+    },
+    { 
       remote: '_data/navigation.yml', 
       local: './blog-content/_data/navigation.yml',
       msg: 'Update navigation with coaching and booking links'
