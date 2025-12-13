@@ -19,9 +19,9 @@ const programs = [
     title: "Emerging Director",
     subtitle: "For Senior Engineers & Managers (30-40)",
     price: "Custom",
-    color: "from-blue-500 to-cyan-500",
-    borderColor: "border-blue-500/30",
-    bgColor: "bg-blue-500/5",
+    color: "from-[#1E40AF] to-[#1D4ED8]",
+    borderColor: "border-[#1E40AF]/30",
+    bgColor: "bg-[#1E40AF]/5",
     description: "Break into your first Director or Principal Engineer role at a top tech company.",
     idealFor: [
       "Senior Engineers (L5-L6) ready for leadership",
@@ -44,9 +44,9 @@ const programs = [
     title: "Executive Accelerator",
     subtitle: "For Directors & Senior Leaders (40+)",
     price: "Premium",
-    color: "from-amber-500 to-yellow-500",
-    borderColor: "border-amber-500/30",
-    bgColor: "bg-amber-500/5",
+    color: "from-[#C9A227] to-[#D4AF37]",
+    borderColor: "border-[#C9A227]/30",
+    bgColor: "bg-[#C9A227]/5",
     popular: true,
     description: "Navigate VP and Senior Director interviews with executive presence and strategic thinking.",
     idealFor: [
@@ -68,8 +68,8 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="py-24 bg-slate-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/10 via-transparent to-transparent" />
+    <section id="programs" className="py-24 bg-[#0F2341] relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#C9A227]/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -78,7 +78,7 @@ export default function Programs() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-amber-400 text-sm font-semibold uppercase tracking-wider">Signature Programs</span>
+          <span className="text-[#D4AF37] text-sm font-semibold uppercase tracking-wider">Signature Programs</span>
           <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">
             Choose Your Leadership Path
           </h2>
@@ -139,15 +139,15 @@ export default function Programs() {
                 </ul>
               </div>
 
-              <div className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 mb-6">
-                <div className="flex items-center gap-2 text-green-400">
+              <div className="p-4 rounded-xl bg-[#0A1628]/50 border border-[#1E3A5F]/50 mb-6">
+                <div className="flex items-center gap-2 text-[#D4AF37]">
                   <TrendingUp className="w-5 h-5" />
                   <span className="font-semibold">{program.outcome}</span>
                 </div>
               </div>
 
               <Button 
-                className={`w-full h-12 text-base font-semibold ${program.popular ? 'bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900' : 'bg-slate-700 hover:bg-slate-600 text-white'}`}
+                className={`w-full h-12 text-base font-semibold ${program.popular ? 'bg-gradient-to-r from-[#C9A227] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#E5C158] text-[#0A1628]' : 'bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#2563EB] text-white'}`}
                 asChild
               >
                 <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
@@ -170,7 +170,7 @@ export default function Programs() {
             Not sure which program is right for you?{" "}
             <a 
               href="https://wa.me/919951622992?text=Hi%20Rupesh%2C%20I%27d%20like%20to%20discuss%20which%20coaching%20program%20is%20right%20for%20me." 
-              className="text-amber-400 hover:text-amber-300 underline"
+              className="text-[#D4AF37] hover:text-[#E5C158] underline"
             >
               Let's chat on WhatsApp
             </a>

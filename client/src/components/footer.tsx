@@ -7,7 +7,7 @@ export default function Footer() {
   const bookingLink = "https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true";
   
   return (
-    <footer id="contact" className="bg-slate-950 border-t border-slate-800 py-20">
+    <footer id="contact" className="bg-[#0A1628] border-t border-[#1E3A5F] py-20">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +15,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Ready to Start?</span>
+          <span className="text-[#D4AF37] text-sm font-semibold uppercase tracking-wider">Ready to Start?</span>
           <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">
             Let's Get You That Offer
           </h2>
@@ -36,7 +36,7 @@ export default function Footer() {
             </Button>
             <Button 
               size="lg" 
-              className="h-14 px-8 text-base bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 shadow-lg shadow-blue-500/25" 
+              className="h-14 px-8 text-base bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#2563EB] shadow-lg shadow-[#1E40AF]/25" 
               asChild
             >
               <a href={bookingLink} target="_blank" rel="noopener noreferrer">
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-4 gap-8 mb-12 py-12 border-t border-b border-slate-800">
+        <div className="grid md:grid-cols-4 gap-8 mb-12 py-12 border-t border-b border-[#1E3A5F]">
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Rupesh Tiwari</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
@@ -58,20 +58,20 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="text-slate-400 hover:text-cyan-400 transition-colors">About</a></li>
-              <li><a href="#testimonials" className="text-slate-400 hover:text-cyan-400 transition-colors">Testimonials</a></li>
-              <li><a href="https://blog.rupeshtiwari.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">Blog</a></li>
-              <li><a href="https://www.fullstackmaster.net" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">Coaching</a></li>
+              <li><a href="#about" className="text-slate-400 hover:text-[#D4AF37] transition-colors">About</a></li>
+              <li><a href="#testimonials" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Testimonials</a></li>
+              <li><a href="https://blog.rupeshtiwari.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Blog</a></li>
+              <li><a href="https://www.fullstackmaster.net" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Courses</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://igotanoffer.com/en/coach/rupesh" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">Verified Reviews</a></li>
-              <li><a href="https://www.pluralsight.com/authors/rupesh-tiwari" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">Pluralsight</a></li>
-              <li><a href="https://www.udemy.com/user/rupesh-k-tiwari/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">Udemy</a></li>
-              <li><a href="https://rupeshtiwari.gumroad.com/l/rupesh-kit" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">Free Interview Kit</a></li>
+              <li><a href="https://igotanoffer.com/en/coach/rupesh" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Verified Reviews</a></li>
+              <li><a href="https://www.pluralsight.com/authors/rupesh-tiwari" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Pluralsight</a></li>
+              <li><a href="https://www.udemy.com/user/rupesh-k-tiwari/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Udemy</a></li>
+              <li><a href="https://rupeshtiwari.gumroad.com/l/rupesh-kit" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#D4AF37] transition-colors">Free Interview Kit</a></li>
             </ul>
           </div>
           
@@ -82,8 +82,8 @@ export default function Footer() {
                 <span className="text-lg">🇺🇸</span> New Jersey, USA
               </li>
               <li className="text-slate-400">Eastern Time (EST/EDT)</li>
-              <li><a href="tel:+16094424081" className="text-slate-400 hover:text-cyan-400 transition-colors">+1 (609) 442-4081</a></li>
-              <li><a href="mailto:rupesh@fullstackmaster.net" className="text-slate-400 hover:text-cyan-400 transition-colors">rupesh@fullstackmaster.net</a></li>
+              <li><a href="tel:+16094424081" className="text-slate-400 hover:text-[#D4AF37] transition-colors">+1 (609) 442-4081</a></li>
+              <li><a href="mailto:rupesh@fullstackmaster.net" className="text-slate-400 hover:text-[#D4AF37] transition-colors">rupesh@fullstackmaster.net</a></li>
               <li className="text-slate-500 text-xs mt-2">500+ US professionals coached</li>
             </ul>
           </div>
