@@ -1,0 +1,124 @@
+import { Octokit } from '@octokit/rest';
+import * as fs from 'fs';
+
+let connectionSettings: any;
+
+async function getAccessToken() {
+  if (connectionSettings && connectionSettings.settings.expires_at && new Date(connectionSettings.settings.expires_at).getTime() > Date.now()) {
+    return connectionSettings.settings.access_token;
+  }
+  
+  const hostname = process.env.REPLIT_CONNECTORS_HOSTNAME;
+  const xReplitToken = process.env.REPL_IDENTITY 
+    ? 'repl ' + process.env.REPL_IDENTITY 
+    : process.env.WEB_REPL_RENEWAL 
+    ? 'depl ' + process.env.WEB_REPL_RENEWAL 
+    : null;
+
+  if (!xReplitToken) {
+    throw new Error('X_REPLIT_TOKEN not found');
+  }
+
+  connectionSettings = await fetch(
+    'https://' + hostname + '/api/v2/connection?include_secrets=true&connector_names=github',
+    {
+      headers: {
+        'Accept': 'application/json',
+        'X_REPLIT_TOKEN': xReplitToken
+      }
+    }
+  ).then(res => res.json()).then(data => data.items?.[0]);
+
+  const accessToken = connectionSettings?.settings?.access_token || connectionSettings.settings?.oauth?.credentials?.access_token;
+
+  if (!connectionSettings || !accessToken) {
+    throw new Error('GitHub not connected');
+  }
+  return accessToken;
+}
+
+async function pushFile(octokit: Octokit, owner: string, repo: string, branch: string, filePath: string, localPath: string, message: string, isBinary: boolean = false) {
+  let content: string;
+  
+  if (isBinary) {
+    content = fs.readFileSync(localPath).toString('base64');
+  } else {
+    content = Buffer.from(fs.readFileSync(localPath, 'utf-8')).toString('base64');
+  }
+  
+  try {
+    let existingSha: string | undefined;
+    try {
+      const { data: existingFile } = await octokit.repos.getContent({
+        owner,
+        repo,
+        path: filePath,
+        ref: branch
+      });
+      if ('sha' in existingFile) {
+        existingSha = existingFile.sha;
+        console.log(`  Found existing ${filePath}, will update it`);
+      }
+    } catch (e: any) {
+      if (e.status !== 404) throw e;
+      console.log(`  Creating new ${filePath}`);
+    }
+    
+    const { data } = await octokit.repos.createOrUpdateFileContents({
+      owner,
+      repo,
+      path: filePath,
+      message,
+      content,
+      branch,
+      sha: existingSha
+    });
+    
+    console.log(`  ✅ ${filePath} pushed successfully!`);
+    return data.commit.sha;
+  } catch (error: any) {
+    console.error(`  ❌ Error pushing ${filePath}:`, error.message);
+    throw error;
+  }
+}
+
+async function pushBlogUpdates() {
+  const owner = 'rupeshtiwari';
+  const repo = 'rupeshtiwari-blog';
+  const branch = 'master';
+  
+  console.log('📤 Pushing blog updates to rupeshtiwari-blog...\n');
+  
+  const accessToken = await getAccessToken();
+  const octokit = new Octokit({ auth: accessToken });
+  
+  try {
+    console.log('1️⃣ Updating _config.yml (light theme)...');
+    await pushFile(
+      octokit, owner, repo, branch,
+      '_config.yml',
+      './blog-content/_config.yml',
+      'Switch to light theme mode'
+    );
+    
+    console.log('\n2️⃣ Updating favicon.jpg (personal photo)...');
+    await pushFile(
+      octokit, owner, repo, branch,
+      'assets/img/favicon.jpg',
+      './temp_blog_repo/assets/img/bio-photo.jpg',
+      'Update favicon to personal photo',
+      true
+    );
+    
+    console.log('\n✅ All blog updates pushed successfully!');
+    console.log('\n💡 Jekyll will rebuild your site in 1-2 minutes.');
+    console.log('   - Theme will change to light mode');
+    console.log('   - Favicon will show your personal photo');
+    
+  } catch (error: any) {
+    console.error('\n❌ Error:', error.message);
+    throw error;
+  }
+}
+
+pushBlogUpdates().catch(console.error);
