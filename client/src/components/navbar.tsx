@@ -7,16 +7,26 @@ import { Input } from "@/components/ui/input";
 import ThemeToggle from "./theme-toggle";
 
 const searchSuggestions = [
-  { term: "System Design", icon: "🏗️" },
-  { term: "AWS Architecture", icon: "☁️" },
-  { term: "FAANG Interview", icon: "🎯" },
-  { term: "Microservices", icon: "🔧" },
-  { term: "Leadership", icon: "👔" },
-  { term: "Azure Cloud", icon: "💎" },
-  { term: "Kubernetes", icon: "⚙️" },
-  { term: "DevOps", icon: "🚀" },
-  { term: "Angular", icon: "🅰️" },
-  { term: "TypeScript", icon: "📘" },
+  { term: "How to crack FAANG interview", icon: "🎯" },
+  { term: "How to become a Solutions Architect", icon: "🏗️" },
+  { term: "What is System Design", icon: "💡" },
+  { term: "How to solve System Design problems", icon: "🧩" },
+  { term: "How to become like Rupesh", icon: "⭐" },
+  { term: "AWS interview preparation", icon: "☁️" },
+  { term: "How to get Director level job", icon: "👔" },
+  { term: "FAANG behavioral interview tips", icon: "🗣️" },
+  { term: "How to negotiate salary at FAANG", icon: "💰" },
+  { term: "Microservices architecture patterns", icon: "🔧" },
+  { term: "Leadership principles for tech", icon: "🚀" },
+  { term: "How to prepare for Amazon LP", icon: "📦" },
+  { term: "Google interview process explained", icon: "🔍" },
+  { term: "Resume tips for senior engineers", icon: "📝" },
+  { term: "Career growth to Staff Engineer", icon: "📈" },
+  { term: "How to ace technical interviews", icon: "✅" },
+  { term: "Azure vs AWS comparison", icon: "⚡" },
+  { term: "Kubernetes for beginners", icon: "⚙️" },
+  { term: "DevOps best practices", icon: "🛠️" },
+  { term: "Angular vs React comparison", icon: "⚔️" },
 ];
 
 export default function Navbar() {
