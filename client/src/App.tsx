@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import FullStackMasterBanner from "@/components/fullstackmaster-banner";
+import FloatingThemeToggle from "@/components/floating-theme-toggle";
 import Home from "@/pages/home";
 import Blog from "@/pages/blog";
 import Privacy from "@/pages/privacy";
@@ -34,6 +35,7 @@ function App() {
       <TooltipProvider>
         <FullStackMasterBanner />
         <Toaster />
+        <FloatingThemeToggle />
         <Router />
       </TooltipProvider>
     </QueryClientProvider>

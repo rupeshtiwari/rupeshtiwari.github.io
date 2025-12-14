@@ -88,9 +88,10 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="group"
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="group cursor-pointer"
             >
-              <div className="h-full p-6 rounded-2xl bg-[#0A1628]/50 border border-[#1E3A5F]/50 hover:border-[#C9A227]/30 transition-all hover:bg-[#0A1628]/80">
+              <div className="h-full p-6 rounded-2xl bg-[#0A1628]/50 border border-[#1E3A5F]/50 hover:border-[#C9A227]/30 transition-all hover:bg-[#0A1628]/80 hover:shadow-xl hover:shadow-[#C9A227]/10">
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex items-center gap-3">
                     <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center`}>

@@ -166,11 +166,13 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + i * 0.1 }}
-                  className="text-center p-4 rounded-xl bg-[var(--theme-bg-card)]/60 border border-[var(--theme-border)]/60"
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="text-center p-4 rounded-xl bg-[var(--theme-bg-card)]/60 border border-[var(--theme-border)]/60 hover:border-[var(--theme-gold)]/40 hover:bg-[var(--theme-bg-card)]/80 transition-colors cursor-pointer group"
                   data-testid={`stat-${i}`}
                 >
-                  <div className="text-2xl md:text-3xl font-bold text-[var(--theme-gold)] mb-1">{stat.value}</div>
-                  <div className="text-xs text-[var(--theme-text-muted)] uppercase tracking-wider">{stat.label}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-[var(--theme-gold)] mb-1 group-hover:scale-110 transition-transform">{stat.value}</div>
+                  <div className="text-xs text-[var(--theme-text-muted)] uppercase tracking-wider group-hover:text-[var(--theme-text-secondary)] transition-colors">{stat.label}</div>
                 </motion.div>
               ))}
             </div>

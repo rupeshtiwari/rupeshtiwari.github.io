@@ -1,17 +1,39 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Calendar, MessageCircle, Search } from "lucide-react";
+import { Menu, X, Calendar, MessageCircle, Search, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import ThemeToggle from "./theme-toggle";
+
+const searchSuggestions = [
+  { term: "System Design", icon: "🏗️" },
+  { term: "AWS Architecture", icon: "☁️" },
+  { term: "FAANG Interview", icon: "🎯" },
+  { term: "Microservices", icon: "🔧" },
+  { term: "Leadership", icon: "👔" },
+  { term: "Azure Cloud", icon: "💎" },
+  { term: "Kubernetes", icon: "⚙️" },
+  { term: "DevOps", icon: "🚀" },
+  { term: "Angular", icon: "🅰️" },
+  { term: "TypeScript", icon: "📘" },
+];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [showDesktopSuggestions, setShowDesktopSuggestions] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const searchRef = useRef<HTMLDivElement>(null);
   const [location] = useLocation();
+
+  const filteredSuggestions = searchQuery.trim()
+    ? searchSuggestions.filter(s => 
+        s.term.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : searchSuggestions;
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,6 +41,33 @@ export default function Navbar() {
       window.open(`https://blog.rupeshtiwari.com/search?q=${encodeURIComponent(searchQuery.trim())}`, '_blank');
       setSearchQuery("");
       setShowSearch(false);
+      setShowDesktopSuggestions(false);
+    }
+  };
+
+  const handleSuggestionClick = (term: string) => {
+    window.open(`https://blog.rupeshtiwari.com/search?q=${encodeURIComponent(term)}`, '_blank');
+    setSearchQuery("");
+    setShowSearch(false);
+    setShowDesktopSuggestions(false);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!showDesktopSuggestions) return;
+    
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setSelectedIndex(prev => 
+        prev < filteredSuggestions.length - 1 ? prev + 1 : prev
+      );
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setSelectedIndex(prev => prev > 0 ? prev - 1 : -1);
+    } else if (e.key === "Enter" && selectedIndex >= 0) {
+      e.preventDefault();
+      handleSuggestionClick(filteredSuggestions[selectedIndex].term);
+    } else if (e.key === "Escape") {
+      setShowDesktopSuggestions(false);
     }
   };
 
@@ -28,6 +77,16 @@ export default function Navbar() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
+        setShowDesktopSuggestions(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const links = [
@@ -95,28 +154,70 @@ export default function Navbar() {
           <div className="flex items-center gap-2 ml-2">
             <AnimatePresence>
               {showSearch && (
-                <motion.form
+                <motion.div
+                  ref={searchRef}
                   initial={{ width: 0, opacity: 0 }}
-                  animate={{ width: "200px", opacity: 1 }}
+                  animate={{ width: "280px", opacity: 1 }}
                   exit={{ width: 0, opacity: 0 }}
                   transition={{ duration: 0.2 }}
-                  onSubmit={handleSearch}
-                  className="overflow-hidden"
+                  className="relative overflow-visible"
                 >
-                  <Input
-                    type="text"
-                    placeholder="Search blog..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="h-8 bg-[var(--theme-bg-card)] border-[var(--theme-border)] text-[var(--theme-text-primary)] placeholder:text-[var(--theme-text-muted)] focus:border-[var(--theme-gold)]"
-                    autoFocus
-                    data-testid="input-search"
-                  />
-                </motion.form>
+                  <form onSubmit={handleSearch}>
+                    <Input
+                      type="text"
+                      placeholder="Search blog..."
+                      value={searchQuery}
+                      onChange={(e) => {
+                        setSearchQuery(e.target.value);
+                        setShowDesktopSuggestions(true);
+                        setSelectedIndex(-1);
+                      }}
+                      onFocus={() => setShowDesktopSuggestions(true)}
+                      onKeyDown={handleKeyDown}
+                      className="h-8 bg-[var(--theme-bg-card)] border-[var(--theme-border)] text-[var(--theme-text-primary)] placeholder:text-[var(--theme-text-muted)] focus:border-[var(--theme-gold)]"
+                      autoFocus
+                      data-testid="input-search"
+                    />
+                  </form>
+                  <AnimatePresence>
+                    {showDesktopSuggestions && filteredSuggestions.length > 0 && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="absolute top-full left-0 right-0 mt-1 bg-[var(--theme-bg-card)] border border-[var(--theme-border)] rounded-lg shadow-xl overflow-hidden z-50"
+                      >
+                        <div className="px-3 py-2 border-b border-[var(--theme-border)]">
+                          <span className="text-xs text-[var(--theme-text-muted)] flex items-center gap-1">
+                            <TrendingUp className="w-3 h-3" /> Popular Topics
+                          </span>
+                        </div>
+                        {filteredSuggestions.slice(0, 6).map((suggestion, index) => (
+                          <button
+                            key={suggestion.term}
+                            onClick={() => handleSuggestionClick(suggestion.term)}
+                            className={`w-full px-3 py-2 text-left text-sm flex items-center gap-2 transition-colors ${
+                              index === selectedIndex
+                                ? "bg-[var(--theme-gold)]/20 text-[var(--theme-gold)]"
+                                : "text-[var(--theme-text-primary)] hover:bg-[var(--theme-bg-secondary)]"
+                            }`}
+                            data-testid={`suggestion-${suggestion.term.toLowerCase().replace(/\s+/g, '-')}`}
+                          >
+                            <span>{suggestion.icon}</span>
+                            <span>{suggestion.term}</span>
+                          </button>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
               )}
             </AnimatePresence>
             <button
-              onClick={() => setShowSearch(!showSearch)}
+              onClick={() => {
+                setShowSearch(!showSearch);
+                if (!showSearch) setShowDesktopSuggestions(true);
+              }}
               className="p-2 text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors"
               data-testid="button-search-toggle"
               title="Search Blog"
@@ -156,22 +257,51 @@ export default function Navbar() {
             className="md:hidden bg-[var(--theme-bg-secondary)] border-b border-[var(--theme-border)]"
           >
             <div className="flex flex-col p-6 gap-4">
-              <form onSubmit={handleSearch} className="relative mb-2">
-                <Input
-                  type="text"
-                  placeholder="Search blog articles..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="h-10 bg-[var(--theme-bg-card)] border-[var(--theme-border)] text-[var(--theme-text-primary)] placeholder:text-[var(--theme-text-muted)] focus:border-[var(--theme-gold)] pr-10"
-                  data-testid="input-search-mobile"
-                />
-                <button
-                  type="submit"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-[#D4AF37]"
+              <div className="relative mb-2">
+                <form onSubmit={handleSearch}>
+                  <Input
+                    type="text"
+                    placeholder="Search blog articles..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="h-10 bg-[var(--theme-bg-card)] border-[var(--theme-border)] text-[var(--theme-text-primary)] placeholder:text-[var(--theme-text-muted)] focus:border-[var(--theme-gold)] pr-10"
+                    data-testid="input-search-mobile"
+                  />
+                  <button
+                    type="submit"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-[#D4AF37]"
+                  >
+                    <Search className="w-4 h-4" />
+                  </button>
+                </form>
+                <motion.div
+                  initial={{ opacity: 0, y: -5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-2 bg-[var(--theme-bg-card)] border border-[var(--theme-border)] rounded-lg overflow-hidden"
                 >
-                  <Search className="w-4 h-4" />
-                </button>
-              </form>
+                  <div className="px-3 py-2 border-b border-[var(--theme-border)]">
+                    <span className="text-xs text-[var(--theme-text-muted)] flex items-center gap-1">
+                      <TrendingUp className="w-3 h-3" /> Popular Topics
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-1 p-2">
+                    {filteredSuggestions.slice(0, 6).map((suggestion) => (
+                      <button
+                        key={suggestion.term}
+                        onClick={() => {
+                          handleSuggestionClick(suggestion.term);
+                          setIsOpen(false);
+                        }}
+                        className="px-3 py-2 text-left text-sm flex items-center gap-2 text-[var(--theme-text-primary)] hover:bg-[var(--theme-bg-secondary)] rounded-md transition-colors active:scale-95"
+                        data-testid={`suggestion-mobile-${suggestion.term.toLowerCase().replace(/\s+/g, '-')}`}
+                      >
+                        <span>{suggestion.icon}</span>
+                        <span className="truncate">{suggestion.term}</span>
+                      </button>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
               {links.map((link) => (
                 link.external ? (
                   <a
