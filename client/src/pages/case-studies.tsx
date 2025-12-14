@@ -1,126 +1,78 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, TrendingUp, Clock, CheckCircle2, Quote, Briefcase, GraduationCap, Target, Calendar } from "lucide-react";
+import { ArrowLeft, ArrowRight, Star, Quote, Calendar, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-const caseStudies = [
+const clientReviews = [
   {
-    id: "karthik",
-    name: "Karthik S.",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
-    beforeRole: "Senior Software Engineer",
-    beforeCompany: "Mid-size Startup",
-    beforeSalary: "$145K",
-    afterRole: "Staff Engineer",
-    afterCompany: "Google",
-    afterSalary: "$420K",
-    increase: "+$275K",
-    timeline: "10 weeks",
-    background: "Karthik had been a Senior Software Engineer at a well-funded startup in the Bay Area for 4 years. He was a strong coder with solid system design intuition, but had failed Google's interview loop 3 times over 2 years.",
-    challenge: "His main challenges were: 1) System design interviews felt unstructured - he'd ramble and lose the interviewer. 2) Behavioral stories were weak - he couldn't articulate his leadership impact. 3) Confidence was shattered after 3 rejections.",
-    approach: [
-      "Rebuilt his system design framework from scratch using my '5-Box Method' that keeps answers structured and time-boxed",
-      "Created a personal 'Story Bank' of 12 leadership scenarios mapped to Google's hiring rubric",
-      "Ran 6 mock interviews with detailed feedback, focusing on pacing and depth calibration",
-      "Worked on mindset coaching to rebuild confidence and approach the 4th attempt with fresh energy"
+    id: "vaughn",
+    name: "Vaughn",
+    outcome: "Landed role at DraftKings",
+    date: "April 2025",
+    focus: "Object-Oriented Design Interview Prep",
+    reviews: [
+      "I had a great experience working with Rupesh! He helped me approach object-oriented design interview problems with structure, confidence, and competency. His patience stood out—he took the time to ensure I fully understood each concept before moving on. I also appreciated how he provided clear next steps to continue improving my skills. Highly recommend him for anyone looking to strengthen their SWE interview prep!",
+      "THANK YOU RUPESH!!!"
     ],
-    result: "Karthik crushed his 4th Google loop. He received a Staff Engineer offer at $420K total comp - a $275K increase from his startup salary. He negotiated an additional $50K signing bonus using my negotiation scripts.",
-    quote: "Rupesh's system design framework completely changed how I think about these interviews. After 3 failures, I went into my 4th attempt feeling like a different engineer. The structured approach gave me confidence I never had before.",
-    keyMetrics: [
-      { label: "Salary Increase", value: "+$275K" },
-      { label: "Timeline", value: "10 weeks" },
-      { label: "Previous Attempts", value: "3 failures" },
-      { label: "Mock Sessions", value: "6 sessions" }
-    ]
+    highlights: ["OOD interview structure", "Patient coaching style", "Clear next steps"]
   },
   {
-    id: "priya",
-    name: "Priya M.",
-    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face",
-    beforeRole: "Engineering Manager",
-    beforeCompany: "Oracle",
-    beforeSalary: "$180K",
-    afterRole: "Director of Engineering",
-    afterCompany: "Meta",
-    afterSalary: "$520K",
-    increase: "+$340K",
-    timeline: "8 weeks",
-    background: "Priya was an Engineering Manager at Oracle with 12 years of experience. She managed a team of 15 engineers and had delivered multiple critical projects. She wanted to break into FAANG at the Director level but felt stuck at Oracle.",
-    challenge: "Her challenges were: 1) Executive presence was lacking - she came across as too technical and not strategic enough. 2) Her leadership stories focused on 'what she did' not 'how she influenced'. 3) She hadn't interviewed in 8 years and felt rusty.",
-    approach: [
-      "Coached on 'strategic storytelling' - framing every answer around business impact, not just technical execution",
-      "Developed her unique leadership philosophy and helped her articulate it clearly",
-      "Practiced VP-level conversations about org design, team building, and cross-functional influence",
-      "Ran 4 executive mock interviews with focus on poise, presence, and strategic thinking"
+    id: "ashley",
+    name: "Ashley",
+    outcome: "Passed phone screen",
+    date: "December 2025",
+    focus: "Interview Answer Optimization",
+    reviews: [
+      "Rupesh was so helpful! I passed my phone screen and will work with him to prep for my loop now. He helped me tighten up my interview answers, and identified gaps where I was missing metrics, mechanisms and other elements. It was specific to the role and company so very tailored. And he's really nice and easy to work with."
     ],
-    result: "Priya received Director of Engineering offers from Meta and Amazon. She chose Meta at $520K total comp - nearly 3x her Oracle salary. She's now leading a 40-person org building next-gen AR/VR products.",
-    quote: "I had the skills but couldn't sell myself at the executive level. Rupesh helped me find my voice as a leader. The way he coached me to tell my story - focusing on influence and business impact - was transformative.",
-    keyMetrics: [
-      { label: "Salary Increase", value: "+$340K" },
-      { label: "Timeline", value: "8 weeks" },
-      { label: "Team Size Growth", value: "15 → 40" },
-      { label: "Offers Received", value: "2 (Meta, Amazon)" }
-    ]
+    highlights: ["Tailored to specific role", "Metrics and mechanisms focus", "Phone screen success"]
   },
   {
-    id: "raj",
-    name: "Raj T.",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
-    beforeRole: "Tech Lead",
-    beforeCompany: "Infosys (India)",
-    beforeSalary: "$35K",
-    afterRole: "Senior SDE",
-    afterCompany: "Amazon",
-    afterSalary: "$285K",
-    increase: "+$250K",
-    timeline: "12 weeks",
-    background: "Raj was a Tech Lead at Infosys in Bangalore with 7 years of experience. He was highly skilled but earning only $35K/year in India. His dream was to relocate to the US and work at a FAANG company.",
-    challenge: "His challenges were unique: 1) Visa sponsorship concerns - he needed to stand out as exceptional. 2) Amazon LP (Leadership Principles) stories were unfamiliar territory. 3) System design at FAANG scale was different from his Indian IT services experience. 4) Salary negotiation - he'd never earned more than $40K.",
-    approach: [
-      "Deep-dive on Amazon's 16 Leadership Principles with customized stories for each",
-      "Rebuilt system design thinking for Amazon-scale (millions of users, distributed systems)",
-      "Created a visa sponsorship narrative that positioned him as a 'must-have' candidate",
-      "Extensive negotiation coaching - how to think in terms of 'market rate' not 'current salary'"
+    id: "ann",
+    name: "Ann",
+    outcome: "Solutions Architect at Databricks",
+    date: "July-August 2025",
+    focus: "Solutions Architect Panel Prep",
+    reviews: [
+      "This was my >2 times with Rupesh for mock interview! I had the opportunity to work with Rupesh to prepare for a panel session for a Solutions Architect role. Coming from a more technical background, I realized that the storytelling and communication aspect of the conversation needed more practice and refinement. Rupesh provided highly actionable feedback—he helped me improve the overall structure of the panel discussion, identify key focus areas, flag red flags, and even suggested thoughtful questions to ask during the session. He holds a very high bar and treats each mock interview as seriously as if it were his own team's hiring process.",
+      "I'm currently preparing for a Solutions Architect role with a data background. Rupesh started the session by proposing a clear structure, which helped set the tone for a productive conversation - definitely five stars. What I truly appreciated was his thoughtful and caring approach. He made sure I left the session with a clear framework and practical guidance I can continue to practice on my own."
     ],
-    result: "Raj received an Amazon Senior SDE offer with L5 designation at $245K base + $40K additional after negotiation using my scripts. He relocated to Seattle and now earns $285K - an 8x increase from his India salary.",
-    quote: "Coming from India, I had no idea how to approach US interviews or negotiate US salaries. Rupesh understood my background and coached me specifically for this transition. The negotiation alone added $40K to my offer.",
-    keyMetrics: [
-      { label: "Salary Increase", value: "+$250K (8x)" },
-      { label: "Timeline", value: "12 weeks" },
-      { label: "Negotiation Bump", value: "+$40K" },
-      { label: "LP Stories Created", value: "16 stories" }
-    ]
+    highlights: ["Multiple sessions", "High bar standard", "Storytelling improvement", "Panel prep"]
   },
   {
-    id: "mike",
-    name: "Mike C.",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
-    beforeRole: "Principal Engineer",
-    beforeCompany: "Microsoft",
-    beforeSalary: "$380K",
-    afterRole: "VP of Engineering",
-    afterCompany: "Series C Startup",
-    afterSalary: "$650K + $2M equity",
-    increase: "+$270K + equity",
-    timeline: "6 weeks",
-    background: "Mike was a Principal Engineer at Microsoft with 18 years of experience. He was a technical leader respected by everyone but had never held a people-management title. He wanted to make the jump to VP of Engineering at a high-growth startup.",
-    challenge: "The IC-to-executive jump is one of the hardest: 1) He had no direct management experience to point to. 2) Startups wanted someone who had 'done it before'. 3) Executive interviews focus on org building, not coding. 4) He needed to reframe his entire identity from 'doer' to 'leader of leaders'.",
-    approach: [
-      "Developed his 'technical leadership' brand - how technical excellence translates to org leadership",
-      "Created frameworks for talking about org design, hiring, and culture without direct experience",
-      "Coached on executive communication - board-level updates, cross-functional alignment",
-      "Prepared for startup-specific questions around scaling engineering from 20 to 200 people"
+    id: "ca",
+    name: "Ca",
+    outcome: "DevOps & AWS Cloud Expertise",
+    date: "September 2025",
+    focus: "Java, DevOps, Cloud (AWS), SRE Coaching",
+    reviews: [
+      "I took multiple sessions with Rupesh and have consistently been impressed by his deep expertise in DevOps and the AWS cloud domain. His background in development provides a solid foundation that enhances his ability to explain complex concepts clearly and effectively. He is genuinely passionate about his work and goes above and beyond to support his students — often adjusting his schedule to accommodate individual needs. He takes the time to ensure your queries are thoroughly addressed and is always willing to provide guidance. This is not just a one-time engagement for him; he brings a long-term mentorship mindset to his coaching. I highly recommend him for coaching in Java, DevOps, Cloud (AWS), and SRE domains."
     ],
-    result: "Mike landed VP of Engineering at a Series C startup ($500M valuation). His package: $650K base + $2M+ in equity. He now leads 50 engineers and reports directly to the CEO. The equity could be worth $10M+ at exit.",
-    quote: "I was a lifelong IC who had never managed anyone. Rupesh helped me see that my technical leadership experience was actually the perfect foundation for an executive role. The frameworks he gave me for org design conversations were invaluable.",
-    keyMetrics: [
-      { label: "Cash Increase", value: "+$270K" },
-      { label: "Equity Package", value: "$2M+" },
-      { label: "Timeline", value: "6 weeks" },
-      { label: "Team Size", value: "50 engineers" }
-    ]
+    highlights: ["Multiple sessions", "Long-term mentorship", "DevOps & AWS expertise", "Flexible scheduling"]
+  },
+  {
+    id: "melvin",
+    name: "Melvin",
+    outcome: "90-day career roadmap",
+    date: "April 2025",
+    focus: "Solutions Architect Career Transition",
+    reviews: [
+      "Rupesh was amazing to work with. As a beginning Solutions Architect, I was stuck in my career, and he provided guidance for sharpening my skills, demonstrating competence, building my brand, and engaging with other cloud professionals and recruiters. By the end of the session, I had a 90-day step-by-step plan to turn my career around. I'll be coming back to him again for mock interviews in the next month or so!"
+    ],
+    highlights: ["90-day action plan", "Career guidance", "Brand building", "Recruiter engagement"]
+  },
+  {
+    id: "muhammad",
+    name: "Muhammad",
+    outcome: "Solutions Architect Interview Ready",
+    date: "July 2025",
+    focus: "System Design & Architecture Interviews",
+    reviews: [
+      "I had my first mock interview session with Rupesh, and it was extremely insightful. He quickly identified the areas I needed to focus on and tailored the session specifically for the Solution Architect role I'm targeting. Rupesh brings deep experience in system design and architecture interviews, and it really showed. He not only reviewed my technical approach, but also coached me on how to structure and communicate my design decisions clearly and confidently. He emphasized how to align my answers with the business context of the role, and gave actionable feedback on my tone and overall presence. In just one hour, I gained a clear picture of my strengths and the areas I need to refine. I highly recommend Rupesh for anyone preparing for Solution Architect or system design interviews."
+    ],
+    highlights: ["System design expertise", "Business context alignment", "Communication coaching", "Presence improvement"]
   }
 ];
 
@@ -139,138 +91,69 @@ export default function CaseStudies() {
               <ArrowLeft className="w-4 h-4" />
               Back to Home
             </Link>
-            <span className="block text-green-400 text-sm font-semibold uppercase tracking-wider mb-2">Success Stories</span>
+            <div className="flex items-center justify-center gap-1 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            <span className="block text-green-400 text-sm font-semibold uppercase tracking-wider mb-2">50+ Five-Star Reviews</span>
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-4 text-white">
-              Real Transformations, Real Results
+              Real Client Success Stories
             </h1>
             <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-              These aren't testimonials - they're complete case studies. Dive deep into how each client 
-              overcame their unique challenges and achieved life-changing career outcomes.
+              These are verified reviews from actual coaching clients on IGotAnOffer. 
+              Read their experiences and outcomes in their own words.
             </p>
           </motion.div>
 
-          <div className="space-y-24">
-            {caseStudies.map((study, idx) => (
+          <div className="space-y-12">
+            {clientReviews.map((client, idx) => (
               <motion.article
-                key={study.id}
+                key={client.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ delay: 0.1 }}
                 className="relative"
-                data-testid={`case-study-${study.id}`}
+                data-testid={`client-review-${client.id}`}
               >
-                <div className="absolute left-0 top-0 text-8xl font-bold text-[#1E3A5F]/20 font-display -ml-4 -mt-8">
-                  0{idx + 1}
-                </div>
-
-                <div className="grid lg:grid-cols-3 gap-8">
-                  <div className="lg:col-span-1">
-                    <div className="sticky top-24">
-                      <div className="p-6 rounded-2xl bg-[#0F2341]/50 border border-[#1E3A5F]/50">
-                        <div className="flex items-center gap-4 mb-6">
-                          <img
-                            src={study.photo}
-                            alt={study.name}
-                            className="w-20 h-20 rounded-full object-cover border-2 border-green-500/50"
-                          />
-                          <div>
-                            <h3 className="text-xl font-bold text-white">{study.name}</h3>
-                            <p className="text-slate-400 text-sm">{study.timeline} coaching</p>
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-4 mb-6">
-                          <div className="p-3 rounded-lg bg-[#0A1628]/50">
-                            <div className="text-xs text-slate-500 uppercase mb-1">Before</div>
-                            <div className="text-white font-medium text-sm">{study.beforeRole}</div>
-                            <div className="text-slate-400 text-xs">{study.beforeCompany}</div>
-                            <div className="text-slate-500 text-sm mt-1">{study.beforeSalary}</div>
-                          </div>
-                          <div className="p-3 rounded-lg bg-green-500/10 border border-green-500/20">
-                            <div className="text-xs text-green-400 uppercase mb-1">After</div>
-                            <div className="text-white font-medium text-sm">{study.afterRole}</div>
-                            <div className="text-green-400 text-xs">{study.afterCompany}</div>
-                            <div className="text-green-400 font-bold text-sm mt-1">{study.afterSalary}</div>
-                          </div>
-                        </div>
-
-                        <div className="p-4 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 text-center">
-                          <div className="text-3xl font-bold text-green-400">{study.increase}</div>
-                          <div className="text-sm text-slate-400">Total Increase</div>
-                        </div>
+                <div className="p-8 rounded-2xl bg-[#0F2341]/50 border border-[#1E3A5F]/50">
+                  <div className="flex flex-col lg:flex-row gap-8">
+                    <div className="lg:w-1/3">
+                      <div className="flex items-center gap-1 mb-3">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        ))}
                       </div>
-
-                      <div className="mt-6 grid grid-cols-2 gap-3">
-                        {study.keyMetrics.map((metric, mIdx) => (
-                          <div key={mIdx} className="p-3 rounded-lg bg-[#0F2341]/30 border border-[#1E3A5F]/30 text-center">
-                            <div className="text-lg font-bold text-white">{metric.value}</div>
-                            <div className="text-xs text-slate-400">{metric.label}</div>
+                      <h3 className="text-2xl font-bold text-white mb-2">{client.name}</h3>
+                      <div className="inline-block px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium mb-3">
+                        {client.outcome}
+                      </div>
+                      <p className="text-slate-400 text-sm mb-4">{client.date}</p>
+                      <p className="text-blue-400 text-sm font-medium mb-4">{client.focus}</p>
+                      
+                      <div className="space-y-2">
+                        {client.highlights.map((highlight, hIdx) => (
+                          <div key={hIdx} className="flex items-center gap-2 text-sm text-slate-300">
+                            <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0" />
+                            <span>{highlight}</span>
                           </div>
                         ))}
                       </div>
                     </div>
-                  </div>
 
-                  <div className="lg:col-span-2 space-y-8">
-                    <div>
-                      <div className="flex items-center gap-2 text-[#D4AF37] mb-3">
-                        <Briefcase className="w-5 h-5" />
-                        <h4 className="font-semibold uppercase text-sm tracking-wider">Background</h4>
-                      </div>
-                      <p className="text-slate-300 leading-relaxed">{study.background}</p>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-2 text-red-400 mb-3">
-                        <Target className="w-5 h-5" />
-                        <h4 className="font-semibold uppercase text-sm tracking-wider">The Challenge</h4>
-                      </div>
-                      <p className="text-slate-300 leading-relaxed">{study.challenge}</p>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-2 text-blue-400 mb-3">
-                        <GraduationCap className="w-5 h-5" />
-                        <h4 className="font-semibold uppercase text-sm tracking-wider">Our Approach</h4>
-                      </div>
-                      <ul className="space-y-3">
-                        {study.approach.map((step, sIdx) => (
-                          <li key={sIdx} className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
-                            <span className="text-slate-300">{step}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-2 text-green-400 mb-3">
-                        <TrendingUp className="w-5 h-5" />
-                        <h4 className="font-semibold uppercase text-sm tracking-wider">The Result</h4>
-                      </div>
-                      <p className="text-slate-300 leading-relaxed">{study.result}</p>
-                    </div>
-
-                    <div className="p-6 rounded-2xl bg-gradient-to-r from-[#D4AF37]/10 to-[#B8860B]/10 border border-[#D4AF37]/20">
-                      <Quote className="w-8 h-8 text-[#D4AF37] mb-3" />
-                      <blockquote className="text-lg text-white italic leading-relaxed">
-                        "{study.quote}"
-                      </blockquote>
-                      <div className="mt-4 flex items-center gap-3">
-                        <img src={study.photo} alt={study.name} className="w-10 h-10 rounded-full" />
-                        <div>
-                          <div className="text-white font-medium">{study.name}</div>
-                          <div className="text-sm text-slate-400">{study.afterRole} at {study.afterCompany}</div>
+                    <div className="lg:w-2/3 space-y-4">
+                      {client.reviews.map((review, rIdx) => (
+                        <div key={rIdx} className="relative">
+                          <Quote className="absolute -left-2 -top-2 w-8 h-8 text-[#D4AF37]/20" />
+                          <blockquote className="pl-6 text-slate-300 leading-relaxed italic">
+                            "{review}"
+                          </blockquote>
                         </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
                 </div>
-
-                {idx < caseStudies.length - 1 && (
-                  <div className="mt-16 border-t border-[#1E3A5F]/30" />
-                )}
               </motion.article>
             ))}
           </div>
@@ -279,13 +162,37 @@ export default function CaseStudies() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-24 text-center"
+            className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-[#D4AF37]/10 to-[#B8860B]/10 border border-[#D4AF37]/20 text-center"
+          >
+            <h3 className="text-2xl font-bold text-white mb-4">
+              View All 50+ Reviews
+            </h3>
+            <p className="text-slate-400 mb-6 max-w-2xl mx-auto">
+              These are just a few highlights. See all verified reviews on IGotAnOffer to learn 
+              how coaching has helped professionals land roles at top tech companies.
+            </p>
+            <Button 
+              className="bg-[#D4AF37] hover:bg-[#B8860B] text-black font-bold"
+              asChild
+              data-testid="button-view-all-reviews"
+            >
+              <a href="https://igotanoffer.com/en/coaches/rupesh-tiwari" target="_blank" rel="noopener noreferrer">
+                View All Reviews on IGotAnOffer
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
           >
             <div className="max-w-2xl mx-auto p-8 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
-              <h3 className="text-2xl font-bold text-white mb-2">Your Story Could Be Next</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Ready to Start Your Journey?</h3>
               <p className="text-slate-400 mb-6">
-                Every client started where you are now. Let's discuss how I can help you achieve 
-                your career goals.
+                Join 50+ successful clients who have transformed their careers with personalized coaching.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
