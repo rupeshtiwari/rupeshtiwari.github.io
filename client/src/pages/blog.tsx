@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
@@ -5,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import PinnedProject from "@/components/pinned-project";
-import { Calendar, User, ArrowRight, Linkedin } from "lucide-react";
+import { Calendar, User, ArrowRight, Linkedin, LayoutGrid, List, Clock } from "lucide-react";
 import { Link } from "wouter";
 
 const posts = [
@@ -66,6 +67,8 @@ const posts = [
 ];
 
 export default function Blog() {
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
@@ -75,7 +78,7 @@ export default function Blog() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-12 text-center max-w-2xl mx-auto"
+            className="mb-8 text-center max-w-2xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl font-bold font-display mb-4">Technical Blog</h1>
             <p className="text-muted-foreground text-lg">
@@ -83,67 +86,164 @@ export default function Blog() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post, idx) => (
-              <motion.div
-                key={post.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1 }}
+          <div className="flex justify-end mb-6">
+            <div className="flex items-center gap-1 p-1 rounded-lg bg-muted">
+              <button
+                onClick={() => setViewMode("grid")}
+                className={`p-2 rounded-md transition-colors ${
+                  viewMode === "grid" 
+                    ? "bg-background text-foreground shadow-sm" 
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                title="Grid view"
+                data-testid="button-view-grid"
               >
-                <Card className="h-full flex flex-col hover:shadow-lg transition-shadow border-border/60">
-                  <CardHeader>
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      {post.tags.map(tag => (
-                        <Badge key={tag} variant="secondary" className="text-xs font-normal">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <Link href={`/blog/${post.id}`}>
-                      <CardTitle className="text-xl font-bold font-display leading-tight hover:text-primary transition-colors cursor-pointer">
-                        {post.title}
-                      </CardTitle>
-                    </Link>
-                    <CardDescription className="flex items-center gap-4 text-xs mt-2">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        {post.date}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <User className="w-3 h-3" />
-                        {post.author}
-                      </span>
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground text-sm line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                  </CardContent>
-                  <CardFooter className="pt-0 flex justify-between items-center">
-                    <Link href={`/blog/${post.id}`}>
-                      <Button variant="ghost" className="p-0 h-auto hover:text-primary font-medium group">
-                        Read Article <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </Link>
-                    <button
-                      onClick={(e) => {
-                        e.preventDefault();
-                        const shareUrl = `${window.location.origin}/blog/${post.id}`;
-                        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`, '_blank', 'width=600,height=600');
-                      }}
-                      className="p-1.5 rounded-lg text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-colors"
-                      title="Share to LinkedIn"
-                      data-testid={`share-linkedin-${post.id}`}
-                    >
-                      <Linkedin className="w-4 h-4" />
-                    </button>
-                  </CardFooter>
-                </Card>
-              </motion.div>
-            ))}
+                <LayoutGrid className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setViewMode("list")}
+                className={`p-2 rounded-md transition-colors ${
+                  viewMode === "list" 
+                    ? "bg-background text-foreground shadow-sm" 
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+                title="List view"
+                data-testid="button-view-list"
+              >
+                <List className="w-4 h-4" />
+              </button>
+            </div>
           </div>
+
+          {viewMode === "grid" ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {posts.map((post, idx) => (
+                <motion.div
+                  key={post.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.1 }}
+                >
+                  <Card className="h-full flex flex-col hover:shadow-lg transition-shadow border-border/60">
+                    <CardHeader>
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        {post.tags.map(tag => (
+                          <Badge key={tag} variant="secondary" className="text-xs font-normal">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      <Link href={`/blog/${post.id}`}>
+                        <CardTitle className="text-xl font-bold font-display leading-tight hover:text-primary transition-colors cursor-pointer">
+                          {post.title}
+                        </CardTitle>
+                      </Link>
+                      <CardDescription className="flex items-center gap-4 text-xs mt-2">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          {post.date}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <User className="w-3 h-3" />
+                          {post.author}
+                        </span>
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <p className="text-muted-foreground text-sm line-clamp-3">
+                        {post.excerpt}
+                      </p>
+                    </CardContent>
+                    <CardFooter className="pt-0 flex justify-between items-center">
+                      <Link href={`/blog/${post.id}`}>
+                        <Button variant="ghost" className="p-0 h-auto hover:text-primary font-medium group">
+                          Read Article <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          const shareUrl = `${window.location.origin}/blog/${post.id}`;
+                          window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`, '_blank', 'width=600,height=600');
+                        }}
+                        className="p-1.5 rounded-lg text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-colors"
+                        title="Share to LinkedIn"
+                        data-testid={`share-linkedin-${post.id}`}
+                      >
+                        <Linkedin className="w-4 h-4" />
+                      </button>
+                    </CardFooter>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {posts.map((post, idx) => (
+                <motion.div
+                  key={post.id}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.05 }}
+                >
+                  <Card className="hover:shadow-lg transition-shadow border-border/60">
+                    <div className="flex flex-col md:flex-row md:items-center p-4 md:p-6 gap-4">
+                      <div className="flex-grow">
+                        <div className="flex flex-wrap items-center gap-2 mb-2">
+                          {post.tags.map(tag => (
+                            <Badge key={tag} variant="secondary" className="text-xs font-normal">
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+                        <Link href={`/blog/${post.id}`}>
+                          <h3 className="text-lg md:text-xl font-bold font-display leading-tight hover:text-primary transition-colors cursor-pointer mb-2">
+                            {post.title}
+                          </h3>
+                        </Link>
+                        <p className="text-muted-foreground text-sm line-clamp-2 mb-3">
+                          {post.excerpt}
+                        </p>
+                        <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
+                          <span className="flex items-center gap-1">
+                            <Calendar className="w-3 h-3" />
+                            {post.date}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <User className="w-3 h-3" />
+                            {post.author}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Clock className="w-3 h-3" />
+                            {post.readTime}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3 md:flex-col md:items-end">
+                        <Link href={`/blog/${post.id}`}>
+                          <Button variant="outline" size="sm" className="font-medium group">
+                            Read <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                          </Button>
+                        </Link>
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            const shareUrl = `${window.location.origin}/blog/${post.id}`;
+                            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`, '_blank', 'width=600,height=600');
+                          }}
+                          className="p-2 rounded-lg text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-colors"
+                          title="Share to LinkedIn"
+                          data-testid={`share-linkedin-list-${post.id}`}
+                        >
+                          <Linkedin className="w-4 h-4" />
+                        </button>
+                      </div>
+                    </div>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          )}
           
           <div className="mt-16 text-center">
              <Button size="lg" variant="outline" asChild>
