@@ -1,60 +1,45 @@
-import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
-import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
-export function useTheme() {
-  const [theme, setTheme] = useState<"dark" | "light">(() => {
-    if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("theme");
-      if (stored === "light" || stored === "dark") return stored;
-      return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-    }
-    return "dark";
-  });
+export default function ThemeToggle({ className = "" }: { className?: string }) {
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const root = document.documentElement;
-    if (theme === "light") {
-      root.classList.add("light");
-      root.classList.remove("dark");
-    } else {
-      root.classList.add("dark");
-      root.classList.remove("light");
-    }
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+    setMounted(true);
+  }, []);
 
-  const toggleTheme = () => {
-    setTheme(prev => prev === "dark" ? "light" : "dark");
-  };
+  if (!mounted) {
+    return (
+      <Button
+        variant="ghost"
+        size="icon"
+        className={`w-9 h-9 text-[var(--theme-text-muted)] ${className}`}
+        data-testid="button-theme-toggle"
+      >
+        <Sun className="w-4 h-4" />
+      </Button>
+    );
+  }
 
-  return { theme, toggleTheme };
-}
-
-export default function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
 
   return (
-    <motion.button
-      onClick={toggleTheme}
-      className="fixed top-20 right-6 z-40 w-10 h-10 rounded-full bg-[#0F2341] border border-[#1E3A5F] shadow-lg flex items-center justify-center hover:border-[#D4AF37] transition-colors"
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-      aria-label="Toggle theme"
-      data-testid="theme-toggle"
+    <Button
+      variant="ghost"
+      size="icon"
+      className={`w-9 h-9 text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] hover:bg-[var(--theme-bg-card)] transition-colors ${className}`}
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      data-testid="button-theme-toggle"
+      title={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      <motion.div
-        key={theme}
-        initial={{ rotate: -90, opacity: 0 }}
-        animate={{ rotate: 0, opacity: 1 }}
-        exit={{ rotate: 90, opacity: 0 }}
-      >
-        {theme === "dark" ? (
-          <Sun className="w-5 h-5 text-[#D4AF37]" />
-        ) : (
-          <Moon className="w-5 h-5 text-[#D4AF37]" />
-        )}
-      </motion.div>
-    </motion.button>
+      {isDark ? (
+        <Sun className="w-4 h-4" />
+      ) : (
+        <Moon className="w-4 h-4" />
+      )}
+    </Button>
   );
 }

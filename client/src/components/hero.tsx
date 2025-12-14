@@ -22,10 +22,10 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1628] via-[#0F2341] to-[#0A1628]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--theme-bg-secondary)] via-[var(--theme-bg-card)] to-[var(--theme-bg-secondary)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/8 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#C9A227]/5 via-transparent to-transparent" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A227]/30 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[var(--theme-gold)]/5 via-transparent to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--theme-gold)]/30 to-transparent" />
       </div>
 
       <div className="container relative z-10 px-6 mx-auto">
@@ -80,14 +80,14 @@ export default function Hero() {
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-tight leading-[1.1] mb-6">
-              <span className="text-white">Become the Director</span>{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#C9A227]">
+              <span className="text-[var(--theme-text-primary)]">Become the Director</span>{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--theme-gold)] via-amber-400 to-[var(--theme-gold)]">
                 FAANG Trusts.
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-300 mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Senior engineers leave <span className="text-white font-semibold">$200K+</span> on the table because they interview like ICs. I've coached <span className="text-white font-semibold">50+ leaders</span> to Director & VP offers with <span className="text-[#D4AF37] font-semibold">$285K avg comp increases</span>.
+            <p className="text-lg md:text-xl text-[var(--theme-text-secondary)] mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Senior engineers leave <span className="text-[var(--theme-text-primary)] font-semibold">$200K+</span> on the table because they interview like ICs. I've coached <span className="text-[var(--theme-text-primary)] font-semibold">50+ leaders</span> to Director & VP offers with <span className="text-[var(--theme-gold)] font-semibold">$285K avg comp increases</span>.
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-8 max-w-lg mx-auto lg:mx-0">
@@ -97,7 +97,7 @@ export default function Hero() {
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3 + i * 0.1 }}
-                  className="flex items-center gap-2 text-sm text-slate-300"
+                  className="flex items-center gap-2 text-sm text-[var(--theme-text-secondary)]"
                 >
                   <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" />
                   <span>{outcome}</span>
@@ -166,11 +166,11 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + i * 0.1 }}
-                  className="text-center p-4 rounded-xl bg-[#0F2341]/60 border border-[#1E3A5F]/60"
+                  className="text-center p-4 rounded-xl bg-[var(--theme-bg-card)]/60 border border-[var(--theme-border)]/60"
                   data-testid={`stat-${i}`}
                 >
-                  <div className="text-2xl md:text-3xl font-bold text-[#D4AF37] mb-1">{stat.value}</div>
-                  <div className="text-xs text-slate-400 uppercase tracking-wider">{stat.label}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-[var(--theme-gold)] mb-1">{stat.value}</div>
+                  <div className="text-xs text-[var(--theme-text-muted)] uppercase tracking-wider">{stat.label}</div>
                 </motion.div>
               ))}
             </div>

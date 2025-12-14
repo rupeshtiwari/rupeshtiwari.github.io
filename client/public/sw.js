@@ -1,4 +1,4 @@
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0';
 const CACHE_NAME = `rupesh-coach-v${APP_VERSION}`;
 
 const STATIC_ASSETS = [

@@ -61,6 +61,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/rupesh-hero.png" as="image" />
+    <link rel="dns-prefetch" href="https://calendar.google.com" />
+    <link rel="dns-prefetch" href="https://www.linkedin.com" />
+    <link rel="dns-prefetch" href="https://www.fullstackmaster.net" />
+    
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -163,9 +169,61 @@
     }
     </script>
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is your success rate for FAANG interview coaching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our coaching program has a 92% offer rate for executives targeting FAANG companies, with an average compensation increase of $285,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is this coaching program designed for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This program is specifically designed for Directors, VPs, Principal Engineers, and senior tech leaders targeting executive roles at FAANG and tier-1 tech companies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the coaching program include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The program includes mock interviews, system design deep-dives, behavioral preparation, career strategy sessions, and personalized feedback from an AWS Senior CSM with 15+ years of experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the coaching program take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical coaching engagements range from 4-12 weeks depending on your preparation level and target timeline. We offer flexible scheduling to accommodate busy executive calendars."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer a free consultation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer a free 30-minute discovery call to understand your goals, assess your current preparation level, and determine if our coaching program is the right fit for you."
+          }
+        }
+      ]
+    }
+    </script>
+    
     <style>
       body {
         background-color: #020617;
+      }
+      html.light body {
+        background-color: #f8fafc;
       }
     </style>
   </head>

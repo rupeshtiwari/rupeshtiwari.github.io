@@ -2,27 +2,6 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --color-background: hsl(220 30% 98%);
-  --color-foreground: hsl(222 47% 11%);
-  
-  --color-primary: hsl(221 83% 53%);
-  --color-primary-foreground: hsl(210 40% 98%);
-  
-  --color-secondary: hsl(210 40% 96.1%);
-  --color-secondary-foreground: hsl(222 47% 11.2%);
-  
-  --color-muted: hsl(210 40% 96.1%);
-  --color-muted-foreground: hsl(215.4 16.3% 46.9%);
-  
-  --color-accent: hsl(210 40% 96.1%);
-  --color-accent-foreground: hsl(222 47% 11.2%);
-  
-  --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(222 47% 11%);
-  
-  --color-border: hsl(214.3 31.8% 91.4%);
-  --color-input: hsl(214.3 31.8% 91.4%);
-  
   --font-sans: "Inter", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   
@@ -43,12 +22,74 @@
   }
 }
 
+:root {
+  --color-background: 248 250 252;
+  --color-foreground: 15 23 42;
+  --color-primary: 37 99 235;
+  --color-primary-foreground: 248 250 252;
+  --color-secondary: 241 245 249;
+  --color-secondary-foreground: 30 41 59;
+  --color-muted: 241 245 249;
+  --color-muted-foreground: 100 116 139;
+  --color-accent: 241 245 249;
+  --color-accent-foreground: 30 41 59;
+  --color-card: 255 255 255;
+  --color-card-foreground: 15 23 42;
+  --color-border: 226 232 240;
+  --color-input: 226 232 240;
+  --color-ring: 37 99 235;
+  --color-destructive: 220 38 38;
+  --color-destructive-foreground: 248 250 252;
+  
+  --theme-bg-primary: #f8fafc;
+  --theme-bg-secondary: #f1f5f9;
+  --theme-bg-card: #ffffff;
+  --theme-text-primary: #0f172a;
+  --theme-text-secondary: #475569;
+  --theme-text-muted: #64748b;
+  --theme-border: #e2e8f0;
+  --theme-gold: #b8860b;
+  --theme-navy: #1e40af;
+}
+
+.dark {
+  --color-background: 2 6 23;
+  --color-foreground: 248 250 252;
+  --color-primary: 37 99 235;
+  --color-primary-foreground: 248 250 252;
+  --color-secondary: 30 58 95;
+  --color-secondary-foreground: 248 250 252;
+  --color-muted: 30 58 95;
+  --color-muted-foreground: 148 163 184;
+  --color-accent: 30 58 95;
+  --color-accent-foreground: 248 250 252;
+  --color-card: 15 35 65;
+  --color-card-foreground: 248 250 252;
+  --color-border: 30 58 95;
+  --color-input: 30 58 95;
+  --color-ring: 212 175 55;
+  --color-destructive: 239 68 68;
+  --color-destructive-foreground: 248 250 252;
+  
+  --theme-bg-primary: #020617;
+  --theme-bg-secondary: #0a1628;
+  --theme-bg-card: #0f2341;
+  --theme-text-primary: #f8fafc;
+  --theme-text-secondary: #cbd5e1;
+  --theme-text-muted: #94a3b8;
+  --theme-border: #1e3a5f;
+  --theme-gold: #d4af37;
+  --theme-navy: #1e40af;
+}
+
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--theme-border);
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    background-color: var(--theme-bg-primary);
+    color: var(--theme-text-primary);
+    @apply font-sans antialiased transition-colors duration-300;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-tight;

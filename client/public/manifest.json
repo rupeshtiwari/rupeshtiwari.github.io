@@ -2,7 +2,7 @@
   "name": "Rupesh Tiwari - FAANG Interview Coach",
   "short_name": "Rupesh Coach",
   "description": "AWS Executive Interview Coach - Land your dream FAANG role with 1:1 coaching",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A1628",

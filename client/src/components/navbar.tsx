@@ -4,6 +4,7 @@ import { Menu, X, Calendar, MessageCircle, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Input } from "@/components/ui/input";
+import ThemeToggle from "./theme-toggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,12 +51,12 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#0A1628]/95 backdrop-blur-md border-b border-[#1E3A5F]/50" : "bg-transparent"
+        scrolled ? "bg-[var(--theme-bg-secondary)]/95 backdrop-blur-md border-b border-[var(--theme-border)]/50" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold font-display tracking-tighter hover:opacity-80 transition-opacity">
-          <span className="text-white">rupesh</span><span className="text-[#D4AF37]">tiwari</span>
+          <span className="text-[var(--theme-text-primary)]">rupesh</span><span className="text-[var(--theme-gold)]">tiwari</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">
@@ -68,8 +69,8 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className={`text-sm font-medium transition-colors ${
                   (link as any).highlight 
-                    ? "text-[#D4AF37] font-semibold hover:text-[#E5C158]" 
-                    : "text-slate-400 hover:text-white"
+                    ? "text-[var(--theme-gold)] font-semibold hover:opacity-80" 
+                    : "text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)]"
                 }`}
               >
                 {link.name}
@@ -85,7 +86,7 @@ export default function Navbar() {
               </a>
             ) : (
               <Link key={link.name} href={link.href} className={`text-sm font-medium transition-colors ${
-                  location === link.href ? "text-[#D4AF37] font-semibold" : "text-slate-400 hover:text-white"
+                  location === link.href ? "text-[var(--theme-gold)] font-semibold" : "text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)]"
                 }`}>
                   {link.name}
               </Link>
@@ -107,7 +108,7 @@ export default function Navbar() {
                     placeholder="Search blog..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="h-8 bg-[#0F2341] border-[#1E3A5F] text-white placeholder:text-slate-500 focus:border-[#D4AF37]"
+                    className="h-8 bg-[var(--theme-bg-card)] border-[var(--theme-border)] text-[var(--theme-text-primary)] placeholder:text-[var(--theme-text-muted)] focus:border-[var(--theme-gold)]"
                     autoFocus
                     data-testid="input-search"
                   />
@@ -116,13 +117,14 @@ export default function Navbar() {
             </AnimatePresence>
             <button
               onClick={() => setShowSearch(!showSearch)}
-              className="p-2 text-slate-400 hover:text-white transition-colors"
+              className="p-2 text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors"
               data-testid="button-search-toggle"
               title="Search Blog"
             >
               <Search className="w-4 h-4" />
             </button>
-            <Button size="sm" variant="outline" className="border-[#1E3A5F] text-slate-300 hover:bg-[#0F2341] hover:text-white" asChild>
+            <ThemeToggle />
+            <Button size="sm" variant="outline" className="border-[var(--theme-border)] text-[var(--theme-text-secondary)] hover:bg-[var(--theme-bg-card)] hover:text-[var(--theme-text-primary)]" asChild>
               <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-1.5" />
                 Chat
@@ -138,7 +140,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden p-2 text-white"
+          className="md:hidden p-2 text-[var(--theme-text-primary)]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
@@ -151,7 +153,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0A1628] border-b border-[#1E3A5F]"
+            className="md:hidden bg-[var(--theme-bg-secondary)] border-b border-[var(--theme-border)]"
           >
             <div className="flex flex-col p-6 gap-4">
               <form onSubmit={handleSearch} className="relative mb-2">
@@ -160,7 +162,7 @@ export default function Navbar() {
                   placeholder="Search blog articles..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="h-10 bg-[#0F2341] border-[#1E3A5F] text-white placeholder:text-slate-500 focus:border-[#D4AF37] pr-10"
+                  className="h-10 bg-[var(--theme-bg-card)] border-[var(--theme-border)] text-[var(--theme-text-primary)] placeholder:text-[var(--theme-text-muted)] focus:border-[var(--theme-gold)] pr-10"
                   data-testid="input-search-mobile"
                 />
                 <button
@@ -177,10 +179,10 @@ export default function Navbar() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-lg font-medium py-3 px-2 -mx-2 block rounded-lg active:bg-[#1E3A5F]/50 ${
+                    className={`text-lg font-medium py-3 px-2 -mx-2 block rounded-lg active:bg-[var(--theme-bg-card)] ${
                       (link as any).highlight 
-                        ? "text-[#D4AF37] font-bold" 
-                        : "text-white"
+                        ? "text-[var(--theme-gold)] font-bold" 
+                        : "text-[var(--theme-text-primary)]"
                     }`}
                     onClick={() => setIsOpen(false)}
                     data-testid={`mobile-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
@@ -193,20 +195,24 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleHashClick(e, link.href)}
-                    className="text-lg font-medium text-white py-3 px-2 -mx-2 block rounded-lg active:bg-[#1E3A5F]/50 cursor-pointer"
+                    className="text-lg font-medium text-[var(--theme-text-primary)] py-3 px-2 -mx-2 block rounded-lg active:bg-[var(--theme-bg-card)] cursor-pointer"
                     data-testid={`mobile-link-${link.name.toLowerCase()}`}
                   >
                     {link.name}
                   </a>
                 ) : (
                   <Link key={link.name} href={link.href}
-                      className="text-lg font-medium text-white py-3 px-2 -mx-2 block rounded-lg active:bg-[#1E3A5F]/50"
+                      className="text-lg font-medium text-[var(--theme-text-primary)] py-3 px-2 -mx-2 block rounded-lg active:bg-[var(--theme-bg-card)]"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}
                   </Link>
                 )
               ))}
+              <div className="flex items-center justify-between mt-4 pt-4 border-t border-[var(--theme-border)]">
+                <span className="text-sm text-[var(--theme-text-muted)]">Theme</span>
+                <ThemeToggle />
+              </div>
               <div className="flex flex-col gap-3 mt-4">
                 <Button className="w-full bg-green-500 hover:bg-green-600" asChild>
                   <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
