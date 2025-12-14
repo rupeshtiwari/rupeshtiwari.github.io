@@ -1,56 +1,56 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Building2, DollarSign, ArrowRight, CheckCircle2 } from "lucide-react";
+import { TrendingUp, Building2, Star, ArrowRight, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCounterAnimation } from "@/hooks/use-counter-animation";
 
 const clientResults = [
   {
-    name: "Karthik S.",
-    beforeRole: "Senior Software Engineer",
-    beforeCompany: "Mid-size Startup",
-    beforeSalary: "$145K",
-    afterRole: "Staff Engineer",
-    afterCompany: "Google",
-    afterSalary: "$420K",
-    increase: "+$275K",
-    timeline: "10 weeks",
-    story: "Karthik came to me after 3 rejections from Google. We rebuilt his system design approach and STAR stories. He got the offer on his 4th attempt.",
+    name: "Vaughn",
+    role: "Software Engineer",
+    company: "DraftKings",
+    story: "I had a great experience working with Rupesh! He helped me approach object-oriented design interview problems with structure, confidence, and competency. His patience stood out—he took the time to ensure I fully understood each concept before moving on.",
+    outcome: "Landed role at DraftKings",
+    date: "Apr 2025",
   },
   {
-    name: "Priya M.",
-    beforeRole: "Engineering Manager",
-    beforeCompany: "Oracle",
-    beforeSalary: "$180K",
-    afterRole: "Director of Engineering",
-    afterCompany: "Meta",
-    afterSalary: "$520K",
-    increase: "+$340K",
-    timeline: "8 weeks",
-    story: "Priya had the skills but struggled with executive presence. After our coaching on leadership narratives, she crushed her Meta loop.",
+    name: "Ashley",
+    role: "FAANG Interview Prep",
+    company: "Phone Screen Passed",
+    story: "Rupesh was so helpful! I passed my phone screen and will work with him to prep for my loop now. He helped me tighten up my interview answers, and identified gaps where I was missing metrics, mechanisms and other elements.",
+    outcome: "Passed phone screen, preparing for loop",
+    date: "Dec 2025",
   },
   {
-    name: "Raj T.",
-    beforeRole: "Tech Lead",
-    beforeCompany: "Infosys (India)",
-    beforeSalary: "$35K",
-    afterRole: "Senior SDE",
-    afterCompany: "Amazon",
-    afterSalary: "$285K",
-    increase: "+$250K",
-    timeline: "12 weeks",
-    story: "Raj relocated from India to the US. We worked on his LP stories and system design. He negotiated his offer up by $40K using my scripts.",
+    name: "Andre",
+    role: "Solutions Architect",
+    company: "Amazon Interview",
+    story: "I had a prep session with Rupesh for my Amazon interview. His experience as an Amazon Solutions Architect shows in his coaching. Rupesh gave clear feedback on my technical answers and communication style, spotting weaknesses I missed.",
+    outcome: "Interview-ready for Amazon",
+    date: "May 2025",
   },
   {
-    name: "Mike C.",
-    beforeRole: "Principal Engineer",
-    beforeCompany: "Microsoft",
-    beforeSalary: "$380K",
-    afterRole: "VP of Engineering",
-    afterCompany: "Series C Startup",
-    afterSalary: "$650K + equity",
-    increase: "+$270K+",
-    timeline: "6 weeks",
-    story: "Mike wanted to move from IC to executive. We focused on org design and exec communication. His equity package alone was worth $2M+.",
+    name: "Melvin",
+    role: "Solutions Architect",
+    company: "Career Transition",
+    story: "As a beginning Solutions Architect, I was stuck in my career, and he provided guidance for sharpening my skills, demonstrating competence, building my brand, and engaging with other cloud professionals and recruiters. By the end of the session, I had a 90-day step-by-step plan to turn my career around.",
+    outcome: "90-day career transformation plan",
+    date: "Apr 2025",
+  },
+  {
+    name: "Muhammad",
+    role: "Solutions Architect",
+    company: "Technical Interview",
+    story: "Rupesh quickly identified the areas I needed to focus on and tailored the session specifically for the Solution Architect role I'm targeting. He coached me on how to structure and communicate my design decisions clearly and confidently. In just one hour, I gained a clear picture of my strengths and the areas I need to refine.",
+    outcome: "Clear interview strategy",
+    date: "Jul 2025",
+  },
+  {
+    name: "Shamir",
+    role: "Data Engineer",
+    company: "Interview Coaching",
+    story: "He coached me technically, and also on how I approach a question, how I should answer each question that suits the role I'm applying for, and how my tone and body language should be while answering. Now I know my strengths and weaknesses properly. All of these in a single hour of interview.",
+    outcome: "Complete interview readiness",
+    date: "Oct 2024",
   },
 ];
 
@@ -79,7 +79,7 @@ function AnimatedStat({ end, suffix, prefix, label, Icon }: {
 
   return (
     <div ref={ref} className="p-6 rounded-xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 text-center">
-      <Icon className="w-6 h-6 text-green-400 mx-auto mb-2" />
+      <Icon className="w-6 h-6 text-[var(--theme-gold)] mx-auto mb-2" />
       <div className="text-2xl md:text-3xl font-bold text-[var(--theme-text-primary)]">{displayValue}</div>
       <div className="text-sm text-[var(--theme-text-muted)]">{label}</div>
     </div>
@@ -95,9 +95,9 @@ function AnimatedStatsBar() {
       className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
     >
       <AnimatedStat end={20} suffix="+" label="Years in Tech" Icon={TrendingUp} />
-      <AnimatedStat end={285} prefix="$" suffix="K+" label="Average Salary Increase" Icon={DollarSign} />
-      <AnimatedStat end={92} suffix="%" label="Success Rate" Icon={TrendingUp} />
       <AnimatedStat end={50} suffix="+" label="Clients Coached" Icon={Building2} />
+      <AnimatedStat end={5} prefix="" suffix=".0" label="Average Rating" Icon={Star} />
+      <AnimatedStat end={50} suffix="+" label="Verified Reviews" Icon={CheckCircle2} />
     </motion.div>
   );
 }
@@ -105,7 +105,7 @@ function AnimatedStatsBar() {
 export default function ClientResults() {
   return (
     <section id="results" className="py-24 bg-[var(--theme-bg-secondary)] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-green-900/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[var(--theme-gold)]/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -114,27 +114,24 @@ export default function ClientResults() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-green-400 text-sm font-semibold uppercase tracking-wider">Proven Results</span>
+          <span className="text-[var(--theme-gold)] text-sm font-semibold uppercase tracking-wider">Success Stories</span>
           <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
-            Real Clients. Real Offers. Real Numbers.
+            Real Clients. Real Results. Verified Reviews.
           </h2>
           <p className="text-[var(--theme-text-muted)] text-lg max-w-2xl mx-auto">
-            These aren't made-up case studies. These are real people who trusted me with their careers 
-            and achieved life-changing outcomes.
+            Every story below is from a real coaching client with a verified review on IGotAnOffer.
           </p>
         </motion.div>
 
-        {/* Stats Bar with Animated Counters */}
         <AnimatedStatsBar />
 
-        {/* Company Logos */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="text-center text-[var(--theme-text-muted)] text-sm mb-6">Where my clients work now:</p>
+          <p className="text-center text-[var(--theme-text-muted)] text-sm mb-6">Helping leaders land offers at:</p>
           <div className="flex flex-wrap justify-center gap-4">
             {companyLogos.map((company, idx) => (
               <div 
@@ -148,8 +145,7 @@ export default function ClientResults() {
           </div>
         </motion.div>
 
-        {/* Client Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {clientResults.map((client, idx) => (
             <motion.div
               key={idx}
@@ -157,58 +153,60 @@ export default function ClientResults() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-6 rounded-2xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 hover:border-green-500/30 transition-colors"
+              className="p-6 rounded-2xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 hover:border-[var(--theme-gold)]/30 transition-colors"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-[var(--theme-text-primary)]">{client.name}</h3>
-                  <p className="text-[var(--theme-text-muted)] text-sm">Coaching timeline: {client.timeline}</p>
+                  <h3 className="text-lg font-bold text-[var(--theme-text-primary)]">{client.name}</h3>
+                  <p className="text-[var(--theme-text-muted)] text-sm">{client.role}</p>
                 </div>
-                <span className="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 font-bold text-lg">
-                  {client.increase}
+                <div className="flex gap-0.5">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="w-3 h-3 text-[var(--theme-gold)] fill-[var(--theme-gold)]" />
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[var(--theme-gold)]/10 border border-[var(--theme-gold)]/20 text-[var(--theme-gold)] text-xs font-medium">
+                  <CheckCircle2 className="w-3 h-3" />
+                  {client.outcome}
                 </span>
               </div>
 
-              {/* Before/After */}
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="p-4 rounded-xl bg-[var(--theme-bg-secondary)]/50">
-                  <div className="text-xs text-[var(--theme-text-muted)] uppercase tracking-wider mb-2">Before</div>
-                  <div className="text-[var(--theme-text-primary)] font-medium">{client.beforeRole}</div>
-                  <div className="text-[var(--theme-text-muted)] text-sm">{client.beforeCompany}</div>
-                  <div className="text-[var(--theme-text-muted)] mt-1">{client.beforeSalary}/year</div>
-                </div>
-                <div className="p-4 rounded-xl bg-green-500/5 border border-green-500/20">
-                  <div className="text-xs text-green-400 uppercase tracking-wider mb-2">After</div>
-                  <div className="text-[var(--theme-text-primary)] font-medium">{client.afterRole}</div>
-                  <div className="text-green-400 text-sm">{client.afterCompany}</div>
-                  <div className="text-green-400 font-bold mt-1">{client.afterSalary}/year</div>
-                </div>
+              <div className="relative">
+                <Quote className="w-4 h-4 text-[var(--theme-gold)]/30 absolute -top-1 -left-1" />
+                <p className="text-[var(--theme-text-secondary)] text-sm leading-relaxed pl-4">
+                  {client.story}
+                </p>
               </div>
 
-              <p className="text-[var(--theme-text-secondary)] text-sm italic">"{client.story}"</p>
+              <div className="mt-4 pt-4 border-t border-[var(--theme-border)]/30 flex justify-between items-center">
+                <span className="text-xs text-[var(--theme-text-muted)]">{client.date}</span>
+                <span className="text-xs text-[var(--theme-text-muted)]">Verified on IGotAnOffer</span>
+              </div>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-[var(--theme-gold)]/10 to-[var(--theme-gold)]/5 border border-[var(--theme-gold)]/20">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-6 h-6 text-green-400" />
-              <span className="text-[var(--theme-text-primary)] font-medium">Your story could be next</span>
+              <CheckCircle2 className="w-6 h-6 text-[var(--theme-gold)]" />
+              <span className="text-[var(--theme-text-primary)] font-medium">Your success story could be next</span>
             </div>
             <Button 
-              className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold"
+              className="bg-gradient-to-r from-[var(--theme-gold)] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#E5C158] text-[#0A1628] font-bold"
               asChild
               data-testid="button-results-cta"
             >
               <a href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" target="_blank" rel="noopener noreferrer">
-                Start Your Transformation
+                Book Your Session
                 <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </Button>
