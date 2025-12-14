@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, ExternalLink } from "lucide-react";
+import { ArrowRight, BookOpen, ExternalLink, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogPosts = [
@@ -89,9 +89,23 @@ export default function BlogPreview() {
                 {post.excerpt}
               </p>
               
-              <div className="flex items-center text-blue-400 text-sm font-medium group-hover:gap-2 transition-all">
-                Read Article
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              <div className="flex items-center justify-between">
+                <div className="flex items-center text-blue-400 text-sm font-medium group-hover:gap-2 transition-all">
+                  Read Article
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(post.url)}`, '_blank', 'width=600,height=600');
+                  }}
+                  className="p-1.5 rounded-lg text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-colors"
+                  title="Share to LinkedIn"
+                  data-testid={`share-linkedin-${idx}`}
+                >
+                  <Linkedin className="w-4 h-4" />
+                </button>
               </div>
             </motion.a>
           ))}

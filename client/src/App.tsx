@@ -7,6 +7,7 @@ import FullStackMasterBanner from "@/components/fullstackmaster-banner";
 import FloatingThemeToggle from "@/components/floating-theme-toggle";
 import Home from "@/pages/home";
 import Blog from "@/pages/blog";
+import BlogPost from "@/pages/blog-post";
 import Privacy from "@/pages/privacy";
 import Pricing from "@/pages/pricing";
 import Resources from "@/pages/resources";
@@ -19,6 +20,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/:id" component={BlogPost} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/resources" component={Resources} />

@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import PinnedProject from "@/components/pinned-project";
-import { Calendar, User, ArrowRight } from "lucide-react";
+import { Calendar, User, ArrowRight, Linkedin } from "lucide-react";
+import { Link } from "wouter";
 
 const posts = [
   {
@@ -99,9 +100,11 @@ export default function Blog() {
                         </Badge>
                       ))}
                     </div>
-                    <CardTitle className="text-xl font-bold font-display leading-tight hover:text-primary transition-colors cursor-pointer">
-                      {post.title}
-                    </CardTitle>
+                    <Link href={`/blog/${post.id}`}>
+                      <CardTitle className="text-xl font-bold font-display leading-tight hover:text-primary transition-colors cursor-pointer">
+                        {post.title}
+                      </CardTitle>
+                    </Link>
                     <CardDescription className="flex items-center gap-4 text-xs mt-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="w-3 h-3" />
@@ -118,10 +121,24 @@ export default function Blog() {
                       {post.excerpt}
                     </p>
                   </CardContent>
-                  <CardFooter className="pt-0">
-                    <Button variant="ghost" className="p-0 h-auto hover:text-primary font-medium group">
-                      Read Article <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                  <CardFooter className="pt-0 flex justify-between items-center">
+                    <Link href={`/blog/${post.id}`}>
+                      <Button variant="ghost" className="p-0 h-auto hover:text-primary font-medium group">
+                        Read Article <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const shareUrl = `${window.location.origin}/blog/${post.id}`;
+                        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`, '_blank', 'width=600,height=600');
+                      }}
+                      className="p-1.5 rounded-lg text-[#0A66C2] hover:bg-[#0A66C2]/10 transition-colors"
+                      title="Share to LinkedIn"
+                      data-testid={`share-linkedin-${post.id}`}
+                    >
+                      <Linkedin className="w-4 h-4" />
+                    </button>
                   </CardFooter>
                 </Card>
               </motion.div>
