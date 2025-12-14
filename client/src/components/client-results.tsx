@@ -78,10 +78,10 @@ function AnimatedStat({ end, suffix, prefix, label, Icon }: {
   });
 
   return (
-    <div ref={ref} className="p-6 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 text-center">
+    <div ref={ref} className="p-6 rounded-xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 text-center">
       <Icon className="w-6 h-6 text-green-400 mx-auto mb-2" />
-      <div className="text-2xl md:text-3xl font-bold text-white">{displayValue}</div>
-      <div className="text-sm text-slate-400">{label}</div>
+      <div className="text-2xl md:text-3xl font-bold text-[var(--theme-text-primary)]">{displayValue}</div>
+      <div className="text-sm text-[var(--theme-text-muted)]">{label}</div>
     </div>
   );
 }
@@ -104,7 +104,7 @@ function AnimatedStatsBar() {
 
 export default function ClientResults() {
   return (
-    <section id="results" className="py-24 bg-[#0A1628] relative overflow-hidden">
+    <section id="results" className="py-24 bg-[var(--theme-bg-secondary)] relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-green-900/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -115,10 +115,10 @@ export default function ClientResults() {
           className="text-center mb-16"
         >
           <span className="text-green-400 text-sm font-semibold uppercase tracking-wider">Proven Results</span>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
             Real Clients. Real Offers. Real Numbers.
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--theme-text-muted)] text-lg max-w-2xl mx-auto">
             These aren't made-up case studies. These are real people who trusted me with their careers 
             and achieved life-changing outcomes.
           </p>
@@ -134,15 +134,15 @@ export default function ClientResults() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="text-center text-slate-400 text-sm mb-6">Where my clients work now:</p>
+          <p className="text-center text-[var(--theme-text-muted)] text-sm mb-6">Where my clients work now:</p>
           <div className="flex flex-wrap justify-center gap-4">
             {companyLogos.map((company, idx) => (
               <div 
                 key={idx}
-                className="px-6 py-3 rounded-lg bg-[#0F2341]/50 border border-[#1E3A5F]/30 flex items-center gap-2"
+                className="px-6 py-3 rounded-lg bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/30 flex items-center gap-2"
               >
                 <div className={`w-3 h-3 rounded-full ${company.bg}`} />
-                <span className="text-white font-medium">{company.name}</span>
+                <span className="text-[var(--theme-text-primary)] font-medium">{company.name}</span>
               </div>
             ))}
           </div>
@@ -157,12 +157,12 @@ export default function ClientResults() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-6 rounded-2xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 hover:border-green-500/30 transition-colors"
+              className="p-6 rounded-2xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 hover:border-green-500/30 transition-colors"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-white">{client.name}</h3>
-                  <p className="text-slate-400 text-sm">Coaching timeline: {client.timeline}</p>
+                  <h3 className="text-xl font-bold text-[var(--theme-text-primary)]">{client.name}</h3>
+                  <p className="text-[var(--theme-text-muted)] text-sm">Coaching timeline: {client.timeline}</p>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 font-bold text-lg">
                   {client.increase}
@@ -171,21 +171,21 @@ export default function ClientResults() {
 
               {/* Before/After */}
               <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="p-4 rounded-xl bg-[#0A1628]/50">
-                  <div className="text-xs text-slate-500 uppercase tracking-wider mb-2">Before</div>
-                  <div className="text-white font-medium">{client.beforeRole}</div>
-                  <div className="text-slate-400 text-sm">{client.beforeCompany}</div>
-                  <div className="text-slate-500 mt-1">{client.beforeSalary}/year</div>
+                <div className="p-4 rounded-xl bg-[var(--theme-bg-secondary)]/50">
+                  <div className="text-xs text-[var(--theme-text-muted)] uppercase tracking-wider mb-2">Before</div>
+                  <div className="text-[var(--theme-text-primary)] font-medium">{client.beforeRole}</div>
+                  <div className="text-[var(--theme-text-muted)] text-sm">{client.beforeCompany}</div>
+                  <div className="text-[var(--theme-text-muted)] mt-1">{client.beforeSalary}/year</div>
                 </div>
                 <div className="p-4 rounded-xl bg-green-500/5 border border-green-500/20">
                   <div className="text-xs text-green-400 uppercase tracking-wider mb-2">After</div>
-                  <div className="text-white font-medium">{client.afterRole}</div>
+                  <div className="text-[var(--theme-text-primary)] font-medium">{client.afterRole}</div>
                   <div className="text-green-400 text-sm">{client.afterCompany}</div>
                   <div className="text-green-400 font-bold mt-1">{client.afterSalary}/year</div>
                 </div>
               </div>
 
-              <p className="text-slate-300 text-sm italic">"{client.story}"</p>
+              <p className="text-[var(--theme-text-secondary)] text-sm italic">"{client.story}"</p>
             </motion.div>
           ))}
         </div>
@@ -200,7 +200,7 @@ export default function ClientResults() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-6 h-6 text-green-400" />
-              <span className="text-white font-medium">Your story could be next</span>
+              <span className="text-[var(--theme-text-primary)] font-medium">Your story could be next</span>
             </div>
             <Button 
               className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold"

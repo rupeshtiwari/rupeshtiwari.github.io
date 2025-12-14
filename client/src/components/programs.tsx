@@ -20,8 +20,8 @@ const programs = [
     subtitle: "For Senior Engineers & Managers (30-40)",
     price: "Custom",
     color: "from-[#1E40AF] to-[#1D4ED8]",
-    borderColor: "border-[#1E40AF]/30",
-    bgColor: "bg-[#1E40AF]/5",
+    borderColor: "border-[var(--theme-navy)]/30",
+    bgColor: "bg-[var(--theme-navy)]/5",
     description: "Break into your first Director or Principal Engineer role at a top tech company.",
     idealFor: [
       "Senior Engineers (L5-L6) ready for leadership",
@@ -45,8 +45,8 @@ const programs = [
     subtitle: "For Directors & Senior Leaders (40+)",
     price: "Premium",
     color: "from-[#C9A227] to-[#D4AF37]",
-    borderColor: "border-[#C9A227]/30",
-    bgColor: "bg-[#C9A227]/5",
+    borderColor: "border-[var(--theme-gold)]/30",
+    bgColor: "bg-[var(--theme-gold)]/5",
     popular: true,
     description: "Navigate VP and Senior Director interviews with executive presence and strategic thinking.",
     idealFor: [
@@ -68,8 +68,8 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="py-24 bg-[#0F2341] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#C9A227]/10 via-transparent to-transparent" />
+    <section id="programs" className="py-24 bg-[var(--theme-bg-card)] relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[var(--theme-gold)]/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -78,11 +78,11 @@ export default function Programs() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-[#D4AF37] text-sm font-semibold uppercase tracking-wider">Signature Programs</span>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">
+          <span className="text-[var(--theme-gold)] text-sm font-semibold uppercase tracking-wider">Signature Programs</span>
+          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
             Choose Your Leadership Path
           </h2>
-          <p className="text-slate-400 text-lg">
+          <p className="text-[var(--theme-text-muted)] text-lg">
             Two focused programs designed for where you are in your career journey. Both include personalized 1:1 coaching, not generic advice.
           </p>
         </motion.div>
@@ -108,19 +108,19 @@ export default function Programs() {
                   <program.icon className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{program.title}</h3>
-                  <p className="text-slate-400 text-sm">{program.subtitle}</p>
+                  <h3 className="text-2xl font-bold text-[var(--theme-text-primary)]">{program.title}</h3>
+                  <p className="text-[var(--theme-text-muted)] text-sm">{program.subtitle}</p>
                 </div>
               </div>
 
-              <p className="text-slate-300 mb-6">{program.description}</p>
+              <p className="text-[var(--theme-text-secondary)] mb-6">{program.description}</p>
 
               <div className="mb-6">
-                <h4 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Ideal For</h4>
+                <h4 className="text-sm font-semibold text-[var(--theme-text-muted)] uppercase tracking-wider mb-3">Ideal For</h4>
                 <ul className="space-y-2">
                   {program.idealFor.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                      <Target className="w-4 h-4 text-slate-500 mt-0.5 shrink-0" />
+                    <li key={i} className="flex items-start gap-2 text-sm text-[var(--theme-text-secondary)]">
+                      <Target className="w-4 h-4 text-[var(--theme-text-muted)] mt-0.5 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -128,10 +128,10 @@ export default function Programs() {
               </div>
 
               <div className="mb-6">
-                <h4 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">What's Included</h4>
+                <h4 className="text-sm font-semibold text-[var(--theme-text-muted)] uppercase tracking-wider mb-3">What's Included</h4>
                 <ul className="grid grid-cols-1 gap-2">
                   {program.includes.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                    <li key={i} className="flex items-start gap-2 text-sm text-[var(--theme-text-secondary)]">
                       <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
                       {item}
                     </li>
@@ -139,8 +139,8 @@ export default function Programs() {
                 </ul>
               </div>
 
-              <div className="p-4 rounded-xl bg-[#0A1628]/50 border border-[#1E3A5F]/50 mb-6">
-                <div className="flex items-center gap-2 text-[#D4AF37]">
+              <div className="p-4 rounded-xl bg-[var(--theme-bg-secondary)]/50 border border-[var(--theme-border)]/50 mb-6">
+                <div className="flex items-center gap-2 text-[var(--theme-gold)]">
                   <TrendingUp className="w-5 h-5" />
                   <span className="font-semibold">{program.outcome}</span>
                 </div>
@@ -166,11 +166,11 @@ export default function Programs() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <p className="text-slate-400">
+          <p className="text-[var(--theme-text-muted)]">
             Not sure which program is right for you?{" "}
             <a 
               href="https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true" 
-              className="text-[#D4AF37] hover:text-[#E5C158] underline"
+              className="text-[var(--theme-gold)] hover:opacity-80 underline"
             >
               Book a free call
             </a>

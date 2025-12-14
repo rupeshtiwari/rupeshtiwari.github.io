@@ -41,8 +41,8 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 bg-[#0F2341] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#C9A227]/5 via-transparent to-transparent" />
+    <section id="faq" className="py-24 bg-[var(--theme-bg-card)] relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[var(--theme-gold)]/5 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -51,14 +51,14 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C9A227]/10 border border-[#C9A227]/20 text-[#D4AF37] text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--theme-gold)]/10 border border-[var(--theme-gold)]/20 text-[var(--theme-gold)] text-sm font-medium mb-4">
             <HelpCircle className="w-4 h-4" />
             Common Questions
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-[var(--theme-text-primary)]">
             Frequently Asked Questions
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--theme-text-muted)] text-lg max-w-2xl mx-auto">
             Everything you need to know about working with me. Can't find your answer? Book a free discovery call.
           </p>
         </motion.div>
@@ -71,16 +71,16 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05 }}
-              className="rounded-xl border border-[#1E3A5F]/50 overflow-hidden"
+              className="rounded-xl border border-[var(--theme-border)]/50 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                className="w-full p-5 flex items-center justify-between text-left bg-[#0A1628]/50 hover:bg-[#0A1628]/80 transition-colors"
+                className="w-full p-5 flex items-center justify-between text-left bg-[var(--theme-bg-secondary)]/50 hover:bg-[var(--theme-bg-secondary)]/80 transition-colors"
                 data-testid={`faq-question-${idx}`}
               >
-                <span className="text-white font-medium pr-4">{faq.question}</span>
+                <span className="text-[var(--theme-text-primary)] font-medium pr-4">{faq.question}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-[#D4AF37] shrink-0 transition-transform ${openIndex === idx ? 'rotate-180' : ''}`} 
+                  className={`w-5 h-5 text-[var(--theme-gold)] shrink-0 transition-transform ${openIndex === idx ? 'rotate-180' : ''}`} 
                 />
               </button>
               {openIndex === idx && (
@@ -88,9 +88,9 @@ export default function FAQ() {
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
-                  className="p-5 pt-0 bg-[#0A1628]/30"
+                  className="p-5 pt-0 bg-[var(--theme-bg-secondary)]/30"
                 >
-                  <p className="text-slate-400 leading-relaxed">{faq.answer}</p>
+                  <p className="text-[var(--theme-text-muted)] leading-relaxed">{faq.answer}</p>
                 </motion.div>
               )}
             </motion.div>

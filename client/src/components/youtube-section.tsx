@@ -31,7 +31,7 @@ const channelStats = [
 
 export default function YouTubeSection() {
   return (
-    <section id="youtube" className="py-24 bg-gradient-to-b from-[#0A1628] to-[#0F2341] relative overflow-hidden">
+    <section id="youtube" className="py-24 bg-gradient-to-b from-[var(--theme-bg-secondary)] to-[var(--theme-bg-card)] relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -45,10 +45,10 @@ export default function YouTubeSection() {
             <Youtube className="w-4 h-4" />
             Free Content
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-[var(--theme-text-primary)]">
             Learn Before You Pay
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--theme-text-muted)] text-lg max-w-2xl mx-auto">
             Watch my free YouTube content to see if my teaching style resonates with you. 
             No pressure, just value.
           </p>
@@ -67,8 +67,8 @@ export default function YouTubeSection() {
                 <stat.icon className="w-5 h-5 text-red-400" />
               </div>
               <div>
-                <div className="text-xl font-bold text-white">{stat.value}</div>
-                <div className="text-sm text-slate-400">{stat.label}</div>
+                <div className="text-xl font-bold text-[var(--theme-text-primary)]">{stat.value}</div>
+                <div className="text-sm text-[var(--theme-text-muted)]">{stat.label}</div>
               </div>
             </div>
           ))}
@@ -92,7 +92,7 @@ export default function YouTubeSection() {
                 className="block"
                 data-testid={`link-youtube-video-${idx}`}
               >
-                <div className="relative rounded-xl overflow-hidden mb-4 aspect-video bg-slate-800">
+                <div className="relative rounded-xl overflow-hidden mb-4 aspect-video bg-[var(--theme-bg-secondary)]">
                   <img 
                     src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
                     alt={video.title}
@@ -108,10 +108,10 @@ export default function YouTubeSection() {
                     {video.views}
                   </div>
                 </div>
-                <h3 className="font-bold text-white group-hover:text-red-400 transition-colors mb-1">
+                <h3 className="font-bold text-[var(--theme-text-primary)] group-hover:text-red-400 transition-colors mb-1">
                   {video.title}
                 </h3>
-                <p className="text-sm text-slate-400 line-clamp-2">
+                <p className="text-sm text-[var(--theme-text-muted)] line-clamp-2">
                   {video.description}
                 </p>
               </a>

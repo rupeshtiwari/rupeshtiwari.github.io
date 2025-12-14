@@ -34,8 +34,8 @@ const steps = [
 
 export default function Methodology() {
   return (
-    <section id="methodology" className="py-24 bg-[#0A1628] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#1E3A5F]/30 via-transparent to-transparent" />
+    <section id="methodology" className="py-24 bg-[var(--theme-bg-secondary)] relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[var(--theme-border)]/30 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -44,11 +44,11 @@ export default function Methodology() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-[#D4AF37] text-sm font-semibold uppercase tracking-wider">The Process</span>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">
+          <span className="text-[var(--theme-gold)] text-sm font-semibold uppercase tracking-wider">The Process</span>
+          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
             How I Transform Senior ICs Into Directors
           </h2>
-          <p className="text-slate-400 text-lg">
+          <p className="text-[var(--theme-text-muted)] text-lg">
             A proven 4-step methodology that's helped 50+ leaders land FAANG exec offers.
           </p>
         </motion.div>
@@ -63,20 +63,20 @@ export default function Methodology() {
               transition={{ delay: idx * 0.1 }}
               className="relative"
             >
-              <div className="p-6 rounded-2xl bg-[#0F2341]/50 border border-[#1E3A5F] h-full">
+              <div className="p-6 rounded-2xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)] h-full">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-4xl font-bold text-[#1E3A5F]">{step.number}</span>
+                  <span className="text-4xl font-bold text-[var(--theme-border)]">{step.number}</span>
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center`}>
                     <step.icon className="w-6 h-6 text-white" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{step.description}</p>
+                <h3 className="text-xl font-bold text-[var(--theme-text-primary)] mb-2">{step.title}</h3>
+                <p className="text-[var(--theme-text-muted)] text-sm leading-relaxed">{step.description}</p>
               </div>
               
               {idx < steps.length - 1 && (
                 <div className="hidden md:flex absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
-                  <ArrowRight className="w-6 h-6 text-[#1E3A5F]" />
+                  <ArrowRight className="w-6 h-6 text-[var(--theme-border)]" />
                 </div>
               )}
             </motion.div>
@@ -87,20 +87,20 @@ export default function Methodology() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-[#C9A227]/10 to-[#D4AF37]/10 border border-[#C9A227]/20 max-w-4xl mx-auto"
+          className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-[var(--theme-gold)]/10 to-[var(--theme-gold)]/10 border border-[var(--theme-gold)]/20 max-w-4xl mx-auto"
         >
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-[#D4AF37] mb-1">4-8 Weeks</div>
-              <div className="text-slate-400 text-sm">Average Program Duration</div>
+              <div className="text-3xl font-bold text-[var(--theme-gold)] mb-1">4-8 Weeks</div>
+              <div className="text-[var(--theme-text-muted)] text-sm">Average Program Duration</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#D4AF37] mb-1">6-10 Sessions</div>
-              <div className="text-slate-400 text-sm">1:1 Coaching Sessions</div>
+              <div className="text-3xl font-bold text-[var(--theme-gold)] mb-1">6-10 Sessions</div>
+              <div className="text-[var(--theme-text-muted)] text-sm">1:1 Coaching Sessions</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#D4AF37] mb-1">Unlimited</div>
-              <div className="text-slate-400 text-sm">WhatsApp Support</div>
+              <div className="text-3xl font-bold text-[var(--theme-gold)] mb-1">Unlimited</div>
+              <div className="text-[var(--theme-text-muted)] text-sm">WhatsApp Support</div>
             </div>
           </div>
         </motion.div>
