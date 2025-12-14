@@ -40,10 +40,11 @@ export default function FullStackMasterBanner() {
           </Button>
           <button
             onClick={() => setIsVisible(false)}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-[#0A1628]/70 hover:text-[#0A1628] p-1"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-[#0A1628] hover:text-[#0A1628] bg-white/30 hover:bg-white/50 rounded-full p-1.5 transition-colors"
             data-testid="button-close-banner"
+            title="Close banner"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
           </button>
         </div>
       </motion.div>
