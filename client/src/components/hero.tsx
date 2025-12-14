@@ -52,7 +52,7 @@ export default function Hero() {
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#0F2341] border border-[#C9A227]/30 rounded-full px-3 py-1 flex items-center gap-1">
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[var(--theme-bg-card)] border border-[#C9A227]/30 rounded-full px-3 py-1 flex items-center gap-1">
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className="w-3 h-3 text-[#D4AF37]" fill="currentColor" viewBox="0 0 20 20">
@@ -60,7 +60,7 @@ export default function Hero() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-white text-xs font-medium">5.0</span>
+                  <span className="text-[var(--theme-text-primary)] text-xs font-medium">5.0</span>
                 </div>
               </div>
             </motion.div>
@@ -148,7 +148,7 @@ export default function Hero() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="h-12 px-6 text-base border-[#1E3A5F] bg-[#0F2341]/50 hover:bg-[#1A3A5C]/50 text-slate-300 hover:text-white hover:border-[#2E5A8F]" 
+                className="h-12 px-6 text-base border-[var(--theme-border)] bg-[var(--theme-bg-card)]/50 hover:bg-[var(--theme-bg-card)]/80 text-[var(--theme-text-secondary)] hover:text-[var(--theme-text-primary)] hover:border-[#2E5A8F]" 
                 asChild
                 data-testid="button-blog"
               >
@@ -186,13 +186,13 @@ export default function Hero() {
           >
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#1E40AF]/20 to-[#C9A227]/15 rounded-3xl blur-2xl" />
-              <div className="relative rounded-2xl overflow-hidden border border-[#1E3A5F]/50 shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden border border-[var(--theme-border)]/50 shadow-2xl">
                 <img 
                   src={rupeshImage} 
                   alt="Rupesh Tiwari - AWS Senior CSM & Executive Coach" 
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/90 to-transparent p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[var(--theme-bg-secondary)] via-[var(--theme-bg-secondary)]/90 to-transparent p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="flex items-center gap-1">
                       {[...Array(5)].map((_, i) => (
@@ -201,11 +201,11 @@ export default function Hero() {
                         </svg>
                       ))}
                     </div>
-                    <span className="text-white text-sm font-medium">5.0</span>
-                    <span className="text-slate-400 text-sm">51+ Verified Reviews</span>
+                    <span className="text-[var(--theme-text-primary)] text-sm font-medium">5.0</span>
+                    <span className="text-[var(--theme-text-secondary)] text-sm">51+ Verified Reviews</span>
                   </div>
-                  <div className="text-white font-semibold">Rupesh Tiwari</div>
-                  <div className="text-slate-400 text-sm">AWS Senior CSM | Executive Interview Coach</div>
+                  <div className="text-[var(--theme-text-primary)] font-semibold">Rupesh Tiwari</div>
+                  <div className="text-[var(--theme-text-secondary)] text-sm">AWS Senior CSM | Executive Interview Coach</div>
                 </div>
               </div>
             </div>
@@ -214,14 +214,14 @@ export default function Hero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8 }}
-              className="absolute -right-4 top-1/4 bg-[#0F2341]/95 backdrop-blur-sm border border-[#C9A227]/20 rounded-xl p-4 shadow-xl"
+              className="absolute -right-4 top-1/4 bg-[var(--theme-bg-card)]/95 backdrop-blur-sm border border-[#C9A227]/20 rounded-xl p-4 shadow-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
                   <span className="text-white text-lg font-bold">A</span>
                 </div>
                 <div>
-                  <div className="text-white text-sm font-medium">Director at Amazon</div>
+                  <div className="text-[var(--theme-text-primary)] text-sm font-medium">Director at Amazon</div>
                   <div className="text-green-400 text-xs font-semibold">+$320K Comp Increase</div>
                 </div>
               </div>
@@ -231,14 +231,14 @@ export default function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1 }}
-              className="absolute -left-4 bottom-1/4 bg-[#0F2341]/95 backdrop-blur-sm border border-[#C9A227]/20 rounded-xl p-4 shadow-xl"
+              className="absolute -left-4 bottom-1/4 bg-[var(--theme-bg-card)]/95 backdrop-blur-sm border border-[#C9A227]/20 rounded-xl p-4 shadow-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
                   <span className="text-white text-lg font-bold">G</span>
                 </div>
                 <div>
-                  <div className="text-white text-sm font-medium">VP at Google</div>
+                  <div className="text-[var(--theme-text-primary)] text-sm font-medium">VP at Google</div>
                   <div className="text-green-400 text-xs font-semibold">+$450K Comp Increase</div>
                 </div>
               </div>
@@ -250,13 +250,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2 }}
-          className="mt-16 flex flex-wrap items-center justify-center gap-8 text-slate-400"
+          className="mt-16 flex flex-wrap items-center justify-center gap-8 text-[var(--theme-text-secondary)]"
         >
           <span className="text-xs uppercase tracking-wider">I've Passed Interviews At</span>
           <div className="flex items-center gap-8">
-            <span className="text-white font-semibold">Microsoft</span>
-            <span className="text-white font-semibold">Google</span>
-            <span className="text-[#D4AF37] font-bold">AWS <span className="text-xs text-slate-400">(Current)</span></span>
+            <span className="text-[var(--theme-text-primary)] font-semibold">Microsoft</span>
+            <span className="text-[var(--theme-text-primary)] font-semibold">Google</span>
+            <span className="text-[#D4AF37] font-bold">AWS <span className="text-xs text-[var(--theme-text-secondary)]">(Current)</span></span>
           </div>
         </motion.div>
       </div>

@@ -149,7 +149,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleHashClick(e, link.href)}
-                className="text-sm font-medium text-slate-400 hover:text-white transition-colors cursor-pointer"
+                className="text-sm font-medium text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors cursor-pointer"
               >
                 {link.name}
               </a>
@@ -279,7 +279,7 @@ export default function Navbar() {
                   />
                   <button
                     type="submit"
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-[#D4AF37]"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--theme-text-muted)] hover:text-[#D4AF37]"
                   >
                     <Search className="w-4 h-4" />
                   </button>

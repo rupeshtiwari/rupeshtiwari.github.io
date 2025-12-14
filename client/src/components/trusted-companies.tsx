@@ -5,10 +5,10 @@ const companies = ["Amazon", "Google", "Meta", "Apple", "Netflix", "Microsoft"];
 
 export default function TrustedCompanies() {
   return (
-    <section className="py-12 bg-slate-900 border-y border-slate-800">
+    <section className="py-12 bg-[var(--theme-bg-secondary)] border-y border-[var(--theme-border)]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
-          <p className="text-sm font-semibold text-slate-500 uppercase tracking-widest">
+          <p className="text-sm font-semibold text-[var(--theme-text-muted)] uppercase tracking-widest">
             Helping Leaders Land Offers At
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function TrustedCompanies() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-[var(--theme-text-secondary)] hover:text-[var(--theme-text-primary)] transition-colors"
             >
               <CheckCircle2 className="w-4 h-4 text-green-500" />
               <span className="text-lg font-semibold">{company}</span>

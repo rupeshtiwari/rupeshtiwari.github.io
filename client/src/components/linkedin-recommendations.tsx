@@ -49,7 +49,7 @@ const recommendations = [
 
 export default function LinkedInRecommendations() {
   return (
-    <section className="py-24 bg-[#0A1628] relative overflow-hidden">
+    <section className="py-24 bg-[var(--theme-bg-secondary)] relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -63,10 +63,10 @@ export default function LinkedInRecommendations() {
             <Linkedin className="w-5 h-5 text-[#0A66C2]" />
             <span className="text-[#0A66C2] font-medium">LinkedIn Recommendations</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
             What Leaders Say About Me
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--theme-text-secondary)] text-lg max-w-2xl mx-auto">
             Real recommendations from verified LinkedIn profiles. 
             Click to view the original posts.
           </p>
@@ -80,11 +80,11 @@ export default function LinkedInRecommendations() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-6 rounded-2xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 hover:border-[#0A66C2]/30 transition-colors group"
+              className="p-6 rounded-2xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 hover:border-[#0A66C2]/30 transition-colors group"
               data-testid={`linkedin-rec-${idx}`}
             >
               <Quote className="w-8 h-8 text-[#0A66C2]/30 mb-4" />
-              <p className="text-slate-300 text-sm leading-relaxed mb-6">
+              <p className="text-[var(--theme-text-secondary)] text-sm leading-relaxed mb-6">
                 "{rec.text}"
               </p>
               <div className="flex items-center justify-between">
@@ -95,11 +95,11 @@ export default function LinkedInRecommendations() {
                     className="w-10 h-10 rounded-full object-cover border-2 border-[#0A66C2]/30"
                   />
                   <div>
-                    <div className="text-white font-medium text-sm">{rec.name}</div>
-                    <div className="text-slate-400 text-xs">{rec.role}</div>
+                    <div className="text-[var(--theme-text-primary)] font-medium text-sm">{rec.name}</div>
+                    <div className="text-[var(--theme-text-secondary)] text-xs">{rec.role}</div>
                   </div>
                 </div>
-                <div className="text-slate-500 text-xs">{rec.date}</div>
+                <div className="text-[var(--theme-text-muted)] text-xs">{rec.date}</div>
               </div>
             </motion.div>
           ))}

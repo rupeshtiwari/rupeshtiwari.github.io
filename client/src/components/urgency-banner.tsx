@@ -7,7 +7,7 @@ export default function UrgencyBanner() {
   const nextCohortDate = "January 2025";
 
   return (
-    <section className="py-6 bg-gradient-to-r from-[#C9A227]/20 via-[#D4AF37]/10 to-[#C9A227]/20 border-y border-[#C9A227]/30">
+    <section className="py-6 bg-[var(--theme-bg-secondary)] border-y border-[var(--theme-border)]">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -21,27 +21,27 @@ export default function UrgencyBanner() {
                 <Users className="w-4 h-4 text-red-400" />
               </div>
               <div className="text-left">
-                <div className="text-white font-bold">Only {spotsLeft} Spots Left</div>
-                <div className="text-xs text-slate-400">This month</div>
+                <div className="text-[var(--theme-text-primary)] font-bold">Only {spotsLeft} Spots Left</div>
+                <div className="text-xs text-[var(--theme-text-muted)]">This month</div>
               </div>
             </div>
             
-            <div className="hidden md:block w-px h-8 bg-[#C9A227]/30" />
+            <div className="hidden md:block w-px h-8 bg-[var(--theme-gold)]/30" />
             
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-[#C9A227]/20 flex items-center justify-center">
-                <Calendar className="w-4 h-4 text-[#D4AF37]" />
+              <div className="w-8 h-8 rounded-full bg-[var(--theme-gold)]/20 flex items-center justify-center">
+                <Calendar className="w-4 h-4 text-[var(--theme-gold)]" />
               </div>
               <div className="text-left">
-                <div className="text-white font-bold">Next Cohort: {nextCohortDate}</div>
-                <div className="text-xs text-slate-400">Executive Fast Track</div>
+                <div className="text-[var(--theme-text-primary)] font-bold">Next Cohort: {nextCohortDate}</div>
+                <div className="text-xs text-[var(--theme-text-muted)]">Executive Fast Track</div>
               </div>
             </div>
           </div>
 
           <Button 
             size="sm"
-            className="bg-gradient-to-r from-[#C9A227] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#E5C158] text-[#0A1628] font-bold"
+            className="bg-gradient-to-r from-[var(--theme-gold)] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#E5C158] text-[#0A1628] font-bold"
             asChild
             data-testid="button-urgency-book"
           >

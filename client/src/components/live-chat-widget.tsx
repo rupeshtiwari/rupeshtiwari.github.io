@@ -42,7 +42,7 @@ export default function LiveChatWidget() {
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             className="fixed bottom-24 right-6 w-80 z-50"
           >
-            <div className="bg-[#0F2341] border border-[#1E3A5F] rounded-2xl shadow-2xl overflow-hidden">
+            <div className="bg-[var(--theme-bg-card)] border border-[var(--theme-border)] rounded-2xl shadow-2xl overflow-hidden">
               <div className="p-4 bg-gradient-to-r from-[#D4AF37] to-yellow-500">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
@@ -74,8 +74,8 @@ export default function LiveChatWidget() {
               </div>
 
               <div className="p-4 space-y-3">
-                <div className="bg-[#1E3A5F]/50 rounded-xl p-3">
-                  <p className="text-slate-300 text-sm">
+                <div className="bg-[var(--theme-border)]/50 rounded-xl p-3">
+                  <p className="text-[var(--theme-text-secondary)] text-sm">
                     Hey! I'm here to help you land your dream FAANG role. How can I assist you today?
                   </p>
                 </div>
@@ -87,15 +87,15 @@ export default function LiveChatWidget() {
                         <a
                           key={idx}
                           href={action.link}
-                          className="flex items-center gap-3 p-3 rounded-xl bg-[#0A1628]/50 border border-[#1E3A5F]/50 hover:border-[#D4AF37]/30 transition-colors group"
+                          className="flex items-center gap-3 p-3 rounded-xl bg-[var(--theme-bg-secondary)]/50 border border-[var(--theme-border)]/50 hover:border-[#D4AF37]/30 transition-colors group"
                           data-testid={`chat-action-${idx}`}
                         >
                           <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${action.color} flex items-center justify-center flex-shrink-0`}>
                             <action.icon className="w-5 h-5 text-white" />
                           </div>
                           <div>
-                            <div className="text-white font-medium text-sm">{action.title}</div>
-                            <div className="text-slate-400 text-xs">{action.description}</div>
+                            <div className="text-[var(--theme-text-primary)] font-medium text-sm">{action.title}</div>
+                            <div className="text-[var(--theme-text-secondary)] text-xs">{action.description}</div>
                           </div>
                         </a>
                       ) : (
@@ -104,15 +104,15 @@ export default function LiveChatWidget() {
                           href={action.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-3 p-3 rounded-xl bg-[#0A1628]/50 border border-[#1E3A5F]/50 hover:border-[#D4AF37]/30 transition-colors group"
+                          className="flex items-center gap-3 p-3 rounded-xl bg-[var(--theme-bg-secondary)]/50 border border-[var(--theme-border)]/50 hover:border-[#D4AF37]/30 transition-colors group"
                           data-testid={`chat-action-${idx}`}
                         >
                           <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${action.color} flex items-center justify-center flex-shrink-0`}>
                             <action.icon className="w-5 h-5 text-white" />
                           </div>
                           <div>
-                            <div className="text-white font-medium text-sm">{action.title}</div>
-                            <div className="text-slate-400 text-xs">{action.description}</div>
+                            <div className="text-[var(--theme-text-primary)] font-medium text-sm">{action.title}</div>
+                            <div className="text-[var(--theme-text-secondary)] text-xs">{action.description}</div>
                           </div>
                         </a>
                       )
@@ -121,12 +121,12 @@ export default function LiveChatWidget() {
                 )}
               </div>
 
-              <div className="p-3 border-t border-[#1E3A5F]/50">
+              <div className="p-3 border-t border-[var(--theme-border)]/50">
                 <div className="flex items-center gap-2">
                   <input
                     type="text"
                     placeholder="Type a message..."
-                    className="flex-1 px-4 py-2 rounded-full bg-[#0A1628] border border-[#1E3A5F] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#D4AF37]"
+                    className="flex-1 px-4 py-2 rounded-full bg-[var(--theme-bg-secondary)] border border-[var(--theme-border)] text-[var(--theme-text-primary)] placeholder:text-[var(--theme-text-muted)] text-sm focus:outline-none focus:border-[#D4AF37]"
                     onFocus={() => setShowOptions(false)}
                     onBlur={() => setTimeout(() => setShowOptions(true), 100)}
                     data-testid="chat-input"

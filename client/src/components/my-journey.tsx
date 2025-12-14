@@ -42,7 +42,7 @@ export default function MyJourney() {
   ];
 
   return (
-    <section id="journey" className="py-24 bg-gradient-to-b from-[#0A1628] to-slate-950 relative overflow-hidden">
+    <section id="journey" className="py-24 bg-gradient-to-b from-[var(--theme-bg-secondary)] to-[var(--theme-bg-primary)] relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/5 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -53,11 +53,11 @@ export default function MyJourney() {
           className="text-center mb-16"
         >
           <span className="text-[#D4AF37] text-sm font-semibold uppercase tracking-wider">My Story</span>
-          <h2 className="text-3xl md:text-5xl font-bold font-display mt-2 mb-4 text-white">
+          <h2 className="text-3xl md:text-5xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
             From Selling Eggs to <span className="text-[#D4AF37]">AWS Executive</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-            If a boy from a vernacular school in a tier-3 city can crack Google, Microsoft, and AWS, <span className="text-white font-semibold">so can you</span>. Here's my journey.
+          <p className="text-[var(--theme-text-secondary)] text-lg max-w-3xl mx-auto">
+            If a boy from a vernacular school in a tier-3 city can crack Google, Microsoft, and AWS, <span className="text-[var(--theme-text-primary)] font-semibold">so can you</span>. Here's my journey.
           </p>
         </motion.div>
 
@@ -75,23 +75,23 @@ export default function MyJourney() {
                 className={`relative md:flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} md:mb-16`}
               >
                 <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                  <div className={`p-6 rounded-2xl bg-[#0F2341]/80 border border-[#1E3A5F] hover:border-[#D4AF37]/30 transition-colors ${index % 2 === 0 ? 'md:ml-auto' : ''} max-w-lg`}>
+                  <div className={`p-6 rounded-2xl bg-[var(--theme-bg-card)]/80 border border-[var(--theme-border)] hover:border-[#D4AF37]/30 transition-colors ${index % 2 === 0 ? 'md:ml-auto' : ''} max-w-lg`}>
                     <div className={`flex items-center gap-3 mb-3 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
                       <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center shrink-0`}>
                         <step.icon className="w-5 h-5 text-white" />
                       </div>
                       <div>
                         <span className="text-[#D4AF37] text-sm font-semibold">{step.year}</span>
-                        <h3 className="text-white font-bold text-lg">{step.title}</h3>
+                        <h3 className="text-[var(--theme-text-primary)] font-bold text-lg">{step.title}</h3>
                       </div>
                     </div>
-                    <p className="text-slate-400 leading-relaxed">
+                    <p className="text-[var(--theme-text-secondary)] leading-relaxed">
                       {step.story}
                     </p>
                   </div>
                 </div>
                 
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#D4AF37] border-4 border-[#0A1628] hidden md:block z-10" />
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#D4AF37] border-4 border-[var(--theme-bg-secondary)] hidden md:block z-10" />
                 
                 <div className="md:w-1/2" />
               </motion.div>
@@ -105,8 +105,8 @@ export default function MyJourney() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="max-w-2xl mx-auto p-8 rounded-2xl bg-gradient-to-r from-[#1E3A5F]/50 to-[#0F2341]/50 border border-[#D4AF37]/20">
-            <p className="text-xl text-white font-medium mb-4 italic">
+          <div className="max-w-2xl mx-auto p-8 rounded-2xl bg-gradient-to-r from-[var(--theme-border)]/50 to-[var(--theme-bg-card)]/50 border border-[#D4AF37]/20">
+            <p className="text-xl text-[var(--theme-text-primary)] font-medium mb-4 italic">
               "Every person who helped me, the petrol pump owner, my teachers, my neighbors, they didn't just pay my fees. They taught me that success is never alone. Now it's my turn to help others."
             </p>
             <p className="text-[#D4AF37] font-semibold">- Rupesh Tiwari</p>
@@ -127,7 +127,7 @@ export default function MyJourney() {
             <Button 
               size="lg"
               variant="outline"
-              className="h-14 px-8 border-[#1E3A5F] bg-[#0F2341]/50 hover:bg-[#1A3A5C]/50 text-white"
+              className="h-14 px-8 border-[var(--theme-border)] bg-[var(--theme-bg-card)]/50 hover:bg-[var(--theme-bg-card)]/80 text-[var(--theme-text-primary)]"
               asChild
               data-testid="button-journey-book"
             >

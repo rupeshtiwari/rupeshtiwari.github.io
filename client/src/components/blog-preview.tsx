@@ -28,7 +28,7 @@ const blogPosts = [
 
 export default function BlogPreview() {
   return (
-    <section id="blog-preview" className="py-24 bg-[#0A1628] relative overflow-hidden">
+    <section id="blog-preview" className="py-24 bg-[var(--theme-bg-secondary)] relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -43,13 +43,13 @@ export default function BlogPreview() {
               <BookOpen className="w-4 h-4" />
               Free Articles
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold font-display text-white">
+            <h2 className="text-3xl md:text-4xl font-bold font-display text-[var(--theme-text-primary)]">
               Latest from the Blog
             </h2>
           </div>
           <Button 
             variant="outline" 
-            className="border-[#1E3A5F] text-slate-300 hover:text-white hover:border-blue-500/50 w-fit"
+            className="border-[var(--theme-border)] text-[var(--theme-text-secondary)] hover:text-[var(--theme-text-primary)] hover:border-blue-500/50 w-fit"
             asChild
             data-testid="button-view-all-posts"
           >
@@ -71,21 +71,21 @@ export default function BlogPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="group p-6 rounded-2xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 hover:border-blue-500/30 transition-all"
+              className="group p-6 rounded-2xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 hover:border-blue-500/30 transition-all"
               data-testid={`blog-post-${idx}`}
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-2 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-medium">
                   {post.category}
                 </span>
-                <span className="text-slate-500 text-xs">{post.readTime}</span>
+                <span className="text-[var(--theme-text-muted)] text-xs">{post.readTime}</span>
               </div>
               
-              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
+              <h3 className="text-lg font-bold text-[var(--theme-text-primary)] mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
                 {post.title}
               </h3>
               
-              <p className="text-slate-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <p className="text-[var(--theme-text-secondary)] text-sm leading-relaxed mb-4 line-clamp-3">
                 {post.excerpt}
               </p>
               

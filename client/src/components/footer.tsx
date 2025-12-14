@@ -41,7 +41,7 @@ export default function Footer() {
             <Button 
               size="lg" 
               variant="outline"
-              className="h-14 px-8 text-base border-slate-600 hover:bg-slate-800" 
+              className="h-14 px-8 text-base border-[var(--theme-border)] hover:bg-[var(--theme-bg-card)]" 
               asChild
             >
               <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer">
