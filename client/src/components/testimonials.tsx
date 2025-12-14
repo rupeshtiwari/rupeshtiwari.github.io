@@ -4,58 +4,94 @@ import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
+    name: "Ashley",
+    role: "Phone Screen Passed",
+    company: "FAANG Loop Prep",
+    text: "Rupesh was so helpful! I passed my phone screen and will work with him to prep for my loop now. He helped me tighten up my interview answers, and identified gaps where I was missing metrics, mechanisms and other elements.",
+    initials: "A",
+    gotOffer: true,
+    date: "Dec 2025",
+    color: "from-[#1E40AF] to-[#1D4ED8]"
+  },
+  {
     name: "Vaughn",
     role: "Software Engineer",
     company: "DraftKings",
-    text: "THANK YOU RUPESH!!! I landed a role at DraftKings after Rupesh's coaching session. His OOD interview prep was exactly what I needed!",
+    text: "THANK YOU RUPESH!!! I landed a role at DraftKings after Rupesh's coaching session. He helped me approach object-oriented design interview problems with structure, confidence, and competency.",
     initials: "V",
     gotOffer: true,
+    date: "Apr 2025",
+    color: "from-[#C9A227] to-[#D4AF37]"
+  },
+  {
+    name: "Melvin",
+    role: "Solutions Architect",
+    company: "Cloud Career",
+    text: "As a beginning Solutions Architect, I was stuck in my career. Rupesh provided guidance for sharpening my skills, building my brand, and engaging with recruiters. By the end, I had a 90-day step-by-step plan to turn my career around.",
+    initials: "M",
+    gotOffer: true,
+    date: "Apr 2025",
+    color: "from-[#D4AF37] to-[#E5C158]"
+  },
+  {
+    name: "Muhammad",
+    role: "Solutions Architect",
+    company: "Senior Role",
+    text: "Rupesh quickly identified the areas I needed to focus on. He coached me on how to structure and communicate my design decisions clearly. In just one hour, I gained a clear picture of my strengths and areas to refine.",
+    initials: "M",
+    gotOffer: false,
+    date: "Jul 2025",
+    color: "from-[#1D4ED8] to-[#2563EB]"
+  },
+  {
+    name: "Shamir",
+    role: "Data Engineer",
+    company: "Interview Prep",
+    text: "He coached me on how I approach a question, how I should answer for the role I'm applying for, and how my tone and body language should be. Now I know my strengths and weaknesses properly. All in a single hour!",
+    initials: "S",
+    gotOffer: false,
+    date: "Oct 2024",
     color: "from-[#1E40AF] to-[#1D4ED8]"
   },
   {
     name: "Andre",
     role: "Solutions Architect",
     company: "Amazon",
-    text: "Rupesh gave clear feedback on my technical answers and communication style, spotting weaknesses I missed. I recommend Rupesh to anyone preparing for a technical interview.",
+    text: "I had a prep session with Rupesh for my Amazon interview. His experience as an Amazon Solutions Architect shows. He gave clear feedback on my technical answers and communication style, spotting weaknesses I missed.",
     initials: "A",
     gotOffer: true,
+    date: "May 2025",
     color: "from-[#C9A227] to-[#D4AF37]"
   },
   {
-    name: "Omotola",
-    role: "Senior Engineer",
-    company: "Red Hat",
-    text: "Rupesh is patient, thorough, and a confidence-booster. I had an excellent experience learning from him!",
-    initials: "O",
-    gotOffer: true,
+    name: "Aman",
+    role: "System Design",
+    company: "Interview Prep",
+    text: "Prior to our session, I was intimidated by thoughts of my upcoming interview. Rupesh has given me a solid framework which I can use to be confident in my questions/answers. I highly recommend a learning session with Rupesh!",
+    initials: "AM",
+    gotOffer: false,
+    date: "Jul 2025",
     color: "from-[#D4AF37] to-[#E5C158]"
-  },
-  {
-    name: "Karthik",
-    role: "Senior Software Engineer",
-    company: "FAANG",
-    text: "Rupesh helped me crack my dream role! His insights on how to approach technical and behavioral rounds were spot-on.",
-    initials: "K",
-    gotOffer: true,
-    color: "from-[#1D4ED8] to-[#2563EB]"
   },
   {
     name: "Ann",
     role: "Solutions Architect",
     company: "Databricks",
-    text: "He holds a very high bar and treats each mock interview as seriously as if it were his own team's hiring process. The session was incredibly valuable.",
-    initials: "A",
+    text: "He holds a very high bar and treats each mock interview as seriously as if it were his own team's hiring process. I'm currently preparing for a Solutions Architect role and he made sure I left with a clear framework.",
+    initials: "AN",
     gotOffer: false,
-    color: "from-[#1E40AF] to-[#1D4ED8]"
+    date: "Jul 2025",
+    color: "from-[#1D4ED8] to-[#2563EB]"
   },
   {
-    name: "Shiv",
-    role: "Senior SRE",
-    company: "Google",
-    text: "The session was very engaging... His questions focused not only on technical depth but also on collaboration, ownership, and leadership.",
-    initials: "S",
+    name: "Michael",
+    role: "Technical Interview",
+    company: "Coaching Session",
+    text: "He walked me through the interview process and provided detailed resources for both technical and behavioral parts. We had a short mock and he pointed out areas to improve. I gained a clear interview strategy!",
+    initials: "MI",
     gotOffer: false,
-    color: "from-[#C9A227] to-[#D4AF37]"
+    date: "Jan 2025",
+    color: "from-[#1E40AF] to-[#1D4ED8]"
   }
 ];
 
@@ -71,12 +107,12 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-[var(--theme-gold)] text-sm font-semibold uppercase tracking-wider">Verified Reviews</span>
+          <span className="text-[var(--theme-gold)] text-sm font-semibold uppercase tracking-wider">50+ Verified Reviews</span>
           <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
-            Leaders Who Landed Offers
+            Real Stories from Real Clients
           </h2>
           <p className="text-[var(--theme-text-muted)] text-lg max-w-2xl mx-auto">
-            Real coaching clients. Real offers. Every review verified on IGotAnOffer.
+            Every review verified on IGotAnOffer. These are actual coaching clients who transformed their interview game.
           </p>
         </motion.div>
 
@@ -99,24 +135,27 @@ export default function Testimonials() {
                     </div>
                     <div>
                       <div className="font-bold text-[var(--theme-text-primary)]">{item.name}</div>
-                      <div className="text-sm text-[var(--theme-text-muted)]">{item.role} @ {item.company}</div>
+                      <div className="text-sm text-[var(--theme-text-muted)]">{item.role}</div>
                     </div>
                   </div>
                   {item.gotOffer && (
-                    <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[var(--theme-gold)]/10 border border-[var(--theme-gold)]/20 text-[var(--theme-gold)] text-xs font-medium">
+                    <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-500 text-xs font-medium">
                       <CheckCircle2 className="w-3 h-3" />
-                      Got Offer
+                      Success
                     </span>
                   )}
                 </div>
                 
-                <div className="flex gap-0.5 mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-4 h-4 text-[var(--theme-gold)] fill-[var(--theme-gold)]" />
-                  ))}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex gap-0.5">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star key={star} className="w-4 h-4 text-[var(--theme-gold)] fill-[var(--theme-gold)]" />
+                    ))}
+                  </div>
+                  <span className="text-xs text-[var(--theme-text-muted)]">{item.date}</span>
                 </div>
                 
-                <p className="text-[var(--theme-text-secondary)] leading-relaxed">
+                <p className="text-[var(--theme-text-secondary)] leading-relaxed text-sm">
                   "{item.text}"
                 </p>
               </div>
@@ -130,17 +169,17 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="inline-flex items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-[var(--theme-gold)]/10 to-[var(--theme-gold)]/5 border border-[var(--theme-gold)]/20">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-gradient-to-r from-[var(--theme-gold)]/10 to-[var(--theme-gold)]/5 border border-[var(--theme-gold)]/20">
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-6 h-6 text-[var(--theme-gold)] fill-[var(--theme-gold)]" />
               ))}
             </div>
-            <div className="text-left">
+            <div className="text-center sm:text-left">
               <div className="text-[var(--theme-text-primary)] font-bold text-xl">5.0 Average Rating</div>
-              <div className="text-[var(--theme-text-muted)]">51+ Verified Reviews on IGotAnOffer</div>
+              <div className="text-[var(--theme-text-muted)]">50+ Verified Reviews on IGotAnOffer</div>
             </div>
-            <Button variant="outline" className="border-[var(--theme-gold)]/30 text-[var(--theme-gold)] hover:bg-[var(--theme-gold)]/10 ml-4" asChild>
+            <Button variant="outline" className="border-[var(--theme-gold)]/30 text-[var(--theme-gold)] hover:bg-[var(--theme-gold)]/10 sm:ml-4" asChild>
               <a href="https://igotanoffer.com/en/coach/rupesh" target="_blank" rel="noopener noreferrer">
                 Verify All Reviews <ExternalLink className="w-4 h-4 ml-2" />
               </a>
