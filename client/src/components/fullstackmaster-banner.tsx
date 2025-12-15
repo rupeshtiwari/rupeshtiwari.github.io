@@ -45,11 +45,11 @@ export default function FullStackMasterBanner() {
               
               <button
                 onClick={() => setIsVisible(false)}
-                className="text-[#0A1628] bg-white/40 hover:bg-white/60 rounded-full p-1.5 transition-colors flex-shrink-0"
+                className="text-[#0A1628] bg-white/80 hover:bg-white border border-[#0A1628]/20 rounded-full p-1.5 md:p-2 transition-colors flex-shrink-0 shadow-sm"
                 data-testid="button-close-banner"
                 title="Close banner"
               >
-                <X className="w-4 h-4 md:w-5 md:h-5" />
+                <X className="w-5 h-5 md:w-5 md:h-5" strokeWidth={2.5} />
               </button>
             </div>
           </div>
