@@ -17,10 +17,10 @@ export default function FullStackMasterBanner() {
         className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-[#C9A227] via-[#D4AF37] to-[#E5C158] shadow-lg"
         data-testid="banner-fullstackmaster"
       >
-        <div className="container mx-auto px-2 py-2 md:py-2.5">
-          <div className="flex items-center justify-between gap-2">
+        <div className="container mx-auto px-3 py-2.5 md:py-2.5">
+          <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-2 md:gap-3 text-[#0A1628] flex-1 min-w-0">
-              <Rocket className="w-4 h-4 md:w-5 md:h-5 animate-bounce flex-shrink-0" />
+              <Rocket className="w-4 h-4 md:w-5 md:h-5 animate-bounce flex-shrink-0 hidden sm:block" />
               <span className="font-semibold text-xs md:text-base truncate">
                 Crack Your FAANG Interview!
               </span>
@@ -29,10 +29,10 @@ export default function FullStackMasterBanner() {
               </span>
             </div>
             
-            <div className="flex items-center gap-2 flex-shrink-0">
+            <div className="flex items-center gap-3 flex-shrink-0">
               <Button
                 size="sm"
-                className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white font-semibold px-2 md:px-4 text-xs md:text-sm h-7 md:h-8"
+                className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white font-semibold px-3 md:px-4 text-xs md:text-sm h-8 md:h-8"
                 asChild
                 data-testid="button-banner-cta"
               >
@@ -45,11 +45,11 @@ export default function FullStackMasterBanner() {
               
               <button
                 onClick={() => setIsVisible(false)}
-                className="text-[#0A1628] bg-white/80 hover:bg-white border border-[#0A1628]/20 rounded-full p-1.5 md:p-2 transition-colors flex-shrink-0 shadow-sm"
+                className="text-white bg-[#0A1628] hover:bg-[#1E3A5F] rounded-full p-2 transition-colors flex-shrink-0 shadow-md"
                 data-testid="button-close-banner"
                 title="Close banner"
               >
-                <X className="w-5 h-5 md:w-5 md:h-5" strokeWidth={2.5} />
+                <X className="w-4 h-4" strokeWidth={2.5} />
               </button>
             </div>
           </div>
