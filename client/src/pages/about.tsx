@@ -69,7 +69,7 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0A1628] text-slate-100">
+    <div className="min-h-screen bg-[var(--theme-bg-primary)] text-[var(--theme-text-primary)]">
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-6">
@@ -78,17 +78,17 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <Link href="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors">
+            <Link href="/" className="inline-flex items-center gap-2 text-[var(--theme-text-secondary)] hover:text-[var(--theme-text-primary)] mb-6 transition-colors">
               <ArrowLeft className="w-4 h-4" />
               Back to Home
             </Link>
             <span className="block text-[#D4AF37] text-sm font-semibold uppercase tracking-wider mb-2">About Me</span>
-            <h1 className="text-4xl md:text-5xl font-bold font-display mb-4 text-white">
+            <h1 className="text-4xl md:text-5xl font-bold font-display mb-4 text-[var(--theme-text-primary)]">
               From Selling Eggs to AWS Executive
             </h1>
-            <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+            <p className="text-[var(--theme-text-secondary)] text-lg max-w-3xl mx-auto">
               If a boy from a vernacular school in a tier-3 city can crack Google, Microsoft, and AWS, 
-              <span className="text-white font-semibold"> so can you</span>. Here's my complete story.
+              <span className="text-[var(--theme-text-primary)] font-semibold"> so can you</span>. Here's my complete story.
             </p>
           </motion.div>
 
@@ -99,10 +99,10 @@ export default function About() {
             className="grid md:grid-cols-4 gap-6 mb-16"
           >
             {stats.map((stat, idx) => (
-              <div key={idx} className="p-6 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 text-center">
+              <div key={idx} className="p-6 rounded-xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 text-center">
                 <stat.icon className="w-8 h-8 text-[#D4AF37] mx-auto mb-3" />
-                <div className="text-3xl font-bold text-white">{stat.value}</div>
-                <div className="text-sm text-slate-400">{stat.label}</div>
+                <div className="text-3xl font-bold text-[var(--theme-text-primary)]">{stat.value}</div>
+                <div className="text-sm text-[var(--theme-text-secondary)]">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -126,14 +126,14 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/50">
+                <div className="p-4 rounded-xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50">
                   <div className="flex items-center gap-3 mb-3">
                     <MapPin className="w-5 h-5 text-[#D4AF37]" />
-                    <span className="text-white font-medium">Based in Seattle, WA</span>
+                    <span className="text-[var(--theme-text-primary)] font-medium">Based in Seattle, WA</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Briefcase className="w-5 h-5 text-[#D4AF37]" />
-                    <span className="text-white font-medium">Sr. CSM at AWS</span>
+                    <span className="text-[var(--theme-text-primary)] font-medium">Sr. CSM at AWS</span>
                   </div>
                 </div>
 
@@ -157,8 +157,8 @@ export default function About() {
                       ))}
                     </div>
                     <div>
-                      <div className="text-white font-semibold text-sm">5.0 on IGotAnOffer</div>
-                      <div className="text-slate-400 text-xs">51+ Reviews</div>
+                      <div className="text-[var(--theme-text-primary)] font-semibold text-sm">5.0 on IGotAnOffer</div>
+                      <div className="text-[var(--theme-text-secondary)] text-xs">51+ Reviews</div>
                     </div>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-yellow-500 transition-colors" />
@@ -173,13 +173,13 @@ export default function About() {
               className="lg:col-span-2 space-y-8"
             >
               <div>
-                <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                <h2 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-4 flex items-center gap-2">
                   <Award className="w-6 h-6 text-[#D4AF37]" />
                   Who I Am
                 </h2>
-                <div className="space-y-4 text-slate-300 leading-relaxed">
+                <div className="space-y-4 text-[var(--theme-text-secondary)] leading-relaxed">
                   <p>
-                    I'm <span className="text-white font-semibold">Rupesh Tiwari</span>, currently serving as a 
+                    I'm <span className="text-[var(--theme-text-primary)] font-semibold">Rupesh Tiwari</span>, currently serving as a 
                     <span className="text-[#D4AF37] font-semibold"> Senior Customer Solutions Manager at AWS</span>. 
                     My journey spans from writing code as a Software Engineer to architecting enterprise solutions 
                     and now leading strategic initiatives for AWS customers.
@@ -187,11 +187,11 @@ export default function About() {
                   <p>
                     As an <span className="text-[#D4AF37] font-semibold">ISB CTO Scholar</span>, I bring a unique 
                     blend of deep technical expertise and executive business acumen. I've passed interviews at 
-                    <span className="text-white font-semibold"> Microsoft, Google, and AWS</span>, giving me insider 
+                    <span className="text-[var(--theme-text-primary)] font-semibold"> Microsoft, Google, and AWS</span>, giving me insider 
                     knowledge of what top tech companies look for at senior levels.
                   </p>
                   <p>
-                    Through <span className="text-white font-semibold">FullstackMaster.net</span>, I've coached 
+                    Through <span className="text-[var(--theme-text-primary)] font-semibold">FullstackMaster.net</span>, I've coached 
                     <span className="text-[#D4AF37] font-semibold"> 50+ Directors, VPs, and Principal Engineers</span> to 
                     land offers at FAANG companies with an average <span className="text-green-400 font-semibold">$285K compensation increase</span>.
                   </p>
@@ -200,14 +200,14 @@ export default function About() {
 
               <div className="p-6 rounded-xl bg-gradient-to-r from-[#D4AF37]/10 to-yellow-500/10 border border-[#D4AF37]/20">
                 <Quote className="w-8 h-8 text-[#D4AF37] mb-3" />
-                <blockquote className="text-lg text-white italic leading-relaxed">
+                <blockquote className="text-lg text-[var(--theme-text-primary)] italic leading-relaxed">
                   "Every person who helped me — the petrol pump owner, my teachers, my neighbors — they didn't just pay my fees. 
                   They taught me that success is never alone. Now it's my turn to help others."
                 </blockquote>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <h2 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-6 flex items-center gap-2">
                   <BadgeCheck className="w-6 h-6 text-[#D4AF37]" />
                   Certifications & Credentials
                 </h2>
@@ -221,18 +221,18 @@ export default function About() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4 + idx * 0.1 }}
-                      className="p-4 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/50 hover:border-[#D4AF37]/50 transition-colors group"
+                      className="p-4 rounded-xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50 hover:border-[var(--theme-gold)]/50 transition-colors group"
                     >
                       <div className="flex items-start gap-3">
                         <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${cert.color} flex items-center justify-center flex-shrink-0`}>
                           <BadgeCheck className="w-5 h-5 text-white" />
                         </div>
                         <div>
-                          <div className="text-white font-medium flex items-center gap-1">
+                          <div className="text-[var(--theme-text-primary)] font-medium flex items-center gap-1">
                             {cert.name}
                             <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                           </div>
-                          <div className="text-slate-400 text-sm">{cert.provider}</div>
+                          <div className="text-[var(--theme-text-secondary)] text-sm">{cert.provider}</div>
                         </div>
                       </div>
                     </motion.a>
@@ -241,12 +241,12 @@ export default function About() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <h2 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-6 flex items-center gap-2">
                   <Trophy className="w-6 h-6 text-[#D4AF37]" />
                   Career Timeline
                 </h2>
                 <div className="relative">
-                  <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#D4AF37] via-[#D4AF37]/50 to-transparent" />
+                  <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--theme-gold)] via-[var(--theme-gold)]/50 to-transparent" />
                   <div className="space-y-6">
                     {milestones.map((milestone, idx) => (
                       <motion.div
@@ -256,12 +256,12 @@ export default function About() {
                         transition={{ delay: 0.5 + idx * 0.1 }}
                         className="relative pl-12"
                       >
-                        <div className="absolute left-0 w-8 h-8 rounded-full bg-[#0F2341] border-2 border-[#D4AF37] flex items-center justify-center text-sm">
+                        <div className="absolute left-0 w-8 h-8 rounded-full bg-[var(--theme-bg-card)] border-2 border-[var(--theme-gold)] flex items-center justify-center text-sm">
                           {milestone.icon}
                         </div>
-                        <div className="p-4 rounded-xl bg-[#0F2341]/50 border border-[#1E3A5F]/30">
+                        <div className="p-4 rounded-xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/30">
                           <div className="text-[#D4AF37] text-sm font-semibold">{milestone.year}</div>
-                          <div className="text-white font-medium">{milestone.event}</div>
+                          <div className="text-[var(--theme-text-primary)] font-medium">{milestone.event}</div>
                         </div>
                       </motion.div>
                     ))}
@@ -277,11 +277,11 @@ export default function About() {
             viewport={{ once: true }}
             className="mb-20"
           >
-            <h2 className="text-3xl font-bold text-white text-center mb-12">
+            <h2 className="text-3xl font-bold text-[var(--theme-text-primary)] text-center mb-12">
               My Complete Journey
             </h2>
             <div className="relative">
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-[#D4AF37] via-[#D4AF37]/50 to-transparent hidden md:block" />
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-[var(--theme-gold)] via-[var(--theme-gold)]/50 to-transparent hidden md:block" />
               
               <div className="space-y-12 md:space-y-0">
                 {journeySteps.map((step, index) => (
@@ -294,23 +294,23 @@ export default function About() {
                     className={`relative md:flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} md:mb-16`}
                   >
                     <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                      <div className={`p-6 rounded-2xl bg-[#0F2341]/80 border border-[#1E3A5F] hover:border-[#D4AF37]/30 transition-colors ${index % 2 === 0 ? 'md:ml-auto' : ''} max-w-lg`}>
+                      <div className={`p-6 rounded-2xl bg-[var(--theme-bg-card)]/80 border border-[var(--theme-border)] hover:border-[var(--theme-gold)]/30 transition-colors ${index % 2 === 0 ? 'md:ml-auto' : ''} max-w-lg`}>
                         <div className={`flex items-center gap-3 mb-3 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
                           <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center shrink-0`}>
                             <step.icon className="w-5 h-5 text-white" />
                           </div>
                           <div>
                             <span className="text-[#D4AF37] text-sm font-semibold">{step.year}</span>
-                            <h3 className="text-white font-bold text-lg">{step.title}</h3>
+                            <h3 className="text-[var(--theme-text-primary)] font-bold text-lg">{step.title}</h3>
                           </div>
                         </div>
-                        <p className="text-slate-400 leading-relaxed">
+                        <p className="text-[var(--theme-text-secondary)] leading-relaxed">
                           {step.story}
                         </p>
                       </div>
                     </div>
                     
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#D4AF37] border-4 border-[#0A1628] hidden md:block z-10" />
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[var(--theme-gold)] border-4 border-[var(--theme-bg-primary)] hidden md:block z-10" />
                     
                     <div className="md:w-1/2" />
                   </motion.div>
@@ -326,8 +326,8 @@ export default function About() {
             className="text-center"
           >
             <div className="max-w-2xl mx-auto p-8 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
-              <h3 className="text-2xl font-bold text-white mb-2">Ready to Transform Your Career?</h3>
-              <p className="text-slate-400 mb-6">
+              <h3 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-2">Ready to Transform Your Career?</h3>
+              <p className="text-[var(--theme-text-secondary)] mb-6">
                 Let me help you achieve the same success. Book a free strategy call to discuss your goals.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -343,7 +343,7 @@ export default function About() {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-[#1E3A5F] text-white hover:bg-[#0F2341]"
+                  className="border-[var(--theme-border)] text-[var(--theme-text-primary)] hover:bg-[var(--theme-bg-card)]"
                   asChild
                 >
                   <Link href="/case-studies">

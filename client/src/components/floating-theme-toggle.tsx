@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function FloatingThemeToggle() {
-  const [theme, setThemeState] = useState<"light" | "dark">("dark");
+  const [theme, setThemeState] = useState<"light" | "dark">("light");
   const [mounted, setMounted] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -11,8 +11,10 @@ export default function FloatingThemeToggle() {
     setMounted(true);
     const stored = localStorage.getItem("theme") as "light" | "dark" | null;
     const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial = stored || (systemDark ? "dark" : "light");
+    const initial = stored || "light";
     setThemeState(initial);
+    document.documentElement.classList.toggle("dark", initial === "dark");
+    document.documentElement.classList.toggle("light", initial === "light");
 
     const observer = new MutationObserver(() => {
       const isDark = document.documentElement.classList.contains("dark");

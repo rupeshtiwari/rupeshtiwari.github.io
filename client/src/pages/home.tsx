@@ -27,7 +27,7 @@ import PWAInstallPrompt from "@/components/pwa-install-prompt";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0A1628] text-slate-100">
+    <div className="min-h-screen bg-[var(--theme-bg-primary)] text-[var(--theme-text-primary)]">
       <Navbar />
       <main>
         <Hero />

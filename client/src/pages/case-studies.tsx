@@ -78,7 +78,7 @@ const clientReviews = [
 
 export default function CaseStudies() {
   return (
-    <div className="min-h-screen bg-[#0A1628] text-slate-100">
+    <div className="min-h-screen bg-[var(--theme-bg-primary)] text-[var(--theme-text-primary)]">
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-6">
@@ -87,7 +87,7 @@ export default function CaseStudies() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <Link href="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-6 transition-colors">
+            <Link href="/" className="inline-flex items-center gap-2 text-[var(--theme-text-secondary)] hover:text-[var(--theme-text-primary)] mb-6 transition-colors">
               <ArrowLeft className="w-4 h-4" />
               Back to Home
             </Link>
@@ -97,10 +97,10 @@ export default function CaseStudies() {
               ))}
             </div>
             <span className="block text-green-400 text-sm font-semibold uppercase tracking-wider mb-2">50+ Five-Star Reviews</span>
-            <h1 className="text-4xl md:text-5xl font-bold font-display mb-4 text-white">
+            <h1 className="text-4xl md:text-5xl font-bold font-display mb-4 text-[var(--theme-text-primary)]">
               Real Client Success Stories
             </h1>
-            <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+            <p className="text-[var(--theme-text-secondary)] text-lg max-w-3xl mx-auto">
               These are verified reviews from actual coaching clients on IGotAnOffer. 
               Read their experiences and outcomes in their own words.
             </p>
@@ -117,7 +117,7 @@ export default function CaseStudies() {
                 className="relative"
                 data-testid={`client-review-${client.id}`}
               >
-                <div className="p-8 rounded-2xl bg-[#0F2341]/50 border border-[#1E3A5F]/50">
+                <div className="p-8 rounded-2xl bg-[var(--theme-bg-card)]/50 border border-[var(--theme-border)]/50">
                   <div className="flex flex-col lg:flex-row gap-8">
                     <div className="lg:w-1/3">
                       <div className="flex items-center gap-1 mb-3">
@@ -125,16 +125,16 @@ export default function CaseStudies() {
                           <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
-                      <h3 className="text-2xl font-bold text-white mb-2">{client.name}</h3>
+                      <h3 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-2">{client.name}</h3>
                       <div className="inline-block px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium mb-3">
                         {client.outcome}
                       </div>
-                      <p className="text-slate-400 text-sm mb-4">{client.date}</p>
+                      <p className="text-[var(--theme-text-secondary)] text-sm mb-4">{client.date}</p>
                       <p className="text-blue-400 text-sm font-medium mb-4">{client.focus}</p>
                       
                       <div className="space-y-2">
                         {client.highlights.map((highlight, hIdx) => (
-                          <div key={hIdx} className="flex items-center gap-2 text-sm text-slate-300">
+                          <div key={hIdx} className="flex items-center gap-2 text-sm text-[var(--theme-text-secondary)]">
                             <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0" />
                             <span>{highlight}</span>
                           </div>
@@ -146,7 +146,7 @@ export default function CaseStudies() {
                       {client.reviews.map((review, rIdx) => (
                         <div key={rIdx} className="relative">
                           <Quote className="absolute -left-2 -top-2 w-8 h-8 text-[#D4AF37]/20" />
-                          <blockquote className="pl-6 text-slate-300 leading-relaxed italic">
+                          <blockquote className="pl-6 text-[var(--theme-text-secondary)] leading-relaxed italic">
                             "{review}"
                           </blockquote>
                         </div>
@@ -162,12 +162,12 @@ export default function CaseStudies() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-[#D4AF37]/10 to-[#B8860B]/10 border border-[#D4AF37]/20 text-center"
+            className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-[var(--theme-gold)]/10 to-[var(--theme-gold)]/5 border border-[var(--theme-gold)]/20 text-center"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h3 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-4">
               View All 50+ Reviews
             </h3>
-            <p className="text-slate-400 mb-6 max-w-2xl mx-auto">
+            <p className="text-[var(--theme-text-secondary)] mb-6 max-w-2xl mx-auto">
               These are just a few highlights. See all verified reviews on IGotAnOffer to learn 
               how coaching has helped professionals land roles at top tech companies.
             </p>
@@ -190,8 +190,8 @@ export default function CaseStudies() {
             className="mt-12 text-center"
           >
             <div className="max-w-2xl mx-auto p-8 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
-              <h3 className="text-2xl font-bold text-white mb-2">Ready to Start Your Journey?</h3>
-              <p className="text-slate-400 mb-6">
+              <h3 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-2">Ready to Start Your Journey?</h3>
+              <p className="text-[var(--theme-text-secondary)] mb-6">
                 Join 50+ successful clients who have transformed their careers with personalized coaching.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -207,7 +207,7 @@ export default function CaseStudies() {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-[#1E3A5F] text-white hover:bg-[#0F2341]"
+                  className="border-[var(--theme-border)] text-[var(--theme-text-primary)] hover:bg-[var(--theme-bg-card)]"
                   asChild
                 >
                   <Link href="/pricing">

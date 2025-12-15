@@ -36,15 +36,15 @@ export default function NotFound() {
 
   if (blogUrl) {
     return (
-      <div className="min-h-screen w-full flex items-center justify-center bg-slate-900">
-        <Card className="w-full max-w-lg mx-4 bg-slate-800 border-slate-700">
+      <div className="min-h-screen w-full flex items-center justify-center bg-[var(--theme-bg-primary)]">
+        <Card className="w-full max-w-lg mx-4 bg-[var(--theme-bg-card)] border-[var(--theme-border)]">
           <CardContent className="pt-6">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cyan-500/20 flex items-center justify-center">
                 <ExternalLink className="w-8 h-8 text-cyan-400" />
               </div>
-              <h1 className="text-2xl font-bold text-white mb-2">Page Moved!</h1>
-              <p className="text-slate-300 mb-4">
+              <h1 className="text-2xl font-bold text-[var(--theme-text-primary)] mb-2">Page Moved!</h1>
+              <p className="text-[var(--theme-text-secondary)] mb-4">
                 This content has moved to my blog. Redirecting in <span className="text-cyan-400 font-bold">{countdown}</span> seconds...
               </p>
               <Button 
@@ -56,7 +56,7 @@ export default function NotFound() {
                   <ExternalLink className="w-4 h-4 ml-2" />
                 </a>
               </Button>
-              <p className="text-slate-500 text-sm mt-4 break-all">
+              <p className="text-[var(--theme-text-muted)] text-sm mt-4 break-all">
                 {blogUrl}
               </p>
             </div>
@@ -67,14 +67,14 @@ export default function NotFound() {
   }
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-slate-900">
-      <Card className="w-full max-w-md mx-4 bg-slate-800 border-slate-700">
+    <div className="min-h-screen w-full flex items-center justify-center bg-[var(--theme-bg-primary)]">
+      <Card className="w-full max-w-md mx-4 bg-[var(--theme-bg-card)] border-[var(--theme-border)]">
         <CardContent className="pt-6">
           <div className="flex mb-4 gap-2">
             <AlertCircle className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl font-bold text-white">404 Page Not Found</h1>
+            <h1 className="text-2xl font-bold text-[var(--theme-text-primary)]">404 Page Not Found</h1>
           </div>
-          <p className="mt-4 text-sm text-slate-400">
+          <p className="mt-4 text-sm text-[var(--theme-text-secondary)]">
             The page you're looking for doesn't exist.
           </p>
           <Button 

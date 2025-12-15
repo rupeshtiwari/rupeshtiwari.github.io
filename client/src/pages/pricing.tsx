@@ -106,7 +106,7 @@ const guarantees = [
 
 export default function Pricing() {
   return (
-    <div className="min-h-screen bg-[#0A1628] text-slate-100">
+    <div className="min-h-screen bg-[var(--theme-bg-primary)] text-[var(--theme-text-primary)]">
       <Navbar />
       
       <main className="pt-24 pb-16">
@@ -120,10 +120,10 @@ export default function Pricing() {
             <span className="text-[#D4AF37] text-sm font-semibold uppercase tracking-wider">
               Invest in Your Future
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold font-display mt-2 mb-4 text-white">
+            <h1 className="text-4xl md:text-5xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
               Clear Pricing. Real Results.
             </h1>
-            <p className="text-xl text-slate-400">
+            <p className="text-xl text-[var(--theme-text-secondary)]">
               Choose the package that fits your timeline and goals. 
               All prices in USD. No hidden fees.
             </p>
@@ -137,7 +137,7 @@ export default function Pricing() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
-                className={`relative p-8 rounded-2xl bg-[#0F2341]/50 border ${pkg.borderColor} hover:border-opacity-60 transition-all ${pkg.popular ? 'ring-2 ring-[#C9A227]' : ''}`}
+                className={`relative p-8 rounded-2xl bg-[var(--theme-bg-card)]/50 border ${pkg.borderColor} hover:border-opacity-60 transition-all ${pkg.popular ? 'ring-2 ring-[var(--theme-gold)]' : ''}`}
               >
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full text-xs font-bold text-slate-900 flex items-center gap-1">
@@ -150,39 +150,39 @@ export default function Pricing() {
                     <pkg.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">{pkg.name}</h3>
-                    <p className="text-sm text-slate-400">{pkg.tagline}</p>
+                    <h3 className="text-xl font-bold text-[var(--theme-text-primary)]">{pkg.name}</h3>
+                    <p className="text-sm text-[var(--theme-text-secondary)]">{pkg.tagline}</p>
                   </div>
                 </div>
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-bold text-white">${pkg.price}</span>
-                    <span className="text-slate-400">USD</span>
+                    <span className="text-4xl font-bold text-[var(--theme-text-primary)]">${pkg.price}</span>
+                    <span className="text-[var(--theme-text-secondary)]">USD</span>
                   </div>
                   {pkg.originalPrice && (
                     <div className="flex items-center gap-2 mt-1">
-                      <span className="text-slate-500 line-through">${pkg.originalPrice}</span>
+                      <span className="text-[var(--theme-text-muted)] line-through">${pkg.originalPrice}</span>
                       <span className="text-green-400 text-sm font-medium">
                         Save ${pkg.originalPrice - pkg.price}
                       </span>
                     </div>
                   )}
-                  <p className="text-sm text-slate-400 mt-1">{pkg.duration}</p>
+                  <p className="text-sm text-[var(--theme-text-secondary)] mt-1">{pkg.duration}</p>
                 </div>
 
                 <ul className="space-y-3 mb-6">
                   {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                    <li key={i} className="flex items-start gap-2 text-sm text-[var(--theme-text-secondary)]">
                       <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                <div className="p-3 rounded-lg bg-[#0A1628]/50 mb-6">
-                  <p className="text-xs text-slate-400">
-                    <span className="text-white font-medium">Ideal for:</span> {pkg.idealFor}
+                <div className="p-3 rounded-lg bg-[var(--theme-bg-primary)]/50 mb-6">
+                  <p className="text-xs text-[var(--theme-text-secondary)]">
+                    <span className="text-[var(--theme-text-primary)] font-medium">Ideal for:</span> {pkg.idealFor}
                   </p>
                 </div>
 
@@ -209,12 +209,12 @@ export default function Pricing() {
             className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16"
           >
             {guarantees.map((item, idx) => (
-              <div key={idx} className="p-6 rounded-xl bg-[#0F2341]/30 border border-[#1E3A5F]/30 text-center">
+              <div key={idx} className="p-6 rounded-xl bg-[var(--theme-bg-card)]/30 border border-[var(--theme-border)]/30 text-center">
                 <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/10 flex items-center justify-center">
                   <item.icon className="w-6 h-6 text-green-400" />
                 </div>
-                <h3 className="font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-sm text-slate-400">{item.description}</p>
+                <h3 className="font-bold text-[var(--theme-text-primary)] mb-2">{item.title}</h3>
+                <p className="text-sm text-[var(--theme-text-secondary)]">{item.description}</p>
               </div>
             ))}
           </motion.div>
@@ -226,9 +226,9 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="text-center max-w-2xl mx-auto"
           >
-            <div className="p-8 rounded-2xl bg-gradient-to-r from-[#0F2341] to-[#0A1628] border border-[#1E3A5F]">
-              <h3 className="text-xl font-bold text-white mb-4">Not Sure Which Package?</h3>
-              <p className="text-slate-400 mb-6">
+            <div className="p-8 rounded-2xl bg-gradient-to-r from-[var(--theme-bg-card)] to-[var(--theme-bg-primary)] border border-[var(--theme-border)]">
+              <h3 className="text-xl font-bold text-[var(--theme-text-primary)] mb-4">Not Sure Which Package?</h3>
+              <p className="text-[var(--theme-text-secondary)] mb-6">
                 Book a free 15-minute discovery call. We'll discuss your goals and I'll recommend 
                 the right path for you. No pressure, no sales pitch.
               </p>
