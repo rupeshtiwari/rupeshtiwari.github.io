@@ -1,13 +1,37 @@
-import { Github, Linkedin, MessageCircle, Twitter, Calendar, Youtube, ExternalLink, Shield, BadgeCheck } from "lucide-react";
+import { Github, Linkedin, MessageCircle, Twitter, Calendar, Youtube, ExternalLink, Shield, BadgeCheck, Share2, Link2, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Footer() {
+  const [copied, setCopied] = useState(false);
   const bookingLink = "https://calendar.google.com/calendar/appointments/AcZssZ2dMNXqXzYcl2NKLpclDV9w0p4-9cp4UvTHii0=?gv=true";
+  const siteUrl = "https://www.rupeshtiwari.com";
+  const siteTitle = "Rupesh Tiwari - AWS Executive Interview Coach";
   
   const getObfuscatedEmail = () => {
     const parts = ['rupesh', 'fullstackmaster', 'net'];
     return `${parts[0]}@${parts[1]}.${parts[2]}`;
+  };
+
+  const shareToLinkedIn = () => {
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(siteUrl)}`;
+    window.open(linkedInUrl, '_blank', 'width=600,height=600');
+  };
+
+  const shareToTwitter = () => {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(siteTitle)}&url=${encodeURIComponent(siteUrl)}`;
+    window.open(twitterUrl, '_blank', 'width=600,height=400');
+  };
+
+  const copyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(siteUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy link');
+    }
   };
   
   return (
@@ -105,28 +129,72 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-[var(--theme-text-muted)] text-sm">
-            <p>© {new Date().getFullYear()} Rupesh Tiwari. All rights reserved.</p>
-            <div className="flex items-center gap-4">
-              <a href="/privacy" className="hover:text-[var(--theme-gold)] transition-colors" data-testid="link-privacy">Privacy Policy</a>
-              <span className="hidden sm:inline">|</span>
-              <span>100% Confidential - NDA Available</span>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-4 border-b border-[var(--theme-border)]">
+            <span className="text-[var(--theme-text-muted)] text-sm flex items-center gap-2">
+              <Share2 className="w-4 h-4" />
+              Share this site:
+            </span>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={shareToLinkedIn}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0A66C2] text-white hover:bg-[#004182] transition-colors text-sm font-medium"
+                data-testid="button-share-linkedin"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </button>
+              <button
+                onClick={shareToTwitter}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1DA1F2] text-white hover:bg-[#0c85d0] transition-colors text-sm font-medium"
+                data-testid="button-share-twitter"
+              >
+                <Twitter className="w-4 h-4" />
+                Twitter
+              </button>
+              <button
+                onClick={copyLink}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--theme-bg-card)] border border-[var(--theme-border)] text-[var(--theme-text-primary)] hover:bg-[var(--theme-bg-secondary)] transition-colors text-sm font-medium"
+                data-testid="button-copy-link"
+              >
+                {copied ? (
+                  <>
+                    <Check className="w-4 h-4 text-green-500" />
+                    <span className="text-green-500">Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <Link2 className="w-4 h-4" />
+                    Copy Link
+                  </>
+                )}
+              </button>
             </div>
           </div>
-          <div className="flex gap-4">
-            <a href="https://github.com/rupeshtiwari" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href="https://twitter.com/nickleus" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="https://www.youtube.com/@FullStackMaster" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
-              <Youtube className="w-5 h-5" />
-            </a>
+          
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-[var(--theme-text-muted)] text-sm">
+              <p>© {new Date().getFullYear()} Rupesh Tiwari. All rights reserved.</p>
+              <div className="flex items-center gap-4">
+                <a href="/privacy" className="hover:text-[var(--theme-gold)] transition-colors" data-testid="link-privacy">Privacy Policy</a>
+                <span className="hidden sm:inline">|</span>
+                <span>100% Confidential - NDA Available</span>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <a href="https://github.com/rupeshtiwari" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
+                <Github className="w-5 h-5" />
+              </a>
+              <a href="https://twitter.com/nickleus" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="https://www.linkedin.com/in/rupesh-tiwari/" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="https://www.youtube.com/@FullStackMaster" target="_blank" rel="noopener noreferrer" className="text-[var(--theme-text-muted)] hover:text-[var(--theme-text-primary)] transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
