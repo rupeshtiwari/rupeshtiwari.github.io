@@ -29,10 +29,10 @@ export default function FullStackMasterBanner() {
               </span>
             </div>
             
-            <div className="flex items-center gap-3 flex-shrink-0">
+            <div className="flex items-center gap-2 flex-shrink-0">
               <Button
                 size="sm"
-                className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white font-semibold px-3 md:px-4 text-xs md:text-sm h-8 md:h-8"
+                className="bg-[#0A1628] hover:bg-[#1E3A5F] text-white font-semibold px-3 md:px-4 text-xs md:text-sm h-8"
                 asChild
                 data-testid="button-banner-cta"
               >
@@ -45,11 +45,11 @@ export default function FullStackMasterBanner() {
               
               <button
                 onClick={() => setIsVisible(false)}
-                className="text-white bg-[#0A1628] hover:bg-[#1E3A5F] rounded-full p-2 transition-colors flex-shrink-0 shadow-md"
+                className="text-white bg-[#0A1628] hover:bg-[#1E3A5F] rounded-full w-8 h-8 flex items-center justify-center transition-colors flex-shrink-0 shadow-lg border-2 border-white/30"
                 data-testid="button-close-banner"
                 title="Close banner"
               >
-                <X className="w-4 h-4" strokeWidth={2.5} />
+                <X className="w-5 h-5" strokeWidth={3} />
               </button>
             </div>
           </div>
