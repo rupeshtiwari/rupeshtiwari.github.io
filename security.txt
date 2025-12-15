@@ -1,0 +1,11 @@
+# Security Policy for rupeshtiwari.com
+# If you discover a security vulnerability, please report it responsibly.
+
+Contact: mailto:rupesh@fullstackmaster.net
+Expires: 2026-12-31T23:59:00.000Z
+Preferred-Languages: en
+Canonical: https://www.rupeshtiwari.com/.well-known/security.txt
+
+# This is a static portfolio website hosted on GitHub Pages.
+# No user data is collected or stored.
+# All communications are handled through secure third-party services.
