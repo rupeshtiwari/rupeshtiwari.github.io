@@ -201,7 +201,7 @@ export default function About() {
               <div className="p-6 rounded-xl bg-gradient-to-r from-[#D4AF37]/10 to-yellow-500/10 border border-[#D4AF37]/20">
                 <Quote className="w-8 h-8 text-[#D4AF37] mb-3" />
                 <blockquote className="text-lg text-[var(--theme-text-primary)] italic leading-relaxed">
-                  "Every person who helped me — the petrol pump owner, my teachers, my neighbors — they didn't just pay my fees. 
+                  "Every person who helped me, the petrol pump owner, my teachers, my neighbors, they didn't just pay my fees. 
                   They taught me that success is never alone. Now it's my turn to help others."
                 </blockquote>
               </div>

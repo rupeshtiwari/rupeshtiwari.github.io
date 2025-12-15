@@ -8,7 +8,7 @@ const clientResults = [
     name: "Vaughn",
     role: "Software Engineer",
     company: "DraftKings",
-    story: "I had a great experience working with Rupesh! He helped me approach object-oriented design interview problems with structure, confidence, and competency. His patience stood out—he took the time to ensure I fully understood each concept before moving on.",
+    story: "I had a great experience working with Rupesh! He helped me approach object-oriented design interview problems with structure, confidence, and competency. His patience stood out. He took the time to ensure I fully understood each concept before moving on.",
     outcome: "Landed role at DraftKings",
     date: "Apr 2025",
   },

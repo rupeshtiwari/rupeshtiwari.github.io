@@ -108,7 +108,7 @@ export default function LinkedInRecommendations() {
             asChild
             data-testid="button-view-all-reviews"
           >
-            <a href="https://igotanoffer.com/en/coaches/rupesh-tiwari" target="_blank" rel="noopener noreferrer">
+            <a href="https://igotanoffer.com/en/coach/rupesh" target="_blank" rel="noopener noreferrer">
               <Star className="w-4 h-4 mr-2" />
               View All 50+ Reviews on IGotAnOffer
               <ExternalLink className="w-3 h-3 ml-2" />

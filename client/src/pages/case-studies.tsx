@@ -13,7 +13,7 @@ const clientReviews = [
     date: "April 2025",
     focus: "Object-Oriented Design Interview Prep",
     reviews: [
-      "I had a great experience working with Rupesh! He helped me approach object-oriented design interview problems with structure, confidence, and competency. His patience stood out—he took the time to ensure I fully understood each concept before moving on. I also appreciated how he provided clear next steps to continue improving my skills. Highly recommend him for anyone looking to strengthen their SWE interview prep!",
+      "I had a great experience working with Rupesh! He helped me approach object-oriented design interview problems with structure, confidence, and competency. His patience stood out. He took the time to ensure I fully understood each concept before moving on. I also appreciated how he provided clear next steps to continue improving my skills. Highly recommend him for anyone looking to strengthen their SWE interview prep!",
       "THANK YOU RUPESH!!!"
     ],
     highlights: ["OOD interview structure", "Patient coaching style", "Clear next steps"]
@@ -36,7 +36,7 @@ const clientReviews = [
     date: "July-August 2025",
     focus: "Solutions Architect Panel Prep",
     reviews: [
-      "This was my >2 times with Rupesh for mock interview! I had the opportunity to work with Rupesh to prepare for a panel session for a Solutions Architect role. Coming from a more technical background, I realized that the storytelling and communication aspect of the conversation needed more practice and refinement. Rupesh provided highly actionable feedback—he helped me improve the overall structure of the panel discussion, identify key focus areas, flag red flags, and even suggested thoughtful questions to ask during the session. He holds a very high bar and treats each mock interview as seriously as if it were his own team's hiring process.",
+      "This was my second time with Rupesh for mock interview! I had the opportunity to work with Rupesh to prepare for a panel session for a Solutions Architect role. Coming from a more technical background, I realized that the storytelling and communication aspect of the conversation needed more practice and refinement. Rupesh provided highly actionable feedback. He helped me improve the overall structure of the panel discussion, identify key focus areas, flag red flags, and even suggested thoughtful questions to ask during the session. He holds a very high bar and treats each mock interview as seriously as if it were his own team's hiring process.",
       "I'm currently preparing for a Solutions Architect role with a data background. Rupesh started the session by proposing a clear structure, which helped set the tone for a productive conversation - definitely five stars. What I truly appreciated was his thoughtful and caring approach. He made sure I left the session with a clear framework and practical guidance I can continue to practice on my own."
     ],
     highlights: ["Multiple sessions", "High bar standard", "Storytelling improvement", "Panel prep"]
@@ -48,7 +48,7 @@ const clientReviews = [
     date: "September 2025",
     focus: "Java, DevOps, Cloud (AWS), SRE Coaching",
     reviews: [
-      "I took multiple sessions with Rupesh and have consistently been impressed by his deep expertise in DevOps and the AWS cloud domain. His background in development provides a solid foundation that enhances his ability to explain complex concepts clearly and effectively. He is genuinely passionate about his work and goes above and beyond to support his students — often adjusting his schedule to accommodate individual needs. He takes the time to ensure your queries are thoroughly addressed and is always willing to provide guidance. This is not just a one-time engagement for him; he brings a long-term mentorship mindset to his coaching. I highly recommend him for coaching in Java, DevOps, Cloud (AWS), and SRE domains."
+      "I took multiple sessions with Rupesh and have consistently been impressed by his deep expertise in DevOps and the AWS cloud domain. His background in development provides a solid foundation that enhances his ability to explain complex concepts clearly and effectively. He is genuinely passionate about his work and goes above and beyond to support his students, often adjusting his schedule to accommodate individual needs. He takes the time to ensure your queries are thoroughly addressed and is always willing to provide guidance. This is not just a one-time engagement for him; he brings a long-term mentorship mindset to his coaching. I highly recommend him for coaching in Java, DevOps, Cloud (AWS), and SRE domains."
     ],
     highlights: ["Multiple sessions", "Long-term mentorship", "DevOps & AWS expertise", "Flexible scheduling"]
   },
@@ -176,7 +176,7 @@ export default function CaseStudies() {
               asChild
               data-testid="button-view-all-reviews"
             >
-              <a href="https://igotanoffer.com/en/coaches/rupesh-tiwari" target="_blank" rel="noopener noreferrer">
+              <a href="https://igotanoffer.com/en/coach/rupesh" target="_blank" rel="noopener noreferrer">
                 View All Reviews on IGotAnOffer
                 <ArrowRight className="w-4 h-4 ml-2" />
               </a>
