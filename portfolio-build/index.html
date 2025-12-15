@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="light">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6118Y8881"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-F6118Y8881');
+    </script>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Security Headers (enforced by GitHub Pages + meta tags) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
     
     <!-- Primary Meta Tags -->
     <title>Rupesh Tiwari | AWS Executive Interview Coach - New Jersey, USA</title>
@@ -27,7 +43,7 @@
     <meta property="og:site_name" content="Rupesh Tiwari - Executive Interview Coach" />
     <meta property="og:title" content="Rupesh Tiwari | AWS Executive Interview Coach - USA" />
     <meta property="og:description" content="AWS Senior CSM coaching Directors & VPs to FAANG offers. 92% offer rate, $285K avg comp increase. Based in New Jersey, USA." />
-    <meta property="og:image" content="https://www.rupeshtiwari.com/opengraph.jpg" />
+    <meta property="og:image" content="https://61a264a3-8011-425a-8774-88c79ad887fa-00-cbdqe5t2fcjd.spock.replit.dev/opengraph.jpg" />
     <meta property="og:locale" content="en_US" />
     
     <!-- Twitter -->
@@ -37,16 +53,29 @@
     <meta name="twitter:url" content="https://www.rupeshtiwari.com/" />
     <meta name="twitter:title" content="Rupesh Tiwari | AWS Executive Interview Coach - USA" />
     <meta name="twitter:description" content="AWS Senior CSM coaching Directors & VPs to FAANG offers. 92% offer rate, $285K avg comp increase. Based in New Jersey, USA." />
-    <meta name="twitter:image" content="https://www.rupeshtiwari.com/opengraph.jpg" />
+    <meta name="twitter:image" content="https://61a264a3-8011-425a-8774-88c79ad887fa-00-cbdqe5t2fcjd.spock.replit.dev/opengraph.jpg" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Rupesh Coach" />
+    
     <!-- Fonts - Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/rupesh-hero.png" as="image" />
+    <link rel="dns-prefetch" href="https://calendar.google.com" />
+    <link rel="dns-prefetch" href="https://www.linkedin.com" />
+    <link rel="dns-prefetch" href="https://www.fullstackmaster.net" />
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -58,7 +87,6 @@
       "description": "Executive interview coach specializing in Directors, VPs, and Principal Engineers targeting FAANG companies.",
       "url": "https://www.rupeshtiwari.com",
       "image": "https://www.rupeshtiwari.com/rupesh-hero.png",
-      "telephone": "+1-609-442-4081",
       "email": "rupesh@fullstackmaster.net",
       "address": {
         "@type": "PostalAddress",
@@ -98,7 +126,6 @@
       "name": "Rupesh Tiwari Executive Coaching",
       "description": "Executive interview coaching for Directors, VPs, and Principal Engineers targeting FAANG companies. 92% offer rate with $285K average compensation increase.",
       "url": "https://www.rupeshtiwari.com",
-      "telephone": "+1-609-442-4081",
       "email": "rupesh@fullstackmaster.net",
       "priceRange": "$$",
       "address": {
@@ -152,15 +179,76 @@
     }
     </script>
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is your success rate for FAANG interview coaching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our coaching program has a 92% offer rate for executives targeting FAANG companies, with an average compensation increase of $285,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is this coaching program designed for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This program is specifically designed for Directors, VPs, Principal Engineers, and senior tech leaders targeting executive roles at FAANG and tier-1 tech companies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the coaching program include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The program includes mock interviews, system design deep-dives, behavioral preparation, career strategy sessions, and personalized feedback from an AWS Senior CSM with 15+ years of experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the coaching program take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical coaching engagements range from 4-12 weeks depending on your preparation level and target timeline. We offer flexible scheduling to accommodate busy executive calendars."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer a free consultation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer a free 30-minute discovery call to understand your goals, assess your current preparation level, and determine if our coaching program is the right fit for you."
+          }
+        }
+      ]
+    }
+    </script>
+    
     <style>
       body {
+        background-color: #f8fafc;
+      }
+      html.dark body {
         background-color: #020617;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-D9ODKsKI.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CFhZwsFz.css">
+    <script type="module" crossorigin src="/assets/index-2CNqx1EP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CsiVaR74.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.log('SW registration failed:', err));
+        });
+      }
+    </script>
   </body>
 </html>

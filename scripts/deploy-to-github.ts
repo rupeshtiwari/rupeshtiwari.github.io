@@ -69,6 +69,25 @@ async function deploy() {
   const repo = 'rupeshtiwari.github.io';
   const branch = 'main';
   
+  console.log('Syncing dist/public to portfolio-build...');
+  const distFiles = fs.readdirSync('./dist/public');
+  for (const file of distFiles) {
+    const src = path.join('./dist/public', file);
+    const dest = path.join('./portfolio-build', file);
+    if (fs.statSync(src).isDirectory()) {
+      fs.cpSync(src, dest, { recursive: true });
+    } else {
+      fs.copyFileSync(src, dest);
+    }
+  }
+  if (fs.existsSync('./client/public/sitemap.xml')) {
+    fs.copyFileSync('./client/public/sitemap.xml', './portfolio-build/sitemap.xml');
+  }
+  if (fs.existsSync('./client/public/CNAME')) {
+    fs.copyFileSync('./client/public/CNAME', './portfolio-build/CNAME');
+  }
+  console.log('Files synced!');
+  
   console.log('Getting GitHub client...');
   const octokit = await getUncachableGitHubClient();
   
