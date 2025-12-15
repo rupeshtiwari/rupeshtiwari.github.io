@@ -26,8 +26,8 @@ export default function LiveChatWidget() {
       icon: ExternalLink,
       title: "View Programs",
       description: "See coaching packages & pricing",
-      link: "/pricing",
-      internal: true,
+      link: "https://www.fullstackmaster.net/#pricing",
+      internal: false,
       color: "from-[#D4AF37] to-yellow-500"
     }
   ];

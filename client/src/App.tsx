@@ -9,7 +9,6 @@ import Home from "@/pages/home";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
 import Privacy from "@/pages/privacy";
-import Pricing from "@/pages/pricing";
 import Resources from "@/pages/resources";
 import CaseStudies from "@/pages/case-studies";
 import About from "@/pages/about";
@@ -22,7 +21,6 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:id" component={BlogPost} />
       <Route path="/privacy" component={Privacy} />
-      <Route path="/pricing" component={Pricing} />
       <Route path="/resources" component={Resources} />
       <Route path="/case-studies" component={CaseStudies} />
       <Route path="/about" component={About} />

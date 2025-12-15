@@ -210,10 +210,10 @@ export default function CaseStudies() {
                   className="border-[var(--theme-border)] text-[var(--theme-text-primary)] hover:bg-[var(--theme-bg-card)]"
                   asChild
                 >
-                  <Link href="/pricing">
+                  <a href="https://www.fullstackmaster.net/#pricing" target="_blank" rel="noopener noreferrer">
                     View Coaching Programs
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>

@@ -102,7 +102,7 @@ export default function Navbar() {
   const links = [
     { name: "About", href: "/about", isHash: false, external: false },
     { name: "Programs", href: "#programs", isHash: true },
-    { name: "Pricing", href: "/pricing", isHash: false, external: false },
+    { name: "Pricing", href: "https://www.fullstackmaster.net/#pricing", isHash: false, external: true },
     { name: "Success Stories", href: "/case-studies", isHash: false, external: false },
     { name: "Crack FAANG Interview", href: "https://www.fullstackmaster.net", isHash: false, external: true, highlight: true },
     { name: "Blog", href: "https://blog.rupeshtiwari.com", isHash: false, external: true },
