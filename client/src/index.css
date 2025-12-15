@@ -95,3 +95,50 @@
     @apply font-display tracking-tight;
   }
 }
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  nav, .fixed, button[data-testid*="floating"], 
+  [data-testid="banner-fullstackmaster"],
+  .live-chat-widget {
+    display: none !important;
+  }
+  
+  * {
+    box-shadow: none !important;
+  }
+  
+  a {
+    color: #1e40af !important;
+    text-decoration: underline !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #0f172a !important;
+    page-break-after: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  
+  section {
+    page-break-inside: avoid;
+  }
+  
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  @page {
+    margin: 1.5cm;
+  }
+}
