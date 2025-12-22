@@ -1,25 +1,49 @@
 import { motion } from "framer-motion";
-import { Youtube, Play, ExternalLink, Users, Eye, Video } from "lucide-react";
+import { Youtube, Play, ExternalLink, Users, Eye, Video, ListVideo } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const videos = [
+const playlists = [
   {
-    id: "KhVzPwg2N9w",
-    title: "System Design Interview: Complete Guide",
-    views: "45K+ views",
-    description: "Master system design interviews with this comprehensive approach used by FAANG engineers.",
+    id: "PLZed_adPqIJqdUI07gmFg4vBBYtx6ta_f",
+    title: "Amazon Behavioral Interview Mastery",
+    category: "Behavioral",
+    videos: "25+ videos",
+    description: "Master Amazon Leadership Principles and behavioral interviews with real examples.",
   },
   {
-    id: "H7XLPgVx5W0",
-    title: "How to Answer Behavioral Questions",
-    views: "32K+ views",
-    description: "The STAR method isn't enough. Learn the advanced framework that gets you hired.",
+    id: "PLZed_adPqIJrhB1lo3F65IjnOhgMHUR4C",
+    title: "System Design Mastery Shorts",
+    category: "System Design",
+    videos: "40+ videos",
+    description: "Quick system design concepts and patterns used by FAANG engineers.",
   },
   {
-    id: "SqL9FLz_mSA",
-    title: "From Tier-3 College to FAANG",
-    views: "28K+ views",
-    description: "My personal story and the exact steps I took to crack Google, Microsoft, and AWS.",
+    id: "PLZed_adPqIJrfsK5cfoMyqyS58VRJ_Liu",
+    title: "Engineering Manager Interview Prep",
+    category: "EM Leadership",
+    videos: "30+ videos",
+    description: "System design and leadership interviews for Engineering Managers.",
+  },
+  {
+    id: "PLZed_adPqIJqVHAdy69B6BUNagto2dLI2",
+    title: "TPM Interview Coaching",
+    category: "TPM",
+    videos: "20+ videos",
+    description: "Technical Program Manager interview prep for Google and FAANG.",
+  },
+  {
+    id: "PLZed_adPqIJpMrZnvVI6qBgnahpRrYXrp",
+    title: "Senior Director Interview Kickstart",
+    category: "Director",
+    videos: "15+ videos",
+    description: "Executive interview preparation for Director and VP roles.",
+  },
+  {
+    id: "PLZed_adPqIJpZ2mf0o9DRSieapJW_ShhZ",
+    title: "SWE Interview Prep",
+    category: "SWE",
+    videos: "35+ videos",
+    description: "Coding, system design, and leadership principles for Software Engineers.",
   },
 ];
 
@@ -74,11 +98,11 @@ export default function YouTubeSection() {
           ))}
         </motion.div>
 
-        {/* Video Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {videos.map((video, idx) => (
+        {/* Playlist Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {playlists.map((playlist, idx) => (
             <motion.div
-              key={video.id}
+              key={playlist.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -86,34 +110,37 @@ export default function YouTubeSection() {
               className="group"
             >
               <a 
-                href={`https://www.youtube.com/watch?v=${video.id}`}
+                href={`https://www.youtube.com/playlist?list=${playlist.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
-                data-testid={`link-youtube-video-${idx}`}
+                className="block bg-[var(--theme-bg-card)] rounded-xl border border-[var(--theme-border)] overflow-hidden hover:border-red-500/50 transition-all hover:shadow-lg hover:shadow-red-500/10"
+                data-testid={`link-youtube-playlist-${idx}`}
               >
-                <div className="relative rounded-xl overflow-hidden mb-4 aspect-video bg-[var(--theme-bg-secondary)]">
-                  <img 
-                    src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
-                    alt={video.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-red-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                      <Play className="w-7 h-7 text-white ml-1" fill="white" />
+                <div className="relative p-6 bg-gradient-to-br from-red-600 to-red-700">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="px-2 py-1 bg-white/20 rounded text-white text-xs font-medium">
+                      {playlist.category}
+                    </span>
+                    <ListVideo className="w-6 h-6 text-white/80" />
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
+                      <Play className="w-6 h-6 text-white" fill="white" />
+                    </div>
+                    <div>
+                      <div className="text-white font-bold text-lg">{playlist.videos}</div>
+                      <div className="text-white/70 text-sm">Watch Free</div>
                     </div>
                   </div>
-                  <div className="absolute bottom-2 right-2 px-2 py-1 rounded bg-black/80 text-white text-xs">
-                    {video.views}
-                  </div>
                 </div>
-                <h3 className="font-bold text-[var(--theme-text-primary)] group-hover:text-red-400 transition-colors mb-1">
-                  {video.title}
-                </h3>
-                <p className="text-sm text-[var(--theme-text-muted)] line-clamp-2">
-                  {video.description}
-                </p>
+                <div className="p-4">
+                  <h3 className="font-bold text-[var(--theme-text-primary)] group-hover:text-red-500 transition-colors mb-2 line-clamp-2">
+                    {playlist.title}
+                  </h3>
+                  <p className="text-sm text-[var(--theme-text-muted)] line-clamp-2">
+                    {playlist.description}
+                  </p>
+                </div>
               </a>
             </motion.div>
           ))}
