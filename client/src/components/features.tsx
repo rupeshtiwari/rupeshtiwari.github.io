@@ -45,8 +45,8 @@ const expertise = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-slate-900 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-900/10 via-transparent to-transparent" />
+    <section id="skills" className="py-24 bg-[var(--theme-bg-secondary)] relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-500/5 via-transparent to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -55,11 +55,11 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-amber-400 text-sm font-semibold uppercase tracking-wider">What I Coach</span>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">
+          <span className="text-[var(--theme-gold)] text-sm font-semibold uppercase tracking-wider">What I Coach</span>
+          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">
             The 4 Pillars of Executive Interviews
           </h2>
-          <p className="text-slate-400 text-lg">
+          <p className="text-[var(--theme-text-muted)] text-lg">
             These are the areas where senior ICs consistently underperform. I'll help you master each one.
           </p>
         </motion.div>
@@ -72,13 +72,13 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="group p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50 hover:border-amber-500/30 transition-all hover:bg-slate-800/80"
+              className="group p-6 rounded-2xl bg-[var(--theme-bg-card)] border border-[var(--theme-border)] hover:border-[var(--theme-gold)]/30 transition-all hover:shadow-lg"
             >
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4`}>
                 <service.icon className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{service.description}</p>
+              <h3 className="text-xl font-bold text-[var(--theme-text-primary)] mb-2">{service.title}</h3>
+              <p className="text-[var(--theme-text-muted)] text-sm leading-relaxed">{service.description}</p>
             </motion.div>
           ))}
         </div>
@@ -89,7 +89,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h3 className="text-2xl font-bold font-display text-white mb-4">Deep Expertise Areas</h3>
+          <h3 className="text-2xl font-bold font-display text-[var(--theme-text-primary)] mb-4">Deep Expertise Areas</h3>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-16">
@@ -100,12 +100,12 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50"
+              className="p-6 rounded-2xl bg-[var(--theme-bg-card)] border border-[var(--theme-border)]"
             >
-              <h3 className="text-lg font-bold mb-4 text-amber-400">{group.category}</h3>
+              <h3 className="text-lg font-bold mb-4 text-[var(--theme-gold)]">{group.category}</h3>
               <div className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
-                  <span key={item} className="px-3 py-1.5 text-sm rounded-full bg-slate-700/50 text-slate-300 border border-slate-600/50">
+                  <span key={item} className="px-3 py-1.5 text-sm rounded-full bg-[var(--theme-bg-secondary)] text-[var(--theme-text-secondary)] border border-[var(--theme-border)]">
                     {item}
                   </span>
                 ))}
@@ -114,10 +114,10 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="rounded-2xl bg-gradient-to-r from-slate-800 to-slate-800/80 border border-slate-700 p-8">
+        <div className="rounded-2xl bg-[var(--theme-bg-card)] border border-[var(--theme-border)] p-8">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold font-display text-white">My Credentials</h3>
-            <p className="text-slate-400 mt-2">I don't just teach interviews. I've passed them at the highest levels.</p>
+            <h3 className="text-2xl font-bold font-display text-[var(--theme-text-primary)]">My Credentials</h3>
+            <p className="text-[var(--theme-text-muted)] mt-2">I don't just teach interviews. I've passed them at the highest levels.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <motion.div 
@@ -129,7 +129,7 @@ export default function Skills() {
               <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl flex items-center justify-center">
                 <Cloud className="w-8 h-8 text-white" />
               </div>
-              <span className="text-sm font-medium text-slate-300 text-center">AWS Senior CSM</span>
+              <span className="text-sm font-medium text-[var(--theme-text-secondary)] text-center">AWS Senior CSM</span>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
@@ -141,7 +141,7 @@ export default function Skills() {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
                 <Cloud className="w-8 h-8 text-white" />
               </div>
-              <span className="text-sm font-medium text-slate-300 text-center">Google Cloud Certified</span>
+              <span className="text-sm font-medium text-[var(--theme-text-secondary)] text-center">Google Cloud Certified</span>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
@@ -153,7 +153,7 @@ export default function Skills() {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
                 <Building2 className="w-8 h-8 text-white" />
               </div>
-              <span className="text-sm font-medium text-slate-300 text-center">Microsoft Certified</span>
+              <span className="text-sm font-medium text-[var(--theme-text-secondary)] text-center">Microsoft Certified</span>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
@@ -165,7 +165,7 @@ export default function Skills() {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <span className="text-sm font-medium text-slate-300 text-center">ISB CTO Scholar</span>
+              <span className="text-sm font-medium text-[var(--theme-text-secondary)] text-center">ISB CTO Scholar</span>
             </motion.div>
           </div>
         </div>

@@ -121,7 +121,7 @@ export default function Hero() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="h-14 px-8 text-base border-[#C9A227]/40 bg-[#0F2341]/50 hover:bg-[#1A3A5C]/50 text-white hover:border-[#D4AF37]/60" 
+                className="h-14 px-8 text-base border-[var(--theme-gold)]/40 bg-[var(--theme-bg-card)]/50 hover:bg-[var(--theme-bg-card)]/80 text-[var(--theme-text-primary)] hover:border-[var(--theme-gold)]/60" 
                 asChild
                 data-testid="button-linkedin"
               >

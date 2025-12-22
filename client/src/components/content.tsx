@@ -39,7 +39,7 @@ const content = [
 
 export default function Content() {
   return (
-    <section id="content" className="py-24 bg-slate-950 border-t border-slate-800">
+    <section id="content" className="py-24 bg-[var(--theme-bg-secondary)] border-t border-[var(--theme-border)]">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,9 +47,9 @@ export default function Content() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Resources</span>
-          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-white">Learn & Connect</h2>
-          <p className="text-slate-400 text-lg">
+          <span className="text-cyan-600 dark:text-cyan-400 text-sm font-semibold uppercase tracking-wider">Resources</span>
+          <h2 className="text-3xl md:text-4xl font-bold font-display mt-2 mb-4 text-[var(--theme-text-primary)]">Learn & Connect</h2>
+          <p className="text-[var(--theme-text-muted)] text-lg">
             Free resources, coaching, and community for ambitious tech leaders.
           </p>
         </motion.div>
@@ -65,17 +65,17 @@ export default function Content() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="group p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-cyan-500/30 transition-all"
+              className="group p-6 rounded-2xl bg-[var(--theme-bg-card)] border border-[var(--theme-border)] hover:border-cyan-500/30 transition-all"
             >
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                 <item.icon className="w-7 h-7 text-white" />
               </div>
-              <div className="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-2">{item.type}</div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">{item.title}</h3>
-              <p className="text-sm text-slate-400 mb-4 line-clamp-3">
+              <div className="text-xs font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider mb-2">{item.type}</div>
+              <h3 className="text-xl font-bold text-[var(--theme-text-primary)] mb-3 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">{item.title}</h3>
+              <p className="text-sm text-[var(--theme-text-muted)] mb-4 line-clamp-3">
                 {item.desc}
               </p>
-              <span className="inline-flex items-center text-sm font-medium text-slate-400 group-hover:text-cyan-400 transition-colors">
+              <span className="inline-flex items-center text-sm font-medium text-[var(--theme-text-muted)] group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                 Visit <ExternalLink className="w-3 h-3 ml-1" />
               </span>
             </motion.a>
