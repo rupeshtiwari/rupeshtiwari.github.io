@@ -9,12 +9,15 @@ export default function FloatingThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    const stored = localStorage.getItem("theme") as "light" | "dark" | null;
-    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial = stored || "light";
+    // Always default to light theme - ignore stored preference
+    const initial = "light";
     setThemeState(initial);
-    document.documentElement.classList.toggle("dark", initial === "dark");
-    document.documentElement.classList.toggle("light", initial === "light");
+    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.add("light");
+    // Clear any old stored dark preference
+    if (localStorage.getItem("theme") === "dark") {
+      localStorage.removeItem("theme");
+    }
 
     const observer = new MutationObserver(() => {
       const isDark = document.documentElement.classList.contains("dark");
