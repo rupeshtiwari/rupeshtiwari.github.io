@@ -5,7 +5,7 @@ import { insertLeadSchema } from "@shared/schema";
 import { z } from "zod";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 async function sendWelcomeEmail(email: string, source: string) {
   const isLeadMagnet = source === "lead_magnet" || source === "exit_popup";
@@ -67,6 +67,11 @@ async function sendWelcomeEmail(email: string, source: string) {
       <p style="color: #666; font-size: 12px;">You're receiving this because you signed up at rupeshtiwari.com</p>
     </div>
   `;
+
+  if (!resend) {
+    console.log(`Email sending disabled (RESEND_API_KEY not set). Would send to ${email} for source: ${source}`);
+    return;
+  }
 
   try {
     await resend.emails.send({

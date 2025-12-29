@@ -5,6 +5,12 @@ import * as path from 'path'
 let connectionSettings: any;
 
 async function getAccessToken() {
+  // Support local deployment with GITHUB_TOKEN environment variable
+  if (process.env.GITHUB_TOKEN) {
+    return process.env.GITHUB_TOKEN;
+  }
+  
+  // Replit deployment logic
   if (connectionSettings && connectionSettings.settings.expires_at && new Date(connectionSettings.settings.expires_at).getTime() > Date.now()) {
     return connectionSettings.settings.access_token;
   }
@@ -17,7 +23,7 @@ async function getAccessToken() {
     : null;
 
   if (!xReplitToken) {
-    throw new Error('X_REPLIT_TOKEN not found for repl/depl');
+    throw new Error('X_REPLIT_TOKEN not found for repl/depl. For local deployment, set GITHUB_TOKEN environment variable.');
   }
 
   connectionSettings = await fetch(
